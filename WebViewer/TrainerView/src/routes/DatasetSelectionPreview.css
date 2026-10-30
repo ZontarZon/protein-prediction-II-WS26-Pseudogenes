@@ -1,0 +1,26 @@
+.dataset-selection-preview {
+  margin: 16px 20px;
+  padding: 16px;
+  border: 1px solid #2a3b42;
+  border-radius: 4px;
+  background: #0b141a;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.dataset-selection-preview .table-wrap { overflow-x: auto; }
+.dataset-selection-preview table { width: 100%; border-collapse: collapse; text-align: left; }
+.dataset-selection-preview th, .dataset-selection-preview td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #2a3b42;
+}
+.dataset-selection-preview input {
+  width: 100px;
+  background: #080f14;
+  border: 1px solid #2a3b42;
+  border-radius: 2px;
+  color: #d9e4e6;
+  padding: 8px;
+}
+.dataset-selection-preview input:focus-visible { outline: 2px solid #00bfa2; }
+
+.dataset-record-total { font-size: 22px; margin: 0 0 8px; }

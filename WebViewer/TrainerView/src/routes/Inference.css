@@ -1,0 +1,47 @@
+.classification-result {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+.classification-result svg {
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.classification-result > div { max-width: 34rem; }
+.classification-class {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.classification-class > span:last-child {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+.classification-dot {
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+}
+.classification-dot.real { background: #4cbfa5; }
+.classification-dot.fake { background: #e99167; }
+.sequence-attribution { margin-top: 1.5rem; flex: 0 0 100%; width: 100%; min-width: 0; }
+.attribution-overview { display: flex; height: 28px; background: #fff1; margin: 1rem 0; }
+.attribution-overview button { flex: 1; min-width: 0; padding: 0; border: 0; cursor: pointer; }
+.sequence-attribution input { width: 100%; }
+.attribution-residues { display: flex; gap: 0; overflow-x: auto; margin-top: 1rem; padding-bottom: 10px; font-family: monospace; }
+.attribution-residues > span { flex: 0 0 24px; box-sizing: border-box; text-align: center; padding: 5px 0; border-radius: 2px; font-size: 16px; }
+.attribution-residues small { display: block; font-size: 8px; margin-top: 5px; writing-mode: vertical-rl; margin-inline: auto; }
+.attribution-residues .attribution-boundary { border-left: 2px solid currentColor; }
+.attribution-controls { display: flex; align-items: end; flex-wrap: wrap; gap: 12px; margin: 12px 0; }
+.attribution-location { position: relative; height: 20px; margin-top: -12px; }
+.attribution-window-marker { position: absolute; top: 0; height: 4px; background: currentColor; opacity: .6; }
+.attribution-window-arrow { position: absolute; top: 3px; transform: translateX(-50%); font-size: 12px; }
+@media (max-width: 640px) {
+  .classification-result { flex-direction: column; gap: 1rem; }
+}
+
+.attribution-residues-all { flex-wrap: wrap; overflow-x: visible; row-gap: 8px; }

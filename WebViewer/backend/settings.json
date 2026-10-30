@@ -1,0 +1,28 @@
+{
+  "backend_host": "0.0.0.0",
+  "backend_port": 25565,
+  "frontend_source_dir": "TrainerView",
+  "frontend_static_dir": "TrainerView/dist",
+  "models_dir": "ModelsAndTrainers/Models",
+  "trainers_dir": "ModelsAndTrainers/Trainers",
+  "dataloaders_dir": "ModelsAndTrainers/DataLoaders",
+  "dataset_roots": [
+    "ModelsAndTrainers/Datasets"
+  ],
+  "dataset_viewers_dir": "ModelsAndTrainers/Datasets/Viewers",
+  "outputs_dir": "ModelsAndTrainers/ModelOutputs",
+  "legacy_checkpoints_dir": "ModelsAndTrainers/ModelCechkpoints",
+  "cors_origins": [
+    "*"
+  ],
+  "max_request_size_mb": 64,
+  "metric_persist_interval_seconds": 2.0,
+  "metric_persist_interval_steps": 50,
+  "recent_metric_limit": 1000,
+  "frontend_dev_host": "0.0.0.0",
+  "frontend_dev_port": 5173,
+  "frontend_allowed_hosts": [
+    "localhost",
+    "EndMySystem"
+  ]
+}
