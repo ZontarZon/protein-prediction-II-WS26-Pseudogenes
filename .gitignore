@@ -1,0 +1,3 @@
+# Downloaded and generated dataset files. The folders stay (via .gitkeep); their contents do not.
+dataset/*/*
+!dataset/*/.gitkeep
