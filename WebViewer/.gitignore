@@ -1234,3 +1234,8 @@ __marimo__/
 
 # Test directories at any depth
 tests/
+
+# Keep the MMseqs2 integration contract tests.
+!/tests/
+/tests/*
+!/tests/test_mmseqs2.py
