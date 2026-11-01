@@ -81,10 +81,12 @@ but temporary directories may be removed after a reboot. The default build
 optimizes for the build machine; use upstream's architecture options if the
 binary must run on a different CPU.
 
-For Docker deployments, install MMseqs2 **inside the backend container**, or mount
-a compatible executable and its required runtime libraries. Installing it only
-on the host or pulling the standalone MMseqs2 image does not make `mmseqs`
-available to the backend. This integration does not modify the existing image.
+The WebViewer Dockerfile installs the Debian MMseqs2 package **inside the backend
+container** and verifies `mmseqs version` during the image build. From
+`WebViewer/`, run `./docker_run.sh --rebuild` to update an existing image and
+replace the saved container. Leave **MMseqs2 executable** set to `mmseqs`.
+No host installation or bundled-source compilation is needed for this setup.
+See [WebViewer/RUNNING.md](WebViewer/RUNNING.md) for Docker startup details.
 
 ## General command-line usage
 

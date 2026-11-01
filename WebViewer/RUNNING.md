@@ -40,6 +40,14 @@ is supplied. Python requirements are installed inside the image; no host venv
 is used. Frontend dependencies and the frontend are built when the container
 process starts.
 
+The backend image also installs the Debian MMseqs2 package and checks
+`mmseqs version` during the build. For MMseqs2 training and inference, leave
+**MMseqs2 executable** set to `mmseqs`; no host installation is needed.
+Update an existing image/container with `./docker_run.sh --rebuild`.
+After startup, verify it with `docker exec <container-name> mmseqs version`,
+using the container name printed by the launcher. See the
+[MMseqs2 guide](../MMseqs2SetupAndUsage.md) for dataset and training instructions.
+
 By default (`--keep`), the script creates a named container, waits for the
 backend to respond, then exits with the container running in the background.
 Running the script again reuses the running container or starts it if stopped.

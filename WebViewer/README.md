@@ -31,6 +31,10 @@ next time. Reusable mode leaves the container running in the background and
 prints commands to view logs and stop it. Bind-mounted files survive container
 removal or replacement.
 
+The Docker backend includes MMseqs2 on `PATH`. Leave **MMseqs2 executable**
+set to `mmseqs` when using its trainer/classifier. Run `./docker_run.sh --rebuild`
+to add it to an existing installation; no host MMseqs2 installation is required.
+
 Wait for Docker startup to print `Ready`, then open
 **http://localhost:25565** (or the `backend_port` in settings).
 
