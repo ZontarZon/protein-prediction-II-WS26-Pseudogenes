@@ -13,9 +13,11 @@ from MMseqs2Preprocessing.preprocess import prepare_dataset
 from ModelsAndTrainers.DataLoaders.MMseqs2ClassificationData import load_prepared
 from ModelsAndTrainers.DataLoaders.ProteinClassificationData import ProteinClassificationDataset
 from ModelsAndTrainers.DataLoaders.MMseqs2Runner import MMseqs2Runner
-from ModelsAndTrainers.Models.MMseqs2Classifier import MMseqs2Classifier
+from ModelsAndTrainers.Models.ProteinPEClassifier import ProteinPEClassifier
 from ModelsAndTrainers.Trainers.MMseqs2Trainer import MMseqs2Trainer
 from ModelsAndTrainers.Models.ProteinPEClassifier import encoder_cache_directory
+from backend.model_registry import ModelRegistry
+from backend.trainer_registry import TrainerRegistry
 from backend.dataset_preview import loader_preview
 from backend.dataset_statistics import DatasetInventory
 
@@ -63,7 +65,7 @@ class PreparedWorkflowTest(unittest.TestCase):
                 self.assertEqual(search[search.index(flag) + 1], value)
 
     def test_frozen_encoder_and_sequence_pooling(self):
-        model = MMseqs2Classifier(hidden_size=4)
+        model = ProteinPEClassifier(hidden_size=4)
 
         class Encoder(torch.nn.Module):
             def __init__(self):
@@ -90,6 +92,21 @@ class PreparedWorkflowTest(unittest.TestCase):
         torch.nn.functional.cross_entropy(logits, torch.tensor([0, 1])).backward()
         self.assertIsNotNone(model.head[0].weight.grad)
         self.assertIsNone(model.encoder.embedding.weight.grad)
+
+    def test_registry_model_selection(self):
+        project = Path(__file__).resolve().parents[2] / 'WebViewer'
+        training = project / 'ModelsAndTrainers'
+        trainers = TrainerRegistry(training, project)
+        models = ModelRegistry(training, project)
+        declaration = trainers.get('MMseqs2Trainer').configuration_schema()['models'][0]
+        # Match the filtering performed by NewRun.tsx.
+        compatible = [item for item in models.catalog()
+                      if item['id'] in declaration['choices']
+                      and declaration['interface'] in item['interfaces']]
+        self.assertEqual([item['id'] for item in compatible], ['ProteinPEClassifier'])
+        trainer = trainers.get('MMseqs2Trainer')({}, Path('/tmp/unused-mmseqs-run'), lambda _: None)
+        trainer.bind_models({'classifier': models.create('ProteinPEClassifier')})
+        self.assertEqual(trainer.net.model_id, 'ProteinPEClassifier')
 
     def test_encoder_cache_location(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -155,9 +172,9 @@ class PreparedWorkflowTest(unittest.TestCase):
                 return torch.tensor([[len(s) / 100.] * 1024 for s in sequences],
                                     device=next(model.head.parameters()).device)
 
-            with patch.dict(os.environ, {'PATH': ''}), patch('subprocess.Popen', side_effect=AssertionError('Training launched a subprocess')), patch.object(MMseqs2Classifier, 'setup_encoder'), patch.object(MMseqs2Classifier, 'embed', embed):
+            with patch.dict(os.environ, {'PATH': ''}), patch('subprocess.Popen', side_effect=AssertionError('Training launched a subprocess')), patch.object(ProteinPEClassifier, 'setup_encoder'), patch.object(ProteinPEClassifier, 'embed', embed):
                 trainer = MMseqs2Trainer(config, root / 'run', lambda _: None)
-                trainer.bind_models({'classifier': MMseqs2Classifier()})
+                trainer.bind_models({'classifier': ProteinPEClassifier()})
                 initial = trainer.net.head[0].weight.detach().clone()
                 trainer.train()
                 self.assertFalse(torch.equal(initial, trainer.net.head[0].weight))
@@ -168,11 +185,11 @@ class PreparedWorkflowTest(unittest.TestCase):
                 self.assertEqual(saved['encoder_checkpoint'], 'Rostlab/prot_t5_xl_half_uniref50-enc')
                 self.assertTrue(all(k.startswith('head.') for k in saved['model_state_dict']))
                 self.assertEqual(saved['prepared_digest'], digest)
-                result = MMseqs2Classifier().infer({'sequence': 'MACK'}, checkpoint)
+                result = ProteinPEClassifier().infer({'sequence': 'MACK'}, checkpoint)
                 self.assertEqual(len(result['classes']), 2)
                 self.assertAlmostEqual(sum(c['probability'] for c in result['classes']), 1, places=6)
                 resumed = MMseqs2Trainer(config, root / 'resumed', lambda _: None)
-                resumed.bind_models({'classifier': MMseqs2Classifier()})
+                resumed.bind_models({'classifier': ProteinPEClassifier()})
                 resumed.load_checkpoint(checkpoint)
                 resumed.epochs = 2
                 resumed.train()

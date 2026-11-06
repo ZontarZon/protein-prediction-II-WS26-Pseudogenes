@@ -41,7 +41,7 @@ it does not certify a strict pairwise similarity bound between partitions.
 Records remain in memory; allow enough RAM and disk space for MMseqs2 clustering.
 
 Put the output directory under a configured WebViewer dataset root, mounted into
-the backend if using Docker. Select **MMseqs2Trainer** and **MMseqs2Classifier**.
+the backend if using Docker. Select **MMseqs2Trainer** and **ProteinPEClassifier**.
 The loader prefers `prepared.pt`, otherwise accepts a single `.pt` file in the
 selected directory. The data browser displays sequences, labels, and splits.
 

@@ -118,7 +118,7 @@ Run the standalone [preprocessing tool](MMseqs2Preprocessing/README.md) once to
 cluster PE-labelled FASTA sequences and save sequences, labels, fixed split
 membership, and provenance in a portable `.pt` file.
 
-Select the prepared directory with **MMseqs2Trainer** and **MMseqs2Classifier**.
+Select the prepared directory with **MMseqs2Trainer** and **ProteinPEClassifier**.
 The trainer preserves the cluster split, embeds sequences using frozen ProtT5,
 and trains a classification head on those embeddings. MMseqs2 is required only
 for preprocessing. Inference uses ProtT5 directly. See the tool README for setup,
