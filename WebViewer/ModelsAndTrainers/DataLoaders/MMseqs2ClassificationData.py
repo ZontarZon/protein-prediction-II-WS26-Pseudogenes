@@ -1,4 +1,4 @@
-"""Independent PE-labelled FASTA and homology feature preparation."""
+"""PE-labelled sequences, MMseqs2 cluster splits, and prepared dataset loading."""
 import hashlib
 import json
 import math
@@ -8,10 +8,7 @@ import torch
 
 from ModelsAndTrainers.DataLoaders.ProteinClassificationData import ProteinClassificationDataset
 
-FEATURE_VERSION = 1
-FEATURE_COUNT = 11
-DEFAULT_SETTINGS = {'identity': .5, 'coverage': .8, 'sensitivity': 7.5, 'evalue': .001,
-                    'max_seqs': 1000, 'cov_mode': 0,
+DEFAULT_SETTINGS = {'identity': .5, 'coverage': .8, 'cov_mode': 0,
                     'cluster_mode': 0, 'cluster_sensitivity': 7.5,
                     'cluster_evalue': .001, 'cluster_max_seqs': 1000,
                     'validation_percent': 20, 'seed': 7}
@@ -87,56 +84,19 @@ def split_records(records, assignments, settings):
     return train, valid
 
 
-def features(queries, reference, hit_path):
-    """Five maxima/count features per label, plus an explicit no-hit flag.
-
-    Identity/qcov/tcov are fractions; bits and retained hit counts use log1p.
-    Exclude all sequence-identical references for train/inference consistency.
-    """
-    query_map = {r['key']: r for r in queries}
-    reference_map = {r['key']: r for r in reference}
-    values = {key: [0.] * FEATURE_COUNT for key in query_map}
-    seen = set()
-    with hit_path.open() as stream:
-        for line in stream:
-            query, target, *numbers = line.rstrip('\n').split('\t')
-            if query not in query_map or target not in reference_map or len(numbers) != 4:
-                raise ValueError('Invalid MMseqs2 search result')
-            if (query, target) in seen:
-                continue
-            seen.add((query, target))
-            if query_map[query]['sequence'] == reference_map[target]['sequence']:
-                continue
-            identity, qcov, tcov, bits = map(float, numbers)
-            if not all(math.isfinite(x) for x in (identity, qcov, tcov, bits)) or not all(0 <= x <= 1 for x in (identity, qcov, tcov)) or bits < 0:
-                raise ValueError('Invalid MMseqs2 feature values')
-            offset = reference_map[target]['target'] * 5
-            row = values[query]
-            for i, value in enumerate((identity, qcov, tcov, math.log1p(bits))):
-                row[offset + i] = max(row[offset + i], value)
-            row[offset + 4] += 1
-    for row in values.values():
-        row[10] = float(row[4] + row[9] == 0)
-        row[4], row[9] = math.log1p(row[4]), math.log1p(row[9])
-    return torch.tensor([values[r['key']] for r in queries], dtype=torch.float32)
-
-
-PREPARED_VERSION = 2
+PREPARED_VERSION = 3
 
 
 def validate_settings(settings):
-    # Older prepared datasets used fixed max-seqs and clustering-only coverage.
-    required = {'identity', 'coverage', 'sensitivity', 'evalue', 'validation_percent', 'seed'}
+    required = {'identity', 'coverage', 'validation_percent', 'seed'}
     if not required <= set(settings) or set(settings) - set(DEFAULT_SETTINGS):
         raise ValueError('Incomplete preprocessing settings')
     if any(type(settings[k]) not in (int, float) or not math.isfinite(settings[k])
            for k in settings):
         raise ValueError('Preprocessing settings must be finite numbers')
     if not (0 <= settings['identity'] <= 1 and 0 < settings['coverage'] <= 1
-            and 1 <= settings['sensitivity'] <= 7.5 and settings['evalue'] > 0
             and type(settings['validation_percent']) is int and 1 <= settings['validation_percent'] <= 50
             and type(settings['seed']) is int and settings['seed'] >= 0
-            and type(settings.get('max_seqs', 1000)) is int and settings.get('max_seqs', 1000) > 0
             and type(settings.get('cov_mode', 0)) is int and 0 <= settings.get('cov_mode', 0) <= 5):
         raise ValueError('Invalid preprocessing thresholds or split settings')
     if (type(settings.get('cluster_mode', 0)) is not int or settings.get('cluster_mode', 0) not in (0, 1, 2)
@@ -169,36 +129,46 @@ def load_prepared(path):
         digest = hashlib.file_digest(stream, 'sha256').hexdigest()
         stream.seek(0)
         state = torch.load(stream, map_location='cpu', weights_only=True)
-    if not isinstance(state, dict) or state.get('prepared_version') != PREPARED_VERSION or state.get('feature_version') != FEATURE_VERSION:
-        raise ValueError('Unsupported preprocessed MMseqs2 dataset version. Regenerate with MMseqs2Preprocessing/preprocess.py (PE 1–2 versus PE 5).')
+    if not isinstance(state, dict) or state.get('prepared_version') != PREPARED_VERSION or state.get('dataset_kind') != 'mmseqs2_sequence_split':
+        raise ValueError('This trainer requires a sequence-split dataset. Regenerate with MMseqs2Preprocessing/preprocess.py; legacy 11-feature datasets lack validation sequences.')
     try:
         validate_settings(state['settings'])
-        if not state['reference'] or not isinstance(state['mmseqs_version'], str) or not isinstance(state['dataset_digest'], str):
-            raise ValueError('Missing preprocessing metadata or reference')
-        reference_keys = set()
-        for record in state['reference']:
-            if record['target'] not in (0, 1) or protein_sequence(record['sequence']) != record['sequence']:
-                raise ValueError('Invalid reference record')
-            reference_keys.add(record['key'])
-        split_keys = []
+        if not isinstance(state['mmseqs_version'], str) or not isinstance(state['dataset_digest'], str):
+            raise ValueError('Missing preprocessing metadata')
+        split_keys, split_sequences = [], []
         for name in ('train', 'validation'):
             partition = state[name]
-            values, targets = partition['features'], partition['targets']
-            if (not isinstance(values, torch.Tensor) or values.dtype != torch.float32
-                    or values.ndim != 2 or values.shape != (len(targets), FEATURE_COUNT)
-                    or not torch.isfinite(values).all() or (values < 0).any()
-                    or not isinstance(targets, torch.Tensor) or targets.dtype != torch.long
+            targets, records = partition['targets'], partition['records']
+            if (not isinstance(targets, torch.Tensor) or targets.dtype != torch.long
                     or targets.ndim != 1 or set(targets.tolist()) != {0, 1}
-                    or len(partition['records']) != len(targets)):
-                raise ValueError(f'Invalid {name} feature tensors or labels')
-            keys = [r['key'] for r in partition['records']]
-            if len(set(keys)) != len(keys):
-                raise ValueError('Duplicate split IDs')
-            split_keys.append(set(keys))
-        if split_keys[0] != reference_keys or split_keys[0] & split_keys[1]:
-            raise ValueError('Invalid training reference or overlapping partitions')
-        if [r['target'] for r in state['reference']] != state['train']['targets'].tolist() or [r['key'] for r in state['reference']] != [r['key'] for r in state['train']['records']]:
-            raise ValueError('Reference order/labels do not match training features')
+                    or len(records) != len(targets)):
+                raise ValueError(f'Invalid {name} labels or records')
+            keys, sequences = set(), set()
+            for record, target in zip(records, targets.tolist()):
+                if record['key'] in keys or record['target'] != target:
+                    raise ValueError('Duplicate IDs or inconsistent labels')
+                if protein_sequence(record['sequence']) != record['sequence']:
+                    raise ValueError('Invalid protein sequence')
+                keys.add(record['key'])
+                sequences.add(record['sequence'])
+            split_keys.append(keys)
+            split_sequences.append(sequences)
+        if split_keys[0] & split_keys[1] or split_sequences[0] & split_sequences[1]:
+            raise ValueError('Overlapping train/validation records or sequences')
     except (KeyError, TypeError, AttributeError, IndexError) as error:
         raise ValueError('Malformed preprocessed MMseqs2 dataset') from error
     return state, digest
+
+
+PREVIEW_EXTENSIONS = ('.pt',)
+
+
+def preview_records(path):
+    """Show sequence rows from the fixed MMseqs2 split."""
+    state, _ = load_prepared(path)
+    for split in ('train', 'validation'):
+        for record in state[split]['records']:
+            yield {'split': split, 'id': record['id'], 'key': record['key'],
+                   'target': record['target'],
+                   'label': 'PE 1–2' if record['target'] == 0 else 'PE 5',
+                   'sequence': record['sequence'], 'length': len(record['sequence'])}

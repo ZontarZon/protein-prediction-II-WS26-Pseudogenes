@@ -1,6 +1,8 @@
 """Frozen ProtT5 protein embeddings with a trainable binary classification head."""
 import re
 import gc
+import os
+from pathlib import Path
 from contextlib import nullcontext
 
 import torch
@@ -9,6 +11,22 @@ from torch import nn
 from backend.models.base import ModelBase
 
 CHECKPOINT = 'Rostlab/prot_t5_xl_half_uniref50-enc'
+
+
+def encoder_cache_directory():
+    """Use explicit HF overrides or a project cache that is mounted in Docker."""
+    configured = os.environ.get('HF_HUB_CACHE') or os.environ.get('HUGGINGFACE_HUB_CACHE')
+    if configured:
+        cache = Path(configured).expanduser()
+    elif os.environ.get('HF_HOME'):
+        cache = Path(os.environ['HF_HOME']).expanduser() / 'hub'
+    else:
+        cache = Path(__file__).resolve().parents[2] / '.cache' / 'huggingface' / 'hub'
+    try:
+        cache.mkdir(parents=True, exist_ok=True)
+    except PermissionError as error:
+        raise PermissionError(f'Cannot create model cache at {cache}. Set HF_HUB_CACHE to a writable directory.') from error
+    return str(cache)
 
 
 def sequence_input(value):
@@ -56,8 +74,9 @@ class ProteinPEClassifier(ModelBase):
         transformer_logging.disable_progress_bar()
         disable_progress_bars()
         device = next(self.head.parameters()).device
-        self.tokenizer = T5Tokenizer.from_pretrained(CHECKPOINT, do_lower_case=False)
-        self.encoder = T5EncoderModel.from_pretrained(CHECKPOINT, torch_dtype=torch.float16 if device.type == 'cuda' else torch.float32).to(device)
+        cache = encoder_cache_directory()
+        self.tokenizer = T5Tokenizer.from_pretrained(CHECKPOINT, do_lower_case=False, cache_dir=cache)
+        self.encoder = T5EncoderModel.from_pretrained(CHECKPOINT, cache_dir=cache, torch_dtype=torch.float16 if device.type == 'cuda' else torch.float32).to(device)
         self.encoder.requires_grad_(False)
         self.encoder.eval()
 

@@ -86,3 +86,14 @@ permission errors, run from an account with access to the Docker daemon.
 The requirements include PyTorch and CUDA packages, so the first installation
 can be large. GPU use additionally requires compatible host drivers and NVIDIA
 Container Toolkit; Docker does not install host drivers.
+
+### Protein encoder download cache
+
+ProtT5 downloads use `WebViewer/.cache/huggingface/hub` by default, inside the
+project mount rather than the unmounted host home directory. Docker sets
+`HF_HOME` to `WebViewer/.cache/huggingface`. The cache survives container
+replacement. After updating the launcher, run `./docker_run.sh --recreate`
+to apply the new environment; no image rebuild is needed.
+
+For a native backend, `HF_HUB_CACHE` (or `HF_HOME`) can override this location.
+The backend user must have write permission to the selected cache directory.

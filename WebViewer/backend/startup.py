@@ -78,6 +78,10 @@ def run_container(settings):
         if not any(parent == folder or parent in folder.parents for parent in mounts):
             mounts.append(folder)
 
+    # The host HOME is not mounted; keep HF downloads in persistent project storage.
+    hf_home = PROJECT_ROOT / '.cache' / 'huggingface'
+    hf_home.mkdir(parents=True, exist_ok=True)
+
     image = 'dnatrainer:local'
     if args.rebuild or inspect('image', image) is None:
         docker('build', '-t', image, '-f', str(PROJECT_ROOT / 'Dockerfile'), str(PROJECT_ROOT))
@@ -88,7 +92,7 @@ def run_container(settings):
     name = f'{default_name}-temp-{uuid.uuid4().hex[:8]}' if args.temporary else args.name
     signature = hashlib.sha256(json.dumps({
         'settings': settings, 'mounts': mounts, 'options': extra,
-        'uid': os.getuid(), 'gid': os.getgid(),
+        'uid': os.getuid(), 'gid': os.getgid(), 'hf_home': str(hf_home),
         'image': inspect('image', image)['Id'],
     }, default=str, sort_keys=True).encode()).hexdigest()
     existing = inspect('container', name)
@@ -107,6 +111,7 @@ def run_container(settings):
                '--user', f'{os.getuid()}:{os.getgid()}',
                '--workdir', str(PROJECT_ROOT),
                '--env', f'HOME={Path.home()}',
+               '--env', f'HF_HOME={hf_home}',
                '--env', 'DNATRAINER_BACKEND_HOST=0.0.0.0',
                '--label', f'dnatrainer.project={PROJECT_ROOT}',
                '--label', f'dnatrainer.configuration={signature}',

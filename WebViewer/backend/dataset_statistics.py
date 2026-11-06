@@ -46,6 +46,24 @@ class DatasetInventory:
         paths = [path] if path.is_file() else sorted(p for p in path.rglob('*') if p.is_file())
         suffixes = ('.fa', '.fasta', '.faa', '.fas', '.fa.gz', '.fasta.gz', '.faa.gz', '.fas.gz')
         fasta_paths = [p for p in paths if p.name.lower().endswith(suffixes)]
+        prepared_paths = [p for p in paths if p.suffix.lower() == '.pt']
+        if not fasta_paths and prepared_paths:
+            from ModelsAndTrainers.DataLoaders.MMseqs2ClassificationData import load_prepared
+            counts = Counter()
+            for prepared in prepared_paths:
+                state, _ = load_prepared(prepared)
+                for split in ('train', 'validation'):
+                    targets = state[split]['targets']
+                    counts[split] += len(targets)
+                    counts['real'] += int((targets == 0).sum())
+                    counts['fake'] += int((targets == 1).sum())
+            return {'total': counts['train'] + counts['validation'], 'unit': 'records',
+                    'file_count': len(paths),
+                    'groups': [{'key': 'real', 'label': 'Class 1 · Real (PE 1–2)', 'count': counts['real']},
+                               {'key': 'fake', 'label': 'Class 2 · Fake (PE 5)', 'count': counts['fake']}],
+                    'labels': [{'key': split, 'label': split.title(), 'count': counts[split]}
+                               for split in ('train', 'validation')],
+                    'note': 'Protein sequences with a fixed MMseqs2 training/validation split. PE 3–4 are excluded.'}
         if not fasta_paths:
             return {'total': len(paths), 'unit': 'files', 'file_count': len(paths),
                     'groups': [], 'labels': [], 'note': 'File count only; record-level counts are not available for this format.'}

@@ -115,13 +115,11 @@ and other workflows.
 ## Using MMseqs2 in this project
 
 Run the standalone [preprocessing tool](MMseqs2Preprocessing/README.md) once to
-create a portable `prepared.pt` dataset at a location you choose. It clusters
-and splits PE-labelled FASTA sequences, searches against the training reference,
-and saves the feature tensors and provenance.
+cluster PE-labelled FASTA sequences and save sequences, labels, fixed split
+membership, and provenance in a portable `.pt` file.
 
-Select the prepared dataset directory in WebViewer with **MMseqs2Trainer** and
-**MMseqs2Classifier**. Training loads saved features without invoking MMseqs2.
-The native executable is required for preprocessing and for predicting new
-sequences, using the version recorded in the prepared dataset/checkpoint.
-See the tool README for standalone venv setup, CLI options, dataset format,
-cache management, resume requirements, and verification.
+Select the prepared directory with **MMseqs2Trainer** and **MMseqs2Classifier**.
+The trainer preserves the cluster split, embeds sequences using frozen ProtT5,
+and trains a classification head on those embeddings. MMseqs2 is required only
+for preprocessing. Inference uses ProtT5 directly. See the tool README for setup,
+settings, and the required regeneration of legacy eleven-feature datasets.

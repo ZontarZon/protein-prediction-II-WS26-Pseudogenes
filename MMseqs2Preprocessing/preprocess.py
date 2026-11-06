@@ -18,26 +18,22 @@ CLUSTER_MODE = 0  # --cluster-mode: 0=set cover, 1=connected component, 2=greedy
 CLUSTER_SENSITIVITY = 7.5  # -s
 CLUSTER_EVALUE = 0.001  # -e
 CLUSTER_MAX_SEQS = 1000  # --max-seqs
-# Search controls feature generation; saved values are reused for inference.
-COVERAGE = 0.8  # -c (clustering and search)
+COVERAGE = 0.8  # -c
 COV_MODE = 0  # --cov-mode
-MAX_SEQS = 1000  # --max-seqs (search)
-SENSITIVITY = 7.5  # -s
-EVALUE = 0.001
 VALIDATION_PERCENT = 20
 SEED = 7
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'WebViewer'))
 
 from ModelsAndTrainers.DataLoaders.MMseqs2ClassificationData import (
-    DEFAULT_SETTINGS, FEATURE_VERSION, PREPARED_VERSION,
-    features, fingerprint, load_records, split_records, validate_settings,
+    DEFAULT_SETTINGS, PREPARED_VERSION,
+    fingerprint, load_records, split_records, validate_settings,
 )
 from ModelsAndTrainers.DataLoaders.MMseqs2Runner import MMseqs2Runner
 
 
 def prepare_dataset(input_path, output_path, cache, executable='mmseqs', threads=2, settings=None, report=print):
-    """Cluster labelled FASTA records and save portable train/validation features."""
+    """Cluster labelled FASTA records and save sequences with fixed train/validation membership."""
     settings = dict(DEFAULT_SETTINGS if settings is None else settings)
     validate_settings(settings)
     output_path = Path(output_path)
@@ -52,18 +48,13 @@ def prepare_dataset(input_path, output_path, cache, executable='mmseqs', threads
                                   evalue=settings.get('cluster_evalue', .001),
                                   max_seqs=settings.get('cluster_max_seqs', 1000))
     train, valid = split_records(records, assignments, settings)
-    state = {'prepared_version': PREPARED_VERSION, 'feature_version': FEATURE_VERSION,
+    state = {'prepared_version': PREPARED_VERSION, 'dataset_kind': 'mmseqs2_sequence_split',
              'dataset_digest': fingerprint(records), 'mmseqs_version': runner.version,
-             'settings': settings, 'reference': train}
+             'settings': settings}
     for name, partition in (('train', train), ('validation', valid)):
-        report(f'Preparing {name} features ({len(partition)} sequences)')
-        hits = runner.search(partition, train, cache, settings['sensitivity'], settings['evalue'],
-                             max_seqs=settings.get('max_seqs', 1000),
-                             coverage=settings['coverage'] if 'cov_mode' in settings else 0.,
-                             cov_mode=settings.get('cov_mode', 0))
-        state[name] = {'features': features(partition, train, hits),
-                       'targets': torch.tensor([r['target'] for r in partition], dtype=torch.long),
-                       'records': [{'key': r['key'], 'id': r['id']} for r in partition]}
+        report(f'Saving {name} sequences ({len(partition)} records)')
+        state[name] = {'targets': torch.tensor([r['target'] for r in partition], dtype=torch.long),
+                       'records': partition}
     # Publish only complete artifacts, even if an earlier preparation is interrupted.
     with tempfile.NamedTemporaryFile(dir=output_path.parent, suffix='.tmp', delete=False) as stream:
         temporary = Path(stream.name)
@@ -87,9 +78,6 @@ def main():
         'cluster_max_seqs': CLUSTER_MAX_SEQS,
         'coverage': COVERAGE,
         'cov_mode': COV_MODE,
-        'max_seqs': MAX_SEQS,
-        'sensitivity': SENSITIVITY,
-        'evalue': EVALUE,
         'validation_percent': VALIDATION_PERCENT,
         'seed': SEED,
     }
