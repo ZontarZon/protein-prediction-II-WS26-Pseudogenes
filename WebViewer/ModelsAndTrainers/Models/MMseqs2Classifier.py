@@ -67,7 +67,10 @@ class MMseqs2Classifier(ModelBase):
         if progress_callback:
             progress_callback(0, 1)
         hits = self.runner.search(queries, self.reference, Path(self._search_cache.name),
-                                  self.search_settings['sensitivity'], self.search_settings['evalue'])
+                                  self.search_settings['sensitivity'], self.search_settings['evalue'],
+                                  self.search_settings.get('max_seqs', 1000),
+                                  self.search_settings['coverage'] if 'cov_mode' in self.search_settings else 0.,
+                                  self.search_settings.get('cov_mode', 0))
         values = features(queries, self.reference, hits)
         with torch.no_grad():
             probabilities = self(values).softmax(-1)[0].tolist()

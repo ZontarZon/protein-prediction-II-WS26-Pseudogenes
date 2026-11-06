@@ -81,21 +81,26 @@ class MMseqs2Runner:
         work.mkdir(parents=True, exist_ok=True)
         return work
 
-    def clusters(self, records, root, identity, coverage):
-        settings = {'identity': identity, 'coverage': coverage}
+    def clusters(self, records, root, identity, coverage, cov_mode=0, cluster_mode=0,
+                 sensitivity=7.5, evalue=.001, max_seqs=1000):
+        settings = {'identity': identity, 'coverage': coverage, 'cov_mode': cov_mode,
+                    'cluster_mode': cluster_mode, 'sensitivity': sensitivity,
+                    'evalue': evalue, 'max_seqs': max_seqs}
         work = self.prepare(records, root, settings, 'cluster')
         result = work / 'clusters_cluster.tsv'
         if not (work / 'complete.json').exists():
             self.write_fasta(records, work / 'input.fasta')
             self.run(['easy-cluster', work / 'input.fasta', work / 'clusters', work / 'tmp',
-                      '--min-seq-id', identity, '-c', coverage, '--cov-mode', '0', '--dbtype', '1', '--threads', self.threads])
+                      '--cluster-mode', cluster_mode, '-s', sensitivity, '-e', evalue, '--max-seqs', max_seqs,
+                      '--min-seq-id', identity, '-c', coverage, '--cov-mode', cov_mode, '--dbtype', '1', '--threads', self.threads])
             if not result.is_file():
                 raise RuntimeError('MMseqs2 did not produce cluster assignments')
             (work / 'complete.json').write_text(json.dumps(settings))
         return [line.split('\t') for line in result.read_text().splitlines() if line]
 
-    def search(self, queries, reference, root, sensitivity, evalue):
-        settings = {'sensitivity': sensitivity, 'evalue': evalue}
+    def search(self, queries, reference, root, sensitivity, evalue, max_seqs=1000, coverage=0., cov_mode=0):
+        settings = {'sensitivity': sensitivity, 'evalue': evalue, 'max_seqs': max_seqs,
+                    'coverage': coverage, 'cov_mode': cov_mode}
         work = self.prepare([queries, reference], root, settings, 'search')
         result = work / 'hits.tsv'
         if not (work / 'complete.json').exists():
@@ -107,7 +112,7 @@ class MMseqs2Runner:
                 (database / 'complete.json').write_text('{}')
             self.run(['easy-search', work / 'query.fasta', database / 'reference_db', result, work / 'tmp',
                       '-s', sensitivity, '-e', evalue, '--threads', self.threads, '--search-type', '1', '--dbtype', '1',
-                      '--alignment-mode', '3', '--max-seqs', '1000', '--format-output', 'query,target,fident,qcov,tcov,bits'])
+                      '--alignment-mode', '3', '--max-seqs', max_seqs, '-c', coverage, '--cov-mode', cov_mode, '--format-output', 'query,target,fident,qcov,tcov,bits'])
             if not result.is_file():
                 raise RuntimeError('MMseqs2 did not produce search results')
             (work / 'complete.json').write_text(json.dumps(settings))

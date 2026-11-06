@@ -10,7 +10,10 @@ from ModelsAndTrainers.DataLoaders.ProteinClassificationData import ProteinClass
 
 FEATURE_VERSION = 1
 FEATURE_COUNT = 11
-DEFAULT_SETTINGS = {'identity': .5, 'coverage': .8, 'sensitivity': 5.7, 'evalue': .001,
+DEFAULT_SETTINGS = {'identity': .5, 'coverage': .8, 'sensitivity': 7.5, 'evalue': .001,
+                    'max_seqs': 1000, 'cov_mode': 0,
+                    'cluster_mode': 0, 'cluster_sensitivity': 7.5,
+                    'cluster_evalue': .001, 'cluster_max_seqs': 1000,
                     'validation_percent': 20, 'seed': 7}
 
 
@@ -122,7 +125,9 @@ PREPARED_VERSION = 2
 
 
 def validate_settings(settings):
-    if set(settings) != set(DEFAULT_SETTINGS):
+    # Older prepared datasets used fixed max-seqs and clustering-only coverage.
+    required = {'identity', 'coverage', 'sensitivity', 'evalue', 'validation_percent', 'seed'}
+    if not required <= set(settings) or set(settings) - set(DEFAULT_SETTINGS):
         raise ValueError('Incomplete preprocessing settings')
     if any(type(settings[k]) not in (int, float) or not math.isfinite(settings[k])
            for k in settings):
@@ -130,52 +135,34 @@ def validate_settings(settings):
     if not (0 <= settings['identity'] <= 1 and 0 < settings['coverage'] <= 1
             and 1 <= settings['sensitivity'] <= 7.5 and settings['evalue'] > 0
             and type(settings['validation_percent']) is int and 1 <= settings['validation_percent'] <= 50
-            and type(settings['seed']) is int and settings['seed'] >= 0):
+            and type(settings['seed']) is int and settings['seed'] >= 0
+            and type(settings.get('max_seqs', 1000)) is int and settings.get('max_seqs', 1000) > 0
+            and type(settings.get('cov_mode', 0)) is int and 0 <= settings.get('cov_mode', 0) <= 5):
         raise ValueError('Invalid preprocessing thresholds or split settings')
-
-
-def prepare_dataset(input_path, output_path, cache, executable='mmseqs', threads=2, settings=None, report=print):
-    """Prepare portable training features; MMseqs2 is only invoked here/in inference."""
-    from pathlib import Path
-    import tempfile
-    from ModelsAndTrainers.DataLoaders.MMseqs2Runner import MMseqs2Runner
-
-    settings = dict(DEFAULT_SETTINGS if settings is None else settings)
-    validate_settings(settings)
-    output_path = Path(output_path)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    report('Loading PE-labelled FASTA records')
-    records = load_records(input_path)
-    runner = MMseqs2Runner(executable, threads)
-    report('Clustering sequences')
-    assignments = runner.clusters(records, cache, settings['identity'], settings['coverage'])
-    train, valid = split_records(records, assignments, settings)
-    state = {'prepared_version': PREPARED_VERSION, 'feature_version': FEATURE_VERSION,
-             'dataset_digest': fingerprint(records), 'mmseqs_version': runner.version,
-             'settings': settings, 'reference': train}
-    for name, partition in (('train', train), ('validation', valid)):
-        report(f'Preparing {name} features ({len(partition)} sequences)')
-        hits = runner.search(partition, train, cache, settings['sensitivity'], settings['evalue'])
-        state[name] = {'features': features(partition, train, hits),
-                       'targets': torch.tensor([r['target'] for r in partition], dtype=torch.long),
-                       'records': [{'key': r['key'], 'id': r['id']} for r in partition]}
-    # Publish only complete artifacts, even if an earlier preparation is interrupted.
-    with tempfile.NamedTemporaryFile(dir=output_path.parent, suffix='.tmp', delete=False) as stream:
-        temporary = Path(stream.name)
-    try:
-        torch.save(state, temporary)
-        temporary.replace(output_path)
-    finally:
-        temporary.unlink(missing_ok=True)
-    report(f'Saved {output_path}')
+    if (type(settings.get('cluster_mode', 0)) is not int or settings.get('cluster_mode', 0) not in (0, 1, 2)
+            or not 1 <= settings.get('cluster_sensitivity', 7.5) <= 7.5
+            or settings.get('cluster_evalue', .001) <= 0
+            or type(settings.get('cluster_max_seqs', 1000)) is not int
+            or settings.get('cluster_max_seqs', 1000) <= 0):
+        raise ValueError('Invalid clustering settings')
 
 
 def load_prepared(path):
-    """Load a validated artifact (or dataset directory containing prepared.pt)."""
+    """Load an artifact, preferring prepared.pt or a single .pt file in a directory."""
     from pathlib import Path
     path = Path(path)
     if path.is_dir():
-        path = path / 'prepared.pt'
+        canonical = path / 'prepared.pt'
+        if canonical.is_file():
+            path = canonical
+        else:
+            candidates = sorted(p for p in path.iterdir() if p.is_file() and p.suffix.lower() == '.pt')
+            if len(candidates) > 1:
+                names = ', '.join(p.name for p in candidates)
+                raise ValueError(f'Multiple .pt files in {path}: {names}. Name the intended dataset prepared.pt or select its file path directly.')
+            if not candidates:
+                raise ValueError(f'No preprocessed .pt dataset found in {path}. Run MMseqs2Preprocessing/preprocess.py first.')
+            path = candidates[0]
     if not path.is_file():
         raise ValueError(f'Preprocessed dataset not found: {path}. Run MMseqs2Preprocessing/preprocess.py first.')
     with path.open('rb') as stream:
