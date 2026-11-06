@@ -8,6 +8,7 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'WebViewer'))
 import torch
 from ModelsAndTrainers.DataLoaders.MMseqs2ClassificationData import prepare_dataset, load_prepared
+from ModelsAndTrainers.DataLoaders.ProteinClassificationData import ProteinClassificationDataset
 from ModelsAndTrainers.Models.MMseqs2Classifier import MMseqs2Classifier
 from ModelsAndTrainers.Trainers.MMseqs2Trainer import MMseqs2Trainer
 
@@ -31,6 +32,17 @@ class FakeRunner:
 
 
 class PreparedWorkflowTest(unittest.TestCase):
+    def test_pe_filter(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            fasta = Path(tmp) / 'labels.fasta'
+            fasta.write_text(''.join(f'>p{pe} PE={pe}\nMAK\n' for pe in range(1, 6)))
+            records = list(ProteinClassificationDataset(fasta))
+            self.assertEqual([r['pe'] for r in records], [1, 2, 5])
+            self.assertEqual([r['target'] for r in records], [0, 0, 1])
+            fasta.write_text('>bad PE=10\nMAK\n')
+            with self.assertRaises(ValueError):
+                list(ProteinClassificationDataset(fasta))
+
     def test_prepare_train_resume_without_mmseqs(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

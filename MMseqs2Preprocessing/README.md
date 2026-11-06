@@ -15,8 +15,8 @@ Before running, edit the settings at the top of `preprocess.py`, especially
 `INPUT_PATH` and `OUTPUT_PATH`. No command-line arguments are needed.
 
 `INPUT_PATH` accepts a FASTA file or a directory of FASTA files, including gzip.
-Headers must contain exactly one `PE=1..5` label. PE 1–4 maps to class 0, PE 5 to
-class 1; these are evidence labels, not pseudogene labels. Both resulting
+Headers must contain exactly one `PE=1..5` label. PE 1–2 maps to class 0, PE 5 to
+class 1. PE 3 and 4 entries are skipped; these are evidence labels, not pseudogene labels. Both resulting
 partitions must contain both classes.
 
 Set `EXECUTABLE` to an absolute path when `mmseqs` is not on PATH. All settings
@@ -64,3 +64,6 @@ Run the focused integration checks with:
 ```bash
 python -m unittest discover -s MMseqs2Preprocessing/tests -v
 ```
+
+Prepared files from the previous PE 1–4 policy are rejected. Regenerate them
+with this script to use only PE 1–2 versus PE 5.

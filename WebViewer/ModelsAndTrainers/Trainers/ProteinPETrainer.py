@@ -17,11 +17,11 @@ from ModelsAndTrainers.Models.ProteinPEClassifier import sequence_input
 
 class ProteinPETrainer(TrainerBase):
     classifier = model('Protein classifier', choices=['ProteinPEClassifier'], interface='protein_pe_classifier')
-    training_data = dataset('PE-labelled FASTA data', 'A FASTA file or directory of plain/gzip FASTA files. PE 1–4 = true; PE 5 = false.')
+    training_data = dataset('PE-labelled FASTA data', 'A FASTA file or directory of plain/gzip FASTA files. PE 1–2 = true; PE 5 = false.')
     epochs = hyperparameter('Epochs', 'integer', 3)
     batch_size = hyperparameter('Batch size', 'integer', 2, minimum=1)
     learning_rate = hyperparameter('Learning rate', 'float', 0.001)
-    subset_real_count = hyperparameter('Subset count · Real', 'integer', 0, description='0 uses all PE 1–4 entries. A positive count samples at most this many per run.', dataset_control=True, minimum=0)
+    subset_real_count = hyperparameter('Subset count · Real', 'integer', 0, description='0 uses all PE 1–2 entries. A positive count samples at most this many per run.', dataset_control=True, minimum=0)
     subset_fake_count = hyperparameter('Subset count · Fake', 'integer', 0, description='0 uses all PE 5 entries. A positive count samples at most this many per run.', dataset_control=True, minimum=0)
     validation_percent = hyperparameter('Validation percentage', 'integer', 20, minimum=1, maximum=50)
 
@@ -67,7 +67,7 @@ class ProteinPETrainer(TrainerBase):
             sequence_input(record['sequence'])  # Use the same validity rules as training.
             counts[record['target']] += 1
         return {'objective': 'classification', 'total': sum(counts),
-                'groups': [{'key': 'real', 'label': 'Class 1 · Real (PE 1–4)', 'count': counts[0], 'subset_parameter': 'subset_real_count'},
+                'groups': [{'key': 'real', 'label': 'Class 1 · Real (PE 1–2)', 'count': counts[0], 'subset_parameter': 'subset_real_count'},
                            {'key': 'fake', 'label': 'Class 2 · Fake (PE 5)', 'count': counts[1], 'subset_parameter': 'subset_fake_count'}],
                 'validation_parameter': 'validation_percent',
                 'note': 'Batch counts are estimates: identical sequences stay together, which may slightly change the split.'}

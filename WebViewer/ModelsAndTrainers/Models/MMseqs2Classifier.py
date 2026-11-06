@@ -15,7 +15,7 @@ from ModelsAndTrainers.DataLoaders.MMseqs2ClassificationData import (
 class MMseqs2Classifier(ModelBase):
     model_id = 'MMseqs2Classifier'
     display_name = 'MMseqs2 PE classifier'
-    description = 'Homology features and a binary head for UniProt PE 1–4 versus PE 5 evidence labels.'
+    description = 'Homology features and a binary head for UniProt PE 1–2 versus PE 5 evidence labels.'
     category = 'protein classification'
     interfaces = ['mmseqs2_pe_classifier']
     inputs = [{'key': 'sequence', 'type': 'text', 'label': 'Protein sequence or single FASTA entry'}]
@@ -73,7 +73,7 @@ class MMseqs2Classifier(ModelBase):
             probabilities = self(values).softmax(-1)[0].tolist()
         if progress_callback:
             progress_callback(1, 1)
-        return {'classes': [{'label': 'PE 1–4', 'probability': probabilities[0]},
+        return {'classes': [{'label': 'PE 1–2', 'probability': probabilities[0]},
                             {'label': 'PE 5', 'probability': probabilities[1]}],
                 'residues': len(sequence), 'no_hits': bool(values[0, 10]), 'execution_device': 'cpu',
                 'note': 'PE labels describe existence evidence, not pseudogene status. Probabilities are not calibrated certainty.'}

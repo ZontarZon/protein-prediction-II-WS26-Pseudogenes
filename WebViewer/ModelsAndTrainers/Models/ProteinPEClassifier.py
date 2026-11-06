@@ -26,7 +26,7 @@ def sequence_input(value):
 class ProteinPEClassifier(ModelBase):
     model_id = 'ProteinPEClassifier'
     display_name = 'ProtT5 PE classifier'
-    description = 'Frozen protein embeddings and a binary head: PE 1–4 (Real), PE 5 (Fake). These labels describe UniProt existence evidence, not biological authenticity.'
+    description = 'Frozen protein embeddings and a binary head: PE 1–2 (Real), PE 5 (Fake). These labels describe UniProt existence evidence, not biological authenticity.'
     category = 'protein classification'
     inputs = [{'key': 'sequence', 'type': 'text', 'label': 'Protein sequence or single FASTA entry'}]
     output = {'type': 'classification', 'label': 'Real / Fake probabilities'}
@@ -224,4 +224,4 @@ class ProteinPEClassifier(ModelBase):
                 **({'attribution': explanation} if explanation is not None else {}),
                 'execution_device': str(next(self.head.parameters()).device),
                 **({'memory_fallback': self._inference_fallback} if getattr(self, '_inference_fallback', None) else {}),
-                'residues': len(sequence), 'note': 'Model probabilities are not calibrated certainty. Real = PE 1–4; Fake = PE 5 (uncertain existence).'}
+                'residues': len(sequence), 'note': 'Model probabilities are not calibrated certainty. Real = PE 1–2; Fake = PE 5 (uncertain existence).'}

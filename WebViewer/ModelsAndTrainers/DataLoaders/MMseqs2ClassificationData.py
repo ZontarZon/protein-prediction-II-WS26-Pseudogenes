@@ -118,7 +118,7 @@ def features(queries, reference, hit_path):
     return torch.tensor([values[r['key']] for r in queries], dtype=torch.float32)
 
 
-PREPARED_VERSION = 1
+PREPARED_VERSION = 2
 
 
 def validate_settings(settings):
@@ -183,7 +183,7 @@ def load_prepared(path):
         stream.seek(0)
         state = torch.load(stream, map_location='cpu', weights_only=True)
     if not isinstance(state, dict) or state.get('prepared_version') != PREPARED_VERSION or state.get('feature_version') != FEATURE_VERSION:
-        raise ValueError('Unsupported preprocessed MMseqs2 dataset version')
+        raise ValueError('Unsupported preprocessed MMseqs2 dataset version. Regenerate with MMseqs2Preprocessing/preprocess.py (PE 1–2 versus PE 5).')
     try:
         validate_settings(state['settings'])
         if not state['reference'] or not isinstance(state['mmseqs_version'], str) or not isinstance(state['dataset_digest'], str):
