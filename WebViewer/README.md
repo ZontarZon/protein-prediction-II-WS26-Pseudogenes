@@ -31,9 +31,13 @@ next time. Reusable mode leaves the container running in the background and
 prints commands to view logs and stop it. Bind-mounted files survive container
 removal or replacement.
 
-The Docker backend includes MMseqs2 on `PATH`. Leave **MMseqs2 executable**
-set to `mmseqs` when using its trainer/classifier. Run `./docker_run.sh --rebuild`
-to add it to an existing installation; no host MMseqs2 installation is required.
+The Docker backend includes MMseqs2 on `PATH` for sequence inference.
+Prepare training data once with the standalone
+[MMseqs2 preprocessing tool](../MMseqs2Preprocessing/README.md), then select its
+output dataset directory in MMseqs2Trainer. Training loads saved features and
+does not invoke MMseqs2. Leave the inference executable set to `mmseqs`.
+Run `./docker_run.sh --rebuild` to add it to an existing installation. Standalone
+preprocessing requires MMseqs2 installed on the host.
 
 Wait for Docker startup to print `Ready`, then open
 **http://localhost:25565** (or the `backend_port` in settings).

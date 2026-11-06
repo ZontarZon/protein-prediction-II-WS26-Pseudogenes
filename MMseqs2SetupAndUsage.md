@@ -114,107 +114,14 @@ and other workflows.
 
 ## Using MMseqs2 in this project
 
-**After installing and configuring the executable, starting the MMseqs2 training
-run is sufficient.** The project invokes the CLI automatically. You do not need
-to run the commands above, prepare MMseqs2 databases manually, or download a
-public reference database. MMseqs2 is used specifically by `MMseqs2Trainer` and
-`MMseqs2Classifier`; selecting another model does not enable it automatically.
+Run the standalone [preprocessing tool](MMseqs2Preprocessing/README.md) once to
+create a portable `prepared.pt` dataset at a location you choose. It clusters
+and splits PE-labelled FASTA sequences, searches against the training reference,
+and saves the feature tensors and provenance.
 
-1. Start WebViewer with its normal project dependencies installed.
-2. In **New Run**, select **MMseqs2Trainer** and **MMseqs2Classifier**.
-3. Select the directory containing your PE-labelled protein FASTA dataset.
-4. Leave **MMseqs2 executable** as `mmseqs` if the backend can find it on `PATH`;
-   otherwise enter the absolute executable path visible to the backend.
-5. Set **MMseqs2 CPU threads** and the desired training/search settings, then start
-   the run. Both MMseqs2 and the classifier run on CPU; no GPU is required.
-
-The trainer automatically reads the dataset, clusters sequences, splits whole
-clusters into training/validation partitions, builds a reference database from
-training entries, searches both partitions against it, and trains a small neural
-classifier on the resulting features. For checkpoint inference, it automatically
-rebuilds the reference database and searches the supplied sequence.
-
-### Dataset format
-
-Select a dataset directory containing `.fasta`, `.fa`, `.faa`, `.fas` files
-(optionally gzip-compressed). Each protein header needs exactly one `PE=1..5`:
-
-```fasta
->protein-a PE=1
-MKWVTFISLLFLFSSAYS
->protein-b PE=5
-MNNIRRVAILGASV
-```
-
-This example illustrates formatting only; training needs both classes in both
-cluster partitions. PE 1–4 is class 0; PE 5 is class 1. These are UniProt existence
-evidence labels, **not pseudogene or biological authenticity labels**. Duplicate
-original IDs are supported through internal sequence IDs. Empty sequences,
-non-amino-acid symbols, gaps and stop markers are rejected.
-
-### Features and validation
-
-`easy-cluster` uses configurable identity/coverage thresholds and coverage mode
-0. Entire clusters and exact duplicate sequences remain in one partition.
-A seeded cluster shuffle selects approximately the requested validation fraction;
-large clusters can make the actual percentage differ. If either partition lacks
-a class, training fails with an actionable error. Adjust the seed/percentage or
-provide more independent clusters. Clustering reduces homology leakage but does
-not certify a strict pairwise similarity bound across partitions.
-
-Only training entries form the `createdb` search reference. `easy-search` uses
-protein search, exact identity calculation, a configurable E-value/sensitivity,
-and at most 1,000 prefilter candidates per query. Features exclude references
-with a sequence identical to the query, including duplicate entries. For each
-reference label: maximum identity, query coverage, target coverage, log1p bit
-score, and log1p retained hit count. The eleventh feature flags no retained hits.
-Counts and maxima describe the returned hits, not an exhaustive homology census.
-Validation labels never contribute to reference features. A small neural head
-learns from these eleven features; no protein language model is downloaded.
-
-### Artifacts and inference
-
-Run outputs contain `mmseqs2_cache/` (databases, FASTA and hits),
-`mmseqs2_manifest.json` (input hash, sequence ID mapping, split and parameters),
-and `checkpoints/*.pt` plus JSON metric sidecars. Cache keys include inputs,
-settings and MMseqs2 version; incomplete command caches are rebuilt. FASTA
-records and feature tensors are currently held in memory, so start with a
-moderate dataset. MMseqs2 also needs temporary disk space for its databases.
-
-Checkpoints embed classifier weights, optimizer, reference records, feature
-version and search/split settings. Resume checks the dataset hash and requires
-matching architecture, settings and MMseqs2 version. Stopping before reference
-preparation creates a resumable checkpoint that is not yet usable for inference.
-Mid-epoch stops resume that epoch using the saved current weights.
-
-For inference, select the checkpoint, enter a single protein sequence/FASTA entry,
-and set the executable path if needed. The executable version must match training.
-The reference database is rebuilt in temporary storage from the checkpoint;
-copying the `.pt` file is sufficient for the model data. Results contain PE-class
-probabilities and a no-hit flag. Scores are uncalibrated; no-hit predictions rely
-on the learned head's prior. Exported weights alone do not contain the reference
-records needed for sequence inference.
-
-## Troubleshooting
-
-- **Executable not found:** run `mmseqs version` in the backend environment, or
-  provide an absolute path. Restart the backend after changing its environment.
-- **Illegal instruction:** use a binary compatible with the backend CPU, or build
-  on that machine.
-- **Version mismatch during resume/inference:** use the same MMseqs2 version that
-  created the checkpoint; the project checks the reported version string.
-- **Missing class in a partition:** supply more independent clusters or adjust
-  the split seed/validation percentage.
-- **Search or clustering fails:** check the reported command output, available
-  RAM, and writable space for run caches and temporary files.
-
-## Verification
-
-```bash
-python -m unittest discover -s WebViewer/tests -v
-```
-
-Tests use a deterministic CLI double to exercise discovery, training, feature
-exclusion, duplicate splitting, portable inference, resume, changed-input
-rejection, command failures and stop handling. A real MMseqs2 executable is still
-needed to validate search behaviour and performance on biological datasets.
+Select the prepared dataset directory in WebViewer with **MMseqs2Trainer** and
+**MMseqs2Classifier**. Training loads saved features without invoking MMseqs2.
+The native executable is required for preprocessing and for predicting new
+sequences, using the version recorded in the prepared dataset/checkpoint.
+See the tool README for standalone venv setup, CLI options, dataset format,
+cache management, resume requirements, and verification.

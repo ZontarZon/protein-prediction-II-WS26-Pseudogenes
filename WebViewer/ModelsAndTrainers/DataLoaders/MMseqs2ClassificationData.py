@@ -116,3 +116,102 @@ def features(queries, reference, hit_path):
         row[10] = float(row[4] + row[9] == 0)
         row[4], row[9] = math.log1p(row[4]), math.log1p(row[9])
     return torch.tensor([values[r['key']] for r in queries], dtype=torch.float32)
+
+
+PREPARED_VERSION = 1
+
+
+def validate_settings(settings):
+    if set(settings) != set(DEFAULT_SETTINGS):
+        raise ValueError('Incomplete preprocessing settings')
+    if any(type(settings[k]) not in (int, float) or not math.isfinite(settings[k])
+           for k in settings):
+        raise ValueError('Preprocessing settings must be finite numbers')
+    if not (0 <= settings['identity'] <= 1 and 0 < settings['coverage'] <= 1
+            and 1 <= settings['sensitivity'] <= 7.5 and settings['evalue'] > 0
+            and type(settings['validation_percent']) is int and 1 <= settings['validation_percent'] <= 50
+            and type(settings['seed']) is int and settings['seed'] >= 0):
+        raise ValueError('Invalid preprocessing thresholds or split settings')
+
+
+def prepare_dataset(input_path, output_path, cache, executable='mmseqs', threads=2, settings=None, report=print):
+    """Prepare portable training features; MMseqs2 is only invoked here/in inference."""
+    from pathlib import Path
+    import tempfile
+    from ModelsAndTrainers.DataLoaders.MMseqs2Runner import MMseqs2Runner
+
+    settings = dict(DEFAULT_SETTINGS if settings is None else settings)
+    validate_settings(settings)
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    report('Loading PE-labelled FASTA records')
+    records = load_records(input_path)
+    runner = MMseqs2Runner(executable, threads)
+    report('Clustering sequences')
+    assignments = runner.clusters(records, cache, settings['identity'], settings['coverage'])
+    train, valid = split_records(records, assignments, settings)
+    state = {'prepared_version': PREPARED_VERSION, 'feature_version': FEATURE_VERSION,
+             'dataset_digest': fingerprint(records), 'mmseqs_version': runner.version,
+             'settings': settings, 'reference': train}
+    for name, partition in (('train', train), ('validation', valid)):
+        report(f'Preparing {name} features ({len(partition)} sequences)')
+        hits = runner.search(partition, train, cache, settings['sensitivity'], settings['evalue'])
+        state[name] = {'features': features(partition, train, hits),
+                       'targets': torch.tensor([r['target'] for r in partition], dtype=torch.long),
+                       'records': [{'key': r['key'], 'id': r['id']} for r in partition]}
+    # Publish only complete artifacts, even if an earlier preparation is interrupted.
+    with tempfile.NamedTemporaryFile(dir=output_path.parent, suffix='.tmp', delete=False) as stream:
+        temporary = Path(stream.name)
+    try:
+        torch.save(state, temporary)
+        temporary.replace(output_path)
+    finally:
+        temporary.unlink(missing_ok=True)
+    report(f'Saved {output_path}')
+
+
+def load_prepared(path):
+    """Load a validated artifact (or dataset directory containing prepared.pt)."""
+    from pathlib import Path
+    path = Path(path)
+    if path.is_dir():
+        path = path / 'prepared.pt'
+    if not path.is_file():
+        raise ValueError(f'Preprocessed dataset not found: {path}. Run MMseqs2Preprocessing/preprocess.py first.')
+    with path.open('rb') as stream:
+        digest = hashlib.file_digest(stream, 'sha256').hexdigest()
+        stream.seek(0)
+        state = torch.load(stream, map_location='cpu', weights_only=True)
+    if not isinstance(state, dict) or state.get('prepared_version') != PREPARED_VERSION or state.get('feature_version') != FEATURE_VERSION:
+        raise ValueError('Unsupported preprocessed MMseqs2 dataset version')
+    try:
+        validate_settings(state['settings'])
+        if not state['reference'] or not isinstance(state['mmseqs_version'], str) or not isinstance(state['dataset_digest'], str):
+            raise ValueError('Missing preprocessing metadata or reference')
+        reference_keys = set()
+        for record in state['reference']:
+            if record['target'] not in (0, 1) or protein_sequence(record['sequence']) != record['sequence']:
+                raise ValueError('Invalid reference record')
+            reference_keys.add(record['key'])
+        split_keys = []
+        for name in ('train', 'validation'):
+            partition = state[name]
+            values, targets = partition['features'], partition['targets']
+            if (not isinstance(values, torch.Tensor) or values.dtype != torch.float32
+                    or values.ndim != 2 or values.shape != (len(targets), FEATURE_COUNT)
+                    or not torch.isfinite(values).all() or (values < 0).any()
+                    or not isinstance(targets, torch.Tensor) or targets.dtype != torch.long
+                    or targets.ndim != 1 or set(targets.tolist()) != {0, 1}
+                    or len(partition['records']) != len(targets)):
+                raise ValueError(f'Invalid {name} feature tensors or labels')
+            keys = [r['key'] for r in partition['records']]
+            if len(set(keys)) != len(keys):
+                raise ValueError('Duplicate split IDs')
+            split_keys.append(set(keys))
+        if split_keys[0] != reference_keys or split_keys[0] & split_keys[1]:
+            raise ValueError('Invalid training reference or overlapping partitions')
+        if [r['target'] for r in state['reference']] != state['train']['targets'].tolist() or [r['key'] for r in state['reference']] != [r['key'] for r in state['train']['records']]:
+            raise ValueError('Reference order/labels do not match training features')
+    except (KeyError, TypeError, AttributeError, IndexError) as error:
+        raise ValueError('Malformed preprocessed MMseqs2 dataset') from error
+    return state, digest

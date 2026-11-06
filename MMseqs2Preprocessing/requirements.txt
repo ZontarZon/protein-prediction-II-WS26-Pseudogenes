@@ -1,0 +1,2 @@
+# Python 3.11+; MMseqs2 is a separate native executable, not a pip dependency.
+torch>=2.5,<3
