@@ -115,8 +115,11 @@ and other workflows.
 ## Using MMseqs2 in this project
 
 Run the standalone [preprocessing tool](MMseqs2Preprocessing/README.md) once to
-cluster PE-labelled FASTA sequences and save sequences, labels, fixed split
-membership, and provenance in a portable `.pt` file.
+match FASTA accessions to UniProt caution annotations, select PE5 entries with
+the pseudogene caution and PE1/PE2 comparators without that caution, cluster
+sequences, and save labels, fixed
+split membership, and provenance in a portable `.pt` file. It requires a TSV
+annotation export from the same UniProt release as the FASTA.
 
 Select the prepared directory with **MMseqs2Trainer** and **ProteinPEClassifier**.
 The trainer preserves the cluster split, embeds sequences using frozen ProtT5,

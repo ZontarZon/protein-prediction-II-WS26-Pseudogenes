@@ -43,11 +43,11 @@ def sequence_input(value):
 
 class ProteinPEClassifier(ModelBase):
     model_id = 'ProteinPEClassifier'
-    display_name = 'ProtT5 PE classifier'
-    description = 'Frozen protein embeddings and a binary head: PE 1–2 (Real), PE 5 (Fake). These labels describe UniProt existence evidence, not biological authenticity.'
+    display_name = 'ProtT5 pseudogene classifier'
+    description = 'Frozen protein embeddings and a binary head: PE5 entries with the UniProt pseudogene caution versus PE1/PE2 entries without that caution.'
     category = 'protein classification'
     inputs = [{'key': 'sequence', 'type': 'text', 'label': 'Protein sequence or single FASTA entry'}]
-    output = {'type': 'classification', 'label': 'Real / Fake probabilities'}
+    output = {'type': 'classification', 'label': 'PE5 pseudogene-caution / PE1-2 comparison probabilities'}
     interfaces = ['protein_pe_classifier']
     inference_parameters = [{'key': 'sequence', 'type': 'text', 'label': 'Protein sequence or FASTA entry', 'required': True},
                             {'key': 'device', 'type': 'selection', 'label': 'Device', 'options': ['cpu', 'cuda'], 'default': 'cpu'},
@@ -238,9 +238,9 @@ class ProteinPEClassifier(ModelBase):
         explanation = self.explain_sequence(sequence, progress_callback=progress_callback) if inputs.get('explain') is True else None
         if progress_callback:
             progress_callback(total_steps, total_steps)
-        return {'classes': [{'label': 'Class 1 (Real value)', 'probability': probabilities[0]},
-                            {'label': 'Class 2 (Fake value)', 'probability': probabilities[1]}],
+        return {'classes': [{'label': 'PE5 + pseudogene caution', 'probability': probabilities[0]},
+                            {'label': 'PE1/PE2 without caution', 'probability': probabilities[1]}],
                 **({'attribution': explanation} if explanation is not None else {}),
                 'execution_device': str(next(self.head.parameters()).device),
                 **({'memory_fallback': self._inference_fallback} if getattr(self, '_inference_fallback', None) else {}),
-                'residues': len(sequence), 'note': 'Model probabilities are not calibrated certainty. Real = PE 1–2; Fake = PE 5 (uncertain existence).'}
+                'residues': len(sequence), 'note': 'Model probabilities are not calibrated certainty. Class 0 is PE5 with the UniProt pseudogene caution; class 1 is PE1/PE2 without that caution.'}

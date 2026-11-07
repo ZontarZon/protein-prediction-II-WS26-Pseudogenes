@@ -26,8 +26,8 @@
   height: 0.65rem;
   border-radius: 50%;
 }
-.classification-dot.real { background: #4cbfa5; }
-.classification-dot.fake { background: #e99167; }
+.classification-dot.pseudogene { background: #4cbfa5; }
+.classification-dot.functional { background: #e99167; }
 .sequence-attribution { margin-top: 1.5rem; flex: 0 0 100%; width: 100%; min-width: 0; }
 .attribution-overview { display: flex; height: 28px; background: #fff1; margin: 1rem 0; }
 .attribution-overview button { flex: 1; min-width: 0; padding: 0; border: 0; cursor: pointer; }

@@ -137,9 +137,13 @@ class PreparedWorkflowTest(unittest.TestCase):
             root = Path(tmp)
             fasta = root / 'input.fasta'
             fasta.write_text(''.join(f'>p{i} PE={1 if i % 2 == 0 else 5}\nM{"A" * (i + 1)}K\n' for i in range(8)))
+            annotations = root / 'pseudogene_caution.tsv'
+            annotations.write_text('Entry\tCaution\n' + ''.join(
+                f'p{i}\tCould be the product of a pseudogene\n' for i in range(1, 8, 2)))
             output = root / 'dataset' / 'preProcessed.pt'
             with patch('MMseqs2Preprocessing.preprocess.MMseqs2Runner', FakeRunner):
-                prepare_dataset(fasta, output, root / 'cache', report=lambda _: None)
+                prepare_dataset(fasta, output, root / 'cache', report=lambda _: None,
+                                annotation_path=annotations)
             state, digest = load_prepared(output.parent)
             self.assertNotIn('features', state['train'])
             self.assertTrue(all('sequence' in r for r in state['validation']['records']))

@@ -16,17 +16,27 @@ source MMseqs2Preprocessing/.venv/bin/activate
 pip install -r MMseqs2Preprocessing/requirements.txt
 ```
 
-Edit the variables at the top of `preprocess.py`, particularly `INPUT_PATH` and
-`OUTPUT_PATH`, then run:
+Export the UniProt search results for
+`cc_caution:"Could be the product of a pseudogene"` as a TSV,
+including the accession (`Entry`) and caution (`Caution` or `Annotation (caution)`)
+columns. Use the same Swiss-Prot release as the FASTA. The default input is
+already Swiss-Prot, so a `reviewed:true` filter is redundant; use it only if
+querying all UniProtKB entries. The FASTA header does not contain caution
+comments. Set `INPUT_PATH`,
+`ANNOTATIONS_PATH`, and `OUTPUT_PATH` at the top of `preprocess.py`, then run:
 
 ```bash
 python MMseqs2Preprocessing/preprocess.py
 ```
 
 Relative paths are resolved from your working directory. `INPUT_PATH` accepts
-plain/gzip FASTA or a directory of FASTA files. Headers must contain exactly one
-`PE=1..5` field. PE 1–2 maps to class 0; PE 5 to class 1; PE 3–4 are skipped.
-These are existence-evidence classes, not biological authenticity labels.
+plain/gzip FASTA or a directory of FASTA files. Preprocessing matches FASTA
+accessions to the TSV. Only PE5 entries carrying “Could be the product of a
+pseudogene” map to class 0. PE1/PE2 entries absent from the caution TSV map to
+class 1; PE1/PE2 entries that do carry the caution are excluded. Other entries
+are skipped. The TSV must list caution-tagged entries across all PE levels so
+those PE1/PE2 entries can be excluded. This does not yet select the closest
+PE1/PE2 proteins.
 
 The settings block controls the executable, threads, identity, coverage,
 coverage mode, cluster mode, clustering sensitivity/E-value/max-seqs, validation

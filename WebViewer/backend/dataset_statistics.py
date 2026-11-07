@@ -55,15 +55,15 @@ class DatasetInventory:
                 for split in ('train', 'validation'):
                     targets = state[split]['targets']
                     counts[split] += len(targets)
-                    counts['real'] += int((targets == 0).sum())
-                    counts['fake'] += int((targets == 1).sum())
+                    counts['pseudogene'] += int((targets == 0).sum())
+                    counts['functional'] += int((targets == 1).sum())
             return {'total': counts['train'] + counts['validation'], 'unit': 'records',
                     'file_count': len(paths),
-                    'groups': [{'key': 'real', 'label': 'Class 1 · Real (PE 1–2)', 'count': counts['real']},
-                               {'key': 'fake', 'label': 'Class 2 · Fake (PE 5)', 'count': counts['fake']}],
+                    'groups': [{'key': 'pseudogene', 'label': 'Class 0 · PE5 + pseudogene caution', 'count': counts['pseudogene']},
+                               {'key': 'functional', 'label': 'Class 1 · PE1/PE2 without caution', 'count': counts['functional']}],
                     'labels': [{'key': split, 'label': split.title(), 'count': counts[split]}
                                for split in ('train', 'validation')],
-                    'note': 'Protein sequences with a fixed MMseqs2 training/validation split. PE 3–4 are excluded.'}
+                    'note': 'Fixed MMseqs2 cluster split. Class 0 is PE5 with the pseudogene caution; class 1 is PE1/PE2 without the caution.'}
         if not fasta_paths:
             return {'total': len(paths), 'unit': 'files', 'file_count': len(paths),
                     'groups': [], 'labels': [], 'note': 'File count only; record-level counts are not available for this format.'}

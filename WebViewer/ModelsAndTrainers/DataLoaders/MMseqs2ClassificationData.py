@@ -1,12 +1,15 @@
-"""PE-labelled sequences, MMseqs2 cluster splits, and prepared dataset loading."""
+"""Caution-labelled sequences, MMseqs2 cluster splits, and prepared dataset loading."""
+import csv
 import hashlib
 import json
 import math
 import random
+import re
+from pathlib import Path
 
 import torch
 
-from ModelsAndTrainers.DataLoaders.ProteinClassificationData import ProteinClassificationDataset
+from ModelsAndTrainers.DataLoaders.FastaDataLoader import FastaDataset
 
 DEFAULT_SETTINGS = {'identity': .5, 'coverage': .8, 'cov_mode': 0,
                     'cluster_mode': 0, 'cluster_sensitivity': 7.5,
@@ -24,16 +27,64 @@ def protein_sequence(value):
     return sequence
 
 
-def load_records(path, control=None):
+PSEUDOGENE_CAUTION = 'could be the product of a pseudogene'
+
+
+def _annotation_column(fieldnames, names, label):
+    normalize = lambda value: re.sub(r'[^a-z0-9]', '', value.lower())
+    matches = [field for field in (fieldnames or ()) if normalize(field) in names]
+    if len(matches) != 1:
+        raise ValueError(f'UniProt annotation TSV must contain one {label} column')
+    return matches[0]
+
+
+def load_records(path, annotation_path, control=None):
+    """Join FASTA records to UniProt caution metadata and assign task labels.
+
+    Class 0 is a PE5 record carrying the pseudogene caution. Class 1 is a
+    PE1/PE2 record without that caution. All other combinations are omitted.
+    """
+    annotation_path = Path(annotation_path)
+    if not annotation_path.is_file():
+        raise FileNotFoundError(f'UniProt annotation TSV not found: {annotation_path}')
+    annotations = {}
+    with annotation_path.open(newline='', encoding='utf-8-sig') as stream:
+        reader = csv.DictReader(stream, delimiter='\t')
+        accession_column = _annotation_column(reader.fieldnames, {'entry', 'accession'}, 'accession')
+        caution_column = _annotation_column(reader.fieldnames, {'caution', 'annotationcaution'}, 'caution')
+        for row in reader:
+            accession = (row.get(accession_column) or '').strip()
+            caution = (row.get(caution_column) or '').lower()
+            if accession and PSEUDOGENE_CAUTION in caution:
+                annotations[accession] = True
+
     records = []
-    for index, record in enumerate(ProteinClassificationDataset(path)):
+    for index, record in enumerate(FastaDataset(path)):
         if control is not None and not control():
             from ModelsAndTrainers.DataLoaders.MMseqs2Runner import MMseqs2Stopped
             raise MMseqs2Stopped()
-        records.append({'key': f's{index}', 'id': record['id'], 'target': record['target'],
+        fields = record['id'].split('|')
+        accession = fields[1] if len(fields) >= 3 and fields[0] in {'sp', 'tr'} else fields[0]
+        pe_fields = re.findall(r'(?<!\S)PE=([^\s]*)', record['header'])
+        if len(pe_fields) != 1 or pe_fields[0] not in {'1', '2', '3', '4', '5'}:
+            raise ValueError(f'{record["id"]}: expected one PE=1..5 header label')
+        pe = int(pe_fields[0])
+        # The TSV is the complete result of a caution-filtered UniProt query;
+        # accessions absent from it do not carry this caution.
+        has_caution = annotations.get(accession, False)
+        if pe == 5 and has_caution:
+            target = 0
+        elif pe in (1, 2) and not has_caution:
+            target = 1
+        else:
+            continue
+        records.append({'key': f's{index}', 'id': record['id'], 'target': target,
+                        'pe': pe, 'pseudogene_caution': has_caution,
                         'sequence': protein_sequence(record['sequence'])})
     if not records:
-        raise ValueError('No labelled FASTA records found')
+        raise ValueError('No caution-tagged pseudogene or PE1/PE2 comparison records found')
+    if {record['target'] for record in records} != {0, 1}:
+        raise ValueError('Need both caution-tagged pseudogene records and PE1/PE2 records without the caution')
     return records
 
 
@@ -80,11 +131,11 @@ def split_records(records, assignments, settings):
     train = [r for r in records if r['key'] not in validation]
     valid = [r for r in records if r['key'] in validation]
     if any({r['target'] for r in split} != {0, 1} for split in (train, valid)):
-        raise ValueError('Both PE classes are required in each cluster split. Add independent clusters, or adjust the split seed/percentage.')
+            raise ValueError('Both task classes are required in each cluster split. Add independent records, or adjust the split seed/percentage.')
     return train, valid
 
 
-PREPARED_VERSION = 3
+PREPARED_VERSION = 4
 
 
 def validate_settings(settings):
@@ -170,5 +221,5 @@ def preview_records(path):
         for record in state[split]['records']:
             yield {'split': split, 'id': record['id'], 'key': record['key'],
                    'target': record['target'],
-                   'label': 'PE 1–2' if record['target'] == 0 else 'PE 5',
+                   'label': 'PE5 + pseudogene caution' if record['target'] == 0 else 'PE1/PE2 without caution',
                    'sequence': record['sequence'], 'length': len(record['sequence'])}

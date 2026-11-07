@@ -8,6 +8,7 @@ import torch
 
 # Settings: relative paths are resolved from the directory you run Python in.
 INPUT_PATH = Path('../WebViewer/ModelsAndTrainers/Datasets/uniprot_full_fasta/uniprot_sprot.fasta.gz')  # FASTA/gzip file or directory
+ANNOTATIONS_PATH = Path('../WebViewer/ModelsAndTrainers/Datasets/uniprot_full_fasta/uniprot_pseudogene_caution.tsv')
 OUTPUT_PATH = Path('./prepared.pt')
 CACHE_PATH = None  # None uses OUTPUT_PATH.parent / 'mmseqs2_cache'
 EXECUTABLE = 'mmseqs'  # Or an absolute path to the native executable
@@ -32,14 +33,14 @@ from ModelsAndTrainers.DataLoaders.MMseqs2ClassificationData import (
 from ModelsAndTrainers.DataLoaders.MMseqs2Runner import MMseqs2Runner
 
 
-def prepare_dataset(input_path, output_path, cache, executable='mmseqs', threads=2, settings=None, report=print):
-    """Cluster labelled FASTA records and save sequences with fixed train/validation membership."""
+def prepare_dataset(input_path, output_path, cache, executable='mmseqs', threads=2, settings=None, report=print, annotation_path=None):
+    """Select caution-labelled records, cluster them, and save a fixed split."""
     settings = dict(DEFAULT_SETTINGS if settings is None else settings)
     validate_settings(settings)
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    report('Loading PE-labelled FASTA records')
-    records = load_records(input_path)
+    report('Loading pseudogene-caution and PE1/PE2 records')
+    records = load_records(input_path, ANNOTATIONS_PATH if annotation_path is None else annotation_path)
     runner = MMseqs2Runner(executable, threads)
     report('Clustering sequences')
     assignments = runner.clusters(records, cache, settings['identity'], settings['coverage'], cov_mode=settings.get('cov_mode', 0),
@@ -50,7 +51,8 @@ def prepare_dataset(input_path, output_path, cache, executable='mmseqs', threads
     train, valid = split_records(records, assignments, settings)
     state = {'prepared_version': PREPARED_VERSION, 'dataset_kind': 'mmseqs2_sequence_split',
              'dataset_digest': fingerprint(records), 'mmseqs_version': runner.version,
-             'settings': settings}
+             'settings': settings,
+             'class_labels': {'0': 'PE5 + pseudogene caution', '1': 'PE1/PE2 without caution'}}
     for name, partition in (('train', train), ('validation', valid)):
         report(f'Saving {name} sequences ({len(partition)} records)')
         state[name] = {'targets': torch.tensor([r['target'] for r in partition], dtype=torch.long),
@@ -83,7 +85,8 @@ def main():
     }
     cache = Path(CACHE_PATH) if CACHE_PATH is not None else output.parent / 'mmseqs2_cache'
     try:
-        prepare_dataset(INPUT_PATH, output, cache, EXECUTABLE, THREADS, settings)
+        prepare_dataset(INPUT_PATH, output, cache, EXECUTABLE, THREADS, settings,
+                        annotation_path=ANNOTATIONS_PATH)
     except (ValueError, OSError, RuntimeError) as error:
         sys.exit(f'Preprocessing failed: {error}')
 

@@ -162,34 +162,34 @@ export function OutputRenderer({ output }: { output: Output }) {
       note?: string;
     };
     const classes = result?.classes ?? [];
-    const real = Math.max(0, Math.min(1, classes[0]?.probability ?? 0));
+    const pseudogene = Math.max(0, Math.min(1, classes[0]?.probability ?? 0));
     return (
       <div className="classification-result">
         <svg
           viewBox="0 0 200 200"
           width="240"
           role="img"
-          aria-label={`Real ${(real * 100).toFixed(1)} percent; Fake ${((1 - real) * 100).toFixed(1)} percent`}
+          aria-label={`PE5 with pseudogene caution ${(pseudogene * 100).toFixed(1)} percent; PE1/PE2 without caution ${((1 - pseudogene) * 100).toFixed(1)} percent`}
         >
           <circle cx="100" cy="100" r="80" fill="none" stroke="#e99167" strokeWidth="18" />
           <circle
             cx="100" cy="100" r="80" fill="none" stroke="#4cbfa5"
             strokeWidth="18" pathLength="100"
-            strokeDasharray={`${real * 100} 100`}
+            strokeDasharray={`${pseudogene * 100} 100`}
             transform="rotate(-90 100 100)"
           />
           <text x="100" y="96" textAnchor="middle" fill="currentColor" fontSize="26">
-            {(Math.max(real, 1 - real) * 100).toFixed(1)}%
+            {(Math.max(pseudogene, 1 - pseudogene) * 100).toFixed(1)}%
           </text>
           <text x="100" y="120" textAnchor="middle" fill="currentColor" fontSize="15">
-            {real >= 0.5 ? "Real" : "Fake"}
+            {pseudogene >= 0.5 ? "PE5 + caution" : "PE1/PE2"}
           </text>
         </svg>
         <div>
           <span className="eyebrow">CLASS PROBABILITIES</span>
           {classes.map((item, index) => (
             <p className="classification-class" key={item.label}>
-              <span className={`classification-dot ${index === 0 ? "real" : "fake"}`} />
+              <span className={`classification-dot ${index === 0 ? "pseudogene" : "functional"}`} />
               <strong>{item.label}</strong>
               <span>{(item.probability * 100).toFixed(2)}%</span>
             </p>
