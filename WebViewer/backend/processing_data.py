@@ -1,7 +1,6 @@
 """Streaming record adapters for dataset inference, independent of UI previews."""
 import csv
 import json
-import re
 from pathlib import Path
 
 FASTA = ('.fa', '.fasta', '.faa', '.fas', '.fa.gz', '.fasta.gz', '.faa.gz', '.fas.gz')
@@ -44,9 +43,6 @@ def records(root, adapter):
         else:
             iterator = iter([{'file': source, 'label': path.parent.relative_to(root).as_posix()}])
         for index, value in enumerate(iterator, 1):
-            if adapter == 'fasta':
-                labels = re.findall(r'(?<!\S)PE=([^\s]*)', value['header'])
-                value['class'] = 'real' if len(labels) == 1 and labels[0] in {'1', '2', '3', '4'} else 'fake' if labels == ['5'] else 'unknown'
             yield {'source': source, 'source_index': index, 'data': value}
 
 

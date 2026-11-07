@@ -73,14 +73,12 @@ class DatasetInventory:
                 labels = re.findall(r'(?<!\S)PE=([^\s]*)', record['header'])
                 label = labels[0] if len(labels) == 1 and labels[0] in {'1', '2', '3', '4', '5'} else 'unknown'
                 counts[label] += 1
-        groups = []
-        if any(counts[str(level)] for level in range(1, 6)):
-            groups = [{'key': 'real', 'label': 'Class 1 · Real (PE 1–4)', 'count': sum(counts[str(n)] for n in range(1, 5))},
-                      {'key': 'fake', 'label': 'Class 2 · Fake (PE 5)', 'count': counts['5']}]
-            if counts['unknown']:
-                groups.append({'key': 'unknown', 'label': 'Missing or invalid PE label', 'count': counts['unknown']})
         names = ['Evidence at protein level', 'Evidence at transcript level', 'Inferred from homology', 'Predicted', 'Uncertain']
         return {'total': sum(counts.values()), 'unit': 'records', 'file_count': len(paths),
-                'fasta_file_count': len(fasta_paths), 'groups': groups,
-                'labels': [{'key': str(n), 'label': f'PE={n} · {name}', 'count': counts[str(n)]} for n, name in enumerate(names, 1)] if groups else [],
-                'note': 'Counts cover every FASTA record. Real/Fake follows the PE classification objective; PE=5 means uncertain existence.' if groups else 'No PE classes were found in the FASTA headers.'}
+                'fasta_file_count': len(fasta_paths), 'groups': [],
+                'labels': ([{'key': str(n), 'label': f'PE={n} · {name}', 'count': counts[str(n)]}
+                            for n, name in enumerate(names, 1) if counts[str(n)]]
+                           + ([{'key': 'unknown', 'label': 'Missing or invalid PE label', 'count': counts['unknown']}]
+                              if counts['unknown'] else [])),
+                'note': ('PE counts describe UniProt evidence metadata; they are not the pseudogene task classes. '
+                         'Raw FASTA previews do not include the caution TSV labels.')}

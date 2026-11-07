@@ -20,7 +20,7 @@ type Schema = { status: string; fields?: string[]; total?: number; groups?: { ke
 type RecordRow = { id: number; label: string; class: string; preview: string; status: string; output?: Output; error?: string };
 type RecordDetail = { record_id: number; source: string; source_index: number; data: Record<string, unknown>; inputs?: Record<string, unknown>; output?: Output; error?: string };
 const active = (status: string) => ["QUEUED", "INDEXING", "RUNNING", "STOPPING"].includes(status);
-const empty: Configuration = { model: "", dataset: "", adapter: "fasta", class_field: "class", inputs: {}, mapping: {}, subsets: {}, seed: 7 };
+const empty: Configuration = { model: "", dataset: "", adapter: "fasta", class_field: "", inputs: {}, mapping: {}, subsets: {}, seed: 7 };
 const checkpointValue = (c?: Record<string, string>) => c ? JSON.stringify(c) : "";
 
 function DatasetFields({ config, setConfig, disabled }: { config: Configuration; setConfig: (c: Configuration) => void; disabled: boolean }) {
@@ -82,7 +82,7 @@ function Settings({ models, job }: { models: ModelInfo[]; job?: Job }) {
         <label>Dataset<select value={config.dataset} onChange={event => setConfig({ ...config, dataset: event.target.value, subsets: {} })}>
           <option value="">Select dataset</option>{datasets.data?.datasets.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}
         </select></label>
-        <label>Record format<select value={config.adapter} onChange={event => setConfig({ ...config, adapter: event.target.value, class_field: event.target.value === "fasta" ? "class" : event.target.value === "images" ? "label" : "", subsets: {}, mapping: Object.fromEntries((model?.inputs ?? []).map(p => [p.key, event.target.value === "images" && p.type === "file" ? "file" : p.key])) })}>
+        <label>Record format<select value={config.adapter} onChange={event => setConfig({ ...config, adapter: event.target.value, class_field: event.target.value === "images" ? "label" : "", subsets: {}, mapping: Object.fromEntries((model?.inputs ?? []).map(p => [p.key, event.target.value === "images" && p.type === "file" ? "file" : p.key])) })}>
           <option value="fasta">Protein FASTA (plain / gzip)</option><option value="jsonl">JSON Lines</option><option value="csv">CSV / TSV</option><option value="images">Images (folder = class)</option>
         </select></label>
         <label>Class field (empty = all records)<input list="processing-fields" value={config.class_field} onChange={event => setConfig({ ...config, class_field: event.target.value, subsets: {} })} /></label>
@@ -103,7 +103,7 @@ function Settings({ models, job }: { models: ModelInfo[]; job?: Job }) {
         </div>)}
       </div>}
     </fieldset>
-    <p className="muted">{config.adapter === "fasta" && "FASTA classes use PE 1–4 = real, PE 5 = fake; missing evidence labels are unknown. "}Enable residue contribution maps to save heat maps for record details.</p>
+    <p className="muted">{config.adapter === "fasta" && "FASTA records have no task class by default. PE is shown as UniProt metadata, not a pseudogene label. Leave Class field empty to process all records. "}Enable residue contribution maps to save heat maps for record details.</p>
     {(error || datasets.error || (config.model && checkpoints.error)) && <p role="alert" className="error">{error || datasets.error || checkpoints.error}</p>}
     {!job && <button className="button primary" disabled={busy || !model || !config.dataset || Boolean(model.checkpoint_required && !config.checkpoint)} onClick={() => void start()}>{busy ? "Starting…" : "Process selected data"}</button>}
   </Panel>;
