@@ -11,7 +11,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'WebViewer'))
 import torch
 from MMseqs2Preprocessing.preprocess import prepare_dataset
 from ModelsAndTrainers.DataLoaders.MMseqs2ClassificationData import load_prepared
-from ModelsAndTrainers.DataLoaders.ProteinClassificationData import ProteinClassificationDataset
 from ModelsAndTrainers.DataLoaders.MMseqs2Runner import MMseqs2Runner
 from ModelsAndTrainers.Models.ProteinPEClassifier import ProteinPEClassifier
 from ModelsAndTrainers.Trainers.MMseqs2Trainer import MMseqs2Trainer
@@ -120,17 +119,6 @@ class PreparedWorkflowTest(unittest.TestCase):
                 with patch.object(Path, 'mkdir'):
                     cache = encoder_cache_directory()
                 self.assertEqual(Path(cache), Path(__file__).resolve().parents[2] / 'WebViewer/.cache/huggingface/hub')
-
-    def test_pe_filter(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            fasta = Path(tmp) / 'labels.fasta'
-            fasta.write_text(''.join(f'>p{pe} PE={pe}\nMAK\n' for pe in range(1, 6)))
-            records = list(ProteinClassificationDataset(fasta))
-            self.assertEqual([r['pe'] for r in records], [1, 2, 5])
-            self.assertEqual([r['target'] for r in records], [0, 0, 1])
-            fasta.write_text('>bad PE=10\nMAK\n')
-            with self.assertRaises(ValueError):
-                list(ProteinClassificationDataset(fasta))
 
     def test_prepare_train_resume_without_mmseqs(self):
         with tempfile.TemporaryDirectory() as tmp:

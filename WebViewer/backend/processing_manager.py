@@ -136,7 +136,7 @@ class ProcessingManager:
     def _prepare_data(self, destination, root, config, event, run_id):
         """Stream into local scratch SQLite, then publish only selected records.
 
-        Like ProteinPETrainer, build lookup indexes after the scan and commit
+        Build lookup indexes after the scan and commit
         the selected snapshot once. Avoid repeatedly journaling a growing index
         on the output mount. Scratch storage is closed and removed on all exits.
         """
