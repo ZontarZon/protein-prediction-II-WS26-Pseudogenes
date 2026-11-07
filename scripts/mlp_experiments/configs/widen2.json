@@ -1,0 +1,182 @@
+[
+ {
+  "name": "svm_rbf",
+  "cfg": "svm",
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "phase": "reference"
+ },
+ {
+  "name": "T1_fixed6_ens10",
+  "cfg": {
+   "hidden": [
+    512,
+    512
+   ],
+   "dropout": 0.5,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.0,
+   "batch_size": 32,
+   "epochs": 6,
+   "patience": 15,
+   "early_stopping": false,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 10,
+   "mixup": 0.0,
+   "refit": false
+  },
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "phase": "widen"
+ },
+ {
+  "name": "T1_fixed6_ls0.1",
+  "cfg": {
+   "hidden": [
+    512,
+    512
+   ],
+   "dropout": 0.5,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.0,
+   "batch_size": 32,
+   "epochs": 6,
+   "patience": 15,
+   "early_stopping": false,
+   "label_smoothing": 0.1,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0,
+   "refit": false
+  },
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "phase": "widen"
+ },
+ {
+  "name": "T1_fixed6_1024x2",
+  "cfg": {
+   "hidden": [
+    1024,
+    1024
+   ],
+   "dropout": 0.5,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.0,
+   "batch_size": 32,
+   "epochs": 6,
+   "patience": 15,
+   "early_stopping": false,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0,
+   "refit": false
+  },
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "phase": "widen"
+ },
+ {
+  "name": "T1_fixed8",
+  "cfg": {
+   "hidden": [
+    512,
+    512
+   ],
+   "dropout": 0.5,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.0,
+   "batch_size": 32,
+   "epochs": 8,
+   "patience": 15,
+   "early_stopping": false,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0,
+   "refit": false
+  },
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "phase": "widen"
+ },
+ {
+  "name": "T1_fixed4",
+  "cfg": {
+   "hidden": [
+    512,
+    512
+   ],
+   "dropout": 0.5,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.0,
+   "batch_size": 32,
+   "epochs": 4,
+   "patience": 15,
+   "early_stopping": false,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0,
+   "refit": false
+  },
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "phase": "widen"
+ }
+]

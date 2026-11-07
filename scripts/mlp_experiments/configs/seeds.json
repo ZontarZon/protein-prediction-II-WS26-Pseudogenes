@@ -1,0 +1,593 @@
+[
+ {
+  "name": "a_repo_defaults",
+  "cfg": {
+   "hidden": [
+    256
+   ],
+   "dropout": 0.1,
+   "norm": "none",
+   "act": "relu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.001,
+   "weight_decay": 0.0,
+   "batch_size": 2,
+   "epochs": 3,
+   "patience": 15,
+   "early_stopping": false,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adam",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "baseline"
+ },
+ {
+  "name": "b_repo_head_sensible",
+  "cfg": {
+   "hidden": [
+    256
+   ],
+   "dropout": 0.1,
+   "norm": "none",
+   "act": "relu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.001,
+   "weight_decay": 0.0,
+   "batch_size": 64,
+   "epochs": 100,
+   "patience": 15,
+   "early_stopping": true,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adam",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "baseline"
+ },
+ {
+  "name": "c_logreg",
+  "cfg": "logreg",
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "baseline"
+ },
+ {
+  "name": "b+_lr0.0001_wd0.01_std1",
+  "cfg": {
+   "hidden": [
+    256
+   ],
+   "dropout": 0.1,
+   "norm": "none",
+   "act": "relu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.01,
+   "batch_size": 64,
+   "epochs": 100,
+   "patience": 15,
+   "early_stopping": true,
+   "label_smoothing": 0.0,
+   "standardize": true,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "baseline_tuned"
+ },
+ {
+  "name": "T1_512x2_ln_gelu",
+  "cfg": {
+   "hidden": [
+    512,
+    512
+   ],
+   "dropout": 0.5,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.0,
+   "batch_size": 32,
+   "epochs": 100,
+   "patience": 15,
+   "early_stopping": true,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "seeds"
+ },
+ {
+  "name": "T6_512_ln_gelu",
+  "cfg": {
+   "hidden": [
+    512
+   ],
+   "dropout": 0.3,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0003,
+   "weight_decay": 0.01,
+   "batch_size": 128,
+   "epochs": 100,
+   "patience": 20,
+   "early_stopping": true,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0,
+   "refit": false
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "seeds"
+ },
+ {
+  "name": "Z_128x3_zscore",
+  "cfg": {
+   "hidden": [
+    128,
+    128,
+    128
+   ],
+   "dropout": 0.1,
+   "norm": "none",
+   "act": "relu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0002,
+   "weight_decay": 0.01,
+   "batch_size": 128,
+   "epochs": 100,
+   "patience": 20,
+   "early_stopping": true,
+   "label_smoothing": 0.1,
+   "standardize": true,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0,
+   "refit": false
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "seeds"
+ },
+ {
+  "name": "top1_refit",
+  "cfg": {
+   "hidden": [
+    512,
+    512
+   ],
+   "dropout": 0.5,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.001,
+   "batch_size": 32,
+   "epochs": 100,
+   "patience": 20,
+   "early_stopping": true,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0,
+   "refit": true
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "seeds"
+ },
+ {
+  "name": "top1_ens5_refit",
+  "cfg": {
+   "hidden": [
+    512,
+    512
+   ],
+   "dropout": 0.5,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.001,
+   "batch_size": 32,
+   "epochs": 100,
+   "patience": 20,
+   "early_stopping": true,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 5,
+   "mixup": 0.0,
+   "refit": true
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "seeds"
+ },
+ {
+  "name": "top1_ens5",
+  "cfg": {
+   "hidden": [
+    512,
+    512
+   ],
+   "dropout": 0.5,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.001,
+   "batch_size": 32,
+   "epochs": 100,
+   "patience": 20,
+   "early_stopping": true,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 5,
+   "mixup": 0.0,
+   "refit": false
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "seeds"
+ },
+ {
+  "name": "top6_refit",
+  "cfg": {
+   "hidden": [
+    512
+   ],
+   "dropout": 0.3,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0003,
+   "weight_decay": 0.01,
+   "batch_size": 128,
+   "epochs": 100,
+   "patience": 20,
+   "early_stopping": true,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0,
+   "refit": true
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "seeds"
+ },
+ {
+  "name": "top6_ens5_refit",
+  "cfg": {
+   "hidden": [
+    512
+   ],
+   "dropout": 0.3,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0003,
+   "weight_decay": 0.01,
+   "batch_size": 128,
+   "epochs": 100,
+   "patience": 20,
+   "early_stopping": true,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 5,
+   "mixup": 0.0,
+   "refit": true
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "seeds"
+ },
+ {
+  "name": "b_ens5",
+  "cfg": {
+   "hidden": [
+    256
+   ],
+   "dropout": 0.1,
+   "norm": "none",
+   "act": "relu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.001,
+   "weight_decay": 0.0,
+   "batch_size": 64,
+   "epochs": 100,
+   "patience": 15,
+   "early_stopping": true,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adam",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 5,
+   "mixup": 0.0,
+   "refit": false
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "seeds"
+ },
+ {
+  "name": "b_refit",
+  "cfg": {
+   "hidden": [
+    256
+   ],
+   "dropout": 0.1,
+   "norm": "none",
+   "act": "relu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.001,
+   "weight_decay": 0.0,
+   "batch_size": 64,
+   "epochs": 100,
+   "patience": 15,
+   "early_stopping": true,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adam",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0,
+   "refit": true
+  },
+  "seeds": [
+   1,
+   2
+  ],
+  "phase": "seeds"
+ },
+ {
+  "name": "b_ens5_refit",
+  "cfg": {
+   "hidden": [
+    256
+   ],
+   "dropout": 0.1,
+   "norm": "none",
+   "act": "relu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.001,
+   "weight_decay": 0.0,
+   "batch_size": 64,
+   "epochs": 100,
+   "patience": 15,
+   "early_stopping": true,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adam",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 5,
+   "mixup": 0.0,
+   "refit": true
+  },
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "phase": "widen"
+ },
+ {
+  "name": "T1_fixed6",
+  "cfg": {
+   "hidden": [
+    512,
+    512
+   ],
+   "dropout": 0.5,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.0,
+   "batch_size": 32,
+   "epochs": 6,
+   "patience": 15,
+   "early_stopping": false,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0
+  },
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "phase": "widen"
+ },
+ {
+  "name": "T1_fixed10",
+  "cfg": {
+   "hidden": [
+    512,
+    512
+   ],
+   "dropout": 0.5,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.0,
+   "batch_size": 32,
+   "epochs": 10,
+   "patience": 15,
+   "early_stopping": false,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0
+  },
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "phase": "widen"
+ },
+ {
+  "name": "T1_fixed6_ens5",
+  "cfg": {
+   "hidden": [
+    512,
+    512
+   ],
+   "dropout": 0.5,
+   "norm": "layernorm",
+   "act": "gelu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.0001,
+   "weight_decay": 0.0,
+   "batch_size": 32,
+   "epochs": 6,
+   "patience": 15,
+   "early_stopping": false,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adamw",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 5,
+   "mixup": 0.0
+  },
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "phase": "widen"
+ },
+ {
+  "name": "b_fixed3_bs64",
+  "cfg": {
+   "hidden": [
+    256
+   ],
+   "dropout": 0.1,
+   "norm": "none",
+   "act": "relu",
+   "residual": false,
+   "input_dropout": 0.0,
+   "lr": 0.001,
+   "weight_decay": 0.0,
+   "batch_size": 64,
+   "epochs": 3,
+   "patience": 15,
+   "early_stopping": false,
+   "label_smoothing": 0.0,
+   "standardize": false,
+   "optimizer": "adam",
+   "schedule": "constant",
+   "swa": false,
+   "ensemble": 1,
+   "mixup": 0.0
+  },
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "phase": "widen"
+ }
+]

@@ -41,6 +41,32 @@ def sequence_input(value):
     return re.sub('[UZOBJ]', 'X', sequence)
 
 
+# Default head, selected by a grouped 5-fold CV search on a class-balanced
+# PE 5 / PE 1-2 Swiss-Prot subset (docs/mlp_experiments/report.html).
+DEFAULT_HEAD = {'hidden_sizes': (512, 512), 'dropout': 0.5, 'norm': 'layernorm', 'activation': 'gelu'}
+NORMS = {'none': None, 'layernorm': nn.LayerNorm, 'batchnorm': nn.BatchNorm1d}
+ACTIVATIONS = {'relu': nn.ReLU, 'gelu': nn.GELU}
+
+
+def build_head(hidden_sizes, dropout, norm, activation, in_features=1024, classes=2):
+    """MLP head: [Linear -> norm -> activation -> Dropout] per hidden layer, then Linear."""
+    if not hidden_sizes or any(width < 1 for width in hidden_sizes):
+        raise ValueError('hidden_sizes must be a nonempty list of positive widths')
+    if not 0 <= dropout < 1:
+        raise ValueError('dropout must be in [0, 1)')
+    if norm not in NORMS or activation not in ACTIVATIONS:
+        raise ValueError(f'norm must be one of {sorted(NORMS)} and activation one of {sorted(ACTIVATIONS)}')
+    layers, fan_in = [], in_features
+    for width in hidden_sizes:
+        layers.append(nn.Linear(fan_in, width))
+        if NORMS[norm] is not None:
+            layers.append(NORMS[norm](width))
+        layers += [ACTIVATIONS[activation](), nn.Dropout(dropout)]
+        fan_in = width
+    layers.append(nn.Linear(fan_in, classes))
+    return nn.Sequential(*layers)
+
+
 class ProteinPEClassifier(ModelBase):
     model_id = 'ProteinPEClassifier'
     display_name = 'ProtT5 pseudogene classifier'
@@ -53,15 +79,30 @@ class ProteinPEClassifier(ModelBase):
                             {'key': 'device', 'type': 'selection', 'label': 'Device', 'options': ['cpu', 'cuda'], 'default': 'cpu'},
                             {'key': 'explain', 'type': 'boolean', 'label': 'Residue contribution heat map (slower inference)', 'default': False}]
 
-    def __init__(self, hidden_size=256, max_residues=None):
+    def __init__(self, hidden_sizes=DEFAULT_HEAD['hidden_sizes'], dropout=DEFAULT_HEAD['dropout'],
+                 norm=DEFAULT_HEAD['norm'], activation=DEFAULT_HEAD['activation'],
+                 hidden_size=None, max_residues=None):
         super().__init__()
         # max_residues is accepted only for compatibility with older checkpoints.
-        self.hidden_size = int(hidden_size)
-        if self.hidden_size < 1:
-            raise ValueError('hidden_size must be positive')
-        self.head = nn.Sequential(nn.Linear(1024, self.hidden_size), nn.ReLU(), nn.Dropout(0.1), nn.Linear(self.hidden_size, 2))
+        # hidden_size selects the legacy 1024 -> hidden_size -> 2 head (ReLU, dropout 0.1)
+        # whose state-dict layout matches checkpoints saved before the configurable MLP.
+        if hidden_size is not None:
+            hidden_sizes, dropout, norm, activation = [hidden_size], 0.1, 'none', 'relu'
+        self.hidden_sizes = [int(width) for width in hidden_sizes]
+        self.dropout = float(dropout)
+        self.norm = str(norm)
+        self.activation = str(activation)
+        self.legacy_hidden_size = None if hidden_size is None else int(hidden_size)
+        self.head = build_head(self.hidden_sizes, self.dropout, self.norm, self.activation)
         self.encoder = None
         self.tokenizer = None
+
+    def model_settings(self):
+        """Constructor arguments that rebuild this head (stored in checkpoints)."""
+        if self.legacy_hidden_size is not None:
+            return {'hidden_size': self.legacy_hidden_size}
+        return {'hidden_sizes': list(self.hidden_sizes), 'dropout': self.dropout,
+                'norm': self.norm, 'activation': self.activation}
 
     def setup_encoder(self):
         if self.encoder is not None:
