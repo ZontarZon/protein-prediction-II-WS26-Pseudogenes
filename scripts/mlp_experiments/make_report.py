@@ -204,18 +204,18 @@ def repr_section(results, groups, b_p, dep_p, charts):
         p = pooled(runs)
         r0 = runs[0]
         if p is None:
-            trs.append([label, html.escape(describe_repr(r0['config'])), '—', f"{r0['auroc_mean']:.4f}（仅 seed 0）"] + ['—'] * 8)
+            trs.append([label, html.escape(describe_repr(r0['config'])), '—', f"{r0['auroc_mean']:.4f}（仅 seed 0）"] + ['—'] * 9)
             continue
         d, dd = p['auroc'] - b_p['auroc'], p['auroc'] - dep_p['auroc']
         dm = p['mcc'] - b_p['mcc']
         secs = np.mean([runs[s]['train_seconds'] for s in SEEDS3])
         trs.append([label, html.escape(describe_repr(r0['config'])) + f'<br><span class="note">{ncand} 个候选中按 seed 0 选出</span>',
                     f"{r0['n_params']:,}", ' / '.join(f"{runs[s]['auroc_mean']:.4f}" for s in SEEDS3),
-                    fmt(p['auroc'].mean(), p['auroc'].std(ddof=1)), f"{p['auprc'].mean():.4f}", f"{p['mcc'].mean():.3f}", f"{p['bacc'].mean():.4f}",
+                    fmt(p['auroc'].mean(), p['auroc'].std(ddof=1)), f"{p['auprc'].mean():.4f}", f"{p['mcc'].mean():.3f}", f"{p['acc'].mean():.4f}", f"{p['bacc'].mean():.4f}",
                     f"{d.mean() * 100:+.2f}（{int((d > 0).sum())}/15）", f"{dm.mean() * 100:+.2f}", f"{dd.mean() * 100:+.2f}（{int((dd > 0).sum())}/15）", f'{secs:.0f}'])
         paired.append((label.split('（')[0], d))
     charts['repr'] = chart_paired_named(paired, 'repr_paired_diff.png', '表示层变体 − (b)：逐折 AUROC 差')
-    hdr = ['变体', '设置', '参数量', 'AUROC s0/s1/s2', 'AUROC（15 折）', 'AUPRC', 'MCC', '平衡准确率', 'ΔAUROC vs (b)（胜出折）', 'ΔMCC vs (b)', 'ΔAUROC vs 部署头', '训练秒/种子']
+    hdr = ['变体', '设置', '参数量', 'AUROC s0/s1/s2', 'AUROC（15 折）', 'AUPRC', 'MCC', 'Accuracy', '平衡准确率', 'ΔAUROC vs (b)（胜出折）', 'ΔMCC vs (b)', 'ΔAUROC vs 部署头', '训练秒/种子']
     allrows = sorted(by.items(), key=lambda t: -(pooled(t[1])['auroc'].mean() if pooled(t[1]) else t[1][0]['auroc_mean']))
     grid = [[html.escape(n), ' / '.join(f"{runs[s]['auroc_mean']:.4f}" if s in runs else '—' for s in SEEDS3),
              f"{pooled(runs)['auroc'].mean():.4f}" if pooled(runs) else '—', f"{runs[min(runs)]['n_params']:,}"] for n, runs in allrows]
@@ -354,7 +354,7 @@ def main():
         charts['eff'] = chart_effects(random_rows)
         top = sorted(search_rows, key=lambda r: -r['auroc_mean'])[:10]
         top_rows = [[i + 1, r['phase'], html.escape(describe(r['config'])), f"{r['n_params']:,}", fmt(r['auroc_mean'], r['auroc_std']),
-                     fmt(r['mcc_mean'], r['mcc_std'], 3)] for i, r in enumerate(top)]
+                     fmt(r['acc_mean'], r['acc_std']), fmt(r['mcc_mean'], r['mcc_std'], 3)] for i, r in enumerate(top)]
         counts = defaultdict(int)
         for r in search_rows: counts[r['phase']] += 1
         sections.append(f'''<h2>3. 搜索结果</h2>
@@ -363,7 +363,7 @@ def main():
 × wd {{0,1e-4,1e-2}} × bs {{32,64,128}} × label smoothing {{0,0.1}} × 输入 z-score，AdamW，早停 patience 15。</p>
 <img src="{charts['scatter']}" alt="AUROC 与参数量"><img src="{charts['dw']}" alt="按层数与宽度">
 <img src="{charts['eff']}" alt="超参数效应"><p class="note">箱线图只含随机/细化（效应图只含随机搜索）运行，每点是一个配置的 5 折均值；散点图中集成的参数量按 k 个头累计。注意 seed 0 上的 top-1 带有选择偏差，见第 4 节的多种子复验。</p>
-<h3>seed 0 前 10</h3>{table_html(['#', '阶段', '配置', '参数量', 'AUROC', 'MCC'], top_rows)}''')
+<h3>seed 0 前 10</h3>{table_html(['#', '阶段', '配置', '参数量', 'AUROC', 'Accuracy', 'MCC'], top_rows)}''')
 
     # best config with seeds
     names = {}
@@ -386,7 +386,8 @@ def main():
             seed_rows.append([tag + html.escape(label_of(k, r0)), html.escape(describe(r0['config'])),
                               f"{r0['n_params']:,}" if r0['n_params'] else '—',
                               ' / '.join(f"{runs[s]['auroc_mean']:.4f}" for s in (0, 1, 2)), fmt(p['auroc'].mean(), p['auroc'].std(ddof=1)),
-                              f"{d.mean() * 100:+.2f}", f"{int((d > 0).sum())}/15", fmt(p['mcc'].mean(), p['mcc'].std(ddof=1), 3)])
+                              f"{d.mean() * 100:+.2f}", f"{int((d > 0).sum())}/15", fmt(p['acc'].mean(), p['acc'].std(ddof=1)),
+                              fmt(p['mcc'].mean(), p['mcc'].std(ddof=1), 3)])
 
         def comp_rows(t):
             out = []
@@ -406,7 +407,7 @@ def main():
         sections.append(f'''<h2>4. 最佳配置（3 个种子 × 5 折）</h2>
 <p>种子 s ∈ {{0,1,2}} 同时改变 CV 划分（StratifiedGroupKFold 的 random_state）与模型初始化/打乱；同一种子下所有配置用同一划分，因此可逐折配对比较。
 下表只列出跑满 3 个种子的配置（seed 0 的前若干名 + 基线 + 扩展变体），按 15 折平均 AUROC 排序；ΔAUROC 为相对 (b) 的逐折配对差均值（百分点）。</p>
-{table_html(['配置', '设置', '参数量', 'AUROC s0 / s1 / s2', 'AUROC（15 折）', 'ΔAUROC vs (b)', '胜出折', 'MCC（15 折）'], seed_rows)}
+{table_html(['配置', '设置', '参数量', 'AUROC s0 / s1 / s2', 'AUROC（15 折）', 'ΔAUROC vs (b)', '胜出折', 'Accuracy（15 折）', 'MCC（15 折）'], seed_rows)}
 <h3>部署到仓库的配置 vs 基线 (b)：{html.escape(describe(deployed[1][0]['config']))}，参数量 {deployed[1][0]['n_params']:,}</h3>
 {table_html(hdr, comp_rows(deployed))}{best_html}
 <img src="{charts['paired']}" alt="逐折配对差">''')
