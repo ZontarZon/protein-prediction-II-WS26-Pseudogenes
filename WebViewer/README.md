@@ -34,7 +34,7 @@ removal or replacement.
 The Docker backend includes MMseqs2 on `PATH`.
 Prepare training data once with the standalone
 [MMseqs2 preprocessing tool](../MMseqs2Preprocessing/README.md), then select its
-output dataset directory in MMseqs2Trainer. Training loads the saved sequence
+output dataset directory in PLM_MLPTrainer. Training loads the saved sequence
 split, runs frozen ProtT5 embeddings, and trains a classification head. Neither training nor inference invokes MMseqs2.
 Run `./docker_run.sh --rebuild` to add it to an existing installation. Standalone
 preprocessing requires MMseqs2 installed on the host.

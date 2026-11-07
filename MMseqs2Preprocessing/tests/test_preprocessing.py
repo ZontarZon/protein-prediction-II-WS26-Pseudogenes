@@ -13,7 +13,7 @@ from MMseqs2Preprocessing.preprocess import prepare_dataset
 from ModelsAndTrainers.DataLoaders.MMseqs2ClassificationData import load_prepared
 from ModelsAndTrainers.DataLoaders.MMseqs2Runner import MMseqs2Runner
 from ModelsAndTrainers.Models.ProteinPEClassifier import ProteinPEClassifier
-from ModelsAndTrainers.Trainers.MMseqs2Trainer import MMseqs2Trainer
+from ModelsAndTrainers.Trainers.PLM_MLPTrainer import PLM_MLPTrainer
 from ModelsAndTrainers.Models.ProteinPEClassifier import encoder_cache_directory
 from backend.model_registry import ModelRegistry
 from backend.trainer_registry import TrainerRegistry
@@ -97,13 +97,13 @@ class PreparedWorkflowTest(unittest.TestCase):
         training = project / 'ModelsAndTrainers'
         trainers = TrainerRegistry(training, project)
         models = ModelRegistry(training, project)
-        declaration = trainers.get('MMseqs2Trainer').configuration_schema()['models'][0]
+        declaration = trainers.get('PLM_MLPTrainer').configuration_schema()['models'][0]
         # Match the filtering performed by NewRun.tsx.
         compatible = [item for item in models.catalog()
                       if item['id'] in declaration['choices']
                       and declaration['interface'] in item['interfaces']]
         self.assertEqual([item['id'] for item in compatible], ['ProteinPEClassifier'])
-        trainer = trainers.get('MMseqs2Trainer')({}, Path('/tmp/unused-mmseqs-run'), lambda _: None)
+        trainer = trainers.get('PLM_MLPTrainer')({}, Path('/tmp/unused-mmseqs-run'), lambda _: None)
         trainer.bind_models({'classifier': models.create('ProteinPEClassifier')})
         self.assertEqual(trainer.net.model_id, 'ProteinPEClassifier')
 
@@ -165,7 +165,7 @@ class PreparedWorkflowTest(unittest.TestCase):
                                     device=next(model.head.parameters()).device)
 
             with patch.dict(os.environ, {'PATH': ''}), patch('subprocess.Popen', side_effect=AssertionError('Training launched a subprocess')), patch.object(ProteinPEClassifier, 'setup_encoder'), patch.object(ProteinPEClassifier, 'embed', embed):
-                trainer = MMseqs2Trainer(config, root / 'run', lambda _: None)
+                trainer = PLM_MLPTrainer(config, root / 'run', lambda _: None)
                 trainer.bind_models({'classifier': ProteinPEClassifier()})
                 initial = trainer.net.head[0].weight.detach().clone()
                 trainer.train()
@@ -180,7 +180,7 @@ class PreparedWorkflowTest(unittest.TestCase):
                 result = ProteinPEClassifier().infer({'sequence': 'MACK'}, checkpoint)
                 self.assertEqual(len(result['classes']), 2)
                 self.assertAlmostEqual(sum(c['probability'] for c in result['classes']), 1, places=6)
-                resumed = MMseqs2Trainer(config, root / 'resumed', lambda _: None)
+                resumed = PLM_MLPTrainer(config, root / 'resumed', lambda _: None)
                 resumed.bind_models({'classifier': ProteinPEClassifier()})
                 resumed.load_checkpoint(checkpoint)
                 resumed.epochs = 2

@@ -8,7 +8,7 @@ Prepare data with [MMseqs2 preprocessing](../../../MMseq2Preprocessing/README.md
 That workflow joins a Swiss-Prot FASTA to a UniProt caution TSV, labels PE5
 entries with the pseudogene caution as class 0, and PE1/PE2 entries without
 that caution as class 1. MMseqs2 clusters sequences so related records remain
-in the same train or validation split. Select `MMseqs2Trainer` and this model,
+in the same train or validation split. Select `PLM_MLPTrainer` and this model,
 then choose the prepared `.pt` dataset. MMseqs2 is needed for preprocessing,
 not for training or inference.
 

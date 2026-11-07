@@ -121,7 +121,7 @@ sequences, and save labels, fixed
 split membership, and provenance in a portable `.pt` file. It requires a TSV
 annotation export from the same UniProt release as the FASTA.
 
-Select the prepared directory with **MMseqs2Trainer** and **ProteinPEClassifier**.
+Select the prepared directory with **PLM_MLPTrainer** and **ProteinPEClassifier**.
 The trainer preserves the cluster split, embeds sequences using frozen ProtT5,
 and trains a classification head on those embeddings. MMseqs2 is required only
 for preprocessing. Inference uses ProtT5 directly. See the tool README for setup,
