@@ -1,0 +1,231 @@
+{
+ "drive_folder_id": "16ZLjGsKJia4ZorFjWD41218pLLuxq1T9",
+ "drive_folder_url": "https://drive.google.com/drive/folders/16ZLjGsKJia4ZorFjWD41218pLLuxq1T9",
+ "local_root": "WebViewer/ModelsAndTrainers/Datasets",
+ "part_size_bytes": 7000000,
+ "files": [
+  {
+   "path": "uniprot_full_fasta/uniprot_pseudogene_caution.tsv",
+   "drive_folder": "01_raw_uniprot_sprot",
+   "sha256": "7a155dfaf694fed955c4fe28c166a003618ad969ceb52c22205ee3ee6b38d607",
+   "size": 107077,
+   "file_id": "1aUcEimjGLV5Hk9l9UFGcfYLLuqGS7r6E"
+  },
+  {
+   "path": "mlp_balanced/subset.fasta",
+   "drive_folder": "03_mlp_balanced",
+   "sha256": "a1fab4068330d7f463813ea17b81fb35a477e1dbfc5077508669cce7c6824aac",
+   "size": 1571103,
+   "file_id": "1mP4ByzL0LiOAUe_tfKt-YGKW56WyH7sA"
+  },
+  {
+   "path": "mlp_balanced/subset.tsv",
+   "drive_folder": "03_mlp_balanced",
+   "sha256": "14ac638dce71be97bc7682cdf950e43fa43976efb9a5142590c4c97851067116",
+   "size": 52053,
+   "file_id": "1P92HBdEcUT5isRjnCyuAOIz9YKeLElvr"
+  },
+  {
+   "path": "mlp_balanced/seed.txt",
+   "drive_folder": "03_mlp_balanced",
+   "sha256": "ad95b494195b0c3523bd77c3925de337a26b1235f3e68bbe2fb81700ad0f0499",
+   "size": 9,
+   "file_id": "18eaKdwqcvI0XRF0OpMNYX_FvF-QEzvFi"
+  },
+  {
+   "path": "mlp_balanced/clusters_cluster.tsv",
+   "drive_folder": "03_mlp_balanced",
+   "sha256": "43346166594bf3cdc3f81ca35ceec5071f0c68dd7c73975475bc7934f373784b",
+   "size": 49592,
+   "file_id": "1gEgTvaFB4rn2VYhWmMub6hSYwe5fimLQ"
+  },
+  {
+   "path": "mlp_balanced/clusters_rep_seq.fasta",
+   "drive_folder": "03_mlp_balanced",
+   "sha256": "c16952925aef9be45dd693d3f327b4910288b4eeae65af2e8bccb5c8c8b6be08",
+   "size": 1398714,
+   "file_id": "17Hy90gWX0W2zg6Hotr_2I92jnCARqTuU"
+  },
+  {
+   "path": "mlp_balanced/pseudogene_caution_pe5.txt",
+   "drive_folder": "03_mlp_balanced",
+   "sha256": "fa0acf4fbb6dbb178ed1061301c189747f300cbc27ad3466e5f9c43cc78278cd",
+   "size": 5689,
+   "file_id": "1egk2YCL3w2aXjyc_6fWjNyeO-pqNIfWo"
+  },
+  {
+   "path": "mlp_balanced/embeddings.npz",
+   "drive_folder": "03_mlp_balanced",
+   "sha256": "3770c66e10a7bb25f028a7782732ec935d90576df71a73414e8cb69150795d7d",
+   "size": 15017566,
+   "parts": [
+    {
+     "name": "embeddings.npz.part000",
+     "file_id": "1EHv3wG3VGzMfyy5XJqAoOJf3Uk0uRQ77",
+     "sha256": "1cab1aaf1e46ecbe248bb8ccc6442781eaa4e29ab6dbc7c31f996fb655a6396a"
+    },
+    {
+     "name": "embeddings.npz.part001",
+     "file_id": "17rSpje6_y3sODE0YCrCAXkGzf3KUSdrI",
+     "sha256": "a1dad771ba632f8658c6a64a88743a18cedd4c51870b1865383fed6911073c84"
+    },
+    {
+     "name": "embeddings.npz.part002",
+     "file_id": "1s-9zJDb_nwyWLGUe_3FaG7pj8p9uXsaJ",
+     "sha256": "6587b07e4cc2dde84b0eaaaa2edb5a0bc0b9d2e9346b65b5376f8844818d1335"
+    }
+   ]
+  },
+  {
+   "path": "mmseqs2_prepared/prepared.pt",
+   "drive_folder": "02_mmseqs2_prepared",
+   "sha256": "a93e95d71957409a3ba0b1bf7f4d407f0ba80dd75e11a28ed7178164b37622b5",
+   "size": 88476677,
+   "parts": [
+    {
+     "name": "prepared.pt.part000",
+     "file_id": "1hJORZd1GP2y1W2mmV8c5ywiTBbwZFiTX",
+     "sha256": "e38019fbb41150a48c7e06a504cb72f66dcea007e417f6b30d836ab31ccc77ef"
+    },
+    {
+     "name": "prepared.pt.part001",
+     "file_id": "1VzeZZWwea82aweCnp6mltsCoAyHAmf6X",
+     "sha256": "2faadda322d92e806acda5d6c299b54a15171e9a433aa71f5a17787976dc3c56"
+    },
+    {
+     "name": "prepared.pt.part002",
+     "file_id": "1bVNZyH3pK0bO3AT0rTKdr5YIey5R0KCp",
+     "sha256": "e35bbf9e5b7d63f696e8eed949ff102a87c0a438a3f9d290c240da3e546da0ad"
+    },
+    {
+     "name": "prepared.pt.part003",
+     "file_id": "1TKAdJgbpaDUiArRR2ErwN5njNsdzpngD",
+     "sha256": "f3120822bfa30f36702588e5614f265b123277dbb2f3ef55e175e709b2d5d658"
+    },
+    {
+     "name": "prepared.pt.part004",
+     "file_id": "1Zl94kphBZvHnzraoV28pYkHRcmv-WFQ2",
+     "sha256": "5a49d7accf5d44535f3d18c34945851e61fa5acb84d063d2c1b34fe4578252b8"
+    },
+    {
+     "name": "prepared.pt.part005",
+     "file_id": "1mGHhpuXMQyWLx82gpC9obh9UybHp-XGL",
+     "sha256": "8438319d6a3c9670321a9eeeef8223ed49a0d848d1d940b76e5447ba86c7a4ea"
+    },
+    {
+     "name": "prepared.pt.part006",
+     "file_id": "1CBwUDQc1o0F9aAt4pAAYds8X8iRQUyrB",
+     "sha256": "8edbd908b7777e511a178d3a9f023db9f034755cae364ead1edb9efca434f30d"
+    },
+    {
+     "name": "prepared.pt.part007",
+     "file_id": "12bEHjMw5yCMObiAGda9-ljeIXzyduXqX",
+     "sha256": "827f5624201249b68d94f665a3bfb010cc6ca0b7bc2e959fa432500b3c499595"
+    },
+    {
+     "name": "prepared.pt.part008",
+     "file_id": "1nQBpELIIbnn66My7VWua8ciDDEnf5Ffc",
+     "sha256": "230adc276b8edecedf298a14ac6700d84ea85ee00afaf48d90e6b3b6e8e00354"
+    },
+    {
+     "name": "prepared.pt.part009",
+     "file_id": "1MPYeZNAX9ipD_gqVjN17_FSoxcjP49uI",
+     "sha256": "6d2d187e3080cc1fc10608473f078f1594ba89577697b1810dc9857e68bba762"
+    },
+    {
+     "name": "prepared.pt.part010",
+     "file_id": "1JALtnZMqUQ0aPlywFjWQVSfcD8I6igw0",
+     "sha256": "888a15fbdf4d539595a7f6da44c657349ae4f4b4bc602011cc702b41d57db7a2"
+    },
+    {
+     "name": "prepared.pt.part011",
+     "file_id": "1EIErmDequ9mASuAXOKyMMj2DeH9mErCz",
+     "sha256": "d78bf1456ce892a28d6729152e7ca3db2ea19dc4c9841f07ac0a875d444fe965"
+    },
+    {
+     "name": "prepared.pt.part012",
+     "file_id": "1_Cuy55oElE-dMK2pEqMh9uRH30h1slVi",
+     "sha256": "aab3f44989d392fe6630152691f40825ca3a772905262ffd7eb470d23929048f"
+    }
+   ]
+  },
+  {
+   "path": "uniprot_full_fasta/uniprot_sprot.fasta.gz",
+   "drive_folder": "01_raw_uniprot_sprot",
+   "sha256": "a9c3496aa727e61d25d9e1291c9ba28d2c2ad19c0e26569dc083d53ec4169536",
+   "size": 93801562,
+   "parts": [
+    {
+     "name": "uniprot_sprot.fasta.gz.part000",
+     "file_id": "1tKyKQIqfhFecMTJCaZ4Lx3I1BHD2kTKd",
+     "sha256": "6d31a17f8e0e1eabd0c299ae85abdab86e8a4d8a967df3864ecf08790c40ffb7"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part001",
+     "file_id": "1ES1F5BBERpXPtRBQ8wlC-zceQ28AxOjD",
+     "sha256": "e974860ab15bc53a33246355d5c784ed51bd98558fea128f969ebdf85d02502d"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part002",
+     "file_id": "1EY9-uACGzgkoC2Nn3XQO5vhDdwNpRJaO",
+     "sha256": "b1452769c7ee76138819387341d8c498be17cecaa12bdc109dc7f5bb5e24dbd4"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part003",
+     "file_id": "1oZULhicnzlUPjhBdC4bdF5cnRqpXIDZB",
+     "sha256": "387dd06f44ab2b5d2b23c709d2ca21eaa418e1d020d8c4b714b43309922000f1"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part004",
+     "file_id": "1lINCkXO53JoRII_Agtt2efkw1VlDrZtt",
+     "sha256": "5c9b6a29b726f485061c05c2bdbb1854bb56d9edb298c5bf62130be07e3deb47"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part005",
+     "file_id": "1FGsf5Dlm9gXMvE_cEvQHybrRkSnrTEuZ",
+     "sha256": "3ddbb2bd5a70485a82a3187d76b7507ac237d8ce7e7af71c7c37f46cbe286ab6"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part006",
+     "file_id": "1WkBuhoE6U8dJXXuxeS350A3PWRpf4fQY",
+     "sha256": "6e19241c613c139897eaa51dbd815231021fcd24abc2fb5fd7ff5a37c0151a4a"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part007",
+     "file_id": "1Fri6li6qOOidG5nxM8anrN0Q5P_cdqVI",
+     "sha256": "ec19f8a2ae1b7ff26d481482964c526f9ee25e9eef28b8c21ad788764c0986af"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part008",
+     "file_id": "1UDFGHbN5DiaeuafZez3idZFaDhcBxKWJ",
+     "sha256": "575841227292ea52aad8ee57312341665f5fc1eba4df52421785c026b5ee41d3"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part009",
+     "file_id": "19G9JuAsjKMCIbSftubUmb0cnNKb2G3rD",
+     "sha256": "32403224bc0a669104a88264bd3fd4532d55983953b3c938a749955b43e171be"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part010",
+     "file_id": "1AgCBMflQKhWmUZrrBkZzjp_ZQJwsn1og",
+     "sha256": "9f9606424a09369d7c15a4bffca071ef19af0ef566992af87d8e77f31a73373e"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part011",
+     "file_id": "1Ycoi1FUBWPCfQKu8iB9YxK2gADjXFjMv",
+     "sha256": "23cc56d880b3b17723b778e2a6a899899b503234ec78f464ea35a0978e1b5fa8"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part012",
+     "file_id": "1grelzT2nkLG6fpzZFds-CnItx5e0USoa",
+     "sha256": "399dcc2684cbca5119224c3f4f14228406fb1daee8900ed261f8ad3927cd143b"
+    },
+    {
+     "name": "uniprot_sprot.fasta.gz.part013",
+     "file_id": "1pNXBLI9EMbK24LlczQqGDAL_HbGtSDcM",
+     "sha256": "c2bd588b51b80b56ae1327603b649e098250158a20b0572e61c5a56c3c812bc3"
+    }
+   ]
+  }
+ ]
+}
