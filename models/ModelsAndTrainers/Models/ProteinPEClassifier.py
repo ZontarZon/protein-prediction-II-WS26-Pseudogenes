@@ -8,8 +8,6 @@ from contextlib import nullcontext
 import torch
 from torch import nn
 
-from backend.models.base import ModelBase
-
 CHECKPOINT = 'Rostlab/prot_t5_xl_half_uniref50-enc'
 
 
@@ -67,7 +65,7 @@ def build_head(hidden_sizes, dropout, norm, activation, in_features=1024, classe
     return nn.Sequential(*layers)
 
 
-class ProteinPEClassifier(ModelBase):
+class ProteinPEClassifier(nn.Module):
     model_id = 'ProteinPEClassifier'
     display_name = 'ProtT5 pseudogene classifier'
     description = 'Frozen protein embeddings and a binary head: PE5 entries with the UniProt pseudogene caution versus PE1/PE2 entries without that caution.'
@@ -110,7 +108,7 @@ class ProteinPEClassifier(ModelBase):
         from transformers import T5EncoderModel, T5Tokenizer
         from transformers.utils import logging as transformer_logging
         from huggingface_hub.utils import disable_progress_bars
-        # Keep warnings/errors; send training progress through TrainerBase.report.
+        # Keep warnings/errors while suppressing encoder download progress.
         transformer_logging.set_verbosity_warning()
         transformer_logging.disable_progress_bar()
         disable_progress_bars()
@@ -224,7 +222,7 @@ class ProteinPEClassifier(ModelBase):
             self.encoder.requires_grad_(False)
 
     def extract_weight_state(self, checkpoint_state):
-        return super().extract_weight_state(checkpoint_state)
+        return checkpoint_state.get('model_state_dict', checkpoint_state)
 
     def load_weight_state(self, state, strict=True):
         return self.head.load_state_dict({k.removeprefix('head.'): v for k, v in state.items()}, strict=strict)

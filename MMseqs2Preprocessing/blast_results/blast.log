@@ -1,0 +1,4 @@
+2026-11-12 19:47:49,085 INFO sp|A0A0B7P3V8|YP41B_YEAST: submitted ncbiblast-R20261112-184747-0056-51699433-p1m
+2026-11-12 19:47:59,125 ERROR 0001_sp_A0A0B7P3V8_YP41B_YEAST.xml [sp|A0A0B7P3V8|YP41B_YEAST Transposon Ty4-P Gag-Pol polyprotein OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=TY4B-P PE=5 SV=2]: 400 Client Error: Bad Request for url: https://www.ebi.ac.uk/Tools/services/rest/ncbiblast/status/ncbiblast-R20261112-184747-0056-51699433-p1m; stopping
+2026-11-12 19:52:05,660 INFO sp|A0A0B7P3V8|YP41B_YEAST: submitted ncbiblast-R20261112-185203-0629-86411469-p2m
+2026-11-12 19:58:06,235 INFO 0001_sp_A0A0B7P3V8_YP41B_YEAST.xml [sp|A0A0B7P3V8|YP41B_YEAST Transposon Ty4-P Gag-Pol polyprotein OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=TY4B-P PE=5 SV=2]: interrupted; remote job may still be running

@@ -50,18 +50,36 @@ or provide more independent clusters. Cluster grouping reduces homology leakage;
 it does not certify a strict pairwise similarity bound between partitions.
 Records remain in memory; allow enough RAM and disk space for MMseqs2 clustering.
 
-Put the output directory under a configured WebViewer dataset root, mounted into
-the backend if using Docker. Select **PLM_MLPTrainer** and **ProteinPEClassifier**.
-The loader prefers `prepared.pt`, otherwise accepts a single `.pt` file in the
-selected directory. The data browser displays sequences, labels, and splits.
+## Train without WebViewer
+
+Install the training dependencies and run from the repository root:
+
+```bash
+pip install -r models/requirements.txt
+python -m models.ModelsAndTrainers.Trainers.PLM_MLPTrainer --training-data path/to/prepared.pt
+```
+
+Edit the normal `hparams` dictionary at the top of
+`models/ModelsAndTrainers/Trainers/PLM_MLPTrainer.py` to set epochs, batch size,
+learning rate, weight decay, seed, hidden sizes, dropout, normalization, and
+activation, as well as input/output paths and device. Defaults use batch size 32
+and CUDA when available, otherwise CPU. `--device cpu` and `--run-dir path/to/run`
+override the device and output directory. A dataset directory is also accepted:
+the loader prefers `prepared.pt`, otherwise requires a single `.pt` file.
 
 Training preserves the prepared split and requires no MMseqs2 executable.
-It uses `Rostlab/prot_t5_xl_half_uniref50-enc` with the existing ProteinPEClassifier
-embedding implementation: frozen encoder, mean pooling over all residues using
-1024-residue chunks, and a trainable head. Select CPU or CUDA in WebViewer.
-The backend needs its normal ProtT5 dependencies and access to the model weights
-(downloaded on first use). Training batch size defaults to 2; increase it to fit
-your hardware. The encoder stays in evaluation mode even while the head trains.
+It uses `Rostlab/prot_t5_xl_half_uniref50-enc`: a frozen encoder, mean pooling
+over all residues using 1024-residue chunks, and a trainable MLP head. The encoder
+stays in evaluation mode while the head trains. Model weights download on first
+use; they must be cached for offline training. Loss and accuracy print after each
+training/validation pass, and checkpoints go into `run_dir/checkpoints`.
+
+Resume with the same architecture and shuffle seed in `hparams`; set `epochs`
+to the desired total number of epochs:
+
+```bash
+python -m models.ModelsAndTrainers.Trainers.PLM_MLPTrainer --training-data path/to/prepared.pt --resume runs/plm_mlp/checkpoints/checkpoint_0001.pt
+```
 
 Checkpoints save the head, encoder identifier, optimizer, random state, dataset
 digest, and preprocessing provenance. Resume checks the original prepared file
@@ -73,6 +91,41 @@ same pretrained model rather than being duplicated in every checkpoint.
 sequences and cannot be converted safely into this format on their own. Legacy
 homology-head checkpoints also require a new training run. The loader rejects
 them with an actionable message.
+
+```bash
+python -m unittest discover -s models/tests -v
+```
+
+## Sequential BLASTP searches
+
+Use Python 3.12+ and install `MMseqs2Preprocessing/requirements.txt` in your
+virtual environment. Edit the settings at the top of `blastJob.py`: set `EMAIL`
+to your real contact address and choose input/output paths, batch size, polling
+interval, submission delay, and request timeout. Then run without arguments:
+
+```bash
+python MMseqs2Preprocessing/blastJob.py
+```
+
+The script reads the FASTA in small batches, submitting one protein at a time.
+It waits 30 seconds before the first status check and between subsequent checks,
+downloads the completed XML directly into `OUTPUT_DIR`, then pauses 10 seconds
+before continuing. These delays are configurable. Filenames include input position
+and FASTA ID. `blast.log` records submitted job IDs and short failure messages
+identifying the affected record. Invalid sequences and terminal job failures are
+logged and processing continues. Network/API request errors stop the run because
+a remote job could still be running. Ctrl+C stops processing.
+
+Rate-limited status checks retry up to `STATUS_RETRIES` times, with pauses
+starting at `RETRY_DELAY` seconds and doubling. This includes EBI scheduler
+rate limits wrapped in HTTP 400 responses. Error logs include the response body.
+Submission requests are never retried automatically.
+
+This simplified script has no resume tracking. Running it
+again submits the input again and replaces matching result filenames; use a new
+output directory when keeping separate runs.
+
+Offline tests (no API submissions):
 
 ```bash
 python -m unittest discover -s MMseqs2Preprocessing/tests -v

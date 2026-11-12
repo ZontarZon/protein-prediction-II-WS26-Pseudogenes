@@ -1,2 +1,6 @@
 # Python 3.11+; MMseqs2 is a separate native executable, not a pip dependency.
 torch>=2.5,<3
+# Batch BLAST client (blastJob.py), Python 3.12+
+requests>=2.31,<3
+biopython>=1.83,<2
+tqdm>=4.66,<5
