@@ -1,5 +1,0 @@
-**
-!Dockerfile
-!backend/
-backend/**
-!backend/requirements.txt

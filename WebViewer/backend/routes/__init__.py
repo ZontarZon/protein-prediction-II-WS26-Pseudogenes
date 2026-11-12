@@ -1,1 +1,0 @@
-"""Modular REST API routes."""

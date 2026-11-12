@@ -1,3 +1,0 @@
-[submodule "external/MMseqs2"]
-	path = external/MMseqs2
-	url = https://github.com/soedinglab/MMseqs2.git

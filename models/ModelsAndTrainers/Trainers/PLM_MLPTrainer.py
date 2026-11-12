@@ -4,10 +4,10 @@ import math
 
 import torch
 from torch import nn
-from ModelsAndTrainers.Models.ProteinPEClassifier import CHECKPOINT
+from models.ModelsAndTrainers.Models.ProteinPEClassifier import CHECKPOINT
 
 from backend.trainers.base import TrainerBase, dataset, hyperparameter, model
-from ModelsAndTrainers.DataLoaders.MMseqs2ClassificationData import (
+from models.ModelsAndTrainers.DataLoaders.MMseqs2ClassificationData import (
     load_prepared,
 )
 

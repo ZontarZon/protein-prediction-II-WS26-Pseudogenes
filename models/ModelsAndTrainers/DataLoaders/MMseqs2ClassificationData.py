@@ -10,7 +10,7 @@ from pathlib import Path
 
 import torch
 
-from ModelsAndTrainers.DataLoaders.FastaDataLoader import FastaDataset
+from models.ModelsAndTrainers.DataLoaders.FastaDataLoader import FastaDataset
 
 DEFAULT_SETTINGS = {
     "identity": 0.5,
@@ -77,7 +77,7 @@ def load_records(path, annotation_path, control=None):
     records = []
     for index, record in enumerate(FastaDataset(path)):
         if control is not None and not control():
-            from ModelsAndTrainers.DataLoaders.MMseqs2Runner import MMseqs2Stopped
+            from models.ModelsAndTrainers.DataLoaders.MMseqs2Runner import MMseqs2Stopped
 
             raise MMseqs2Stopped()
         fields = record["id"].split("|")
