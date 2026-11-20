@@ -1,0 +1,3255 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-182526-0324-41036074-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-182526-0324-41036074-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q2V3J1|DEF88_ARATH" type="PROTEIN" length="94"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T18:25:26+00:00" end="2026-11-13T18:27:43+00:00" search="P0Y0M0DT0H0M137.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="190">
+   <hit number="1" database="SP" id="DEF88_ARATH" ac="Q2V3J1" length="94" description="Putative defensin-like protein 88 OS=Arabidopsis thaliana OX=3702 GN=At4g13955 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>500</score>
+      <bits>197.2</bits>
+      <expectation>6e-64</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</pattern>
+      <matchSeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A8T2EAU6_ARASU" ac="A0A8T2EAU6" length="94" description="Defensin OS=Arabidopsis suecica OX=45249 GN=ISN44_As04g013730 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>491</score>
+      <bits>193.7</bits>
+      <expectation>1.4e-62</expectation>
+      <identity>98.9</identity>
+      <positives>98.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMT NELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</pattern>
+      <matchSeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTCNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A8T2E0P5_9BRAS" ac="A0A8T2E0P5" length="94" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_At04g014130 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>491</score>
+      <bits>193.7</bits>
+      <expectation>1.4e-62</expectation>
+      <identity>98.9</identity>
+      <positives>98.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMT NELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</pattern>
+      <matchSeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTCNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A8S2AX83_ARAAE" ac="A0A8S2AX83" length="93" description="Defensin-like protein OS=Arabidopsis arenosa OX=38785 GN=AARE701A_LOCUS19537 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>435</score>
+      <bits>172.2</bits>
+      <expectation>4.8e-54</expectation>
+      <identity>88.3</identity>
+      <positives>92.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MA QKFSYFLL+LLMVFALILPSIISVEVIPCI GSKCTNDMT NELCRFKGFSKGGFCQKYVH+T G+CCCHP G ESQESS SGDTNV+ITN</pattern>
+      <matchSeq start="1" end="93">MAIQKFSYFLLLLLMVFALILPSIISVEVIPCIPGSKCTNDMTCNELCRFKGFSKGGFCQKYVHKTTGQCCCHP-GFESQESSTSGDTNVLITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ACE2DIF7_ARAHA" ac="A0ACE2DIF7" length="93" description="Uncharacterized protein OS=Arabidopsis halleri OX=81970 GN=ARAHAL_7.1822.1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>432</score>
+      <bits>171.0</bits>
+      <expectation>1.4e-53</expectation>
+      <identity>87.2</identity>
+      <positives>92.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MA QKFSYFLL+LLMVFALILPSIISVEVIPCI GSKCTNDMT NELCRFKGF+KGGFCQKYVH+T G+CCCHP G ESQESS SGDTNV+ITN</pattern>
+      <matchSeq start="1" end="93">MAIQKFSYFLLLLLMVFALILPSIISVEVIPCIPGSKCTNDMTCNELCRFKGFNKGGFCQKYVHKTTGQCCCHP-GFESQESSTSGDTNVLITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A8T1YPA9_ARASU" ac="A0A8T1YPA9" length="93" description="Defensin-like protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As12g029220 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>429</score>
+      <bits>169.9</bits>
+      <expectation>3.9e-53</expectation>
+      <identity>86.2</identity>
+      <positives>92.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MA QKFSYFLL+LLMVFALILPSIISVEVIPCI GSKCTNDMT NELCRFKGF+KGGFCQKYVH+T G+CCCHP G ESQESS +GDTNV+ITN</pattern>
+      <matchSeq start="1" end="93">MAIQKFSYFLLLLLMVFALILPSIISVEVIPCIPGSKCTNDMTCNELCRFKGFNKGGFCQKYVHKTTGQCCCHP-GFESQESSTTGDTNVLITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="D7MH96_ARALL" ac="D7MH96" length="93" description="Uncharacterized protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_658907 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>426</score>
+      <bits>168.7</bits>
+      <expectation>1.1e-52</expectation>
+      <identity>86.2</identity>
+      <positives>91.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MA QKFSYFLL+LLMVFALILPSIISVEVIPCI GSKCTNDMT NELCRFKGF+KGGFCQKYVH+T G+CCCHP G ESQE S +GDTNVVITN</pattern>
+      <matchSeq start="1" end="93">MAIQKFSYFLLLLLMVFALILPSIISVEVIPCIPGSKCTNDMTCNELCRFKGFNKGGFCQKYVHKTTGQCCCHP-GFESQEYSTTGDTNVVITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A8T1Y7U1_9BRAS" ac="A0A8T1Y7U1" length="86" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_Aa07g029870 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>364</score>
+      <bits>144.8</bits>
+      <expectation>2.6e-43</expectation>
+      <identity>86.1</identity>
+      <positives>91.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="79">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLES</querySeq>
+      <pattern>M  QKFSYFLL+LLMVFALILPSIISVEVIPCI GSKCTNDMT NELCRFKGF+KGGFCQKYVH+T G+CCCHP G ES</pattern>
+      <matchSeq start="1" end="78">MTIQKFSYFLLLLLMVFALILPSIISVEVIPCIPGSKCTNDMTCNELCRFKGFNKGGFCQKYVHKTTGQCCCHP-GFES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0ABM1QQX3_CAMSA" ac="A0ABM1QQX3" length="93" description="Defensin-like protein 88 OS=Camelina sativa OX=90675 GN=LOC104732284 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>334</score>
+      <bits>133.3</bits>
+      <expectation>1.2e-38</expectation>
+      <identity>68.1</identity>
+      <positives>78.7</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MA +KFSYFLL LLMVFA ILPS+ISVEVIPCI GS C+ ++T N LC+ KG+  GGFCQKYV +  G CCCHP G ESQ+SSIS D NV+I N</pattern>
+      <matchSeq start="1" end="93">MAMEKFSYFLLPLLMVFAFILPSMISVEVIPCIPGSTCSRNLTCNVLCKLKGYKLGGFCQKYVGKKTGNCCCHP-GFESQDSSISDDINVLIPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0ACE2DJ89_ARAHA" ac="A0ACE2DJ89" length="93" description="Uncharacterized protein OS=Arabidopsis halleri OX=81970 GN=ARAHAL_7.1825.1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>325</score>
+      <bits>129.8</bits>
+      <expectation>2.9e-37</expectation>
+      <identity>65.6</identity>
+      <positives>78.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVIT</querySeq>
+      <pattern>MA +KF + LL+ L++FALILPS  SVEV PCI GS C+NDMT NELCRFKG+  GGFC+KYV +T G CCCHP G ES +S +S DTNV+IT</pattern>
+      <matchSeq start="1" end="92">MAIEKFPHVLLLSLILFALILPSSFSVEVTPCIQGSVCSNDMTCNELCRFKGYKLGGFCEKYVGKTTGHCCCHP-GFESHDSFVSDDTNVLIT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="R0GX80_9BRAS" ac="R0GX80" length="94" description="Knottin scorpion toxin-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10006930mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>320</score>
+      <bits>127.9</bits>
+      <expectation>1.7e-36</expectation>
+      <identity>64.9</identity>
+      <positives>75.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MAT+KFS FLL LLMVFA ILPS+ISVEVIPC+ G +C+ND T NE+C  KG+  GG+CQKYV +  G CCCHP    SQ SSIS D NV+I N</pattern>
+      <matchSeq start="1" end="94">MATKKFSSFLLPLLMVFAFILPSMISVEVIPCLQGVRCSNDTTCNEICISKGYRLGGYCQKYVGKKTGHCCCHPNFDSSQHSSISNDINVLIPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A8T1Y7A9_9BRAS" ac="A0A8T1Y7A9" length="93" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_Aa07g029830 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>315</score>
+      <bits>125.9</bits>
+      <expectation>9.5e-36</expectation>
+      <identity>63.4</identity>
+      <positives>78.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVIT</querySeq>
+      <pattern>MA +KFS+ LL+ L++FALILPS+ SV+  PCI GS C+NDMT NELC+FKG+  GGFCQKYV +T G CCC P G ES +S +S DTNV+IT</pattern>
+      <matchSeq start="1" end="92">MAIEKFSHVLLLSLILFALILPSVFSVKGTPCIQGSVCSNDMTCNELCKFKGYKLGGFCQKYVGKTTGHCCCFP-GFESHDSFVSDDTNVLIT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="D7MH95_ARALL" ac="D7MH95" length="93" description="Uncharacterized protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_915513 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>310</score>
+      <bits>124.0</bits>
+      <expectation>5.5e-35</expectation>
+      <identity>63.4</identity>
+      <positives>77.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVIT</querySeq>
+      <pattern>MA +KFS+ LL+ L++FALILPS  SV+  PCI GS C+NDMT NELCRFKG+  GGFCQKYV +T G CCC P G ES +S +S DTN++IT</pattern>
+      <matchSeq start="1" end="92">MAIEKFSHVLLLSLILFALILPSSFSVKGTPCIQGSVCSNDMTCNELCRFKGYKLGGFCQKYVGKTTGHCCCFP-GFESHDSFVSDDTNLLIT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A8T1YNX0_ARASU" ac="A0A8T1YNX0" length="94" description="Uncharacterized protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As12g029200 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>309</score>
+      <bits>123.6</bits>
+      <expectation>8.1e-35</expectation>
+      <identity>63.2</identity>
+      <positives>77.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALI-LPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MA +KFS+ LL+ L++FALI LPS+ SV+  PCI GS C+NDMT NELC+FKG+  GGFCQKYV +T G CCC P G ES +S +S DTNV+ITN</pattern>
+      <matchSeq start="1" end="94">MAIEKFSHVLLLSLILFALIHLPSVFSVKGTPCIQGSVCSNDMTCNELCKFKGYKLGGFCQKYVGKTTGHCCCFP-GFESHDSFVSDDTNVLITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="R0GPS6_9BRAS" ac="R0GPS6" length="75" description="Knottin scorpion toxin-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10007497mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>278</score>
+      <bits>111.7</bits>
+      <expectation>2.5e-30</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHP</querySeq>
+      <pattern>M T+KFSYFLL LLMVFA ILPSIISVEVIPCI   +C+ND T NE+C  KGF  GG+CQKYV +  G CCCHP</pattern>
+      <matchSeq start="1" end="74">MVTKKFSYFLLPLLMVFAFILPSIISVEVIPCIEEIRCSNDKTCNEVCITKGFRFGGYCQKYVGKKTGYCCCHP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="V4M017_EUTSA" ac="V4M017" length="100" description="Knottin scorpion toxin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10027134mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>227</score>
+      <bits>92.0</bits>
+      <expectation>2.9e-22</expectation>
+      <identity>46.5</identity>
+      <positives>62.4</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGS-------KCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MA ++ S  LL+ L+VFALIL    S     C+  +       +C N+MT NELC+FKG+  GGFC  YV    G CCC+P+  +SQESS+S +TN+ ITN</pattern>
+      <matchSeq start="1" end="100">MANKEISSLLLLSLVVFALILVPTASGNTFSCLRSTSHTLSSVECQNNMTCNELCKFKGYKLGGFCHNYVGSKTGHCCCNPS-YKSQESSLSDNTNIFITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="V4M010_EUTSA" ac="V4M010" length="87" description="Knottin scorpion toxin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10026792mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>209</score>
+      <bits>85.1</bits>
+      <expectation>1.1e-19</expectation>
+      <identity>53.3</identity>
+      <positives>61.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="90">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNV</querySeq>
+      <pattern>MAT+KFS   LV LMVFALI   +IS +   C     C N  T NE CR+KG+  GGFC+ YV    G CCC     ESQESSIS +TNV</pattern>
+      <matchSeq start="1" end="87">MATKKFSS--LVSLMVFALIFLPMISGQAKECFLQPGCKNSGTCNEFCRYKGYRLGGFCEYYVGSKKGHCCC-KLSFESQESSISDNTNV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0ABC8IV63_ERUVS" ac="A0ABC8IV63" length="92" description="Uncharacterized protein OS=Eruca vesicaria subsp. sativa OX=29727 GN=ERUC_LOCUS2535 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>205</score>
+      <bits>83.6</bits>
+      <expectation>5.1e-19</expectation>
+      <identity>51.6</identity>
+      <positives>62.1</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKY-VHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>M T KFS  +L LLMV AL L  IIS +++PC+ G  CTN    N  C+ KG+ KGG C K  V +  G CCC P   ESQ+SSIS D NV+I N</pattern>
+      <matchSeq start="1" end="92">MTTNKFSSLILSLLMVTALFLMPIISGQMVPCLPG-PCTNSAACNSACKSKGY-KGGACVKMNVGEKSGACCCKP-NFESQDSSISHDPNVLIPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A6J0N5W0_RAPSA" ac="A0A6J0N5W0" length="91" description="Defensin-like protein 88 OS=Raphanus sativus OX=3726 GN=LOC108851139 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>204</score>
+      <bits>83.2</bits>
+      <expectation>7.1e-19</expectation>
+      <identity>45.7</identity>
+      <positives>59.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MAT+KF    L+ LMV   I   ++S +   C     C N  T NE CRFKG+ +GGFC+ +V    G CCC+  G ES++ S S DTNV+ITN</pattern>
+      <matchSeq start="1" end="91">MATKKF--LSLISLMVLVSIYLPMVSGQARECFLQQPCQNSTTCNEFCRFKGYRRGGFCEHFVGSKDGHCCCY-FGFESEKFSKSNDTNVLITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A0D3DBW7_BRAOL" ac="A0A0D3DBW7" length="92" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica oleracea var. oleracea OX=109376 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>185</score>
+      <bits>75.9</bits>
+      <expectation>5.6e-16</expectation>
+      <identity>45.3</identity>
+      <positives>62.1</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKY-VHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>M+T KFS  +  L+MV AL L  IIS +++PC+ G +CTN    N  C+ KG+ +GG C K  +    G CCC    +ESQ+SS+S D NV+I N</pattern>
+      <matchSeq start="1" end="92">MSTTKFSSLIFSLVMVTALFLMPIISGQMVPCLPG-ECTNSSACNSACKSKGY-RGGVCVKMDIGAKSGACCCR-RNVESQDSSMSYDANVLIPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0ACE2EY75_ARAHA" ac="A0ACE2EY75" length="93" description="Uncharacterized protein OS=Arabidopsis halleri OX=81970 GN=ARAHAL_8.1680.1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>1.9e-14</expectation>
+      <identity>43.2</identity>
+      <positives>58.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTY-NELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MAT KFS  +L+ LMVFA IL  +IS ++IPC+    CTND +  NE C+ KG+  G   +  +    G CCC P   +SQ+S  S + +V I N</pattern>
+      <matchSeq start="1" end="93">MATNKFSSIVLLSLMVFAAILLPMISAQMIPCLP-VVCTNDSSECNEACKLKGYQGGACVRMSIESPTGACCCKP-NFKSQDSFESNEISVRINN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0ABM1R963_CAMSA" ac="A0ABM1R963" length="90" description="Defensin-like protein 83 OS=Camelina sativa OX=90675 GN=LOC109130443 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>174</score>
+      <bits>71.6</bits>
+      <expectation>2.5e-14</expectation>
+      <identity>49.5</identity>
+      <positives>61.1</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKY-VHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MAT KFSY  L+LL+VF   L  IIS ++IPCI+G  CT+    N  C  KG+ KGG C +     T G CCC+P   +SQES  S   NV+ITN</pattern>
+      <matchSeq start="1" end="90">MATNKFSYLSLLLLIVFTPSLLPIISGQMIPCISGI-CTDSTPCNVACISKGY-KGGVCVRMDFSSTTGACCCNP-NFKSQESFKS--DNVLITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0ABQ7M9K5_BRACM" ac="A0ABQ7M9K5" length="92" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica rapa subsp. trilocularis OX=1813537 GN=A06p046750.1_BraROA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>173</score>
+      <bits>71.2</bits>
+      <expectation>3.7e-14</expectation>
+      <identity>44.2</identity>
+      <positives>60.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKY-VHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>M+T KF   +  L+MV AL L  IIS +++PC+ G +CTN    N  C+ KG+ +GG C K  +    G CCC     ESQ+SS+S D NV+I N</pattern>
+      <matchSeq start="1" end="92">MSTTKFPSLIFSLVMVTALFLMPIISGQMVPCLPG-ECTNSSVCNSACKSKGY-RGGVCVKMDLGAKSGACCC-KRYFESQDSSMSYDANVLIPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A8D9G9P1_BRACM" ac="A0A8D9G9P1" length="92" description="Uncharacterized protein OS=Brassica campestris OX=3711 GN=BRAPAZ1V2_A06P46270.2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>173</score>
+      <bits>71.2</bits>
+      <expectation>3.7e-14</expectation>
+      <identity>43.2</identity>
+      <positives>58.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKY-VHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>M+T KF   +  L+MV AL L  IIS +++PC+ G +CTN    N  C+ KG+ +GG C K  +    G CCC     ESQ+SS+S D N +I N</pattern>
+      <matchSeq start="1" end="92">MSTTKFPSLIFSLVMVTALFLMPIISGQMVPCLPG-ECTNSSVCNSACKSKGY-RGGVCVKMDLGAKSGACCCR-RNFESQDSSMSYDANALIPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="D7MMP7_ARALL" ac="D7MMP7" length="88" description="Uncharacterized protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_331300 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>9.4e-14</expectation>
+      <identity>43.8</identity>
+      <positives>57.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="89">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTN</querySeq>
+      <pattern>MAT KFS  +L+ LMVFA IL  +IS ++IPC+ G  CTN    NE C+ KG+  G   +  +    G CCC P   +SQ+S    D N</pattern>
+      <matchSeq start="1" end="87">MATNKFSSIVLLSLMVFAAILLPMISGQMIPCLEG-VCTNSSECNEPCKSKGYQGGACVRMSIDTPTGACCCKP-NFKSQDSFEFNDIN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="V4KIQ3_EUTSA" ac="V4KIQ3" length="92" description="Knottin scorpion toxin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10023920mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>6e-13</expectation>
+      <identity>43.6</identity>
+      <positives>54.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MAT+K S  LL   MVFAL L  +IS ++IPC+ G +CT     +  C+ KG+  G           G CCC     ESQ+ S S DTNV ITN</pattern>
+      <matchSeq start="1" end="92">MATKKSSSLLLFSFMVFALCLMPMISGQMIPCLPG-ECTKAAACDVACKSKGYKGGACIMMSFGAKTGACCC-KANFESQDFSKSDDTNVRITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A3P6BYY6_BRACM" ac="A0A3P6BYY6" length="68" description="Knottin scorpion toxin-like domain-containing protein (Fragment) OS=Brassica campestris OX=3711 GN=BRAPAZ1V2_A04P09140.2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>9.3e-13</expectation>
+      <identity>48.5</identity>
+      <positives>61.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="94">EVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNV-VITN</querySeq>
+      <pattern>+V  C    +C N  T NE CRFKG+  GGFC+ +V    G CCC+  G ES++ S S DTNV +ITN</pattern>
+      <matchSeq start="2" end="68">QVRECFLQQQCKNSTTCNEFCRFKGYRLGGFCEHFVGSKNGHCCCY-FGFESEKFSKSDDTNVLLITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="SP" id="DEF89_ARATH" ac="Q2V3J0" length="89" description="Putative defensin-like protein 89 OS=Arabidopsis thaliana OX=3702 GN=At4g13968 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>1.6e-12</expectation>
+      <identity>44.7</identity>
+      <positives>63.5</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="94">LVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDT-NVVITN</querySeq>
+      <pattern>LV +MVFALIL  +IS + + C +G  CT+D T N+ C  +  + GG C +  +     CCC+ + ++SQESS+S DT NV ITN</pattern>
+      <matchSeq start="9" end="89">LVSVMVFALILLPMISGQTMQCYSGIACTDDGTCNDYCNPRNNNLGGVCLRRAN----CCCCYVSVVKSQESSLSKDTNNVFITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A8T2DPE5_ARASU" ac="A0A8T2DPE5" length="91" description="Uncharacterized protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As05g043660 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>4.7e-12</expectation>
+      <identity>40.4</identity>
+      <positives>54.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MAT KF   LL+ LM FA IL  +IS ++I C+ G +CTN    N  C+  G+  G      +  T G CCC P   +SQ+S  S D  ++I N</pattern>
+      <matchSeq start="1" end="90">MATNKFLSILLLSLMAFAAILLPMISGQIITCLPG-ECTNPSECNAACKSNGYKGGACVSMSIGSTTGACCCKP-NFKSQDSFKSND--IIINN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A8T2D5S0_9BRAS" ac="A0A8T2D5S0" length="91" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_At05g044290 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>4.7e-12</expectation>
+      <identity>40.4</identity>
+      <positives>54.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MAT KF   LL+ LM FA IL  +IS ++I C+ G +CTN    N  C+  G+  G      +  T G CCC P   +SQ+S  S D  ++I N</pattern>
+      <matchSeq start="1" end="90">MATNKFLSILLLSLMAFAAILLPMISGQIITCLPG-ECTNPSECNAACKSNGYKGGACVSMSIGSTTGACCCKP-NFKSQDSFKSND--IIINN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="SP" id="DEF83_ARATH" ac="P82761" length="91" description="Putative defensin-like protein 83 OS=Arabidopsis thaliana OX=3702 GN=LCR46 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>4.7e-12</expectation>
+      <identity>40.4</identity>
+      <positives>54.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MAT KF   LL+ LM FA IL  +IS ++I C+ G +CTN    N  C+  G+  G      +  T G CCC P   +SQ+S  S D  ++I N</pattern>
+      <matchSeq start="1" end="90">MATNKFLSILLLSLMAFAAILLPMISGQIITCLPG-ECTNPSECNAACKSNGYKGGACVSMSIGSTTGACCCKP-NFKSQDSFKSND--IIINN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="V4MLR0_EUTSA" ac="V4MLR0" length="93" description="Knottin scorpion toxin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10005194mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <bits>65.1</bits>
+      <expectation>9.9e-12</expectation>
+      <identity>42.1</identity>
+      <positives>56.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTN-VVITN</querySeq>
+      <pattern>MA  +FS  LL+ LMV AL L  IIS +++PC+ G +CT     +  C+ KG+  G   +    +  G CCC    +ESQ+ S S DTN V ITN</pattern>
+      <matchSeq start="1" end="93">MAKNEFSPLLLLSLMVLALFLMPIISGQMLPCLPG-ECTKTEACDAACKSKGYKGGACIRMSFGEKTGACCC-KANVESQDFSKSDDTNDVRITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A8T1XI40_9BRAS" ac="A0A8T1XI40" length="482" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_Aa08g010930 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>4e-11</expectation>
+      <identity>42.9</identity>
+      <positives>57.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="91">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVV</querySeq>
+      <pattern>MAT KFS  +L+ LMVFA IL  +IS ++IPC+ G  CT+    NE C+ KG+  G   +  +    G CCC P   +SQ+S  S D   V</pattern>
+      <matchSeq start="1" end="89">MATNKFSSIVLLSLMVFAAILLPMISGQMIPCLEG-VCTDSSECNEPCKSKGYQGGACVRMSIDLPTGACCCKP-NFKSQDSFESTDDKQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0A8T1YN85_ARASU" ac="A0A8T1YN85" length="89" description="Defensin-like protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As12g029150 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>7.3e-11</expectation>
+      <identity>43.5</identity>
+      <positives>60.0</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="94">LVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS-GDTNVVITN</querySeq>
+      <pattern>LV +MVFALI+  +IS + + C +G  CTN+ T N+ C+ +  + GG C       +  CCC+    ESQESSIS  + NV ITN</pattern>
+      <matchSeq start="9" end="89">LVSVMVFALIVLPMISGKNLQCFSGIACTNNDTCNDYCKPRNNNLGGVCL----VGLNCCCCYVAVAESQESSISKNNNNVFITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="D7MH92_ARALL" ac="D7MH92" length="89" description="Defensin-like protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_330120 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>7.3e-11</expectation>
+      <identity>43.5</identity>
+      <positives>60.0</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="94">LVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS-GDTNVVITN</querySeq>
+      <pattern>LV +MVFALI+  +IS + + C +G  CTN  T N+ C+ +  + GG C       +  CCC+    ESQESSIS  + NV+ITN</pattern>
+      <matchSeq start="9" end="89">LVSVMVFALIVLPMISGQNMQCFSGIACTNTDTCNDYCKPRNNNLGGVCL----VGLNCCCCYVAVAESQESSISKNNNNVLITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0ACE2DKL4_ARAHA" ac="A0ACE2DKL4" length="90" description="Uncharacterized protein OS=Arabidopsis halleri OX=81970 GN=ARAHAL_7.1828.1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>7.5e-11</expectation>
+      <identity>43.5</identity>
+      <positives>58.8</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="94">LVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS-GDTNVVITN</querySeq>
+      <pattern>LV +MVFALI+  +IS + + C +G  CTN  T N+ C+ +  + GG C       +  CCC+    ESQESSIS  + NV ITN</pattern>
+      <matchSeq start="9" end="90">LVSVMVFALIVLPMISGKNLQCFSGIACTNTDTCNDYCKPRNNNLGGVCHLV---GLNCCCCYVAVAESQESSISKNNNNVFITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="V4MD82_EUTSA" ac="V4MD82" length="86" description="Knottin scorpion toxin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10027228mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <bits>60.1</bits>
+      <expectation>7.7e-10</expectation>
+      <identity>41.2</identity>
+      <positives>55.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS</querySeq>
+      <pattern>MAT+K SY  L +LMVFALIL  IIS +   C+    C + +  +  C   G+ +GG C+ Y +   G CCC  T  + Q S IS</pattern>
+      <matchSeq start="1" end="82">MATKKCSYLRLPMLMVFALILLPIISGQYYKCMKDG-CISTLACDAKCTSMGYPRGGSCRAYSYG--GVCCCECTSKQCQHSLIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0AAU9RJQ7_THLAR" ac="A0AAU9RJQ7" length="93" description="Uncharacterized protein OS=Thlaspi arvense OX=13288 GN=TAV2_LOCUS5610 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <bits>59.7</bits>
+      <expectation>1.3e-09</expectation>
+      <identity>37.2</identity>
+      <positives>48.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>MAT   S  LL  L+VFA  L  +IS +++PC+ G +CT+    +  C+ KG   G      V    G CCC     ES + S   D   VITN</pattern>
+      <matchSeq start="1" end="93">MATNILSSLLLSSLLVFAFFLMPMISGQMVPCLPG-ECTDSAACDAACKSKGNEGGACILISVDAKSGDCCCKANNFESLDDSSISDATNVITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A0D3DIF3_BRAOL" ac="A0A0D3DIF3" length="90" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica oleracea var. oleracea OX=109376 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>2.4e-09</expectation>
+      <identity>40.0</identity>
+      <positives>52.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS</querySeq>
+      <pattern>MA +KFS+  L  L+VFALIL  +IS +   C     CTN +  +  C+  GF KGG C+ Y +   G CCC  +    Q   IS</pattern>
+      <matchSeq start="1" end="82">MAAKKFSFLQLPFLVVFALILLPMISGQYYKCNKDG-CTNTLVCDAKCKSMGFPKGGVCRAYSYG--GACCCECSSKACQHPFIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A8T1YBU5_9BRAS" ac="A0A8T1YBU5" length="92" description="Defensin-like protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_Aa07g029790 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>2.5e-09</expectation>
+      <identity>42.0</identity>
+      <positives>58.0</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="94">LVLLMVFALILPSIISVEV---IPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS-GDTNVVITN</querySeq>
+      <pattern>LV +MVFALI+  +IS +    + C +G  CTN+ T N+ C+ +  + GG C       +  CCC+    ESQESSIS  + NV ITN</pattern>
+      <matchSeq start="9" end="92">LVSVMVFALIVLPMISGQTGKNLQCFSGIACTNNDTCNDYCKPRNNNLGGVCL----VGLNCCCCYVAVAESQESSISKNNNNVFITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="D7MMP8_ARALL" ac="D7MMP8" length="76" description="Uncharacterized protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_917831 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>3.5e-09</expectation>
+      <identity>44.4</identity>
+      <positives>54.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT KFS   L  LMVF LIL  +IS ++IPC+ G KC N  T N  C+ +G+  G      V    G  CC</pattern>
+      <matchSeq start="1" end="71">MATNKFSSCFLFSLMVFFLILLPLISGQMIPCLLG-KCKNTRTCNASCKSRGYKGGACISMDVRSKTGAYCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="V4MKE2_EUTSA" ac="V4MKE2" length="87" description="Knottin scorpion toxin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10027421mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>4.5e-09</expectation>
+      <identity>45.3</identity>
+      <positives>57.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT KFS+FLL LLMVFALI+  + S +   C+    CT      + CR  GFS GG C+  ++   G CCC  T</pattern>
+      <matchSeq start="1" end="71">MATTKFSFFLLPLLMVFALIVLPMTSGQYFKCM--DACTLTPPCADKCRAMGFSNGGECR--IYSFGGVCCCQCT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="R0GSB3_9BRAS" ac="R0GSB3" length="95" description="Bifunctional inhibitor/plant lipid transfer protein/seed storage helical domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10028632mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>5.5e-09</expectation>
+      <identity>38.9</identity>
+      <positives>56.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="90">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNV</querySeq>
+      <pattern>MAT KFS FLL++L+V  L L S+IS ++IPC+ G  C +  + +  C  + +  G         T G CCC+P  + SQ+S    DT+V</pattern>
+      <matchSeq start="1" end="88">MATYKFSSFLLLVLIVSTLSLLSMISGQMIPCLPG-VCADTTSCHVACISQAYKGGACVLMDFSSTTGSCCCNP-NIISQDSFKYSDTSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A3P5YQ21_BRACM" ac="A0A3P5YQ21" length="85" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica campestris OX=3711 GN=BRAPAZ1V2_A06P56840.2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>6.1e-09</expectation>
+      <identity>40.0</identity>
+      <positives>51.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS</querySeq>
+      <pattern>MA +KFS+  L  LMVFALIL   IS +   C+    CT  +  +  C+  GF KGG C+ Y +   G CCC  +    Q   IS</pattern>
+      <matchSeq start="1" end="82">MAAKKFSFLQLPFLMVFALILLPTISGQYYKCMKDG-CTLTLVCDAKCKSMGFPKGGVCRAYSYG--GACCCECSSKACQHPFIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0ABQ7YP83_BRANA" ac="A0ABQ7YP83" length="884" description="Thioesterase domain-containing protein (Fragment) OS=Brassica napus OX=3708 GN=HID58_077057 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.1e-08</expectation>
+      <identity>45.2</identity>
+      <positives>60.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKY-VHQTIGRCCC</querySeq>
+      <pattern>M+T KFS  +  L+MV AL L  IIS +++PC+ G+ CTN    N  C+ KG+ +GG C K  V    G CCC</pattern>
+      <matchSeq start="1" end="71">MSTTKFSSLIFSLVMVTALFLMPIISGQMVPCLPGA-CTNSSACNSACKSKGY-RGGVCVKMDVGAKSGACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0A8X7Q4T8_BRACI" ac="A0A8X7Q4T8" length="72" description="Uncharacterized protein OS=Brassica carinata OX=52824 GN=Bca52824_068208 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>2.5e-08</expectation>
+      <identity>44.1</identity>
+      <positives>60.3</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="94">EVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKY-VHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>+++PC+ G+ CTN    N  C+ KG+ +GG C K  V    G CCC     ESQ+SS+S D NV+I N</pattern>
+      <matchSeq start="8" end="72">QMVPCLPGA-CTNSSACNSACKSKGY-RGGVCVKMDVGAKSGACCCK-RNFESQDSSVSYDANVLIPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0ABQ7E2G7_BRACR" ac="A0ABQ7E2G7" length="80" description="Defensin-like protein OS=Brassica cretica OX=69181 GN=DY000_02025678 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>3.1e-08</expectation>
+      <identity>44.1</identity>
+      <positives>60.3</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="94">EVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKY-VHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>+++PC+ G+ CTN    N  C+ KG+ +GG C K  V    G CCC     ESQ+SS+S D NV+I N</pattern>
+      <matchSeq start="16" end="80">QMVPCLPGA-CTNSSACNSACKSKGY-RGGVCVKMDVGAKSGACCCK-RNFESQDSSVSYDANVLIPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0ABM1QQX5_CAMSA" ac="A0ABM1QQX5" length="106" description="Defensin-like protein 89 OS=Camelina sativa OX=90675 GN=LOC104732309 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>4e-08</expectation>
+      <identity>40.5</identity>
+      <positives>58.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="89">VLLMVFALILPSIISVEVIPCIAGSKCTNDM-TYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTN</querySeq>
+      <pattern>+LL +F + +  +++ +   C +   C N+  T  ELCR K ++ GG C       + RCCC+ T LESQESSIS DTN</pattern>
+      <matchSeq start="32" end="105">ILLFLFHVFVYELLTGQKTQCYSNLVCNNNTSTCVELCRAKNYALGGVC----FPRVNRCCCYIT-LESQESSISKDTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0ABQ8D524_BRANA" ac="A0ABQ8D524" length="234" description="Thioesterase domain-containing protein OS=Brassica napus OX=3708 GN=HID58_023638 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>7.5e-08</expectation>
+      <identity>42.5</identity>
+      <positives>58.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKY-VHQTIGRCCC</querySeq>
+      <pattern>M+T KF   +  L+MV AL L  IIS +++PC+ G +CTN    N  C+ KG+ +GG C K  +    G CCC</pattern>
+      <matchSeq start="1" end="71">MSTTKFPSLIFSLVMVTALFLMPIISGQMVPCLPG-ECTNSSVCNSACKSKGY-RGGVCVKMDLGAKSGACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0ABQ7E2H1_BRACR" ac="A0ABQ7E2H1" length="64" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica cretica OX=69181 GN=DY000_02025676 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <bits>52.8</bits>
+      <expectation>3.4e-07</expectation>
+      <identity>44.8</identity>
+      <positives>59.7</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="94">VIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKY-VHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>++PC+ G +CTN    N  C+ KG+ +GG C K  V    G CCC     ESQ+SS+S D NV+I N</pattern>
+      <matchSeq start="1" end="64">MLPCLPG-ECTNSSACNSACKSKGY-RGGVCVKMDVGAKSGACCCKRY-FESQDSSMSYDANVLIPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0ABQ8D4W9_BRANA" ac="A0ABQ8D4W9" length="1257" description="Kinesin motor domain-containing protein (Fragment) OS=Brassica napus OX=3708 GN=HID58_024439 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>135</score>
+      <bits>56.6</bits>
+      <expectation>3.5e-07</expectation>
+      <identity>39.8</identity>
+      <positives>53.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="85">TQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS</querySeq>
+      <pattern>++KFS+  L  LMVFALIL   IS +   C+    CT  +  +  C+  GF KGG C+ Y +   G CCC  +    Q S IS</pattern>
+      <matchSeq start="1175" end="1254">SKKFSFLQLPFLMVFALILLPTISGQYYKCMKDG-CTLTLVCDAKCKSMGFPKGGVCRAYSYG--GACCCECSSKACQHSFIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="R0GQF6_9BRAS" ac="R0GQF6" length="94" description="Knottin scorpion toxin-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10007788mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <bits>52.8</bits>
+      <expectation>6.8e-07</expectation>
+      <identity>39.6</identity>
+      <positives>47.9</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="90">MATQKFSYFLLVLLMVFALILPSIISV------EVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNV</querySeq>
+      <pattern>MAT+ FS FLL  LM+FALIL  +IS        + PC+ G  C N     + C   G  KGG C   +    G  CC   GL SQ  S    +NV</pattern>
+      <matchSeq start="1" end="91">MATKCFSPFLLFSLMIFALILMPMISAFMPMKPYIEPCLKG--CKNQAECIKTCMSMGHPKGGDC---LGNQYGNYCCCIAGLMSQNDSPISKSNV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0A8T1YPJ9_ARASU" ac="A0A8T1YPJ9" length="92" description="Uncharacterized protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As12g033920 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>1.3e-06</expectation>
+      <identity>40.6</identity>
+      <positives>50.0</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="89">MATQKFSYFLLVLLMVFALILPSIISV------EVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQ-ESSISGDTN</querySeq>
+      <pattern>M T+KFS FLL  LM+F+LIL  +IS        + PC+ G  C +     + C   G  KGG C   +    GR CC   GL SQ ES IS   N</pattern>
+      <matchSeq start="1" end="91">MTTKKFSPFLLPSLMIFSLILMPMISALMQFKPYIEPCLKG--CRSQSECMQTCMSMGHPKGGDC---LGDQYGRYCCCIAGLVSQNESPISSLPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="D7MI21_ARALL" ac="D7MI21" length="92" description="Uncharacterized protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_915769 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>3.7e-06</expectation>
+      <identity>39.5</identity>
+      <positives>51.2</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="80">MATQKFSYFLLVLLMVFALILPSIISV------EVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQ</querySeq>
+      <pattern>M T+KFS FLL  LM+F+LIL  +IS        + PC+ G  C + +   + C   G  KGG C   +    GR CC   GL SQ</pattern>
+      <matchSeq start="1" end="81">MTTKKFSPFLLPSLMIFSLILMPMISALMQFKPYIEPCLKG--CRSQLECMQKCMSMGHPKGGDC---LGDQYGRYCCCIAGLVSQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="D7MH93_ARALL" ac="D7MH93" length="73" description="Defensin-like protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_915510 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>6.8e-06</expectation>
+      <identity>43.8</identity>
+      <positives>54.7</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="32" end="94">CIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDT-NVVITN</querySeq>
+      <pattern>C +G  C N  T N  CR +  + GG C    +     CCC+ +  ES +SSIS DT NVVITN</pattern>
+      <matchSeq start="14" end="73">CYSGVPCKNTATCNNFCRPRNNNLGGVCLIRANS----CCCYVSVFESHKSSISKDTNNVVITN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0AAU9T5F6_THLAR" ac="A0AAU9T5F6" length="109" description="Uncharacterized protein OS=Thlaspi arvense OX=13288 GN=TAV2_LOCUS23718 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>7.5e-06</expectation>
+      <identity>46.6</identity>
+      <positives>53.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="32" end="88">CIAGSKCTNDMTYNELCRFKGFSKG-GFCQKYVHQTIGRCCCHPTGLESQESSISGDT</querySeq>
+      <pattern>C     C N MT NE CR++G+  G G C+ YV    G CCC     ESQE  IS DT</pattern>
+      <matchSeq start="51" end="107">CFLEITCHNKMTCNEFCRYRGYILGSGTCEYYVGVKDGHCCC-SLNFESQEFFISHDT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0ACE2EZG2_ARAHA" ac="A0ACE2EZG2" length="58" description="Uncharacterized protein OS=Arabidopsis halleri OX=81970 GN=ARAHAL_8.1682.1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>5.5e-05</expectation>
+      <identity>53.1</identity>
+      <positives>63.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="49">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCR</querySeq>
+      <pattern>M T KFS  LL  LMVF LIL  +IS ++IPC+ G KC N  T N  C+</pattern>
+      <matchSeq start="1" end="48">MVTNKFSSCLLFSLMVFFLILLPLISGQMIPCLPG-KCRNTRTCNASCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="SP" id="DEF84_ARATH" ac="Q2V2Y3" length="87" description="Putative defensin-like protein 84 OS=Arabidopsis thaliana OX=3702 GN=At5g55131 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.4e-05</expectation>
+      <identity>40.2</identity>
+      <positives>50.0</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAG--SKCTNDMTYNELCRFKGFSK-GGFCQKYVHQTIGR------CCCH</querySeq>
+      <pattern>M T+  S   L+ LMVFAL+L        IP I+G  SKCT   T    C  K   K GG CQ Y+ ++ GR      CCC+</pattern>
+      <matchSeq start="1" end="74">MTTKMVSSHRLLTLMVFALLL--------IPMISGQSSKCTKGCTSTPECNIKCMKKGGGHCQAYIGRSHGRLAIENYCCCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A8T2DU21_ARASU" ac="A0A8T2DU21" length="88" description="Uncharacterized protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As05g050130 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.5e-05</expectation>
+      <identity>40.2</identity>
+      <positives>50.0</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAG--SKCTNDMTYNELCRFKGFSK-GGFCQKYVHQTIGR------CCCH</querySeq>
+      <pattern>M T+  S   L+ LMVFAL+L        IP I+G  SKCT   T    C  K   K GG CQ Y+ ++ GR      CCC+</pattern>
+      <matchSeq start="1" end="74">MTTKMVSSHRLLTLMVFALLL--------IPMISGQSSKCTKGCTSTPECNIKCMKKGGGHCQAYIGRSHGRLAIENYCCCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0A8T2DG82_9BRAS" ac="A0A8T2DG82" length="88" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_At05g050850 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.5e-05</expectation>
+      <identity>40.2</identity>
+      <positives>50.0</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAG--SKCTNDMTYNELCRFKGFSK-GGFCQKYVHQTIGR------CCCH</querySeq>
+      <pattern>M T+  S   L+ LMVFAL+L        IP I+G  SKCT   T    C  K   K GG CQ Y+ ++ GR      CCC+</pattern>
+      <matchSeq start="1" end="74">MTTKMVSSHRLLTLMVFALLL--------IPMISGQSSKCTKGCTSTPECNIKCMKKGGGHCQAYIGRSHGRLAIENYCCCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0A9W3DEQ7_RAPSA" ac="A0A9W3DEQ7" length="89" description="Defensin-like protein 90 OS=Raphanus sativus OX=3726 GN=LOC130509923 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>0.00015</expectation>
+      <identity>41.0</identity>
+      <positives>51.3</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISV---EVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KFS  LL+ LMVFALI+  I S        C+    CT        C+  GF +GG C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATKKFSSLLLLSLMVFALIILPIDSAFPGLYYKCMVDG-CTLTPACAAKCKSMGFLRGGECRIYSYG--GACCCECT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0ACB0LPL9_TRIPR" ac="A0ACB0LPL9" length="79" description="Uncharacterized protein OS=Trifolium pratense OX=57577 GN=MILVUS5_LOCUS34385 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.00025</expectation>
+      <identity>36.8</identity>
+      <positives>53.9</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MATQKFSYFLLVLLMVFALILPSIISVEVIP---CIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCH</querySeq>
+      <pattern>MA   +  F+ + L + ALILPS +++  IP   CI    C N    N+ C  KGF++GG C    +Q +  CCC+</pattern>
+      <matchSeq start="1" end="71">MAFSIYQSFICLFLCI-ALILPSGLAIGSIPKFQCI--EHCNNVSNCNQYCGAKGFNRGGICMYPQNQNL--CCCY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0A8T2HGL9_ARASU" ac="A0A8T2HGL9" length="87" description="Defensin OS=Arabidopsis suecica OX=45249 GN=ISN44_As01g047330 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.00041</expectation>
+      <identity>36.0</identity>
+      <positives>47.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="89">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTN</querySeq>
+      <pattern>M  +KF   LL  LMV++LIL  IIS +  P      CT+    N++C  KG+ K G C    H     CCC+       + SIS   N</pattern>
+      <matchSeq start="1" end="86">MTIKKFLPLLLSSLMVYSLILLPIISGK-SPVSCDGACTSTPQCNKICTSKGYKK-GICHGSAH-LFYICCCYAKFESQYDPSISSPPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0A8T2GRU8_9BRAS" ac="A0A8T2GRU8" length="87" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_At01g048330 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.00041</expectation>
+      <identity>36.0</identity>
+      <positives>47.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="89">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTN</querySeq>
+      <pattern>M  +KF   LL  LMV++LIL  IIS +  P      CT+    N++C  KG+ K G C    H     CCC+       + SIS   N</pattern>
+      <matchSeq start="1" end="86">MTIKKFLPLLLSSLMVYSLILLPIISGK-SPVSCDGACTSTPQCNKICTSKGYKK-GICHGSAH-LFYICCCYAKFESQYDPSISSPPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="SP" id="DEF81_ARATH" ac="Q2V4G6" length="87" description="Defensin-like protein 81 OS=Arabidopsis thaliana OX=3702 GN=At1g56233 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.00041</expectation>
+      <identity>36.0</identity>
+      <positives>47.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="89">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTN</querySeq>
+      <pattern>M  +KF   LL  LMV++LIL  IIS +  P      CT+    N++C  KG+ K G C    H     CCC+       + SIS   N</pattern>
+      <matchSeq start="1" end="86">MTIKKFLPLLLSSLMVYSLILLPIISGK-SPVSCDGACTSTPQCNKICTSKGYKK-GICHGSAH-LFYICCCYAKFESQYDPSISSPPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0MJV6_ARATH" ac="A0MJV6" length="88" description="Uncharacterized protein (Fragment) OS=Arabidopsis thaliana OX=3702 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.00042</expectation>
+      <identity>36.0</identity>
+      <positives>47.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="89">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTN</querySeq>
+      <pattern>M  +KF   LL  LMV++LIL  IIS +  P      CT+    N++C  KG+ K G C    H     CCC+       + SIS   N</pattern>
+      <matchSeq start="1" end="86">MTIKKFLPLLLSSLMVYSLILLPIISGK-SPVSCDGACTSTPQCNKICTSKGYKK-GICHGSAH-LFYICCCYAKFESQYDPSISSPPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0ACE2EA70_ARAHA" ac="A0ACE2EA70" length="73" description="Uncharacterized protein OS=Arabidopsis halleri OX=81970 GN=ARAHAL_4.757.1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.00043</expectation>
+      <identity>35.6</identity>
+      <positives>50.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEV-IPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT+K S  L+ +LMVFALIL  +++ ++   C     C      N  C   G  +GG C K++      CCC</pattern>
+      <matchSeq start="1" end="71">MATKKTSSLLIPVLMVFALILMPMVAGQLKATCRIAELCKGAKECNAKCAALGTKRGGVCTKFLGDVY--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0A8T2ADB1_ARASU" ac="A0A8T2ADB1" length="73" description="Defensin OS=Arabidopsis suecica OX=45249 GN=ISN44_As09g004560 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.00043</expectation>
+      <identity>35.6</identity>
+      <positives>50.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEV-IPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT+K S  L+ +LMVFALIL  +++ ++   C     C      N  C   G  +GG C K++      CCC</pattern>
+      <matchSeq start="1" end="71">MATKKTSSLLIPVLMVFALILMPMVAGQLKATCRIAELCKGAKECNAKCAALGTKRGGVCTKFLGDVY--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0A0D3AYM7_BRAOL" ac="A0A0D3AYM7" length="83" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica oleracea var. oleracea OX=109376 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.00054</expectation>
+      <identity>40.7</identity>
+      <positives>46.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="86">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISG</querySeq>
+      <pattern>MAT+K S  LL  L+VF LI   IIS E   CI    C +    N  C   GF  GG C   V      CCC    + S+ S ISG</pattern>
+      <matchSeq start="1" end="77">MATKKISSLLLFSLVVFILISLPIISGEY--CIPNGPCEDAKKCNIHCLLLGFKDGGQC---VSLRATFCCC----ITSKTSHISG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="D7LIB7_ARALL" ac="D7LIB7" length="73" description="Uncharacterized protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_481327 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.00061</expectation>
+      <identity>37.0</identity>
+      <positives>46.6</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALIL-PSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT+K S  L+ +LMVFALIL P +       C     C      N  C   G  +GG C K++      CCC</pattern>
+      <matchSeq start="1" end="71">MATKKTSSLLIPVLMVFALILIPMVAGQLKATCRIAELCKGAKECNAKCAALGTKRGGVCTKFLGDVY--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="R0I9U4_9BRAS" ac="R0I9U4" length="77" description="Knottin scorpion toxin-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10022468mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.00067</expectation>
+      <identity>34.7</identity>
+      <positives>52.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT+K SY L++ L++FA I+  +IS +   C     C +    +  C   G+  GG C+ Y +   G CCC</pattern>
+      <matchSeq start="1" end="69">MATKKISYVLILSLLMFAFIILPMISGQYYKC-KHDGCKSTPICDRKCLAMGYPLGGVCRIYSYG--GDCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0A8T2HEY6_ARASU" ac="A0A8T2HEY6" length="78" description="Uncharacterized protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As01g045510 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0014</expectation>
+      <identity>38.7</identity>
+      <positives>48.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>M T+ FSY LL  LM+FA+IL S+ S E         C         C   G+ KGG C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="73">MTTKMFSYVLLHSLMMFAIILSSMGSPEKYYDCKQDGCITTPPCWRKCVSMGYPKGGECRIYSYG--GVCCCDLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A8T2GQH5_9BRAS" ac="A0A8T2GQH5" length="78" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_At01g046530 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0014</expectation>
+      <identity>38.7</identity>
+      <positives>48.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>M T+ FSY LL  LM+FA+IL S+ S E         C         C   G+ KGG C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="73">MTTKMFSYVLLHSLMMFAIILSSMGSPEKYYDCKQDGCITTPPCWRKCVSMGYPKGGECRIYSYG--GVCCCDLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="SP" id="DEF90_ARATH" ac="Q2V4G9" length="78" description="Defensin-like protein 90 OS=Arabidopsis thaliana OX=3702 GN=At1g54445 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0014</expectation>
+      <identity>38.7</identity>
+      <positives>48.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>M T+ FSY LL  LM+FA+IL S+ S E         C         C   G+ KGG C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="73">MTTKMFSYVLLHSLMMFAIILSSMGSPEKYYDCKQDGCITTPPCWRKCVSMGYPKGGECRIYSYG--GVCCCDLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="R0H0L6_9BRAS" ac="R0H0L6" length="85" description="Knottin scorpion toxin-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10006616mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.0022</expectation>
+      <identity>38.1</identity>
+      <positives>50.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="73">LVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCH</querySeq>
+      <pattern>LVLLMV  LIL   IS +   C +G +C +  T  +LC+      GG C       + RCCC+</pattern>
+      <matchSeq start="9" end="67">LVLLMVCTLILLPKISGQNAQCYSGLECKDSSTCIDLCKANNHELGGTC----FLRVSRCCCY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0A816Z3F2_BRANA" ac="A0A816Z3F2" length="90" description="Defensin-like protein OS=Brassica napus OX=3708 GN=HID58_027448 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.0025</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISV---EVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KF   LL+ +MVFALI+  I S        C     CT     +  C+  GF +GG C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATKKFPSLLLLSMMVFALIIFPIDSAFPGLYYKCTVDG-CTLTPACSVKCKSMGFLRGGECRIYSYG--GACCCECT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0A816QSJ8_BRANA" ac="A0A816QSJ8" length="90" description="Uncharacterized protein OS=Brassica napus OX=3708 GN=HID58_072834 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.0025</expectation>
+      <identity>37.2</identity>
+      <positives>50.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALIL---PSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KF   LL+ +MVFALI+    S        C+    CT     +  C+  GF +GG C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATKKFPSLLLLSMMVFALIIFPTDSAFPGLYYKCMVDG-CTLTPACSVKCKSMGFLRGGECRIYSYG--GACCCECT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0ABQ7L5X8_BRACM" ac="A0ABQ7L5X8" length="90" description="Defensin-like protein OS=Brassica rapa subsp. trilocularis OX=1813537 GN=A07p042760.1_BraROA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.0025</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISV---EVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KF   LL+ +MVFALI+  I S        C     CT     +  C+  GF +GG C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATKKFPSLLLLSMMVFALIIFPIDSAFPGLYYKCTVDG-CTLTPACSVKCKSMGFLRGGECRIYSYG--GACCCECT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0A0D3CZ72_BRAOL" ac="A0A0D3CZ72" length="90" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica oleracea var. oleracea OX=109376 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.0025</expectation>
+      <identity>37.2</identity>
+      <positives>50.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALIL---PSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KF   LL+ +MVFALI+    S        C+    CT     +  C+  GF +GG C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATKKFPSLLLLSMMVFALIIFPTDSAFPGLYYKCMVDG-CTLTPACSVKCKSMGFLRGGECRIYSYG--GACCCECT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0A3P6BWX8_BRACM" ac="A0A3P6BWX8" length="90" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica campestris OX=3711 GN=BRAPAZ1V2_A07P38000.2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.0025</expectation>
+      <identity>38.5</identity>
+      <positives>50.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISV---EVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KF   LL+ +MVFALI+  I S        C     CT     +  C+  GF +GG C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATKKFPSLLLLSMMVFALIIFPIDSAFPGLYYKCTVDG-CTLTPACSVKCKSMGFLRGGECRIYSYG--GACCCECT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0A078HSS9_BRANA" ac="A0A078HSS9" length="90" description="BnaC06g30450D protein OS=Brassica napus OX=3708 GN=BnaC06g30450D PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.0025</expectation>
+      <identity>37.2</identity>
+      <positives>50.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALIL---PSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KF   LL+ +MVFALI+    S        C+    CT     +  C+  GF +GG C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATKKFPSLLLLSMMVFALIIFPTDSAFPGLYYKCMVDG-CTLTPACSVKCKSMGFLRGGECRIYSYG--GACCCECT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0A8D9FYL4_BRACM" ac="A0A8D9FYL4" length="109" description="Uncharacterized protein (Fragment) OS=Brassica campestris OX=3711 GN=BRAPAZ1V2_A09P33120.2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0025</expectation>
+      <identity>38.9</identity>
+      <positives>44.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+K S  LL  LMVF L+   IIS +   C     C +    N  C   GF  GGFC  Y       CCC</pattern>
+      <matchSeq start="29" end="95">MTTKKMSSLLLFSLMVFILVSLPIISGD--ECTPKGPCEDTKKCNIYCLLLGFKYGGFCDTY---GTTFCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0ABQ8C138_BRANA" ac="A0ABQ8C138" length="115" description="Defensin-like protein OS=Brassica napus OX=3708 GN=HID58_034110 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0028</expectation>
+      <identity>38.9</identity>
+      <positives>44.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+K S  LL  LMVF L+   IIS +   C     C +    N  C   GF  GGFC  Y       CCC</pattern>
+      <matchSeq start="35" end="101">MTTKKMSSLLLFSLMVFILVSLPIISGD--ECTPKGPCEDTKKCNIYCLLLGFKYGGFCDTY---GTTFCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A078HQA6_BRANA" ac="A0A078HQA6" length="118" description="BnaC02g42970D protein OS=Brassica napus OX=3708 GN=BnaC02g42970D PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0029</expectation>
+      <identity>38.9</identity>
+      <positives>44.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+K S  LL  LMVF L+   IIS +   C     C +    N  C   GF  GGFC  Y       CCC</pattern>
+      <matchSeq start="38" end="104">MTTKKMSSLLLFSLMVFILVSLPIISGD--ECTPKGPCEDTKKCNIYCLLLGFKYGGFCDTY---GTTFCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0A0D3AYM8_BRAOL" ac="A0A0D3AYM8" length="122" description="Uncharacterized protein OS=Brassica oleracea var. oleracea OX=109376 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0031</expectation>
+      <identity>38.9</identity>
+      <positives>44.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+K S  LL  LMVF L+   IIS +   C     C +    N  C   GF  GGFC  Y       CCC</pattern>
+      <matchSeq start="42" end="108">MTTKKMSSLLLFSLMVFILVSLPIISGD--ECTPKGPCEDTKKCNIYCLLLGFKYGGFCDTY---GTTFCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0A3P5YT96_BRACM" ac="A0A3P5YT96" length="82" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica campestris OX=3711 GN=BRAPAZ1V2_A05P18790.2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.0042</expectation>
+      <identity>41.2</identity>
+      <positives>50.0</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTND-MTYNELCRFK----GFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KFS  LL+ +MVFALI+  I S   +P     KC  D  T    C  K    GF   G C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="76">MATEKFSSLLLLSMMVFALIILPIDS--AVPGKLYYKCMPDGCTLTPPCAAKCESMGFQNAGECRIYSYG--GVCCCQCT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0A078HPN5_BRANA" ac="A0A078HPN5" length="83" description="BnaC02g42960D protein OS=Brassica napus OX=3708 GN=BnaC02g42960D PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.0042</expectation>
+      <identity>40.0</identity>
+      <positives>45.9</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS</querySeq>
+      <pattern>MAT+K S  LL  L+VF LI   IIS E   CI    C +    N  C   GF  GG C   V      CCC    + S+ S IS</pattern>
+      <matchSeq start="1" end="76">MATKKISSLLLFSLVVFILISLPIISGEY--CIPNGPCEDAKKCNIHCLLLGFKDGGQC---VSLRATFCCC----ITSKTSHIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="R0H4X4_9BRAS" ac="R0H4X4" length="88" description="Knottin scorpion toxin-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10007116mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.0047</expectation>
+      <identity>39.7</identity>
+      <positives>52.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGS-KCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT+KFS  +L LLMV  L+L  IIS +  PC      C++ +  N  C   G+ KGG C  +       CCC</pattern>
+      <matchSeq start="1" end="69">MATKKFSSLILPLLMVLTLVLLPIISGKRRPCQDWRYGCSSRVACNAKCLSLGY-KGGDCVMFAFPV---CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="R0F7D5_9BRAS" ac="R0F7D5" length="88" description="Knottin scorpion toxin-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10006196mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.0047</expectation>
+      <identity>39.7</identity>
+      <positives>52.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGS-KCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT+KFS  +L LLMV  L+L  IIS +  PC      C++ +  N  C   G+ KGG C  +       CCC</pattern>
+      <matchSeq start="1" end="69">MATKKFSSLILPLLMVLTLVLLPIISGKRRPCQDWRYGCSSRVACNAKCLSLGY-KGGDCVMFAFPV---CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0A8T2BUN4_ARASU" ac="A0A8T2BUN4" length="78" description="Uncharacterized protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As07g009730 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.0076</expectation>
+      <identity>38.9</identity>
+      <positives>47.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+ FSY LL  LM+FALIL S+ S           C         C   G+ KGG C+ Y +   G CCC</pattern>
+      <matchSeq start="1" end="70">MTTKIFSYVLLHSLMMFALILSSMGSPGKYYDCKQDGCITTPPCWRKCLSMGYPKGGECRTYSYG--GVCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="D7KP05_ARALL" ac="D7KP05" length="78" description="Uncharacterized protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_892684 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.0076</expectation>
+      <identity>38.9</identity>
+      <positives>47.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+ FSY LL  LM+FALIL S+ S           C         C   G+ KGG C+ Y +   G CCC</pattern>
+      <matchSeq start="1" end="70">MTTKIFSYVLLHSLMMFALILSSMGSPGKYYDCKQDGCITTPPCWRKCLSMGYPKGGECRTYSYG--GVCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0A8T2BPL8_9BRAS" ac="A0A8T2BPL8" length="78" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_Aa02g009550 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.0076</expectation>
+      <identity>38.9</identity>
+      <positives>47.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+ FSY LL  LM+FALIL S+ S           C         C   G+ KGG C+ Y +   G CCC</pattern>
+      <matchSeq start="1" end="70">MTTKIFSYVLLHSLMMFALILSSMGSPGKYYDCKQDGCITTPPCWRKCLSMGYPKGGECRTYSYG--GVCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0ABQ7WX54_BRANA" ac="A0ABQ7WX54" length="81" description="Defensin-like protein OS=Brassica napus OX=3708 GN=HID58_092254 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.0081</expectation>
+      <identity>38.0</identity>
+      <positives>48.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISVEVIPCI----AGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KFS  LL+ +MVFALI+  I S   +P +        CT        C   GF   G C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATEKFSSLLLLSMMVFALIILPIDS--AVPGVYYKCMPDGCTLTPPCAAKCESMGFQNAGECRIYSYG--GVCCCQCT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0ABQ7YZC7_BRANA" ac="A0ABQ7YZC7" length="81" description="Defensin-like protein OS=Brassica napus OX=3708 GN=HID58_070652 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.0081</expectation>
+      <identity>38.0</identity>
+      <positives>48.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISVEVIPCI----AGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KFS  LL+ +MVFALI+  I S   +P +        CT        C   GF   G C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATEKFSSLLLLSMMVFALIILPIDS--AVPGVYYKCMPDGCTLTPPCAAKCESMGFQNAGECRIYSYG--GVCCCQCT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0ABQ7ME89_BRACM" ac="A0ABQ7ME89" length="81" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica rapa subsp. trilocularis OX=1813537 GN=A05p020940.1_BraROA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.0081</expectation>
+      <identity>38.0</identity>
+      <positives>48.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISVEVIPCI----AGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KFS  LL+ +MVFALI+  I S   +P +        CT        C   GF   G C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATEKFSSLLLLSMMVFALIILPIDS--AVPGVYYKCMPDGCTLTPPCAAKCESMGFQNAGECRIYSYG--GVCCCQCT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0A0D3CR81_BRAOL" ac="A0A0D3CR81" length="81" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica oleracea var. oleracea OX=109376 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.0081</expectation>
+      <identity>38.0</identity>
+      <positives>48.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISVEVIPCI----AGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KFS  LL+ +MVFALI+  I S   +P +        CT        C   GF   G C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATEKFSSLLLLSMMVFALIILPIDS--AVPGVYYKCMPDGCTLTPPCAAKCESMGFQNAGECRIYSYG--GVCCCQCT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0A078GVZ9_BRANA" ac="A0A078GVZ9" length="81" description="BnaC06g10140D protein OS=Brassica napus OX=3708 GN=BnaC06g10140D PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.0081</expectation>
+      <identity>38.0</identity>
+      <positives>48.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISVEVIPCI----AGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KFS  LL+ +MVFALI+  I S   +P +        CT        C   GF   G C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATEKFSSLLLLSMMVFALIILPIDS--AVPGVYYKCMPDGCTLTPPCAAKCESMGFQNAGECRIYSYG--GVCCCQCT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="A0A078GV31_BRANA" ac="A0A078GV31" length="81" description="BnaA05g14380D protein OS=Brassica napus OX=3708 GN=BnaA06g14100D PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.0081</expectation>
+      <identity>38.0</identity>
+      <positives>48.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALILPSIISVEVIPCI----AGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+KFS  LL+ +MVFALI+  I S   +P +        CT        C   GF   G C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="75">MATEKFSSLLLLSMMVFALIILPIDS--AVPGVYYKCMPDGCTLTPPCAAKCESMGFQNAGECRIYSYG--GVCCCQCT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0AAU9RXK2_THLAR" ac="A0AAU9RXK2" length="107" description="Defensin-like protein OS=Thlaspi arvense OX=13288 GN=TAV2_LOCUS9340 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.0095</expectation>
+      <identity>37.3</identity>
+      <positives>50.6</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MATQKFSYFLLVLLMVFALILPSIISVEVI-----PCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLE</querySeq>
+      <pattern>MA +  S  LL LLMVFAL    +IS EVI      C + ++C+N       C  +G+ + G C +  H T   CCC  T L+</pattern>
+      <matchSeq start="1" end="76">MAIKNNSSLLLPLLMVFALFFMPVISGEVIKICAFDCYSTAECSNS------CIREGYIE-GVCVQNAHGTGLECCCVVTFLD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="R0IDN8_9BRAS" ac="R0IDN8" length="78" description="Knottin scorpion toxin-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10022380mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.01</expectation>
+      <identity>36.8</identity>
+      <positives>46.1</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MATQKFSYFLLVLLMVFALI-LPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>MAT+K  Y LL+ LM+F LI LP I             CT+       C   G+  GG C+ Y +   G CCC  T</pattern>
+      <matchSeq start="1" end="74">MATKKILYVLLLSLMMFGLIHLPMISGQSYYYQCKHDGCTSTPKCYNQCLSMGYPLGGECRIYSYG--GDCCCRRT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="TR" id="A0A8T2G1Q1_ARASU" ac="A0A8T2G1Q1" length="73" description="Defensin OS=Arabidopsis suecica OX=45249 GN=ISN44_As02g019090 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.02</expectation>
+      <identity>34.2</identity>
+      <positives>50.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEV-IPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+K S  +L LL+VFALIL  +++ ++   C            N  C   G ++GG CQK++      CCC</pattern>
+      <matchSeq start="1" end="71">MTTKKTSSVVLPLLLVFALILMPMVAGQLKSTCRIAEAWKGAKECNAKCAALGTTRGGVCQKFLGDLY--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="A0A8T2FSQ2_9BRAS" ac="A0A8T2FSQ2" length="73" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_At02g018690 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.02</expectation>
+      <identity>34.2</identity>
+      <positives>50.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEV-IPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+K S  +L LL+VFALIL  +++ ++   C            N  C   G ++GG CQK++      CCC</pattern>
+      <matchSeq start="1" end="71">MTTKKTSSVVLPLLLVFALILMPMVAGQLKSTCRIAEAWKGAKECNAKCAALGTTRGGVCQKFLGDLY--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="SP" id="DEF87_ARATH" ac="Q3E7S1" length="73" description="Defensin-like protein 87 OS=Arabidopsis thaliana OX=3702 GN=At2g24693 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.02</expectation>
+      <identity>34.2</identity>
+      <positives>50.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEV-IPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+K S  +L LL+VFALIL  +++ ++   C            N  C   G ++GG CQK++      CCC</pattern>
+      <matchSeq start="1" end="71">MTTKKTSSVVLPLLLVFALILMPMVAGQLKSTCRIAEAWKGAKECNAKCAALGTTRGGVCQKFLGDLY--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="TR" id="A0ACB0L316_TRIPR" ac="A0ACB0L316" length="77" description="Uncharacterized protein OS=Trifolium pratense OX=57577 GN=MILVUS5_LOCUS28422 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.02</expectation>
+      <identity>37.7</identity>
+      <positives>51.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTY----NELCRFKGFSKGGFCQKYVHQTIGRCCCH</querySeq>
+      <pattern>MA +    FLL +L + + +L S  S   +P   G +C  D T     N+ C  KGF+KGG    Y++Q   RCCCH</pattern>
+      <matchSeq start="1" end="75">MAFRIHQLFLLFILCIASGLL-SETSAIYLPPPPGLECIEDWTNAPKCNQDCLNKGFTKGGIEIIYLNQYF-RCCCH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="A0ABM1RPF2_CAMSA" ac="A0ABM1RPF2" length="85" description="Defensin-like protein 90 OS=Camelina sativa OX=90675 GN=LOC109132884 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.02</expectation>
+      <identity>37.0</identity>
+      <positives>53.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPC-IAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT KF+  LL+ L++FALIL  +IS +   C   G K T     +  C   G+ + G C+  ++   G CCC</pattern>
+      <matchSeq start="1" end="69">MATNKFTSVLLLSLVMFALILLPMISGQYYKCKFDGCKIT--PVCDRKCMSMGYPRRGVCR--IYSFGGVCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0A0R0JGC0_SOYBN" ac="A0A0R0JGC0" length="74" description="Knottin scorpion toxin-like domain-containing protein OS=Glycine max OX=3847 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.03</expectation>
+      <identity>32.9</identity>
+      <positives>45.2</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSK-GGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T++   F  +L ++   +L +  S  +  C     C +D   N LC   GF   GGFC  Y   TI  CCC</pattern>
+      <matchSeq start="1" end="71">MTTRRIISFNFILRIMCVALLLTSGSALMESCTKAGNCPDDKACNTLCNLFGFKDYGGFCVYY--GTIDYCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="SP" id="DEF91_ARATH" ac="P82762" length="77" description="Defensin-like protein 91 OS=Arabidopsis thaliana OX=3702 GN=LCR47 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.03</expectation>
+      <identity>37.3</identity>
+      <positives>44.6</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVI------PCIAG-----SKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+K SYFLL  LM+ ALI   + S   I      PC+ G     S+C N       C F G  KGG C   +      CCC</pattern>
+      <matchSeq start="1" end="75">METKKISYFLLPSLMIVALIFQPMCSAFTIAEPYIHPCMKGFCSFKSECANK------CIFMGHHKGGDCIGGLDGIY--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0A8T1XLN0_9BRAS" ac="A0A8T1XLN0" length="86" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_Aa08g010960 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.1</expectation>
+      <identity>32.1</identity>
+      <positives>47.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="83">FSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESS</querySeq>
+      <pattern>F+   +VLL   A    +I+  +   C   S CT +    +LC  KG++ G +C  +    IG CC    GL +Q SS</pattern>
+      <matchSeq start="10" end="83">FTAITIVLLFAMAAQTNAIVVYDA-DCFHQSSCTKEC--GKLCLRKGYTNGWYCSSF-KTNIGCCCKKKKGLNTQVSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="SP" id="DEF82_ARATH" ac="Q2V334" length="91" description="Defensin-like protein 82 OS=Arabidopsis thaliana OX=3702 GN=At5g32619 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.11</expectation>
+      <identity>38.7</identity>
+      <positives>48.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIIS--VEVIPC-IAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MA +KFS  LL LLMV AL++  IIS   +  PC      C +    N  C   G+ KGG C  +       CCC</pattern>
+      <matchSeq start="1" end="72">MAIKKFSSLLLPLLMVLALVVLPIISGRTQEHPCQDYRLGCKSRDVCNAKCLSLGYVKGGDCVTFAFPI---CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="A0A3P6B2E6_BRACM" ac="A0A3P6B2E6" length="87" description="Defensin-like domain-containing protein OS=Brassica campestris OX=3711 GN=BRAPAZ1V2_A07P07760.2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.14</expectation>
+      <identity>38.9</identity>
+      <positives>50.0</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MA +     LL  LMVFALI    IS E+  C  G KC +    N  C  +G+ K G C K  + ++  CCC</pattern>
+      <matchSeq start="1" end="68">MAIKNSFSLLLSSLMVFALICIPTISGEIKFC--GMKCYSTPECNATCIHEGYEK-GICLKNDYGSL-ECCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="A0A3P6BMX5_BRACM" ac="A0A3P6BMX5" length="87" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica campestris OX=3711 GN=BRAPAZ1V2_A08P03420.2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.14</expectation>
+      <identity>33.8</identity>
+      <positives>47.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVE--VIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT+KF+  LL LL+V  L+ P+ IS+   V  C     C +       C+ KG++ G  C          CCC</pattern>
+      <matchSeq start="1" end="72">MATKKFATLLLPLLIV--LLTPTFISMVSGVKTCEEQGPCESLKKCEVHCKLKGYTMGAVCLLQESTGYNSCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="A0AAN9XKA3_PSOTE" ac="A0AAN9XKA3" length="72" description="LCR-like protein OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_15872 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.15</expectation>
+      <identity>34.2</identity>
+      <positives>45.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCI-AGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MA   F  F  + ++  AL+L S   V + P I     C N+   N  C   G+SKGGFC  +       CCC</pattern>
+      <matchSeq start="1" end="68">MAICIFQPFFFLGILCIALVLTSGQPVYLSPWINCKGPCVNEGNCNFNCNNLGYSKGGFCWSFAF-----CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="TR" id="A0AAW1I3A9_SAPOF" ac="A0AAW1I3A9" length="73" description="Uncharacterized protein OS=Saponaria officinalis OX=3572 GN=RND81_10G107900 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.15</expectation>
+      <identity>31.2</identity>
+      <positives>48.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="72">FLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>F+L+++M+ +  LPS   +   P +    CT+    + LC   GF+KGG C          CCC</pattern>
+      <matchSeq start="10" end="71">FVLLVIMLMSSGLPSAEGIGPSPYVCKGACTSAAACDNLCHDSGFTKGGACVGLGGPP--SCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0A8T1YPJ0_ARASU" ac="A0A8T1YPJ0" length="91" description="Uncharacterized protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As12g033760 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.15</expectation>
+      <identity>37.8</identity>
+      <positives>48.9</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MATQKFSYFLLVLLMVFALILPSIISVEVI-----PCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS</querySeq>
+      <pattern>MA  KFS FLL+ LMVFALIL  IIS +         I   +  +    N  C+  G  K G+C+++       CCC  +  ES  S IS</pattern>
+      <matchSeq start="1" end="86">MAIIKFSSFLLLPLMVFALILMPIISGQTCRLFDSTSIPEERWESASKCNASCKSLGM-KEGYCRQF--DGFDFCCCKHSH-ESLNSPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="TR" id="A0AAV1W145_LUPLU" ac="A0AAV1W145" length="78" description="LCR OS=Lupinus luteus OX=3873 GN=LLUT_LOCUS3798 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.17</expectation>
+      <identity>26.7</identity>
+      <positives>48.8</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MATQKFSYFLLVLLMVFALIL--PSIISVEVI--------PCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTG</querySeq>
+      <pattern>MA++ +  FL+ ++ +  ++   P+++  EV+        PC  G     +   N +C  KG++KGG C++      G CCC   G</pattern>
+      <matchSeq start="1" end="78">MASRTYQAFLIGIVCIAFILTSGPTMVKAEVLKPTYVCELPCFGG--VLKESICNTVCLKKGYTKGGSCRE------GACCCKLNG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="A0A2G9FW97_9LAMI" ac="A0A2G9FW97" length="82" description="Knottin scorpion toxin-like domain-containing protein OS=Handroanthus impetiginosus OX=429701 GN=CDL12_30331 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.18</expectation>
+      <identity>26.6</identity>
+      <positives>48.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="71">YFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCC</querySeq>
+      <pattern>YF+ +L ++  LI   ++     P +   KC++    N+ C  KG+  GG+C  +    +  CC</pattern>
+      <matchSeq start="9" end="72">YFMGILCLILVLISGQVVKGIKEPFVCIGKCSDFEDCNKACISKGYQLGGYCYGFSVLDLACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="A0AAV1W047_LUPLU" ac="A0AAV1W047" length="77" description="LCR OS=Lupinus luteus OX=3873 GN=LLUT_LOCUS3794 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.23</expectation>
+      <identity>32.5</identity>
+      <positives>50.0</positives>
+      <gaps>20</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALIL---PSIISVE-----VIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MA   + +FL+ +L + ALIL   P I+         +PCI G K   ++  N+ C  +G+ KGG C +       +CCC</pattern>
+      <matchSeq start="1" end="72">MACGTYQHFLIGILCI-ALILTSGPRIVKASEHLQCTVPCIGG-KDRENIICNKNCIDQGYEKGGLCSE------SKCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="A0ACE2ENN4_ARAHA" ac="A0ACE2ENN4" length="78" description="Uncharacterized protein OS=Arabidopsis halleri OX=81970 GN=ARAHAL_2.1953.1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.24</expectation>
+      <identity>36.1</identity>
+      <positives>45.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+ FSY LL  L++FALI  S+ S           C         C   G+ KGG C+ Y +   G CCC</pattern>
+      <matchSeq start="1" end="70">MTTKIFSYVLLHSLIMFALIRSSMGSPGKYYDCKQDGCITTPPCWRKCLSMGYPKGGECRTYSYG--GVCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="A0A078HSU2_BRANA" ac="A0A078HSU2" length="80" description="BnaC02g42950D protein OS=Brassica napus OX=3708 GN=BnaC02g42950D PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.24</expectation>
+      <identity>35.1</identity>
+      <positives>44.6</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGR--CCC</querySeq>
+      <pattern>MAT++ S  LL  L+VF + LP I  V    C     C ++   N  C   G+  GG C      T G   CCC</pattern>
+      <matchSeq start="1" end="66">MATKEISSLLLFSLVVFLISLPIISGVY---CTPKGPCEDNKKCNIHCLLLGYKDGGVC-----DTFGTTFCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0AAN9SG69_PSOTE" ac="A0AAN9SG69" length="72" description="Uncharacterized protein OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_15882 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.29</expectation>
+      <identity>37.8</identity>
+      <positives>52.7</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MATQKFSYFLLVLLMVFALILPS-IISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCH</querySeq>
+      <pattern>MA++    FLL LL  FAL+L S +  +    C+ G KC N+    + C   G+SKGG C   +   I  CCC+</pattern>
+      <matchSeq start="1" end="71">MASRVNCIFLLGLLC-FALVLSSGLADLPGTVCLKG-KCGNNSQCAQRCVNSGYSKGGSCVGIIPGLI-LCCCY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="TR" id="A0ABM1QED5_CAMSA" ac="A0ABM1QED5" length="78" description="Defensin-like protein 87 OS=Camelina sativa OX=90675 GN=LOC104713922 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.33</expectation>
+      <identity>31.5</identity>
+      <positives>47.9</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEV-IPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+K    ++ LLMV ALIL  +++ ++   C     C      +E C   G  +GG C K++      CCC</pattern>
+      <matchSeq start="1" end="67">MTTKK----IIFLLMVVALILTPMVAGQLQATCRIAGMCKGQKACDERCAALGTQRGGVCTKFLGDLY--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="TR" id="A0AAV1W0F0_LUPLU" ac="A0AAV1W0F0" length="78" description="LCR OS=Lupinus luteus OX=3873 GN=LLUT_LOCUS3795 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.33</expectation>
+      <identity>27.9</identity>
+      <positives>46.5</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MATQKFSYFLLVLLMVFALIL--PSIISVEVI--------PCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTG</querySeq>
+      <pattern>MA++ +  FL+ +L +  ++   P+++  EV+        PC  G     +   N +C  KG++KGG C        G CCC   G</pattern>
+      <matchSeq start="1" end="78">MASRTYQAFLIGILCIAFILTSGPTMVKAEVLKPSHACELPCFGG--VLKESICNNVCLRKGYTKGGTC------IDGACCCKLNG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="TR" id="R0GEG8_9BRAS" ac="R0GEG8" length="84" description="Knottins-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10021497mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.37</expectation>
+      <identity>30.3</identity>
+      <positives>41.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="89">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTN</querySeq>
+      <pattern>M T+KF   LL LL++     P I        +    C N    N+ C  KG+ K G C  Y+H     C C+P      + S+S   N</pattern>
+      <matchSeq start="1" end="84">MTTKKFLSLLLPLLVLSITFQPIISGKPTKMRVFLGLCNNTAQCNKSCISKGYEK-GICFLYLH----TCFCYPKSESHDDPSMSYPPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="TR" id="A0A0D3D4I9_BRAOL" ac="A0A0D3D4I9" length="87" description="Defensin-like domain-containing protein OS=Brassica oleracea var. oleracea OX=109376 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.39</expectation>
+      <identity>34.1</identity>
+      <positives>47.1</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS</querySeq>
+      <pattern>MA +     LL  LM+FALI    IS E+  C  G KC +    N  C  +G+ K G C +  + ++  CCC      +  S IS</pattern>
+      <matchSeq start="1" end="81">MAVKNSFSLLLSSLMMFALICIPTISGEIKFC--GMKCYSTPECNATCMHEGYEK-GICLQNDYGSL-ECCCQGNLRSNAGSPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="TR" id="A0ACE2DAJ2_ARAHA" ac="A0ACE2DAJ2" length="90" description="Uncharacterized protein OS=Arabidopsis halleri OX=81970 GN=ARAHAL_3.4193.1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.42</expectation>
+      <identity>33.8</identity>
+      <positives>46.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCI-----AGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MA +KFS  LL+ LM+   I   +IS E+I  I      G KC +    NE C  +G+ +G        +    CCC</pattern>
+      <matchSeq start="1" end="77">MAIKKFSSLLLLWLMMLTFIFIPMISGEMINKIREIKQCGMKCYSTHECNETCIDEGYEEGKCLGLGYRKGGVECCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="TR" id="A0ABM1QED6_CAMSA" ac="A0ABM1QED6" length="78" description="Defensin-like protein 87 OS=Camelina sativa OX=90675 GN=LOC104713924 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.47</expectation>
+      <identity>31.5</identity>
+      <positives>47.9</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEV-IPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+K    ++ LLMV ALIL  +++ ++   C     C      +E C   G  +GG C K++      CCC</pattern>
+      <matchSeq start="1" end="67">MTTKK----IIFLLMVVALILTPMVAGQLQATCRIAGACKGQKACDERCGALGTQRGGVCTKFLGDLY--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="TR" id="A0ABM1Q9Q0_CAMSA" ac="A0ABM1Q9Q0" length="78" description="Defensin-like protein 87 OS=Camelina sativa OX=90675 GN=LOC104702992 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.47</expectation>
+      <identity>33.3</identity>
+      <positives>47.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="72">LVLLMVFALILPSIISVEV-IPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>L LLMV ALIL  +++ ++   C     C      +E C   G  +GG C K++      CCC</pattern>
+      <matchSeq start="7" end="67">LFLLMVVALILTPMVAGQLQATCRIAGMCKGQKACDERCAALGTQRGGVCTKFLGDLY--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="TR" id="A0ABM1QMX3_CAMSA" ac="A0ABM1QMX3" length="89" description="Defensin-like protein 82 OS=Camelina sativa OX=90675 GN=LOC104723953 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.57</expectation>
+      <identity>30.4</identity>
+      <positives>46.7</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="83">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSK---------CTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESS</querySeq>
+      <pattern>MAT+KFS  +L L ++F L+L       ++P  +G +         C++ +  N  C   G+ KGG C  +       CCC    LE Q+ S</pattern>
+      <matchSeq start="1" end="80">MATKKFSTIILPLFVIFTLVL-------LLPITSGKRKPCQDWRYGCSSRVACNAKCLSLGY-KGGDCVTFAFPV---CCC-KINLEFQDDS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="TR" id="A0AAN9SFT6_PSOTE" ac="A0AAN9SFT6" length="74" description="LCR OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_15883 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.61</expectation>
+      <identity>35.2</identity>
+      <positives>50.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="72">KFSYFLLVLLMVFALILPSIISVEVIP---CIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>+ +Y  L+ L+ FAL+L S ++   +P   C+ G KC N     + C   G  KGG C  +V   I  CCC</pattern>
+      <matchSeq start="4" end="72">RVNYTFLLGLLCFALVLGSGVADFGLPDRVCLKG-KCGNSSQCAQRCVQNGHPKGGSCIGFVPGVI-LCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="130" database="TR" id="A0A072TZM9_MEDTR" ac="A0A072TZM9" length="76" description="LCR OS=Medicago truncatula OX=3880 GN=MTR_7g059440 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.63</expectation>
+      <identity>37.8</identity>
+      <positives>48.8</positives>
+      <gaps>22</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALIL-----PSIISVEVI-----PCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MA     YFLL LL + AL+L     PS+ +   I     PCIA   C+ +   ++LCR  G+ KGG C        G CCC</pattern>
+      <matchSeq start="1" end="74">MAKYISQYFLLGLLCI-ALVLASGPTPSLSNDPHIDQTDRPCIAAYHCSENGNCDKLCREIGY-KGGDCNP------GYCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="131" database="TR" id="A0A3P5YHZ8_BRACM" ac="A0A3P5YHZ8" length="95" description="Uncharacterized protein OS=Brassica campestris OX=3711 GN=BRAPAZ1V2_A09P33130.2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.64</expectation>
+      <identity>38.8</identity>
+      <positives>44.8</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="72">FSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>F +FL + L+VF LI   IIS E   CI    C +    N  C   GF  GG C   V      CCC</pattern>
+      <matchSeq start="18" end="79">FFFFLKIDLVVFILISLPIISGEY--CIPNGPCEDAKKCNIHCLLLGFKDGGQC---VSLRTTFCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="132" database="TR" id="A0A0D3AYM6_BRAOL" ac="A0A0D3AYM6" length="80" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica oleracea var. oleracea OX=109376 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.68</expectation>
+      <identity>35.1</identity>
+      <positives>41.9</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGR--CCC</querySeq>
+      <pattern>MAT+K    LL  L+VF + LP I  V    C     C +    N  C   G+  GG C      T G   CCC</pattern>
+      <matchSeq start="1" end="66">MATKKIPSLLLFSLVVFLISLPIISGVY---CTPKGPCEDTKKCNIHCLLLGYKDGGVC-----DTFGTTFCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="133" database="TR" id="A0A8R7QY54_TRIUA" ac="A0A8R7QY54" length="90" description="Uncharacterized protein OS=Triticum urartu OX=4572 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.82</expectation>
+      <identity>30.3</identity>
+      <positives>53.0</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="72">LLVLLMVFALILPSIISVEVIPCIAGSKCTN---DMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>L VL+ + A +L S  +V+   C+   +C+    ++   ELC   GF+K G+C++  +     CCC</pattern>
+      <matchSeq start="13" end="73">LAVLVAIAATLLLSSSTVQADECMVAPECSGPYPEVVCPELCARYGFNKDGYCKESQY-----CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="134" database="TR" id="A0A0B2QTM3_GLYSO" ac="A0A0B2QTM3" length="74" description="LCR OS=Glycine soja OX=3848 GN=D0Y65_022647 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.86</expectation>
+      <identity>28.6</identity>
+      <positives>52.4</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="72">LLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>++ + M+FA  + +     ++ C    +C +D T + +C  KGF KGG C+  +   +  CCC</pattern>
+      <matchSeq start="14" end="72">VICIAMIFAAGVVTCFESPLLSC--QERCIDDPTCDFICHKKGFVKGGSCKPIILYFL--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="135" database="TR" id="A0AAN9SHA7_PSOTE" ac="A0AAN9SHA7" length="74" description="Uncharacterized protein OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_15886 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.86</expectation>
+      <identity>32.4</identity>
+      <positives>51.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="73">YFLLVLLMVFALILPSIISVEVIPCIAGSKCTND--MTYNELCRFKGFSKGGFCQKYVHQTIGRCCCH</querySeq>
+      <pattern>YFL  L +   L+   +++    P I+  +   D  M Y + C  KGF+KGG C+ +V   +  CCC+</pattern>
+      <matchSeq start="9" end="73">YFLGALCIAMFLVSIGLVTCFESPLISCKELYKDDAMCYKQ-CLKKGFAKGGSCKPFVQSFL--CCCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="136" database="TR" id="I1KZD4_SOYBN" ac="I1KZD4" length="74" description="Knottin scorpion toxin-like domain-containing protein OS=Glycine max OX=3847 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.86</expectation>
+      <identity>28.6</identity>
+      <positives>52.4</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="72">LLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>++ + M+FA  + +     ++ C    +C +D T + +C  KGF KGG C+  +   +  CCC</pattern>
+      <matchSeq start="14" end="72">VICIAMIFAAGVVTCFESPLLSC--QERCIDDPTCDFICHKKGFVKGGSCKPIILYFL--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="137" database="TR" id="V7AS65_PHAVU" ac="V7AS65" length="79" description="LCR-like protein OS=Phaseolus vulgaris OX=3885 GN=PHAVU_009G051100g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.94</expectation>
+      <identity>32.8</identity>
+      <positives>44.8</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="72">YFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGR--CCC</querySeq>
+      <pattern>+ L ++ +VF L   S I +    C  G +C N+   N  C F GF  G  C      T G+  CCC</pattern>
+      <matchSeq start="11" end="68">FVLAIVCIVFLLAPGSAIEI----CQKGGRCPNEKNCNSYCSFFGFRDGSRC-----STDGKNLCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="138" database="TR" id="A0A816LLB1_BRANA" ac="A0A816LLB1" length="87" description="Defensin-like domain-containing protein OS=Brassica napus OX=3708 GN=HID58_074758 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.1</expectation>
+      <identity>36.1</identity>
+      <positives>50.0</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MA +     LL  LM+FALI    IS E+  C  G KC +    N  C  +G+ K G C +  + ++  CCC</pattern>
+      <matchSeq start="1" end="68">MAVKNSFSLLLSSLMMFALICIPTISGEIKFC--GMKCYSTPECNATCIHEGYEK-GICLQNDYGSL-ECCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="139" database="TR" id="A0A816YFJ8_BRANA" ac="A0A816YFJ8" length="87" description="Defensin-like domain-containing protein OS=Brassica napus OX=3708 GN=HID58_025202 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.1</expectation>
+      <identity>35.3</identity>
+      <positives>45.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS</querySeq>
+      <pattern>MA +     LL  LMVFALI    IS E+  C  G KC +    N  C  +G+ K G C +    ++  CCC      +  S IS</pattern>
+      <matchSeq start="1" end="81">MAIKNSFSLLLSSLMVFALICIPTISGEIKFC--GMKCYSTPECNATCIHEGYEK-GICLQNDFGSL-ECCCQGNLRSNAGSPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="140" database="TR" id="A0A078GRL6_BRANA" ac="A0A078GRL6" length="87" description="BnaA07g04490D protein OS=Brassica napus OX=3708 GN=BnaA07g04490D PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.1</expectation>
+      <identity>35.3</identity>
+      <positives>45.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSIS</querySeq>
+      <pattern>MA +     LL  LMVFALI    IS E+  C  G KC +    N  C  +G+ K G C +    ++  CCC      +  S IS</pattern>
+      <matchSeq start="1" end="81">MAIKNSFSLLLSSLMVFALICIPTISGEIKFC--GMKCYSTPECNATCIHEGYEK-GICLQNDFGSL-ECCCQGNLRSNAGSPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="141" database="TR" id="A0AAN9XG65_PSOTE" ac="A0AAN9XG65" length="110" description="Uncharacterized protein OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_25863 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>1.1</expectation>
+      <identity>32.9</identity>
+      <positives>42.9</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="72">SYFLLVLLMVFALILPSIISVEVIP----CIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>S+ L V+ + F L+  S  S  + P    C     C N+   N+ C F GF  GG C  Y       CCC</pattern>
+      <matchSeq start="32" end="99">SFILGVMCIAFLLVSVSSTSGPITPPGLHCSNLGNCPNEKACNDYCAFYGFVHGGRC--YTDGFSVFCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="142" database="TR" id="A0ABM1R0U9_CAMSA" ac="A0ABM1R0U9" length="89" description="Defensin-like protein 86 OS=Camelina sativa OX=90675 GN=LOC104747125 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.1</expectation>
+      <identity>34.2</identity>
+      <positives>46.8</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLV-LLMVFALILPSIISVEVIPC----IAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIG--RCCC</querySeq>
+      <pattern>MA  KFS  LL+ L+M+F L+   I S E+         G KC +    NE C   G+ +G    K +   +G   CCC</pattern>
+      <matchSeq start="1" end="75">MAINKFSSLLLISLMMMFVLLCTPIYSGEINDLRHIKNCGRKCISTENCNERCIHAGYEEG----KCLDNEVGGVECCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="143" database="TR" id="A0A072UUK9_MEDTR" ac="A0A072UUK9" length="60" description="Nodule Cysteine-Rich (NCR) secreted peptide OS=Medicago truncatula OX=3880 GN=MTR_4g045633 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.3</expectation>
+      <identity>33.3</identity>
+      <positives>51.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="58">KFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGF</querySeq>
+      <pattern>KF   L++L+ +F +I+    S+  +PCI    C +D      CR KGF   G+</pattern>
+      <matchSeq start="6" end="58">KFVNVLILLIFIFLVIVACDSSIIFLPCITDKDCPDDKKIKGRCR-KGFCTNGW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="144" database="TR" id="A0ABM1R4S4_CAMSA" ac="A0ABM1R4S4" length="79" description="Defensin-like protein 87 OS=Camelina sativa OX=90675 GN=LOC104752109 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.3</expectation>
+      <identity>31.1</identity>
+      <positives>45.9</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIP--CIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>M T+K    +L LLMV ALIL  +++   +   C     C      +E C   G  +GG C +++      CCC</pattern>
+      <matchSeq start="1" end="68">MTTKK----ILFLLMVVALILTPMVAAGQLQATCRIAGMCKGQKACDERCGALGTQRGGVCTRFLGDLY--CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="145" database="TR" id="A0ACS8GYI7_GOSTU" ac="A0ACS8GYI7" length="80" description="Uncharacterized protein OS=Gossypium turneri OX=34284 GN=Gotur_001335 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.4</expectation>
+      <identity>29.7</identity>
+      <positives>51.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="71">LLVLLMVFALILP--SIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCC</querySeq>
+      <pattern>+L L+M++ L+     + ++ V PC+    C+     N+ C  KGF KGG C  +  + +  CC</pattern>
+      <matchSeq start="17" end="78">ILCLIMIWNLVAGPVGVDAINVPPCLG--PCSAIPNCNQSCIDKGFPKGGVCIGFSFEDLACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="146" database="TR" id="A0A1U8P9A9_GOSHI" ac="A0A1U8P9A9" length="80" description="Defensin-like protein 73 OS=Gossypium hirsutum OX=3635 GN=LOC107956790 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.4</expectation>
+      <identity>29.7</identity>
+      <positives>51.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="71">LLVLLMVFALILP--SIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCC</querySeq>
+      <pattern>+L L+M++ L+     + ++ V PC+    C+     N+ C  KGF KGG C  +  + +  CC</pattern>
+      <matchSeq start="17" end="78">ILCLIMIWNLVAGPVGVDAINVPPCLG--PCSAIPNCNQSCIDKGFPKGGVCIGFSFEDLACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="147" database="TR" id="A0A5J5QRZ2_GOSBA" ac="A0A5J5QRZ2" length="80" description="Knottin scorpion toxin-like domain-containing protein OS=Gossypium barbadense OX=3634 GN=ES319_D07G174500v1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.4</expectation>
+      <identity>29.7</identity>
+      <positives>51.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="71">LLVLLMVFALILP--SIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCC</querySeq>
+      <pattern>+L L+M++ L+     + ++ V PC+    C+     N+ C  KGF KGG C  +  + +  CC</pattern>
+      <matchSeq start="17" end="78">ILCLIMIWNLVAGPVGVDAINVPPCLG--PCSAIPNCNQSCIDKGFPKGGVCIGFSFEDLACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="148" database="TR" id="A0A0D2NB34_GOSRA" ac="A0A0D2NB34" length="80" description="Knottin scorpion toxin-like domain-containing protein OS=Gossypium raimondii OX=29730 GN=B456_001G184100 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.4</expectation>
+      <identity>29.7</identity>
+      <positives>51.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="71">LLVLLMVFALILP--SIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCC</querySeq>
+      <pattern>+L L+M++ L+     + ++ V PC+    C+     N+ C  KGF KGG C  +  + +  CC</pattern>
+      <matchSeq start="17" end="78">ILCLIMIWNLVAGPVGVDAINVPPCLG--PCSAIPNCNQSCIDKGFPKGGVCIGFSFEDLACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="149" database="TR" id="A0A5D2UC24_GOSMU" ac="A0A5D2UC24" length="80" description="Knottin scorpion toxin-like domain-containing protein OS=Gossypium mustelinum OX=34275 GN=E1A91_D07G178300v1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.4</expectation>
+      <identity>29.7</identity>
+      <positives>51.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="71">LLVLLMVFALILP--SIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCC</querySeq>
+      <pattern>+L L+M++ L+     + ++ V PC+    C+     N+ C  KGF KGG C  +  + +  CC</pattern>
+      <matchSeq start="17" end="78">ILCLIMIWNLVAGPVGVDAINVPPCLG--PCSAIPNCNQSCIDKGFPKGGVCIGFSFEDLACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="150" database="TR" id="A0A5D2BX51_GOSDA" ac="A0A5D2BX51" length="80" description="Knottin scorpion toxin-like domain-containing protein OS=Gossypium darwinii OX=34276 GN=ES288_D07G186300v1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.4</expectation>
+      <identity>29.7</identity>
+      <positives>51.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="71">LLVLLMVFALILP--SIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCC</querySeq>
+      <pattern>+L L+M++ L+     + ++ V PC+    C+     N+ C  KGF KGG C  +  + +  CC</pattern>
+      <matchSeq start="17" end="78">ILCLIMIWNLVAGPVGVDAINVPPCLG--PCSAIPNCNQSCIDKGFPKGGVCIGFSFEDLACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="151" database="TR" id="A0A7J8WJE9_GOSAI" ac="A0A7J8WJE9" length="80" description="Defensin-like protein OS=Gossypium aridum OX=34290 GN=Goari_016588 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.4</expectation>
+      <identity>29.7</identity>
+      <positives>51.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="71">LLVLLMVFALILP--SIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCC</querySeq>
+      <pattern>+L L+M++ L+     + ++ V PC+    C+     N+ C  KGF KGG C  +  + +  CC</pattern>
+      <matchSeq start="17" end="78">ILCLIMIWNLVAGPVGVDAINVPPCLG--PCSAIPNCNQSCIDKGFPKGGVCIGFSFEDLACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="152" database="TR" id="A0A5D2K8R8_GOSTO" ac="A0A5D2K8R8" length="80" description="Knottin scorpion toxin-like domain-containing protein OS=Gossypium tomentosum OX=34277 GN=ES332_D07G183900v1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.4</expectation>
+      <identity>29.7</identity>
+      <positives>51.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="71">LLVLLMVFALILP--SIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCC</querySeq>
+      <pattern>+L L+M++ L+     + ++ V PC+    C+     N+ C  KGF KGG C  +  + +  CC</pattern>
+      <matchSeq start="17" end="78">ILCLIMIWNLVAGPVGVDAINVPPCLG--PCSAIPNCNQSCIDKGFPKGGVCIGFSFEDLACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="153" database="TR" id="A0AA41SK00_PAPNU" ac="A0AA41SK00" length="103" description="Uncharacterized protein OS=Papaver nudicaule OX=74823 GN=MKW94_022817 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.4</expectation>
+      <identity>36.4</identity>
+      <positives>54.5</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="72">IISVEVI----PCIAGSKCTNDMTYNELCRFKGFSKGGFC--QKYVHQTIGRCCC</querySeq>
+      <pattern>++++EVI    P I G +C ND T +  CR + +S GG C       + +G CCC</pattern>
+      <matchSeq start="48" end="101">VVAIEVIGHGCPTIVGGRCINDHTCSIRCRSQKYS-GGICLPNDIDKKPLGICCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="154" database="TR" id="A0AAD2E9Q2_9LAMI" ac="A0AAD2E9Q2" length="513" description="Glyceraldehyde-3-phosphate dehydrogenase, cytosolic OS=Fraxinus pennsylvanica OX=56036 GN=FPE_LOCUS31462 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.5</expectation>
+      <identity>33.8</identity>
+      <positives>50.6</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGS-----KCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT+ F  F+L+LL++F+   P I+  E   C + S     KC +D     +C  +GF  GG C+ +      RC C</pattern>
+      <matchSeq start="435" end="506">MATKVFFSFILMLLLLFSSENPGILRAEGRSCESQSHLFHGKCFSDRNCRHVCANEGF-PGGKCRGFRQ----RCFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="155" database="TR" id="A0ABM1QJ02_CAMSA" ac="A0ABM1QJ02" length="90" description="Defensin-like protein 82 OS=Camelina sativa OX=90675 GN=LOC109127044 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.6</expectation>
+      <identity>33.0</identity>
+      <positives>46.2</positives>
+      <gaps>20</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="83">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSK--------CTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESS</querySeq>
+      <pattern>MAT+KFS  +L L M++ L+L  I S      I G +        C++ +  N  C   G+ KGG C  +       CCC    LE Q+ S</pattern>
+      <matchSeq start="1" end="81">MATKKFSATILPLFMIYTLVLLPITS-----GITGKRKCQDWRYGCSSRVACNAKCLSLGY-KGGDCVTFAFPV---CCC-KINLEFQDDS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="156" database="TR" id="A0ACE2DL98_ARAHA" ac="A0ACE2DL98" length="56" description="Uncharacterized protein (Fragment) OS=Arabidopsis halleri OX=81970 GN=ARAHAL_7.1827.1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.7</expectation>
+      <identity>40.4</identity>
+      <positives>55.3</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="91">NELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESSISGDTNVV</querySeq>
+      <pattern>N  CR +  + GG C    +     CCC+ + +ES +SSIS DTN V</pattern>
+      <matchSeq start="10" end="52">NNFCRARNNNLGGVCLIRANC----CCCYVSVVESHKSSISKDTNNV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="157" database="TR" id="R0F9Z9_9BRAS" ac="R0F9Z9" length="77" description="Defensin-like protein (Fragment) OS=Capsella rubella OX=81985 GN=CARUB_v10007042mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.8</expectation>
+      <identity>35.1</identity>
+      <positives>44.6</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="72">SYFLLVLLMVFALILPSIIS------VEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFC--QKYVHQTIGRCCC</querySeq>
+      <pattern>S+ L   L++FALIL  +IS        V PC+ G  C      N  CR  G  KGG C   +   +    CCC</pattern>
+      <matchSeq start="3" end="74">SFHLFYYLVIFALILMPMISAFMPYKTYVQPCMPG--CIGGAECNTKCRSMGHPKGGDCLGDRLGGEPGFDCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="158" database="TR" id="A0ABM1QHT0_CAMSA" ac="A0ABM1QHT0" length="235" description="Uncharacterized protein LOC109126880 OS=Camelina sativa OX=90675 GN=LOC109126880 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>1.8</expectation>
+      <identity>35.7</identity>
+      <positives>44.0</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="84">TQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFS-KGGFCQKYVHQTIGRCCC-HPTGLESQESSI</querySeq>
+      <pattern>TQK++ F  +LL++  L   SI S     C+    CT D     LCR  G   K   C  Y  +  GRCCC H  G  S    I</pattern>
+      <matchSeq start="158" end="235">TQKYN-FAFLLLIICLLFTQSIAS----GCVFKGYCTTDDICKHLCRGHGLDPKFQLCVPYSSKG-GRCCCLHYDGAPSSSEDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="159" database="TR" id="A0ABQ7LXW8_BRACM" ac="A0ABQ7LXW8" length="79" description="Knottin scorpion toxin-like domain-containing protein OS=Brassica rapa subsp. trilocularis OX=1813537 GN=A06p003820.1_BraROA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.9</expectation>
+      <identity>35.1</identity>
+      <positives>45.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MATQKFSYFLLVLLMVFALILPSIISVEVIPC-IAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCH</querySeq>
+      <pattern>MA  KFS  LL  LMV   IL  + S ++  C +    C       + CR  G+  GG  +KY   +I  CC H</pattern>
+      <matchSeq start="1" end="72">MAANKFSSLLLFSLMVSTFILLPMASGQIRICPVRRPPCKVSQGCIQNCRKLGYMTGGCEEKY--SSIYCCCIH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="160" database="TR" id="A0A816ZJC1_BRANA" ac="A0A816ZJC1" length="87" description="Uncharacterized protein OS=Brassica napus OX=3708 GN=HID58_028510 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>2.2</expectation>
+      <identity>29.2</identity>
+      <positives>41.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT+KF+  LL LL+V   +    +   V  C     C +       C+ KG++ G  C          CCC</pattern>
+      <matchSeq start="1" end="72">MATKKFATLLLPLLIVLLTLTFISMVSGVKTCEEQGPCESLKKCEVHCKLKGYTMGAVCLLQESTGYNSCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="161" database="TR" id="A0A078JTX7_BRANA" ac="A0A078JTX7" length="87" description="BnaAnng28720D protein OS=Brassica napus OX=3708 GN=BnaAnng28720D PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>2.2</expectation>
+      <identity>29.2</identity>
+      <positives>41.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT+KF+  LL LL+V   +    +   V  C     C +       C+ KG++ G  C          CCC</pattern>
+      <matchSeq start="1" end="72">MATKKFATLLLPLLIVLLTLTFISMVSGVKTCEEQGPCESLKKCEVHCKLKGYTMGAVCLLQESTGYNSCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="162" database="TR" id="A0ABM0V223_CAMSA" ac="A0ABM0V223" length="90" description="Defensin-like protein 82 OS=Camelina sativa OX=90675 GN=LOC104731848 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>2.3</expectation>
+      <identity>34.9</identity>
+      <positives>47.7</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="83">MATQKFSYFLLVLLMVFALILPSIIS--VEVIPCIAGS-KCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLESQESS</querySeq>
+      <pattern>MAT+KFS  +L L M+F L+L  I S   +  PC      C++ +  +  C   G+ KGG C  +       CCC    LE Q  S</pattern>
+      <matchSeq start="1" end="81">MATKKFSAIILPLYMIFTLVLLPITSGRKQKEPCQDWRYGCSSRVACSAKCLSLGY-KGGDCVTFAFPV---CCC-KINLEFQHDS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="163" database="TR" id="A0A8T1Y9R5_9BRAS" ac="A0A8T1Y9R5" length="205" description="Transmembrane protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_Aa07g034250 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.3</expectation>
+      <identity>38.6</identity>
+      <positives>49.4</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="81">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKC-TNDMTYNELCRFKGFSK-GGFCQKYVHQTIGRCCCHPTGLESQE</querySeq>
+      <pattern>MA  KFS FLL+ LMVFALIL        +P I+G  C   D T     R++  SK    C+  VH    +C  H T  + +E</pattern>
+      <matchSeq start="1" end="72">MAIIKFSSFLLLPLMVFALIL--------MPIISGQTCRLFDSTSIPEERWESASKCNASCKSLVH---SKCATHKTIWDGRE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="164" database="TR" id="A0A8S0R8N7_OLEEU" ac="A0A8S0R8N7" length="79" description="Defensin 2 OS=Olea europaea subsp. europaea OX=158383 GN=OLEA9_A032862 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>2.6</expectation>
+      <identity>32.5</identity>
+      <positives>49.4</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGS-----KCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MAT+ F  F+L+LL++F+   P I+  E   C + S      C +D     +C  +GF  GG C+ +      RC C</pattern>
+      <matchSeq start="1" end="72">MATKVFFSFILMLLLLFSSENPGILRAEGRLCESQSHLFKGSCLSDKNCRHVCANEGF-PGGRCRGFRR----RCFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="165" database="TR" id="V4NEY1_EUTSA" ac="V4NEY1" length="86" description="Knottin scorpion toxin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10003300mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>3.0</expectation>
+      <identity>32.9</identity>
+      <positives>43.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MATQKFSYFLLVLLMVFALILPSIISVEVIP-CIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPTGLE</querySeq>
+      <pattern>MAT+ F   LL LLMV  LI   +IS +    C     C ++   NE C    + KG  C      +   CCC    +E</pattern>
+      <matchSeq start="1" end="77">MATKNFLSQLLSLLMVVMLIFMPMISGKPWKLCEPQGPCVSEKACNEHCASLNYHKGAICLPRGDTSF--CCCKTDPVE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="166" database="TR" id="A0A078HVJ4_BRANA" ac="A0A078HVJ4" length="87" description="BnaC06g03530D protein OS=Brassica napus OX=3708 GN=BnaC06g03530D PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>3.0</expectation>
+      <identity>36.0</identity>
+      <positives>46.7</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MATQKFSYFLLVLLMVFALILPSIISVEVIPC-IAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHP</querySeq>
+      <pattern>MA  KFS  LL  LMV   IL  + S ++  C +    C       + CR  G+  GG  +K  H +I  CCC P</pattern>
+      <matchSeq start="1" end="72">MAANKFSSLLLFSLMVSTFILLPMASGKIRICPVRRPPCKVSQECIQNCRKLGYMTGGCEEK--HSSI-YCCCIP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="167" database="TR" id="A0AAN9SJY3_PSOTE" ac="A0AAN9SJY3" length="74" description="Uncharacterized protein OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_15884 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>3.4</expectation>
+      <identity>36.0</identity>
+      <positives>52.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISVEVIP---CIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MA++    FLL LL  FAL+L S ++   IP   C+ G  C ++    + C   G+ KGG C  ++   I  CCC</pattern>
+      <matchSeq start="1" end="72">MASRVNCTFLLGLLC-FALVLSSGVTDYEIPGRVCLKGD-CGSNSQCQQRCVKSGYPKGGTCIAFI-PGILLCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="168" database="TR" id="A0A314KXD1_NICAT" ac="A0A314KXD1" length="76" description="Defensin-like protein OS=Nicotiana attenuata OX=49451 GN=DEF_1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>3.5</expectation>
+      <identity>39.3</identity>
+      <positives>55.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="59">FLLVLLMVFALILPSIISVEVIPCIAGS-----KCTNDMTYNELCRFKGFSKGGFC</querySeq>
+      <pattern>F+ VLLM+FAL +  +  VE   C++ S      C +D     +CR +GFS GG C</pattern>
+      <matchSeq start="9" end="63">FMFVLLMIFALQMEMMAQVEARVCMSPSHGYHGPCWHDHNCALVCRNEGFS-GGDC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="169" database="TR" id="A0A6A4QW27_LUPAL" ac="A0A6A4QW27" length="77" description="Knottin, scorpion toxin OS=Lupinus albus OX=3870 GN=Lalb_Chr03g0042041 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>3.5</expectation>
+      <identity>38.2</identity>
+      <positives>50.0</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALIL---PSII-SVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MA +    FL  +L + ALIL   P+II +VE++ C       N   Y + C  +GF KGG C K V      CCC</pattern>
+      <matchSeq start="1" end="68">MAFRTHQPFLFGILFI-ALILASGPTIIKAVELLDCEYPCNGGNKQCY-KFCVSQGFKKGGSCSKSV------CCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="170" database="TR" id="A0ABQ8CVI9_BRANA" ac="A0ABQ8CVI9" length="125" description="Uncharacterized protein OS=Brassica napus OX=3708 GN=HID58_020845 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.7</expectation>
+      <identity>35.1</identity>
+      <positives>45.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MATQKFSYFLLVLLMVFALILPSIISVEVIPC-IAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCH</querySeq>
+      <pattern>MA  KFS  LL  LMV   IL  + S ++  C +    C       + CR  G+  GG  +KY   +I  CC H</pattern>
+      <matchSeq start="1" end="72">MAANKFSSLLLFSLMVSTFILLPMASGQIRICPVRRPPCKVSQGCIQNCRKLGYMTGGCEEKY--SSIYCCCIH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="171" database="TR" id="A0A0F6UUK9_MAIZE" ac="A0A0F6UUK9" length="107" description="Embryo surrounding region 6 OS=Zea mays OX=4577 GN=Esr-6 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.1</expectation>
+      <identity>40.9</identity>
+      <positives>56.8</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="87">NELCRFKGFSKGGFCQKYVHQTIGRCCCH-PTGLESQESSISGD</querySeq>
+      <pattern>++ CR KG++ GGFC    +  I RC C  P  LE Q  + +GD</pattern>
+      <matchSeq start="52" end="91">DDTCRNKGYTGGGFC----NMKIQRCVCRKPCALEEQTEARAGD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="172" database="TR" id="Q5CC32_MAIZE" ac="Q5CC32" length="107" description="Defensin OS=Zea mays OX=4577 GN=esr-6 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.1</expectation>
+      <identity>40.9</identity>
+      <positives>56.8</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="87">NELCRFKGFSKGGFCQKYVHQTIGRCCCH-PTGLESQESSISGD</querySeq>
+      <pattern>++ CR KG++ GGFC    +  I RC C  P  LE Q  + +GD</pattern>
+      <matchSeq start="52" end="91">DDTCRNKGYTGGGFC----NMKIQRCVCRKPCALEEQTEARAGD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="173" database="TR" id="A0A804P1G8_MAIZE" ac="A0A804P1G8" length="107" description="Uncharacterized protein OS=Zea mays OX=4577 GN=LOC606439 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.1</expectation>
+      <identity>40.9</identity>
+      <positives>56.8</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="87">NELCRFKGFSKGGFCQKYVHQTIGRCCCH-PTGLESQESSISGD</querySeq>
+      <pattern>++ CR KG++ GGFC    +  I RC C  P  LE Q  + +GD</pattern>
+      <matchSeq start="52" end="91">DDTCRNKGYTGGGFC----NMKIQRCVCRKPCALEEQTEARAGD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="174" database="TR" id="V7B737_PHAVU" ac="V7B737" length="68" description="Knottin scorpion toxin-like domain-containing protein OS=Phaseolus vulgaris OX=3885 GN=PHAVU_008G099900g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>4.2</expectation>
+      <identity>35.2</identity>
+      <positives>46.5</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="75">YFLLVLLMVF--ALILPSIISVEVIPCI-AGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>+F LVLL +F  AL+L S   V + P I     C +    N  C   G++ GGFC  +       CCC  T</pattern>
+      <matchSeq start="4" end="68">FFQLVLLGIFCSALVLTSGQPVMMSPWIDCAGPCVSFDNCNFNCNNLGYTSGGFCSFFT------CCCFRT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="175" database="TR" id="D1MAH4_MAIZE" ac="D1MAH4" length="111" description="Defensin OS=Zea mays OX=4577 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.4</expectation>
+      <identity>40.9</identity>
+      <positives>56.8</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="87">NELCRFKGFSKGGFCQKYVHQTIGRCCCH-PTGLESQESSISGD</querySeq>
+      <pattern>++ CR KG++ GGFC    +  I RC C  P  LE Q  + +GD</pattern>
+      <matchSeq start="52" end="91">DDTCRNKGYTGGGFC----NMKIQRCVCRKPCALEEQTEARAGD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="176" database="TR" id="G7J1B2_MEDTR" ac="G7J1B2" length="72" description="LCR-like protein OS=Medicago truncatula OX=3880 GN=MTR_3g049755 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>4.5</expectation>
+      <identity>31.5</identity>
+      <positives>46.6</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MATQKFSYFLLVLLMVFALILPSIISV-EVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>MA     YFLL +L + AL+L S   +  +  C+  + C N  + N  C   G+ + G C  +  Q    CCC</pattern>
+      <matchSeq start="1" end="71">MAGHISQYFLLGILCI-ALVLASGSKIPSLSECVVPTPCVNPNSCNAECSTSGYQR-GVCLYFPPQHSWLCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="177" database="TR" id="A0A5N6RB19_9ROSI" ac="A0A5N6RB19" length="73" description="Knottin scorpion toxin-like domain-containing protein OS=Carpinus fangiana OX=176857 GN=FH972_014877 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>4.6</expectation>
+      <identity>32.3</identity>
+      <positives>51.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="72">LVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>L++L  FAL++ S +   ++  I   KC +    N  C+  GF +GG C   ++Q    CCC</pattern>
+      <matchSeq start="14" end="71">LLILAAFALLVFSFLGNALLSPICQGKCEDLPDCNGFCQRSGF-QGGICYPPLYQ---YCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="178" database="TR" id="A0AAW1I0R1_SAPOF" ac="A0AAW1I0R1" length="73" description="Uncharacterized protein OS=Saponaria officinalis OX=3572 GN=RND81_10G108800 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>4.6</expectation>
+      <identity>31.2</identity>
+      <positives>45.3</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="72">FLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>F+L++ M+ +  L S   +   P I    CT+    + LC   GF+KGG C          CCC</pattern>
+      <matchSeq start="10" end="71">FVLLVTMLMSSGLSSAEGIGPSPYICKGACTSAAACDNLCHGSGFTKGGACVGLGGPP--SCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="179" database="TR" id="G7L3G2_MEDTR" ac="G7L3G2" length="76" description="Transmembrane protein, putative OS=Medicago truncatula OX=3880 GN=MTR_7g060550 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>4.9</expectation>
+      <identity>30.6</identity>
+      <positives>50.0</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="72">FSYF--LLVLLMVFALILPSIISVEVIP---CIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>FS++   L L++  AL+LPS +++   P   C+A             C+ +G+ +GG CQ Y    +  CCC</pattern>
+      <matchSeq start="3" end="71">FSFYQSFLFLILCIALVLPSGLAITKDPNAQCVASCVLLPKQC-PIFCKTRGYKRGGQCQFY--GKLNLCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="180" database="TR" id="A0A5J5N825_GOSBA" ac="A0A5J5N825" length="78" description="Knottin scorpion toxin-like domain-containing protein OS=Gossypium barbadense OX=3634 GN=ES319_1Z078900v1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.1</expectation>
+      <identity>27.4</identity>
+      <positives>51.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="71">LLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCC</querySeq>
+      <pattern>+L L++++ L    + ++ V PC+    C+     ++ C  KGF KGG C  +  + +  CC</pattern>
+      <matchSeq start="17" end="76">ILCLILIWNLGPVGVDAINVPPCLG--PCSAIPNCHQSCIDKGFPKGGVCIGFSFEDLACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="181" database="TR" id="A0A5D2PWN7_GOSTO" ac="A0A5D2PWN7" length="78" description="Knottin scorpion toxin-like domain-containing protein OS=Gossypium tomentosum OX=34277 GN=ES332_A07G179700v1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.1</expectation>
+      <identity>27.4</identity>
+      <positives>51.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="71">LLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCC</querySeq>
+      <pattern>+L L++++ L    + ++ V PC+    C+     ++ C  KGF KGG C  +  + +  CC</pattern>
+      <matchSeq start="17" end="76">ILCLILIWNLGPVGVDAINVPPCLG--PCSAIPNCHQSCIDKGFPKGGVCIGFSFEDLACCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="182" database="TR" id="A0AAD6PTK0_9ROSI" ac="A0AAD6PTK0" length="80" description="DUF5637 domain-containing protein OS=Populus alba x Populus x berolinensis OX=444605 GN=NC653_037381 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.3</expectation>
+      <identity>26.9</identity>
+      <positives>47.4</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="77">MATQKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRC-CCHPTGL</querySeq>
+      <pattern>M ++K +  L+V L+  A I PS +++   P +     T+++   +  +    S GGFC        G C C +P G+</pattern>
+      <matchSeq start="1" end="74">MDSKKATLLLMVALVFVATIAPSTLAMRQFPLLM----TSNILLQDESKLGCISSGGFCFTQPMNCCGNCGCLYPLGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="183" database="TR" id="V4KQX3_EUTSA" ac="V4KQX3" length="82" description="Defensin-like protein 78/80 conserved domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10005212mg PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.5</expectation>
+      <identity>29.9</identity>
+      <positives>46.8</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MATQKFSY-FLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMT--YNELCRFKGFSKGGFCQKYVHQTIGRCCCHP</querySeq>
+      <pattern>M +++F Y F+ V +++  LI  S    E+        C+  +    N+LC   GF  GG+C+K        CCC P</pattern>
+      <matchSeq start="1" end="71">MDSRRFPYAFIAVSIIIMLLITGSEARSEIYDPKCPGICSPGIVPDCNKLCVGLGFPAGGYCKKLT------CCCKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="184" database="TR" id="A0A1Z5RGU6_SORBI" ac="A0A1Z5RGU6" length="71" description="Knottin scorpion toxin-like domain-containing protein OS=Sorghum bicolor OX=4558 GN=SORBI_3005G058350 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>6.3</expectation>
+      <identity>32.4</identity>
+      <positives>45.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="72">FSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTY-NELCRFKGFSKGGFCQKYVHQTIGRCCC</querySeq>
+      <pattern>FS  +  +L+V ALI+ ++ S      +    C     Y N+ C+  GF KGG C        G CCC</pattern>
+      <matchSeq start="5" end="69">FSSVVCRILVVVALIVTTLSSYGAANSVCIQACWRLYPYCNDWCKNAGFIKGGSCNT---GKDGNCCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="185" database="TR" id="A0A0A0LHG9_CUCSA" ac="A0A0A0LHG9" length="75" description="Defensin-like domain-containing protein OS=Cucumis sativus OX=3659 GN=Csa_2G071930 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>6.8</expectation>
+      <identity>30.9</identity>
+      <positives>44.4</positives>
+      <gaps>19</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MATQKFSYFLLVLLMVFALILPS----IISVEVI-PC---IAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCH</querySeq>
+      <pattern>MATQK +   +V+LM+FA I  +    +++V  + PC        C ND     L         GFC   +  T   CCC+</pattern>
+      <matchSeq start="1" end="74">MATQKLATISIVVLMIFACIASTTKGDVLNVHCVRPCSDTYDDESCYNDCIQENL-------GAGFCYPKLPSTDKDCCCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="186" database="TR" id="A0AAN9NJ12_PHACN" ac="A0AAN9NJ12" length="76" description="Uncharacterized protein OS=Phaseolus coccineus OX=3886 GN=VNO80_07123 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>6.9</expectation>
+      <identity>31.9</identity>
+      <positives>45.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="75">QKFSYFLLVLLMVFALILPSIISVEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYVHQTIGRCCCHPT</querySeq>
+      <pattern>Q F   LL +  +F+  L +        C  G KC ++    + C  KGF +GG C+  V   I  CCC+ T</pattern>
+      <matchSeq start="7" end="76">QTFLLGLLCIAFLFSSGLATDWDFPGTKCQKG-KCVSNTQCAQSCVSKGFKRGGSCEGVVPGVI-ICCCYTT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="187" database="TR" id="A0A2S4V925_9BASI" ac="A0A2S4V925" length="129" description="Inhibitor I9 domain-containing protein OS=Puccinia striiformis OX=27350 GN=PSTT_09311 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>7.5</expectation>
+      <identity>48.7</identity>
+      <positives>71.8</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MATQKFSY-FLLVLLMVF-ALILPSIISVEVIPCIAGSK</querySeq>
+      <pattern>MA Q+FS  F++VLL+ F  L+LPS++S  V P + GS+</pattern>
+      <matchSeq start="1" end="39">MANQRFSNRFIIVLLVAFIGLVLPSLVSSAVTPGVTGSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="188" database="TR" id="A0ABM1QMW8_CAMSA" ac="A0ABM1QMW8" length="89" description="Defensin-like protein 84 OS=Camelina sativa OX=90675 GN=LOC109127602 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>8.6</expectation>
+      <identity>35.4</identity>
+      <positives>51.9</positives>
+      <gaps>20</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="73">FSYFLLVLLMVFAL--ILPSIIS-----VEVIPCIAGSKCTNDMTYNELCRFKGFSKGGFCQKYV---HQTI-GRCCCH</querySeq>
+      <pattern>+S   L+ LMVFAL  I+P I       V++  C  G K T +   N+ C+ KG   GG C++Y+   H  +   CCC+</pattern>
+      <matchSeq start="2" end="75">YSSHRLLSLMVFALLIIIPMITGQVVKYVDLDRCKLGCKSTPEC--NQKCKLKG---GGRCRRYISYIHSGLEDYCCCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="189" database="TR" id="A0AA85ISA1_TRIRE" ac="A0AA85ISA1" length="713" description="Uncharacterized protein OS=Trichobilharzia regenti OX=157069 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.9</expectation>
+      <identity>30.2</identity>
+      <positives>53.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="94">LLMVFALILPSIISVEVI--PCIAGSKCTNDMTYNEL-CRFKGFSKGGF-CQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>L +V  +++  + S+E    P  +G+ C N  T  ++ CR KG  +  + C+K V+++  +C   PT + S   S + DT  V+TN</pattern>
+      <matchSeq start="287" end="370">LKLVTEIVVDDVPSLEGFSNPLSSGNACNNSPTEVDVACREKGSMRNSYDCEKEVNRS--QCSPQPTRVCSSVVSKNSDTLTVVTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="190" database="TR" id="A0AA85IUZ6_TRIRE" ac="A0AA85IUZ6" length="740" description="Uncharacterized protein OS=Trichobilharzia regenti OX=157069 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.9</expectation>
+      <identity>30.2</identity>
+      <positives>53.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="94">LLMVFALILPSIISVEVI--PCIAGSKCTNDMTYNEL-CRFKGFSKGGF-CQKYVHQTIGRCCCHPTGLESQESSISGDTNVVITN</querySeq>
+      <pattern>L +V  +++  + S+E    P  +G+ C N  T  ++ CR KG  +  + C+K V+++  +C   PT + S   S + DT  V+TN</pattern>
+      <matchSeq start="314" end="397">LKLVTEIVVDDVPSLEGFSNPLSSGNACNNSPTEVDVACREKGSMRNSYDCEKEVNRS--QCSPQPTRVCSSVVSKNSDTLTVVTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

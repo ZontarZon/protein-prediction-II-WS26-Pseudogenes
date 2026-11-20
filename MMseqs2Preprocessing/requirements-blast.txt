@@ -1,2 +1,0 @@
-biopython>=1.83,<2
-ijson>=3.2,<4

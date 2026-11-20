@@ -1,0 +1,3181 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-204813-0024-13559421-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-204813-0024-13559421-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q8X367|YAHH_ECO57" type="PROTEIN" length="106"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:48:13+00:00" end="2026-11-13T20:50:13+00:00" search="P0Y0M0DT0H0M120.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="100">
+   <hit number="1" database="SP" id="YAHH_ECO57" ac="Q8X367" length="106" description="Putative uncharacterized protein YahH OS=Escherichia coli O157:H7 OX=83334 GN=yahH PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>515</score>
+      <bits>203.0</bits>
+      <expectation>7.4e-66</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="106">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAREL</querySeq>
+      <pattern>MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAREL</pattern>
+      <matchSeq start="1" end="106">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAREL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="YAHH_ECOLI" ac="Q2EEQ3" length="106" description="Putative uncharacterized protein YahH OS=Escherichia coli (strain K12) OX=83333 GN=yahH PE=5 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>473</score>
+      <bits>186.8</bits>
+      <expectation>1.9e-59</expectation>
+      <identity>91.5</identity>
+      <positives>97.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="106">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAREL</querySeq>
+      <pattern>MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGL++AQE VGLISVAHQAF T AGCGV+ALSGLR+A+ESVGLISVAHQAFVTIAGCGVNALSGLR+AREL</pattern>
+      <matchSeq start="1" end="106">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAQESVGLISVAHQAFATTAGCGVDALSGLRVARESVGLISVAHQAFVTIAGCGVNALSGLRVAREL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A0H3EFK0_ECO8N" ac="A0A0H3EFK0" length="121" description="Uncharacterized protein OS=Escherichia coli O83:H1 (strain NRG 857C / AIEC) OX=685038 GN=NRG857_01580 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>380</score>
+      <bits>151.0</bits>
+      <expectation>4.5e-45</expectation>
+      <identity>76.2</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMARE</querySeq>
+      <pattern>MN LSGLRMA++SVGLISVA QA  T AGCGVNALSGL++A++ VGLI VA QA  T AGC +N LSGLR+AQESVGLISVAHQA VT AGCGVNALSGLR+A+E</pattern>
+      <matchSeq start="1" end="105">MNVLSGLRMARKSVGLISVAIQALATTAGCGVNALSGLRMARKSVGLIIVALQALATTAGCDMNVLSGLRVAQESVGLISVAHQALVTTAGCGVNALSGLRVAQE</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>325</score>
+      <bits>129.8</bits>
+      <expectation>1.1e-36</expectation>
+      <identity>80.0</identity>
+      <positives>88.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQA</querySeq>
+      <pattern>+NALSGLRMA++SVGLI VA QA  T AGC +N LSGL+VAQE VGLISVAHQA +T AGCGVNALSGLR+AQESVGLISVAHQA</pattern>
+      <matchSeq start="32" end="116">VNALSGLRMARKSVGLIIVALQALATTAGCDMNVLSGLRVAQESVGLISVAHQALVTTAGCGVNALSGLRVAQESVGLISVAHQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="B7UJH5_ECO27" ac="B7UJH5" length="90" description="Uncharacterized protein OS=Escherichia coli O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=yahH PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>344</score>
+      <bits>137.1</bits>
+      <expectation>5.4e-40</expectation>
+      <identity>83.5</identity>
+      <positives>90.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQA</querySeq>
+      <pattern>MN LSGLRMA++SVGLISVA QA  T AGCGVNALSGL+VAQE VGLISVAHQA +T AGCGVNALSGLRMA+ESVGLIS+AHQA</pattern>
+      <matchSeq start="1" end="85">MNVLSGLRMARKSVGLISVAIQALATTAGCGVNALSGLRVAQESVGLISVAHQALVTTAGCGVNALSGLRMARESVGLISIAHQA</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>287</score>
+      <bits>115.2</bits>
+      <expectation>2.6e-31</expectation>
+      <identity>81.1</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="32" end="105">VNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMARE</querySeq>
+      <pattern>+N LSGL++A++ VGLISVA QA  T AGCGVNALSGLR+AQESVGLISVAHQA VT AGCGVNALSGLRMARE</pattern>
+      <matchSeq start="1" end="74">MNVLSGLRMARKSVGLISVAIQALATTAGCGVNALSGLRVAQESVGLISVAHQALVTTAGCGVNALSGLRMARE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABX9FWH6_9ENTR" ac="A0ABX9FWH6" length="179" description="Uncharacterized protein OS=Pseudocitrobacter faecalis OX=1398493 GN=DFQ50_107118 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>6.5e-05</expectation>
+      <identity>39.8</identity>
+      <positives>45.9</positives>
+      <gaps>39</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="85">TIAGCGVNALSGLQVAQEFVGLI--SVAHQAFI----------------------------------TIAGCGVNALSGLRMAQESVGLI--SVAHQA</querySeq>
+      <pattern>TIAGCGVNALSGL + +  VG I  + +HQA                                    TIAGCGVNALSGL      VGLI  + +HQA</pattern>
+      <matchSeq start="31" end="128">TIAGCGVNALSGLPIGRGLVGQIRRAASHQASAHNCRMRRDRLIRPTDRVQVCRPDKTRQRRIRHRSTIAGCGVNALSGLPFGCWLVGLIRRAASHQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A7ZVD9_ECO24" ac="A7ZVD9" length="77" description="Uncharacterized protein OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_4831 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>8.5e-05</expectation>
+      <identity>51.2</identity>
+      <positives>57.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MNALSGLRMAQESVGLISVAHQAF--VTIAGCGVNALSGLQVAQEFVGLI---SVAHQAFITIAGCGVNALSGLRMAQES</querySeq>
+      <pattern>MNALS L  + E VGLI  A  A     I GCG+NALS L  + E VGLI   SVA    + I GCGV+ALS L  A  S</pattern>
+      <matchSeq start="1" end="77">MNALSDLH-STELVGLIRRASVASGNAVIVGCGMNALSDLH-STELVGLIRRGSVASGNAV-IVGCGVSALSDLHTALNS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.00067</expectation>
+      <identity>51.9</identity>
+      <positives>58.4</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="32" end="103">VNALSGLQVAQEFVGLISVAHQAF--ITIAGCGVNALSGLRMAQESVGLI---SVAHQAFVTIAGCGVNALSGLRMA</querySeq>
+      <pattern>+NALS L  + E VGLI  A  A     I GCG+NALS L  + E VGLI   SVA    V I GCGV+ALS L  A</pattern>
+      <matchSeq start="1" end="74">MNALSDLH-STELVGLIRRASVASGNAVIVGCGMNALSDLH-STELVGLIRRGSVASGNAV-IVGCGVSALSDLHTA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A843Z1Q9_9BURK" ac="A0A843Z1Q9" length="627" description="Hemagluttinin family protein (Fragment) OS=Glaciimonas soli OX=2590999 GN=GEV47_19185 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>0.00019</expectation>
+      <identity>32.7</identity>
+      <positives>54.5</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="98">MNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+N+LS GL     +V  +S +    ++ A  GVN+LS GL      V  +S +    ++ A  G+N+LS GL     SV L+S +  + +++A  G+N+LS</pattern>
+      <matchSeq start="211" end="311">INSLSTGLSTTNSNVTSLSTSTSTGISTAQSGVNSLSTGLSTTNSNVSALSTSTSTGLSTAASGINSLSTGLSTTNSSVSLLSTSTSSGLSVANSGINSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0AAV7U609_PLEWA" ac="A0AAV7U609" length="233" description="Uncharacterized protein OS=Pleurodeles waltl OX=8319 GN=NDU88_001058 PE=4 SV=1">
+    <alignments total="4">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>0.00026</expectation>
+      <identity>35.9</identity>
+      <positives>61.2</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="99">GLISVAHQAFVTIAGCGVNALSG---LQVAQEFV------GLISVAHQAFITIAGCGVNALSG---LRMAQESV------GLISVAHQAFVTIAGCGVNALSG</querySeq>
+      <pattern>G++SVA +A +++AG GV +++G   L VA E V      G++SVA    +++AG  V +++G   L MA + V      G++SVA  A +++AG GV +++G</pattern>
+      <matchSeq start="84" end="186">GVLSVAGEAVLSVAGDGVLSVAGEAVLSVAGEAVLSVAGDGVLSVAGDGVLSVAGDAVLSVAGEAVLSMAGDGVLSVAGDGVLSVAGDAVLSVAGDGVLSVAG</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0064</expectation>
+      <identity>37.4</identity>
+      <positives>66.7</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="99">LRMAQESVGLISVAHQAFVTIAGCGVNALSG---LQVAQEFVGLISVAHQAFITIAGCGVNALSG---LRMAQESVGLISVAHQAFVTIAGCGVNALSG</querySeq>
+      <pattern>L +A E+V  +SVA +A +++AG GV +++G   L VA + V  +SVA +A +++AG GV +++G   L +A ++V  +SVA    +++AG GV +++G</pattern>
+      <matchSeq start="102" end="194">LSVAGEAV--LSVAGEAVLSVAGDGVLSVAGDGVLSVAGDAV--LSVAGEAVLSMAGDGVLSVAGDGVLSVAGDAV--LSVAGDGVLSVAGDGVLSVAG</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.0088</expectation>
+      <identity>37.3</identity>
+      <positives>63.9</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="94">GLISVAHQAFVTIAGCGVNALSG---LQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>G++SVA  A +++AG  V +++G   L VA +  G++SVA  A +++AG GV +++G        G++SVA  A +++AG GV</pattern>
+      <matchSeq start="132" end="205">GVLSVAGDAVLSVAGEAVLSMAGDGVLSVAGD--GVLSVAGDAVLSVAGDGVLSVAG-------DGVLSVAGDAVLSVAGDGV</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.02</expectation>
+      <identity>31.7</identity>
+      <positives>57.7</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="99">SGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSG---LRMAQESV------GLISVAHQAFVTIAGCGVNALSG</querySeq>
+      <pattern>+GL+       ++SVA +A +++AG GV               +SVA +A +++AG GV +++G   L +A E+V      G++SVA +A +++AG GV +++G</pattern>
+      <matchSeq start="18" end="106">AGLKGPVAGDAVLSVAGEAVLSVAGDGV---------------LSVAGEAVLSVAGDGVLSVAGEAVLSVAGEAVLSVAGDGVLSVAGEAVLSVAGDGVLSVAG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A8S9Y0F3_APOLU" ac="A0A8S9Y0F3" length="1846" description="Uncharacterized protein OS=Apolygus lucorum OX=248454 GN=GE061_009406 PE=4 SV=1">
+    <alignments total="10">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.0034</expectation>
+      <identity>24.3</identity>
+      <positives>41.7</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="102">MNALSGLRM-AQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRM</querySeq>
+      <pattern>+N LS  ++ AQ S   +   H    +  GC +N L   ++  +    +   H    +  GC +N L   R+  +S  L+   H    +  GC +N L   R+</pattern>
+      <matchSeq start="650" end="752">LNPLSQSKLCAQSSYSPVKAVHSILFSSQGCALNPLLQSRLCTQSTSPVKAVHSIHFSGQGCSLNPLLQSRLFTQSTSLVKAVHSIHFSCQGCALNPLLQSRL</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0086</expectation>
+      <identity>22.7</identity>
+      <positives>40.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>+N L   R+  +S   +   H    +  GC +N L   ++  +   L+   H    +  GC +N L   R+  +S   +   H    +  GC +N L</pattern>
+      <matchSeq start="682" end="778">LNPLLQSRLCTQSTSPVKAVHSIHFSGQGCSLNPLLQSRLFTQSTSLVKAVHSIHFSCQGCALNPLLQSRLFTQSSSPVKAVHSILFSSQGCALNPL</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.1</expectation>
+      <identity>21.1</identity>
+      <positives>40.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="95">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVN</querySeq>
+      <pattern>+N L   R+  +S  L+   H    +  GC +N L   ++  +    +   H    +  GC +N L   ++  +S   +   H    +  GC +N</pattern>
+      <matchSeq start="713" end="807">LNPLLQSRLFTQSTSLVKAVHSIHFSCQGCALNPLLQSRLFTQSSSPVKAVHSILFSSQGCALNPLLQSKLFTQSPSPVKAVHSIHFSSQGCSLN</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.1</expectation>
+      <identity>20.4</identity>
+      <positives>38.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="105">RMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMARE</querySeq>
+      <pattern>R+  +S   +   H    +  GC +N L   ++  +    +   H    +  GC +N L   R+  +S   +   H    +  GC +N L   R+  +</pattern>
+      <matchSeq start="1144" end="1241">RLCTQSSSPVKAVHSILFSSQGCALNPLLLSRLCTQSTSPVKAVHSILFSSQGCSLNPLLLSRLCTQSTSPVKAVHSIHFSSQGCSLNPLLQSRLCTQ</matchSeq>
+     </alignment>
+     <alignment number="5">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.19</expectation>
+      <identity>21.0</identity>
+      <positives>40.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMARE</querySeq>
+      <pattern>+N L   R+  +S   +   H    +  GC +N L   ++  +    +   H    +  GC +N L   R+  +S  L+   H    +  G  +N LS  ++  +</pattern>
+      <matchSeq start="557" end="661">LNPLLQSRLFTQSSSPVKAVHSIHFSCQGCALNPLLQSRLFTQSSSPVKAVHSIPFSCQGCALNPLLQSRLFTQSTSLVKAVHSILFSWQGSALNPLSQSKLCAQ</matchSeq>
+     </alignment>
+     <alignment number="6">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.49</expectation>
+      <identity>21.8</identity>
+      <positives>38.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="102">NALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRM</querySeq>
+      <pattern>N L   R+  +S   +   H    +  GC +N L   ++  +    +   H    +  GC +N L   R+  +S   +   H    +  GC +N L   R+</pattern>
+      <matchSeq start="348" end="448">NPLLLSRLCTQSTSPVKAVHSIHFSSQGCSLNPLLQSRLFTQSSSPVKAVHSIHFSCQGCALNPLLQSRLFTQSSSPVKAVHSIPFSCQGCALNPLLQSRL</matchSeq>
+     </alignment>
+     <alignment number="7">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.49</expectation>
+      <identity>20.6</identity>
+      <positives>38.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>+N L   R+  +S   +   H    +  GC +N L   ++  +    +   H    +  GC +N L   R+  +S   +   H    +   C +N L</pattern>
+      <matchSeq start="1168" end="1264">LNPLLLSRLCTQSTSPVKAVHSILFSSQGCSLNPLLLSRLCTQSTSPVKAVHSIHFSSQGCSLNPLLQSRLCTQSSSPVKAVHSIHFSSQSCSLNHL</matchSeq>
+     </alignment>
+     <alignment number="8">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.67</expectation>
+      <identity>21.1</identity>
+      <positives>37.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="102">RMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRM</querySeq>
+      <pattern>R+  +S   +   H    +  GC  N L   ++  +    +   H    +  GC +N L   R+  +S   +   H    +  GC +N L   R+</pattern>
+      <matchSeq start="323" end="417">RLCTQSSSPVKAVHSILFSSQGCAPNPLLLSRLCTQSTSPVKAVHSIHFSSQGCSLNPLLQSRLFTQSSSPVKAVHSIHFSCQGCALNPLLQSRL</matchSeq>
+     </alignment>
+     <alignment number="9">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>2.3</expectation>
+      <identity>21.7</identity>
+      <positives>38.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="102">QESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRM</querySeq>
+      <pattern>Q S   +   H    +  GC +N L   ++  +    +   H    +  GC +N L   R+  +S   +   H    +  GC +N L   R+</pattern>
+      <matchSeq start="536" end="627">QSSSSPVKAVHSIHFSCQGCALNPLLQSRLFTQSSSPVKAVHSIHFSCQGCALNPLLQSRLFTQSSSPVKAVHSIPFSCQGCALNPLLQSRL</matchSeq>
+     </alignment>
+     <alignment number="10">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>2.3</expectation>
+      <identity>21.1</identity>
+      <positives>37.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="97">RMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>R   +S   +   H    +  GC +N L   ++  +    +   H    +  GC +N L   R+  +S   +   H    +  GC +N L</pattern>
+      <matchSeq start="1019" end="1108">RPCTQSTSPVKAVHSIHFSSQGCSLNPLLLSRLCTQSTSPVKGVHSILFSSQGCSLNPLLQSRLFTQSPSPVKAVHSIHFSSQGCSLNPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0ABN4MB08_9BURK" ac="A0ABN4MB08" length="584" description="YadA-like C-terminal region family protein OS=Collimonas pratensis OX=279113 GN=CPter291_3064 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.0043</expectation>
+      <identity>30.7</identity>
+      <positives>53.5</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="98">MNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+N+LS GL     +V  +S++    ++ A  GVN+LS GL      V  +S +    ++ A  G+N+LS GL     +V  +S +  + ++ A  G+N+LS</pattern>
+      <matchSeq start="182" end="282">INSLSTGLSATNSNVTSLSISTSTGISTAQSGVNSLSTGLSTTNSNVSALSTSTSTGLSTAASGINSLSTGLSTTNSNVSSLSTSTSSGLSAANSGINSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A2K3DKC9_CHLRE" ac="A0A2K3DKC9" length="522" description="Uncharacterized protein OS=Chlamydomonas reinhardtii OX=3055 GN=CHLRE_07g338850v5 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.0058</expectation>
+      <identity>32.2</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="104">GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>G  SV H+  +   GCG  A +G +V +   G   VA +  +   GCG  A +G R+ +   G   VA +  +   GCG  A +G R+ R</pattern>
+      <matchSeq start="225" end="314">GFESVVHRIPLAAPGCGSAAAAGPRVPRPPPGFEDVAARMPLVTPGCGSAAAAGPRVPRPPPGFEDVAARMPLVTPGCGSAAAAGPRVPR</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.008</expectation>
+      <identity>30.4</identity>
+      <positives>47.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="104">ALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>A +G R+ +   G   VA +  +   GCG  A +G +V +   G   VA +  +   GCG  A +G R+ +   G   VA +  +   GCG  A +G R+ R</pattern>
+      <matchSeq start="244" end="345">AAAGPRVPRPPPGFEDVAARMPLVTPGCGSAAAAGPRVPRPPPGFEDVAARMPLVTPGCGSAAAAGPRVPRPPPGFEDVAARMPLVTPGCGSAAAAGPRVPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A2K3DKF0_CHLRE" ac="A0A2K3DKF0" length="523" description="Uncharacterized protein OS=Chlamydomonas reinhardtii OX=3055 GN=CHLRE_07g338850v5 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.0058</expectation>
+      <identity>32.2</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="104">GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>G  SV H+  +   GCG  A +G +V +   G   VA +  +   GCG  A +G R+ +   G   VA +  +   GCG  A +G R+ R</pattern>
+      <matchSeq start="226" end="315">GFESVVHRIPLAAPGCGSAAAAGPRVPRPPPGFEDVAARMPLVTPGCGSAAAAGPRVPRPPPGFEDVAARMPLVTPGCGSAAAAGPRVPR</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.008</expectation>
+      <identity>30.4</identity>
+      <positives>47.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="104">ALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>A +G R+ +   G   VA +  +   GCG  A +G +V +   G   VA +  +   GCG  A +G R+ +   G   VA +  +   GCG  A +G R+ R</pattern>
+      <matchSeq start="245" end="346">AAAGPRVPRPPPGFEDVAARMPLVTPGCGSAAAAGPRVPRPPPGFEDVAARMPLVTPGCGSAAAAGPRVPRPPPGFEDVAARMPLVTPGCGSAAAAGPRVPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A4R5LYA3_9BURK" ac="A0A4R5LYA3" length="653" description="Hemagluttinin family protein (Fragment) OS=Paraburkholderia silviterrae OX=2528715 GN=EYW47_38445 PE=3 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.006</expectation>
+      <identity>34.7</identity>
+      <positives>53.5</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="98">MNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+N+LS GL     +V  +S +    ++ A  GVN+LS GL   +  VG +S +    I+ A  GVN+LS GL     +V  +S +    ++ A  GVN+LS</pattern>
+      <matchSeq start="114" end="214">VNSLSTGLSTTNSNVSSLSSSASTGISTAMSGVNSLSTGLSTTKSDVGALSSSASTGISTAMSGVNSLSTGLSTTNSNVSSLSSSASTGISTATSGVNSLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0082</expectation>
+      <identity>34.7</identity>
+      <positives>52.5</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="98">MNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+N+LS GL     +VG +S +    ++ A  GVN+LS GL      V  +S +    I+ A  GV +LS GL     +VG +S +    ++ A  GVN+LS</pattern>
+      <matchSeq start="18" end="118">VNSLSTGLSTTNSNVGALSSSASTGISTAMSGVNSLSTGLSTTNSNVSSLSSSASTGISTAMSGVGSLSTGLSTTNSNVGALSSSASTGISTAMSGVNSLS</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.02</expectation>
+      <identity>34.6</identity>
+      <positives>52.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="103">MNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLRMA</querySeq>
+      <pattern>+N+LS GL   +  VG +S +    ++ A  GVN+LS GL      V  +S +    I+ A  GVN+LS GL     +V  +S +    ++ A  GV +LS GL+ A</pattern>
+      <matchSeq start="146" end="252">VNSLSTGLSTTKSDVGALSSSASTGISTAMSGVNSLSTGLSTTNSNVSSLSSSASTGISTATSGVNSLSTGLSTTNSNVSSLSSSASTGISTAQSGVTSLSTGLKTA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="D3K2Y6_ECOLX" ac="D3K2Y6" length="256" description="Enterobactin synthase component D OS=Escherichia coli OX=562 GN=entD PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0068</expectation>
+      <identity>58.5</identity>
+      <positives>70.7</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="59">VTIAGCGVNALSGLQ------VAQEFVGLISVAHQAFITIA</querySeq>
+      <pattern>V  AGCGVNALSGLQ      + Q+ VGLISVAHQA + ++</pattern>
+      <matchSeq start="3" end="43">VVHAGCGVNALSGLQKSCQFNILQDHVGLISVAHQAVLRLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.08</expectation>
+      <identity>57.9</identity>
+      <positives>73.7</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="59" end="90">AGCGVNALSGLR------MAQESVGLISVAHQAFVTIA</querySeq>
+      <pattern>AGCGVNALSGL+      + Q+ VGLISVAHQA + ++</pattern>
+      <matchSeq start="6" end="43">AGCGVNALSGLQKSCQFNILQDHVGLISVAHQAVLRLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A0H2YWQ2_ECOK1" ac="A0A0H2YWQ2" length="256" description="Enterobactin synthase component D OS=Escherichia coli O1:K1 / APEC OX=405955 GN=entD PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0068</expectation>
+      <identity>58.5</identity>
+      <positives>70.7</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="59">VTIAGCGVNALSGLQ------VAQEFVGLISVAHQAFITIA</querySeq>
+      <pattern>V  AGCGVNALSGLQ      + Q+ VGLISVAHQA + ++</pattern>
+      <matchSeq start="3" end="43">VVHAGCGVNALSGLQKSCQFNILQDHVGLISVAHQAVLRLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.08</expectation>
+      <identity>57.9</identity>
+      <positives>73.7</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="59" end="90">AGCGVNALSGLR------MAQESVGLISVAHQAFVTIA</querySeq>
+      <pattern>AGCGVNALSGL+      + Q+ VGLISVAHQA + ++</pattern>
+      <matchSeq start="6" end="43">AGCGVNALSGLQKSCQFNILQDHVGLISVAHQAVLRLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A0H2V5Q4_ECOL6" ac="A0A0H2V5Q4" length="256" description="Enterobactin synthase component D OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=entD PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0068</expectation>
+      <identity>58.5</identity>
+      <positives>70.7</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="59">VTIAGCGVNALSGLQ------VAQEFVGLISVAHQAFITIA</querySeq>
+      <pattern>V  AGCGVNALSGLQ      + Q+ VGLISVAHQA + ++</pattern>
+      <matchSeq start="3" end="43">VVHAGCGVNALSGLQKSCQFNILQDHVGLISVAHQAVLRLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.08</expectation>
+      <identity>57.9</identity>
+      <positives>73.7</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="59" end="90">AGCGVNALSGLR------MAQESVGLISVAHQAFVTIA</querySeq>
+      <pattern>AGCGVNALSGL+      + Q+ VGLISVAHQA + ++</pattern>
+      <matchSeq start="6" end="43">AGCGVNALSGLQKSCQFNILQDHVGLISVAHQAVLRLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0A0H2V4G8_ECOL6" ac="A0A0H2V4G8" length="45" description="4-phosphopantetheinyl transferase EntD OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=c0014 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.0074</expectation>
+      <identity>57.9</identity>
+      <positives>71.1</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="59">AGCGVNALSGLQ------VAQEFVGLISVAHQAFITIA</querySeq>
+      <pattern>AGCGVNALSGLQ        ++ VGLISVAHQA + ++</pattern>
+      <matchSeq start="6" end="43">AGCGVNALSGLQNRANSIYCKKIVGLISVAHQAVLRLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.06</expectation>
+      <identity>57.9</identity>
+      <positives>68.4</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="59" end="90">AGCGVNALSGLRMAQES------VGLISVAHQAFVTIA</querySeq>
+      <pattern>AGCGVNALSGL+    S      VGLISVAHQA + ++</pattern>
+      <matchSeq start="6" end="43">AGCGVNALSGLQNRANSIYCKKIVGLISVAHQAVLRLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0A4R5M519_9BURK" ac="A0A4R5M519" length="596" description="Hemagglutinin (Fragment) OS=Paraburkholderia silviterrae OX=2528715 GN=EYW47_25235 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0081</expectation>
+      <identity>34.4</identity>
+      <positives>52.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL     +VG +S +    ++ A  GVN+LS GL      VG +S +    I+ A  GVN+LS GL     +VG +S +    ++ A  GV +LS</pattern>
+      <matchSeq start="488" end="583">TGLSTTNSNVGSLSSSASTGISTATSGVNSLSTGLSTTNSNVGALSNSASTGISTAISGVNSLSTGLSATNSNVGSLSSSASTGISTAISGVGSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="B7LLL8_ESCF3" ac="B7LLL8" length="269" description="Enterobactin synthase component D OS=Escherichia fergusonii (strain ATCC 35469 / DSM 13698 / CCUG 18766 / IAM 14443 / JCM 21226 / LMG 7866 / NBRC 102419 / NCTC 12128 / CDC 0568-73) OX=585054 GN=EFER_2513 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.0096</expectation>
+      <identity>58.5</identity>
+      <positives>70.7</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="59">VTIAGCGVNALSGLQ------VAQEFVGLISVAHQAFITIA</querySeq>
+      <pattern>V  AGCGVNALSGLQ      + Q+ VGLISVAHQA + ++</pattern>
+      <matchSeq start="3" end="43">VVHAGCGVNALSGLQKSCQFNILQDSVGLISVAHQAVLRLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.02</expectation>
+      <identity>60.5</identity>
+      <positives>76.3</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="59" end="90">AGCGVNALSGLRMA------QESVGLISVAHQAFVTIA</querySeq>
+      <pattern>AGCGVNALSGL+ +      Q+SVGLISVAHQA + ++</pattern>
+      <matchSeq start="6" end="43">AGCGVNALSGLQKSCQFNILQDSVGLISVAHQAVLRLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0ACF4G1K5_9PEZI" ac="A0ACF4G1K5" length="338" description="Uncharacterized protein OS=Elasticomyces elasticus OX=574655 GN=LTR56_005919 PE=4 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.01</expectation>
+      <identity>31.4</identity>
+      <positives>48.6</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMARE</querySeq>
+      <pattern>+NAL  +   QES GL++    A   +A   +NAL  +   QE  GL++    A   +A   +NAL  +   QES GL++    A   +A   +NAL  +   +E</pattern>
+      <matchSeq start="140" end="235">VNALDSVLRRQESAGLVNA---AVPVVAANNLNALDSVLKRQESAGLVNA---AVPVVAANNLNALDSVLKRQESAGLVNA---AVPVVAANNLNALDSVLKRQE</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.01</expectation>
+      <identity>31.4</identity>
+      <positives>49.5</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMARE</querySeq>
+      <pattern>+NAL  +   QES GL++ A      +A   +NAL  +   QE  GL++ A      +A   +NAL  +   QES GL+++   A   +A   V+AL  +   +E</pattern>
+      <matchSeq start="168" end="263">LNALDSVLKRQESAGLVNAA---VPVVAANNLNALDSVLKRQESAGLVNAAVPV---VAANNLNALDSVLKRQESAGLVNL---AVPVVAANNVDALDSVLKRQE</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>3.8</expectation>
+      <identity>29.1</identity>
+      <positives>44.7</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="105">ALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMARE</querySeq>
+      <pattern>A +GL +         + + A   IA   VNAL  +   QE  GL++ A      +A   +NAL  +   QES GL++    A   +A   +NAL  +   +E</pattern>
+      <matchSeq start="111" end="207">AANGLNVLDSVAKREELVNAAVPVIAANEVNALDSVLRRQESAGLVNAAVPV---VAANNLNALDSVLKRQESAGLVNA---AVPVVAANNLNALDSVLKRQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A843YYQ3_9BURK" ac="A0A843YYQ3" length="566" description="Hemagluttinin family protein (Fragment) OS=Glaciimonas soli OX=2590999 GN=GEV47_19230 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.01</expectation>
+      <identity>29.2</identity>
+      <positives>53.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL     ++  +S +    ++ A  GVN+LS GL      V ++S +    ++ A  G+N+LS GL     SV  +S +  + +++A  G+N+LS</pattern>
+      <matchSeq start="153" end="248">TGLSTTNSNLTTLSTSTSTGISTAQSGVNSLSTGLSTTNSNVAMLSTSTSTGLSTAASGINSLSTGLSTTNSSVSSLSTSTSSGLSVAYNGINSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A843YQ95_9BURK" ac="A0A843YQ95" length="1151" description="Hemagluttinin family protein (Fragment) OS=Glaciimonas soli OX=2590999 GN=GEV47_11135 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.01</expectation>
+      <identity>31.7</identity>
+      <positives>52.5</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="98">MNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+N+LS GL     +V  +S +    ++ A  GVN+LS GL      V  +S +    ++ A  G+N+LS GL     SV  +S +  + ++ A  G+N+LS</pattern>
+      <matchSeq start="746" end="846">INSLSTGLSTTNSNVTSLSTSTSTGISTAQSGVNSLSTGLSTTNSNVSALSTSTSTGLSTAASGINSLSTGLSTTNSSVSSLSTSTSSGLSTAVSGINSLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.9</expectation>
+      <identity>33.3</identity>
+      <positives>50.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="98">TIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>T    G+N+LS GL      V  +S +    I+ A  GVN+LS GL     +V  +S +    ++ A  G+N+LS</pattern>
+      <matchSeq start="740" end="814">TSMATGINSLSTGLSTTNSNVTSLSTSTSTGISTAQSGVNSLSTGLSTTNSNVSALSTSTSTGLSTAASGINSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0AAD9K651_9ANNE" ac="A0AAD9K651" length="270" description="Uncharacterized protein OS=Paralvinella palmiformis OX=53620 GN=LSH36_51g06009 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.03</expectation>
+      <identity>25.8</identity>
+      <positives>56.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="103">GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMA</querySeq>
+      <pattern>G++ V+ +  V ++G GV  +SG        G++ V+ +  + ++G G+  +SG  +     G++ V+ +  V ++G GV  +SG+R++</pattern>
+      <matchSeq start="189" end="270">GVVVVSGRGVVVVSGRGVVVVSGR-------GVVVVSGRGVVVVSGRGMVVMSGRGVVVSGRGVVVVSGRGVVVVSGRGVVVVSGIRLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A0H2VAC3_ECOL6" ac="A0A0H2VAC3" length="152" description="Uncharacterized protein OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=c3518 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.04</expectation>
+      <identity>35.1</identity>
+      <positives>51.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="79">MAQESVGLISVAHQAFVTIAGCGVNALSGLQ------VAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLI</querySeq>
+      <pattern>M + +   + +  +  V  AGCGVNALS LQ        +++VGLISVAHQA +++      A + L    E  G +</pattern>
+      <matchSeq start="1" end="77">MRRAANAALQIVGKVRVVYAGCGVNALSVLQDFANSTYCRKYVGLISVAHQAVLSLLSVSRAAKAALFYLVEINGTV</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.5</expectation>
+      <identity>41.7</identity>
+      <positives>62.5</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="48" end="89">ISVAHQAFITIAGCGVNALSGLR------MAQESVGLISVAHQAFVTI</querySeq>
+      <pattern>+ +  +  +  AGCGVNALS L+        ++ VGLISVAHQA +++</pattern>
+      <matchSeq start="9" end="56">LQIVGKVRVVYAGCGVNALSVLQDFANSTYCRKYVGLISVAHQAVLSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A8T2N5N5_9TELE" ac="A0A8T2N5N5" length="12890" description="Uncharacterized protein (Fragment) OS=Albula glossodonta OX=121402 GN=JZ751_009977 PE=4 SV=1">
+    <alignments total="6">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.04</expectation>
+      <identity>27.9</identity>
+      <positives>46.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="104">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>+NA   +   + S G ++ A +   T + CGVNA   +   +   G ++ A +   T + CGVNA   +   + S G ++ A +   T   CGVNA   +   R</pattern>
+      <matchSeq start="872" end="972">VNAAGKVTTTRSSCG-VNAAGKVTTTRSSCGVNAAGKVTTTRSSCG-VNAAGKVTTTRSSCGVNAAGKVTTTRSSCG-VNAAGKVTTTSGSCGVNAAGKVTTTR</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.06</expectation>
+      <identity>29.2</identity>
+      <positives>49.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="96">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNA</querySeq>
+      <pattern>+NA   +   + S G ++ A +   T + CGVNA   +   +   G ++ A +   T + CGVNA   +   + S G ++ A +   T + CGVNA</pattern>
+      <matchSeq start="1037" end="1129">VNAAGKVTTTRSSCG-VNAAGKVTTTRSSCGVNAAGKVTTTRSSCG-VNAAGKVTTTSSSCGVNAAGKVTTTRSSCG-VNAAGKITTTRSSCGVNA</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.08</expectation>
+      <identity>28.2</identity>
+      <positives>45.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="104">NALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>NA   +     S G ++ A +   T + CGVNA   +   +   G ++ A +   T + CGVNA   +   + S G ++ A +   T + CGVNA   +   R</pattern>
+      <matchSeq start="843" end="942">NAAGKVTTTHSSFG-VNAAGKVTTTRSSCGVNAAGKVTTTRSSCG-VNAAGKVTTTRSSCGVNAAGKVTTTRSSCG-VNAAGKVTTTRSSCGVNAAGKVTTTR</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.11</expectation>
+      <identity>27.9</identity>
+      <positives>45.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="104">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>+NA   +   + S G ++ A +   T + CGVNA   +   +   G ++ A +   T   CGVNA   +   + S G ++ A +   T   CGVNA   +   R</pattern>
+      <matchSeq start="902" end="1002">VNAAGKVTTTRSSCG-VNAAGKVTTTRSSCGVNAAGKVTTTRSSCG-VNAAGKVTTTSGSCGVNAAGKVTTTRGSCG-VNAAGKVTTTRGSCGVNAAGKVTTTR</matchSeq>
+     </alignment>
+     <alignment number="5">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.37</expectation>
+      <identity>27.9</identity>
+      <positives>44.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="104">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>+NA   +   + S G ++ A +   T   CGVNA   +       G +  A +   T + CGVNA   +   + S G ++ A +   T + CGVNA   +   R</pattern>
+      <matchSeq start="977" end="1077">VNAAGKVTTTRGSCG-VNAAGKVTTTRGSCGVNAAGKVTTTHGSFG-VKAAGKVTTTRSSCGVNAAGKVTTTRSSCG-VNAAGKVTTTRSSCGVNAAGKVTTTR</matchSeq>
+     </alignment>
+     <alignment number="6">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.93</expectation>
+      <identity>27.5</identity>
+      <positives>43.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="104">ALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>A +G  M   S   ++ A +   T   CG NA   +       G ++ A +   T + CGVNA   +   + S G ++ A +   T + CGVNA   +   R</pattern>
+      <matchSeq start="813" end="912">AHAGKVMTTRSSCGVNAAGKVTTTRGSCGFNAAGKVTTTHSSFG-VNAAGKVTTTRSSCGVNAAGKVTTTRSSCG-VNAAGKVTTTRSSCGVNAAGKVTTTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A6J5DDW9_9BURK" ac="A0A6J5DDW9" length="1873" description="Uncharacterized protein OS=Paraburkholderia solisilvae OX=624376 GN=LMG29739_01281 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.06</expectation>
+      <identity>31.2</identity>
+      <positives>51.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL     +V  +S +    ++ A  GVN+L SGL      V ++S +  + I+ A  GV +LS GL     +V  +S +    ++ A  GVN+LS</pattern>
+      <matchSeq start="574" end="669">TGLSTVGSNVATLSTSTSTGISTAQSGVNSLSSGLSTTSSNVAVLSTSASSGISTAQSGVGSLSTGLSTTSSNVTALSTSASTGISTAQSGVNSLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.19</expectation>
+      <identity>29.2</identity>
+      <positives>51.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL     +V ++S +    ++ A  GV +LS GL      V ++S +    I+ A  GV +LS GL     +V ++S +    ++ A  GV++LS</pattern>
+      <matchSeq start="716" end="811">TGLSTTDSNVAVLSTSASTGISTAQSGVTSLSTGLSTTDSNVAVLSTSASTGISTAQSGVTSLSTGLSTTDSNVAVLSTSASTGISTAQSGVSSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0AAE0KPY8_9CHLO" ac="A0AAE0KPY8" length="657" description="Right handed beta helix domain-containing protein OS=Cymbomonas tetramitiformis OX=36881 GN=CYMTET_34666 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.07</expectation>
+      <identity>33.8</identity>
+      <positives>63.2</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="92">VTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGC</querySeq>
+      <pattern>V+I+GC    ++G  V Q + G++S++H   ++I+GC    ++G   A  S G++S++H   V+I+GC</pattern>
+      <matchSeq start="381" end="441">VSISGC---TMAGNTV-QGYGGVVSISHSGEVSISGC---TMTGNTAAGGSGGVVSISHSGEVSISGC</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.46</expectation>
+      <identity>27.8</identity>
+      <positives>51.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="92">ALSGLRMAQESV----GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGC---GVNALSGLRMAQESVGLISVAHQAFVTIAGC</querySeq>
+      <pattern>++SG  MA  +V    G++S++H   V+I+GC    ++G   A    G++S++H   ++I+GC   G  A           G+  + +   V+I+GC</pattern>
+      <matchSeq start="382" end="475">SISGCTMAGNTVQGYGGVVSISHSGEVSISGC---TMTGNTAAGGSGGVVSISHSGEVSISGCTMTGNTAEGEGGDVTHGGGVAYIINNYRVSISGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A7ZIM3_ECO24" ac="A7ZIM3" length="49" description="4-phosphopantetheinyl transferase EntD OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_0501 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.09</expectation>
+      <identity>59.5</identity>
+      <positives>67.6</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="59" end="89">AGCGVNALSGLRMAQES------VGLISVAHQAFVTI</querySeq>
+      <pattern>AGCGV ALSGLR  + S      VGLISVAHQA + +</pattern>
+      <matchSeq start="6" end="42">AGCGVTALSGLRNRKNSMYCRSGVGLISVAHQAVLRL</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.98</expectation>
+      <identity>52.5</identity>
+      <positives>62.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="58">VTIAGCGVNALSGLQ------VAQEFVGLISVAHQAFITI</querySeq>
+      <pattern>V  AGCGV ALSGL+        +  VGLISVAHQA + +</pattern>
+      <matchSeq start="3" end="42">VVHAGCGVTALSGLRNRKNSMYCRSGVGLISVAHQAVLRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A401TLT7_CHIPU" ac="A0A401TLT7" length="393" description="Uncharacterized protein (Fragment) OS=Chiloscyllium punctatum OX=137246 GN=chiPu_0027336 PE=4 SV=1">
+    <alignments total="5">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.09</expectation>
+      <identity>32.1</identity>
+      <positives>52.7</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="100">MNALSGLRM-AQESVGLISVAHQAFVTIAGCGVNALS----------GLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRM-AQESVGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>+ +L+G+ + A   VGL S+A     T+AG G+  L+          GL V  + VGL S+A      +AG G+ AL+G+ +    SVGL ++A     ++A  G+  L+G+</pattern>
+      <matchSeq start="126" end="236">LGSLAGVGLCALAGVGLGSLASVGVGTLAGVGLGVLASVGLGVLASVGLSVLSD-VGLGSLAGVGLCALAGVGLCALAGVGLGVLVSVGLSALASGGLGSLASVGLGVLAGV</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>3.9</expectation>
+      <identity>31.5</identity>
+      <positives>46.7</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="100">AQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMA-QESVGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>A  SVGL  + H     +AG G+  L+G       VGL  +       +AG G+  L+G+ +    SVGL + A      + G G+  LSG+</pattern>
+      <matchSeq start="288" end="372">ALASVGLGVLVHVGLGVLAGVGLGVLAG-------VGLGVLVRVGLGVLAGFGLGTLAGVGLGLLASVGLGAQAGVGLGVLVGVGLGVLSGV</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.3</expectation>
+      <identity>30.7</identity>
+      <positives>51.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="100">MNALSGLRMAQES-VGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>+  L+G+ ++  S VGL S+A      +AG G+ +L+ +      VG ++      +   G GV A  GL +  + VGL S+A      +AG G+ AL+G+</pattern>
+      <matchSeq start="110" end="204">LGVLAGVGLSVLSDVGLGSLAGVGLCALAGVGLGSLASVG-----VGTLAGVGLGVLASVGLGVLASVGLSVLSD-VGLGSLAGVGLCALAGVGLCALAGV</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.3</expectation>
+      <identity>31.5</identity>
+      <positives>53.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="100">VGLISVAHQAFVTIAGCGVNALSGLQV-AQEFVGLISVAHQAFITIAGCGVNALSGLRM-AQESVGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>VGL S+A      +AG G+ AL+G+ +     VGL ++A     ++A  G+  L+G+ +      GL ++A      +AG GV+ L+G+</pattern>
+      <matchSeq start="180" end="268">VGLGSLAGVGLCALAGVGLCALAGVGLGVLVSVGLSALASGGLGSLASVGLGVLAGVGLGVLAGFGLGTLAGVEVGVLAGVGVSVLAGV</matchSeq>
+     </alignment>
+     <alignment number="5">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.2</expectation>
+      <identity>31.1</identity>
+      <positives>52.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="100">SVGLISVAHQAFVTIAGCGVNALSGLQV-AQEFVGLISVAHQAFITIAGCGVNALSGLRM-AQESVGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>SVGL  +A      +AG G+  L+G++V     VG+  +A      +A  G+ +L+ + + A  SVGL  + H     +AG G+  L+G+</pattern>
+      <matchSeq start="227" end="316">SVGLGVLAGVGLGVLAGFGLGTLAGVEVGVLAGVGVSVLAGVGLGVLASVGLGSLAVVGLSALASVGLGVLVHVGLGVLAGVGLGVLAGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0ABX9YJZ0_9BURK" ac="A0ABX9YJZ0" length="849" description="Hemagglutinin (Fragment) OS=Burkholderia stagnalis OX=1503054 GN=DF017_23900 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.1</expectation>
+      <identity>30.3</identity>
+      <positives>45.4</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="98">MNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS-------------------GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+N+LS GL     SV  +S +    ++ A  GVN+LS                   G+  A   +G +S +    I+ A  GVN+LS GL     SV  +S +    ++ A  GVN+LS</pattern>
+      <matchSeq start="726" end="844">VNSLSTGLSATNSSVTSLSTSTSTGISTAQSGVNSLSTGLSATNSSVASLSTSTSTGISSANSAIGSLSTSASTGISTAQSGVNSLSTGLSATNSSVTSLSTSSSTGISTAQSGVNSLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.25</expectation>
+      <identity>31.7</identity>
+      <positives>49.5</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="98">MNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+N+LS GL     +V  +S +    ++ A  GVN+LS GL      V  +S +    I+ A  GVN+LS GL     SV  +S +    ++ A   + +LS</pattern>
+      <matchSeq start="694" end="794">VNSLSTGLSTTNSTVTSLSTSASTGISTAQSGVNSLSTGLSATNSSVTSLSTSTSTGISTAQSGVNSLSTGLSATNSSVASLSTSTSTGISSANSAIGSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A365QHT7_9BURK" ac="A0A365QHT7" length="1187" description="Hemagglutinin (Fragment) OS=Burkholderia reimsis OX=2234132 GN=DPV79_38575 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.1</expectation>
+      <identity>30.2</identity>
+      <positives>51.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL     +V  +S +    ++ A  GV++LS GL      V  +S +    I+ A  GVN+LS GL     S+  +S +    +++A  GV++LS</pattern>
+      <matchSeq start="737" end="832">TGLSTTNSNVSSLSTSASTGISTAQSGVDSLSTGLSTTNSNVSSLSTSASTGISTAQSGVNSLSTGLSTTNSSLSSLSTSASTGISVAQSGVDSLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.35</expectation>
+      <identity>30.2</identity>
+      <positives>50.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL     +V  +S +    ++ A  GV++LS GL      V  +S +    I+ A  GV++LS GL     +V  +S +    ++ A  GVN+LS</pattern>
+      <matchSeq start="705" end="800">TGLSTTNSNVSSLSTSASTGISTAQSGVDSLSTGLSTTNSNVSSLSTSASTGISTAQSGVDSLSTGLSTTNSNVSSLSTSASTGISTAQSGVNSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A4R3N6F7_9BACI" ac="A0A4R3N6F7" length="114" description="Uncharacterized protein OS=Melghiribacillus thermohalophilus OX=1324956 GN=EDD68_10976 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.11</expectation>
+      <identity>32.7</identity>
+      <positives>46.7</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="103">SGLRMAQESV----GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESV----GLISVAHQAFVTIAGCGVNALSGLRMA</querySeq>
+      <pattern>+GLRMAQ  V    G +  A    +T  G  +   +GL++AQ   G +  A    +T  G  +   +GLRMAQ  V    G +  A    +T  G  +   +GLRMA</pattern>
+      <matchSeq start="11" end="114">TGLRMAQTGVWTAQGRVLTAQSEELTTQGRVLMTQTGLRMAQ---GRVQTAQSEELTTQGRVLMTQTGLRMAQTGVWMAQGRVQTAQSEELTTQGRVLMTQTGLRMA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0ACF4EQT4_9PEZI" ac="A0ACF4EQT4" length="272" description="Uncharacterized protein (Fragment) OS=Elasticomyces elasticus OX=574655 GN=LTR56_021972 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.12</expectation>
+      <identity>35.0</identity>
+      <positives>51.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="80">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLIS</querySeq>
+      <pattern>+NAL  +   QES GL++ A      +A   +NAL  +   QE  GL++ A      +A   +NAL  +   QES GLI+</pattern>
+      <matchSeq start="70" end="143">LNALDSVLRRQESAGLVNAA---VPVVAANNLNALDSVLRRQESAGLVNAAVPV---VAANNLNALDSVLKRQESAGLIN</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.22</expectation>
+      <identity>31.1</identity>
+      <positives>49.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MNALSGLRMAQESVGLISVAHQAFVTIAGCG-VNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMARE</querySeq>
+      <pattern>++AL  +   QES GL++ A    V +A    +NAL  +   QE  GL++ A      +A   +NAL  +   QES GL++    A   +A   +NAL  +   +E</pattern>
+      <matchSeq start="42" end="137">VDALDSVLRRQESAGLVNAA----VPVAAANNLNALDSVLRRQESAGLVNAAVPV---VAANNLNALDSVLRRQESAGLVNA---AVPVVAANNLNALDSVLKRQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0AAE1DVW6_9GAST" ac="A0AAE1DVW6" length="712" description="Uncharacterized protein OS=Elysia crispata OX=231223 GN=RRG08_062725 PE=4 SV=1">
+    <alignments total="5">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.13</expectation>
+      <identity>32.3</identity>
+      <positives>52.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="103">VGLISVAHQAFVTIAGCGVNALS--GLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQES-VGLISVAHQAFVTIAGCGVNALSGLRMA</querySeq>
+      <pattern>VGL +VA     T+A  G+ + +  GL    + VGL +VA    IT+A  G+  +  + +   + VGLI+VA     TIA  G+  ++ + +A</pattern>
+      <matchSeq start="31" end="122">VGLTTVADVGLTTVADVGLTSAADVGLTTVAD-VGLATVADVGMITVADVGMTTVVDMCLTTVADVGLITVADVGLTTIADVGMTTVADMCLA</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.47</expectation>
+      <identity>29.9</identity>
+      <positives>44.9</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="103">GLRMAQESVGLISVAHQAFVTIAGCGVNALS--GLQVAQEF-------VGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMA</querySeq>
+      <pattern>GL  A + VGL +V     +T+A  G+   +  G+    +        VGLI+VA    ITIA  G+            VGL +VA     TIA  G+  ++ + +A</pattern>
+      <matchSeq start="576" end="681">GLATAAD-VGLTTVVDMCLITVADIGLATAADVGMTTVADMCLTTVADVGLITVADLGLITIADVGITVADPGLTTVADVGLTTVADVGLTTIADVGLTTVADVGLA</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>2.2</expectation>
+      <identity>30.6</identity>
+      <positives>48.2</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="97">VGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQ-ESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>VGLI+V      T+A  G+  ++ L       GLI+VA     T+A  G+  +  + +     VGLI+VA     T+A  G+  +</pattern>
+      <matchSeq start="215" end="292">VGLITVVDMCLTTVADVGLATVADL-------GLITVADVGLTTVADVGLTTVVDMCLTTVADVGLITVADIGLTTVADVGLTTV</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>4.1</expectation>
+      <identity>27.8</identity>
+      <positives>47.4</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="100">VGLISVAHQAFVTIAGCGVNALSGL-QVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQES---------VGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>VGLI+VA    +T+A  G+  +  +  +    VGL +VA  +  T+A  G+   + + M   +         VGLI+V      T+A  G+  ++ L</pattern>
+      <matchSeq start="143" end="239">VGLITVADLGLITVADVGMTTVVDMCLITVADVGLATVADLSLTTVADVGLATAADVGMTTVADMCLTTVADVGLITVVDMCLTTVADVGLATVADL</matchSeq>
+     </alignment>
+     <alignment number="5">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.6</expectation>
+      <identity>28.6</identity>
+      <positives>49.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="102">VGLISVAHQAFVTIAGCGVNALSGLQVAQEF-VGLISVAHQAFITIAGCGVNALSGL-RMAQESVGLISVAHQAFVTIAGCGVNALSGLRM</querySeq>
+      <pattern>VG+ +VA     T A  G+  ++ + +     VGLI+VA    IT+A  G+  +  +  +    VGL +VA  +  T+A  G+   + + M</pattern>
+      <matchSeq start="111" end="201">VGMTTVADMCLATAADVGMTTVADMCLTTVADVGLITVADLGLITVADVGMTTVVDMCLITVADVGLATVADLSLTTVADVGLATAADVGM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0A8J2W3I4_9NEOP" ac="A0A8J2W3I4" length="2403" description="(African queen) hypothetical protein OS=Danaus chrysippus OX=151541 GN=DCHRY22_LOCUS6669 PE=4 SV=1">
+    <alignments total="48">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.14</expectation>
+      <identity>27.3</identity>
+      <positives>54.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="967" end="1054">EDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVGEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.14</expectation>
+      <identity>27.3</identity>
+      <positives>54.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="1543" end="1630">EDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVGEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.19</expectation>
+      <identity>27.3</identity>
+      <positives>54.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="103" end="190">EDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVGEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.19</expectation>
+      <identity>27.3</identity>
+      <positives>54.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ ++   + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="167" end="254">EDVGIISVGEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVKIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="5">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.19</expectation>
+      <identity>27.3</identity>
+      <positives>54.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCG-VNALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G ++ +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="407" end="494">EDVGIISVGEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="6">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.19</expectation>
+      <identity>27.3</identity>
+      <positives>54.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ ++   + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="839" end="926">EDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="7">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.19</expectation>
+      <identity>27.3</identity>
+      <positives>54.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCG-VNALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ ++   + V+ E VG+ISV     +++   G ++ +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="1031" end="1118">EDVGIISVGEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="8">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.19</expectation>
+      <identity>27.3</identity>
+      <positives>54.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCG-VNALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ ++   + V+ E VG+ISV     +++   G ++ +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="1607" end="1694">EDVGIISVGEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="9">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.19</expectation>
+      <identity>27.3</identity>
+      <positives>54.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ ++   + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="2007" end="2094">EDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="10">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.26</expectation>
+      <identity>28.2</identity>
+      <positives>54.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+</pattern>
+      <matchSeq start="807" end="891">EDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVVIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="11">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.26</expectation>
+      <identity>28.2</identity>
+      <positives>54.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+</pattern>
+      <matchSeq start="1975" end="2059">EDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVVIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="12">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.36</expectation>
+      <identity>27.3</identity>
+      <positives>54.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ ++   + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="1431" end="1518">EDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="13">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.36</expectation>
+      <identity>28.2</identity>
+      <positives>54.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+</pattern>
+      <matchSeq start="2135" end="2219">EDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIVVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="14">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.36</expectation>
+      <identity>27.3</identity>
+      <positives>54.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ ++   + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="2167" end="2254">EDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="15">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.49</expectation>
+      <identity>28.2</identity>
+      <positives>54.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+</pattern>
+      <matchSeq start="39" end="123">EDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="16">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.49</expectation>
+      <identity>28.2</identity>
+      <positives>54.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+</pattern>
+      <matchSeq start="1399" end="1483">EDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIVVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="17">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.67</expectation>
+      <identity>26.1</identity>
+      <positives>53.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ SV     V++   G+ ++</pattern>
+      <matchSeq start="295" end="382">EDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="18">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.67</expectation>
+      <identity>26.1</identity>
+      <positives>53.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ SV     V++   G+ ++</pattern>
+      <matchSeq start="439" end="526">EDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="19">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.67</expectation>
+      <identity>26.1</identity>
+      <positives>53.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ SV     V++   G+ ++</pattern>
+      <matchSeq start="1063" end="1150">EDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="20">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.67</expectation>
+      <identity>26.1</identity>
+      <positives>53.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ SV     V++   G+ ++</pattern>
+      <matchSeq start="1639" end="1726">EDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="21">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>1.3</expectation>
+      <identity>27.1</identity>
+      <positives>52.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ SV     V++   G+</pattern>
+      <matchSeq start="199" end="283">EDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVKIVSVEDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="22">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>1.3</expectation>
+      <identity>27.1</identity>
+      <positives>52.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ SV     V++   G+</pattern>
+      <matchSeq start="871" end="955">EDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="23">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>1.3</expectation>
+      <identity>27.1</identity>
+      <positives>52.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ SV     V++   G+</pattern>
+      <matchSeq start="2039" end="2123">EDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="24">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.7</expectation>
+      <identity>27.1</identity>
+      <positives>52.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ ++   + V+ E VG+ SV     +++   G+ + +  + ++ E VG+ISV     V++   G+</pattern>
+      <matchSeq start="231" end="315">EDVGIISVVEVKIVSVEDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVVIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="25">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.7</expectation>
+      <identity>27.1</identity>
+      <positives>52.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ SV     V++   G+ ++   + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+</pattern>
+      <matchSeq start="375" end="459">EDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVGEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVVIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="26">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.7</expectation>
+      <identity>25.3</identity>
+      <positives>53.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">NALSGLRMAQESVGLISVAHQAFVTIAGCG-VNALSGLQVAQEFVGLISVAHQAFITIAGCG-VNALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>+A+  + ++ E VG+ISV     V++   G ++ +  + V+ E VG+ISV     +++   G ++ +  + ++ E VG+ SV     V++   G+</pattern>
+      <matchSeq start="701" end="795">SAVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGITSVVEVIVVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="27">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.7</expectation>
+      <identity>26.1</identity>
+      <positives>53.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ SV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="775" end="862">EDVGITSVVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="28">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.7</expectation>
+      <identity>27.1</identity>
+      <positives>52.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ ++   + V+ E VG+ SV     +++   G+ + +  + ++ E VG+ISV     V++   G+</pattern>
+      <matchSeq start="903" end="987">EDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVVIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="29">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.7</expectation>
+      <identity>25.3</identity>
+      <positives>53.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">NALSGLRMAQESVGLISVAHQAFVTIAGCG-VNALSGLQVAQEFVGLISVAHQAFITIAGCG-VNALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>+A+  + ++ E VG+ISV     V++   G ++ +  + V+ E VG+ISV     +++   G ++ +  + ++ E VG+ SV     V++   G+</pattern>
+      <matchSeq start="1293" end="1387">SAVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGITSVVEVIVVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="30">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.7</expectation>
+      <identity>26.1</identity>
+      <positives>53.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ SV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="1367" end="1454">EDVGITSVVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="31">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.7</expectation>
+      <identity>27.1</identity>
+      <positives>52.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ SV     +++   G+ + +  + ++ E VG+ISV     V++   G+</pattern>
+      <matchSeq start="1479" end="1563">EDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVVIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="32">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.7</expectation>
+      <identity>25.3</identity>
+      <positives>53.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="94">NALSGLRMAQESVGLISVAHQAFVTIAGCG-VNALSGLQVAQEFVGLISVAHQAFITIAGCG-VNALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>+A+  + ++ E VG+ISV     V++   G ++ +  + V+ E VG+ISV     +++   G ++ +  + ++ E VG+ SV     V++   G+</pattern>
+      <matchSeq start="1869" end="1963">SAVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGITSVVEVIVVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="33">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.7</expectation>
+      <identity>26.1</identity>
+      <positives>53.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ SV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="1943" end="2030">EDVGITSVVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="34">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.7</expectation>
+      <identity>26.1</identity>
+      <positives>53.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  + V+ E VG+ SV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="2215" end="2302">EDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="35">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>2.3</expectation>
+      <identity>26.1</identity>
+      <positives>53.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ SV     V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="519" end="606">EDVGITSVVEVIIVSVEDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="36">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>2.3</expectation>
+      <identity>26.1</identity>
+      <positives>53.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ISV     V++   G+ ++   + V+ E VG+ SV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="2279" end="2366">EDVGIISVVEVIVVSVEDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIVVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="37">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>4.3</expectation>
+      <identity>26.1</identity>
+      <positives>52.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGVNAL-SGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ SV     V++   G+ ++   + V+ E VG ISV     +++   G+ ++   + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="599" end="686">EDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGKISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="38">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>4.3</expectation>
+      <identity>26.1</identity>
+      <positives>52.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGVNAL-SGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ SV     V++   G+ ++   + V+ E VG ISV     +++   G+ ++   + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="1191" end="1278">EDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGKISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="39">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>4.3</expectation>
+      <identity>26.1</identity>
+      <positives>52.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGVNAL-SGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ SV     V++   G+ ++   + V+ E VG ISV     +++   G+ ++   + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="1767" end="1854">EDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGKISVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="40">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>4.3</expectation>
+      <identity>25.0</identity>
+      <positives>52.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ SV     V++   G+ + +  +  + E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="2103" end="2190">EDVGITSVVEVIIVSVEDVGIISVVEVIIFSVEDVGIISVVEVVIVSVEDVGIISVVEVIVVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="41">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.9</expectation>
+      <identity>27.1</identity>
+      <positives>51.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCG-VNALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  L V+ E VG+ S      +++   G ++ +  + ++ E VG+ISV     V++   G+</pattern>
+      <matchSeq start="663" end="747">EDVGIISVVEVIIVSVEDVGITSVVEVLIVSVEDVGITSAVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="42">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.9</expectation>
+      <identity>24.7</identity>
+      <positives>52.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="97">LRMAQESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>L ++ E VG+ S      V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="690" end="782">LIVSVEDVGITSAVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="43">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.9</expectation>
+      <identity>25.0</identity>
+      <positives>52.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ SV     V++   G+ ++   + V+ E VG+ SV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="1111" end="1198">EDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="44">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.9</expectation>
+      <identity>27.1</identity>
+      <positives>51.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCG-VNALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  L V+ E VG+ S      +++   G ++ +  + ++ E VG+ISV     V++   G+</pattern>
+      <matchSeq start="1255" end="1339">EDVGIISVVEVIIVSVEDVGITSVVEVLIVSVEDVGITSAVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="45">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.9</expectation>
+      <identity>24.7</identity>
+      <positives>52.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="97">LRMAQESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>L ++ E VG+ S      V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="1282" end="1374">LIVSVEDVGITSAVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="46">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.9</expectation>
+      <identity>25.0</identity>
+      <positives>52.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="97">ESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>E VG+ SV     V++   G+ ++   + V+ E VG+ SV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="1687" end="1774">EDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGITSVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGITSV</matchSeq>
+     </alignment>
+     <alignment number="47">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.9</expectation>
+      <identity>27.1</identity>
+      <positives>51.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="94">ESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCG-VNALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>E VG+ISV     V++   G+ + +  L V+ E VG+ S      +++   G ++ +  + ++ E VG+ISV     V++   G+</pattern>
+      <matchSeq start="1831" end="1915">EDVGIISVVEVIIVSVEDVGITSVVEVLIVSVEDVGITSAVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGI</matchSeq>
+     </alignment>
+     <alignment number="48">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.9</expectation>
+      <identity>24.7</identity>
+      <positives>52.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="97">LRMAQESVGLISVAHQAFVTIAGCGV-NALSGLQVAQEFVGLISVAHQAFITIAGCGV-NALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>L ++ E VG+ S      V++   G+ + +  + V+ E VG+ISV     +++   G+ + +  + ++ E VG+ISV     V++   G+ ++</pattern>
+      <matchSeq start="1858" end="1950">LIVSVEDVGITSAVEVIVVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIIVSVEDVGIISVVEVIVVSVEDVGITSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A7T4TC69_9BURK" ac="A0A7T4TC69" length="3357" description="YadA-like family protein OS=Paraburkholderia ginsengisoli OX=311231 GN=I6I06_20360 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.14</expectation>
+      <identity>33.7</identity>
+      <positives>51.5</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="98">MNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+N+LS GL     SV  +S +    ++ A  GVN+LS GL      V  +S +    ++ A  GVN+LS GL     +V  +S +    ++ A  GVN+LS</pattern>
+      <matchSeq start="1130" end="1230">VNSLSTGLSTTNSSVTSLSTSTSTGLSTAQSGVNSLSTGLSTTNSSVTSLSTSTSTGLSTAQSGVNSLSTGLSTTNSNVTSLSSSTSTGLSTAQSGVNSLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.36</expectation>
+      <identity>33.7</identity>
+      <positives>51.5</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="98">MNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+N+LS GL     +V  +S +    ++ A  GVN+LS GL      V  +S +    ++ A  GVN+LS GL     SV  +S +    ++ A  GVN+LS</pattern>
+      <matchSeq start="1629" end="1729">VNSLSTGLSTTNSNVTSLSSSTSTGLSTAQSGVNSLSTGLSTTNSNVTSLSSSTSTGLSTAQSGVNSLSTGLSTTNSSVTSLSTSTSTGLSTAQSGVNSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A7ZUD0_ECO24" ac="A7ZUD0" length="47" description="4-phosphopantetheinyl transferase EntD OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_4450 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.17</expectation>
+      <identity>55.3</identity>
+      <positives>65.8</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="59">AGCGVNALSGLQV------AQEFVGLISVAHQAFITIA</querySeq>
+      <pattern>AGCG NALSGLQ        +  VGLIS AHQAF+ ++</pattern>
+      <matchSeq start="6" end="43">AGCGANALSGLQKFVNSINCRIHVGLISEAHQAFLLLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.24</expectation>
+      <identity>55.3</identity>
+      <positives>65.8</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="59" end="90">AGCGVNALSGLRMAQES------VGLISVAHQAFVTIA</querySeq>
+      <pattern>AGCG NALSGL+    S      VGLIS AHQAF+ ++</pattern>
+      <matchSeq start="6" end="43">AGCGANALSGLQKFVNSINCRIHVGLISEAHQAFLLLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0A433TN68_ELYCH" ac="A0A433TN68" length="172" description="Uncharacterized protein (Fragment) OS=Elysia chlorotica OX=188477 GN=EGW08_009273 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.22</expectation>
+      <identity>30.0</identity>
+      <positives>51.1</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="98">LISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISV------AHQAFITIAGCGVNALSGLRMAQESV-GLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+ S++H  FVT + C + +LS  Q     V  IS+      +H  F+T + C + +LS  +    SV  ++S++H  F  I  C + +LS</pattern>
+      <matchSeq start="29" end="118">IFSLSHSQFVTFSVCHIFSLSHFQFVTFSVCHISICHIPRLSHSQFVTFSVCHILSLSHFQFVTFSVCHILSLSHFEFCHIFSCHIFSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A0H2Z5C4_ECOK1" ac="A0A0H2Z5C4" length="144" description="Uncharacterized protein OS=Escherichia coli O1:K1 / APEC OX=405955 GN=APECO1_2343 PE=4 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.23</expectation>
+      <identity>64.3</identity>
+      <positives>78.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="49" end="76">SVAHQAFITIAGCGVNALSGLRMAQESV</querySeq>
+      <pattern>S +HQA  T+AGCGVNALSGL +  +SV</pattern>
+      <matchSeq start="10" end="37">SASHQAVATVAGCGVNALSGLPITIQSV</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.45</expectation>
+      <identity>60.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">SVAHQAFVTIAGCGVNALSGLQVAQEFV</querySeq>
+      <pattern>S +HQA  T+AGCGVNALSGL +  + V</pattern>
+      <matchSeq start="10" end="37">SASHQAVATVAGCGVNALSGLPITIQSV</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.2</expectation>
+      <identity>76.2</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="80" end="100">SVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>S +HQA  T+AGCGVNALSGL</pattern>
+      <matchSeq start="10" end="30">SASHQAVATVAGCGVNALSGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="G4ZSN9_PHYSP" ac="G4ZSN9" length="406" description="Uncharacterized protein (Fragment) OS=Phytophthora sojae (strain P6497) OX=1094619 GN=PHYSODRAFT_334624 PE=4 SV=1">
+    <alignments total="4">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.24</expectation>
+      <identity>35.2</identity>
+      <positives>50.5</positives>
+      <gaps>19</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="92">GLRMAQESVGLISVAHQAFVTIAGC---GVNALSGLQVAQEFVGLISVAHQAFITIAGC-GVNALSGLRMAQESVGLISVAHQAFVTIAGC</querySeq>
+      <pattern>GL +A+  +G      +AF T+AGC    V    GL VA+  +G      +AF T+AGC G    +G  +    VG   +  +AF T+AGC</pattern>
+      <matchSeq start="37" end="114">GLLVAKARIGT-----EAFCTVAGCVGGRVATAGGLLVAKARIGT-----EAFCTVAGCVGGRVATGGGLL---VGKARIGTEAFCTVAGC</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.6</expectation>
+      <identity>35.2</identity>
+      <positives>50.5</positives>
+      <gaps>19</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="92">GLRMAQESVGLISVAHQAFVTIAGC---GVNALSGLQVAQEFVGLISVAHQAFITIAGC-GVNALSGLRMAQESVGLISVAHQAFVTIAGC</querySeq>
+      <pattern>GL +A+  +G      +AF T+AGC    V    GL VA+  +G      +AF T+AGC G    +G  +    VG   +  +AF T+AGC</pattern>
+      <matchSeq start="211" end="288">GLLVAKARIGT-----EAFCTVAGCVGGRVATGGGLLVAKARIGT-----EAFCTVAGCVGGRVATGGGLL---VGKARIGTEAFCTVAGC</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>2.8</expectation>
+      <identity>35.7</identity>
+      <positives>50.0</positives>
+      <gaps>19</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="91">VGLISVAHQAFVTIAGC---GVNALSGLQVAQEFVGLISVAHQAFITIAGC---GVNALSGLRMAQESVGLISVAHQAFVTIAG</querySeq>
+      <pattern>VG   +  +AF T+AGC    V    GL VA+  +G      +AF T+AGC    V    GL +A+  +G      +AF T+AG</pattern>
+      <matchSeq start="98" end="171">VGKARIGTEAFCTVAGCVGGRVATGGGLLVAKARIGT-----EAFCTVAGCVGGRVATGGGLLVAKARIGT-----EAFCTVAG</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>2.8</expectation>
+      <identity>35.7</identity>
+      <positives>50.0</positives>
+      <gaps>19</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="91">VGLISVAHQAFVTIAGC---GVNALSGLQVAQEFVGLISVAHQAFITIAGC---GVNALSGLRMAQESVGLISVAHQAFVTIAG</querySeq>
+      <pattern>VG   +  +AF T+AGC    V    GL VA+  +G      +AF T+AGC    V    GL +A+  +G      +AF T+AG</pattern>
+      <matchSeq start="272" end="345">VGKARIGTEAFCTVAGCVGGRVATGGGLLVAKARIGT-----EAFCTVAGCVGGRVATGGGLLVAKARIGT-----EAFCTVAG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A8C5QH01_9ANUR" ac="A0A8C5QH01" length="838" description="Uncharacterized protein OS=Leptobrachium leishanense OX=445787 PE=4 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.25</expectation>
+      <identity>32.9</identity>
+      <positives>57.5</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="95">AFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVN</querySeq>
+      <pattern>+FV ++GCGV+ +     +  FVG +S    +F+ ++GCGV+ +         VG +S    +FV ++GCGV+</pattern>
+      <matchSeq start="208" end="278">SFVGVSGCGVSFVGVSGCSVSFVG-VSGCSVSFVGVSGCGVSFVWVSGCGVSFVG-VSGCGVSFVGVSGCGVS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.88</expectation>
+      <identity>31.5</identity>
+      <positives>56.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="95">AFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVN</querySeq>
+      <pattern>+FV ++GCGV+ +        FVG +S    +F+ ++GC V+ +     +   VG +S    +FV ++GCGV+</pattern>
+      <matchSeq start="188" end="258">SFVGVSGCGVSFVGVSGCGVSFVG-VSGCGVSFVGVSGCSVSFVGVSGCSVSFVG-VSGCGVSFVWVSGCGVS</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.7</expectation>
+      <identity>30.3</identity>
+      <positives>52.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="92">ISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGC</querySeq>
+      <pattern>+S    +FV ++GCGV+ +        FVG +S    +F+ ++GCGV+ +         VG +S    +FV ++GC</pattern>
+      <matchSeq start="232" end="305">VSGCSVSFVGVSGCGVSFVWVSGCGVSFVG-VSGCGVSFVGVSGCGVSFVGVSGCGVSFVG-VSGCSVSFVGVSGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A7ZJS8_ECO24" ac="A7ZJS8" length="62" description="4'-phosphopantetheinyl transferase EntD OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_0933 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.33</expectation>
+      <identity>40.0</identity>
+      <positives>54.5</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="48" end="96">ISVAHQAFITIAGCGVNALSGLRMAQES------VGLISVAHQAFVTIAGCGVNA</querySeq>
+      <pattern>+ +A Q     AGCGV ALSGL+   +S      VG IS AHQA + ++   + A</pattern>
+      <matchSeq start="3" end="57">LQIADQVRFVHAGCGVYALSGLQNHAKSIHCRVDVGRISAAHQAILLLSSVSITA</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.91</expectation>
+      <identity>40.0</identity>
+      <positives>52.7</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="65">ISVAHQAFVTIAGCGVNALSGLQ------VAQEFVGLISVAHQAFITIAGCGVNA</querySeq>
+      <pattern>+ +A Q     AGCGV ALSGLQ        +  VG IS AHQA + ++   + A</pattern>
+      <matchSeq start="3" end="57">LQIADQVRFVHAGCGVYALSGLQNHAKSIHCRVDVGRISAAHQAILLLSSVSITA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0ABZ3BC74_9ENTR" ac="A0ABZ3BC74" length="611" description="AMP-binding protein OS=Kosakonia calanthes OX=3139408 GN=AAEY27_09125 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.34</expectation>
+      <identity>38.8</identity>
+      <positives>54.1</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="97">ALSGLRMAQE-SVGLISVAHQAFVTIAGCGVNALSGLQVAQE-FVGLISVAHQAFITIAGCGVNALSGLRMAQE-SVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>ALSGL+ +   +VGLIS A    ++  GC   ALS LQ +    V LIS A    ++  GC   ALS L+ +   +VGLIS A    ++  GC ++ L</pattern>
+      <matchSeq start="138" end="229">ALSGLQTSGPGTVGLISEAPSGVLSDGGC---ALSDLQTSSPGTVDLISEAPSGVLSDGGC---ALSDLQTSGPGTVGLISEAPSGVLSDGGCALSDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0AAD9DZS6_9TELE" ac="A0AAD9DZS6" length="479" description="Annexin OS=Electrophorus voltai OX=2609070 GN=P4O66_007348 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.45</expectation>
+      <identity>25.0</identity>
+      <positives>46.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="94">GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>G+I V  + F  ++ CG+  +  +       G+I V  + F  +A CG+  +  +       G+I V  + F  +A CG+</pattern>
+      <matchSeq start="271" end="350">GIILVVFEVFTEVSLCGIIVVFEVFTEVSLCGIILVVFEVFTEVALCGIIVVFEVFTEVALCGIILVVFEVFTEVALCGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A7ZV97_ECO24" ac="A7ZV97" length="45" description="Uncharacterized protein OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_4788 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.46</expectation>
+      <identity>50.0</identity>
+      <positives>65.8</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="59">AGCGVNALSGLQ------VAQEFVGLISVAHQAFITIA</querySeq>
+      <pattern>AGCGVNAL GLQ        ++ VGLI +AHQA + ++</pattern>
+      <matchSeq start="6" end="43">AGCGVNALPGLQNRPNSIYCRDCVGLIGIAHQAVLHLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.8</expectation>
+      <identity>47.4</identity>
+      <positives>65.8</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="59" end="90">AGCGVNALSGLR------MAQESVGLISVAHQAFVTIA</querySeq>
+      <pattern>AGCGVNAL GL+        ++ VGLI +AHQA + ++</pattern>
+      <matchSeq start="6" end="43">AGCGVNALPGLQNRPNSIYCRDCVGLIGIAHQAVLHLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0ACS3R0F8_9HYPO" ac="A0ACS3R0F8" length="1158" description="Ankyrin repeat-containing domain protein OS=Trichoderma pleuroticola OX=504485 GN=J3F84DRAFT_404869 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.66</expectation>
+      <identity>30.3</identity>
+      <positives>42.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="100">MNALSGLRMAQESVGLISVAHQAFVT---IAGCGVNALSGLQVAQEFVGLISVAHQAFIT---IAGCGVNALSGLRMAQESVGLISVAHQAFV---TIAGCGVNALSGL</querySeq>
+      <pattern>+NAL G       V  +   HQ  V     AG  V  L+GL      V  +    Q  +     AG  VNA++ LR     V  +++ HQ  V     AG  VNA++G+</pattern>
+      <matchSeq start="897" end="1005">VNALPGFLGKNALVEAVRNGHQQVVEKLLAAGADVETLTGLSKKNALVEAVRNGDQEIVEKLLAAGADVNAVATLRQETALVLAVAIDHQGIVEKLLAAGANVNAVTGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0A2K3DKG1_CHLRE" ac="A0A2K3DKG1" length="526" description="Uncharacterized protein OS=Chlamydomonas reinhardtii OX=3055 GN=CHLRE_07g338750v5 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.85</expectation>
+      <identity>32.2</identity>
+      <positives>45.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="104">GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>G  SVA +  +   GCG  A +G +V +   G   VA +      GCG  A +G R+ +   G   VA +      GCG  A +G R+ R</pattern>
+      <matchSeq start="231" end="320">GFESVAPRIPLAAPGCGSAAAAGPRVPRPPPGFEDVAARMPPAAPGCGSAAAAGPRVPRPPPGFEDVAARMPPAEPGCGSAAAAGPRVPR</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.5</expectation>
+      <identity>29.4</identity>
+      <positives>44.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="104">ALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>A +G R+ +   G   VA +      GCG  A +G +V +   G   VA +      GCG  A +G R+ +   G   VA +  +   G G  A +G R+ R</pattern>
+      <matchSeq start="250" end="351">AAAGPRVPRPPPGFEDVAARMPPAAPGCGSAAAAGPRVPRPPPGFEDVAARMPPAEPGCGSAAAAGPRVPRPPPGFEDVAARMPLAAPGGGSAAAAGPRVPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0A2K3DKD6_CHLRE" ac="A0A2K3DKD6" length="527" description="Uncharacterized protein OS=Chlamydomonas reinhardtii OX=3055 GN=CHLRE_07g338750v5 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.85</expectation>
+      <identity>32.2</identity>
+      <positives>45.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="104">GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>G  SVA +  +   GCG  A +G +V +   G   VA +      GCG  A +G R+ +   G   VA +      GCG  A +G R+ R</pattern>
+      <matchSeq start="232" end="321">GFESVAPRIPLAAPGCGSAAAAGPRVPRPPPGFEDVAARMPPAAPGCGSAAAAGPRVPRPPPGFEDVAARMPPAEPGCGSAAAAGPRVPR</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.5</expectation>
+      <identity>29.4</identity>
+      <positives>44.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="104">ALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>A +G R+ +   G   VA +      GCG  A +G +V +   G   VA +      GCG  A +G R+ +   G   VA +  +   G G  A +G R+ R</pattern>
+      <matchSeq start="251" end="352">AAAGPRVPRPPPGFEDVAARMPPAAPGCGSAAAAGPRVPRPPPGFEDVAARMPPAEPGCGSAAAAGPRVPRPPPGFEDVAARMPLAAPGGGSAAAAGPRVPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0ABX9YNJ7_9BURK" ac="A0ABX9YNJ7" length="817" description="Cell surface protein (Fragment) OS=Burkholderia stagnalis OX=1503054 GN=DF017_15455 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.88</expectation>
+      <identity>28.4</identity>
+      <positives>48.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="97">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS-GLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>+GL  A  S+  +S +    ++ A  GVN+LS GL      V  +S +    I+ A  GVN+LS GL     +V  +S +    ++    G++ +</pattern>
+      <matchSeq start="402" end="496">TGLSSANSSIASLSTSASTGISTAQSGVNSLSTGLSTTNSTVASLSTSTSTGISTAQSGVNSLSTGLSTTNSTVASLSTSTSTGISSLSTGLSTV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="D3B055_HETP5" ac="D3B055" length="612" description="Uncharacterized protein OS=Heterostelium pallidum (strain ATCC 26659 / Pp 5 / PN500) OX=670386 GN=PPL_01671 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>1.2</expectation>
+      <identity>31.1</identity>
+      <positives>54.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="90">ISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIA</querySeq>
+      <pattern>+S+A Q+   ++G  V  +SGL +A +     S+AH   ++IAG  +  L G+ +AQ + GL +      +T A</pattern>
+      <matchSeq start="332" end="400">LSIAGQSLAHVSGASVAHVSGLSIAGQ-----SLAHVPGVSIAGASIAHLPGVTVAQVTAGLTTSPSAPALTAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0A6J8CNK9_MYTCO" ac="A0A6J8CNK9" length="1216" description="BMS1 OS=Mytilus coruscus OX=42192 GN=MCOR_32002 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>1.2</expectation>
+      <identity>30.4</identity>
+      <positives>43.1</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="91">LSGLRMAQESVGLISVAHQAFVTIAGCGVN-------ALSGLQVAQEFVGLISVAHQAFITIAGCGVNA-------LSGLRMAQESVGLISVAHQAFVTIAG</querySeq>
+      <pattern>L GL   +E+VGL+ V    +  I G   N       +  GL   +E VGL+ V       I G G++          GL   +ESVGL+ V +  +  I G</pattern>
+      <matchSeq start="726" end="827">LGGLSNLEENVGLVQVCMLPYPVILGGLSNFGGKRWISTGGLSNLEENVGLVQVFMITCPVILGVGLSVGGKRWIGTGGLSNLEESVGLVQVLYDTYPVILG</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>4.2</expectation>
+      <identity>31.3</identity>
+      <positives>44.4</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="95">LSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVN-------ALSGLRMAQESVGLISVAHQAFVTIAGCGVN</querySeq>
+      <pattern>L GL   +E+VGL+ V   A+  I G       GL   +E VGL+ V    +  I G   N       +  GL   +E+VGL+ V       I G G++</pattern>
+      <matchSeq start="702" end="793">LGGLSNLEENVGLVQVCMIAYPVILG-------GLSNLEENVGLVQVCMLPYPVILGGLSNFGGKRWISTGGLSNLEENVGLVQVFMITCPVILGVGLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0A4R5K6W7_9BACL" ac="A0A4R5K6W7" length="1357" description="WIAG-tail domain OS=Paenibacillus piri OX=2547395 GN=E1757_34275 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>1.2</expectation>
+      <identity>31.1</identity>
+      <positives>51.5</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="105">ALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMARE</querySeq>
+      <pattern>A+S   +A ++V    +A  A VT     V A+  + V +  +G   +A  A +T A     A+SG+ +A ES+G + +A  A VT A     A+SG+ ++ E</pattern>
+      <matchSeq start="879" end="978">AISTAHLAADAVTAEKLAANA-VTSGKLAVGAVGRVHVTEGAIGTPQLAESA-VTGAKLAEGAVSGVHVAAESIGTLQLAESA-VTGAKLAEGAVSGMHVSVE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="Q63UB0_BURPS" ac="Q63UB0" length="1606" description="Membrane protein OS=Burkholderia pseudomallei (strain K96243) OX=272560 GN=BPSL1705 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>1.2</expectation>
+      <identity>29.0</identity>
+      <positives>46.7</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS------------GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL  A  SV  +S +  + ++ A  GVN+LS GL      V  +S +    ++ A   + +LS            GL  A  SV  +S +  + ++ A  GVN+LS</pattern>
+      <matchSeq start="887" end="993">TGLSTANSSVTSLSTSTSSGISTAQSGVNSLSTGLSTTNSTVASLSTSTSTGLSSATSSITSLSTSTSTGIGSLSTGLSTANSSVTSLSTSTSSGISTAQSGVNSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="B1N8M5_BURPE" ac="B1N8M5" length="1654" description="Autotransporter adhesin OS=Burkholderia pseudomallei OX=28450 GN=bocA2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>1.2</expectation>
+      <identity>29.0</identity>
+      <positives>46.7</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS------------GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL  A  SV  +S +  + ++ A  GVN+LS GL      V  +S +    ++ A   + +LS            GL  A  SV  +S +  + ++ A  GVN+LS</pattern>
+      <matchSeq start="935" end="1041">TGLSTANSSVTSLSTSTSSGISTAQSGVNSLSTGLSTTNSTVASLSTSTSTGLSSATSSITSLSTSTSTGIGSLPTGLSTANSSVTSLSTSTSSGISTAQSGVNSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A0H3HJZ5_BURP2" ac="A0A0H3HJZ5" length="1654" description="Hemagluttinin motif-containing protein OS=Burkholderia pseudomallei (strain 1026b) OX=884204 GN=BP1026B_I1654 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>1.2</expectation>
+      <identity>29.0</identity>
+      <positives>46.7</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS------------GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL  A  SV  +S +  + ++ A  GVN+LS GL      V  +S +    ++ A   + +LS            GL  A  SV  +S +  + ++ A  GVN+LS</pattern>
+      <matchSeq start="935" end="1041">TGLSTANSSVTSLSTSTSSGISTAQSGVNSLSTGLSTTNSTVASLSTSTSTGLSSATSSITSLSTSTSTGIGSLSTGLSTANSSVTSLSTSTSSGISTAQSGVNSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0AAV2MHM7_KNICA" ac="A0AAV2MHM7" length="163" description="Uncharacterized protein OS=Knipowitschia caucasica OX=637954 GN=KC01_LOCUS39081 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.4</expectation>
+      <identity>32.4</identity>
+      <positives>43.8</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="106">GLRMAQESVGLISVAHQAFVT--IAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVT--IAGCGVNALSGLRMAREL</querySeq>
+      <pattern>GLR AQE  GL +          ++G     LSGL+ AQ+  GL +                LSGLR AQ+  GL +          ++G     LSGLR A++L</pattern>
+      <matchSeq start="56" end="146">GLRTAQELSGLTAQELSGLTAQDLSGLTAQDLSGLRTAQDLSGLTT--------------QELSGLRTAQDLSGLTTQELSGLTAQELSGLIAQDLSGLRTAQDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0ABR7G2J1_9FIRM" ac="A0ABR7G2J1" length="321" description="ABC transporter permease OS=Lachnospira hominis (ex Liu et al. 2021) OX=2763051 GN=H8S01_11890 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.5</expectation>
+      <identity>34.0</identity>
+      <positives>46.6</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="106">LSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAREL</querySeq>
+      <pattern>LSG  +A  +V  I+ A    +T A  G   +S L+V Q  VGLI       ITI G G+    G  M Q + G ISV  +     +G  +  LS + +  EL</pattern>
+      <matchSeq start="59" end="151">LSGFGVA--AVSFIAGALSGMITSALFGFMTIS-LRVNQNVVGLI-------ITIMGTGIGNFFGELMGQGAGGYISVTDETKAVFSGIHIPGLSSVPVIGEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0A7W5B467_9BACL" ac="A0A7W5B467" length="1613" description="WIAG-tail domain OS=Paenibacillus phyllosphaerae OX=274593 GN=FHS18_005754 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.7</expectation>
+      <identity>32.4</identity>
+      <positives>56.2</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="105">ALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAF--VTIAGCGVNALSGLRMARE</querySeq>
+      <pattern>A++G ++A+ SV    +A  A VT A  G N ++G+Q+A+   G +SV H A         ++++GL +A+ +V   S AH     VT A    + +SG+++A+E</pattern>
+      <matchSeq start="1343" end="1432">AVTGAQLAKGSVTGEHLASGA-VTEAHLGANVVTGVQLAK---GSVSVEHLA--------ADSVTGLHLAENAV---SSAHLTLGSVTQAHLAADVISGMQLAKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A8U8CB50_GEOPR" ac="A0A8U8CB50" length="217" description="Uncharacterized protein OS=Geospiza parvula OX=87175 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.8</expectation>
+      <identity>29.0</identity>
+      <positives>44.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="100">MAQESVGLISVAHQAFVTIAGCGVNALSGL-QVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>+A   +G ++V     V + G G  A+ GL  VA   +G ++V     + + G G  A+ GL      VG    A    V + G G  A+ GL</pattern>
+      <matchSeq start="34" end="126">VAVPGLGTVAVPGLGTVAVPGLGTVAVPGLGTVAVPGLGTVAVPRLGTVAVPGLGTVAVPGLGTVAARVGDSGSARLGTVAVPGLGTVAVPGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0A4V1AAQ0_9ENTR" ac="A0A4V1AAQ0" length="99" description="Uncharacterized protein OS=Citrobacter arsenatis OX=2546350 GN=E1B03_22855 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.8</expectation>
+      <identity>40.5</identity>
+      <positives>47.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="87">VGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFV</querySeq>
+      <pattern>VGLIS  HQAF+          +   V    VGLIS  HQAF+        A      +  SVGLIS  HQAF+</pattern>
+      <matchSeq start="25" end="94">VGLISETHQAFLRRMAAQAPYPAYNNVHS--VGLISETHQAFLR--RMAAQAPDPTYNSVHSVGLISETHQAFL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0A6B3RGB4_9RHOB" ac="A0A6B3RGB4" length="85" description="Uncharacterized protein OS=Pseudotabrizicola algicola OX=2709381 GN=G3572_02450 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>2.0</expectation>
+      <identity>34.2</identity>
+      <positives>46.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="104">GCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAR</querySeq>
+      <pattern>G G+ A   L  A  F GL+ +AH A     GCG  +  G  M   SVGL+S+       + G G++    LR  R</pattern>
+      <matchSeq start="17" end="84">GFGLVAALVLPAALMF-GLLGLAHLA----GGCGAGSSGGCEMGAASVGLVSIVP---ALVLGAGISLFRDLRRGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0A346XWW8_9ACTN" ac="A0A346XWW8" length="348" description="Branched-chain amino acid transport system permease protein LivM OS=Euzebya pacifica OX=1608957 GN=DVS28_a2030 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>2.0</expectation>
+      <identity>35.8</identity>
+      <positives>52.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="98">LSGLQVAQEFVG---LISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>L+ L VA  FV     + +A+QA I + G       GL++     GLIS+AH AF+ + G  V  +S</pattern>
+      <matchSeq start="30" end="91">LAVLLVAYPFVAGEYFVHLANQALIVVVGA-----VGLQLLTGQTGLISLAHAAFIAVGGYAVGVVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0AAE1DWI9_9GAST" ac="A0AAE1DWI9" length="352" description="Uncharacterized protein OS=Elysia crispata OX=231223 GN=RRG08_062724 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>2.0</expectation>
+      <identity>29.9</identity>
+      <positives>48.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="98">VGLISVAHQAFVTIAGCGVNALSGL-QVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQ-ESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>VGL +VA     T+A  G+  +  +  +    VGLI+V     IT+A  G+  +  + +     VGL +VA     TIA  G+  ++</pattern>
+      <matchSeq start="55" end="141">VGLTTVADVGLTTVADVGLTTVVDMCLITVADVGLITVVDMCLITVADVGMTTVVDMCLTTVADVGLTTVADVGLTTIADVGLTTVA</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>9.7</expectation>
+      <identity>23.9</identity>
+      <positives>46.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="103">VGLISVAHQAFVTIAGCG-VNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQ-ESVGLISVAHQAFVTIAGCGVNALSGLRMA</querySeq>
+      <pattern>VGL +V     +T+A  G +  +    +    VG+ +V      T+A  G+  ++ + +     VGL +VA     T+A  G+  ++ + +A</pattern>
+      <matchSeq start="71" end="162">VGLTTVVDMCLITVADVGLITVVDMCLITVADVGMTTVVDMCLTTVADVGLTTVADVGLTTIADVGLTTVADVGLTTVADVGLTTVADVSLA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0A0A2G7E9_9PORP" ac="A0A0A2G7E9" length="810" description="Secretion system C-terminal sorting domain-containing protein OS=Porphyromonas gingivicanis OX=266762 GN=HQ36_01725 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>2.2</expectation>
+      <identity>23.5</identity>
+      <positives>45.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="100">LSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEF-VGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>L+ + +AQ  V  +++     V    CG NALS L ++    +G ++ +     T+    + AL  L  A+  +  + ++H   + I  C +N L  +</pattern>
+      <matchSeq start="148" end="245">LTSINLAQNKVSELNIEACTAVASLDCGNNALSSLNLSNNTQLGALNCSFNKLSTLNLSALTALKQLNCAKNELTQLDISHNRELEILSCFLNPLEDM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="Q39AF4_BURL3" ac="Q39AF4" length="2866" description="Outer membrane protein, hemagluttinin-like protein OS=Burkholderia lata (strain ATCC 17760 / DSM 23089 / LMG 22485 / NCIMB 9086 / R18194 / 383) OX=482957 GN=Bcep18194_B0441 PE=3 SV=1">
+    <alignments total="3">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>2.3</expectation>
+      <identity>25.0</identity>
+      <positives>48.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-----GLQVAQEFVGLISVAHQAFITIAGCGVNALS-----GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL  A  S+G +S +    ++ A   + +LS     GL  A   +G +S +    ++ A   +++LS     GL  A  S+G +S +    ++ A   +++LS</pattern>
+      <matchSeq start="2161" end="2264">TGLSSANSSIGSLSTSTSTGLSSANSSIGSLSTSTSTGLSSANSSIGSLSTSTSTGLSSANSSISSLSTSTSTGLSSANSSIGSLSTSTSTGLSSANSSISSLS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>3.2</expectation>
+      <identity>25.0</identity>
+      <positives>47.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-----GLQVAQEFVGLISVAHQAFITIAGCGVNALS-----GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL  A  S+G +S +    ++ A   +++LS     GL  A   +G +S +    ++ A   + +LS     GL  A  S+G +S +    ++ A   + +LS</pattern>
+      <matchSeq start="1913" end="2016">TGLSSANSSIGSLSTSTSTGLSSANSSIDSLSTSTSTGLSSANSSIGSLSTSTSTGLSSANSSIGSLSTSTSTGLSSANSSIGSLSTSTSTGLSSANSSIGSLS</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>3.2</expectation>
+      <identity>25.0</identity>
+      <positives>47.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-----GLQVAQEFVGLISVAHQAFITIAGCGVNALS-----GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL  A  S+G +S +    ++ A   +++LS     GL  A   +G +S +    ++ A   + +LS     GL  A  S+G +S +    ++ A   + +LS</pattern>
+      <matchSeq start="2089" end="2192">TGLSSANSSIGSLSTSTSTGLSSANSSIDSLSTSTSTGLSSANSSIGSLSTSTSTGLSSANSSIGSLSTSTSTGLSSANSSIGSLSTSTSTGLSSANSSIGSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0AAV7WJ97_PLEWA" ac="A0AAV7WJ97" length="338" description="Uncharacterized protein OS=Pleurodeles waltl OX=8319 GN=NDU88_007449 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>2.8</expectation>
+      <identity>32.4</identity>
+      <positives>51.4</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMARE</querySeq>
+      <pattern>M A SG+    E+V  +S   +A   ++G G+ A+SG+    E V  +S   +A   ++G G+ A+SG+    E+V  ISV  +A        V+ LSG R+  E</pattern>
+      <matchSeq start="115" end="209">MEAESGMSGGAEAVSGMSGGAEAVSGMSG-GMEAVSGMSGGMEAVSGMSGGMEAVSGMSG-GMEAVSGISGGMEAVSGISVGMEA--------VSGLSGSRIRDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0A211ZP77_9PROT" ac="A0A211ZP77" length="407" description="Adenylate/guanylate cyclase domain-containing protein OS=Inquilinus limosus OX=171674 GN=BWR60_11085 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>2.8</expectation>
+      <identity>28.3</identity>
+      <positives>45.1</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="106">ALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL-SGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAG--------CGVNALSGLRMAREL</querySeq>
+      <pattern>AL+ +R A+ ++ +++    A    AG  V  + +GL + + F G I  AH+   T+ G  VN  S +     S     +   AF   AG         G  AL G+R+ +EL</pattern>
+      <matchSeq start="291" end="399">ALAAVREARAAIAMLNPQRAA----AGQPVTEMYAGLHIGEVFFGNIGSAHRLDFTVVGPAVNETSRIAEMCRSADQPMLVSSAFAAAAGGEAAGLVCVGRYALRGVRLPQEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0A9D4JAK9_DREPO" ac="A0A9D4JAK9" length="173" description="Uncharacterized protein OS=Dreissena polymorpha OX=45954 GN=DPMN_154651 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.9</expectation>
+      <identity>23.3</identity>
+      <positives>46.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="99">VGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSG</querySeq>
+      <pattern>+G++    +  V + GC V ++   +V    +G++    +  + + GCGV  + G      +V ++ V     V + GCGV  + G</pattern>
+      <matchSeq start="11" end="90">IGVVVGVDEVVVVVVGCCVVSVVEGRVVVTGIGVVVGVDEVVVVVVGCGVVVIVG------AVVVVVVVVVGCVVVVGCGVEVVVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0ABV1GN36_9FIRM" ac="A0ABV1GN36" length="321" description="ABC transporter permease OS=Lachnospira hominis (ex Hitch et al. 2025) OX=3230259 GN=WMO38_07315 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>3.7</expectation>
+      <identity>34.0</identity>
+      <positives>45.6</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="106">LSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAREL</querySeq>
+      <pattern>LSG   A  +V  I+ A    +T A  G   +S L+V Q  VGLI       ITI G G+    G  M Q + G ISV  +     +G  +  LS + +  EL</pattern>
+      <matchSeq start="59" end="151">LSGFVAA--AVSFIAGALSGMITSALFGFMTIS-LRVNQNVVGLI-------ITIMGTGIGNFFGELMGQGAGGYISVTDETKAVFSGIHIPGLSSVPVIGEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0A5D0IM41_9FLAO" ac="A0A5D0IM41" length="364" description="Leucine-rich repeat domain-containing protein OS=Seonamhaeicola marinus OX=1912246 GN=FUA24_05400 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>3.8</expectation>
+      <identity>27.3</identity>
+      <positives>45.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="100">ALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQE-FVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>ALS L +A   +  + V+    ++  GCG N L+ L V +   + ++S +     ++       L  L  AQ  +  + V H   +T  GCG N L+ L</pattern>
+      <matchSeq start="155" end="253">ALSVLAVAGNQLTNLDVSLNTDLSNLGCGDNLLTQLDVTKNTLLSVLSCSPNGISSLDVSNNPELYWLTCAQNELTELDVTHNPLLTTLGCGDNLLTSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0AA88LHB4_TACVA" ac="A0AA88LHB4" length="401" description="Uncharacterized protein OS=Tachysurus vachellii OX=175792 GN=Q7C36_022510 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>3.9</expectation>
+      <identity>27.8</identity>
+      <positives>40.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="103">MAQESVGLISVAHQAFVTIAGCGVNALSG-LQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESV-GLISVAHQAFVTIAGCGVNALSGLRMA</querySeq>
+      <pattern>+A  + G    +  A V  + CG    SG   VA    G    +  A +  + CG    SG  +  +S  G   V+  A VT   CG   +SG  +A</pattern>
+      <matchSeq start="114" end="210">VADSACGATLASGPALVADSACGATLASGPALVADSACGATLASGPALVADSACGATLASGPALVADSACGATLVSGPALVTDPACGATLVSGSALA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0A562I7N5_MICOL" ac="A0A562I7N5" length="439" description="Uncharacterized protein DUF559 OS=Micromonospora olivasterospora OX=1880 GN=JD77_01873 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>3.9</expectation>
+      <identity>27.6</identity>
+      <positives>38.8</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="99">GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFI-------------TIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSG</querySeq>
+      <pattern>G  ++A      + G G  A+ G   A    G  ++A  A +             TIAG G  A+ G   A    G  ++A     TIAG G  A+ G</pattern>
+      <matchSeq start="126" end="223">GAATIAGAGAAAVVGTGAAAVVGAGAATAGTGAATIAGAAAVVGAGAATAGTGAATIAGAGAAAVVGAGAATAGTGAATIAGAGAATIAGAGAAAIVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A5C6YMA4_9FLAO" ac="A0A5C6YMA4" length="584" description="T9SS type A sorting domain-containing protein OS=Aequorivita lipolytica OX=153267 GN=ESV24_12905 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>4.0</expectation>
+      <identity>25.3</identity>
+      <positives>42.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="89">LRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTI</querySeq>
+      <pattern>L     ++ ++ ++  + +T  GC  N L+ L V+          H   + I  C VN ++ L     SVGLI+ A      I</pattern>
+      <matchSeq start="315" end="387">LNSGSNNLAVLDISQNSKITSLGCSFNQLTSLDVS----------HMTNLDILSCSVNKITSLTTGSVSVGLIACAGNLLTNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="A0A250XL36_9CHLO" ac="A0A250XL36" length="1252" description="Uncharacterized protein OS=Chlamydomonas eustigma OX=1157962 GN=CEUSTIGMA_g10925.t1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>4.2</expectation>
+      <identity>31.4</identity>
+      <positives>47.7</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="102">ISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRM</querySeq>
+      <pattern>+SVA  A V++AGC     +G          +SVA  A +++AGC          ++E    +SVA  A V++AGC     S  R+</pattern>
+      <matchSeq start="781" end="846">VSVAVTAGVSVAGCSREGTAG----------VSVAVTAGVSVAGC----------SREGTAGVSVAVTAGVSVAGCSREGTSSQRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0A4P6WNH9_9ENTR" ac="A0A4P6WNH9" length="95" description="Uncharacterized protein OS=Citrobacter arsenatis OX=2546350 GN=E1B03_22850 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>41.1</identity>
+      <positives>45.2</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="85">SVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQA</querySeq>
+      <pattern>SVGLIS  HQAF  +      A          VGLIS  HQAF  +      A      +  SVGLIS  HQA</pattern>
+      <matchSeq start="24" end="92">SVGLISETHQAF--LRRMAAQAPYPAYNNVHSVGLISETHQAF--LRRMAAQAPDPTYNSVHSVGLISETHQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0AA38MUG3_9AGAR" ac="A0AA38MUG3" length="360" description="Uncharacterized protein OS=Lentinula guzmanii OX=2804957 GN=DFJ43DRAFT_1161656 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.2</expectation>
+      <identity>35.6</identity>
+      <positives>48.5</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="100">MNALSGLRMAQESV-GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>+  +SGL     S+  L+S ++ + VT A C   ALSGL  AQE V +I     A +T    GV A++G        GL S A+QA  +I     N  S L</pattern>
+      <matchSeq start="38" end="127">LGVISGLNSTSRSIEALLSSSNDSVVTSA-CN-EALSGLHTAQEGVSIIVKGVLAGVTPDDTGVPAIAG--------GL-STANQALTSINSSDTNVQSQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0AA38NQQ5_9AGAR" ac="A0AA38NQQ5" length="362" description="Cell wall protein OS=Lentinula aff. detonsa OX=2804958 GN=GGU10DRAFT_384172 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.2</expectation>
+      <identity>35.6</identity>
+      <positives>48.5</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="100">MNALSGLRMAQESV-GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>+  +SGL     S+  L+S ++ + VT A C   ALSGL  AQE V +I     A +T    GV A++G        GL S A+QA  +I     N  S L</pattern>
+      <matchSeq start="42" end="131">LGVISGLNSTSRSIEALLSSSNDSVVTSA-CN-EALSGLHTAQEGVSIIVKGVLAGVTPDDTGVPAIAG--------GL-STANQALTSINSSDTNVQSQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0AAV7WDK0_PLEWA" ac="A0AAV7WDK0" length="436" description="Uncharacterized protein OS=Pleurodeles waltl OX=8319 GN=NDU88_007449 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.3</expectation>
+      <identity>28.7</identity>
+      <positives>50.9</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="106">ALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVN----ALSGLRMAREL</querySeq>
+      <pattern>A+SG+    E+V  +S   +A   ++G G+ A+SG+    E V  +S   +A   ++G G   LSG+    E+V  +S   +A   ++G G++     LSG+    E+</pattern>
+      <matchSeq start="117" end="222">AVSGMSGGMEAVSGMSGGMEAVSGMSG-GMEAVSGMSGGMEAVSGMSGGMEAVSGMSG-GAEVLSGMSGGMEAVSRMSEGMEAVSRMSGSGMSGGMEVLSGMSGGMEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0ABY5VWX3_9ACTN" ac="A0ABY5VWX3" length="445" description="MFS transporter OS=Dactylosporangium fulvum OX=53359 GN=Dfulv_45450 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.4</expectation>
+      <identity>37.1</identity>
+      <positives>51.4</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="32" end="97">VNALSGLQVAQEFVG--LISVAHQ--AFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNAL</querySeq>
+      <pattern>V A+SGL  AQ  V     S + Q  A + +A  G    +GL  A  + G +S +H A+  +AGCGV  L</pattern>
+      <matchSeq start="353" end="422">VTAVSGLPTAQAGVAAAFASTSRQFGAALGVAVLGAVVAAGLHGAPLADGFVSASHAAWWIVAGCGVAVL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0AAV8UXX7_9RHOD" ac="A0AAV8UXX7" length="683" description="Uncharacterized protein OS=Rhodosorus marinus OX=101924 GN=NDN08_007569 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.6</expectation>
+      <identity>31.7</identity>
+      <positives>57.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="103">ALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMA</querySeq>
+      <pattern>A+SG+ +A  +V  ++    A V +AG    A++G+ VA   V  ++VA  A   +A  G+ A++G+ +A  +V  ++VA  A   +A  GV A++G+ +A</pattern>
+      <matchSeq start="50" end="145">AVSGVVVAGVTVAAVAGVAVAGVAVAGV---AVAGMAVAGVAVAGVAVAGVAVAGVAVAGM-AVAGVEVAGVAVAGVAVAGVAVAGVAVAGV-AVAGVAVA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0ABU3LD78_9FLAO" ac="A0ABU3LD78" length="891" description="T9SS type A sorting domain-containing protein OS=Asprobacillus argus OX=3076534 GN=RQM59_01475 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.7</expectation>
+      <identity>24.8</identity>
+      <positives>47.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="103">MNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQ-EFVGLISVAHQAFIT-IAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMA</querySeq>
+      <pattern>++ LS L +    +  + V H   +T  GCG N L+ L V+    +  +S       T I   G N+L  L +++ ++  + +++   +T   CG + L+ L +A</pattern>
+      <matchSeq start="261" end="365">LSHLSVLGIGNNRISALQVNHLTNLTSLGCGGNDLTTLDVSNLSLLRFLSAGDSQLNTFIKPNGTNSLETLSLSRNNLTHLDLSNLVHLTELSCGYSQLTSLDLA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A7ZUF5_ECO24" ac="A7ZUF5" length="38" description="Uncharacterized protein OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_4476 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>6.1</expectation>
+      <identity>72.7</identity>
+      <positives>72.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="40">VAHQAFVTIAGCGVNALSGLQV</querySeq>
+      <pattern>VA    V  AGCGVNALSGLQV</pattern>
+      <matchSeq start="7" end="28">VADNVLVVYAGCGVNALSGLQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0A0H2VDG3_ECOL6" ac="A0A0H2VDG3" length="123" description="Uncharacterized protein OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=c4359 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>6.9</expectation>
+      <identity>48.0</identity>
+      <positives>58.0</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="58">GLISVAHQAFVTIAGCGVNALSGLQ------VAQEFVGLISVAHQAFITI</querySeq>
+      <pattern>G+  V  + FV  AGCG NALS LQ        + FVGLIS AHQA + +</pattern>
+      <matchSeq start="59" end="107">GMQIVDKERFV-YAGCGANALSDLQNRANSIHCRVFVGLISGAHQAVLPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A914MKM8_MELIC" ac="A0A914MKM8" length="318" description="ABC transmembrane type-1 domain-containing protein OS=Meloidogyne incognita OX=6306 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.0</expectation>
+      <identity>31.2</identity>
+      <positives>47.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="94">LSGLRMAQESVGLISVAHQAFVTIAGCG-VNALSGLQVAQEFVGLISVAHQAFITIAGCG-VNALSGLRMAQESVGLISVAHQAFVTIAGCGV</querySeq>
+      <pattern>++GL +     GL++V  + FVTI   G V  +  L V     GL++V    F+T    G V  + GL +     GL++V    FVT    G+</pattern>
+      <matchSeq start="113" end="205">VAGLFVTIVVTGLVAVVARLFVTIVIAGLVTVVVWLFVTTVVAGLVTVVVWLFVTTVVAGLVTVVVGLFVTTVVAGLVTVVVGLFVTTVVAGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0A9W8TWB5_9AGAR" ac="A0A9W8TWB5" length="364" description="Cell wall protein OS=Lentinula detonsa OX=2804962 GN=DFH05DRAFT_1526623 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.1</expectation>
+      <identity>35.6</identity>
+      <positives>48.5</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="100">MNALSGLRMAQESV-GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>+  +SGL     S+  L+S ++ + VT A C   ALSGL  AQE V +I     A +T    GV A++G        GL S A+QA  +I     N  S L</pattern>
+      <matchSeq start="42" end="131">LGVISGLNSTSRSIEALLSSSNDSAVTSA-CN-EALSGLHTAQEGVSIIVKGVLAGVTPDDTGVPAIAG--------GL-STANQALTSINSSDTNVQSQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0AAV7E126_ARIFI" ac="A0AAV7E126" length="405" description="Uncharacterized protein OS=Aristolochia fimbriata OX=158543 GN=H6P81_017435 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.2</expectation>
+      <identity>33.6</identity>
+      <positives>52.2</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="103">ALSG--LRMAQE--SVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVN-ALSGLRMAQE-----SVGLISVAHQAFVTIAGCGVNALS--GLRMA</querySeq>
+      <pattern>ALSG  LR+A    S+GL+S      V ++GC +  LS + ++    GL+S+     + ++GC +  ALSGL          S+GL+S      V ++GC +  LS   LR+A</pattern>
+      <matchSeq start="287" end="391">ALSGCSLRVALSGCSLGLLSPGCSLRVALSGCSLGLLSRVALS----GLLSLR----VALSGCSLRVALSGLLSLGLLSPGCSLGLLSPGCSLRVALSGCSLGLLSRVALRVA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0ACT1Q5K6_9CYAN" ac="A0ACT1Q5K6" length="608" description="DUF4912 domain-containing protein OS=Thermoleptolyngbya oregonensis NK1-22 OX=2547457 GN=HNI00_20180 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.6</expectation>
+      <identity>25.0</identity>
+      <positives>54.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="103">LSGLRM-AQESVGLISVAHQAFVTIAGCGVNALSGL-QVAQEFVGLISVAHQAF--ITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMA</querySeq>
+      <pattern>+SG+ M     VGL + +  A  T++G G+   SG+ +  +  VG+  V   +   + ++G G+ ++SG+ M+   +  + +   + V ++G G+ ++SG+ M+</pattern>
+      <matchSeq start="336" end="439">MSGVGMYTMSGVGLYTESGGALYTMSGVGLYTESGVGRYTESGVGMSGVGMYSMSGVGMSGVGMYSMSGVGMSGVGMSGVGMYSMSGVGMSGVGMYSMSGVGMS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="E0NPP4_9BACT" ac="E0NPP4" length="638" description="Leucine Rich Repeat protein OS=Hoylesella marshii DSM 16973 = JCM 13450 OX=862515 GN=HMPREF0658_0145 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.6</expectation>
+      <identity>26.5</identity>
+      <positives>41.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="100">LSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVN-ALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGL</querySeq>
+      <pattern>LS L      +G + V   A +    C  N LS L V+Q     + + HQ  +       N AL+ +   +  +  + V+H   +   GCG N L+ L</pattern>
+      <matchSeq start="151" end="248">LSELYCHNNKLGSLQVGTNAALVQLYCANNVLSALDVSQNRQLHVLICHQNRLRAIDVSNNTALTQISCGENQIERMDVSHNVALKSLGCGANKLTTL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0ACE1R533_ARCGL" ac="A0ACE1R533" length="688" description="Uncharacterized protein OS=Arctogadus glacialis OX=185735 GN=ARCGLAARC_LOCUS37152 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.6</expectation>
+      <identity>33.3</identity>
+      <positives>52.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="102">VTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRM</querySeq>
+      <pattern>+T  G G+NAL+G  +    +    V   A +T  G G+NAL+G  +   ++    V   A +T  G G+NAL+G R+</pattern>
+      <matchSeq start="13" end="88">LTGTGLGINALTGTGLGINALTGTGVGINA-LTGTGVGINALTGTGLGINALTGTGVGINA-LTGTGVGINALTGTRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0A8D2M285_ZONAL" ac="A0A8D2M285" length="181" description="Uncharacterized protein OS=Zonotrichia albicollis OX=44394 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>7.7</expectation>
+      <identity>34.1</identity>
+      <positives>48.8</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="101">QAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGC--GVNALSGLR</querySeq>
+      <pattern>+ F +I GCG    S L   + F G IS + + F +I+GCG           E  G IS   + F +I+GC  G  ++SG R</pattern>
+      <matchSeq start="55" end="124">EGFGSIPGCGEGFGSILGCGEGF-GCISGSGEGFGSISGCG-----------EGFGSISGCGEGFGSISGCGEGFGSISGCR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0A127QKB9_9BURK" ac="A0A127QKB9" length="1962" description="Phage T7 tail fiber family protein OS=Collimonas arenae OX=279058 GN=CAter282_2794 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>8.0</expectation>
+      <identity>27.3</identity>
+      <positives>40.9</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALS---------------GLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>SGL     SV  +S +  A ++    GV +LS GL      V  +S +    ++    GVN+LS               GL     SV  +S +    ++    GVN+LS</pattern>
+      <matchSeq start="372" end="481">SGLSTVNSSVNSLSTSTSAGLSTVNSGVRSLSTGLSSTNSSVNSLSTSTSTGLSTVNSGVNSLSTGLSSTNSNVGSLSTGLSSTNSSVNSLSTSTSTGLSTVNSGVNSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0ABP3RGR8_9HYPH" ac="A0ABP3RGR8" length="2673" description="Autotransporter outer membrane beta-barrel domain-containing protein OS=Paenochrobactrum glaciei OX=486407 GN=GCM10008943_27370 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>8.1</expectation>
+      <identity>26.2</identity>
+      <positives>47.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="98">GLISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>G +SV +   +  +G    A++ L       G ++V +   +  AG   N ++   + + S G +S+A+   V  AG G NAL+</pattern>
+      <matchSeq start="1873" end="1955">GDVSVENSGVIITSGNAAYAITALSEGA-VAGAVTVHNTGDVETAGENANGIAAKSLGKTSAGDVSIANSGDVITAGAGSNALT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0ACT2Y793_9BURK" ac="A0ACT2Y793" length="2895" description="ESPR-type extended signal peptide-containing protein OS=Variovorax xiamenensis OX=3093895 GN=SFB74_08910 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>8.1</expectation>
+      <identity>27.4</identity>
+      <positives>47.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="98">SGLRMAQESVGLISVAHQAFVTIAGCGVNALS-GLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALS</querySeq>
+      <pattern>+GL  A  S+  +S +    ++ A  G+N+LS GL      V  +S +      IA    +  +GL  A  S+  +S +    ++ A  G+N+LS</pattern>
+      <matchSeq start="1980" end="2072">TGLSTATSSIDSLSTSTSTGLSTATSGINSLSTGLSTTNSSVASLSTSTST--GIASLSTSTSTGLSTATSSIDSLSTSTSTGLSTATSGINSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0A9D3RUD2_ANGAN" ac="A0A9D3RUD2" length="226" description="Uncharacterized protein OS=Anguilla anguilla OX=7936 GN=ANANG_G00174510 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.7</expectation>
+      <identity>48.7</identity>
+      <positives>59.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="64">TIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVN</querySeq>
+      <pattern>T    GVN L+G+ VAQ FVGL    H A +   GCG+N</pattern>
+      <matchSeq start="113" end="148">TTDSLGVNKLNGVAVAQGFVGL---GHLAAMRYTGCGIN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0A7D6HZE1_9MYCO" ac="A0A7D6HZE1" length="284" description="ABC transporter permease OS=Mycobacterium vicinigordonae OX=1719132 GN=H0P51_21885 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>9.3</expectation>
+      <identity>35.0</identity>
+      <positives>52.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="90">VAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNA---LSGLRM-----AQESVGLISVAHQAFVTIA</querySeq>
+      <pattern>VA Q + T+AG GV AL+G   A   V L++ A  AF   A  G  A   +  +R+     A E++G+ S+A+ A   +A</pattern>
+      <matchSeq start="87" end="166">VAVQGYNTLAGVGVEALTGFASAFANVRLLAPATSAFGLAATIGAGATAQIGAMRINEEIDALEAMGIHSIAYLASTRLA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0ABU2BBW1_9CORY" ac="A0ABU2BBW1" length="286" description="Inner membrane transporter RhtA OS=Corynebacterium felinum OX=131318 GN=J2S37_002662 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>9.3</expectation>
+      <identity>32.6</identity>
+      <positives>47.2</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="106">CGVNALS----GLQVAQEFVGLISVA--------HQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCGVNALSGLRMAREL</querySeq>
+      <pattern>C  NA+     G  VA EFVG I V         H A + +A  GV  +SG++    +VG++     A    AG GV    GL+++R +</pattern>
+      <matchSeq start="89" end="173">CFYNAIESIPLGTAVAIEFVGPIVVGALTSKTLKHAAALVLAAVGVLLISGVQWTDNAVGVL----YALGAAAGWGVYIWVGLKLSRRV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0ABX8TCT3_9CAUL" ac="A0ABX8TCT3" length="160" description="Uncharacterized protein OS=Brevundimonas nasdae OX=172043 GN=KWG56_10025 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.5</expectation>
+      <identity>32.2</identity>
+      <positives>48.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="104">LISVAHQAFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCG-VNALSGLRMAR</querySeq>
+      <pattern>LI+ A +AF   AG  V A+  + VAQ+ V  +S A QA +  A     A  GL  A+++   +  A Q  + ++G     A + L  AR</pattern>
+      <matchSeq start="6" end="93">LIAAAMRAFALAAGTAVVAVPAMAVAQDQVAALSTAIQAAVVQAQADA-AAQGL-SAEQTQAAVEAAIQQTIAVSGASPATATAALGAAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="A0A516GXY3_9PROT" ac="A0A516GXY3" length="347" description="Branched-chain amino acid ABC transporter permease OS=Ferrovibrio terrae OX=2594003 GN=FNB15_03540 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>9.6</expectation>
+      <identity>35.8</identity>
+      <positives>46.9</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="102">AFVTIAGCGVNALSGLQVAQEFVGLISVAHQAFITIAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGCG-VNALSGLRM</querySeq>
+      <pattern>A   I G  V A  GL +     GLIS+AH AF+     GV A S   ++++ V    V   A +T A  G V  L  LR+</pattern>
+      <matchSeq start="46" end="121">AIACIIGIHVIATLGLNITTGNTGLISLAHAAFL-----GVGAYSAAWLSKQGVPFYLVLPLAGLTAAATGIVTGLPSLRV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A7ZV50_ECO24" ac="A7ZV50" length="45" description="4-phosphopantetheinyl transferase EntD OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_4739 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>9.8</expectation>
+      <identity>54.5</identity>
+      <positives>63.6</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="54">AGCGVNALSGLQ------VAQEFVGLISVAHQA</querySeq>
+      <pattern>AGCGVNALSGL         ++ VG I+V HQA</pattern>
+      <matchSeq start="6" end="38">AGCGVNALSGLHNHANSIYCRDHVGRINVVHQA</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>9.8</expectation>
+      <identity>54.5</identity>
+      <positives>63.6</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="59" end="85">AGCGVNALSGLR------MAQESVGLISVAHQA</querySeq>
+      <pattern>AGCGVNALSGL         ++ VG I+V HQA</pattern>
+      <matchSeq start="6" end="38">AGCGVNALSGLHNHANSIYCRDHVGRINVVHQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="A0A168INJ6_AKALE" ac="A0A168INJ6" length="438" description="Aminotransferase class-III OS=Akanthomyces lecanii RCEF 1005 OX=1081108 GN=LEL_02962 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>10.0</expectation>
+      <identity>28.4</identity>
+      <positives>47.4</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="92">NALSGLRMAQESVGLISVAHQAFVTIAGC---GVNALSGLQVAQEFVGLISVAHQAFIT-IAGCGVNALSGLRMAQESVGLISVAHQAFVTIAGC</querySeq>
+      <pattern>N L G   A ES G+ +V  +A     GC       L+G++ A +  G+I +  +   + I+G G++A+ GL+   ++ G       AF    GC</pattern>
+      <matchSeq start="189" end="283">NDLQGAIRAIESEGVAAVILEAMQGSGGCICGTTEFLTGVEKAAKEAGVIFIVDEVMTSRISGAGLSAVHGLKPDLKTFGKYLGGGVAFGAFGGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,3408 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-203115-0046-64399704-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-203115-0046-64399704-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P76323|INTG_ECOLI" type="PROTEIN" length="92"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:31:15+00:00" end="2026-11-13T20:38:06+00:00" search="P0Y0M0DT0H0M411.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="199">
+   <hit number="1" database="SP" id="INTG_ECOLI" ac="P76323" length="92" description="Putative protein IntG OS=Escherichia coli (strain K12) OX=83333 GN=intG PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>193.0</bits>
+      <expectation>2.5e-62</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="92">MVVTTSDVVMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVINNRLQNLHLHAHHFLIRRHQLITHLNPHLHRN</querySeq>
+      <pattern>MVVTTSDVVMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVINNRLQNLHLHAHHFLIRRHQLITHLNPHLHRN</pattern>
+      <matchSeq start="1" end="92">MVVTTSDVVMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVINNRLQNLHLHAHHFLIRRHQLITHLNPHLHRN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="INTG_ECO57" ac="Q8XBB1" length="92" description="Putative lambdoid prophage defective integrase OS=Escherichia coli O157:H7 OX=83334 GN=intG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>425</score>
+      <bits>168.3</bits>
+      <expectation>1.4e-52</expectation>
+      <identity>88.0</identity>
+      <positives>92.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="92">MVVTTSDVVMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVINNRLQNLHLHAHHFLIRRHQLITHLNPHLHRN</querySeq>
+      <pattern>MVVTTSDVVMCQMR SDVQG YRVYGSWMAEN QDQVSI NQ +S+FAPSMPHAVRSDVINNRL NL+LHAH+FLI RHQLITHLNPHLHRN</pattern>
+      <matchSeq start="1" end="92">MVVTTSDVVMCQMRHSDVQGVYRVYGSWMAENFQDQVSISNQIMSKFAPSMPHAVRSDVINNRLHNLYLHAHYFLICRHQLITHLNPHLHRN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ABV0HLP4_9ENTR" ac="A0ABV0HLP4" length="317" description="Site-specific integrase (Fragment) OS=Pseudocitrobacter cyperus OX=3112843 GN=VSR74_15880 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <bits>79.7</bits>
+      <expectation>1.1e-15</expectation>
+      <identity>81.6</identity>
+      <positives>83.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="60">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>QM  +D Q  YRVYGSWMAEN QDQV ILNQKLSEFAPSMPHAV SDVI</pattern>
+      <matchSeq start="266" end="314">QMGHTDAQMVYRVYGSWMAENNQDQVLILNQKLSEFAPSMPHAVGSDVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A0H3EK50_ECO8N" ac="A0A0H3EK50" length="75" description="Integrase OS=Escherichia coli O83:H1 (strain NRG 857C / AIEC) OX=685038 GN=NRG857_09675 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>1.3e-15</expectation>
+      <identity>92.3</identity>
+      <positives>92.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="60">YRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>YRVYGSWMAEN QDQVSILNQKLSE APSMPHAV SDVI</pattern>
+      <matchSeq start="34" end="72">YRVYGSWMAENNQDQVSILNQKLSELAPSMPHAVGSDVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABY3S001_9ENTR" ac="A0ABY3S001" length="392" description="Defective protein IntQ OS=Pseudocitrobacter corydidari OX=2891570 GN=intQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <bits>79.7</bits>
+      <expectation>1.8e-15</expectation>
+      <identity>81.6</identity>
+      <positives>83.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="60">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>QM  +D Q  YRVYGSWMAEN QDQV ILNQKLSEFAPSMPHAV SDVI</pattern>
+      <matchSeq start="341" end="389">QMGHTDAQMVYRVYGSWMAENNQDQVLILNQKLSEFAPSMPHAVGSDVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0ACS9P1Z9_9ENTR" ac="A0ACS9P1Z9" length="324" description="Tyrosine-type recombinase/integrase (Fragment) OS=Huaxiibacter chinensis OX=2899785 GN=ACQ4LJ_20555 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>187</score>
+      <bits>76.6</bits>
+      <expectation>1.6e-14</expectation>
+      <identity>80.9</identity>
+      <positives>83.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="58">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSD</querySeq>
+      <pattern>QM  +D Q  YRVYGSWMAEN QDQV ILNQKLSEFAPSMPHAV SD</pattern>
+      <matchSeq start="276" end="322">QMGHTDAQMVYRVYGSWMAENNQDQVLILNQKLSEFAPSMPHAVGSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0ABX9RZJ8_9ENTR" ac="A0ABX9RZJ8" length="432" description="Integrase OS=Yokenella regensburgei OX=158877 GN=C7387_0655 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>188</score>
+      <bits>77.0</bits>
+      <expectation>1.9e-14</expectation>
+      <identity>81.2</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="59">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDV</querySeq>
+      <pattern>QM  SD Q  YRVYGSWMAEN QDQV ILNQKLS FAPSMPHAV SDV</pattern>
+      <matchSeq start="383" end="430">QMGHSDAQMVYRVYGSWMAENNQDQVVILNQKLSAFAPSMPHAVGSDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0AAX3L6A7_9ENTR" ac="A0AAX3L6A7" length="431" description="Site-specific integrase OS=Enterobacter ludwigii OX=299767 GN=PHA72_15785 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>187</score>
+      <bits>76.6</bits>
+      <expectation>2.6e-14</expectation>
+      <identity>80.9</identity>
+      <positives>83.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="58">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSD</querySeq>
+      <pattern>QM  +D Q  YRVYGSWMAEN QDQV ILNQKLSEFAPSMPHAV SD</pattern>
+      <matchSeq start="383" end="429">QMGHTDAQMVYRVYGSWMAENNQDQVLILNQKLSEFAPSMPHAVGSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0AAE8YSA0_9CAUD" ac="A0AAE8YSA0" length="431" description="Integrase OS=Enterobacter phage vB_EclS_CobraSix OX=2894794 GN=COBRASIX_32 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>187</score>
+      <bits>76.6</bits>
+      <expectation>2.6e-14</expectation>
+      <identity>80.9</identity>
+      <positives>83.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="58">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSD</querySeq>
+      <pattern>QM  +D Q  YRVYGSWMAEN QDQV ILNQKLSEFAPSMPHAV SD</pattern>
+      <matchSeq start="383" end="429">QMGHTDAQMVYRVYGSWMAENNQDQVLILNQKLSEFAPSMPHAVGSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0ABX9EVY8_9ENTR" ac="A0ABX9EVY8" length="431" description="DUF3596 domain-containing protein OS=Enterobacter kobei OX=208224 GN=DP181_22600 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>187</score>
+      <bits>76.6</bits>
+      <expectation>2.6e-14</expectation>
+      <identity>80.9</identity>
+      <positives>83.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="58">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSD</querySeq>
+      <pattern>QM  +D Q  YRVYGSWMAEN QDQV ILNQKLSEFAPSMPHAV SD</pattern>
+      <matchSeq start="383" end="429">QMGHTDAQMVYRVYGSWMAENNQDQVLILNQKLSEFAPSMPHAVGSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0ABY0IZ91_9ENTR" ac="A0ABY0IZ91" length="431" description="Integrase family protein OS=Enterobacter roggenkampii OX=1812935 GN=SAMEA2273443_01458 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>187</score>
+      <bits>76.6</bits>
+      <expectation>2.6e-14</expectation>
+      <identity>80.9</identity>
+      <positives>83.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="58">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSD</querySeq>
+      <pattern>QM  +D Q  YRVYGSWMAEN QDQV ILNQKLSEFAPSMPHAV SD</pattern>
+      <matchSeq start="383" end="429">QMGHTDAQMVYRVYGSWMAENNQDQVLILNQKLSEFAPSMPHAVGSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0ABV1ZF20_9ENTR" ac="A0ABV1ZF20" length="431" description="Site-specific integrase OS=Enterobacter intestinihominis OX=3133180 GN=ABMC12_11510 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <bits>75.1</bits>
+      <expectation>9.2e-14</expectation>
+      <identity>78.7</identity>
+      <positives>80.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="58">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSD</querySeq>
+      <pattern>QM  +D Q  YRVYGSWMAEN QDQV ILNQKLSEFAPSMPHA  SD</pattern>
+      <matchSeq start="383" end="429">QMGHTDAQMVYRVYGSWMAENNQDQVLILNQKLSEFAPSMPHATGSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A2T2XX82_9ENTR" ac="A0A2T2XX82" length="434" description="Integrase OS=Kluyvera genomosp. 2 OX=2774054 GN=C8256_20340 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>1.7e-13</expectation>
+      <identity>73.5</identity>
+      <positives>81.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="60">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>QM  +D Q  YRVYGSWM+EN Q+QV ILNQKLSEF PSMPH+V SDVI</pattern>
+      <matchSeq start="383" end="431">QMGHTDAQMVYRVYGSWMSENNQEQVLILNQKLSEFVPSMPHSVGSDVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0AAW8H217_9ENTR" ac="A0AAW8H217" length="430" description="Site-specific integrase OS=Enterobacter soli OX=885040 GN=RBJ67_02635 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>3.2e-13</expectation>
+      <identity>76.6</identity>
+      <positives>80.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="58">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSD</querySeq>
+      <pattern>QM  +D Q  YRVYGSWMAEN  DQV ILNQKLS+FAPSMPHAV SD</pattern>
+      <matchSeq start="383" end="429">QMGHTDAQMVYRVYGSWMAENNHDQVLILNQKLSDFAPSMPHAVGSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A2D0KPB7_9GAMM" ac="A0A2D0KPB7" length="94" description="Integrase OS=Xenorhabdus stockiae OX=351614 GN=Xsto_02210 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>8.3e-13</expectation>
+      <identity>42.9</identity>
+      <positives>60.7</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="89">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV---RSDVINNRLQNLHLHAHHFLIRRHQLITHLNPHL</querySeq>
+      <pattern>+  QM     Q  + VYG+WM+EN  DQ+ +LN+KL+  AP MP  +    S  I+   + L+LH HHF+IR  QL++ LN HL</pattern>
+      <matchSeq start="11" end="93">IATQMGHVSAQMVHNVYGAWMSENSDDQIKLLNEKLT-IAPYMPQTINEHESLTISQIDKPLNLHIHHFVIRTDQLVSDLNTHL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0ABD5GZI3_9ENTR" ac="A0ABD5GZI3" length="431" description="Site-specific integrase OS=Citrobacter portucalensis OX=1639133 GN=RY846_08970 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>176</score>
+      <bits>72.4</bits>
+      <expectation>8.3e-13</expectation>
+      <identity>78.3</identity>
+      <positives>80.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="57">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRS</querySeq>
+      <pattern>QM  +D Q  YRVYGSWMAEN  DQV ILNQKLSEFAPSMPHAV S</pattern>
+      <matchSeq start="383" end="428">QMGHTDAQMVYRVYGSWMAENNHDQVLILNQKLSEFAPSMPHAVGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0ACC8SDA7_9ENTR" ac="A0ACC8SDA7" length="432" description="Integrase OS=Enterobacter kobei OX=208224 GN=BH713_13030 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>4e-12</expectation>
+      <identity>72.9</identity>
+      <positives>77.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="59">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDV</querySeq>
+      <pattern>QM  SD Q  YRVYGSWMAEN  DQV+ILNQKLS FAP MP AV SD+</pattern>
+      <matchSeq start="383" end="430">QMGHSDAQMVYRVYGSWMAENNMDQVTILNQKLSSFAPPMPRAVGSDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0A085GD71_9ENTR" ac="A0A085GD71" length="58" description="Putative integrase OS=Buttiauxella agrestis ATCC 33320 OX=1006004 GN=GBAG_2454 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.8e-10</expectation>
+      <identity>58.7</identity>
+      <positives>73.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  S+ Q  Y+VYG WMA++  DQ++ILNQKLS F PSMPHA</pattern>
+      <matchSeq start="10" end="55">IASQMGHSNAQMVYQVYGKWMADSDSDQIAILNQKLSSFVPSMPHA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0ACT0PH14_9ENTR" ac="A0ACT0PH14" length="429" description="Site-specific integrase OS=Yokenella regensburgei OX=158877 GN=KXR87_13175 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>4.4e-10</expectation>
+      <identity>63.8</identity>
+      <positives>76.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="58">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSD</querySeq>
+      <pattern>QM  +D Q  Y+VYG WMA+N  DQ++ILNQKLS FAP MPHAV S+</pattern>
+      <matchSeq start="382" end="428">QMGHADAQMVYKVYGRWMADNNLDQIAILNQKLSSFAPPMPHAVGSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0ABY6J8Z4_9ENTR" ac="A0ABY6J8Z4" length="430" description="DUF3596 domain-containing protein OS=Siccibacter colletis OX=1505757 GN=KFZ77_10485 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>154</score>
+      <bits>63.9</bits>
+      <expectation>8.2e-10</expectation>
+      <identity>55.1</identity>
+      <positives>79.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="57">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRS</querySeq>
+      <pattern>+  QM  ++ Q  Y+VYG+WM++N  +Q+++LNQKLS+FAP MPHAVRS</pattern>
+      <matchSeq start="379" end="427">IASQMGHANAQMVYQVYGAWMSDNNSEQIALLNQKLSDFAPPMPHAVRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A4R0GU36_9ENTR" ac="A0A4R0GU36" length="432" description="DUF3596 domain-containing protein OS=Kosakonia quasisacchari OX=2529380 GN=E0L21_18935 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <bits>62.0</bits>
+      <expectation>3.9e-09</expectation>
+      <identity>60.4</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="59">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDV</querySeq>
+      <pattern>QM  +D Q  Y+VYG WMA+N  DQ++ILNQKLS FAP MP AV S++</pattern>
+      <matchSeq start="385" end="432">QMGHADAQMVYKVYGKWMADNNLDQIAILNQKLSAFAPPMPQAVGSNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0ACT2EI84_9ENTR" ac="A0ACT2EI84" length="429" description="Tyrosine-type recombinase/integrase OS=Franconibacter helveticus 1159 OX=1405499 GN=ACP26D_07800 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>5.3e-09</expectation>
+      <identity>55.1</identity>
+      <positives>77.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="57">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRS</querySeq>
+      <pattern>+  QM  ++ Q  Y+VYG+WM++N  +Q++ILNQKLS+FAP MPHAV S</pattern>
+      <matchSeq start="380" end="428">IASQMGHTNAQMVYQVYGAWMSDNNAEQIAILNQKLSDFAPPMPHAVGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0ABZ2DQA0_KLEOR" ac="A0ABZ2DQA0" length="429" description="Site-specific integrase OS=Klebsiella ornithinolytica OX=54291 GN=LM286_17735 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <bits>60.1</bits>
+      <expectation>1.9e-08</expectation>
+      <identity>57.8</identity>
+      <positives>75.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WMAE   +QV++LNQKLS+FAPS+PH</pattern>
+      <matchSeq start="379" end="423">IATQMGHADAQMVYKVYGKWMAEKNTEQVALLNQKLSDFAPSLPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0ABM8MNS6_9ENTR" ac="A0ABM8MNS6" length="430" description="Site-specific tyrosine recombinase XerC OS=Citrobacter youngae OX=133448 GN=GHA_04402 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>4.7e-08</expectation>
+      <identity>57.8</identity>
+      <positives>71.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WM+E   +QVS+LNQ LS FAPSMPH</pattern>
+      <matchSeq start="380" end="424">IAAQMGHADAQMVYKVYGKWMSEKSAEQVSLLNQALSRFAPSMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0ACG2ZQ23_9ENTR" ac="A0ACG2ZQ23" length="426" description="DUF3596 domain-containing protein OS=Enterobacter hormaechei OX=158836 GN=QAA82_010560 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>6.5e-08</expectation>
+      <identity>56.5</identity>
+      <positives>73.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  +D Q  ++VYG WM+EN   QV++LN KLSEFAPS+PHA</pattern>
+      <matchSeq start="376" end="421">IASQMGHADAQMVFQVYGKWMSENNDAQVALLNSKLSEFAPSVPHA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0ACN4X0X0_9CAUD" ac="A0ACN4X0X0" length="419" description="Integrase OS=Klebsiella phage RothC OX=3229748 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>8.8e-08</expectation>
+      <identity>51.1</identity>
+      <positives>74.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +  Q  + VYG+WMA++  DQ+++LNQKLS+FAPSMPH +</pattern>
+      <matchSeq start="369" end="415">IASQMGHASAQMVFNVYGAWMADSSSDQIAMLNQKLSDFAPSMPHGM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A1S8Y9P4_9GAMM" ac="A0A1S8Y9P4" length="425" description="Integrase OS=Izhakiella australiensis OX=1926881 GN=BTJ39_22520 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>8.8e-08</expectation>
+      <identity>56.5</identity>
+      <positives>76.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  ++ Q  Y+VYGSWM+EN + Q SILN+KL+EF PS+PHA</pattern>
+      <matchSeq start="377" end="422">IASQMGHANAQMVYQVYGSWMSENDEAQRSILNEKLNEFVPSLPHA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0ABX8JRF3_9ENTR" ac="A0ABX8JRF3" length="430" description="DUF3596 domain-containing protein OS=Leclercia pneumoniae OX=2815358 GN=KQ929_13400 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>8.8e-08</expectation>
+      <identity>53.8</identity>
+      <positives>71.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="60">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WM+E   +QVSILNQ LS FAPS+PH + S+V+</pattern>
+      <matchSeq start="380" end="430">IATQMGHADAQMVYKVYGKWMSEKNAEQVSILNQALSRFAPSLPHQL-SEVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0AAP2BNF9_KLEOX" ac="A0AAP2BNF9" length="419" description="DUF3596 domain-containing protein OS=Klebsiella oxytoca OX=571 GN=J7S78_27005 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>1.2e-07</expectation>
+      <identity>54.5</identity>
+      <positives>77.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="55">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>QM  +  Q  + VYG+WMA++  DQ+++LNQKLS+FAPSMPH +</pattern>
+      <matchSeq start="372" end="415">QMGHASAQMVFNVYGAWMADSSSDQIAMLNQKLSDFAPSMPHGM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0ABX5K4B7_9ENTR" ac="A0ABX5K4B7" length="429" description="DUF3596 domain-containing protein OS=Cronobacter malonaticus OX=413503 GN=AUM46_07480 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>1.2e-07</expectation>
+      <identity>53.2</identity>
+      <positives>78.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="58">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSD</querySeq>
+      <pattern>QM  ++ Q  Y+VYGSWM++N ++Q+++LNQKLS+FAP MP  + SD</pattern>
+      <matchSeq start="383" end="429">QMGHANSQMVYQVYGSWMSDNNREQITMLNQKLSDFAPPMPQVMGSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0ABN6LP30_9ENTR" ac="A0ABN6LP30" length="430" description="Integrase OS=Phytobacter diazotrophicus OX=395631 GN=PDTA9734_24130 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>1.2e-07</expectation>
+      <identity>61.4</identity>
+      <positives>72.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="52">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>+  QM  S  Q  Y VYG+WMAEN  +QVS+LNQKLS +APSMP</pattern>
+      <matchSeq start="380" end="423">IASQMGHSSAQMVYSVYGAWMAENSAEQVSLLNQKLSAYAPSMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0ABU9VAU7_9ENTR" ac="A0ABU9VAU7" length="430" description="Site-specific integrase OS=Phytobacter palmae OX=1855371 GN=AAIG39_21370 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>1.2e-07</expectation>
+      <identity>61.4</identity>
+      <positives>72.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="52">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>+  QM  S  Q  Y VYG+WMAEN  +QVS+LNQKLS +APSMP</pattern>
+      <matchSeq start="380" end="423">IASQMGHSSAQMVYSVYGAWMAENSAEQVSLLNQKLSAYAPSMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0ABM7VY03_9ENTR" ac="A0ABM7VY03" length="429" description="Integrase OS=Phytobacter diazotrophicus OX=395631 GN=PDTA9734_36030 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <bits>57.4</bits>
+      <expectation>1.6e-07</expectation>
+      <identity>59.1</identity>
+      <positives>77.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="52">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>+  QM  ++ Q  ++VYG WM+E+  +QVSILNQKLSEFAPSMP</pattern>
+      <matchSeq start="380" end="423">IATQMGHANAQMVFKVYGKWMSESSAEQVSILNQKLSEFAPSMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0A3N4P3U6_9GAMM" ac="A0A3N4P3U6" length="425" description="DUF3596 domain-containing protein OS=Candidatus Pantoea deserta OX=1869313 GN=BBB56_05960 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>4.2e-07</expectation>
+      <identity>55.6</identity>
+      <positives>73.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  ++ Q  Y+VYGSWM EN + Q S+LN+KL+EF PSMPH</pattern>
+      <matchSeq start="377" end="421">IASQMGHANAQMVYQVYGSWMKENDEAQRSLLNEKLNEFVPSMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0A097R3J6_HAFAL" ac="A0A097R3J6" length="427" description="Integrase OS=Hafnia alvei FB1 OX=1453496 GN=AT03_13500 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>5.7e-07</expectation>
+      <identity>52.2</identity>
+      <positives>73.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  ++ Q  Y+VYG+WM E   +QV++LNQKLS+FAP MPH+</pattern>
+      <matchSeq start="377" end="422">IASQMGHTNAQMVYQVYGAWMEETNSEQVAMLNQKLSDFAPPMPHS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0AA91ELP1_9GAMM" ac="A0AA91ELP1" length="427" description="Phage integrase OS=Obesumbacterium proteus ATCC 12841 OX=1354268 GN=M993_00004 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>5.7e-07</expectation>
+      <identity>52.2</identity>
+      <positives>73.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  ++ Q  Y+VYG+WM E   +QV++LNQKLS+FAP MPH+</pattern>
+      <matchSeq start="377" end="422">IASQMGHTNAQMVYQVYGAWMEETNSEQVAMLNQKLSDFAPPMPHS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0A1V9DJ96_9GAMM" ac="A0A1V9DJ96" length="434" description="Site-specific integrase OS=Pantoea latae OX=1964541 GN=B2J69_09885 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>5.8e-07</expectation>
+      <identity>53.2</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM   + Q  Y VYG WM+EN  DQV +LN KL++FAPS PH V</pattern>
+      <matchSeq start="378" end="424">IASQMGHRNAQMVYNVYGRWMSENNNDQVDLLNSKLNDFAPSAPHKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A7ZM38_ECO24" ac="A7ZM38" length="426" description="Site-specific recombinase, phage integrase family OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_1786 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>7.9e-07</expectation>
+      <identity>57.1</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM  +D Q  ++VYG WM+EN   QV++LN +LSEFAP+MPH</pattern>
+      <matchSeq start="379" end="420">QMGHADAQMVFKVYGKWMSENNNAQVALLNTQLSEFAPTMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A9J6Q613_9ENTR" ac="A0A9J6Q613" length="427" description="Site-specific integrase OS=Silvania hatchlandensis OX=2926469 GN=M8014_17505 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>7.9e-07</expectation>
+      <identity>57.1</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM  +D Q  ++VYG WM EN  +Q+++L+ KLSEFAPSMPH</pattern>
+      <matchSeq start="380" end="421">QMGHADAQMVFQVYGKWMEENNVEQIAMLSSKLSEFAPSMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A9N8CQQ4_9ENTR" ac="A0A9N8CQQ4" length="429" description="Site-specific tyrosine recombinase XerC OS=Citrobacter werkmanii OX=67827 GN=TML_03298 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>7.9e-07</expectation>
+      <identity>51.0</identity>
+      <positives>69.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="57">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRS</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WM+E   +QVS+LNQ LS FAPS+P ++ S</pattern>
+      <matchSeq start="380" end="428">IATQMGHADAQMVYKVYGKWMSEKSAEQVSLLNQALSHFAPSLPQSMVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="SP" id="INTQ_ECOLI" ac="P76168" length="398" description="Putative defective protein IntQ OS=Escherichia coli (strain K12) OX=83333 GN=intQ PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>1.1e-06</expectation>
+      <identity>57.1</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM  +D Q  ++VYG WM+EN   QV++LN +LSEFAP+MPH</pattern>
+      <matchSeq start="351" end="392">QMGHADAQMVFQVYGKWMSENNNAQVALLNTQLSEFAPTMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A0H3EH60_ECO8N" ac="A0A0H3EH60" length="426" description="Putative defective integrase Qin prophage OS=Escherichia coli O83:H1 (strain NRG 857C / AIEC) OX=685038 GN=NRG857_07905 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>1.1e-06</expectation>
+      <identity>57.1</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM  +D Q  ++VYG WM+EN   QV++LN +LSEFAP+MPH</pattern>
+      <matchSeq start="379" end="420">QMGHADAQMVFQVYGKWMSENNNAQVALLNTQLSEFAPTMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0A9X3YA45_9ENTR" ac="A0A9X3YA45" length="427" description="DUF3596 domain-containing protein OS=Leclercia adecarboxylata OX=83655 GN=VOF76_16900 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>1.1e-06</expectation>
+      <identity>53.5</identity>
+      <positives>76.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="54">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>QM  +D Q  ++VYG WM EN  DQ+++L+ KLS+FAP+MPH+</pattern>
+      <matchSeq start="380" end="422">QMGHADAQMVFQVYGKWMEENNLDQIAMLSSKLSDFAPTMPHS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0AAQ1BH08_ENTAS" ac="A0AAQ1BH08" length="430" description="Site-specific integrase OS=Enterobacter asburiae OX=61645 GN=QAA55_008755 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>1.1e-06</expectation>
+      <identity>51.1</identity>
+      <positives>70.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WM+E   +QVS+LNQ LS FAPS+P ++</pattern>
+      <matchSeq start="380" end="426">IATQMGHTDAQMVYKVYGKWMSEKSAEQVSLLNQALSRFAPSLPQSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A0H3CLP9_ENTCC" ac="A0A0H3CLP9" length="430" description="Integrase OS=Enterobacter cloacae subsp. cloacae (strain ATCC 13047 / DSM 30054 / NBRC 13535 / NCTC 10005 / WDCM 00083 / NCDC 279-56) OX=716541 GN=ECL_02721 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>1.1e-06</expectation>
+      <identity>51.1</identity>
+      <positives>70.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WM+E   +QVS+LNQ LS FAPS+P ++</pattern>
+      <matchSeq start="380" end="426">IATQMGHTDAQMVYKVYGKWMSEKSAEQVSLLNQALSRFAPSLPQSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="B7L5C8_ECO55" ac="B7L5C8" length="431" description="Defective integrase Qin prophage OS=Escherichia coli (strain 55989 / EAEC) OX=585055 GN=intQ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>1.1e-06</expectation>
+      <identity>57.1</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM  +D Q  ++VYG WM+EN   QV++LN +LSEFAP+MPH</pattern>
+      <matchSeq start="384" end="425">QMGHADAQMVFQVYGKWMSENNNAQVALLNTQLSEFAPTMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0AAW8H793_9ENTR" ac="A0AAW8H793" length="430" description="Site-specific integrase OS=Enterobacter soli OX=885040 GN=RBJ67_11555 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>1.5e-06</expectation>
+      <identity>51.1</identity>
+      <positives>70.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WM+E   +QVS+LNQ LS FAPS+P ++</pattern>
+      <matchSeq start="380" end="426">IATQMGHTDAQMVYKVYGRWMSEKSAEQVSLLNQALSRFAPSLPQSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0ACC8SCX7_9ENTR" ac="A0ACC8SCX7" length="437" description="Integrase OS=Enterobacter kobei OX=208224 GN=BH713_12290 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>2e-06</expectation>
+      <identity>48.9</identity>
+      <positives>73.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  +  Q  + VYG+WMA++  +Q+++LNQKL +FAPSMPH</pattern>
+      <matchSeq start="379" end="423">IASQMGHASAQMVFNVYGAWMADSSTEQIAMLNQKLGDFAPSMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0A485B5H7_KLUCR" ac="A0A485B5H7" length="437" description="Site-specific tyrosine recombinase XerC OS=Kluyvera cryocrescens OX=580 GN=NCTC12993_03607 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>2e-06</expectation>
+      <identity>47.8</identity>
+      <positives>73.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  +  Q  + VYG+WMA+N  +Q+++LNQKL++FAP MPH+</pattern>
+      <matchSeq start="379" end="424">IASQMGHASAQMVFNVYGAWMADNNAEQIAMLNQKLADFAPLMPHS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0AAX3LFX9_9ENTR" ac="A0AAX3LFX9" length="430" description="Site-specific integrase OS=Enterobacter ludwigii OX=299767 GN=PHA72_09020 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>128</score>
+      <bits>53.9</bits>
+      <expectation>2.7e-06</expectation>
+      <identity>51.1</identity>
+      <positives>63.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WM+E   +QVSILNQ LS F P MP  +</pattern>
+      <matchSeq start="380" end="426">IATQMGHTDAQMVYKVYGKWMSEKSAEQVSILNQALSHFVPPMPQTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="Q8Z7Y8_SALTI" ac="Q8Z7Y8" length="446" description="Integrase OS=Salmonella typhi OX=90370 GN=int PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>128</score>
+      <bits>53.9</bits>
+      <expectation>2.8e-06</expectation>
+      <identity>48.9</identity>
+      <positives>70.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WM+E   +QVS+LNQ LS +APS+P ++</pattern>
+      <matchSeq start="396" end="442">IATQMGHTDAQMVYKVYGKWMSEKSAEQVSLLNQALSRYAPSLPQSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0ABU1DME2_9ESCH" ac="A0ABU1DME2" length="426" description="Site-specific integrase OS=Escherichia ruysiae OX=2608867 GN=RGV86_01730 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>127</score>
+      <bits>53.5</bits>
+      <expectation>3.7e-06</expectation>
+      <identity>54.8</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM  +D Q  ++VYG WM+EN   QV++LN +LSEFAP++PH</pattern>
+      <matchSeq start="379" end="420">QMGHADAQMVFQVYGKWMSENNNAQVALLNTQLSEFAPTIPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0ABT2E1F8_9ENTR" ac="A0ABT2E1F8" length="426" description="Site-specific integrase OS=Scandinavium hiltneri OX=2926519 GN=MUU47_11360 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>127</score>
+      <bits>53.5</bits>
+      <expectation>3.7e-06</expectation>
+      <identity>51.1</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  ++VYG WM+EN   Q++ILN KL  FAP MPH V</pattern>
+      <matchSeq start="376" end="422">IASQMGHADAQMLFQVYGKWMSENNDVQIAILNSKLGSFAPLMPHEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A7Z8Z9N6_KLETE" ac="A0A7Z8Z9N6" length="426" description="Integrase family protein OS=Klebsiella terrigena OX=577 GN=Int-Tn_2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>127</score>
+      <bits>53.5</bits>
+      <expectation>3.7e-06</expectation>
+      <identity>48.9</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  ++VYG WM+EN   Q++ILN KLS FAP +PH +</pattern>
+      <matchSeq start="376" end="422">IASQMGHADAQMLFQVYGKWMSENNDAQIAILNSKLSSFAPLVPHEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A3N4P460_9GAMM" ac="A0A3N4P460" length="98" description="Tyr recombinase domain-containing protein OS=Candidatus Pantoea deserta OX=1869313 GN=BBB56_06345 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>3.9e-06</expectation>
+      <identity>53.3</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>V  QM  S+ Q  Y+VYGSW+    + Q S+LN KL+EF PSMPH</pattern>
+      <matchSeq start="50" end="94">VAAQMGHSEAQMVYQVYGSWLKGTNEAQRSLLNVKLNEFVPSMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0ABS0DNK3_9GAMM" ac="A0ABS0DNK3" length="135" description="Tyrosine-type recombinase/integrase OS=Rahnella victoriana OX=1510570 GN=IV431_07940 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>122</score>
+      <bits>51.6</bits>
+      <expectation>4.1e-06</expectation>
+      <identity>45.1</identity>
+      <positives>62.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="59">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDV</querySeq>
+      <pattern>+  QM  S  Q  + VYGSWM E+  +QV++LNQKLS + P +PH  +  V</pattern>
+      <matchSeq start="85" end="135">IASQMGHSSAQMVFNVYGSWMPESSAEQVTMLNQKLSSYVPCVPHDAKGAV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0ABT6EDQ0_9ENTR" ac="A0ABT6EDQ0" length="426" description="Tyrosine-type recombinase/integrase OS=Klebsiella huaxiensis OX=2153354 GN=OXR69_016930 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>126</score>
+      <bits>53.1</bits>
+      <expectation>5.1e-06</expectation>
+      <identity>51.1</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  ++VYG WM+EN   Q++ILN KL  FAP MPH V</pattern>
+      <matchSeq start="376" end="422">IASQMGHADAQMLFQVYGKWMSENNDVQIAILNSKLGAFAPLMPHEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0ABU9P8M7_9ENTR" ac="A0ABU9P8M7" length="426" description="DUF3596 domain-containing protein OS=Klebsiella grimontii OX=2058152 GN=AAFL32_25890 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>126</score>
+      <bits>53.1</bits>
+      <expectation>5.1e-06</expectation>
+      <identity>48.9</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  ++VYG WM+EN   Q++ILN KL  FAP MPH +</pattern>
+      <matchSeq start="376" end="422">IASQMGHADAQMLFQVYGKWMSENNDVQIAILNSKLGSFAPLMPHEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0ABY7L8K5_CITFR" ac="A0ABY7L8K5" length="437" description="Site-specific integrase OS=Citrobacter freundii OX=546 GN=O4000_09395 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>126</score>
+      <bits>53.1</bits>
+      <expectation>5.1e-06</expectation>
+      <identity>44.9</identity>
+      <positives>71.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="57">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRS</querySeq>
+      <pattern>+  QM  +  Q  + VYG+WMA++  +Q+++LNQKL++FAP MPH+  S</pattern>
+      <matchSeq start="379" end="427">IASQMGHASAQMVFNVYGAWMADSSAEQIAMLNQKLADFAPLMPHSHES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0ABZ2E3C2_KLEOR" ac="A0ABZ2E3C2" length="426" description="DUF3596 domain-containing protein OS=Klebsiella ornithinolytica OX=54291 GN=LM286_12440 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <bits>52.8</bits>
+      <expectation>7e-06</expectation>
+      <identity>48.9</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  ++VYG WM+EN   Q++ILN KL  FAP MPH +</pattern>
+      <matchSeq start="376" end="422">IASQMGHADAQMLFQVYGKWMSENNDVQIAILNSKLGAFAPLMPHEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0AB34CFN4_9GAMM" ac="A0AB34CFN4" length="428" description="Site-specific integrase OS=Candidatus Pantoea gossypiicola OX=2608008 GN=F3I20_21200 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <bits>52.8</bits>
+      <expectation>7e-06</expectation>
+      <identity>46.9</identity>
+      <positives>67.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="57">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRS</querySeq>
+      <pattern>+  QM  S  Q  + VYG WM EN  +QV++LNQKL+++AP +PH + S</pattern>
+      <matchSeq start="380" end="428">IASQMGHSSAQMVFSVYGKWMPENSGEQVALLNQKLTDYAPYVPHRLTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0ABZ0H757_9ENTR" ac="A0ABZ0H757" length="438" description="Site-specific integrase OS=Citrobacter portucalensis OX=1639133 GN=RY846_10920 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <bits>52.8</bits>
+      <expectation>7e-06</expectation>
+      <identity>45.7</identity>
+      <positives>73.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  +  Q  + VYG+WMA++  +Q+++LNQKL++FAP MPH+</pattern>
+      <matchSeq start="380" end="425">IASQMGHASAQMVFNVYGAWMADSSAEQIAMLNQKLADFAPLMPHS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="I2B9V1_SHIBC" ac="I2B9V1" length="426" description="Putative phage integrase OS=Shimwellia blattae (strain ATCC 29907 / DSM 4481 / JCM 1650 / NBRC 105725 / CDC 9005-74) OX=630626 GN=EBL_c22140 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>9.5e-06</expectation>
+      <identity>51.1</identity>
+      <positives>71.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  +D Q  ++VYG WM+EN + Q++ILN KLS FAP +PH</pattern>
+      <matchSeq start="376" end="420">IATQMGHADAQMLFQVYGKWMSENNEAQLAILNSKLSGFAPPVPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0AA50DJL7_9GAMM" ac="A0AA50DJL7" length="427" description="Tyrosine-type recombinase/integrase OS=Erwinia pyri OX=3062598 GN=Q3V30_12990 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>9.5e-06</expectation>
+      <identity>45.7</identity>
+      <positives>76.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  ++ Q  Y+VYGSWM+EN + Q+++LN+KL++F PS+ H+</pattern>
+      <matchSeq start="379" end="424">IASQMGHANAQMVYQVYGSWMSENDEAQMNLLNEKLNDFVPSLSHS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0A085A9Q0_9ENTR" ac="A0A085A9Q0" length="429" description="Phage integrase OS=Trabulsiella guamensis ATCC 49490 OX=1005994 GN=GTGU_02152 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>9.6e-06</expectation>
+      <identity>48.9</identity>
+      <positives>71.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="56">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVR</querySeq>
+      <pattern>QM  ++ Q  Y VYG+WM++N Q Q+++LNQ L E  PS+PH +R</pattern>
+      <matchSeq start="383" end="427">QMGHANAQMVYNVYGAWMSDNNQSQITLLNQNLCENVPSVPHKLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0A0F6AZG0_SALT1" ac="A0A0F6AZG0" length="430" description="Integrase OS=Salmonella typhimurium (strain 14028s / SGSC 2262) OX=588858 GN=STM14_1140 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>9.6e-06</expectation>
+      <identity>46.8</identity>
+      <positives>70.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WM+E   +QVS+LNQ+L  +APS+P ++</pattern>
+      <matchSeq start="380" end="426">IATQMGHTDAQMVYKVYGKWMSEKSAEQVSLLNQELFRYAPSLPQSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0ABU9PIU2_9ENTR" ac="A0ABU9PIU2" length="437" description="Site-specific integrase OS=Enterobacter quasihormaechei OX=2529382 GN=AAGT82_14280 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>9.6e-06</expectation>
+      <identity>40.8</identity>
+      <positives>71.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="57">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRS</querySeq>
+      <pattern>+  QM  +  Q  + VYG+WMA++  +Q+++LNQ+L++FAP MP ++ S</pattern>
+      <matchSeq start="379" end="427">IASQMGHASAQMVFNVYGAWMADSSSEQIAMLNQRLADFAPQMPQSIHS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0A0H3NF53_SALTS" ac="A0A0H3NF53" length="430" description="Bacteriophage integrase OS=Salmonella typhimurium (strain SL1344) OX=216597 GN=SL1344_0942 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>122</score>
+      <bits>51.6</bits>
+      <expectation>1.8e-05</expectation>
+      <identity>46.8</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WM+E   +QVS+LNQ L  +APS+P ++</pattern>
+      <matchSeq start="380" end="426">IATQMGHTDAQMVYKVYGKWMSEKSAEQVSLLNQALFRYAPSLPQSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="Q8ZQB0_SALTY" ac="Q8ZQB0" length="430" description="Gifsy-2 prophage integrase OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=STM1005 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>122</score>
+      <bits>51.6</bits>
+      <expectation>1.8e-05</expectation>
+      <identity>46.8</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WM+E   +QVS+LNQ L  +APS+P ++</pattern>
+      <matchSeq start="380" end="426">IATQMGHTDAQMVYKVYGKWMSEKSAEQVSLLNQALFRYAPSLPQSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0ABW1VTP5_9GAMM" ac="A0ABW1VTP5" length="430" description="Arm DNA-binding domain-containing protein OS=Tatumella punctata OX=399969 GN=ACFP73_14450 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>121</score>
+      <bits>51.2</bits>
+      <expectation>2.4e-05</expectation>
+      <identity>44.7</identity>
+      <positives>70.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  ++ Q  + VYG+WM +N + Q +ILN+KL++F PS+PH V</pattern>
+      <matchSeq start="379" end="425">IASQMGHTNAQMVHNVYGTWMPDNDESQRAILNEKLNDFVPSLPHGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="G8GJK2_ECOLX" ac="G8GJK2" length="95" description="Integrase (Fragment) OS=Escherichia coli OX=562 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>4.1e-05</expectation>
+      <identity>42.2</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  ++ Q  + VYG+WM +N  +Q+ +LN++LSE  P MPH</pattern>
+      <matchSeq start="47" end="91">IASQMGHTNAQMVFNVYGAWMKDNNHEQIELLNKRLSESVPCMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0A2P5GP91_9ENTR" ac="A0A2P5GP91" length="437" description="Integrase OS=Superficieibacter electus OX=2022662 GN=CHU33_10925 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>4.6e-05</expectation>
+      <identity>44.4</identity>
+      <positives>73.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  +  Q  + VYG+WMA++  +Q+++LN KLS++APS+PH</pattern>
+      <matchSeq start="379" end="423">IASQMGHASAQMVFDVYGAWMADSSAEQIAMLNHKLSDYAPSVPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A085ASJ1_9ENTR" ac="A0A085ASJ1" length="423" description="Integrase OS=Trabulsiella guamensis ATCC 49490 OX=1005994 GN=intR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.2e-05</expectation>
+      <identity>48.9</identity>
+      <positives>68.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  +  Q  + VYGSWM++  QDQV +LNQ+L+ FAP +PH</pattern>
+      <matchSeq start="373" end="417">IASQMGHASAQMVFNVYGSWMSDCSQDQVEMLNQRLAGFAPWVPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="Q8ZQI9_SALTY" ac="Q8ZQI9" length="441" description="Fels-1 prophage integrase OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=STM0893 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.2e-05</expectation>
+      <identity>52.3</identity>
+      <positives>68.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="52">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>+  QM  S+ Q  Y VYG+WMA+N Q QV ILNQ+L+  AP +P</pattern>
+      <matchSeq start="389" end="432">IASQMGHSNAQMVYTVYGAWMADNNQSQVDILNQQLASTAPGVP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0AB34CKN2_9GAMM" ac="A0AB34CKN2" length="95" description="Tyrosine-type recombinase/integrase OS=Candidatus Pantoea gossypiicola OX=2608008 GN=F3I20_08735 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>8.2e-05</expectation>
+      <identity>55.3</identity>
+      <positives>73.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="46">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSE</querySeq>
+      <pattern>V  QM  SD Q  YRVYG+WM+EN  DQ+S++N K+S+</pattern>
+      <matchSeq start="46" end="83">VASQMGHSDAQMVYRVYGAWMSENNTDQLSLINTKMSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0A1X1C2L5_9GAMM" ac="A0A1X1C2L5" length="426" description="Site-specific integrase OS=Pantoea conspicua OX=472705 GN=HA41_00390 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>8.5e-05</expectation>
+      <identity>54.8</identity>
+      <positives>61.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM  S  Q  Y VYG WM EN  DQV++LN   S+ AP MPH</pattern>
+      <matchSeq start="381" end="422">QMGHSSAQMLYNVYGKWMTENNHDQVALLNADFSQNAPPMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="B6XGP6_PROIN" ac="B6XGP6" length="427" description="Site-specific recombinase, phage integrase family OS=Providencia alcalifaciens DSM 30120 OX=520999 GN=PROVALCAL_02532 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>8.5e-05</expectation>
+      <identity>44.4</identity>
+      <positives>63.0</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="62">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVINN</querySeq>
+      <pattern>+  QM  S  +  Y VYG+WM EN +DQ++I+N+     AP MPH + S VIN+</pattern>
+      <matchSeq start="378" end="427">IATQMGHSSAKMIYDVYGAWMKENDKDQIAIMNRN----APHMPHPIESKVINS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0AAJ6MNA7_9ENTR" ac="A0AAJ6MNA7" length="430" description="DUF3596 domain-containing protein OS=Enterobacter kobei OX=208224 GN=DP181_02060 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>8.5e-05</expectation>
+      <identity>44.7</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +D Q  Y+VYG WM+E   +QV++LN+ LS  APS+P ++</pattern>
+      <matchSeq start="380" end="426">IATQMGHTDAQMVYKVYGKWMSEKSGEQVTLLNKALSHIAPSLPQSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0A4R6EWX0_SCAGO" ac="A0A4R6EWX0" length="433" description="Integrase OS=Scandinavium goeteborgense OX=1851514 GN=EC847_101223 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>8.5e-05</expectation>
+      <identity>50.0</identity>
+      <positives>64.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="56">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVR</querySeq>
+      <pattern>+  QM   + Q  Y VYG+WM+EN  DQV ILNQK+   AP +P AV+</pattern>
+      <matchSeq start="380" end="427">IATQMGHRNAQMVYIVYGAWMSENNADQVGILNQKMPATAPVVPQAVQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A7MP83_CROS8" ac="A7MP83" length="427" description="Tyr recombinase domain-containing protein OS=Cronobacter sakazakii (strain ATCC BAA-894) OX=290339 GN=ESA_01608 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>0.00012</expectation>
+      <identity>48.8</identity>
+      <positives>74.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="54">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>QM  ++ +  Y+VYG WM+EN  DQ+SILN+ ++  AP+MPH+</pattern>
+      <matchSeq start="381" end="423">QMGHANARMVYQVYGKWMSENDADQLSILNKSITVNAPTMPHS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0A9N8GTY1_9ENTR" ac="A0A9N8GTY1" length="437" description="Site-specific tyrosine recombinase XerC OS=Citrobacter werkmanii OX=67827 GN=TML_02041 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>0.00012</expectation>
+      <identity>45.5</identity>
+      <positives>72.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="52">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>+  QM  +  Q  + VYG+WMA++  +Q+++LNQKL++FAP MP</pattern>
+      <matchSeq start="379" end="422">IASQMGHASAQMVFNVYGAWMADSSAEQIAMLNQKLADFAPLMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="G8GJN1_ECOLX" ac="G8GJN1" length="166" description="Integrase (Fragment) OS=Escherichia coli OX=562 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.00014</expectation>
+      <identity>42.2</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  ++ Q  + VYG+WM +N  +Q+ +LN++LSE  P MPH</pattern>
+      <matchSeq start="118" end="162">IASQMGHTNAQMVFNVYGAWMKDNNHEQIELLNKRLSESVPCMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0ABT6EC10_9ENTR" ac="A0ABT6EC10" length="430" description="Site-specific integrase OS=Klebsiella huaxiensis OX=2153354 GN=OXR69_013855 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00016</expectation>
+      <identity>51.2</identity>
+      <positives>78.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="52">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>QM  ++ Q  Y+VYG+WM EN   QV++LN++L++FAP+MP</pattern>
+      <matchSeq start="384" end="424">QMGHANAQMVYQVYGTWMPENNAVQVALLNKQLTDFAPTMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A4U3FGK9_9GAMM" ac="A0A4U3FGK9" length="115" description="Tyrosine-type recombinase/integrase OS=Erwinia persicina OX=55211 GN=IFT93_19705 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>0.00017</expectation>
+      <identity>51.3</identity>
+      <positives>71.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="47">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEF</querySeq>
+      <pattern>V  QM  +D Q  YRVYG+WM EN  DQ++++N KL++F</pattern>
+      <matchSeq start="66" end="104">VASQMGHADAQMVYRVYGTWMTENNSDQLTLMNAKLNDF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A9MIL2_SALAR" ac="A9MIL2" length="84" description="Tyr recombinase domain-containing protein OS=Salmonella arizonae (strain ATCC BAA-731 / CDC346-86 / RSK2980) OX=41514 GN=SARI_02036 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>108</score>
+      <bits>46.2</bits>
+      <expectation>0.00018</expectation>
+      <identity>45.5</identity>
+      <positives>65.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="52">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>+  QM  ++ Q  Y +YG+WM +N Q QV ILNQ+L+  AP +P</pattern>
+      <matchSeq start="32" end="75">IAAQMGHANAQMVYTIYGAWMFDNNQSQVDILNQRLAATAPRVP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0ABX0RLI5_9GAMM" ac="A0ABX0RLI5" length="425" description="Site-specific integrase OS=Candidatus Pantoea communis OX=2608354 GN=F3J37_02180 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>0.00022</expectation>
+      <identity>51.2</identity>
+      <positives>62.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="54">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>QM  S  Q  Y VYG WM EN  DQ+++LN + S  AP MPH+</pattern>
+      <matchSeq start="380" end="422">QMGHSSAQMLYTVYGKWMTENNLDQMAVLNAEFSRNAPQMPHS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0A2M9WIC7_9GAMM" ac="A0A2M9WIC7" length="425" description="Site-specific integrase OS=Pantoea rodasii OX=1076549 GN=PRCB_01215 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>0.00022</expectation>
+      <identity>51.2</identity>
+      <positives>62.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="54">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>QM  S  Q  Y VYG WM EN  DQ+++LN + S  AP MPH+</pattern>
+      <matchSeq start="380" end="422">QMGHSSAQMLYTVYGKWMTENNLDQMAVLNAEFSRNAPQMPHS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0A1W6B858_9GAMM" ac="A0A1W6B858" length="430" description="Integrase OS=Pantoea alhagi OX=1891675 GN=B1H58_15225 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>0.00022</expectation>
+      <identity>52.4</identity>
+      <positives>71.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM  ++ Q  Y+VYG+WM EN  +QVS+LN KL+EF   MP+</pattern>
+      <matchSeq start="381" end="422">QMGHANSQMVYQVYGAWMPENNNEQVSLLNSKLNEFVLHMPY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0ABX3UVS5_9GAMM" ac="A0ABX3UVS5" length="426" description="Integrase OS=Pantoea septica OX=472695 GN=HA46_04830 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.0003</expectation>
+      <identity>47.7</identity>
+      <positives>65.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="52">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>+  QM   + Q  Y VYG WM++N  +QV +LN KL+ FAPS+P</pattern>
+      <matchSeq start="378" end="421">IASQMGHRNAQMLYTVYGKWMSDNNSEQVDLLNSKLNAFAPSVP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0A1B7IQM8_9ENTR" ac="A0A1B7IQM8" length="427" description="Putative transposase OS=Buttiauxella brennerae ATCC 51605 OX=1354251 GN=M975_1936 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.0003</expectation>
+      <identity>44.7</identity>
+      <positives>59.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +  Q  Y VYG WM++N  DQ+SI+N   SE  P MP A+</pattern>
+      <matchSeq start="379" end="425">IAAQMGHTSAQMVYNVYGKWMSDNNGDQMSIMNANFSEDVPQMPQAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0A0P0ZDB0_9CAUD" ac="A0A0P0ZDB0" length="428" description="Integrase OS=Stx2-converting phage Stx2a_WGPS2 OX=1226260 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.0003</expectation>
+      <identity>42.2</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  ++ Q  + VYG+WM +N  +Q+ +LN++LSE  P MPH</pattern>
+      <matchSeq start="380" end="424">IASQMGHTNAQMVFNVYGAWMKDNNHEQIELLNKRLSESVPCMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="Q6HA01_9CAUD" ac="Q6HA01" length="428" description="Integrase OS=Enterobacteria phage BP-4795 OX=196242 GN=int PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.0003</expectation>
+      <identity>42.2</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  ++ Q  + VYG+WM +N  +Q+ +LN++LSE  P MPH</pattern>
+      <matchSeq start="380" end="424">IASQMGHTNAQMVFNVYGAWMKDNNHEQIELLNKRLSESVPCMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="H6WZF6_9CAUD" ac="H6WZF6" length="428" description="Integrase OS=Escherichia phage JLK-2012 OX=1147722 GN=int PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.0003</expectation>
+      <identity>42.2</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  ++ Q  + VYG+WM +N  +Q+ +LN++LSE  P MPH</pattern>
+      <matchSeq start="380" end="424">IASQMGHTNAQMVFNVYGAWMKDNNHEQIELLNKRLSESVPCMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="B6DZ48_9CAUD" ac="B6DZ48" length="428" description="Integrase OS=Enterobacteria phage YYZ-2008 OX=564886 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.0003</expectation>
+      <identity>42.2</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  ++ Q  + VYG+WM +N  +Q+ +LN++LSE  P MPH</pattern>
+      <matchSeq start="380" end="424">IASQMGHTNAQMVFNVYGAWMKDNNHEQIELLNKRLSESVPCMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A8B1H3_ECO57" ac="A8B1H3" length="428" description="Integrase OS=Escherichia coli O157:H7 OX=83334 GN=ECs_3013 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.0003</expectation>
+      <identity>42.2</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  ++ Q  + VYG+WM +N  +Q+ +LN++LSE  P MPH</pattern>
+      <matchSeq start="380" end="424">IASQMGHTNAQMVFNVYGAWMKDNNHEQIELLNKRLSESVPCMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0AB34CH45_9GAMM" ac="A0AB34CH45" length="430" description="Site-specific integrase OS=Candidatus Pantoea gossypiicola OX=2608008 GN=F3I20_16200 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.0003</expectation>
+      <identity>46.8</identity>
+      <positives>63.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  S  Q  Y VYGSWM E+   QV++LN+KL+   P MPH++</pattern>
+      <matchSeq start="380" end="426">IATQMGHSSAQMVYSVYGSWMPESSAGQVAMLNEKLTGCVPPMPHSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="Q3Z079_SHISS" ac="Q3Z079" length="567" description="Integrase OS=Shigella sonnei (strain Ss046) OX=300269 GN=SSON_2182 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.0003</expectation>
+      <identity>42.2</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  ++ Q  + VYG+WM +N  +Q+ +LN++LSE  P MPH</pattern>
+      <matchSeq start="519" end="563">IASQMGHTNAQMVFNVYGAWMKDNNHEQIELLNKRLSESVPCMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="A0A0U3JZ18_9GAMM" ac="A0A0U3JZ18" length="425" description="Integrase OS=Pantoea vagans OX=470934 GN=LK04_10010 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>0.0004</expectation>
+      <identity>52.4</identity>
+      <positives>61.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM  S  Q  Y VYG WM EN  DQ+++LN + S  AP MPH</pattern>
+      <matchSeq start="380" end="421">QMGHSSAQMIYTVYGKWMTENNLDQMAVLNAEFSRNAPPMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0ACC5PUU2_ENTAG" ac="A0ACC5PUU2" length="426" description="DUF3596 domain-containing protein OS=Enterobacter agglomerans OX=549 GN=IFT41_23070 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00055</expectation>
+      <identity>55.3</identity>
+      <positives>73.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="46">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSE</querySeq>
+      <pattern>V  QM  SD Q  YRVYG+WM+EN  DQ+S++N K+S+</pattern>
+      <matchSeq start="377" end="414">VASQMGHSDAQMVYRVYGAWMSENNTDQLSLINTKMSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="A0A0H3FXY9_KLEAK" ac="A0A0H3FXY9" length="426" description="Putative phage integrase OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 / CCUG 1429 / JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006 / CDC 819-56) OX=1028307 GN=EAE_22510 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00055</expectation>
+      <identity>44.7</identity>
+      <positives>59.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +  Q  Y VYG WM +N  +Q++ILN     FAPSMP A+</pattern>
+      <matchSeq start="378" end="424">IASQMGHTSAQMVYNVYGKWMTDNNSNQMAILNANFGGFAPSMPQAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="TR" id="A0A447V1C2_9ENTR" ac="A0A447V1C2" length="427" description="Integrase OS=Cedecea lapagei OX=158823 GN=Int-Tn PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00055</expectation>
+      <identity>47.8</identity>
+      <positives>58.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  +  Q  Y VYG WM++N  DQ+SILN   SE  P MP A</pattern>
+      <matchSeq start="379" end="424">IAAQMGHTSAQMVYNVYGKWMSDNNGDQMSILNANFSEDVPMMPQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="H3RBH1_PANSE" ac="H3RBH1" length="430" description="Integrase OS=Pantoea stewartii subsp. stewartii DC283 OX=660596 GN=DSJ_09855 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00055</expectation>
+      <identity>38.0</identity>
+      <positives>62.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="58">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSD</querySeq>
+      <pattern>+  QM  +  Q  Y VYG WM E+  +Q++ LNQ+  + AP +PH+ ++D</pattern>
+      <matchSeq start="380" end="429">IASQMGHASAQMVYNVYGRWMPESSMEQINTLNQQFRDSAPLVPHSAKAD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="A0ABT9T787_9GAMM" ac="A0ABT9T787" length="442" description="Integrase OS=[Curtobacterium] plantarum OX=221276 GN=J2X94_001448 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00056</expectation>
+      <identity>55.3</identity>
+      <positives>73.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="46">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSE</querySeq>
+      <pattern>V  QM  SD Q  YRVYG+WM+EN  DQ+S++N K+S+</pattern>
+      <matchSeq start="393" end="430">VASQMGHSDAQMVYRVYGAWMSENNTDQLSLINTKMSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="TR" id="A0AAX3LHM6_9ENTR" ac="A0AAX3LHM6" length="410" description="Site-specific integrase OS=Enterobacter ludwigii OX=299767 GN=PHA72_11235 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>0.00075</expectation>
+      <identity>52.4</identity>
+      <positives>59.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM  S  Q  + VYG WM EN  DQV ILN   ++ AP MPH</pattern>
+      <matchSeq start="365" end="406">QMGHSSAQMLFTVYGKWMTENNHDQVGILNASFTQNAPLMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="A0ACG2ZPC8_9ENTR" ac="A0ACG2ZPC8" length="426" description="Site-specific integrase OS=Enterobacter hormaechei OX=158836 GN=QAA82_009780 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>0.00076</expectation>
+      <identity>52.4</identity>
+      <positives>59.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM  S  Q  + VYG WM EN  DQV ILN   ++ AP MPH</pattern>
+      <matchSeq start="381" end="422">QMGHSSAQMLFTVYGKWMTENNHDQVGILNASFTQNAPLMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0A2I5T8J2_PROCF" ac="A0A2I5T8J2" length="427" description="Site-specific integrase OS=Prodigiosinella confusarubida OX=104623 GN=Ser39006_014430 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>0.001</expectation>
+      <identity>47.8</identity>
+      <positives>56.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  +  Q  Y VYG WM +N  DQ+SILN      AP MPHA</pattern>
+      <matchSeq start="379" end="424">IATQMGHTSAQMVYSVYGKWMTDNNVDQMSILNASFISDAPPMPHA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="TR" id="A0A1X0WI64_9GAMM" ac="A0A1X0WI64" length="427" description="Site-specific integrase OS=Rouxiella badensis OX=1646377 GN=BS640_06455 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>0.001</expectation>
+      <identity>48.8</identity>
+      <positives>62.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="54">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>QM  +  Q  Y VYG WM EN  DQ+SI+N   ++ AP+MP A</pattern>
+      <matchSeq start="382" end="424">QMGHNSAQMVYNVYGKWMTENNSDQMSIMNAGFNQNAPNMPQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0ABW6CK22_RAHSY" ac="A0ABW6CK22" length="427" description="Arm DNA-binding domain-containing protein OS=Rahnella sp. (strain Y9602) OX=2703885 GN=ACFPK4_26780 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.0026</expectation>
+      <identity>47.7</identity>
+      <positives>65.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="52">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>+  QM   + Q  ++VYG+WM EN   QV +LN KL+ FAPS+P</pattern>
+      <matchSeq start="379" end="422">IASQMGHVNSQMVHQVYGAWMQENNIGQVELLNSKLASFAPSLP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="A0ABM9SWG9_YERAL" ac="A0ABM9SWG9" length="193" description="Transposase OS=Yersinia aldovae OX=29483 GN=ERS137966_03184 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0034</expectation>
+      <identity>43.5</identity>
+      <positives>60.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  +  Q  + VYG WM ++  DQ+++LN KL   AP MPHA</pattern>
+      <matchSeq start="143" end="188">IAMQMGHTSAQMLFSVYGDWMPDHNADQLALLNAKLGTNAPHMPHA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="A0ABX5R227_9GAMM" ac="A0ABX5R227" length="423" description="DUF3596 domain-containing protein OS=Yersinia hibernica OX=2339259 GN=D5F51_14380 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.0036</expectation>
+      <identity>40.8</identity>
+      <positives>55.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="57">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRS</querySeq>
+      <pattern>+  QM  S  Q  Y+VYG WM  N  +QV ++N K+ +  P MPH   S</pattern>
+      <matchSeq start="373" end="421">IAAQMGHSSPQMLYQVYGDWMPSNNVEQVELINAKIKQNVPPMPHKAAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="A0ABX6F5W3_YERIN" ac="A0ABX6F5W3" length="423" description="DUF3596 domain-containing protein OS=Yersinia intermedia OX=631 GN=FOC37_07720 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.0036</expectation>
+      <identity>40.8</identity>
+      <positives>55.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="57">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRS</querySeq>
+      <pattern>+  QM  S  Q  Y+VYG WM  N  +QV ++N K+ +  P MPH   S</pattern>
+      <matchSeq start="373" end="421">IAAQMGHSSPQMLYQVYGDWMPSNNVEQVELINAKIKQNVPPMPHKAAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="H3RDI0_PANSE" ac="H3RDI0" length="427" description="Tyr recombinase domain-containing protein OS=Pantoea stewartii subsp. stewartii DC283 OX=660596 GN=DSJ_11975 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.0036</expectation>
+      <identity>50.0</identity>
+      <positives>71.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="46">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSE</querySeq>
+      <pattern>V  QM  SD Q  YRVYG+WM EN  DQ+S++N ++++</pattern>
+      <matchSeq start="377" end="414">VASQMGHSDAQMVYRVYGAWMTENNSDQLSLINTRMND</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="TR" id="A0A1B8HS64_9GAMM" ac="A0A1B8HS64" length="429" description="Integrase OS=Morganella psychrotolerans OX=368603 GN=AYY18_15580 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.0036</expectation>
+      <identity>46.5</identity>
+      <positives>60.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="54">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>QM  +  Q  Y VYG WM++N   Q+ ILN   ++ AP MPHA</pattern>
+      <matchSeq start="382" end="424">QMGHTSAQMVYTVYGKWMSDNNSSQMDILNASFTQNAPLMPHA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0A077ZHS4_TRITR" ac="A0A077ZHS4" length="554" description="MAPEG and Phage integrase and DUF72 domain contai ning protein OS=Trichuris trichiura OX=36087 GN=TTRE_0000825601 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.0037</expectation>
+      <identity>37.8</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  +  Q  + VYG+WM ++  +Q+++LNQKL+++ P M H</pattern>
+      <matchSeq start="215" end="259">IASQMGHASAQMVFNVYGAWMTDSNAEQIAMLNQKLADYVPMMSH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="TR" id="A0A1X1BRM5_9GAMM" ac="A0A1X1BRM5" length="313" description="Tyr recombinase domain-containing protein OS=Pantoea conspicua OX=472705 GN=HA41_17985 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0047</expectation>
+      <identity>42.2</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  ++ Q  Y+VYGSWM EN + Q  ++++KL+EF P + H</pattern>
+      <matchSeq start="265" end="309">IASQMGHANAQRVYQVYGSWMKENDEAQRILMHEKLNEFVPLVSH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="A0ABT5LND4_9GAMM" ac="A0ABT5LND4" length="426" description="Site-specific integrase OS=Xenorhabdus anantnagensis OX=3025875 GN=PSI14_00010 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0049</expectation>
+      <identity>43.5</identity>
+      <positives>60.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  +  Q  Y VYG W+++N Q+Q++ILN   S   PSMP A</pattern>
+      <matchSeq start="378" end="423">IATQMGHTSAQMVYHVYGKWISDNNQNQLNILNADFSSNVPSMPQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="A0ABU9FAV1_9ENTR" ac="A0ABU9FAV1" length="427" description="Site-specific integrase OS=Klebsiella lignicola OX=3040939 GN=QFI96_017625 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0049</expectation>
+      <identity>42.6</identity>
+      <positives>57.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +  Q  Y VYG WM++N  DQ+SILN   +  AP MP  +</pattern>
+      <matchSeq start="379" end="425">IASQMGHTSAQMVYNVYGKWMSDNNVDQLSILNANFTSDAPLMPQTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="A0ABT6EE87_9ENTR" ac="A0ABT6EE87" length="430" description="Site-specific integrase OS=Klebsiella huaxiensis OX=2153354 GN=OXR69_017945 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0049</expectation>
+      <identity>42.9</identity>
+      <positives>63.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="57">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRS</querySeq>
+      <pattern>+  QM  ++    +RVYG+WM E+   QV+ILNQ L E AP++P   +S</pattern>
+      <matchSeq start="380" end="428">IASQMGHANALMVHRVYGAWMPESSSSQVAILNQSLRENAPTVPQREKS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="A0ACT2EIE8_9ENTR" ac="A0ACT2EIE8" length="428" description="Arm DNA-binding domain-containing protein OS=Franconibacter helveticus 1159 OX=1405499 GN=ACP26D_09030 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.0067</expectation>
+      <identity>47.7</identity>
+      <positives>56.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="52">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>+  QM  +  Q  Y VYG WM +N  DQ+SILN   S  AP MP</pattern>
+      <matchSeq start="379" end="422">IASQMGHTSAQMVYNVYGKWMTDNNVDQMSILNANFSSDAPLMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0ABX3TUL2_9GAMM" ac="A0ABX3TUL2" length="428" description="Site-specific integrase OS=Rouxiella silvae OX=1646373 GN=BS639_22810 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.0067</expectation>
+      <identity>48.8</identity>
+      <positives>63.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="52">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>QM  +  Q  Y VYG WM+EN  DQ+SI+N   ++ AP MP</pattern>
+      <matchSeq start="383" end="423">QMGHNSAQMVYNVYGKWMSENNADQMSIMNAGFNQNAPHMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="TR" id="A0ACH1C681_YEREN" ac="A0ACH1C681" length="265" description="Phage integrase OS=Yersinia enterocolitica subsp. enterocolitica OX=150052 GN=int PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0084</expectation>
+      <identity>45.5</identity>
+      <positives>61.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="55">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>QM  +  Q  Y VYG WM+EN  DQ++ILN   ++ AP MP  +</pattern>
+      <matchSeq start="220" end="263">QMGHASAQMIYNVYGKWMSENNLDQMAILNAGFNDNAPLMPQTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="TR" id="A0A2T3LAI8_9GAMM" ac="A0A2T3LAI8" length="411" description="Integrase OS=Photobacterium indicum OX=81447 GN=C9J47_07470 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0092</expectation>
+      <identity>43.9</identity>
+      <positives>65.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="52">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>QM  S  +  Y+ YG W++E+ Q+Q+ +LN+K  E AP MP</pattern>
+      <matchSeq start="364" end="404">QMGHSSAKEIYQTYGDWVSEHTQNQLDVLNKKYGENAPKMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="TR" id="Q6LSL2_PHOPR" ac="Q6LSL2" length="411" description="Hypothetical integrase for prophage CP-933V OS=Photobacterium profundum (strain SS9) OX=298386 GN=STY4680 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0092</expectation>
+      <identity>43.9</identity>
+      <positives>65.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="52">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>QM  S  +  Y+ YG W++E+ Q+Q+ +LN+K  E AP MP</pattern>
+      <matchSeq start="364" end="404">QMGHSSAKEIYQTYGDWVSEHTQNQLDVLNKKYGENAPKMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="TR" id="A0ABX4SM67_9GAMM" ac="A0ABX4SM67" length="428" description="Integrase OS=Pantoea endophytica OX=92488 GN=PZBJ_20105 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0092</expectation>
+      <identity>44.4</identity>
+      <positives>64.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>V  QM  ++ Q  Y VYG+WM EN  +QVS++N K ++ A  MP+</pattern>
+      <matchSeq start="378" end="422">VAAQMGHANSQMVYLVYGTWMQENNDEQVSLINSKFADVALHMPY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="TR" id="A0ABX0QN59_9GAMM" ac="A0ABX0QN59" length="433" description="DUF3596 domain-containing protein OS=Candidatus Pantoea formicae OX=2608355 GN=F3J38_00320 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0092</expectation>
+      <identity>50.0</identity>
+      <positives>59.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="52">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>+  QM  S  Q  Y VYG+WM  N  +QV +LNQKL   AP MP</pattern>
+      <matchSeq start="380" end="423">IASQMGHSSAQMVYTVYGAWMPGNSVNQVEMLNQKLGGNAPLMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="TR" id="A0ABM5SFM6_YERRO" ac="A0ABM5SFM6" length="170" description="Phage integrase family protein OS=Yersinia rohdei OX=29485 GN=CH64_3209 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.01</expectation>
+      <identity>42.2</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  +  Q  + VYG WM ++  DQ+++LN KL   AP MPH</pattern>
+      <matchSeq start="120" end="164">IAMQMGHTSAQMLFSVYGDWMPDHNADQLALLNAKLGSNAPYMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="TR" id="A0ABR6U1E8_CITBR" ac="A0ABR6U1E8" length="427" description="DUF3596 domain-containing protein OS=Citrobacter braakii OX=57706 GN=H6P72_23115 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.01</expectation>
+      <identity>41.3</identity>
+      <positives>54.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  +  Q  Y VYG WM +N  +Q++ILN       P MPHA</pattern>
+      <matchSeq start="379" end="424">IAAQMGHTSAQMVYSVYGKWMTDNNDNQLAILNANFGGNTPQMPHA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="TR" id="Q20GI2_9VIRU" ac="Q20GI2" length="428" description="Int protein OS=Phage 258-320 OX=356350 GN=int PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.01</expectation>
+      <identity>42.2</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="56">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVR</querySeq>
+      <pattern>QM  +  Q  + VYG+WM +N   Q+ +LN++L+E  P MPH  R</pattern>
+      <matchSeq start="383" end="427">QMGHAYAQMVFNVYGAWMKDNNIGQIELLNKQLTESVPYMPHRAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="TR" id="A0ABU4E7X1_9ENTR" ac="A0ABU4E7X1" length="437" description="Site-specific integrase OS=Atlantibacter subterraneus OX=255519 GN=R4P48_21455 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.01</expectation>
+      <identity>42.5</identity>
+      <positives>72.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="51">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSM</querySeq>
+      <pattern>QM  +  Q  + VYG+WMA++  +Q+++LNQKL++F P +</pattern>
+      <matchSeq start="382" end="421">QMGHASAQMVFNVYGAWMADSNAEQIAMLNQKLTDFVPQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="130" database="TR" id="A0ABX5QWK7_9GAMM" ac="A0ABX5QWK7" length="432" description="DUF3596 domain-containing protein OS=Yersinia hibernica OX=2339259 GN=D5F51_03255 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.02</expectation>
+      <identity>42.2</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  +  Q  + VYG WM ++  DQ+++LN KL   AP MPH</pattern>
+      <matchSeq start="382" end="426">IAMQMGHTSAQMLFSVYGDWMPDHNADQLALLNAKLGSNAPYMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="131" database="TR" id="A0A9X8P5H9_9GAMM" ac="A0A9X8P5H9" length="38" description="Defective integrase OS=Pectobacterium zantedeschiae OX=2034769 GN=CLR69_05520 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.02</expectation>
+      <identity>51.5</identity>
+      <positives>69.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="54">YRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>Y VY  WM++N  DQ+SILN  +++  PSMP A</pattern>
+      <matchSeq start="3" end="35">YNVYEKWMSDNNGDQLSILNTTVTDDTPSMPQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="132" database="TR" id="A0ACT1RQ24_9GAMM" ac="A0ACT1RQ24" length="263" description="Site-specific integrase OS=Parasalinivibrio latis OX=2952610 GN=NF212_07355 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.03</expectation>
+      <identity>43.9</identity>
+      <positives>65.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="52">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>QM  +  +  Y+ YG W++E+  DQ+++LN KLS  AP MP</pattern>
+      <matchSeq start="216" end="256">QMGHASAKEIYQTYGDWVSEHTGDQLALLNTKLSSSAPYMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="133" database="TR" id="H5UWK0_ATLHE" ac="H5UWK0" length="427" description="Putative prophage Rac integrase OS=Atlantibacter hermannii NBRC 105704 OX=1115512 GN=intR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.03</expectation>
+      <identity>40.4</identity>
+      <positives>53.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +  Q  Y VYG WM +N  +Q+ ILN    E  P MP A+</pattern>
+      <matchSeq start="379" end="425">IASQMGHTSAQMVYNVYGKWMTDNNTNQMEILNANFGEDVPPMPQAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="134" database="TR" id="A0A9N8CU25_9ENTR" ac="A0A9N8CU25" length="427" description="Integrase OS=Citrobacter werkmanii OX=67827 GN=Int-Tn PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.03</expectation>
+      <identity>39.1</identity>
+      <positives>56.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  +  Q  Y VYG WM++N  +Q++ILN       P +PHA</pattern>
+      <matchSeq start="379" end="424">IAAQMGHTSAQMVYSVYGKWMSDNNDNQLAILNANFGGNVPQIPHA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="135" database="TR" id="A0ABM6USR3_9GAMM" ac="A0ABM6USR3" length="429" description="Integrase OS=Yersinia massiliensis OX=419257 GN=DA391_08945 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.03</expectation>
+      <identity>37.8</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  +  Q  + VYG WM ++  +Q++++N K S+ AP MPH</pattern>
+      <matchSeq start="381" end="425">IASQMGHASAQMVFSVYGEWMPDSNDEQMALINAKFSQNAPLMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="136" database="TR" id="A0A4V1AAB6_9ENTR" ac="A0A4V1AAB6" length="427" description="DUF3596 domain-containing protein OS=Citrobacter arsenatis OX=2546350 GN=E1B03_15645 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.04</expectation>
+      <identity>41.3</identity>
+      <positives>54.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="54">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>+  QM  +  Q  Y VYG WM +N  +Q++ILN      AP MP A</pattern>
+      <matchSeq start="379" end="424">IAAQMGHTSAQMVYSVYGKWMTDNNDNQLAILNANFGGNAPQMPQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="137" database="TR" id="A0ABQ1G854_9GAMM" ac="A0ABQ1G854" length="427" description="Integrase OS=Hafnia psychrotolerans OX=1477018 GN=GCM10011328_11820 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.04</expectation>
+      <identity>45.5</identity>
+      <positives>59.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="55">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>QM  +  Q  Y VYG WM+EN  +Q+ ILN   +  AP MP A+</pattern>
+      <matchSeq start="382" end="425">QMGHTSSQMVYSVYGKWMSENNNNQMDILNAGFAGDAPHMPRAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="138" database="TR" id="A0ABR6RYR9_9ENTR" ac="A0ABR6RYR9" length="430" description="Site-specific integrase OS=Kluyvera sichuanensis OX=2725494 GN=HII27_21490 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.04</expectation>
+      <identity>45.0</identity>
+      <positives>72.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="51">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSM</querySeq>
+      <pattern>QM  +D Q  +RVYG+WM ++   QV +LN++LSE+ P++</pattern>
+      <matchSeq start="383" end="422">QMGHADAQMVFRVYGAWMPDSNALQVEMLNRQLSEYVPTV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="139" database="TR" id="A0ACH3ISW8_9GAMM" ac="A0ACH3ISW8" length="255" description="Tyrosine-type recombinase/integrase OS=Yersinia vastinensis OX=2890318 GN=ACIOG0_13315 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.05</expectation>
+      <identity>37.8</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  +  Q  + VYG WM ++  +Q++++N K S  AP MPH</pattern>
+      <matchSeq start="207" end="251">IASQMGHASAQMVFSVYGEWMPDSNDEQMTLINAKFSRNAPLMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="140" database="TR" id="A0A419NEU4_9GAMM" ac="A0A419NEU4" length="427" description="DUF3596 domain-containing protein OS=Rahnella woolbedingensis OX=1510574 GN=D6C13_02165 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.06</expectation>
+      <identity>45.5</identity>
+      <positives>59.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="55">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>QM  +  Q  Y VYG WM+EN  +Q+ ILN   +  AP MP A+</pattern>
+      <matchSeq start="382" end="425">QMGHTSSQMVYSVYGKWMSENNSNQMDILNAGFTGDAPYMPRAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="141" database="TR" id="A0ABM9S8A8_9GAMM" ac="A0ABM9S8A8" length="427" description="Transposase OS=Yersinia nurmii OX=685706 GN=xerC_2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.06</expectation>
+      <identity>43.2</identity>
+      <positives>59.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="55">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>QM  +  Q  Y VYG WM+EN  +Q+ ILN + +  AP MP  +</pattern>
+      <matchSeq start="382" end="425">QMGHTSSQMVYSVYGKWMSENNSNQMDILNARFTGDAPYMPRVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="142" database="TR" id="A0ABX4W990_VIBDI" ac="A0ABX4W990" length="415" description="Integrase OS=Vibrio diazotrophicus OX=685 GN=C1O25_18125 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.08</expectation>
+      <identity>39.0</identity>
+      <positives>65.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="52">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>QM  S  +  Y+ YG W++++ Q+Q+ +LN K  + AP+MP</pattern>
+      <matchSeq start="368" end="408">QMGHSSAKEVYQTYGDWVSDHTQNQLDMLNNKYGQNAPNMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="143" database="TR" id="A0ABX9ATI1_9ENTR" ac="A0ABX9ATI1" length="425" description="Site-specific integrase OS=Symbiopectobacterium purcellii OX=2871826 GN=K6K13_08195 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.11</expectation>
+      <identity>38.3</identity>
+      <positives>55.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  QM  +  Q  + VYG WM +N   Q+SILN+  S+  P MP  +</pattern>
+      <matchSeq start="375" end="421">IASQMGHTSAQMVFNVYGKWMKDNNDTQMSILNRDFSDNVPLMPQEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="144" database="TR" id="A0A2L1UMS6_9GAMM" ac="A0A2L1UMS6" length="427" description="Site-specific integrase OS=Rahnella sikkimica OX=1805933 GN=BV494_04485 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.15</expectation>
+      <identity>43.2</identity>
+      <positives>56.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="55">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>QM  +  Q  Y VYG WM+EN  +Q+ ILN   +   P MP A+</pattern>
+      <matchSeq start="382" end="425">QMGHTSSQMVYSVYGKWMSENDGNQMDILNSGFTASVPYMPRAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="145" database="TR" id="A0AAC8VPU7_9ENTR" ac="A0AAC8VPU7" length="428" description="Integrase OS=Cronobacter universalis NCTC 9529 OX=1074000 GN=Int-Tn PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.15</expectation>
+      <identity>39.6</identity>
+      <positives>56.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="59">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDV</querySeq>
+      <pattern>QM  ++ Q  + VY  WM++   DQV+ILNQ     AP MP    +D+</pattern>
+      <matchSeq start="381" end="428">QMGHTNAQMVFNVYAKWMSDKNGDQVAILNQNFGFNAPPMPQGKAADM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="146" database="TR" id="A0ABY2ZZM4_9GAMM" ac="A0ABY2ZZM4" length="425" description="Site-specific integrase OS=Pantoea dispersa OX=59814 GN=FK492_06655 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.21</expectation>
+      <identity>45.2</identity>
+      <positives>52.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM     Q  Y VYG WM EN  DQ++I+N       P MPH</pattern>
+      <matchSeq start="380" end="421">QMGHVSAQMIYTVYGKWMKENNLDQMTIMNAGFGRNTPYMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="147" database="TR" id="A0A807LFV0_9ENTR" ac="A0A807LFV0" length="428" description="Site-specific integrase OS=Kosakonia cowanii JCM 10956 = DSM 18146 OX=1300165 GN=BWI95_17240 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.21</expectation>
+      <identity>40.5</identity>
+      <positives>59.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="53">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>QM  ++ Q  + VYG WM+E+  DQ+++LN       P MPH</pattern>
+      <matchSeq start="381" end="422">QMGHTNAQMVFTVYGKWMSEHDVDQIALLNTNFDFNTPPMPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="148" database="TR" id="A0A6G7CH59_9VIBR" ac="A0A6G7CH59" length="415" description="Site-specific integrase OS=Vibrio ziniensis OX=2711221 GN=G5S32_05130 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.29</expectation>
+      <identity>36.6</identity>
+      <positives>65.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="52">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>QM  S  +  Y+ YG W++++ Q+Q+ +LN K  + AP++P</pattern>
+      <matchSeq start="368" end="408">QMGHSSAKEVYQTYGDWVSDHTQNQLDMLNNKYGQNAPNVP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="149" database="TR" id="A0A096XER6_9CAUD" ac="A0A096XER6" length="340" description="Integrase OS=Escherichia phage phi191 OX=1458706 GN=phi191_00052 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.38</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="60">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>+  QM  S     Y VYG+WM E    QV++LN  L+  AP +P + + D I</pattern>
+      <matchSeq start="283" end="334">IASQMGHSSASMVYNVYGAWMPECSVTQVAMLNNVLNARAPDVPQSDQEDEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="150" database="TR" id="K0JCR4_9CAUD" ac="K0JCR4" length="436" description="Integrase OS=Escherichia phage P13374 OX=1150869 GN=int PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.39</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="60">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>+  QM  S     Y VYG+WM E    QV++LN  L+  AP +P + + D I</pattern>
+      <matchSeq start="379" end="430">IASQMGHSSASMVYNVYGAWMPECSVTQVAMLNNVLNARAPDVPQSDQEDEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="151" database="TR" id="A0A0H4IU53_9CAUD" ac="A0A0H4IU53" length="436" description="Integrase OS=Shigella phage Ss-VASD OX=1675531 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.39</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="60">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>+  QM  S     Y VYG+WM E    QV++LN  L+  AP +P + + D I</pattern>
+      <matchSeq start="379" end="430">IASQMGHSSASMVYNVYGAWMPECSVTQVAMLNNVLNARAPDVPQSDQEDEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="152" database="TR" id="A0A1I9LJV3_9CAUD" ac="A0A1I9LJV3" length="436" description="Integrase OS=Stx converting phage vB_EcoS_ST2-8624 OX=1792289 GN=vBEcoSST28624_01 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.39</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="60">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>+  QM  S     Y VYG+WM E    QV++LN  L+  AP +P + + D I</pattern>
+      <matchSeq start="379" end="430">IASQMGHSSASMVYNVYGAWMPECSVTQVAMLNNVLNARAPDVPQSDQEDEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="153" database="TR" id="B0FEA0_9CAUD" ac="B0FEA0" length="436" description="Integrase OS=Escherichia phage Min27 OX=489779 GN=int PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.39</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="60">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>+  QM  S     Y VYG+WM E    QV++LN  L+  AP +P + + D I</pattern>
+      <matchSeq start="379" end="430">IASQMGHSSASMVYNVYGAWMPECSVTQVAMLNNVLNARAPDVPQSDQEDEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="154" database="TR" id="A0A0H3JH92_ECO57" ac="A0A0H3JH92" length="436" description="Integrase OS=Escherichia coli O157:H7 OX=83334 GN=ECs_1160 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.39</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="60">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>+  QM  S     Y VYG+WM E    QV++LN  L+  AP +P + + D I</pattern>
+      <matchSeq start="379" end="430">IASQMGHSSASMVYNVYGAWMPECSVTQVAMLNNVLNARAPDVPQSDQEDEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="155" database="TR" id="Q9KXH6_BPVT2" ac="Q9KXH6" length="444" description="Integrase OS=Enterobacteria phage VT2-Sa OX=97081 GN=int PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.39</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="60">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>+  QM  S     Y VYG+WM E    QV++LN  L+  AP +P + + D I</pattern>
+      <matchSeq start="387" end="438">IASQMGHSSASMVYNVYGAWMPECSVTQVAMLNNVLNARAPDVPQSDQEDEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="156" database="TR" id="Q7Y2P8_9CAUD" ac="Q7Y2P8" length="444" description="Integrase OS=Escherichia phage Stx2 II OX=194949 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.39</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="60">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>+  QM  S     Y VYG+WM E    QV++LN  L+  AP +P + + D I</pattern>
+      <matchSeq start="387" end="438">IASQMGHSSASMVYNVYGAWMPECSVTQVAMLNNVLNARAPDVPQSDQEDEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="157" database="TR" id="Q9XJG6_BP933" ac="Q9XJG6" length="444" description="Integrase OS=Escherichia phage 933W OX=10730 GN=int PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.39</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="60">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>+  QM  S     Y VYG+WM E    QV++LN  L+  AP +P + + D I</pattern>
+      <matchSeq start="387" end="438">IASQMGHSSASMVYNVYGAWMPECSVTQVAMLNNVLNARAPDVPQSDQEDEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="158" database="TR" id="K0JHD7_ECOLX" ac="K0JHD7" length="52" description="Phage integrase (Fragment) OS=Escherichia coli O104:H4 OX=1038927 GN=int PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.52</expectation>
+      <identity>43.6</identity>
+      <positives>61.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="60">YRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>Y VYG+WM E    QV++LN  L+  AP +P + + D I</pattern>
+      <matchSeq start="8" end="46">YNVYGAWMPECSVTQVAMLNNVLNARAPDVPQSDQEDEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="159" database="TR" id="K0JFQ9_ECOLI" ac="K0JFQ9" length="52" description="Phage integrase (Fragment) OS=Escherichia coli (strain K12) OX=83333 GN=int PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.52</expectation>
+      <identity>43.6</identity>
+      <positives>61.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="60">YRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVI</querySeq>
+      <pattern>Y VYG+WM E    QV++LN  L+  AP +P + + D I</pattern>
+      <matchSeq start="8" end="46">YNVYGAWMPECSVTQVAMLNNVLNARAPDVPQSDQEDEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="160" database="TR" id="A0A0F4NPN2_9VIBR" ac="A0A0F4NPN2" length="416" description="Integrase OS=Vibrio galatheae OX=579748 GN=TW81_02060 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.73</expectation>
+      <identity>38.6</identity>
+      <positives>54.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="52">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>+  QM  S  +  Y  YG W+ E+ QDQV++LN+K       MP</pattern>
+      <matchSeq start="366" end="409">IASQMGHSSAKEVYNTYGDWVDEHTQDQVAMLNKKYGANVTHMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="161" database="TR" id="A0A807LHZ1_9ENTR" ac="A0A807LHZ1" length="38" description="Defective integrase OS=Kosakonia cowanii JCM 10956 = DSM 18146 OX=1300165 GN=BWI95_18500 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.78</expectation>
+      <identity>45.5</identity>
+      <positives>54.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="54">YRVYGSWMAENVQDQVSILNQKLSEFAPSMPHA</querySeq>
+      <pattern>Y VYG WM +N  +Q+ ILN       P MP A</pattern>
+      <matchSeq start="3" end="35">YNVYGKWMTDNNSNQMDILNAHFGGNVPHMPQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="162" database="TR" id="A0A089NUP7_9HYPH" ac="A0A089NUP7" length="84" description="Protein of unassigned function OS=Methylobacterium oryzae CBMB20 OX=693986 GN=MOC_1813 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.98</expectation>
+      <identity>39.1</identity>
+      <positives>58.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="48" end="91">APSMPHAVR--SDVINNRLQNLHLHAHHFLIRRHQLITHLNPHLHR</querySeq>
+      <pattern>AP +P AV   SDV++ R+  +H H HH ++R H+    +  H HR</pattern>
+      <matchSeq start="26" end="71">APGLPGAVSAPSDVVSVRMDRMHGHHHHRMMRHHRHGHMMRHHHHR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="163" database="TR" id="A0AAE8HP91_9HYPH" ac="A0AAE8HP91" length="84" description="Uncharacterized protein OS=Methylobacterium phyllosphaerae OX=418223 GN=MCBMB27_01097 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.98</expectation>
+      <identity>39.1</identity>
+      <positives>58.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="48" end="91">APSMPHAVR--SDVINNRLQNLHLHAHHFLIRRHQLITHLNPHLHR</querySeq>
+      <pattern>AP +P AV   SDV++ R+  +H H HH ++R H+    +  H HR</pattern>
+      <matchSeq start="26" end="71">APGLPGAVSAPSDVVSVRMDRMHGHHHHRMMRHHRHGHMMRHHHHR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="164" database="TR" id="A0ABR6DGT7_9HYPH" ac="A0ABR6DGT7" length="84" description="Ni/Co efflux regulator RcnB OS=Methylobacterium fujisawaense OX=107400 GN=GGQ91_004719 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.98</expectation>
+      <identity>39.1</identity>
+      <positives>58.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="48" end="91">APSMPHAVR--SDVINNRLQNLHLHAHHFLIRRHQLITHLNPHLHR</querySeq>
+      <pattern>AP +P AV   SDV++ R+  +H H HH ++R H+    +  H HR</pattern>
+      <matchSeq start="26" end="71">APGLPGAVSAPSDVVSVRMDRMHGHHHHRMMRHHRHGHMMRHHHHR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="165" database="TR" id="A0ABD6M8Q3_9ENTR" ac="A0ABD6M8Q3" length="426" description="DUF3596 domain-containing protein OS=Citrobacter gillenii OX=67828 GN=FCH32_11160 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.0</expectation>
+      <identity>37.7</identity>
+      <positives>56.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="61">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVIN</querySeq>
+      <pattern>+  Q+   D +  YRVY +W+ E   +QV +LNQ+L  FAP+ P   +   IN</pattern>
+      <matchSeq start="374" end="425">IASQLGHEDAEMVYRVYSAWIKEFDGEQVELLNQRLG-FAPNTPQERKIIKIN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="166" database="TR" id="D0Z3D7_PHODD" ac="D0Z3D7" length="428" description="Putative integrase OS=Photobacterium damselae subsp. damselae CIP 102761 OX=675817 GN=VDA_000938 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.0</expectation>
+      <identity>35.6</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPH</querySeq>
+      <pattern>+  QM  SD+     VYG+WM  N + +++ + ++L+  APS PH</pattern>
+      <matchSeq start="379" end="423">IASQMGHSDMSMVISVYGAWMPSNNESEIAKIERQLNCIAPSAPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="167" database="TR" id="A0AA88SC28_TACVA" ac="A0AA88SC28" length="3347" description="A-kinase anchor protein 9 OS=Tachysurus vachellii OX=175792 GN=Q7C36_014698 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.1</expectation>
+      <identity>34.2</identity>
+      <positives>48.7</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="71">VVTTSDVVMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV------RSDVINNRLQNLHLHA</querySeq>
+      <pattern>V+     + C++ R  V+G  R   SW+  N+QD VS L QK S   P+ P +        S V+  RL  LH +A</pattern>
+      <matchSeq start="2974" end="3046">VIAKLQQITCKINRLAVEGAVRESSSWLQRNIQDVVSFL-QKFSSAPPAGPQSSALLTGGSSSVLTERL--LHQNA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="168" database="TR" id="A0A6H5IAG6_9HYME" ac="A0A6H5IAG6" length="717" description="SOCS box domain-containing protein OS=Trichogramma brassicae OX=86971 GN=TBRA_LOCUS5394 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>1.9</expectation>
+      <identity>27.3</identity>
+      <positives>40.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="91">RSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVINNRLQNLHLHAHHFLIRRHQLITHLNPHLHR</querySeq>
+      <pattern>R    GG +  GS    N+Q Q   L Q+  +   +  H  +   +N    N H H HH     H   +H + H H+</pattern>
+      <matchSeq start="191" end="267">RGTSTGGCQNGGSAACNNLQQQQQQLLQQSQQEGSTQQHQAQGSTLNGGTSNNHHHHHHHHHHHHHNNSHQHHHHHQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="169" database="TR" id="A0ABT8PV71_9ENTR" ac="A0ABT8PV71" length="62" description="Integrase OS=Citrobacter enshiensis OX=2971264 GN=Q0A17_12175 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>2.5</expectation>
+      <identity>33.3</identity>
+      <positives>56.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="57">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEF--APSMPHAVRS</querySeq>
+      <pattern>+  QM   + +  Y VY +W++    DQ+  LNQ++S +  AP MP  V++</pattern>
+      <matchSeq start="11" end="61">IASQMGHENAEMVYTVYSAWISALDGDQIEYLNQRISGYSHAPHMPPGVKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="170" database="TR" id="A0ABR0V3K2_REHGL" ac="A0ABR0V3K2" length="451" description="Glycosyltransferase OS=Rehmannia glutinosa OX=99300 GN=DH2020_037634 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.6</expectation>
+      <identity>43.5</identity>
+      <positives>58.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="78">VQDQVSILNQKLSEFAPSMPHAVRSDVINNRLQNLHLHAHHFLIRR</querySeq>
+      <pattern>V D+ + LN +  +FAP+MP    SD + NRLQ L L  H F I +</pattern>
+      <matchSeq start="152" end="197">VDDEGTPLNDEAVQFAPTMPIIPPSDFVWNRLQFLPLQKHFFNIMK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="171" database="TR" id="A0ABQ8IW87_DERPT" ac="A0ABQ8IW87" length="868" description="protein acetyllysine N-acetyltransferase OS=Dermatophagoides pteronyssinus OX=6956 GN=SIRT1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.7</expectation>
+      <identity>32.8</identity>
+      <positives>50.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="92">DQVSILNQKLSEFAPSMPHAVRSDVINNRLQNLHLHAHHFLIRRHQLITHLNPHLHRN</querySeq>
+      <pattern>D  +I +   ++  P  PH    +  NN LQN+H  +HH+    HQL + L+  L  N</pattern>
+      <matchSeq start="538" end="592">DSNAIRDDIFAQHIPLCPHCAPKNNNNNTLQNIHQQSHHY---HHQLPSQLSSSLFNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="172" database="TR" id="A0A443I3I8_PAEVA" ac="A0A443I3I8" length="473" description="DNA polymerase ligase-domain-containing protein OS=Paecilomyces variotii OX=264951 GN=C8Q69DRAFT_505279 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>3.5</expectation>
+      <identity>35.3</identity>
+      <positives>54.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="79">VQDQVSILNQKLSE----FAPSMPHAVRSDVINNRLQNLHLHAHHFLIRRH</querySeq>
+      <pattern>V D +SI + +LS+      P +P    S+ +N  L+N H   HHF+I +H</pattern>
+      <matchSeq start="91" end="141">VSDHLSIFSSRLSKATRPIQPGIPRLSHSEWVNIYLRNQHPKGHHFVIHQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="173" database="TR" id="A0ABR0WZM6_REHGL" ac="A0ABR0WZM6" length="529" description="Glycosyltransferase OS=Rehmannia glutinosa OX=99300 GN=DH2020_012258 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>3.6</expectation>
+      <identity>41.3</identity>
+      <positives>58.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="78">VQDQVSILNQKLSEFAPSMPHAVRSDVINNRLQNLHLHAHHFLIRR</querySeq>
+      <pattern>V D+ ++L  +  +FAP+MP    SD + NRLQ L L  H F I +</pattern>
+      <matchSeq start="161" end="206">VDDEGTLLKNETVQFAPAMPIMPPSDFVWNRLQFLPLQKHFFNIMK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="174" database="TR" id="A0A4Z0NN86_9HYPH" ac="A0A4Z0NN86" length="67" description="Uncharacterized protein OS=Methylobacterium nonmethylotrophicum OX=1141884 GN=EU555_17180 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>3.9</expectation>
+      <identity>36.2</identity>
+      <positives>63.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="48" end="92">APSMPHAVRS--DVINNRLQNLHLHAHHFLIRRHQLITHLNPHLHRN</querySeq>
+      <pattern>AP +P AV +  DV++ R++ +H   HH ++R H+   H+  H+HR+</pattern>
+      <matchSeq start="19" end="64">APGLPGAVVAPPDVVSVRMERMHGDHHHRMMRHHRQ-GHMMRHMHRH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="175" database="TR" id="A0ABT2RHD8_9ENTR" ac="A0ABT2RHD8" length="409" description="Site-specific integrase OS=Leclercia tamurae OX=2926467 GN=M8318_21910 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>4.8</expectation>
+      <identity>41.7</identity>
+      <positives>58.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="44">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKL</querySeq>
+      <pattern>+  QM  +D    Y+VY  WM +  +DQV +LN KL</pattern>
+      <matchSeq start="373" end="408">IASQMGHADASMVYKVYSKWMCDKDRDQVELLNSKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="176" database="TR" id="A0A9J6QKJ4_9ENTR" ac="A0A9J6QKJ4" length="409" description="Site-specific integrase OS=Silvania confinis OX=2926470 GN=M8013_21855 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>4.8</expectation>
+      <identity>41.7</identity>
+      <positives>58.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="44">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKL</querySeq>
+      <pattern>+  QM  +D    Y+VY  WM +  +DQV +LN KL</pattern>
+      <matchSeq start="373" end="408">IASQMGHADASMVYKVYSKWMGDKDRDQVELLNSKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="177" database="TR" id="A0A225SSY5_9BURK" ac="A0A225SSY5" length="497" description="Microcystinase C OS=Herbaspirillum aquaticum OX=568783 GN=CEJ45_12750 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>4.8</expectation>
+      <identity>29.3</identity>
+      <positives>46.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="71">VVTTSDVVMCQMRRSDVQGG-----YRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVINNRLQNLHLHA</querySeq>
+      <pattern>V   +  VMC      ++GG       ++G+ +AEN +D    L +++   AP  P AV  D+  N  Q +  HA</pattern>
+      <matchSeq start="74" end="148">VAADAYTVMCDAIVRAIEGGCDAILLDLHGAMVAENAEDGEGTLLERIRRIAPDTPMAVALDLHGNVTQKMVTHA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="178" database="TR" id="A0ACS9JZI3_9ENTR" ac="A0ACS9JZI3" length="166" description="Tyrosine-type recombinase/integrase OS=Enterobacter mori OX=539813 GN=ACQX6S_15155 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>4.9</expectation>
+      <identity>37.0</identity>
+      <positives>56.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQK-LSEFAPSMPH</querySeq>
+      <pattern>+  QM   D +  Y VY  W+ +  +DQV+I+N++ L    PS PH</pattern>
+      <matchSeq start="112" end="157">IATQMGHEDSRMVYEVYAKWIGDMDKDQVAIINRRILVNMPPSRPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="179" database="TR" id="A0AAE0UY91_9TELE" ac="A0AAE0UY91" length="2241" description="A-kinase anchor protein 9 OS=Hemibagrus guttatus OX=175788 GN=QTP70_029658 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>5.2</expectation>
+      <identity>29.8</identity>
+      <positives>43.3</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="91">VVTTSDVVMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVR------SDVINNRLQNLHLHAHHFLIR--------RHQLITHLNPHLHR</querySeq>
+      <pattern>V+     V C++ R  V+   R   SW+  N+QD VS L QK S   P+ P +        S V+  RL   +     F+ R        R+Q++ HL   L R</pattern>
+      <matchSeq start="1864" end="1965">VIAELQQVSCKINRLSVEAADRESFSWLQRNIQDVVSFL-QKFSSAPPAGPESAALLTGGFSSVLMERLLRQNAELTGFVSRLTEEKNELRNQIL-HLEEELRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="180" database="TR" id="A0A0H3I4X9_PECPM" ac="A0A0H3I4X9" length="88" description="C-terminus integrase OS=Pectobacterium parmentieri OX=1905730 GN=W5S_2567 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.7</expectation>
+      <identity>41.2</identity>
+      <positives>64.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="45">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLS</querySeq>
+      <pattern>QM   + Q  Y +YG W+ +  +DQV +LN+KL+</pattern>
+      <matchSeq start="54" end="87">QMGHENAQMVYEIYGKWIEDMNEDQVGMLNRKLA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="181" database="TR" id="A0ABY4WYP2_9GAMM" ac="A0ABY4WYP2" length="391" description="Site-specific integrase OS=Grimontia kaedaensis OX=2872157 GN=K6Q96_06650 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.5</expectation>
+      <identity>36.6</identity>
+      <positives>56.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="52">QMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMP</querySeq>
+      <pattern>QM  S  +  Y+ YG W+ E+  +Q+  LN + S+  P MP</pattern>
+      <matchSeq start="346" end="386">QMGHSSAKEIYQTYGDWVEEHTAEQLEKLNHRFSKSVPYMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="182" database="TR" id="A0ABT8PRD8_9ENTR" ac="A0ABT8PRD8" length="428" description="Site-specific integrase OS=Citrobacter enshiensis OX=2971264 GN=Q0A17_04420 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.5</expectation>
+      <identity>35.8</identity>
+      <positives>54.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="61">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVIN</querySeq>
+      <pattern>+  Q+   D +  YRVY +W+ E   +QV +LN+ L  FAP +P   +   IN</pattern>
+      <matchSeq start="376" end="427">IASQLGHEDAEMVYRVYSAWIKELDGEQVEMLNRNLG-FAPIVPPKEKISKIN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="183" database="TR" id="A0ABU6W898_9FABA" ac="A0ABU6W898" length="484" description="AB hydrolase-1 domain-containing protein OS=Stylosanthes scabra OX=79078 GN=PIB30_024613 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.6</expectation>
+      <identity>29.5</identity>
+      <positives>50.0</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="90">GSWMAENVQDQVSILNQKLSEFAPSMPHAVR---SDVINNRLQNL----------HLHAHHFLIRRHQLITHLNPHLH</querySeq>
+      <pattern>G W  E+V D+++   +K+SEF  S+P +VR    + I   +Q +          H+H HH    +H    H++ H+H</pattern>
+      <matchSeq start="395" end="466">GRWPQEDVPDEIA---EKISEFILSLPKSVRKVEQESIPEHIQKMFDEAKSGDHDHVHHHH---HQHGHDHHIDDHVH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="184" database="TR" id="A0A444YJU9_ARAHY" ac="A0A444YJU9" length="485" description="AB hydrolase-1 domain-containing protein OS=Arachis hypogaea OX=3818 GN=Ahy_B06g081044 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.6</expectation>
+      <identity>28.2</identity>
+      <positives>47.4</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="90">GSWMAENVQDQVSILNQKLSEFAPSMPHAVR---SDVINNRLQNL----------HLHAHHFLIRRHQLITHLNPHLH</querySeq>
+      <pattern>G W  E+  D+++   +K+SEF  S+P +VR    + I   +Q +          H+H HH     H    H++ H+H</pattern>
+      <matchSeq start="396" end="467">GRWPQEDAPDEIA---EKISEFISSLPKSVRKVEEEPIPEHIQKMFDEAKSGDHDHIHHHH---HHHDHDHHIDAHVH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="185" database="TR" id="A0ACH3NN72_ARAHY" ac="A0ACH3NN72" length="485" description="AB hydrolase-1 domain-containing protein OS=Arachis hypogaea OX=3818 GN=HN873_054738 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.6</expectation>
+      <identity>28.2</identity>
+      <positives>47.4</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="90">GSWMAENVQDQVSILNQKLSEFAPSMPHAVR---SDVINNRLQNL----------HLHAHHFLIRRHQLITHLNPHLH</querySeq>
+      <pattern>G W  E+  D+++   +K+SEF  S+P +VR    + I   +Q +          H+H HH     H    H++ H+H</pattern>
+      <matchSeq start="396" end="467">GRWPQEDAPDEIA---EKISEFISSLPKSVRKVEEEPIPEHIQKMFDEAKSGDHDHIHHHH---HHHDHDHHIDAHVH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="186" database="TR" id="A0A7U7PWU8_9STAP" ac="A0A7U7PWU8" length="652" description="Putative AraC family transcriptional regulator OS=Staphylococcus argenteus OX=985002 GN=BN1326_140092 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.8</expectation>
+      <identity>26.7</identity>
+      <positives>46.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="86">VTTSDVVMCQMRRSDVQGGYRVYGSWMAEN-VQDQVSILNQKLS-----EFAPSMPHAVRSDVINNRLQNLHLHAHHFLIRRHQLITHLN</querySeq>
+      <pattern>++T+  V  Q+  +D+ G +R+   ++  N V+ QV+I N KL      E      +  R  ++   +     H HH  I R  +I H+N</pattern>
+      <matchSeq start="82" end="171">MSTNCRVRGQLLSNDIGGTFRILLKYLIHNQVEQQVNITNDKLISYICVELMSLKTNDERRHIVAEEVHEYLTHNHHKKINRKDVINHVN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="187" database="TR" id="A0ACA9Y4N1_9ASCO" ac="A0ACA9Y4N1" length="961" description="Pro-apoptotic serine protease NMA111 OS=Yamadazyma jaroonii OX=467808 GN=CLIB1444_03S00430 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.9</expectation>
+      <identity>27.5</identity>
+      <positives>50.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="79">SDVQGGYRVYG----SWMAENVQDQVSILNQKLSEFAPSMPHAVRSDVINNRLQNLHL-HAHHFLIRRH</querySeq>
+      <pattern>+D  G +RV       W+ E+VQ+Q+    ++  E   ++P   R ++    + +LH+ H H F + RH</pattern>
+      <matchSeq start="394" end="462">NDASGSFRVSAYEDSGWLLESVQNQLVENLEEFVEVMKTIPDMTRVNITYRHISDLHIEHYHSFYLDRH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="188" database="TR" id="A0ABX5A3C0_9ENTR" ac="A0ABX5A3C0" length="420" description="Site-specific integrase OS=Lelliottia aquatilis OX=2080838 GN=C3712_07105 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.9</expectation>
+      <identity>36.2</identity>
+      <positives>57.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAPSMPHAV</querySeq>
+      <pattern>+  Q+   D +  YRVY +W+ E   +Q+ +LN+K   FAP +P  V</pattern>
+      <matchSeq start="374" end="419">IASQLGHEDAEMVYRVYSAWIKEFDGEQIDMLNEKFG-FAPIVPPKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="189" database="TR" id="A0ABZ0H8X7_9ENTR" ac="A0ABZ0H8X7" length="428" description="Site-specific integrase OS=Citrobacter portucalensis OX=1639133 GN=RY846_14685 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.9</expectation>
+      <identity>34.8</identity>
+      <positives>54.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKL-SEFAPSMPH</querySeq>
+      <pattern>+  QM   D +  Y VY  W+ +  QDQV++LN ++ +   P  PH</pattern>
+      <matchSeq start="374" end="419">IASQMGHEDARMVYEVYSKWIGDMNQDQVNMLNNQMPTALPPGRPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="190" database="TR" id="A0AA44RJ70_CITBR" ac="A0AA44RJ70" length="428" description="DUF3596 domain-containing protein OS=Citrobacter braakii OX=57706 GN=H6P72_04710 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.9</expectation>
+      <identity>34.8</identity>
+      <positives>54.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKL-SEFAPSMPH</querySeq>
+      <pattern>+  QM   D +  Y VY  W+ +  QDQV++LN ++ +   P  PH</pattern>
+      <matchSeq start="374" end="419">IASQMGHEDARMVYEVYSKWIGDMNQDQVNMLNNQMPTALPPGRPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="191" database="TR" id="A0A4P6WTY4_9ENTR" ac="A0A4P6WTY4" length="428" description="DUF3596 domain-containing protein OS=Citrobacter arsenatis OX=2546350 GN=E1B03_10880 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.9</expectation>
+      <identity>34.8</identity>
+      <positives>54.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKL-SEFAPSMPH</querySeq>
+      <pattern>+  QM   D +  Y VY  W+ +  QDQV++LN ++ +   P  PH</pattern>
+      <matchSeq start="374" end="419">IASQMGHEDARMVYEVYSKWIGDMNQDQVNMLNNQMPTALPPGRPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="192" database="TR" id="A0ABD6M2H9_9ENTR" ac="A0ABD6M2H9" length="428" description="DUF3596 domain-containing protein OS=Citrobacter gillenii OX=67828 GN=FCH32_13250 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.9</expectation>
+      <identity>34.8</identity>
+      <positives>54.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKL-SEFAPSMPH</querySeq>
+      <pattern>+  QM   D +  Y VY  W+ +  QDQV++LN ++ +   P  PH</pattern>
+      <matchSeq start="374" end="419">IASQMGHEDARMVYEVYSKWIGDMNQDQVNMLNNQMPTALPPGRPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="193" database="TR" id="A0ABX8KEL9_9ENTR" ac="A0ABX8KEL9" length="428" description="Site-specific integrase OS=Citrobacter pasteurii OX=1563222 GN=I6L54_15845 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.9</expectation>
+      <identity>34.8</identity>
+      <positives>54.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKL-SEFAPSMPH</querySeq>
+      <pattern>+  QM   D +  Y VY  W+ +  QDQV++LN ++ +   P  PH</pattern>
+      <matchSeq start="374" end="419">IASQMGHEDARMVYEVYSKWIGDMNQDQVNMLNNQMPTALPPGRPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="194" database="TR" id="A8AHT5_CITK8" ac="A8AHT5" length="428" description="DUF3596 domain-containing protein OS=Citrobacter koseri (strain ATCC BAA-895 / CDC 4225-83 / SGSC4696) OX=290338 GN=CKO_01921 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.9</expectation>
+      <identity>34.8</identity>
+      <positives>54.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKL-SEFAPSMPH</querySeq>
+      <pattern>+  QM   D +  Y VY  W+ +  QDQV++LN ++ +   P  PH</pattern>
+      <matchSeq start="374" end="419">IASQMGHEDARMVYEVYSKWIGDMNQDQVNMLNNQMPTALPPGRPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="195" database="TR" id="A0A6L5E5L2_9ENTR" ac="A0A6L5E5L2" length="428" description="DUF3596 domain-containing protein OS=Citrobacter telavivensis OX=2653932 GN=GBB84_07620 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.9</expectation>
+      <identity>39.0</identity>
+      <positives>53.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="49">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKLSEFAP</querySeq>
+      <pattern>+  QM   D +  Y VY  W+ +  QDQVSILN ++    P</pattern>
+      <matchSeq start="374" end="414">IASQMGHEDARMVYEVYSKWIGDMNQDQVSILNNQMPTALP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="196" database="TR" id="A0ABY0JPY6_9ENTR" ac="A0ABY0JPY6" length="428" description="Phage integrase OS=Citrobacter europaeus OX=1914243 GN=BN4901_2418 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.9</expectation>
+      <identity>34.8</identity>
+      <positives>54.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">VMCQMRRSDVQGGYRVYGSWMAENVQDQVSILNQKL-SEFAPSMPH</querySeq>
+      <pattern>+  QM   D +  Y VY  W+ +  QDQV++LN ++ +   P  PH</pattern>
+      <matchSeq start="374" end="419">IASQMGHEDARMVYEVYSKWIGDMNQDQVNMLNNQMPTALPPGRPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="197" database="TR" id="A0A9W3B766_BIOGL" ac="A0A9W3B766" length="433" description="Uncharacterized protein LOC106064207 isoform X7 OS=Biomphalaria glabrata OX=6526 GN=LOC106064207 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.9</expectation>
+      <identity>33.3</identity>
+      <positives>55.1</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="91">AENVQDQVSILNQ----KLSEFAPSMPHAV---RSDVINNRLQNLHLHAHHFLIRRHQLITHLNPHLHR</querySeq>
+      <pattern>AEN  D  +IL++    ++  F   + + +   +SD I N+  + HL   HF ++ HQ I HLN H++R</pattern>
+      <matchSeq start="316" end="383">AENSGDPSAILDEHNLEQILAFTTEVSNLMVSSQSDSIGNKTFSCHLCGKHFRVK-HQYIGHLNTHMNR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="198" database="TR" id="A0AAV2IRH9_KNICA" ac="A0AAV2IRH9" length="906" description="Uncharacterized protein (Fragment) OS=Knipowitschia caucasica OX=637954 GN=KC01_LOCUS1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.4</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="53" end="92">HAVRSDVINNRLQNLHLHAHHFLIRRHQLITHLNPHLHRN</querySeq>
+      <pattern>H +   ++++ L +LH H HH L+  H L+ HL  HLH N</pattern>
+      <matchSeq start="543" end="580">HHLLHHLLHHLLHHLHHHLHHHLL--HHLLHHLLHHLHHN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="199" database="TR" id="A0A852ZVZ0_9ACTN" ac="A0A852ZVZ0" length="1069" description="DNA-binding CsgD family transcriptional regulator/tetratricopeptide (TPR) repeat protein OS=Allostreptomyces psammosilenae OX=1892865 GN=FHU37_003489 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.5</expectation>
+      <identity>35.1</identity>
+      <positives>50.9</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="72">GYRVYGSWMAENVQDQV-----SILNQKLSEFAPSMPHAVRSDVINNRLQNLHLHAH</querySeq>
+      <pattern>GYR   S + E V D +     ++LN++L++     PH VR D +  RL     HAH</pattern>
+      <matchSeq start="344" end="400">GYRFRHSLVREAVSDDLLPGERTLLNRRLAQVLEERPHLVRPDELPARLAGYWYHAH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

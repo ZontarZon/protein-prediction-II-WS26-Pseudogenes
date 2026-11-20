@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-170937-0986-38306264-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-170937-0986-38306264-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A6NDX4|YO011_HUMAN" type="PROTEIN" length="124"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T17:09:37+00:00" end="2026-11-13T17:12:41+00:00" search="P0Y0M0DT0H0M184.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="31">
+   <hit number="1" database="SP" id="YO011_HUMAN" ac="A6NDX4" length="124" description="Putative transmembrane protein ENSP00000320207 OS=Homo sapiens OX=9606 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>655</score>
+      <bits>256.9</bits>
+      <expectation>1.2e-86</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="124">MYVSISFLLGLSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGVALPGSPPRSHLLPGTQILIRSFQPCESAKHSARLSSLLTTTSYSVS</querySeq>
+      <pattern>MYVSISFLLGLSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGVALPGSPPRSHLLPGTQILIRSFQPCESAKHSARLSSLLTTTSYSVS</pattern>
+      <matchSeq start="1" end="124">MYVSISFLLGLSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGVALPGSPPRSHLLPGTQILIRSFQPCESAKHSARLSSLLTTTSYSVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="YO010_HUMAN" ac="Q8N9W7" length="124" description="Putative transmembrane protein FLJ36131 OS=Homo sapiens OX=9606 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>649</score>
+      <bits>254.6</bits>
+      <expectation>1e-85</expectation>
+      <identity>99.2</identity>
+      <positives>99.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="124">MYVSISFLLGLSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGVALPGSPPRSHLLPGTQILIRSFQPCESAKHSARLSSLLTTTSYSVS</querySeq>
+      <pattern>MYVSISFLLGLSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYS GLPGVALPGSPPRSHLLPGTQILIRSFQPCESAKHSARLSSLLTTTSYSVS</pattern>
+      <matchSeq start="1" end="124">MYVSISFLLGLSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSFGLPGVALPGSPPRSHLLPGTQILIRSFQPCESAKHSARLSSLLTTTSYSVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ACF8PEC9_NASLA" ac="A0ACF8PEC9" length="124" description="Uncharacterized protein OS=Nasalis larvatus OX=43780 GN=H8958_014606 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>538</score>
+      <bits>211.8</bits>
+      <expectation>8.6e-69</expectation>
+      <identity>83.1</identity>
+      <positives>87.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="124">MYVSISFLLGLSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGVALPGSPPRSHLLPGTQILIRSFQPCESAKHSARLSSLLTTTSYSVS</querySeq>
+      <pattern>MYVSI F L LSHLVL  L+ F+VNFYLPPESIDF+FMAHNWSK RSPSS+LGLSWF+AGF F DGW +FYS GL GV LPGSPPRSHLL GTQILIRSFQPCESAKHS RLSSLLTTTSYSVS</pattern>
+      <matchSeq start="1" end="124">MYVSIGFFLVLSHLVLSFLMAFLVNFYLPPESIDFDFMAHNWSKRRSPSSSLGLSWFRAGFSFCDGWPIFYSFGLLGVTLPGSPPRSHLLTGTQILIRSFQPCESAKHSTRLSSLLTTTSYSVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0ACF8K6Z5_SEMEN" ac="A0ACF8K6Z5" length="124" description="Uncharacterized protein OS=Semnopithecus entellus OX=88029 GN=H8957_001694 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>537</score>
+      <bits>211.5</bits>
+      <expectation>1.2e-68</expectation>
+      <identity>83.9</identity>
+      <positives>88.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="124">MYVSISFLLGLSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGVALPGSPPRSHLLPGTQILIRSFQPCESAKHSARLSSLLTTTSYSVS</querySeq>
+      <pattern>MYVSI F L LSHLVL  L+ F+VN+YLPPESIDF+FMAHNWSK RSPSS+LGLSWFKAGF F DGWS+FYS GL G AL GSPPRSHLL GTQILIRSFQPCESAKHSARLSSLLTTTSYSVS</pattern>
+      <matchSeq start="1" end="124">MYVSIGFFLVLSHLVLSFLMAFLVNYYLPPESIDFDFMAHNWSKRRSPSSSLGLSWFKAGFSFCDGWSIFYSFGLLGAALLGSPPRSHLLTGTQILIRSFQPCESAKHSARLSSLLTTTSYSVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="Q08TJ2_ALLA4" ac="Q08TJ2" length="795" description="Penicillin acylase family protein OS=Allostigmatella aurantiaca (strain DW4/3-1) OX=378806 GN=STAUR_4198 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.31</expectation>
+      <identity>28.1</identity>
+      <positives>42.7</positives>
+      <gaps>20</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="111">NWSKGRSPSSTLGLSWFKAGFRFSDG------WSMFYSSGLPGVALPGSPPR------------SHLLPGTQILIRSFQPCESAKHSAR</querySeq>
+      <pattern>NW KG S +S+L  +  ++G    DG      W     + +PG+  P   PR            SH LP    ++  F P + A+ +AR</pattern>
+      <matchSeq start="413" end="501">NWQKGLSDASSLQATLLRSGLILLDGSTSRDEWVPAQGARIPGLTSPAMAPRLGRRDVVFNSNDSHWLPHPSAVLEGFSPLQGAERTAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A2T2P1S8_CORCC" ac="A0A2T2P1S8" length="305" description="Uncharacterized protein OS=Corynespora cassiicola Philippines OX=1448308 GN=BS50DRAFT_232553 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.37</expectation>
+      <identity>34.1</identity>
+      <positives>48.2</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="107">VNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGL-PGVALPGSPPRSHLLPGTQILIRSFQPCESAK</querySeq>
+      <pattern>+N+ +P     F F A   S G SP  TL +  F  G +  DG S F+S  L P   LP  P  S  +P + +L++   P  +AK</pattern>
+      <matchSeq start="119" end="201">INWNIPKHLARFSFSAPPTSAGTSPPKTLDVKVFAPGSQDGDGTSPFFSCTLQPFRWLPSFPFSSRYMPLSTVLVQ--PPLPAAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0ABC8VEC7_9POAL" ac="A0ABC8VEC7" length="151" description="Uncharacterized protein OS=Urochloa decumbens OX=240449 GN=URODEC1_LOCUS2569 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.75</expectation>
+      <identity>46.0</identity>
+      <positives>58.0</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="89">HNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGVALPGSPPRSHL</querySeq>
+      <pattern>++WS+G      LG++WF AGF F D   +FY   L   A PGSP R HL</pattern>
+      <matchSeq start="53" end="95">YSWSRG------LGVAWF-AGFCFLDLALLFYCLRLYEAAPPGSPRREHL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ABQ4MQY3_9BACL" ac="A0ABQ4MQY3" length="308" description="Sugar ABC transporter permease OS=Paenibacillus woosongensis OX=307580 GN=J15TS10_22290 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.93</expectation>
+      <identity>39.3</identity>
+      <positives>52.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="79">LLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGVA</querySeq>
+      <pattern>LL FI+N Y+P   I   F   N++KG   S  +G   FK  F+ SD W M  ++ L  VA</pattern>
+      <matchSeq start="25" end="85">LLYFIINSYIPMIGIFIAFKDINYAKGIFRSDWIGFDNFKFLFQTSDAWIMTRNTLLYNVA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0ABU6D8T9_9BACL" ac="A0ABU6D8T9" length="298" description="ABC transporter permease subunit OS=Paenibacillus chondroitinus OX=59842 GN=P5G65_09655 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>1.7</expectation>
+      <identity>32.1</identity>
+      <positives>48.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MYVSISFLLGLSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGV</querySeq>
+      <pattern>M+  I+    L  + L CLL ++V  YLP   I   F  +N  KG   S  +GL ++K  F   D W +  ++ L G+</pattern>
+      <matchSeq start="1" end="78">MWRKIAKSKSLLLMFLPCLLYYLVFKYLPMFGIVISFKDYNLYKGIWASQWVGLKYYKMFFHSPDFWIILRNTFLLGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A6L8VB26_9BACL" ac="A0A6L8VB26" length="299" description="ABC transporter permease subunit OS=Paenibacillus silvestris OX=2606219 GN=GQF01_32555 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>1.7</expectation>
+      <identity>30.8</identity>
+      <positives>48.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MYVSISFLLGLSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGV</querySeq>
+      <pattern>M+  I+    L  + L CLL +++  YLP   I   F  +N  KG   S  +GL ++K  F   D W +  ++ L G+</pattern>
+      <matchSeq start="2" end="79">MWRKIAKSKSLLLMFLPCLLYYLIFKYLPMFGIVISFKDYNLYKGIWASEWVGLKYYKMFFNSPDFWILLRNTFLLGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0ABW9ULK3_9BACL" ac="A0ABW9ULK3" length="298" description="ABC transporter permease subunit OS=Paenibacillus anseongensis OX=2682845 GN=GON05_36245 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.3</expectation>
+      <identity>30.8</identity>
+      <positives>48.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MYVSISFLLGLSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGV</querySeq>
+      <pattern>M+  I+    L  + L CLL +++  YLP   I   F  +N  KG   S  +GL ++K  F   D W +  ++ L G+</pattern>
+      <matchSeq start="1" end="78">MWRKIAKSKSLLLMFLPCLLYYLIFKYLPMFGIVISFKDYNLYKGIWASQWVGLKYYKMFFHSPDFWIILRNTFLLGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0ABU3R8V8_9BACL" ac="A0ABU3R8V8" length="298" description="ABC transporter permease subunit OS=Paenibacillus violae OX=3077234 GN=RQP52_06210 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.3</expectation>
+      <identity>30.8</identity>
+      <positives>48.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MYVSISFLLGLSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGV</querySeq>
+      <pattern>M+  I+    L  + L CLL +++  YLP   I   F  +N  KG   S  +GL ++K  F   D W +  ++ L G+</pattern>
+      <matchSeq start="1" end="78">MWRKIAKSKSLLLMFLPCLLYYLIFKYLPMFGIVISFKDYNLYKGIWASEWVGLKYYKMFFHSPDFWIILRNTFLLGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A0M1P6U3_9BACL" ac="A0A0M1P6U3" length="305" description="Sugar ABC transporter permease OS=Paenibacillus solani OX=1705565 GN=AM231_13330 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.3</expectation>
+      <identity>30.8</identity>
+      <positives>50.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="78">LVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGV</querySeq>
+      <pattern>L+L C L +I+  Y+P   +   FM +N  KG + S  +G  +F   F   D W +  ++ L G+</pattern>
+      <matchSeq start="21" end="85">LLLPCALYYIIFKYVPIFGVSIAFMDYNLFKGITESDWVGFKYFSMFFNTPDFWPVLRNTFLLGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A1G5L992_9BACL" ac="A0A1G5L992" length="305" description="Putative aldouronate transport system permease protein OS=Paenibacillus polysaccharolyticus OX=582692 GN=SAMN05720606_12219 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.3</expectation>
+      <identity>41.2</identity>
+      <positives>52.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="69">LLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSM</querySeq>
+      <pattern>LL F++N YLP   I   F   N++KG   S  +G   FK  F+ SD W M</pattern>
+      <matchSeq start="22" end="72">LLYFLINNYLPMAGIFIAFKDVNYAKGIFGSDWVGFDNFKFLFQTSDAWIM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0ABW3RRQ7_9BACL" ac="A0ABW3RRQ7" length="306" description="ABC transporter permease OS=Paenibacillus puldeungensis OX=696536 GN=ACFQ3W_02380 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.3</expectation>
+      <identity>36.1</identity>
+      <positives>54.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="79">LLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGVA</querySeq>
+      <pattern>LL FI+N Y+P   +   F   +++KG   S  +G   FK  F+ SD W+M  ++ L  VA</pattern>
+      <matchSeq start="23" end="83">LLYFILNSYIPMAGVFIAFKNIDYAKGIFRSDWIGFDNFKFLFQTSDAWTMTRNTLLYNVA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A5M9WS60_PAEAM" ac="A0A5M9WS60" length="307" description="Sugar ABC transporter permease OS=Paenibacillus amylolyticus OX=1451 GN=EC604_11575 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.3</expectation>
+      <identity>41.2</identity>
+      <positives>52.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="69">LLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSM</querySeq>
+      <pattern>LL F++N YLP   I   F   N++KG   S  +G   FK  F+ SD W M</pattern>
+      <matchSeq start="24" end="74">LLYFLINNYLPMAGIFIAFKDVNYAKGIFGSDWVGFDNFKFLFQTSDAWIM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0ABS7KCQ8_9BACL" ac="A0ABS7KCQ8" length="307" description="Sugar ABC transporter permease OS=Paenibacillus cucumis (ex Kampfer et al. 2016) OX=1776858 GN=H7T88_01535 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.3</expectation>
+      <identity>41.2</identity>
+      <positives>52.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="69">LLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSM</querySeq>
+      <pattern>LL F++N YLP   I   F   N++KG   S  +G   FK  F+ SD W M</pattern>
+      <matchSeq start="24" end="74">LLYFLINNYLPMTGIFIAFKDVNYAKGIFGSDWVGFDNFKFLFQTSDAWIM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0ABX3JY95_9BACL" ac="A0ABX3JY95" length="307" description="Sugar ABC transporter permease OS=Paenibacillus ihbetae OX=1870820 GN=BBD40_11040 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.3</expectation>
+      <identity>29.7</identity>
+      <positives>51.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="77">LVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPG</querySeq>
+      <pattern>L+L C+L +++  Y+P   +   FM +N  KG + S  +G  +F   F   D W +  ++ L G</pattern>
+      <matchSeq start="23" end="86">LLLPCVLYYVIFKYVPIFGVSIAFMDYNLFKGITESDWVGFKYFNMFFHTPDFWPVLRNTFLLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0ABS4FA35_9BACL" ac="A0ABS4FA35" length="307" description="Aldouronate transport system permease protein OS=Paenibacillus lactis OX=228574 GN=J2Z18_002223 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.3</expectation>
+      <identity>29.7</identity>
+      <positives>51.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="77">LVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPG</querySeq>
+      <pattern>L+L C+L +++  Y+P   +   FM +N  KG + S  +G  +F   F   D W +  ++ L G</pattern>
+      <matchSeq start="23" end="86">LLLPCVLYYVIFKYVPIFGVSIAFMDYNLFKGITESDWVGFKYFSMFFHTPDFWPVLRNTFLLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0ABQ1ZD46_9BACL" ac="A0ABQ1ZD46" length="307" description="Sugar ABC transporter permease OS=Paenibacillus silvae OX=1325358 GN=GCM10008014_31760 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.3</expectation>
+      <identity>41.2</identity>
+      <positives>52.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="69">LLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSM</querySeq>
+      <pattern>LL F++N YLP   I   F   N++KG   S  +G   FK  F+ SD W M</pattern>
+      <matchSeq start="24" end="74">LLYFLINNYLPMAGIFIAFKDVNYAKGIFGSDWVGFDNFKFLFQTSDAWIM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A848M7F0_PAELE" ac="A0A848M7F0" length="300" description="Sugar ABC transporter permease OS=Paenibacillus lemnae OX=1330551 GN=HII30_10210 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>3.2</expectation>
+      <identity>30.8</identity>
+      <positives>50.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="78">LVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPGV</querySeq>
+      <pattern>L+L C L +++  Y+P   I   FM +N  KG + S  +G  +F   F   D W +  ++ L G+</pattern>
+      <matchSeq start="16" end="80">LLLPCALYYLIFKYVPIFGISIAFMDYNLFKGITESDWVGFKYFNMFFNTPDFWPVLRNTFLLGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A385TL92_PAELA" ac="A0A385TL92" length="305" description="Sugar ABC transporter permease OS=Paenibacillus lautus OX=1401 GN=D5F53_09230 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>3.2</expectation>
+      <identity>31.2</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="77">LVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLPG</querySeq>
+      <pattern>L+L C L +I+  Y+P   +   FM +N  KG + S  +G  +F   F   D W +  ++ L G</pattern>
+      <matchSeq start="21" end="84">LLLPCALYYIIFKYVPIFGVSIAFMDYNLFKGIAESDWVGFKYFSMFFNTPDFWPVLRNTFLLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0ABT4GH02_9BACL" ac="A0ABT4GH02" length="308" description="ABC transporter permease subunit OS=Paenibacillus alginolyticus OX=59839 GN=M5X19_20830 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>3.2</expectation>
+      <identity>33.3</identity>
+      <positives>56.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="73">LVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSS</querySeq>
+      <pattern>L+L C++ F+V  Y+P   +   F   N++KG   S  +GL  F+  F  SD + +F++S</pattern>
+      <matchSeq start="24" end="83">LLLPCVIYFLVFNYIPMYGVMIAFKDFNFAKGILHSPWIGLENFRYMFGLSDFYKVFWNS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0ABX1XTT9_9BACL" ac="A0ABX1XTT9" length="308" description="ABC transporter permease subunit OS=Paenibacillus phytorum OX=2654977 GN=GC098_10900 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>3.2</expectation>
+      <identity>33.3</identity>
+      <positives>56.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="73">LVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSS</querySeq>
+      <pattern>L+L C++ F+V  Y+P   +   F   N++KG   S  +GL  F+  F  SD + +F++S</pattern>
+      <matchSeq start="24" end="83">LLLPCVIYFLVFNYIPMYGVMIAFKDFNFAKGILHSPWIGLENFRYMFGLSDFYKVFWNS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="M2N9Z2_BAUPA" ac="M2N9Z2" length="431" description="Acyl-CoA dehydrogenase OS=Baudoinia panamericana (strain UAMH 10762) OX=717646 GN=BAUCODRAFT_144587 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>3.4</expectation>
+      <identity>35.4</identity>
+      <positives>55.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="76">SHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSSGLP</querySeq>
+      <pattern>SH  L   L   +N ++ P+S+D+E      +KG +P S   L W ++GF F+D  S + S G+P</pattern>
+      <matchSeq start="31" end="88">SHRQLRDALRAYINEHILPDSLDWE------AKGEAPRSE-ALRWARSGFCFADVPSQYRSKGIP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0ABT1YA64_9BACL" ac="A0ABT1YA64" length="303" description="ABC transporter permease subunit OS=Paenibacillus radicis (ex Xue et al. 2023) OX=2972489 GN=NV381_02660 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>4.3</expectation>
+      <identity>35.0</identity>
+      <positives>55.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="73">LVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSS</querySeq>
+      <pattern>L+L C++ F V  Y+P   +   F   N++KG   S  +GL  FK  F  SD + +F++S</pattern>
+      <matchSeq start="19" end="78">LLLPCVVYFFVFNYIPMYGVLIAFKDFNFAKGILGSPWIGLDNFKYMFGLSDFYKVFWNS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0ABX0J714_9BACL" ac="A0ABX0J714" length="309" description="Sugar ABC transporter permease OS=Paenibacillus agricola OX=2716264 GN=G9U52_20090 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>4.3</expectation>
+      <identity>33.3</identity>
+      <positives>56.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="73">LVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSS</querySeq>
+      <pattern>L++ C++ F+V  Y P   +   F   N+SKG   S  +GL  F+  F  SD +++F++S</pattern>
+      <matchSeq start="25" end="84">LLIPCVVYFLVFNYFPMYGVIIAFKDFNFSKGILGSPWIGLDNFRYMFGLSDFYTVFWNS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0ABW0I0V2_9BACL" ac="A0ABW0I0V2" length="308" description="ABC transporter permease OS=Cohnella soli OX=425005 GN=ACFPOF_30885 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>8.0</expectation>
+      <identity>39.2</identity>
+      <positives>51.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="69">LLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSM</querySeq>
+      <pattern>LL F+VN Y P   +   F   N++KG   S  +G   FK  F+ SD W M</pattern>
+      <matchSeq start="25" end="75">LLYFLVNSYFPMIGVFIAFKDVNYAKGIFRSDWIGFDNFKFLFQTSDAWIM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0ABV8S536_9BACL" ac="A0ABV8S536" length="308" description="ABC transporter permease OS=Cohnella boryungensis OX=768479 GN=ACFO1S_01675 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>8.0</expectation>
+      <identity>37.3</identity>
+      <positives>52.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="69">LLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSM</querySeq>
+      <pattern>LL F++N YLP   +   F   N++KG   S  +G   F+  FR +D W M</pattern>
+      <matchSeq start="25" end="75">LLYFLINSYLPMFGVFIAFKDINYAKGIFGSDWIGFDNFQFLFRTTDAWIM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A430JCQ6_9BACL" ac="A0A430JCQ6" length="325" description="Sugar ABC transporter permease OS=Paenibacillus whitsoniae OX=2496558 GN=EJQ19_15960 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>8.1</expectation>
+      <identity>31.7</identity>
+      <positives>55.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="73">LVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGWSMFYSS</querySeq>
+      <pattern>L++ C++ F +  Y+P   I   F   N++KG   S  +GL  F+  F  SD + +F++S</pattern>
+      <matchSeq start="41" end="100">LLIPCIVYFFIFNYIPMYGIIIAFKDFNFAKGIIHSPWVGLEHFRYMFGLSDFYQVFWNS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A078KRD0_9FIRM" ac="A0A078KRD0" length="333" description="ABC-type polysaccharide transport system, permease component OS=[Clostridium] cellulosi OX=29343 GN=CCDG5_1855 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>8.2</expectation>
+      <identity>35.1</identity>
+      <positives>50.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="67">LSHLVLCCLLTFIVNFYLPPESIDFEFMAHNWSKGRSPSSTLGLSWFKAGFRFSDGW</querySeq>
+      <pattern>L  ++L  L+  I+ FYLP   +   F  +N++ G   S  +GL  FK  F  SD W</pattern>
+      <matchSeq start="43" end="99">LFFMLLLPLVYVIIQFYLPMAGLIVAFKNYNYTDGLFKSPWIGLENFKFLFMSSDAW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

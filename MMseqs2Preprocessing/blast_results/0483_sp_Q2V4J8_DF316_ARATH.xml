@@ -1,0 +1,586 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-182700-0930-88922652-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-182700-0930-88922652-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q2V4J8|DF316_ARATH" type="PROTEIN" length="100"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T18:27:00+00:00" end="2026-11-13T18:29:04+00:00" search="P0Y0M0DT0H0M124.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="33">
+   <hit number="1" database="TR" id="A0A8T2GLB5_9BRAS" ac="A0A8T2GLB5" length="100" description="Secreted protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_At01g031500 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>538</score>
+      <bits>211.8</bits>
+      <expectation>1.5e-69</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="100">MASHIICYIFCIIKLSCAHVCLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEVKLV</querySeq>
+      <pattern>MASHIICYIFCIIKLSCAHVCLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEVKLV</pattern>
+      <matchSeq start="1" end="100">MASHIICYIFCIIKLSCAHVCLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEVKLV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="DF316_ARATH" ac="Q2V4J8" length="100" description="Defensin-like protein 316 OS=Arabidopsis thaliana OX=3702 GN=At1g31772 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>538</score>
+      <bits>211.8</bits>
+      <expectation>1.5e-69</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="100">MASHIICYIFCIIKLSCAHVCLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEVKLV</querySeq>
+      <pattern>MASHIICYIFCIIKLSCAHVCLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEVKLV</pattern>
+      <matchSeq start="1" end="100">MASHIICYIFCIIKLSCAHVCLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEVKLV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A8T2H8E8_ARASU" ac="A0A8T2H8E8" length="100" description="Secreted protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As01g031140 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>501</score>
+      <bits>197.6</bits>
+      <expectation>6.5e-64</expectation>
+      <identity>95.0</identity>
+      <positives>95.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="100">MASHIICYIFCIIKLSCAHVCLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEVKLV</querySeq>
+      <pattern>MASHIICYIFCIIKLSCAHV L    SSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEVKLV</pattern>
+      <matchSeq start="1" end="100">MASHIICYIFCIIKLSCAHVVLSHVCSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEVKLV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A1P8AVH4_ARATH" ac="A0A1P8AVH4" length="110" description="Defensin-like (DEFL) family protein OS=Arabidopsis thaliana OX=3702 GN=At1g31772 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>384</score>
+      <bits>152.5</bits>
+      <expectation>6.2e-46</expectation>
+      <identity>84.1</identity>
+      <positives>87.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="100">IKLSCAHVCLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEVKLV</querySeq>
+      <pattern>I + C H       S+ R+GVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEVKLV</pattern>
+      <matchSeq start="29" end="110">ISIRCLHA------STIRLGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEVKLV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABM0X519_CAMSA" ac="A0ABM0X519" length="91" description="LOW QUALITY PROTEIN: defensin-like protein 316 OS=Camelina sativa OX=90675 GN=LOC104759597 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <bits>96.3</bits>
+      <expectation>6e-24</expectation>
+      <identity>72.1</identity>
+      <positives>79.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="87">CLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFEN-IICLIR</querySeq>
+      <pattern>CLMS GSSY VGVH+TH K  + P +N R YSCDSLRILYHYSCLTTRD L ICDCS+ +  IICLIR</pattern>
+      <matchSeq start="7" end="73">CLMSIGSSYLVGVHMTHXKSYSIPAKNXRSYSCDSLRILYHYSCLTTRD-LDICDCSNSKTXIICLIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A6J0MQV5_RAPSA" ac="A0A6J0MQV5" length="86" description="Defensin-like protein 316 OS=Raphanus sativus OX=3726 GN=LOC108846122 PE=4 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>224</score>
+      <bits>90.9</bits>
+      <expectation>7.1e-22</expectation>
+      <identity>68.1</identity>
+      <positives>72.2</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="87">CLMSFGSSYRVGVHITHEKVAACPRQ-----NQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIR</querySeq>
+      <pattern>CLMSF SSY V VHITHEKVAACPR       +R  SCDSLRILYHYSC+ TRDL   CD +DF   ICLIR</pattern>
+      <matchSeq start="10" end="78">CLMSFDSSYLVRVHITHEKVAACPRHKNQPFTKRSDSCDSLRILYHYSCVITRDL---CDNTDFCKHICLIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A3N6RRZ1_BRACR" ac="A0A3N6RRZ1" length="94" description="Uncharacterized protein OS=Brassica cretica OX=69181 GN=DY000_02047771 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>6.3e-12</expectation>
+      <identity>57.4</identity>
+      <positives>61.8</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="85">MSFGSSYRVGVHITHEKVAACPRQN-----QRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICL</querySeq>
+      <pattern>MSF S Y VGVH   EKVAACPR       +R  SCDSLRILYHYSC+TTRD+        F NI  L</pattern>
+      <matchSeq start="1" end="65">MSFDSLYLVGVH---EKVAACPRHKNEPFTKRSDSCDSLRILYHYSCVTTRDIYIYAITLIFVNISVL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ACE2CUS3_ARAHA" ac="A0ACE2CUS3" length="34" description="Uncharacterized protein OS=Arabidopsis halleri OX=81970 GN=ARAHAL_1.4996.1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>1e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="51">MSFGSSYRVGVHITHEKVAACPRQNQRLY</querySeq>
+      <pattern>MSFGSSYRV VHITHEKVAACPRQNQRLY</pattern>
+      <matchSeq start="1" end="29">MSFGSSYRVEVHITHEKVAACPRQNQRLY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0AAD1VZJ1_PELCU" ac="A0AAD1VZJ1" length="609" description="dual-specificity kinase OS=Pelobates cultripes OX=61616 GN=PECUL_23A000197 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.8</expectation>
+      <identity>32.5</identity>
+      <positives>46.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHYSCLTTRDLLYICDCSD---FENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H  H  VA    +NQ+LY   +   +RIL H   L   D + I    +   F N +C++  LL +D  EV</pattern>
+      <matchSeq start="300" end="379">SFGQVVKAYDHKLHHHVAIKMIRNQKLYHQQAAQEIRILQHLRNLDKHDTMNIIHMLENFVFRNHVCIVFELLGMDLYEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0ACB9W0T8_CHAAC" ac="A0ACB9W0T8" length="502" description="Uncharacterized protein (Fragment) OS=Chaenocephalus aceratus OX=36190 GN=KUCAC02_017308 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>2.4</expectation>
+      <identity>26.4</identity>
+      <positives>42.5</positives>
+      <gaps>22</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="99">SHIICYIFCIIKLSCAHVCLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIIC---------LIRLLLNLDFVEVKL</querySeq>
+      <pattern>SH  C  +CI   SC++ C+ ++  SY  G +         P  +   YSC       +YSC  + + +Y C  +   N  C         L++LLL L  + + L</pattern>
+      <matchSeq start="2" end="93">SHYSCSNYCIPNYSCSNYCIPNYSCSYNCGPNY------CSPNYSCSNYSCS------NYSC--SNNCIYCCSHNSRPNNCCSNYCSPNYKLLQLLLLLQLLLIPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A0L0BL59_LUCCU" ac="A0A0L0BL59" length="692" description="dual-specificity kinase OS=Lucilia cuprina OX=7375 GN=FF38_00103 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>4.7</expectation>
+      <identity>30.0</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N+R +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="220" end="299">SFGQVIKAYDHKTHEHVALKIVRNERRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0ABP9ZWV2_9GAMM" ac="A0ABP9ZWV2" length="147" description="Integral membrane protein OS=Thalassolituus maritimus OX=484498 GN=NBRC116585_07270 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>5.4</expectation>
+      <identity>23.8</identity>
+      <positives>53.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="89">LSCAHVCLMSFGSSYRVGVH---ITHEKVAACPRQNQRLY--SCDSLRILYHYSCLTTRDLLYICDCSDFENIICLIRLL</querySeq>
+      <pattern>+S A V + S G+ +  G+    I ++++ A PR    +Y  +C    ++Y ++CL   + + I + +D+  ++ +I L+</pattern>
+      <matchSeq start="1" end="80">MSAAVVSIFSCGAFFLFGLVTGVIKYQQIVASPRGRAHIYIDTCHRASLMYAFACLIVYEFVLISELADWLELVAVILLV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0ACT2CUA5_9CHLO" ac="A0ACT2CUA5" length="259" description="Uncharacterized protein OS=Pseudoscourfieldia marina OX=41886 GN=RI054_16g75040 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>5.6</expectation>
+      <identity>25.9</identity>
+      <positives>41.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="100">GSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDL----------LYICDCSDFENIICLIRLLLNLDFVEVKLV</querySeq>
+      <pattern>G+S  +GVHI      AC  +  + YS D  R  +H    T   L          + +    D   I+  ++LLL  D + V ++</pattern>
+      <matchSeq start="65" end="149">GNSLVIGVHIRRGDACACDERRGKCYSVDKSRTCFHADAYTAAALRMVREMGAKHILVVSDGDLHRIVDRMKLLLKRDHLNVTVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0ACF7GM43_9HEMI" ac="A0ACF7GM43" length="1086" description="Uncharacterized protein OS=Uroleucon formosanum OX=796250 GN=QTP88_025216 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>6.6</expectation>
+      <identity>30.0</identity>
+      <positives>42.2</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="88">CYIFCIIKLSCAHVC--LMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYIC------DCSDFENIICLIRL</querySeq>
+      <pattern>C + C +KLSC H+C  L     S  + V  ++     CPR +Q L  C         SC      +  C       CSD EN+ C I++</pattern>
+      <matchSeq start="908" end="992">CQLKCNVKLSCGHLCKKLCHIEDSGHLMVKCSNVCNRKCPRDHQCLKMCHE-----ECSCQELISEISNCGHIVQGKCSDIENMKCDIKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A091FUR5_CUCCA" ac="A0A091FUR5" length="109" description="Glucose-dependent insulinotropic receptor (Fragment) OS=Cuculus canorus OX=55661 GN=N303_04487 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>7.0</expectation>
+      <identity>25.6</identity>
+      <positives>41.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="85">IICYIF-CIIKLSCAHVCLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCSDFENIICL</querySeq>
+      <pattern>I  Y++ C+    C H+C   +   +       H  + AC      + +C  +RI     CL TR  +YIC C      +C+</pattern>
+      <matchSeq start="29" end="105">ICVYMYICVYTPMCMHMCECMYMCVHTCVCICAHVCIYACVHTCACISACICMRI-----CLCTRTCVYICACVFIYTCVCM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A8T2V3F7_CERRI" ac="A0A8T2V3F7" length="284" description="Uncharacterized protein OS=Ceratopteris richardii OX=49495 GN=KP509_04G108900 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>7.8</expectation>
+      <identity>24.1</identity>
+      <positives>40.5</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MASHIICYIFCIIKLS---CAHVCLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDC</querySeq>
+      <pattern>M  ++  Y++  + LS   C H+C+      Y             C   +  +Y C  + I Y Y+C+     +YIC C</pattern>
+      <matchSeq start="164" end="242">MYPYVCMYVYVCVCLSMCVCTHICVCMCVCVYVCMCVCVCVNACVCVCMHVSMYVCICMCITYAYACMCVYIYIYICVC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0ACM8IM63_BUFVI" ac="A0ACM8IM63" length="345" description="Uncharacterized protein (Fragment) OS=Bufotes viridis OX=30338 GN=BUFVIR_LOCUS14062 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.1</expectation>
+      <identity>32.8</identity>
+      <positives>41.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="77">CIIKLSCAHVCLMSFGSSYRVGVHITHEKVAACPRQNQRLYSCDSLRILYHYSCLTTRDLLYICDCS</querySeq>
+      <pattern>C     C++ C  S+ SSYR           +C  +    YSC S R  Y YSC  +    Y C CS</pattern>
+      <matchSeq start="255" end="318">CSCSYRCSYRCSCSYRSSYRCSCSYRSSYRCSCSYRCSYRYSC-SYRCSYRYSC--SYRCSYRCSCS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0ABK9MJI0_GLOMM" ac="A0ABK9MJI0" length="518" description="dual-specificity kinase OS=Glossina morsitans morsitans OX=37546 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.5</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="192" end="271">SFGQVVKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A1A9UMB8_GLOAU" ac="A0A1A9UMB8" length="549" description="dual-specificity kinase OS=Glossina austeni OX=7395 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.6</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="192" end="271">SFGQVVKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A9C6E341_9MUSC" ac="A0A9C6E341" length="588" description="Dual specificity tyrosine-phosphorylation-regulated kinase 3 homolog isoform X5 OS=Glossina fuscipes OX=7396 GN=LOC119643536 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.6</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="9" end="88">SFGQVVKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0ABK9MJW9_GLOMM" ac="A0ABK9MJW9" length="629" description="dual-specificity kinase OS=Glossina morsitans morsitans OX=37546 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.7</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="192" end="271">SFGQVVKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A9C6E0M9_9MUSC" ac="A0A9C6E0M9" length="630" description="dual-specificity kinase OS=Glossina fuscipes OX=7396 GN=LOC119643536 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.7</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="192" end="271">SFGQVVKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A9C6E0D6_9MUSC" ac="A0A9C6E0D6" length="634" description="dual-specificity kinase OS=Glossina fuscipes OX=7396 GN=LOC119643536 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.7</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="192" end="271">SFGQVVKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A9C5ZBV9_9MUSC" ac="A0A9C5ZBV9" length="650" description="dual-specificity kinase OS=Glossina fuscipes OX=7396 GN=LOC119643536 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.7</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="71" end="150">SFGQVVKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A1A9ZM30_GLOPL" ac="A0A1A9ZM30" length="670" description="dual-specificity kinase OS=Glossina pallidipes OX=7398 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.7</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="313" end="392">SFGQVVKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="W8C7X9_CERCA" ac="W8C7X9" length="686" description="dual-specificity kinase OS=Ceratitis capitata OX=7213 GN=DYRK3 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.7</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="345" end="424">SFGQVIKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMFDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A9C5ZFV6_9MUSC" ac="A0A9C5ZFV6" length="771" description="dual-specificity kinase OS=Glossina fuscipes OX=7396 GN=LOC119643536 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.8</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="192" end="271">SFGQVVKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A1B0BID7_9MUSC" ac="A0A1B0BID7" length="780" description="dual-specificity kinase OS=Glossina palpalis gambiensis OX=67801 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.8</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="192" end="271">SFGQVVKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A1A9WQC1_9MUSC" ac="A0A1A9WQC1" length="835" description="dual-specificity kinase OS=Glossina brevipalpis OX=37001 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.8</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="374" end="453">SFGQVVKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="T1PLQ1_MUSDO" ac="T1PLQ1" length="840" description="dual-specificity kinase OS=Musca domestica OX=7370 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.8</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="379" end="458">SFGQVIKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A1I8NV90_STOCA" ac="A0A1I8NV90" length="840" description="dual-specificity kinase OS=Stomoxys calcitrans OX=35570 GN=106086719 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.8</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="370" end="449">SFGQVIKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A9J7CVF8_MUSDO" ac="A0A9J7CVF8" length="840" description="dual-specificity kinase OS=Musca domestica OX=7370 GN=LOC101897586 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.8</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="379" end="458">SFGQVIKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMYDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="W8BPR3_CERCA" ac="W8BPR3" length="949" description="dual-specificity kinase OS=Ceratitis capitata OX=7213 GN=DYRK3 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.9</expectation>
+      <identity>28.7</identity>
+      <positives>52.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="97">SFGSSYRVGVHITHEKVAACPRQNQRLY---SCDSLRILYHY---SCLTTRDLLYICDCSDFENIICLIRLLLNLDFVEV</querySeq>
+      <pattern>SFG   +   H THE VA    +N++ +   + + +RIL+H        T +++++ D   F N +C+   LLN++  E+</pattern>
+      <matchSeq start="366" end="445">SFGQVIKAYDHKTHEHVALKMVRNEKRFHRQAQEEIRILHHLRRQDKYNTMNIIHMFDYFTFRNHMCITFELLNINLYEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-170334-0279-33155147-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-170334-0279-33155147-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|A0A663DJA2|ORF10_SARS2" type="PROTEIN" length="38"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T17:03:34+00:00" end="2026-11-13T17:04:43+00:00" search="P0Y0M0DT0H0M69.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="11">
+   <hit number="1" database="TR" id="A0A6B9W2G5_SARS2" ac="A0A6B9W2G5" length="38" description="ORF10 protein OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=orf10 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>198</score>
+      <bits>80.9</bits>
+      <expectation>1.6e-19</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="38">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFNLT</querySeq>
+      <pattern>MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFNLT</pattern>
+      <matchSeq start="1" end="38">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFNLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="ORF10_SARS2" ac="A0A663DJA2" length="38" description="Putative ORF10 protein OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=ORF10 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>198</score>
+      <bits>80.9</bits>
+      <expectation>1.6e-19</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="38">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFNLT</querySeq>
+      <pattern>MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFNLT</pattern>
+      <matchSeq start="1" end="38">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFNLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A8A7ZXU9_SARS2" ac="A0A8A7ZXU9" length="38" description="ORF10 protein OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=ORF10 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>193</score>
+      <bits>79.0</bits>
+      <expectation>9.2e-19</expectation>
+      <identity>97.4</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="38">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFNLT</querySeq>
+      <pattern>MGYIN FAFPFTIYSLLLCRMNSRNYIAQVDVVNFNLT</pattern>
+      <matchSeq start="1" end="38">MGYINFFAFPFTIYSLLLCRMNSRNYIAQVDVVNFNLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A8A7QVC8_SARS2" ac="A0A8A7QVC8" length="36" description="ORF10 protein (Fragment) OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=ORF10 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>3.6e-18</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</querySeq>
+      <pattern>MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</pattern>
+      <matchSeq start="1" end="36">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A8A7QRU7_SARS2" ac="A0A8A7QRU7" length="36" description="ORF10 protein (Fragment) OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=ORF10 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>3.6e-18</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</querySeq>
+      <pattern>MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</pattern>
+      <matchSeq start="1" end="36">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A8A7QP87_SARS2" ac="A0A8A7QP87" length="36" description="ORF10 protein (Fragment) OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=ORF10 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>3.6e-18</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</querySeq>
+      <pattern>MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</pattern>
+      <matchSeq start="1" end="36">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A8A7QNS3_SARS2" ac="A0A8A7QNS3" length="36" description="ORF10 protein (Fragment) OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=ORF10 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>3.6e-18</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</querySeq>
+      <pattern>MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</pattern>
+      <matchSeq start="1" end="36">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A8A7QN05_SARS2" ac="A0A8A7QN05" length="36" description="ORF10 protein (Fragment) OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=ORF10 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>3.6e-18</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</querySeq>
+      <pattern>MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</pattern>
+      <matchSeq start="1" end="36">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A6M6M117_SARS2" ac="A0A6M6M117" length="33" description="ORF10 protein (Fragment) OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=ORF10 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>1.9e-15</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="33">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVV</querySeq>
+      <pattern>MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVV</pattern>
+      <matchSeq start="1" end="33">MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0AA95NSH6_9BETC" ac="A0AA95NSH6" length="25" description="ORF10 protein OS=Rhinolophus thomasi bat coronavirus OX=3061635 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>4.5e-07</expectation>
+      <identity>84.0</identity>
+      <positives>96.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MGYINVFAFPFTIYSLLLCRMNSRN</querySeq>
+      <pattern>MGY+NVFA PFTI+SLLLCRMNSR+</pattern>
+      <matchSeq start="1" end="25">MGYVNVFAIPFTIHSLLLCRMNSRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0AA95NLF8_9BETC" ac="A0AA95NLF8" length="25" description="ORF10 protein OS=Rhinolophus siamensis bat sarbecovirus OX=3068888 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>4.5e-07</expectation>
+      <identity>84.0</identity>
+      <positives>96.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MGYINVFAFPFTIYSLLLCRMNSRN</querySeq>
+      <pattern>MGY+NVFA PFTI+SLLLCRMNSR+</pattern>
+      <matchSeq start="1" end="25">MGYVNVFAIPFTIHSLLLCRMNSRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,4 +1,4 @@
 # Python 3.11+; MMseqs2 is a separate native executable, not a pip dependency.
-torch>=2.5,<3
-# Local BLAST query/database preparation
--r requirements-blast.txt
+torch>=2.6,<3
+transformers>=4.40,<5
+sentencepiece>=0.2,<1

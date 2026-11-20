@@ -1,0 +1,1691 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-200449-0606-40884074-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-200449-0606-40884074-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P0CX90|YAN1_YEAST" type="PROTEIN" length="67"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:04:49+00:00" end="2026-11-13T20:06:37+00:00" search="P0Y0M0DT0H0M108.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="98">
+   <hit number="1" database="TR" id="B3LUS1_YEAS1" ac="B3LUS1" length="67" description="Uncharacterized protein OS=Saccharomyces cerevisiae (strain RM11-1a) OX=285006 GN=SCRG_05610 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>365</score>
+      <bits>145.2</bits>
+      <expectation>3.5e-44</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="67">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASNWN</querySeq>
+      <pattern>MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASNWN</pattern>
+      <matchSeq start="1" end="67">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASNWN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="YH21A_YEAST" ac="P0CX91" length="67" description="Uncharacterized protein YHR212W-A OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YHR212W-A PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>365</score>
+      <bits>145.2</bits>
+      <expectation>3.5e-44</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="67">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASNWN</querySeq>
+      <pattern>MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASNWN</pattern>
+      <matchSeq start="1" end="67">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASNWN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="YAN1_YEAST" ac="P0CX90" length="67" description="Uncharacterized protein YAR061W OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YAR061W PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>365</score>
+      <bits>145.2</bits>
+      <expectation>3.5e-44</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="67">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASNWN</querySeq>
+      <pattern>MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASNWN</pattern>
+      <matchSeq start="1" end="67">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASNWN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0ABN8VM69_SACEU" ac="A0ABN8VM69" length="345" description="PA14 domain-containing protein OS=Saccharomyces eubayanus OX=1080349 GN=U6500A00940 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>240</score>
+      <bits>97.1</bits>
+      <expectation>1.9e-22</expectation>
+      <identity>70.3</identity>
+      <positives>79.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>M + Y+FLA+F +LA  NV SGST ACLP G RKNGM+VNFYKY+L DSTTYSYP YM  GYAS</pattern>
+      <matchSeq start="8" end="71">MSHRYMFLAVFAFLALVNVASGSTTACLPAGVRKNGMDVNFYKYTLKDSTTYSYPGYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABN8WMR8_SACUV" ac="A0ABN8WMR8" length="2309" description="PA14 domain-containing protein OS=Saccharomyces uvarum OX=230603 GN=SUVZ01G0790 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>233</score>
+      <bits>94.4</bits>
+      <expectation>6.4e-21</expectation>
+      <identity>64.1</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MP+ Y+FLALF +LA +NV SG+T+ACLP G RK+GMN+NFYKY+L DS+TYS P +M  GYA+</pattern>
+      <matchSeq start="3" end="66">MPHKYIFLALFAFLALANVASGATEACLPAGQRKDGMNINFYKYALKDSSTYSNPGFMAYGYAT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="E9P8E5_YEASX" ac="E9P8E5" length="229" description="Flocculin (Fragment) OS=Saccharomyces cerevisiae OX=4932 GN=FLO5 homologue PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>224</score>
+      <bits>90.9</bits>
+      <expectation>6.6e-21</expectation>
+      <identity>67.2</identity>
+      <positives>78.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="63">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>+H +FL +  +L   NV SGSTQACLPVGPRKNGMN+NFY+YSL DSTTYS PQYM   Y+</pattern>
+      <matchSeq start="5" end="65">HHCIFLVILAFLELLNVASGSTQACLPVGPRKNGMNINFYEYSLHDSTTYSDPQYMAYKYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="E9P8E6_YEASX" ac="E9P8E6" length="229" description="Flocculin (Fragment) OS=Saccharomyces cerevisiae OX=4932 GN=FLO5 homologue PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>223</score>
+      <bits>90.5</bits>
+      <expectation>9.3e-21</expectation>
+      <identity>67.2</identity>
+      <positives>78.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="63">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>+H +FL +  +L   NV SGSTQACLPVGPRKNGMN+NFY+YSL DSTTYS PQYM   Y+</pattern>
+      <matchSeq start="5" end="65">HHCIFLVILAFLELLNVASGSTQACLPVGPRKNGMNINFYEYSLDDSTTYSDPQYMAYKYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="E9P984_YEASX" ac="E9P984" length="213" description="Flocculin (Fragment) OS=Saccharomyces cerevisiae OX=4932 GN=Lg-FLO1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>222</score>
+      <bits>90.1</bits>
+      <expectation>9.5e-21</expectation>
+      <identity>68.9</identity>
+      <positives>77.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="63">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>+H +FL +  +L   NV SGSTQACLPVG RKNGMNVNFYKYSL DSTTYS PQYM   Y+</pattern>
+      <matchSeq start="5" end="65">HHCIFLVILAFLELLNVASGSTQACLPVGSRKNGMNVNFYKYSLQDSTTYSDPQYMAYKYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="B3IUB4_SACPS" ac="B3IUB4" length="213" description="Flocculin (Fragment) OS=Saccharomyces pastorianus OX=27292 GN=Lg-FLO1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>222</score>
+      <bits>90.1</bits>
+      <expectation>9.5e-21</expectation>
+      <identity>68.9</identity>
+      <positives>77.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="63">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>+H +FL +  +L   NV SGSTQACLPVG RKNGMNVNFYKYSL DSTTYS PQYM   Y+</pattern>
+      <matchSeq start="5" end="65">HHCIFLVILAFLELLNVASGSTQACLPVGSRKNGMNVNFYKYSLQDSTTYSDPQYMAYKYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="E9P991_YEASX" ac="E9P991" length="337" description="FLO1/YAR062W fusion protein OS=Saccharomyces cerevisiae OX=4932 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <bits>91.7</bits>
+      <expectation>1.8e-20</expectation>
+      <identity>64.1</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MP+ Y+FLA+FT LA ++V SG+T+ACLP G RK+GMN+NFY+YSL DS+TYS   YM  GYAS</pattern>
+      <matchSeq start="3" end="66">MPHRYMFLAVFTLLALTSVASGATEACLPAGQRKSGMNINFYQYSLKDSSTYSNAAYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="E9P990_YEASX" ac="E9P990" length="337" description="FLO1/YAR062W fusion protein OS=Saccharomyces cerevisiae OX=4932 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <bits>91.7</bits>
+      <expectation>1.8e-20</expectation>
+      <identity>64.1</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MP+ Y+FLA+FT LA ++V SG+T+ACLP G RK+GMN+NFY+YSL DS+TYS   YM  GYAS</pattern>
+      <matchSeq start="3" end="66">MPHRYMFLAVFTLLALTSVASGATEACLPAGQRKSGMNINFYQYSLKDSSTYSNAAYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="E9P8E4_YEASX" ac="E9P8E4" length="229" description="Flocculin (Fragment) OS=Saccharomyces cerevisiae OX=4932 GN=FLO5 homologue PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>220</score>
+      <bits>89.4</bits>
+      <expectation>2.6e-20</expectation>
+      <identity>71.4</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="58">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYM</querySeq>
+      <pattern>+H +FL +  +L   NV SGSTQACLPVGPRKNGMN+NFY+YSL DSTTYS PQYM</pattern>
+      <matchSeq start="5" end="60">HHCIFLVILAFLELLNVASGSTQACLPVGPRKNGMNINFYEYSLHDSTTYSDPQYM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="I1SSK6_9ASCO" ac="I1SSK6" length="1738" description="FLO1 derivative OS=Saccharomyces cerevisiae/Schizosaccharomyces pombe fusant OX=589904 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>228</score>
+      <bits>92.4</bits>
+      <expectation>3e-20</expectation>
+      <identity>65.6</identity>
+      <positives>79.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MP+ Y+FLA+FT LA  NV SG+T+ACLP G RK+GMN+NFY+YSL DS+TYS   YM  GYAS</pattern>
+      <matchSeq start="3" end="66">MPHRYMFLAVFTLLALINVASGATEACLPAGQRKSGMNINFYQYSLKDSSTYSNAAYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="E9P9E5_YEASX" ac="E9P9E5" length="562" description="Flocculin OS=Saccharomyces cerevisiae OX=4932 GN=FLON10 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <bits>91.7</bits>
+      <expectation>5.4e-20</expectation>
+      <identity>64.1</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MP+ Y+FLA+FT LA ++V SG+T+ACLP G RK+GMN+NFY+YSL DS+TYS   YM  GYAS</pattern>
+      <matchSeq start="3" end="66">MPHRYMFLAVFTLLALTSVASGATEACLPAGQRKSGMNINFYQYSLKDSSTYSNAAYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A088DP69_YEASX" ac="A0A088DP69" length="952" description="FLO1 weakly flocculating variant OS=Saccharomyces cerevisiae OX=4932 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <bits>91.7</bits>
+      <expectation>5.6e-20</expectation>
+      <identity>64.1</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MP+ Y+FLA+FT LA ++V SG+T+ACLP G RK+GMN+NFY+YSL DS+TYS   YM  GYAS</pattern>
+      <matchSeq start="3" end="66">MPHRYMFLAVFTLLALTSVASGATEACLPAGQRKSGMNINFYQYSLKDSSTYSNAAYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A088DPB5_YEASX" ac="A0A088DPB5" length="1132" description="FLO1 intermediately flocculating variant OS=Saccharomyces cerevisiae OX=4932 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <bits>91.7</bits>
+      <expectation>5.6e-20</expectation>
+      <identity>64.1</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MP+ Y+FLA+FT LA ++V SG+T+ACLP G RK+GMN+NFY+YSL DS+TYS   YM  GYAS</pattern>
+      <matchSeq start="3" end="66">MPHRYMFLAVFTLLALTSVASGATEACLPAGQRKSGMNINFYQYSLKDSSTYSNAAYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="E9P9E4_YEASX" ac="E9P9E4" length="1132" description="Flocculin OS=Saccharomyces cerevisiae OX=4932 GN=FLON6 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <bits>91.7</bits>
+      <expectation>5.6e-20</expectation>
+      <identity>64.1</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MP+ Y+FLA+FT LA ++V SG+T+ACLP G RK+GMN+NFY+YSL DS+TYS   YM  GYAS</pattern>
+      <matchSeq start="3" end="66">MPHRYMFLAVFTLLALTSVASGATEACLPAGQRKSGMNINFYQYSLKDSSTYSNAAYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0A088DMZ7_YEASX" ac="A0A088DMZ7" length="1222" description="FLO1 strongly flocculating variant OS=Saccharomyces cerevisiae OX=4932 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <bits>91.7</bits>
+      <expectation>5.6e-20</expectation>
+      <identity>64.1</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MP+ Y+FLA+FT LA ++V SG+T+ACLP G RK+GMN+NFY+YSL DS+TYS   YM  GYAS</pattern>
+      <matchSeq start="3" end="66">MPHRYMFLAVFTLLALTSVASGATEACLPAGQRKSGMNINFYQYSLKDSSTYSNAAYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="FLO1_YEAST" ac="P32768" length="1537" description="Flocculation protein FLO1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=FLO1 PE=1 SV=4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <bits>91.7</bits>
+      <expectation>5.7e-20</expectation>
+      <identity>64.1</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MP+ Y+FLA+FT LA ++V SG+T+ACLP G RK+GMN+NFY+YSL DS+TYS   YM  GYAS</pattern>
+      <matchSeq start="3" end="66">MPHRYMFLAVFTLLALTSVASGATEACLPAGQRKSGMNINFYQYSLKDSSTYSNAAYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="B3IUB3_SACPS" ac="B3IUB3" length="213" description="Flocculin (Fragment) OS=Saccharomyces pastorianus OX=27292 GN=Lg-FLO1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>216</score>
+      <bits>87.8</bits>
+      <expectation>7.4e-20</expectation>
+      <identity>67.2</identity>
+      <positives>75.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="63">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>+H +FL +  +L   NV SGSTQACLPVG RKNGMNVNFYKYSL DSTTYS P YM   Y+</pattern>
+      <matchSeq start="5" end="65">HHCIFLVILAFLELLNVASGSTQACLPVGSRKNGMNVNFYKYSLQDSTTYSDPPYMAYKYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="E0ZR12_YEASX" ac="E0ZR12" length="523" description="Flocculin (Fragment) OS=Saccharomyces cerevisiae OX=4932 GN=Flo1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>223</score>
+      <bits>90.5</bits>
+      <expectation>1.3e-19</expectation>
+      <identity>67.2</identity>
+      <positives>78.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="63">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>+H +FL +  +L   NV SGSTQACLPVGPRKNGMN+NFY+YSL DSTTYS PQYM   Y+</pattern>
+      <matchSeq start="5" end="65">HHCIFLVILAFLELLNVASGSTQACLPVGPRKNGMNINFYEYSLDDSTTYSDPQYMAYKYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="B3IUA8_SACPS" ac="B3IUA8" length="1300" description="Flocculin OS=Saccharomyces pastorianus OX=27292 GN=Lg-FLO1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>222</score>
+      <bits>90.1</bits>
+      <expectation>2e-19</expectation>
+      <identity>68.9</identity>
+      <positives>77.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="63">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>+H +FL +  +L   NV SGSTQACLPVG RKNGMNVNFYKYSL DSTTYS PQYM   Y+</pattern>
+      <matchSeq start="5" end="65">HHCIFLVILAFLELLNVASGSTQACLPVGSRKNGMNVNFYKYSLQDSTTYSDPQYMAYKYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="E9P8E7_YEASX" ac="E9P8E7" length="229" description="Flocculin (Fragment) OS=Saccharomyces cerevisiae OX=4932 GN=FLO5 homologue PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>210</score>
+      <bits>85.5</bits>
+      <expectation>7.9e-19</expectation>
+      <identity>59.7</identity>
+      <positives>77.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="64">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>+H +FL +  +L   NV SGSTQACLP+GPRKNGMN+NFY+Y+L+DS+TYS   YM   YA+</pattern>
+      <matchSeq start="5" end="66">HHCIFLVILAFLELLNVASGSTQACLPMGPRKNGMNINFYQYTLMDSSTYSNAAYMAYQYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0ABN8VUK4_SACEU" ac="A0ABN8VUK4" length="2630" description="PA14 domain-containing protein OS=Saccharomyces eubayanus OX=1080349 GN=U6500F01190 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>217</score>
+      <bits>88.2</bits>
+      <expectation>9.4e-19</expectation>
+      <identity>64.1</identity>
+      <positives>76.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>M +HY+FLA+F +LA   V SG+T+ACLP G RKNGMNVNFY+YSL DS+TYS   YM   YAS</pattern>
+      <matchSeq start="11" end="74">MFHHYMFLAVFVFLALVKVASGATEACLPAGQRKNGMNVNFYRYSLKDSSTYSNAAYMAYEYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A6C1EBA1_SACPS" ac="A0A6C1EBA1" length="352" description="Flocculation protein flo10 OS=Saccharomyces pastorianus OX=27292 GN=FLO10 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>210</score>
+      <bits>85.5</bits>
+      <expectation>4.1e-18</expectation>
+      <identity>58.7</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="63">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>M  HY+F  +  +LA  NV SGST+ACLP G +K+GMN+NFY+Y+L DS+TYS P+YM  GYA</pattern>
+      <matchSeq start="1" end="63">MSRHYIFSTVLAFLALVNVTSGSTEACLPSGEKKSGMNINFYQYTLKDSSTYSNPEYMAHGYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0ABN8VN96_SACEU" ac="A0ABN8VN96" length="1471" description="PA14 domain-containing protein OS=Saccharomyces eubayanus OX=1080349 GN=U6500K03170 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>210</score>
+      <bits>85.5</bits>
+      <expectation>8.3e-18</expectation>
+      <identity>58.7</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="63">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>M  HY+F  +  +LA  NV SGST+ACLP G +K+GMN+NFY+Y+L DS+TYS P+YM  GYA</pattern>
+      <matchSeq start="1" end="63">MSRHYIFSTVLAFLALVNVTSGSTEACLPSGEKKSGMNINFYQYTLKDSSTYSNPEYMAHGYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0ABN8WGB4_SACUV" ac="A0ABN8WGB4" length="1289" description="PA14 domain-containing protein OS=Saccharomyces uvarum OX=230603 GN=SUVZ11G3120 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>207</score>
+      <bits>84.3</bits>
+      <expectation>2.1e-17</expectation>
+      <identity>58.7</identity>
+      <positives>74.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="63">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>M  HY+F  +  +LA  NV SGST+ACLP G +K+GMN+NFY+YSL DS+TYS  +YM  GYA</pattern>
+      <matchSeq start="1" end="63">MSRHYIFSTVLAFLALVNVTSGSTEACLPAGEKKSGMNINFYQYSLKDSSTYSNAEYMAHGYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="SP" id="FLO5_YEAST" ac="P38894" length="1075" description="Flocculation protein FLO5 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=FLO5 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>205</score>
+      <bits>83.6</bits>
+      <expectation>3.9e-17</expectation>
+      <identity>59.7</identity>
+      <positives>75.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="64">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>+H +FL +  +LA  NV SG+T+ACLP G RK+GMN+NFY+YSL DS+TYS   YM  GYAS</pattern>
+      <matchSeq start="5" end="66">HHCIFLVILAFLALINVASGATEACLPAGQRKSGMNINFYQYSLKDSSTYSNAAYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0ABN8WR59_SACUV" ac="A0ABN8WR59" length="1401" description="PA14 domain-containing protein OS=Saccharomyces uvarum OX=230603 GN=SUVZ01G0020 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>205</score>
+      <bits>83.6</bits>
+      <expectation>3.9e-17</expectation>
+      <identity>61.9</identity>
+      <positives>77.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="64">PYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>PY+ +FLA+ T++A  N+VS ST ACLP   RKNGMN+NFY+YSL DS+TYS   YM SGYA+</pattern>
+      <matchSeq start="4" end="64">PYYCIFLAVLTFIA--NIVSASTAACLPTNERKNGMNINFYQYSLKDSSTYSNAVYMASGYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0ABN8VJ36_SACEU" ac="A0ABN8VJ36" length="286" description="PA14 domain-containing protein OS=Saccharomyces eubayanus OX=1080349 GN=U6500A00150 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>199</score>
+      <bits>81.3</bits>
+      <expectation>7.9e-17</expectation>
+      <identity>60.3</identity>
+      <positives>77.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="64">PYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>PY+ +FLA+ T++A  N+VS ST ACLP   RKNGMN+NFY++SL DS+TYS   YM SGYA+</pattern>
+      <matchSeq start="16" end="76">PYYCIFLAVLTFVA--NIVSASTTACLPTNERKNGMNINFYQHSLKDSSTYSNAVYMASGYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="H0GXU7_SACCK" ac="H0GXU7" length="375" description="Flo10p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_8498 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>201</score>
+      <bits>82.0</bits>
+      <expectation>9.1e-17</expectation>
+      <identity>58.1</identity>
+      <positives>75.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="63">PYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>P H +FLA+ ++ A  NV  G+T+ACLP G +K+GMN+NFY+YSL DS+TYS P YM  GYA</pattern>
+      <matchSeq start="4" end="65">PPHSMFLAVLSFSALINVALGATEACLPAGEKKSGMNINFYQYSLKDSSTYSNPSYMAYGYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0AA35J440_SACK1" ac="A0AA35J440" length="1503" description="PA14 domain-containing protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI11G3110 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>201</score>
+      <bits>82.0</bits>
+      <expectation>1.4e-16</expectation>
+      <identity>58.1</identity>
+      <positives>75.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="63">PYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>P H +FLA+ ++ A  NV  G+T+ACLP G +K+GMN+NFY+YSL DS+TYS P YM  GYA</pattern>
+      <matchSeq start="4" end="65">PPHSMFLAVLSFSALINVALGATEACLPAGEKKSGMNINFYQYSLKDSSTYSNPSYMAYGYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A6C1E345_SACPS" ac="A0A6C1E345" length="699" description="PA14 domain-containing protein OS=Saccharomyces pastorianus OX=27292 GN=GRS66_005605 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>199</score>
+      <bits>81.3</bits>
+      <expectation>2.5e-16</expectation>
+      <identity>60.3</identity>
+      <positives>77.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="64">PYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>PY+ +FLA+ T++A  N+VS ST ACLP   RKNGMN+NFY++SL DS+TYS   YM SGYA+</pattern>
+      <matchSeq start="4" end="64">PYYCIFLAVLTFVA--NIVSASTTACLPTNERKNGMNINFYQHSLKDSSTYSNAVYMASGYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0A6C1EAY3_SACPS" ac="A0A6C1EAY3" length="963" description="PA14 domain-containing protein OS=Saccharomyces pastorianus OX=27292 GN=GRS66_009190 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>197</score>
+      <bits>80.5</bits>
+      <expectation>4.7e-16</expectation>
+      <identity>56.5</identity>
+      <positives>74.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="64">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>Y+YLF A   +LA ++  S ST+ACLP   RKNGMN+NFY+Y+L D +TY+ P YM SGYA+</pattern>
+      <matchSeq start="4" end="65">YNYLFSAALAFLALTDAASASTEACLPTNERKNGMNINFYEYALGDESTYTDPTYMASGYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0ABN8VDL4_SACEU" ac="A0ABN8VDL4" length="1057" description="PA14 domain-containing protein OS=Saccharomyces eubayanus OX=1080349 GN=U6500L00180 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>197</score>
+      <bits>80.5</bits>
+      <expectation>4.7e-16</expectation>
+      <identity>56.5</identity>
+      <positives>74.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="64">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>Y+YLF A   +LA ++  S ST+ACLP   RKNGMN+NFY+Y+L D +TY+ P YM SGYA+</pattern>
+      <matchSeq start="4" end="65">YNYLFSAALAFLALTDAASASTEACLPTNERKNGMNINFYEYALGDESTYTDPTYMASGYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0AA35IVY1_SACMI" ac="A0AA35IVY1" length="1281" description="PA14 domain-containing protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI01G0880 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <bits>79.7</bits>
+      <expectation>8.9e-16</expectation>
+      <identity>56.5</identity>
+      <positives>72.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="64">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>+H++FLA   +L   NV  GST+ACLP G RKNGMN+NFY+YSL+DS+TYS   YM   Y +</pattern>
+      <matchSeq start="5" end="66">HHHIFLAAIAFLTLLNVALGSTEACLPEGQRKNGMNINFYQYSLMDSSTYSNAAYMAYQYTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="SP" id="FLO9_YEAST" ac="P39712" length="1322" description="Flocculation protein FLO9 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=FLO9 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>194</score>
+      <bits>79.3</bits>
+      <expectation>1.2e-15</expectation>
+      <identity>64.5</identity>
+      <positives>72.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="64">HY-LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>HY L LA+ T L  +NVVS +T ACLP   RKNGMNVNFY+YSL DS+TYS   YM  GYAS</pattern>
+      <matchSeq start="5" end="66">HYCLLLAIVTLLGLTNVVSATTAACLPANSRKNGMNVNFYQYSLRDSSTYSNAAYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="F5AT70_YEASX" ac="F5AT70" length="1406" description="Flocculin OS=Saccharomyces cerevisiae OX=4932 GN=FLO10 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>192</score>
+      <bits>78.6</bits>
+      <expectation>2.3e-15</expectation>
+      <identity>59.3</identity>
+      <positives>72.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="63">YLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>Y+FL     L+ +NV  G+T+ACLP G +KNGM +NFYKYSL DS+TYS P YM  GYA</pattern>
+      <matchSeq start="7" end="65">YIFLTGLFLLSVANVALGTTEACLPAGEKKNGMTINFYKYSLKDSSTYSNPSYMAYGYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A6C1DLF6_SACPS" ac="A0A6C1DLF6" length="231" description="Flocculin flo9 OS=Saccharomyces pastorianus OX=27292 GN=FLO9 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>186</score>
+      <bits>76.3</bits>
+      <expectation>2.9e-15</expectation>
+      <identity>62.3</identity>
+      <positives>72.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="63">HY-LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>HY L LA+ T L  +NVVS +T ACLP   RKNGMNVNFY+YSL+DS+TYS   YM   YA</pattern>
+      <matchSeq start="5" end="65">HYCLLLAIVTLLGLANVVSATTAACLPANSRKNGMNVNFYQYSLMDSSTYSNAAYMAYQYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="SP" id="FLO10_YEAST" ac="P36170" length="1169" description="Flocculation protein FLO10 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=FLO10 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>188</score>
+      <bits>77.0</bits>
+      <expectation>7.9e-15</expectation>
+      <identity>57.6</identity>
+      <positives>72.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="63">YLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>Y+FL     L+ +NV  G+T+ACLP G +KNGM +NFY+YSL DS+TYS P YM  GYA</pattern>
+      <matchSeq start="7" end="65">YIFLTGLFLLSVANVALGTTEACLPAGEKKNGMTINFYQYSLKDSSTYSNPSYMAYGYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="H0GBT9_SACCK" ac="H0GBT9" length="396" description="Flo9p (Fragment) OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_0001 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>186</score>
+      <bits>76.3</bits>
+      <expectation>1.2e-14</expectation>
+      <identity>62.3</identity>
+      <positives>72.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="63">HY-LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>HY L LA+ T L  +NVVS +T ACLP   RKNGMNVNFY+YSL+DS+TYS   YM   YA</pattern>
+      <matchSeq start="5" end="65">HYCLLLAIVTLLGLANVVSATTAACLPANSRKNGMNVNFYQYSLMDSSTYSNAAYMAYQYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="B3LSX2_YEAS1" ac="B3LSX2" length="774" description="Flocculin OS=Saccharomyces cerevisiae (strain RM11-1a) OX=285006 GN=SCRG_04924 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>186</score>
+      <bits>76.3</bits>
+      <expectation>1.5e-14</expectation>
+      <identity>53.2</identity>
+      <positives>72.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="64">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>+H +FL +  +L   NV SGS +ACLP G +KNGMN+NFY+Y+L+DS+TYS   YM   YA+</pattern>
+      <matchSeq start="5" end="66">HHCIFLVILAFLELLNVASGSMEACLPDGEKKNGMNINFYQYTLMDSSTYSNAAYMAYQYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="E9P8E8_YEASX" ac="E9P8E8" length="257" description="Flocculin (Fragment) OS=Saccharomyces cerevisiae OX=4932 GN=FLO5 homologue PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>3.1e-14</expectation>
+      <identity>51.6</identity>
+      <positives>71.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="64">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>+H +FL +  +L   NV SGS +ACLP G +KNGMN+NFY+Y+L+D +TYS   YM   YA+</pattern>
+      <matchSeq start="5" end="66">HHCIFLVILAFLELLNVASGSMEACLPDGEKKNGMNINFYQYTLMDLSTYSNAAYMAYQYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0ABN8WW57_SACUV" ac="A0ABN8WW57" length="1373" description="PA14 domain-containing protein OS=Saccharomyces uvarum OX=230603 GN=SUVZ06G0010 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>182</score>
+      <bits>74.7</bits>
+      <expectation>5.1e-14</expectation>
+      <identity>51.6</identity>
+      <positives>71.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="64">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>YH +F A+  +LA +N  S ST+ACLP   R+NGMN+NFY+Y+L D +TY+   YM  GYA+</pattern>
+      <matchSeq start="4" end="65">YHRIFSAVLAFLALANAASASTEACLPTNERENGMNINFYEYALGDKSTYTDSAYMAYGYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0ABN8VUM1_SACEU" ac="A0ABN8VUM1" length="1080" description="PA14 domain-containing protein OS=Saccharomyces eubayanus OX=1080349 GN=U6500F00100 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>9.5e-14</expectation>
+      <identity>52.3</identity>
+      <positives>70.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHY-LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MP H+ +F AL  +LA +N  S ST+ACLP   R+NGMN+NFY+Y+L D +TY+   YM  GYA+</pattern>
+      <matchSeq start="1" end="65">MPIHHRVFSALLAFLALANAASASTEACLPTNERENGMNINFYEYALGDKSTYTDSAYMAYGYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0A6C1E773_SACPS" ac="A0A6C1E773" length="1125" description="PA14 domain-containing protein OS=Saccharomyces pastorianus OX=27292 GN=GRS66_007257 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>9.5e-14</expectation>
+      <identity>52.3</identity>
+      <positives>70.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MPYHY-LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MP H+ +F AL  +LA +N  S ST+ACLP   R+NGMN+NFY+Y+L D +TY+   YM  GYA+</pattern>
+      <matchSeq start="1" end="65">MPIHHRVFSALLAFLALANAASASTEACLPTNERENGMNINFYEYALGDKSTYTDSAYMAYGYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0AA35IXA4_SACMI" ac="A0AA35IXA4" length="1488" description="PA14 domain-containing protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI05G2690 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>1.3e-13</expectation>
+      <identity>54.1</identity>
+      <positives>72.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="64">HYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>+YL  A F +LA S  VS +T+ACLP   RKNGMN+NFY+Y+L D++TY+ P YM   YA+</pattern>
+      <matchSeq start="5" end="65">NYLVSASFAFLALSGTVSATTEACLPTNKRKNGMNINFYEYALGDTSTYANPAYMAYEYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0AA35NFM0_SACMI" ac="A0AA35NFM0" length="2124" description="PA14 domain-containing protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI01G0070 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>1.3e-13</expectation>
+      <identity>54.8</identity>
+      <positives>67.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="64">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>+H+L LA    L  +NV S  T ACLP   RKNGMN+NFY+YSL DS+TYS  +YM   YA+</pattern>
+      <matchSeq start="5" end="66">HHFLLLATLVLLGLANVASAITAACLPTNLRKNGMNINFYQYSLKDSSTYSNAEYMAYQYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0ABN8WGC0_SACUV" ac="A0ABN8WGC0" length="1189" description="PA14 domain-containing protein OS=Saccharomyces uvarum OX=230603 GN=SUVZ12G0070 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>177</score>
+      <bits>72.8</bits>
+      <expectation>2.4e-13</expectation>
+      <identity>51.6</identity>
+      <positives>71.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="64">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>++Y+ LA   +L   N  S ST+ACLP   R+NGMNVNFY+Y+L D++TY+   YM SGYA+</pattern>
+      <matchSeq start="4" end="65">HNYISLAALAFLVLPNAASASTEACLPTNERENGMNVNFYEYALGDTSTYADSAYMASGYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0AA35JGY7_SACK1" ac="A0AA35JGY7" length="1155" description="PA14 domain-containing protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI06G0150 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>1e-11</expectation>
+      <identity>48.4</identity>
+      <positives>69.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="67">LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASNWN</querySeq>
+      <pattern>+F A+   LA +N  S +T+ACLP   R++GMN+NFY+Y L D++TY+ P YM  GYA+  N</pattern>
+      <matchSeq start="7" end="68">IFSAVLALLALANTTSANTEACLPTNEREDGMNINFYEYMLGDTSTYTDPAYMGYGYANTKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0AA35IQ54_SACMI" ac="A0AA35IQ54" length="1433" description="PA14 domain-containing protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI11G3080 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>1.4e-11</expectation>
+      <identity>49.2</identity>
+      <positives>63.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="63">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>M  HY+ L    +LA      G+T+ACLP G +KNGM +NFY+Y + DS+TYS P YM   YA</pattern>
+      <matchSeq start="1" end="63">MTSHYMLLTGLFFLALVKGALGTTEACLPTGEKKNGMVINFYQYEIKDSSTYSNPAYMAYEYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0AA35IXB4_SACMI" ac="A0AA35IXB4" length="1134" description="PA14 domain-containing protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI06G0140 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>2.6e-11</expectation>
+      <identity>53.6</identity>
+      <positives>66.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="58">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYM</querySeq>
+      <pattern>Y  +F AL  +L  +N  S  T+ACLP   RKNGMN+NFY+Y+L D TTY  P YM</pattern>
+      <matchSeq start="4" end="59">YCSVFSALLAFLVLANTTSADTEACLPTNERKNGMNINFYEYTLGDITTYREPAYM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="SP" id="YFF1_YEAST" ac="P43552" length="160" description="Uncharacterized membrane protein YFL051C OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YFL051C PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>3.2e-11</expectation>
+      <identity>44.3</identity>
+      <positives>67.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="64">HYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>H +F AL  ++A +     ST+ACLP   R++GMN+NFY+Y++ D TTY  P+YM   Y++</pattern>
+      <matchSeq start="5" end="65">HSVFSALLVFVALATTTLASTEACLPTNKREDGMNINFYEYTIGDQTTYLEPEYMGYEYSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A6C1DQH9_SACPS" ac="A0A6C1DQH9" length="345" description="Flocculin flo1 OS=Saccharomyces pastorianus OX=27292 GN=FLO1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>154</score>
+      <bits>63.9</bits>
+      <expectation>2.8e-10</expectation>
+      <identity>45.0</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="63">HYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>H LF A+  ++A +     ST+ACLP   R++GMN+NFY+Y++ D TTY  P+YM   Y+</pattern>
+      <matchSeq start="5" end="64">HSLFSAVLVFVALATTTLASTEACLPTNKREDGMNINFYEYTIGDKTTYLEPEYMGYKYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="H0GFJ4_SACCK" ac="H0GFJ4" length="390" description="Flo1p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_1474 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>5.7e-10</expectation>
+      <identity>43.3</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="63">HYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>H +F A+  ++A +     ST+ACLP   R++GMN+NFY+Y++ D TTY  P+YM   Y+</pattern>
+      <matchSeq start="5" end="64">HSVFSAVLVFVALATTTLASTEACLPTNKREDGMNINFYEYTIGDKTTYLEPEYMRYKYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="B3LUG1_YEAS1" ac="B3LUG1" length="390" description="PA14 domain-containing protein OS=Saccharomyces cerevisiae (strain RM11-1a) OX=285006 GN=SCRG_05496 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>7.7e-10</expectation>
+      <identity>43.3</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="63">HYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>H +F A+  ++A +     ST+ACLP   R++GMN+NFY+Y++ D TTY  P+YM   Y+</pattern>
+      <matchSeq start="5" end="64">HSVFSAVLVFVALATTTLASTEACLPTNKREDGMNINFYEYTIGDKTTYLEPEYMGYKYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0AA35JM65_SACK1" ac="A0AA35JM65" length="1827" description="PA14 domain-containing protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI09G0020 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <bits>62.0</bits>
+      <expectation>1.5e-09</expectation>
+      <identity>51.6</identity>
+      <positives>62.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="64">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>YH L L L   L   NVV G+ +ACLP   R++GMNV FY Y L DS+TY+   YM  GYA+</pattern>
+      <matchSeq start="6" end="66">YHLLQLVL-PLLTLLNVVIGADEACLPTAERQDGMNVKFYPYKLYDSSTYASTAYMGYGYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="H0GHP1_SACCK" ac="H0GHP1" length="928" description="Flo5p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_2302 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>4.7e-08</expectation>
+      <identity>60.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="64">QACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>+ACLP G +KNGMN+NFY+Y+L+DS+TYS   YM   YA+</pattern>
+      <matchSeq start="2" end="41">EACLPDGEKKNGMNINFYQYTLMDSSTYSNAAYMAYQYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A6C1E276_SACPS" ac="A0A6C1E276" length="302" description="Flocculation protein flo5 OS=Saccharomyces pastorianus OX=27292 GN=FLO5_2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>2.3e-05</expectation>
+      <identity>78.6</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="64">MNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>M+VNFYKY+L DSTTYSYP YM  GYAS</pattern>
+      <matchSeq start="1" end="28">MDVNFYKYTLKDSTTYSYPGYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0A4C2EHF7_9SACH" ac="A0A4C2EHF7" length="568" description="PA14 domain-containing protein (Fragment) OS=Zygosaccharomyces mellis OX=42258 GN=ZYGM_000102 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>6.3e-05</expectation>
+      <identity>40.4</identity>
+      <positives>59.6</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="63">FLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>+L  F++L  + V++  T ACLP    ++G   NFY+Y   D TTY+ P YM  GY+</pattern>
+      <matchSeq start="9" end="63">WLLWFSFLGITTVLA--TTACLPQNQVQSGFKANFYQYDFGDETTYADPAYMAGGYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0ABP0ECE5_9ASCO" ac="A0ABP0ECE5" length="795" description="PA14 domain-containing protein OS=[Candida] anglica OX=148631 GN=CAAN4_C11012 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>6.4e-05</expectation>
+      <identity>40.3</identity>
+      <positives>58.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="65">LFLALFTYLATSNVVSG--STQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>LF  L   LA +++ S   S QAC P G   +G+ VNFY Y+L D  T +  +Y+++GY  N</pattern>
+      <matchSeq start="3" end="64">LFSILSGCLALTSIASATYSPQACHPTGSMSSGLKVNFYPYTLSDKKTMASVEYVSTGYTKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0ABP0EPF4_9ASCO" ac="A0ABP0EPF4" length="1023" description="Flocculation protein Flo5p OS=[Candida] anglica OX=148631 GN=FLO5 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>0.00042</expectation>
+      <identity>37.9</identity>
+      <positives>53.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="65">LALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>+AL   +  S+  S S + C P G  K+G  V FY Y L D TT +   Y+++GY  N</pattern>
+      <matchSeq start="11" end="68">IALTVVVDASSTSSASPEGCAPKGEVKSGFQVKFYPYELNDETTMASLDYVSTGYTKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0A6C1DSQ2_SACPS" ac="A0A6C1DSQ2" length="770" description="PA14 domain-containing protein OS=Saccharomyces pastorianus OX=27292 GN=GRS66_002361 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>108</score>
+      <bits>46.2</bits>
+      <expectation>0.00057</expectation>
+      <identity>77.8</identity>
+      <positives>81.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="63">MNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>MNVNFYKYSL DSTTYS PQYM   Y+</pattern>
+      <matchSeq start="1" end="27">MNVNFYKYSLQDSTTYSDPQYMAYKYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="C5DWW7_ZYGRC" ac="C5DWW7" length="2346" description="ZYRO0F00176p OS=Zygosaccharomyces rouxii OX=4956 GN=ZYRO0F00176g PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.002</expectation>
+      <identity>38.6</identity>
+      <positives>52.6</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="63">FLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>+L  F+ L    V++  T ACLP    +NG   NFY+Y   D  TY+ P YM   Y+</pattern>
+      <matchSeq start="10" end="64">WLMWFSMLGVMKVLA--TTACLPQNQAQNGFKANFYQYDFGDEVTYADPAYMAGEYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0ACE2FP75_9SACH" ac="A0ACE2FP75" length="1447" description="Flocculation protein Flo1p OS=Monosporozyma unispora OX=27294 GN=FLO1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.0028</expectation>
+      <identity>37.7</identity>
+      <positives>49.2</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="65">YLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>+  L LF  LA + V   S  AC P G    G  V FY Y LLD  +Y+   ++  GY +N</pattern>
+      <matchSeq start="6" end="63">FFILQLFFALALAGV---SPSACDPTGKASKGATVKFYGYPLLDKVSYNQQDFLLGGYQNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="G8ZW36_TORDE" ac="G8ZW36" length="730" description="PA14 domain-containing protein OS=Torulaspora delbrueckii OX=4950 GN=TDEL0F00190 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.0051</expectation>
+      <identity>37.3</identity>
+      <positives>52.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="64">LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>L L L   +A   +   +  ACLP G R  G +  F+ Y+L D ++Y  P YM  GYA+</pattern>
+      <matchSeq start="9" end="67">LGLPLLASMAQVAMAQANYVACLPQGERTAGFSARFFPYALSDLSSYKDPAYMGYGYAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0A9P0QRL9_9ASCO" ac="A0A9P0QRL9" length="576" description="PA14 domain-containing protein OS=Dujonia railenensis OX=45579 GN=CLIB1423_11S04544 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.007</expectation>
+      <identity>42.4</identity>
+      <positives>57.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="65">ALFTYLATSNVV-SGSTQACLPVGPRK-NGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>AL   LA + +V S +   CLP G  K +G   NFY Y++ DSTT S   Y++ GY +N</pattern>
+      <matchSeq start="5" end="63">ALALILAAAKLVDSANIPGCLPKGSTKTSGFTANFYPYAMGDSTTMSDLDYVSGGYKNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="H0GJR8_SACCK" ac="H0GJR8" length="951" description="Flo10p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_3099 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.0071</expectation>
+      <identity>66.7</identity>
+      <positives>77.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="63">MNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>M +NFY+YSL DS+TYS P YM  GYA</pattern>
+      <matchSeq start="1" end="27">MTINFYQYSLKDSSTYSNPSYMAYGYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="G8YSS6_PICSO" ac="G8YSS6" length="1329" description="Piso0_000585 protein OS=Pichia sorbitophila (strain ATCC MYA-4447 / BCRC 22081 / CBS 7064 / NBRC 10061 / NRRL Y-12695) OX=559304 GN=Piso0_000585 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.0071</expectation>
+      <identity>40.4</identity>
+      <positives>47.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="62">LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGY</querySeq>
+      <pattern>L L      AT+   SG    C P      GMNV FYKY+L D +TY    Y  +GY</pattern>
+      <matchSeq start="15" end="67">LLLVTVASAATTTTASG----CRPTSSASRGMNVTFYKYTLDDFSTYKEESYYITGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0A376BB60_9ASCO" ac="A0A376BB60" length="550" description="GLEYA adhesin domain-containing protein OS=Saccharomycodes ludwigii OX=36035 GN=SCODWIG_03673 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.0095</expectation>
+      <identity>33.9</identity>
+      <positives>49.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="65">FLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>F+ LF  +  +  +  +  AC P+    NG  V +Y Y+  D TT+S   YM  GY  N</pattern>
+      <matchSeq start="16" end="74">FIYLFAKIIDAQELPDTNDACSPITDPINGFKVRWYNYTYNDGTTFSNLDYMAYGYYQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0A6C1EB25_SACPS" ac="A0A6C1EB25" length="741" description="PA14 domain-containing protein OS=Saccharomyces pastorianus OX=27292 GN=GRS66_008856 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.0096</expectation>
+      <identity>60.7</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="64">MNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>MN+NFY+Y+L+D +T+S P YM  GYAS</pattern>
+      <matchSeq start="1" end="28">MNINFYEYTLMDYSTFSNPLYMAYGYAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0AAV5RUF8_MAUHU" ac="A0AAV5RUF8" length="563" description="Flo10 protein OS=Maudiozyma humilis OX=51915 GN=DAKH74_009740 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.02</expectation>
+      <identity>40.0</identity>
+      <positives>53.3</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="64">LFLALFTYLAT-SNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>LFL +  + AT +N + G   ACLP G    G    F+ Y+L D TT   P Y++ GY S</pattern>
+      <matchSeq start="24" end="80">LFLLILGFRATRANALKG---ACLPSGESMPGFLARFFPYTLNDQTTVLEPSYISEGYLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A7TF11_VANPO" ac="A7TF11" length="1539" description="PA14 domain-containing protein OS=Vanderwaltozyma polyspora (strain ATCC 22028 / DSM 70294 / BCRC 21397 / CBS 2163 / NBRC 10782 / NRRL Y-8283 / UCD 57-17) OX=436907 GN=Kpol_1050p117 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.02</expectation>
+      <identity>34.5</identity>
+      <positives>48.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="63">LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>L+  LF +       +    ACLP G   +G  + FY Y+  D  T+S  +YM  GYA</pattern>
+      <matchSeq start="5" end="62">LYFGLFLFSQFIRTANAEAIACLPKGDSIDGFTIKFYPYAQADRHTFSSLEYMGFGYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="A0ABP0EHB2_9ASCO" ac="A0ABP0EHB2" length="574" description="PA14 domain-containing protein OS=[Candida] anglica OX=148631 GN=CAAN4_F11870 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.02</expectation>
+      <identity>34.5</identity>
+      <positives>53.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="65">LALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>L L    +T  +   +++ C PVG  K G NV  Y Y + DS T +  +Y++ GY +N</pattern>
+      <matchSeq start="4" end="61">LTLALLYSTLTLSVHASRGCAPVGVGKGGFNVKIYPYKISDSKTMNDLEYVSYGYLNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0ABP0EIC2_9ASCO" ac="A0ABP0EIC2" length="860" description="Flocculation protein Flo5p OS=[Candida] anglica OX=148631 GN=FLO5 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.03</expectation>
+      <identity>35.6</identity>
+      <positives>49.2</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="65">FLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>F+AL     +S   SGS   C+P G   +G    FY Y L D  T +   Y+++GY  N</pattern>
+      <matchSeq start="10" end="65">FIALAVVAGSS---SGSPDGCVPRGEMSSGFQAKFYPYQLQDQFTMASLDYVSTGYTKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0ACE2FV54_9SACH" ac="A0ACE2FV54" length="1495" description="Flocculation protein Flo1p OS=Monosporozyma unispora OX=27294 GN=FLO1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.03</expectation>
+      <identity>35.6</identity>
+      <positives>50.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="62">LFLALFTYLATSNVVSG--STQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGY</querySeq>
+      <pattern>LFL LF  L ++ +V    +   C P+G +  G  V FY Y L D TT+    ++  GY</pattern>
+      <matchSeq start="16" end="74">LFLNLFILLLSNILVQAGYTPNGCKPIGTKTAGATVKFYNYPLWDLTTWDTSSFLLGGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0A376BBK0_9ASCO" ac="A0A376BBK0" length="361" description="PA14 domain-containing protein OS=Saccharomycodes ludwigii OX=36035 GN=SCODWIG_03720 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.06</expectation>
+      <identity>37.2</identity>
+      <positives>55.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="65">STQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>S   C P+    NG  V ++ Y++ D+TTY+  +YM  GY  N</pattern>
+      <matchSeq start="7" end="49">SNGGCNPISKPSNGFKVRWFPYNIYDTTTYTSREYMAYGYYQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0A376BCA7_9ASCO" ac="A0A376BCA7" length="324" description="PA14 domain-containing protein OS=Saccharomycodes ludwigii OX=36035 GN=SCODWIG_04002 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.16</expectation>
+      <identity>37.5</identity>
+      <positives>50.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="62">LALFTYLATSNVVSG-STQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGY</querySeq>
+      <pattern>+ L T L  SNV    ++ +C P      G NV ++ Y L D  TY   +YM SGY</pattern>
+      <matchSeq start="2" end="57">VGLITSLLLSNVTFACNSNSCSPNSEPTKGFNVKWFSYELNDCETYKDEEYMCSGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0ABP0EB92_9ASCO" ac="A0ABP0EB92" length="1684" description="PA14 domain-containing protein OS=[Candida] anglica OX=148631 GN=CAAN4_C09538 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.17</expectation>
+      <identity>35.2</identity>
+      <positives>55.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="65">ATSNVVSGST---QACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>++S+  +GST     C P G   N +   FY Y+  D +TY   +YM+SGY ++</pattern>
+      <matchSeq start="1321" end="1374">SSSSTATGSTPKPSGCTPGGTPTNTLRGRFYPYNFGDDSTYKSAKYMSSGYMND</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0A6C1DNY5_SACPS" ac="A0A6C1DNY5" length="965" description="Flocculation protein flo5 OS=Saccharomyces pastorianus OX=27292 GN=FLO5_1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.22</expectation>
+      <identity>63.0</identity>
+      <positives>74.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="63">MNVNFYKYSLLDSTTYSYPQYMTSGYA</querySeq>
+      <pattern>MN+NFY+YSL DS+TYS   YM   YA</pattern>
+      <matchSeq start="1" end="27">MNINFYQYSLKDSSTYSNAAYMAYQYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0A9P7BCB0_MAUEX" ac="A0A9P7BCB0" length="671" description="PA14 domain-containing protein OS=Maudiozyma exigua OX=34358 GN=C6P45_004463 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.57</expectation>
+      <identity>28.8</identity>
+      <positives>45.5</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="66">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASNW</querySeq>
+      <pattern>+ +  L + L  YL+ SN   G   AC+P G    G+   F+ Y L      + P Y+  GY  ++</pattern>
+      <matchSeq start="7" end="69">LQFRVLVILLTLYLSFSN---GLKDACIPTGKGIIGLTARFFPYKLSSQIAVTDPTYINGGYLKDY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0ABP0EFJ0_9ASCO" ac="A0ABP0EFJ0" length="859" description="Flocculation protein Flo5p OS=[Candida] anglica OX=148631 GN=FLO5 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>1.1</expectation>
+      <identity>27.6</identity>
+      <positives>51.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="65">LALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>LA+ +    ++  +     C P G R +G  VN Y Y +LD +  +   Y+++GY ++</pattern>
+      <matchSeq start="6" end="63">LAIISSALLTSTHALGVPGCAPSGSRSDGFKVNVYPYQILDKSLMASLDYVSTGYRNS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0A4P6XUA8_9ASCO" ac="A0A4P6XUA8" length="3399" description="Agglutinin-like ALS OS=Metschnikowia aff. pulcherrima OX=2163413 GN=MPUL0E00110 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>1.1</expectation>
+      <identity>31.6</identity>
+      <positives>49.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="62">LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGY</querySeq>
+      <pattern>+F  +  + A  +V   + + C P      G  V+FYKY  L +T  + P Y T+GY</pattern>
+      <matchSeq start="1" end="57">MFRLIVAFAAFLSVTLAALRGCDPSTITNQGFTVDFYKYPRLGTTFKTDPDYYTTGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A1L0BI00_9ASCO" ac="A0A1L0BI00" length="2012" description="CIC11C00000003977 OS=Sungouiella intermedia OX=45354 GN=SAMEA4029010_CIC11G00000003977 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.5</expectation>
+      <identity>37.1</identity>
+      <positives>50.0</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="62">MPYHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGY</querySeq>
+      <pattern>+P+H +FL  FT L  S     +   CLP+     G+NVNFY Y L     ++   Y T GY</pattern>
+      <matchSeq start="2" end="57">VPWHVVFL--FTILLFSE---NAAATCLPLRISAPGLNVNFYGYDLRTRAGWN-DDYFTGGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0ABU1X7A1_SPHXE" ac="A0ABU1X7A1" length="957" description="Iron complex outermembrane receptor protein OS=Sphingobium xenophagum OX=121428 GN=J2W40_003778 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>2.8</expectation>
+      <identity>31.2</identity>
+      <positives>51.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="67">FLALFTYLATSNVVSGSTQACLP-VGPRKNGMNVNFY--KYSLLDSTTYSYPQYMTSGYASNWN</querySeq>
+      <pattern>F+  +TY+  S++++ ST+  +P VG  KN  N +FY  KY      +Y+Y Q         W+</pattern>
+      <matchSeq start="827" end="890">FIGNYTYVDASDIINKSTKERVPVVGVSKNSFNASFYYEKYGFNARLSYNYRQGRIEQVRDYWS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0A9P7B6D5_MAUEX" ac="A0A9P7B6D5" length="1380" description="PA14 domain-containing protein OS=Maudiozyma exigua OX=34358 GN=C6P45_001394 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>2.8</expectation>
+      <identity>29.1</identity>
+      <positives>41.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="62">LALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGY</querySeq>
+      <pattern>L +   L+   +      AC PVG    G    F+ Y + D T      Y+T+GY</pattern>
+      <matchSeq start="10" end="64">LVILVMLSAFGMALNEKGACKPVGESIQGFRARFFPYEINDQTAVENTDYITTGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0AAV5RX16_MAUHU" ac="A0AAV5RX16" length="2575" description="PA14 domain-containing protein OS=Maudiozyma humilis OX=51915 GN=DAKH74_023170 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>2.8</expectation>
+      <identity>32.8</identity>
+      <positives>48.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="65">LALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>LAL + L ++  + G   ACLP G    G+   FY Y+       S   Y++ GY S+</pattern>
+      <matchSeq start="16" end="70">LALLSALTSAETLKG---ACLPQGTSVQGLTARFYSYAYGSLVAQSSSAYISGGYRSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0AAU9ISK0_9CILI" ac="A0AAU9ISK0" length="205" description="Thioredoxin-like fold domain-containing protein OS=Blepharisma stoltei OX=1481888 GN=BSTOLATCC_MIC3564 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>3.4</expectation>
+      <identity>38.8</identity>
+      <positives>52.2</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="61">YLFLALFTYLAT--SNVVSGSTQAC-LPVGPRKNGMNVNFYKYSLLDSTTYSY-------PQYMTSG</querySeq>
+      <pattern>YL  AL+  LAT  SN+ + +  A   P G   N +N N Y Y L  STTY++       PQY+ +G</pattern>
+      <matchSeq start="115" end="181">YLDTALYWNLATIKSNLATDTQTATGAPFGQVSNALNNNAYYYDLGVSTTYAFTRGITGTPQYLING</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0ACE2FVT1_9SACH" ac="A0ACE2FVT1" length="1047" description="Flocculation protein Flo5p OS=Monosporozyma unispora OX=27294 GN=FLO5 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>3.8</expectation>
+      <identity>38.1</identity>
+      <positives>50.8</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="67">LFLALFTYLATSNVVSGSTQACLPVG-PRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASNWN</querySeq>
+      <pattern>LFL+L  Y +T+ +V    +AC   G   K G  V FY Y   D TTY    ++  GY +N N</pattern>
+      <matchSeq start="14" end="72">LFLSLCQY-STAGIVP---EACDMTGLTGKTGAKVRFYDYPKGDDTTYKDIAFLAGGYLNNTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0A9P6WBB9_MAUEX" ac="A0A9P6WBB9" length="1174" description="PA14 domain-containing protein OS=Maudiozyma exigua OX=34358 GN=C6P45_004880 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>3.8</expectation>
+      <identity>30.0</identity>
+      <positives>45.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="65">LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>+FLALF +   SN       +CLP GP   G    F+ Y +      + P ++   Y +N</pattern>
+      <matchSeq start="12" end="68">IFLALFLHPYRSNA---DRTSCLPNGPSSQGFTARFFPYPIGSPAATTDPTWLQQDYTNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0AAU9ICD8_9CILI" ac="A0AAU9ICD8" length="205" description="Thioredoxin-like fold domain-containing protein OS=Blepharisma stoltei OX=1481888 GN=BSTOLATCC_MIC7808 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>4.7</expectation>
+      <identity>38.8</identity>
+      <positives>52.2</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="61">YLFLALFTYLAT--SNVVSGSTQAC-LPVGPRKNGMNVNFYKYSLLDSTTYSY-------PQYMTSG</querySeq>
+      <pattern>YL  AL+  LAT  SN+ + +  A   P G   N +N N Y Y L  STTY++       PQY+ +G</pattern>
+      <matchSeq start="115" end="181">YLDTALYWNLATIKSNLATDTQTATGAPFGQVANALNNNAYYYDLGVSTTYAFTRGITGTPQYLING</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0AAV5RVH7_MAUHU" ac="A0AAV5RVH7" length="806" description="Flocculin OS=Maudiozyma humilis OX=51915 GN=DAKH74_017770 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>5.2</expectation>
+      <identity>34.4</identity>
+      <positives>45.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="64">HYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYAS</querySeq>
+      <pattern>H L L L   LA  + + G   ACLP G +  G+   FY Y +      S   Y++ GY S</pattern>
+      <matchSeq start="10" end="65">HLLVLCLCASLA--HALKG---ACLPQGTQVQGLTAKFYNYEIGSQVAVSSAAYISGGYRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0A1L0B7I6_9ASCO" ac="A0A1L0B7I6" length="2248" description="CIC11C00000002377 OS=Sungouiella intermedia OX=45354 GN=SAMEA4029010_CIC11G00000002377 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>5.3</expectation>
+      <identity>36.7</identity>
+      <positives>48.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="65">LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>LFL     LA   VV   T  C+P     NG  VNFY+Y L D   ++   +  +GY +N</pattern>
+      <matchSeq start="4" end="60">LFLLCLHLLAV--VVIADTGGCVPDSLTGNGFKVNFYRYGLNDPVGWT-KGFFETGYKAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0A8H7GNX8_METPC" ac="A0A8H7GNX8" length="3350" description="PA14 domain-containing protein OS=Metschnikowia pulcherrima OX=27326 GN=HF325_005781 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>5.3</expectation>
+      <identity>29.8</identity>
+      <positives>47.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="62">LFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGY</querySeq>
+      <pattern>+F ++  + A  +V   + + C P      G  VNFYKY  L +   +   Y T+GY</pattern>
+      <matchSeq start="1" end="57">MFRSIVAFAAFLSVTLAALRGCDPSTISNQGFTVNFYKYPRLGTAFKTESDYYTTGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0A1X7R310_9SACH" ac="A0A1X7R310" length="345" description="Similar to Saccharomyces cerevisiae YHR211W FLO5 Lectin-like cell wall protein (Flocculin) (Partial) (Fragment) OS=Maudiozyma saulgeensis OX=1789683 GN=KASA_0O07392G PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>6.9</expectation>
+      <identity>40.9</identity>
+      <positives>56.8</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="46">YHYLFLALFTYLATSNVVSGSTQACLPVGPRKNGMNVNFYKYSL</querySeq>
+      <pattern>+H LFLAL  Y  TS++   S+  CLP GP   G +  F+ Y +</pattern>
+      <matchSeq start="7" end="47">FHNLFLALLFY-PTSSLADRSS--CLPTGPSTQGFSARFFPYRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0A376B904_9ASCO" ac="A0A376B904" length="400" description="PA14 domain-containing protein OS=Saccharomycodes ludwigii OX=36035 GN=SCODWIG_02775 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>7.0</expectation>
+      <identity>28.8</identity>
+      <positives>48.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="65">LATSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>L  +     +  AC P+     G  V ++ Y+L D+ ++S  +YM  GY  N</pattern>
+      <matchSeq start="23" end="74">LINATASDDTMDACSPISDPTEGFKVRWFNYTLDDTKSFSSLEYMAYGYYQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0AAV5RVV3_MAUHU" ac="A0AAV5RVV3" length="1397" description="PA14 domain-containing protein OS=Maudiozyma humilis OX=51915 GN=DAKH74_023210 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>7.2</expectation>
+      <identity>28.3</identity>
+      <positives>50.0</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="65">LFTYLATSNVVSGSTQA----CLPVGPRKNGMNVNFYKYSLLDSTTYSYPQYMTSGYASN</querySeq>
+      <pattern>+F+ L   N++ G + A    CLP G    G +  F+ Y++ D    +   Y++ GY S+</pattern>
+      <matchSeq start="4" end="63">IFSILLVVNLIPGLSMAQKASCLPQGESVIGFSARFFPYTIRDQKAINSLDYISGGYLSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="C5DH02_LACTC" ac="C5DH02" length="1103" description="KLTH0E00242p OS=Lachancea thermotolerans (strain ATCC 56472 / CBS 6340 / NRRL Y-8284) OX=559295 GN=KLTH0E00242g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>9.9</expectation>
+      <identity>34.3</identity>
+      <positives>45.7</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="65">MPYHYLFLALFTYLA----TSNVVSGSTQACLPVGPRKNGMNVNFYKYSLLD-STTYSYPQYMTSGYASN</querySeq>
+      <pattern>M Y  + LA F ++A    + N  +     CLP G    G   N Y Y  LD  + YS+  Y+ SGY  N</pattern>
+      <matchSeq start="1" end="69">MWYLAIRLASFAFIALASSSENEENIGNHVCLPQGLSFPGFRANIYSYKYLDRESAYSF-DYLQSGYQYN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

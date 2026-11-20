@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-201415-0415-51050050-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-201415-0415-51050050-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P44211|Y1484_HAEIN" type="PROTEIN" length="53"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:14:15+00:00" end="2026-11-13T20:16:07+00:00" search="P0Y0M0DT0H0M112.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="8">
+   <hit number="1" database="SP" id="Y1484_HAEIN" ac="P44211" length="53" description="Putative uncharacterized protein HI_1484 in Mu-like prophage FluMu region OS=Haemophilus influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 GN=HI_1484 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>281</score>
+      <bits>112.8</bits>
+      <expectation>8.9e-32</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MMDDLQDVSRLREAYQFYQKAKQDEDSIVCGCLNDAYEWLFSELKALFDEEEE</querySeq>
+      <pattern>MMDDLQDVSRLREAYQFYQKAKQDEDSIVCGCLNDAYEWLFSELKALFDEEEE</pattern>
+      <matchSeq start="1" end="53">MMDDLQDVSRLREAYQFYQKAKQDEDSIVCGCLNDAYEWLFSELKALFDEEEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0ACD8DHB0_9ROSA" ac="A0ACD8DHB0" length="150" description="Uncharacterized protein OS=Prunus speciosa OX=378228 GN=CerSpe_061240 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.2</expectation>
+      <identity>36.1</identity>
+      <positives>63.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="43">VSRLREAYQFYQKAKQDEDSIVCGCLNDAYEWLFSE</querySeq>
+      <pattern>VSR RE+  +Y+ +++  +S+ CGCL   + W+  E</pattern>
+      <matchSeq start="30" end="65">VSRYRESLAYYESSREWRESVGCGCLVHVHMWVMKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A314YP47_PRUYE" ac="A0A314YP47" length="172" description="F-box/kelch-repeat protein OS=Prunus yedoensis var. nudiflora OX=2094558 GN=Pyn_03448 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.8</expectation>
+      <identity>36.1</identity>
+      <positives>63.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="43">VSRLREAYQFYQKAKQDEDSIVCGCLNDAYEWLFSE</querySeq>
+      <pattern>VSR RE+  +Y+ +++  +S+ CGCL   + W+  E</pattern>
+      <matchSeq start="52" end="87">VSRYRESLAYYESSREWRESVGCGCLLHVHMWVVEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0ABU9V0I0_9ENTR" ac="A0ABU9V0I0" length="865" description="Cellulose synthase catalytic subunit [UDP-forming] OS=Phytobacter palmae OX=1855371 GN=bcsA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>2.1</expectation>
+      <identity>43.2</identity>
+      <positives>56.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">SRLREAYQFYQKAKQDEDSIVCGCLNDAYEWLFSELK</querySeq>
+      <pattern>+RL E Y+FY++ K    S  CGC   A  WLF  L+</pattern>
+      <matchSeq start="15" end="51">ARLSERYRFYRRNKASGFSAACGCFWAALAWLFLPLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABM7VP10_9ENTR" ac="A0ABM7VP10" length="865" description="Cellulose synthase catalytic subunit [UDP-forming] OS=Phytobacter diazotrophicus OX=395631 GN=PDTA9734_02360 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>2.9</expectation>
+      <identity>43.2</identity>
+      <positives>56.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">SRLREAYQFYQKAKQDEDSIVCGCLNDAYEWLFSELK</querySeq>
+      <pattern>+RL E Y+FY++ K    S  CGC   A  WLF  L+</pattern>
+      <matchSeq start="15" end="51">ARLSERYRFYRRNKASGFSAACGCFWVALAWLFLPLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0ABW1Q6I8_9ENTR" ac="A0ABW1Q6I8" length="865" description="Cellulose synthase catalytic subunit [UDP-forming] OS=Citrobacter bitternis OX=1585982 GN=bcsA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>2.9</expectation>
+      <identity>43.2</identity>
+      <positives>56.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">SRLREAYQFYQKAKQDEDSIVCGCLNDAYEWLFSELK</querySeq>
+      <pattern>+RL E Y+FY++ K    S  CGC   A  WLF  L+</pattern>
+      <matchSeq start="15" end="51">TRLSERYRFYRRNKASGFSAACGCFWVALAWLFLPLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A1E7QL25_WOLPI" ac="A0A1E7QL25" length="102" description="Tetratricopeptide repeat protein OS=Wolbachia pipientis OX=955 GN=BIY23_01540 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>7.7</expectation>
+      <identity>38.5</identity>
+      <positives>53.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="52">AYQFYQKAKQDEDSIVCGCLNDAYEWLFSELKALFDEEE</querySeq>
+      <pattern>A+Q+Y KA  D   +    L DAY W    L+ L+ E+E</pattern>
+      <matchSeq start="15" end="53">AFQYYNKAISDSCGLGMELLTDAYTWKICTLQGLYREKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ACE1UBZ4_9ROSA" ac="A0ACE1UBZ4" length="150" description="Uncharacterized protein OS=Prunus brigantina OX=151428 GN=PRUBRI_1G867200 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>8.4</expectation>
+      <identity>33.3</identity>
+      <positives>61.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="43">VSRLREAYQFYQKAKQDEDSIVCGCLNDAYEWLFSE</querySeq>
+      <pattern>VSR RE+  +Y+ +++  +S+ CGC    + W+  E</pattern>
+      <matchSeq start="30" end="65">VSRYRESLAYYESSREWRESVGCGCRVHVHMWVMEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

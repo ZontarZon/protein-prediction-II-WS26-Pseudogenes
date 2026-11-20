@@ -1,0 +1,2439 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-202312-0573-9188856-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-202312-0573-9188856-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P75415|Y366_MYCPN" type="PROTEIN" length="272"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:23:12+00:00" end="2026-11-13T20:29:02+00:00" search="P0Y0M0DT0H0M350.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="129">
+   <hit number="1" database="SP" id="Y366_MYCPN" ac="P75415" length="272" description="Putative MgpC-like protein MPN_366 OS=Mycoplasmoides pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_366 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1410</score>
+      <bits>547.7</bits>
+      <expectation>0.0</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="272">MGGLDVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDRCMNPWIRPRRGRGRMRALGKIRKKQRRKMMPRWWGWLEVVRLEVLLVYKAMARTVRG</querySeq>
+      <pattern>MGGLDVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDRCMNPWIRPRRGRGRMRALGKIRKKQRRKMMPRWWGWLEVVRLEVLLVYKAMARTVRG</pattern>
+      <matchSeq start="1" end="272">MGGLDVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDRCMNPWIRPRRGRGRMRALGKIRKKQRRKMMPRWWGWLEVVRLEVLLVYKAMARTVRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="B2BDZ7_MYCPM" ac="B2BDZ7" length="545" description="Cytadherence-involved protein (Fragment) OS=Mycoplasmoides pneumoniae OX=2104 GN=MPN142 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>898</score>
+      <bits>350.5</bits>
+      <expectation>4.6e-115</expectation>
+      <identity>92.7</identity>
+      <positives>94.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="193">GGLDVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLP</querySeq>
+      <pattern>GGLDVVRAAHLHPSYELVDWKRVG  KLVALVRSALVRVKFQDTTSSD +N  T+QNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASY+LIF+AAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLY TLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGS QESSWNSQRSQKGLK  P P</pattern>
+      <matchSeq start="48" end="237">GGLDVVRAAHLHPSYELVDWKRVGDTKLVALVRSALVRVKFQDTTSSDQSN--TNQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYVLIFKAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYKTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSDQESSWNSQRSQKGLKNNPGP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A348GSS8_MYCPM" ac="A0A348GSS8" length="1151" description="Adhesin P1 OS=Mycoplasmoides pneumoniae OX=2104 GN=MPN142 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>898</score>
+      <bits>350.5</bits>
+      <expectation>3.2e-109</expectation>
+      <identity>92.7</identity>
+      <positives>94.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="193">GGLDVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLP</querySeq>
+      <pattern>GGLDVVRAAHLHPSYELVDWKRVG  KLVALVRSALVRVKFQDTTSSD +N  T+QNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASY+LIF+AAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLY TLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGS QESSWNSQRSQKGLK  P P</pattern>
+      <matchSeq start="48" end="237">GGLDVVRAAHLHPSYELVDWKRVGDTKLVALVRSALVRVKFQDTTSSDQSN--TNQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYVLIFKAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYKTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSDQESSWNSQRSQKGLKNNPGP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="MGP3_MYCPN" ac="Q50341" length="1218" description="Adhesin P40/P90 OS=Mycoplasmoides pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=orf6 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>898</score>
+      <bits>350.5</bits>
+      <expectation>8.3e-109</expectation>
+      <identity>92.7</identity>
+      <positives>94.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="193">GGLDVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLP</querySeq>
+      <pattern>GGLDVVRAAHLHPSYELVDWKRVG  KLVALVRSALVRVKFQDTTSSD +N  T+QNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASY+LIF+AAPRATWVFERKIKLALPYVKQESQGS DQGSNGKGSLY TLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLK  P P</pattern>
+      <matchSeq start="48" end="237">GGLDVVRAAHLHPSYELVDWKRVGDTKLVALVRSALVRVKFQDTTSSDQSN--TNQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYVLIFKAAPRATWVFERKIKLALPYVKQESQGSGDQGSNGKGSLYKTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKNNPGP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="Y149_MYCPN" ac="P75037" length="434" description="Putative MgpC-like protein MPN_149 OS=Mycoplasmoides pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_149 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>796</score>
+      <bits>311.2</bits>
+      <expectation>4.1e-101</expectation>
+      <identity>87.9</identity>
+      <positives>90.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="193">LHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLP</querySeq>
+      <pattern>L+PSYELVDWKRVG  KLVALVRSALVRVKF D TSSDSNNQDT+QNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKL LPYVK ES G+ D  +   GSLYTTLQDLLVEQPVTPYTPNAGLARVNG AQDTVHFGSGQESSWNSQRSQK LK  P P</pattern>
+      <matchSeq start="10" end="190">LNPSYELVDWKRVGDTKLVALVRSALVRVKFNDGTSSDSNNQDTNQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLELPYVKNES-GAGDSTTTNSGSLYTTLQDLLVEQPVTPYTPNAGLARVNGAAQDTVHFGSGQESSWNSQRSQKVLKNNPGP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A2Z6I6Q2_MYCPM" ac="A0A2Z6I6Q2" length="1148" description="Cytadherence-related protein OS=Mycoplasmoides pneumoniae OX=2104 GN=MPN142 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>825</score>
+      <bits>322.4</bits>
+      <expectation>1e-98</expectation>
+      <identity>87.1</identity>
+      <positives>89.7</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="193">GGLDVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDT--SGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLP</querySeq>
+      <pattern>GGLDVVRAAHLHPSYELVDWKRVG  KLVALVRSALVRVKFQDTTSSDSN   T+  AL+FDT ESQKAL     GS+DT  SGSNSQDFASY+LIF+AAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLY TLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGS QESSWNSQRSQKGLK  P P</pattern>
+      <matchSeq start="48" end="234">GGLDVVRAAHLHPSYELVDWKRVGDTKLVALVRSALVRVKFQDTTSSDSNT--TTDGALTFDTNESQKAL-----GSTDTQGSGSNSQDFASYVLIFKAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYKTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSDQESSWNSQRSQKGLKNNPGP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="E9JMN8_MYCGT" ac="E9JMN8" length="1049" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>192</score>
+      <bits>78.6</bits>
+      <expectation>1.2e-12</expectation>
+      <identity>32.5</identity>
+      <positives>44.8</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D      N L  L +S  V+VK++   SS SNNQ      +SFD+  ++                      SYI+ F  +      W   +K KL LP              N   ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W S R Q GL   P P  S</pattern>
+      <matchSeq start="53" end="201">DLVSLAQLDSSYQISDQTLFNTN-LFVLFKSTQVKVKYE---SSGSNNQ------ISFDSTNNKP---------------------SYIVEFTNSTNIGIKWRVVKKYKLDLP--------------NVSSNMNQVLQELILEQPLTKYTLNSSLAKQKGKTQREVHLGSGQATNWPSMRDQHGLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="E9JMP7_MYCGT" ac="E9JMP7" length="1053" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>188</score>
+      <bits>77.0</bits>
+      <expectation>3.9e-12</expectation>
+      <identity>32.0</identity>
+      <positives>46.4</positives>
+      <gaps>22</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +   +SS SN      N +SFD               SD S  N++   SYI+ F  +      W   +K +L LP V                ++   LQ+L++EQP+T YT N+ LA+  G +Q  VH GSGQ + WNSQR+   L   P P  S</pattern>
+      <matchSeq start="53" end="206">DLVSLAQLDSSYQISD-QTIHNTNLFVLFKSTQVKLTY---SSSGSNT-----NTISFD---------------SDNSDKNNKP--SYIVEFTNSTNIGIKWRMVKKYQLDLPSVST--------------TMNQVLQELILEQPLTKYTLNSSLAKQKGKSQIEVHLGSGQANQWNSQRATHSLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="U3L116_MYCGT" ac="U3L116" length="491" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>186</score>
+      <bits>76.3</bits>
+      <expectation>5.3e-12</expectation>
+      <identity>30.8</identity>
+      <positives>45.6</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q GL   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHGLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="E9JMQ3_MYCGT" ac="E9JMQ3" length="1046" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>186</score>
+      <bits>76.3</bits>
+      <expectation>7.1e-12</expectation>
+      <identity>30.4</identity>
+      <positives>44.3</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD+  ++                      SY++ F  +      W   +K KL LP V  E              +   LQ+L++EQP+T YT N+ LA+  G +Q  VH G  Q ++W S R Q GL   P P  S</pattern>
+      <matchSeq start="53" end="200">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSTQVKVKYE---SSGSNN-------ISFDSTNNKP---------------------SYVVEFTNSTNIGIKWTMVKKYKLDLPNVTNE--------------MNQVLQELILEQPLTKYTLNSSLAKQKGKSQIEVHLGMNQATNWRSMRDQHGLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="U3L118_MYCGT" ac="U3L118" length="490" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>182</score>
+      <bits>74.7</bits>
+      <expectation>1.8e-11</expectation>
+      <identity>31.4</identity>
+      <positives>46.4</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK+   +SS SNNQ      +SFD+                TS +N     +YI+ F  +      W   +K +L +P              N   ++   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="171">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYD--SSSGSNNQ------ISFDS----------------TSQANKP---AYIVEFTNSTNIGIKWRVVKKYQLDVP--------------NVSSNMNEVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="U3L1B1_MYCGT" ac="U3L1B1" length="489" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>3.2e-11</expectation>
+      <identity>27.7</identity>
+      <positives>44.6</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="229">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDR---CMNPWIRPRRGRGR</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S   +  +     ++ K+D+      P    ++G+G+</pattern>
+      <matchSeq start="20" end="202">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS---TGFKLTTGNAYRKLDQSWPIYQPIDGTKQGKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="U3L0P6_MYCGT" ac="U3L0P6" length="490" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>3.2e-11</expectation>
+      <identity>31.4</identity>
+      <positives>46.4</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK+   +SS SNNQ      +SFD+                TS +N     +YI+ F  +      W   +K +L +P V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W S R+  GL   P P  S</pattern>
+      <matchSeq start="20" end="171">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYD--SSSGSNNQ------ISFDS----------------TSQANKP---AYIVEFTNSTNIGIKWRVVKKYQLDVPNVST--------------TMNEVLQELILEQPLTKYTLNSSLAKEKGKTQVAVHLGSGQATNWRSMRNSIGLNDNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="U3L111_MYCGT" ac="U3L111" length="491" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>3.2e-11</expectation>
+      <identity>31.4</identity>
+      <positives>46.4</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK+   +SS SNNQ      +SFD+                TS +N     +YI+ F  +      W   +K +L +P V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W S R+  GL   P P  S</pattern>
+      <matchSeq start="20" end="171">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYD--SSSGSNNQ------ISFDS----------------TSQANKP---AYIVEFTNSTNIGIKWRVVKKYQLDVPNVST--------------TMNEVLQELILEQPLTKYTLNSSLAKEKGKTQVAVHLGSGQATNWRSMRNSIGLNDNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="U3L0Y4_MYCGT" ac="U3L0Y4" length="492" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>3.2e-11</expectation>
+      <identity>31.4</identity>
+      <positives>46.4</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK+   +SS SNNQ      +SFD+                TS +N     +YI+ F  +      W   +K +L +P V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W S R+  GL   P P  S</pattern>
+      <matchSeq start="20" end="171">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYD--SSSGSNNQ------ISFDS----------------TSQANKP---AYIVEFTNSTNIGIKWRVVKKYQLDVPNVST--------------TMNEVLQELILEQPLTKYTLNSSLAKEKGKTQVAVHLGSGQATNWRSMRNSIGLNDNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A8BPU1_MYCGT" ac="A8BPU1" length="495" description="Adhesion protein variant d (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>3.2e-11</expectation>
+      <identity>28.9</identity>
+      <positives>45.4</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY + D + +    L  L +S  V+VK+  ++ S++N        +SFD+++                        SYI+ F  +      W   +K +L LP V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W++QR+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="168">DLVSLAQLDSSYIISD-QTIHNTNLFVLFKSTQVKVKYDSSSGSNTNT-------ISFDSEKP-----------------------SYIVEFTNSTTVGIKWRMVKKYQLDLPSVST--------------TMNQVLQELILEQPLTKYTLNSSLAKQKGKTQREVHLGSGQTTNWSTQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="D5FY50_MYCGT" ac="D5FY50" length="1048" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>4.3e-11</expectation>
+      <identity>28.9</identity>
+      <positives>45.4</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY + D + +    L  L +S  V+VK+  ++ S++N        +SFD+++                        SYI+ F  +      W   +K +L LP V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W++QR+Q  L   P P  S</pattern>
+      <matchSeq start="53" end="201">DLVSLAQLDSSYIISD-QTIHNTNLFVLFKSTQVKVKYDSSSGSNTNT-------ISFDSEKP-----------------------SYIVEFTNSTTVGIKWRMVKKYQLDLPSVST--------------TMNQVLQELILEQPLTKYTLNSSLAKQKGKTQREVHLGSGQTTNWSTQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="U3L0P4_MYCGT" ac="U3L0P4" length="488" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>4.3e-11</expectation>
+      <identity>30.3</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="U3L1I2_MYCGT" ac="U3L1I2" length="489" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>4.3e-11</expectation>
+      <identity>30.3</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="U3L0Y8_MYCGT" ac="U3L0Y8" length="489" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>4.3e-11</expectation>
+      <identity>30.3</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="U3L0Y1_MYCGT" ac="U3L0Y1" length="489" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>4.3e-11</expectation>
+      <identity>30.3</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="U3L1H9_MYCGT" ac="U3L1H9" length="490" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>4.3e-11</expectation>
+      <identity>30.3</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="U3L0P8_MYCGT" ac="U3L0P8" length="490" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>4.3e-11</expectation>
+      <identity>30.3</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="U3L0P7_MYCGT" ac="U3L0P7" length="490" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>4.3e-11</expectation>
+      <identity>30.3</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="U3L109_MYCGT" ac="U3L109" length="491" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>4.3e-11</expectation>
+      <identity>30.3</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="Q49388_MYCGT" ac="Q49388" length="217" description="Adhesin-like protein (Fragment) OS=Mycoplasmoides genitalium OX=2097 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>173</score>
+      <bits>71.2</bits>
+      <expectation>4.5e-11</expectation>
+      <identity>30.9</identity>
+      <positives>45.9</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +   +SS SNNQ      +SFD+                TS +N     +YI+ F  +      W   +K +L +P V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="11" end="161">DLVSLAQLDSSYQISD-QTIHNTNLFVLFKSKDVKLTY---SSSGSNNQ------ISFDS----------------TSQANKP---AYIVEFTNSTNIGIKWRVVKKYQLDVPNVST--------------TMNEVLQELILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A8BPR6_MYCGT" ac="A8BPR6" length="531" description="Adhesion protein (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>4.5e-11</expectation>
+      <identity>30.3</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="53" end="202">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A8BPQ9_MYCGT" ac="A8BPQ9" length="532" description="Adhesion protein (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>4.6e-11</expectation>
+      <identity>30.3</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="53" end="202">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A8BPS1_MYCGT" ac="A8BPS1" length="540" description="Adhesion protein (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>4.6e-11</expectation>
+      <identity>30.3</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="53" end="202">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="E9JMP4_MYCGT" ac="E9JMP4" length="1045" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>5.7e-11</expectation>
+      <identity>32.8</identity>
+      <positives>50.7</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="196">QESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>+ +Q  LN S SGS+  + S   +  SY++ F  +      W   +K KL +P              N   ++   L++L++EQP+T YT N  LA+  G +Q  VH GSGQ ++W++QR+Q  L   P P  S</pattern>
+      <matchSeq start="81" end="200">KSTQVKLNYSSSGSNTNTISFDSEKPSYVVEFTNSTNVGIKWTMVKKYKLDVP--------------NVSSNMNEVLKELILEQPLTKYTLNGSLAKQKGKSQVAVHLGSGQATNWSTQRNQHNLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="SP" id="MGP3_MYCGE" ac="P22747" length="1053" description="Adhesin P110 OS=Mycoplasmoides genitalium (strain ATCC 33530 / DSM 19775 / NCTC 10195 / G37) OX=243273 GN=mgpC PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>5.7e-11</expectation>
+      <identity>30.3</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="53" end="202">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQANQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="D5FY38_MYCGT" ac="D5FY38" length="1054" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>5.7e-11</expectation>
+      <identity>30.7</identity>
+      <positives>45.3</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="193">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLP</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK+   +SS SNNQ      +SFD T + +K                     SY++ F  +      W   +K +L +P              N   ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W S R Q  L   P P</pattern>
+      <matchSeq start="53" end="201">DLVSLAQLDSSYQISD-QTIHNTNLFVLFKSRDVKVKYD--SSSGSNNQ------ISFDSTSQGEKP--------------------SYVVEFTNSTNIGIKWSVVKKYQLDVP--------------NVSSNMNEVLQELILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQATNWRSMRDQHDLNNNPSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="E9JMQ0_MYCGT" ac="E9JMQ0" length="1044" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>176</score>
+      <bits>72.4</bits>
+      <expectation>1.4e-10</expectation>
+      <identity>31.1</identity>
+      <positives>46.3</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="193">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLP</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNNQ      +SFD T + +K     +  +S T G                    W   +K +L +P V                ++   L++L++EQP+T YT N+ LA+  G +Q  VH GSGQ S W +QR+Q  L   P P</pattern>
+      <matchSeq start="53" end="200">DLVSLAQLDSSYQISD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNNQ------ISFDSTSQGEKPAYIVEFTNSTTVGIK------------------WSVVKKYQLDVPNVST--------------TMNDVLKNLILEQPLTKYTLNSSLAKEKGKSQIEVHLGSGQASQWITQRNQHNLDNNPSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="U3L0P5_MYCGT" ac="U3L0P5" length="490" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>174</score>
+      <bits>71.6</bits>
+      <expectation>1.9e-10</expectation>
+      <identity>29.7</identity>
+      <positives>45.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P              N   ++   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W S R+  GL   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVP--------------NVSSNMNDVLKNLILEQPLTKYTLNSSLAKEKGKTQVAVHLGSGQATNWRSMRNSIGLNDNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="E9JMP1_MYCGT" ac="E9JMP1" length="1057" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>174</score>
+      <bits>71.6</bits>
+      <expectation>2.5e-10</expectation>
+      <identity>27.7</identity>
+      <positives>44.5</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="193">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLP</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK+  ++ S++N        +SFD+  ++                      SYI+ F  +      W   +K +L +P V  E              +   L++L++EQP+T YT N+ LA+  G  Q  VH GS   + W +QR+Q GL   P P</pattern>
+      <matchSeq start="53" end="200">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYDSSSGSNTNT-------ISFDSTNNKP---------------------SYIVEFTNSTNIGIKWSVVKKYQLDVPNVTNE--------------MNDVLKNLILEQPLTKYTLNSSLAKQKGKTQAVVHLGSNMANQWTNQRNQHGLNNNPSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="U3L1I0_MYCGT" ac="U3L1I0" length="491" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>4.7e-10</expectation>
+      <identity>30.8</identity>
+      <positives>44.1</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK+   +SS SNNQ      +SFD T + +K                     SYI+ F  +      W   +K +L +P              N   ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GS   + W S R Q GL   P P  S</pattern>
+      <matchSeq start="20" end="170">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYD--SSSGSNNQ------ISFDSTSQGEKP--------------------SYIVEFTNSTNVGIKWTMVKKYQLDVP--------------NVSSNMNQVLQELILEQPLTKYTLNSSLAKEKGKTQVAVHLGS-NSNQWRSMRDQHGLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="U3L0Y2_MYCGT" ac="U3L0Y2" length="489" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>6.3e-10</expectation>
+      <identity>29.7</identity>
+      <positives>45.6</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +   +SS SNNQ      +SFD T + +K                     SY++ F  +      W   +K +L +P V  E              +   L++L++EQP+T YT N+ LA+  G +Q  VH GSGQ ++W S R+  GL   P P  S</pattern>
+      <matchSeq start="20" end="170">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKLTY---SSSGSNNQ------ISFDSTSQGEKP--------------------SYVVEFTNSTNIGIKWSVVKKYQLDVPNVTNE--------------MNDVLKELILEQPLTKYTLNSSLAKEKGKSQIEVHLGSGQATNWRSMRNSIGLNDNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="U3L1A9_MYCGT" ac="U3L1A9" length="491" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>6.4e-10</expectation>
+      <identity>27.3</identity>
+      <positives>44.6</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="229">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDR---CMNPWIRPRRGRGR</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +   +SS SNNQ      +SFD T + +K                     SY++ F  +      W   +K +L +P V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W S R+  GL   P P  S   +  +     ++ K+D+      P    ++G+G+</pattern>
+      <matchSeq start="20" end="203">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKLTY---SSSGSNNQ------ISFDSTSQGEKP--------------------SYVVEFTNSTNIGIKWRVVKKYQLDVPNVST--------------TMNEVLQELILEQPLTKYTLNSSLAKEKGKTQVAVHLGSGQATNWRSMRNSIGLNDNPSPNAS---TGFKLTTGNAYRKLDQSWPIYQPIDGTKQGKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="U3L113_MYCGT" ac="U3L113" length="486" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>8.5e-10</expectation>
+      <identity>28.4</identity>
+      <positives>44.3</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD+  ++                      SY++ F  +      W   +K +L +P              N   ++   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W S R+   L   P P  S</pattern>
+      <matchSeq start="20" end="167">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTNNKP---------------------SYVVEFTNSTNVGIKWTMVKKYQLDVP--------------NVSSNMNDVLKNLILEQPLTKYTLNSSLAKEKGKTQVAVHLGSGQATNWRSMRNSISLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="U3L1B0_MYCGT" ac="U3L1B0" length="487" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>8.5e-10</expectation>
+      <identity>28.4</identity>
+      <positives>44.3</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD+  ++                      SY++ F  +      W   +K +L +P              N   ++   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W S R+   L   P P  S</pattern>
+      <matchSeq start="20" end="167">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTNNKP---------------------SYVVEFTNSTNVGIKWTMVKKYQLDVP--------------NVSSNMNDVLKNLILEQPLTKYTLNSSLAKEKGKTQVAVHLGSGQATNWRSMRNSISLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="Q5ULX8_MYCGT" ac="Q5ULX8" length="489" description="Cytadherence-related protein p110 (Fragment) OS=Mycoplasmoides genitalium OX=2097 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>8.5e-10</expectation>
+      <identity>29.7</identity>
+      <positives>45.1</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +   +SS SNNQ      +SFD T + +K                     SY++ F  +      W   +K +L +P V  E              +   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W S R+  GL   P P  S</pattern>
+      <matchSeq start="30" end="180">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKLTY---SSSGSNNQ------ISFDSTSQGEKP--------------------SYVVEFTNSTNIGIKWRVVKKYQLDVPNVTNE--------------MNDVLKELILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQATNWRSMRNSIGLNDNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A8BPU5_MYCGT" ac="A8BPU5" length="492" description="Adhesion protein variant e (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>8.6e-10</expectation>
+      <identity>28.4</identity>
+      <positives>44.3</positives>
+      <gaps>26</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY + D + +    L  L +S  V+VK++ + S          N +SFD+++                        SYI+ F  +      W   +K +L +P V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W++QR+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="165">DLVSLAQLDSSYIISD-QTIHNTNLFVLFKSTQVKVKYESSGS----------NQISFDSEKP-----------------------SYIVEFTNSTTVGIKWRMVKKYQLDVPSVST--------------TMNQVLQNLILEQPLTKYTLNSSLAKQKGKTQREVHLGSGQTTNWSTQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="D5FY56_MYCGT" ac="D5FY56" length="1060" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>29.4</identity>
+      <positives>44.3</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY + D + +    L  L +S  V++ +   +SS SNNQ      +SFD+  ++                      SYI+ F  +      W   +K +L +P              N   ++   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="53" end="202">DLVSLAQLDSSYIISD-QTIHNTNLFVLFKSTQVKLTYN--SSSGSNNQ------ISFDSTNNKP---------------------SYIVEFTNSTNIGIKWRMVKKYQLDVP--------------NVSSNMNDVLKELILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQATRWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="D5FY53_MYCGT" ac="D5FY53" length="1060" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>29.4</identity>
+      <positives>44.3</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY + D + +    L  L +S  V++ +   +SS SNNQ      +SFD+  ++                      SYI+ F  +      W   +K +L +P              N   ++   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="53" end="202">DLVSLAQLDSSYIISD-QTIHNTNLFVLFKSTQVKLTYN--SSSGSNNQ------ISFDSTNNKP---------------------SYIVEFTNSTNIGIKWRMVKKYQLDVP--------------NVSSNMNDVLKELILEQPLTKYTLNSSLAKEKGKTQREVHLGSGQATRWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A8BPT6_MYCGT" ac="A8BPT6" length="495" description="Adhesion protein variant c (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>167</score>
+      <bits>68.9</bits>
+      <expectation>1.6e-09</expectation>
+      <identity>28.5</identity>
+      <positives>45.3</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="215">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDR</querySeq>
+      <pattern>D+V  A L  SY + D + +    L  L +S  V++ +   +SS SNN       +SFD T + +K                     SYI+ F  +      W   +K +L LP V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W++QR+Q  L   P P  S   +  +  +  ++ K+D+</pattern>
+      <matchSeq start="20" end="185">DLVSLAQLDSSYIISD-QTIHNTNLFVLFKSKDVKLTY---SSSGSNN-------ISFDSTSQGEKP--------------------SYIVEFTNSTNVGIKWSVVKKYQLDLPSVST--------------TMNQVLQELILEQPLTKYTLNSSLAKQKGKTQVAVHLGSGQTTNWSTQRNQHDLNNNPSPNAS---TGFKLDKGNAYRKLDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A8BPT1_MYCGT" ac="A8BPT1" length="496" description="Adhesion protein variant b (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>167</score>
+      <bits>68.9</bits>
+      <expectation>1.6e-09</expectation>
+      <identity>28.5</identity>
+      <positives>45.3</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="215">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDR</querySeq>
+      <pattern>D+V  A L  SY + D + +    L  L +S  V++ +   +SS SNN       +SFD T + +K                     SYI+ F  +      W   +K +L LP V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W++QR+Q  L   P P  S   +  +  +  ++ K+D+</pattern>
+      <matchSeq start="20" end="185">DLVSLAQLDSSYIISD-QTIHNTNLFVLFKSKDVKLTY---SSSGSNN-------ISFDSTSQGEKP--------------------SYIVEFTNSTNVGIKWSVVKKYQLDLPSVST--------------TMNQVLQELILEQPLTKYTLNSSLAKQKGKTQVAVHLGSGQTTNWSTQRNQHDLNNNPSPNAS---TGFKLDKGNAYRKLDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A8BPS5_MYCGT" ac="A8BPS5" length="495" description="Adhesion protein variant a (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>2.1e-09</expectation>
+      <identity>28.3</identity>
+      <positives>45.3</positives>
+      <gaps>22</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="215">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDR</querySeq>
+      <pattern>D+V  A L  SY + D + +    L  L +S  V++ +   +SS SNN       +SFD T + +K     +  +S T G                    W   +K +L LP V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W++QR+Q  L   P P  S   +  +  +  ++ K+D+</pattern>
+      <matchSeq start="20" end="185">DLVSLAQLDSSYIISD-QTIHNTNLFVLFKSKDVKLTY---SSSGSNN-------ISFDSTSQGEKPSYIVEFTNSTTVGIK------------------WSVVKKYQLDLPSVST--------------TMNQVLQELILEQPLTKYTLNSSLAKQKGKTQVAVHLGSGQTTNWSTQRNQHDLNNNPSPNAS---TGFKLDKGNAYRKLDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="D5FY47_MYCGT" ac="D5FY47" length="1048" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>2.7e-09</expectation>
+      <identity>28.3</identity>
+      <positives>45.3</positives>
+      <gaps>22</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="215">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDR</querySeq>
+      <pattern>D+V  A L  SY + D + +    L  L +S  V++ +   +SS SNN       +SFD T + +K     +  +S T G                    W   +K +L LP V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W++QR+Q  L   P P  S   +  +  +  ++ K+D+</pattern>
+      <matchSeq start="53" end="218">DLVSLAQLDSSYIISD-QTIHNTNLFVLFKSKDVKLTY---SSSGSNN-------ISFDSTSQGEKPSYIVEFTNSTTVGIK------------------WSVVKKYQLDLPSVST--------------TMNQVLQELILEQPLTKYTLNSSLAKQKGKTQVAVHLGSGQTTNWSTQRNQHDLNNNPSPNAS---TGFKLDKGNAYRKLDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="U3L1A8_MYCGT" ac="U3L1A8" length="489" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <bits>67.4</bits>
+      <expectation>5.1e-09</expectation>
+      <identity>30.4</identity>
+      <positives>45.4</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD+                TS +N     +YI+ F  +      W   +K +L +P              N   ++   LQ+L++EQP+T YT N+ LA+  G +Q  VH GS   + W SQR+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="168">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDS----------------TSQANKP---AYIVEFTNSTNIGIKWTMVKKYQLDVP--------------NVSSNMNQVLQELILEQPLTKYTLNSSLAKQKGKSQIEVHLGS-NSNQWTSQRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="E9JMQ9_MYCGT" ac="E9JMQ9" length="1051" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>1.2e-08</expectation>
+      <identity>28.3</identity>
+      <positives>44.5</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="193">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLP</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +   +SS SNNQ      +SFD+  ++                      SYI+ F  +      W   +K +L +P              N   ++   LQ+L++EQP+T YT N+ LA+  G +Q  VH GS   + W +QR+Q  L   P P</pattern>
+      <matchSeq start="53" end="198">DLVSLAQLDSSYQISD-QTIHNTNLFVLFKSKDVKLTY---SSSGSNNQ------ISFDSTNNKP---------------------SYIVEFTNSTTVGIKWSVVKKYQLDVP--------------NVSSNMNQVLQNLILEQPLTKYTLNSSLAKEKGKSQREVHLGSNMANQWTTQRNQHNLNNNPSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="D5FY41_MYCGT" ac="D5FY41" length="1053" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>1.2e-08</expectation>
+      <identity>29.2</identity>
+      <positives>43.6</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D      N L  L +S  V++ +   +SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   LQ+L++EQP+T YT N+ LA+  G  Q  VH GS   + W +QR+Q GL   P P  S</pattern>
+      <matchSeq start="53" end="202">DLVSLAQLDSSYQIADQTLFNTN-LFVLFKSKDVKLTY---SSSGSNN-------ISFDSTSQGEKP--------------------SYVVEFTNSTNIGIKWRVVKKYQLDVPNVSSD--------------MNQVLQELILEQPLTKYTLNSSLAKQKGKTQREVHLGSNMANQWTNQRNQHGLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="U3L120_MYCGT" ac="U3L120" length="489" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>160</score>
+      <bits>66.2</bits>
+      <expectation>1.2e-08</expectation>
+      <identity>29.2</identity>
+      <positives>44.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +   +SS SNNQ      +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   LQ+L++EQP+T YT N+ LA+  G +Q  VH GS   + W S R Q GL   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSKDVKLTY---SSSGSNNQ------ISFDSTSQGEKP--------------------SYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLQELILEQPLTKYTLNSSLAKEKGKSQREVHLGS-NSNQWRSMRDQHGLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="D5FY44_MYCGT" ac="D5FY44" length="1047" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>160</score>
+      <bits>66.2</bits>
+      <expectation>1.6e-08</expectation>
+      <identity>29.9</identity>
+      <positives>48.5</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="196">QESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>+ +Q  L  S SGS++ S  ++ +  SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G  Q  VH GS   + WN+ R+  GL   P P  S</pattern>
+      <matchSeq start="81" end="200">KSTQVKLTYSSSGSNNISFDSTNNKPSYVVEFTNSTNVGIKWTMVKKYQLDVPNVSSD--------------MNDVLKELILEQPLTKYTLNSSLAKEKGKTQREVHLGSNMANQWNTMRNSIGLNDNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="D5FY35_MYCGT" ac="D5FY35" length="1048" description="Adhesin OS=Mycoplasmoides genitalium M2288 OX=662947 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>160</score>
+      <bits>66.2</bits>
+      <expectation>1.6e-08</expectation>
+      <identity>26.1</identity>
+      <positives>43.0</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="229">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDR---CMNPWIRPRRGRGR</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +   +SS SNNQ      +SFD+  ++                      SYI+ F  +      W   +K +L +P V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH GS   + W S R+Q  L   P P  S   +  +     ++ K+D+      P    ++G+G+</pattern>
+      <matchSeq start="53" end="234">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKLTY---SSSGSNNQ------ISFDSTNNKP---------------------SYIVEFTNSTTVGIKWSVVKKYQLDVPSVST--------------TMNQVLQELILEQPLTKYTLNSSLAKQKGKTQREVHLGSNMANQWQSMRNQHNLDNNPSPNAS---TGFKLTTGNAYRKLDQSWPIYQPIDGTKQGKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="U3L1I1_MYCGT" ac="U3L1I1" length="486" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>1.7e-08</expectation>
+      <identity>31.2</identity>
+      <positives>49.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="71" end="196">LNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>L  S SGS++ S  ++ +  SY++ F  +      W   +K +L +P              N   ++   L++L++EQP+T YT N+ LA+  G  Q  VH GSGQ ++W S R+   L   P P  S</pattern>
+      <matchSeq start="54" end="167">LTYSSSGSNNISFDSTNNKPSYVVEFTNSTNVGIKWTMVKKYQLDVP--------------NVSSNMNDVLKNLILEQPLTKYTLNSSLAKEKGKTQVAVHLGSGQATNWRSMRNSISLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="U3L0Z0_MYCGT" ac="U3L0Z0" length="488" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>1.7e-08</expectation>
+      <identity>30.3</identity>
+      <positives>44.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L LP V  E              +   LQ+L++EQP+T YT N+ LA+  G +Q  VH GS   + W S R+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="168">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWSVVKKYQLDLPNVTNE--------------MNQVLQELILEQPLTKYTLNSSLAKQKGKSQIEVHLGS-NSNQWQSMRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="U3L1I4_MYCGT" ac="U3L1I4" length="490" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>1.7e-08</expectation>
+      <identity>30.3</identity>
+      <positives>44.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L LP V  E              +   LQ+L++EQP+T YT N+ LA+  G +Q  VH GS   + W S R+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="168">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWSVVKKYQLDLPNVTNE--------------MNQVLQELILEQPLTKYTLNSSLAKQKGKSQIEVHLGS-NSNQWQSMRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A8BPV1_MYCGT" ac="A8BPV1" length="494" description="Adhesion protein variant f (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>1.7e-08</expectation>
+      <identity>28.4</identity>
+      <positives>42.8</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY + D + +    L  L +S  V+VK+  ++ S++N        +SFD+++                        SYI+ F  +      W   +K +L LP V                ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH G GQ   W S R+  GL   P P  S</pattern>
+      <matchSeq start="20" end="167">DLVSLAQLDSSYIISD-QTIHNTNLFVLFKSTQVKVKYDSSSGSNTNT-------ISFDSEKP-----------------------SYIVEFTNSTTVGIKWRMVKKYQLDLPSVST--------------TMNQVLQELILEQPLTKYTLNSSLAKQKGKTQREVHLG-GQAGQWQSMRNSIGLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="E9JMQ6_MYCGT" ac="E9JMQ6" length="1056" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>2.9e-08</expectation>
+      <identity>27.2</identity>
+      <positives>40.8</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="193">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLP</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +                               S SGS++ S  N+ +  SYI+ F  A      W   +K +L +P V  E              +   L++L++EQP+T YT N  LA+  G  Q  VH GS   + W S R+Q  L   P P</pattern>
+      <matchSeq start="53" end="198">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSTQVKLTYN------------------------------SSSGSNNISFENNANKPSYIVEFTNATNIGIKWSVVKKYQLDVPNVTNE--------------MNQVLKNLILEQPLTKYTLNGSLAKEKGKTQREVHLGSNMANQWRSMRNQHDLDNNPSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="U3L0Z3_MYCGT" ac="U3L0Z3" length="493" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>5.5e-08</expectation>
+      <identity>29.7</identity>
+      <positives>44.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +   +SS SNNQ      +SFD T + +K                     SY++ F  +      W   +K +L LP V  E              +   LQ+L++EQP+T YT N+ LA+  G +Q  VH GS   + W S R+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSKDVKLTY---SSSGSNNQ------ISFDSTSQGEKP--------------------SYVVEFTNSTNIGIKWSVVKKYQLDLPNVTNE--------------MNQVLQELILEQPLTKYTLNSSLAKQKGKSQIEVHLGS-NSNQWQSMRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="U3L0P9_MYCGT" ac="U3L0P9" length="494" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>154</score>
+      <bits>63.9</bits>
+      <expectation>7.4e-08</expectation>
+      <identity>28.7</identity>
+      <positives>44.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +   +SS SNNQ      +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   LQ+L++EQP+T YT N+ LA+  G +Q  VH GS   + W S R+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSKDVKLTY---SSSGSNNQ------ISFDSTSQGEKP--------------------SYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLQELILEQPLTKYTLNSSLAKEKGKSQREVHLGS-NSNQWQSMRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="U3L1B2_MYCGT" ac="U3L1B2" length="491" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>1.3e-07</expectation>
+      <identity>28.7</identity>
+      <positives>44.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G +Q  VH GS   + W S R+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="168">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKQKGKSQIEVHLGS-NSNQWQSMRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="U3L1I3_MYCGT" ac="U3L1I3" length="488" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>2.4e-07</expectation>
+      <identity>29.2</identity>
+      <positives>43.1</positives>
+      <gaps>26</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPR--ATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V+VK++   SS SNN       +SFD T + +K                     SY++ F  +      W   +K +L LP V  E              +   LQ+L++EQP+T YT N+ LA+  G  Q  VH  +  +  W S R+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="167">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSRDVKVKYE---SSGSNN-------ISFDSTSQGEK--------------------PSYVVEFTNSTNIGIKWSVVKKYQLDLPNVTNE--------------MNQVLQELILEQPLTKYTLNSSLAKQKGKTQREVHLSNSNQ--WQSMRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="U3L1B3_MYCGT" ac="U3L1B3" length="492" description="Adhesion protein MG192 (Fragment) OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>4.3e-07</expectation>
+      <identity>28.2</identity>
+      <positives>44.1</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="196">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFD-TQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +   +SS SNNQ      +SFD T + +K                     SY++ F  +      W   +K +L +P V  +              +   L++L++EQP+T YT N+ LA+  G +Q  VH GS   + W S R+Q  L   P P  S</pattern>
+      <matchSeq start="20" end="169">DLVSLAQLDSSYQIAD-QTIHNTNLFVLFKSKDVKLTY---SSSGSNNQ------ISFDSTSQGEKP--------------------SYVVEFTNSTNIGIKWTMVKKYQLDVPNVSSD--------------MNQVLKNLILEQPLTKYTLNSSLAKQKGKSQIEVHLGS-NSNQWQSMRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="D5FY32_MYCGT" ac="D5FY32" length="1052" description="Adhesin OS=Mycoplasmoides genitalium OX=2097 GN=mgpC PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <bits>57.4</bits>
+      <expectation>1.4e-05</expectation>
+      <identity>26.7</identity>
+      <positives>42.4</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="193">DVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLP</querySeq>
+      <pattern>D+V  A L  SY++ D + +    L  L +S  V++ +   +SS SNN       +SF+   SQ                   +  SY++ F  +      W   +K +L +P              N   ++   LQ+L++EQP+T YT N+ LA+  G  Q  VH  +  +  W S R+  GL   P P</pattern>
+      <matchSeq start="53" end="198">DLVSLAQLDDSYQIAD-QTIHNTNLFVLFKSTQVKLTY---SSSGSNN-------ISFENSTSQG------------------EKPSYVVEFTNSTNIGIKWSVVKKYQLDVP--------------NVSSNMNQVLQELILEQPLTKYTLNSSLAKEKGKTQREVHLSNSNQ--WRSMRNSIGLNDNPSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="Q49383_MYCGT" ac="Q49383" length="226" description="Adhesin-like protein (Fragment) OS=Mycoplasmoides genitalium OX=2097 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>126</score>
+      <bits>53.1</bits>
+      <expectation>0.00012</expectation>
+      <identity>30.7</identity>
+      <positives>44.9</positives>
+      <gaps>20</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="80" end="196">DTSGSNSQDF--------ASYILIFQAAPRA--TWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>++SGSN+  F         SY++ F  +      W   +K +L LP V  E              +   LQ+L++EQP+T YT N+ LA+  G  Q  VH  +  +  W S R+Q  L   P P  S</pattern>
+      <matchSeq start="22" end="132">ESSGSNNISFDSTSQGEKPSYVVEFTNSTNIGIKWSVVKKYQLDLPNVTNE--------------MNQVLQELILEQPLTKYTLNSSLAKQKGKTQREVHLSNSNQ--WQSMRNQHDLNNNPSPNAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0AAN8Q3D2_PATCE" ac="A0AAN8Q3D2" length="2009" description="C2 domain-containing protein OS=Patella caerulea OX=87958 GN=SNE40_008141 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.12</expectation>
+      <identity>35.0</identity>
+      <positives>50.0</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="87">ELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALN---------GSQSGSSDTSGSNSQ</querySeq>
+      <pattern>E+ DW+RVG+N+L+       ++VK  D T     ++  S+N L  + +  Q  LN         GSQSG S T GS  Q</pattern>
+      <matchSeq start="70" end="144">EIKDWERVGRNRLL-----GTLKVKLADLTRGGLQSKTLSENLLDANGRPHQSKLNFKITYTPPAGSQSGESQTQGSQGQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0AAN8K0L1_PATCE" ac="A0AAN8K0L1" length="2009" description="C2 domain-containing protein OS=Patella caerulea OX=87958 GN=SNE40_008141 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.12</expectation>
+      <identity>35.0</identity>
+      <positives>50.0</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="87">ELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALN---------GSQSGSSDTSGSNSQ</querySeq>
+      <pattern>E+ DW+RVG+N+L+       ++VK  D T     ++  S+N L  + +  Q  LN         GSQSG S T GS  Q</pattern>
+      <matchSeq start="70" end="144">EIKDWERVGRNRLL-----GTLKVKLADLTRGGLQSKTLSENLLDANGRPHQSKLNFKITYTPPAGSQSGESQTQGSQGQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0AAN8K645_PATCE" ac="A0AAN8K645" length="2016" description="C2 domain-containing protein OS=Patella caerulea OX=87958 GN=SNE40_008141 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.12</expectation>
+      <identity>35.0</identity>
+      <positives>50.0</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="87">ELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALN---------GSQSGSSDTSGSNSQ</querySeq>
+      <pattern>E+ DW+RVG+N+L+       ++VK  D T     ++  S+N L  + +  Q  LN         GSQSG S T GS  Q</pattern>
+      <matchSeq start="70" end="144">EIKDWERVGRNRLL-----GTLKVKLADLTRGGLQSKTLSENLLDANGRPHQSKLNFKITYTPPAGSQSGESQTQGSQGQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0AAN8JZH6_PATCE" ac="A0AAN8JZH6" length="2031" description="C2 domain-containing protein OS=Patella caerulea OX=87958 GN=SNE40_008141 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.12</expectation>
+      <identity>35.0</identity>
+      <positives>50.0</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="87">ELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALN---------GSQSGSSDTSGSNSQ</querySeq>
+      <pattern>E+ DW+RVG+N+L+       ++VK  D T     ++  S+N L  + +  Q  LN         GSQSG S T GS  Q</pattern>
+      <matchSeq start="70" end="144">EIKDWERVGRNRLL-----GTLKVKLADLTRGGLQSKTLSENLLDANGRPHQSKLNFKITYTPPAGSQSGESQTQGSQGQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0A0A2KS00_PENIT" ac="A0A0A2KS00" length="398" description="SRP40, C-terminal OS=Penicillium italicum OX=40296 GN=PITC_020410 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.34</expectation>
+      <identity>23.5</identity>
+      <positives>43.1</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="44" end="196">DTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D++SSDS++  +S ++ S  +  S  + + S   SSD+S  +S D +S     ++   +    ++ +K A      ES  S D  S+  GS      + +   P T   P   + +V    + T    S    +   ++   G + TPL + S</pattern>
+      <matchSeq start="193" end="336">DSSSSDSDSSSSSSSSSSSSSSSSDSSSDSSSDSSSDSSSDSSSDSSSSDSSSESESESEKESKKALKKAKKTPLPESDSSSDSESSSSGS------NTVAPSPETEIKP---VKKVEEAVKTTSSSASPAPGNGPVKKKHTGARPTPLALLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0AB40D9V1_DROSZ" ac="A0AB40D9V1" length="4194" description="Serine-rich adhesin for platelets isoform X1 OS=Drosophila suzukii OX=28584 GN=Muc68Ca PE=4 SV=2">
+    <alignments total="8">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.5</expectation>
+      <identity>27.4</identity>
+      <positives>40.4</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQES  A N SQS S+ T+ ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++G  + +  +  TV    G  S+ NS +S     +T</pattern>
+      <matchSeq start="2416" end="2534">TTSSDEGQASTSSDPTVEVTQESNSAGNSSQSSSTTTTTTSSDDGQTTVSSSPAVE-----------------VTEGSSSNDDGSSGQSSTTST----------TTTTTSSGEGQASTSSGPTVEVIQGSNSAGNSSQSSSTTTST</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>1.5</expectation>
+      <identity>26.7</identity>
+      <positives>39.7</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ +  A N SQS S+ TS ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++G  + +  +  TV    G  S+ NS +S     +T</pattern>
+      <matchSeq start="1203" end="1323">TTSSDEGQASTSSDPTVEVTQGTNSAGNFSQSSSTSTSTTSSDDGQTTVSSSPAVE-----------------VTEGSSSNDDGSSGQSSTTST--------TTTTTTTSSGEGQASTSSDPTVEVTQGSNSAGNSSQSSSTTTST</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>1.5</expectation>
+      <identity>27.4</identity>
+      <positives>39.0</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ S  A N SQS S+ TS ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++   + +  +  TV    G  S+ NS +S     TT</pattern>
+      <matchSeq start="1608" end="1728">TTSSDEGQASTSSDPTVEVTQGSNSAGNSSQSSSTTTSTTSSDDGQTTVSSSPAVE-----------------VTEGTSSNDNGSSGQSSTTST--------TTTTTTTSSDGGQASTSSDPTVEITQGTNSAGNSSQSSSTTTTT</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>2.7</expectation>
+      <identity>26.7</identity>
+      <positives>39.0</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ +  A N SQS S+ TS ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++   + +  +  TV    G  S+ NS +S     TT</pattern>
+      <matchSeq start="2819" end="2939">TTSSDEGQASTSSDPTVEVTQGTNSAGNSSQSSSTTTSTTSSDDGQTTVSSSPAVE-----------------VTEGTSSNDNGSSGQSSTTST--------TTTTTTTSSDGGKTSTSSDPTVEITQGTNSAGNSSQSSSTTTTT</matchSeq>
+     </alignment>
+     <alignment number="5">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>3.6</expectation>
+      <identity>26.7</identity>
+      <positives>39.0</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ S  A N SQS S+ TS ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++   + +  +  TV    G  S+ NS +S     +T</pattern>
+      <matchSeq start="551" end="671">TTSSDGGQASTSSDPTVEVTQGSNSAGNSSQSSSTSTSTTSSDDGQTTVSSSPAVE-----------------VTEGSSSNDNGSSGQSSTTST--------TTTTTTTSSDGGQASTSSDPTVEVTQGSNSAGNSSQSSSTSTST</matchSeq>
+     </alignment>
+     <alignment number="6">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>3.6</expectation>
+      <identity>26.7</identity>
+      <positives>39.0</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ S  A N SQS S+ TS ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++   + +  +  TV    G  S+ NS +S     +T</pattern>
+      <matchSeq start="795" end="915">TTSSDEGQASTSSDPTVEVTQGSNSAGNSSQSSSTSTSTTSSDDGQTTVSSSPAVE-----------------VTEGSSSNDNGSSGQSSTTST--------TTTTTTTSSDGGQASTSSDPTVEVTQGTNSAGNSSQSSSTTTST</matchSeq>
+     </alignment>
+     <alignment number="7">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>3.6</expectation>
+      <identity>26.7</identity>
+      <positives>39.7</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ S  A N SQS S+ T+ ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++G  + +  +  TV    G  S+ NS +S     +T</pattern>
+      <matchSeq start="1770" end="1888">TTSSDEGQASTSSDLTVEVTQGSNSAGNSSQSSSTTTTTTSSDDGQTTVSSSPAVE-----------------VTEGSSSNDDGSSGQSSTTST----------TTTTTSSGEGQASTSSGPTVEVIQGSNSAGNSSQSSSTTTST</matchSeq>
+     </alignment>
+     <alignment number="8">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>6.4</expectation>
+      <identity>27.4</identity>
+      <positives>39.7</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ +  A N SQS S+ TS ++S D  +  L    A   T                E   S+D GS+G+ S  +T          T  T ++   + +  +  TV    G  S+ NS +S     +T</pattern>
+      <matchSeq start="311" end="429">TTSSDEGQASTSSDPTVEVTQGTNSAGNSSQSSSTTTSTTSSDDVQT-TLSSSPAVEVT----------------EGSSSNDDGSSGQSSTTST----------TTSTTSSDEGQASTSSDPTVEVTQGSNSAENSSQSSSTTTST</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A1L9P4X4_ASPVE" ac="A0A1L9P4X4" length="443" description="Srp40 C-terminal domain-containing protein OS=Aspergillus versicolor CBS 583.65 OX=1036611 GN=ASPVEDRAFT_78342 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.64</expectation>
+      <identity>25.5</identity>
+      <positives>37.6</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="46" end="202">TSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSI</querySeq>
+      <pattern>+SS S++  +S ++ S  +  S  + + S SGSSD+S S+  +  S             V +   K  LP     S  S D  S G  S   TLQ+   E P                A   +   S + +  N   + K   T   P P  ALS +</pattern>
+      <matchSeq start="243" end="384">SSSSSSSSSSSSSSSSSSSSSSSSSSSDSSSGSSDSSSSSDSESESN----STKKADKKVLKAATKTPLPPSDSSSSDSSDDSSEGSSSTSGTLQNSESEAPAK-----------KAAATSQIPISSPRPAPGNDNGNGKRKHTGTRPTPLAALSEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="A0A0A2LE93_PENIT" ac="A0A0A2LE93" length="475" description="chitinase OS=Penicillium italicum OX=40296 GN=PITC_032130 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.66</expectation>
+      <identity>23.4</identity>
+      <positives>40.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="73" end="209">GSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGS</querySeq>
+      <pattern>G  +G + T+G  + D+A  +  +   P + ++    +K A P     ++     GSN   S  TT  +          T +A  A  + V+  T   GS    S ++  S    ++TP    + A  S  AA + S</pattern>
+      <matchSeq start="207" end="343">GIWAGGAPTNGQGTIDWAGGLTDYSKGPYSMYIKSISVKNANPAESGSAESIQFTGSNAVSSRSTTTSEAATSSASEAATSSASEASSSPVSPSTTTEGSSTAESTSAAESTSATESTPAAESTSATESTSAAESTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0AAD2CSI6_9STRA" ac="A0AAD2CSI6" length="827" description="U3 small nucleolar RNA-associated protein 25 OS=Cylindrotheca closterium OX=2856 GN=CYCCA115_LOCUS8790 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.76</expectation>
+      <identity>25.2</identity>
+      <positives>48.7</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="125">KRVGQNKLVALVRSALVRVKFQDTTSSDSNNQD--------------TSQNALSFDTQESQKALN-GSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSD</querySeq>
+      <pattern>KR+G ++L+A  + +   V +   T S+ NN D              T +++  F+ + +++  N GS S S + S   S D  + + I  +  + +   E+K K+A  Y+++E +G D</pattern>
+      <matchSeq start="44" end="160">KRIGNSRLLAQKKKSTGGVSWGGETKSERNNDDANRKSTDPVISKGITKKSSTKFERKTNRRRYNDGSSSSSDEASDEESDDDNTTMKILMSKIKKS--MEKKGKVAKKYMEEEEEGED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0A1L9TSQ4_9EURO" ac="A0A1L9TSQ4" length="433" description="Srp40 C-terminal domain-containing protein OS=Aspergillus sydowii CBS 593.65 OX=1036612 GN=ASPSYDRAFT_55307 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.84</expectation>
+      <identity>26.5</identity>
+      <positives>38.7</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="46" end="192">TSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPV--------TPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPL</querySeq>
+      <pattern>+SSDS++   S  + S  +  S  + + S S SSD+S S+S+  +       A        +   K  LP     S  + D  S G  S   TLQ+   E P         TP + +A  A  NG              + N +R   G + TPL</pattern>
+      <matchSeq start="233" end="368">SSSDSDSDSDSDASSSSSSSSSSSSSSSSSSSSSDSSSSSSESESD-----SARKSDKKALKAATKTPLPPSDSSSSETSDDSSEGSSSTSGTLQNSESETPAKTTAATSQTPISSSASPAPGNG--------------NGNGKRKHTGTRPTPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0ABT7PNF6_9BACT" ac="A0ABT7PNF6" length="1962" description="DUF4175 family protein OS=Roseiconus lacunae OX=2605694 GN=QTN89_21395 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.85</expectation>
+      <identity>25.9</identity>
+      <positives>39.6</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="47" end="241">SSDSNNQDTSQNALSFDTQE--SQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDRCMNPWIRPRRGRGRMRALGKIRKKQR</querySeq>
+      <pattern>SS  +++  SQ+ ++ D  +  SQ A N     +++ + SNS +  S   I QA P        ++  +L     E QG  +QGS   G                    NAG     G  Q   +   GQ  S  SQ SQ G  +     P P+  S+ A+ T + M  D+        +  + RMR L + +  QR</pattern>
+      <matchSeq start="1709" end="1878">SSSRSSESASQSQMTADATQDPSQSATNSQSPTNANPTASNSNEAQSASAIDQATPEQMARTLDELDRSLAQSASEQQGEGNQGSANSGQ------------------ENAGQVTQAGSTQ--ANSTQGQPGSQASQ-SQPGSASEMNGTPPPSNQSVDASPTLAQMLDDQLQ------QAAKERMRRLAETQSGQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0A4Q9QF63_9APHY" ac="A0A4Q9QF63" length="503" description="Phytocyanin domain-containing protein OS=Dichomitus squalens OX=114155 GN=BD310DRAFT_963594 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.89</expectation>
+      <identity>29.7</identity>
+      <positives>38.1</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="44" end="196">DTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGL--KTTPLPMPS</querySeq>
+      <pattern>D TS+   +  TS    S  T  S      +  GSS  +    Q  ASY      AP ATW          P   Q S      GS G G  +T +  +   Q V  Y P A    VN    DTV F  G ++   ++ SQ  +  KT+  P  S</pattern>
+      <matchSeq start="166" end="300">DATSTSLYSTSTSSTYASQSTSSSNYGSGSTNWGSSGYNDCVQQCIASY-----GAPPATWT---------PSATQGSDSGSYSGSQGTGVTHTVI--VAPTQGVLRYVPFA----VNASVGDTVQFVWGAKNHTVTKSSQLEICNKTSDAPFAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0A9Q1K8A1_9CARY" ac="A0A9Q1K8A1" length="756" description="Fungal lipase-type domain-containing protein OS=Carnegiea gigantea OX=171969 GN=Cgig2_033046 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>1.0</expectation>
+      <identity>28.7</identity>
+      <positives>44.1</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="130" end="262">NGKGSLYTTLQDLLVEQPVTPYTPNAGLARV-NGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSP--ALSSIRAARTGSWMKVDRCMNPWIRPRRGRGRMRALGKIRKKQRRKMMPRWWGWLEVVRLEVLLV</querySeq>
+      <pattern>N +  LYT + ++L+ QP   Y+P   L    +G+   T       E    ++R  +  K   L MP P   LS   A   G  ++ D  MN +++  R   R + L  IRK QR +    WW  L+   +E  L+</pattern>
+      <matchSeq start="562" end="692">NNQKLLYTPMGEMLILQPDAKYSPQHDLLPAGSGLYMLTCKVSDVSE----AERILRAAKNAFLNMPHPLEILSDRSAYGNGGTIQRDHDMNSYLKCVRNVIR-QELSHIRKAQRERRRKLWWPLLKTRLVESHLI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0AAE1FMS3_PETCI" ac="A0AAE1FMS3" length="468" description="Uncharacterized protein OS=Petrolisthes cinctipes OX=88211 GN=Pcinc_018121 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>1.2</expectation>
+      <identity>31.4</identity>
+      <positives>43.8</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="32" end="133">LVRSALVRVKF---QDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKG</querySeq>
+      <pattern>+V S L+ V+    +D TSS S N DT  N     T ES  A   S++ S+ T GSN    ++      +    T V   + K A   VK+ S G      +G G</pattern>
+      <matchSeq start="2" end="104">VVDSTLLAVRMSDERDQTSSTSTNADTHTNTGELCTSESSNA--SSKNISNKTEGSNCSSTSNVSAKLTSKQPGTKVIASRFKAAAAAVKEHSSGYGSGSGSGSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0AA41XJ75_9MICO" ac="A0AA41XJ75" length="404" description="Winged helix DNA-binding domain-containing protein OS=Herbiconiux oxytropis OX=2970915 GN=N1028_17275 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>1.4</expectation>
+      <identity>30.3</identity>
+      <positives>43.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="155" end="256">AGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIR------AARTGSWMKVDRCMNPWIRPR-RGRGRMRALGKIRKKQRRKMMPRWWGWLEVVR</querySeq>
+      <pattern>A L   +    D V +G G    W  + S   ++T  LP+ +   +  R       + TGS    +  M PW+R     +G MRA  +I     R+  P WWGW EV R</pattern>
+      <matchSeq start="65" end="169">ARLGHYDKALLDAVTYGKGVTEYWAHEASFLPIET--LPLMAWRKNDYRDRFLAGTSETGSAESAEASMIPWLRAELAAKGPMRA-SEIEHDSNRRQGP-WWGWSEVKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0A2S1ZS35_NILLU" ac="A0A2S1ZS35" length="1734" description="Cuticular protein OS=Nilaparvata lugens OX=108931 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>1.5</expectation>
+      <identity>27.6</identity>
+      <positives>43.4</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="43" end="183">QDTTSSDSNNQDTS--QNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQE--SSWNSQRS</querySeq>
+      <pattern>Q TTSS SN Q TS   +  S  +  +Q+  +   +  S +SGSN Q  +S       + ++T     +   +    +Q S  S +Q +   GS   +       Q  T    N   +  +G  Q T   GSGQ+  SS ++Q+S</pattern>
+      <matchSeq start="473" end="612">QQTTSSGSNQQSTSAGSSQQSSSSGSNQQTTSSGSNQQSSSSGSNQQSTSS-----GGSQQSTSSGSNQQTTSAGSNQQSSSSSSNQQTTSAGSNQQSSSSSSSNQQTTSAGSNQQSSSSSGSNQQTTSAGSGQQTTSSGSNQQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0ABM4TRH5_DROSZ" ac="A0ABM4TRH5" length="3952" description="Serine-rich adhesin for platelets isoform X2 OS=Drosophila suzukii OX=28584 GN=Muc68Ca PE=4 SV=1">
+    <alignments total="8">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>1.5</expectation>
+      <identity>26.7</identity>
+      <positives>39.7</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ +  A N SQS S+ TS ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++G  + +  +  TV    G  S+ NS +S     +T</pattern>
+      <matchSeq start="1203" end="1323">TTSSDEGQASTSSDPTVEVTQGTNSAGNFSQSSSTSTSTTSSDDGQTTVSSSPAVE-----------------VTEGSSSNDDGSSGQSSTTST--------TTTTTTTSSGEGQASTSSDPTVEVTQGSNSAGNSSQSSSTTTST</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>1.5</expectation>
+      <identity>27.4</identity>
+      <positives>39.0</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ S  A N SQS S+ TS ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++   + +  +  TV    G  S+ NS +S     TT</pattern>
+      <matchSeq start="1608" end="1728">TTSSDEGQASTSSDPTVEVTQGSNSAGNSSQSSSTTTSTTSSDDGQTTVSSSPAVE-----------------VTEGTSSNDNGSSGQSSTTST--------TTTTTTTSSDGGQASTSSDPTVEITQGTNSAGNSSQSSSTTTTT</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>2.7</expectation>
+      <identity>26.7</identity>
+      <positives>39.0</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ +  A N SQS S+ TS ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++   + +  +  TV    G  S+ NS +S     TT</pattern>
+      <matchSeq start="2577" end="2697">TTSSDEGQASTSSDPTVEVTQGTNSAGNSSQSSSTTTSTTSSDDGQTTVSSSPAVE-----------------VTEGTSSNDNGSSGQSSTTST--------TTTTTTTSSDGGKTSTSSDPTVEITQGTNSAGNSSQSSSTTTTT</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>3.6</expectation>
+      <identity>26.7</identity>
+      <positives>39.0</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ S  A N SQS S+ TS ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++   + +  +  TV    G  S+ NS +S     +T</pattern>
+      <matchSeq start="551" end="671">TTSSDGGQASTSSDPTVEVTQGSNSAGNSSQSSSTSTSTTSSDDGQTTVSSSPAVE-----------------VTEGSSSNDNGSSGQSSTTST--------TTTTTTTSSDGGQASTSSDPTVEVTQGSNSAGNSSQSSSTSTST</matchSeq>
+     </alignment>
+     <alignment number="5">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>3.6</expectation>
+      <identity>26.7</identity>
+      <positives>39.0</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ S  A N SQS S+ TS ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++   + +  +  TV    G  S+ NS +S     +T</pattern>
+      <matchSeq start="795" end="915">TTSSDEGQASTSSDPTVEVTQGSNSAGNSSQSSSTSTSTTSSDDGQTTVSSSPAVE-----------------VTEGSSSNDNGSSGQSSTTST--------TTTTTTTSSDGGQASTSSDPTVEVTQGTNSAGNSSQSSSTTTST</matchSeq>
+     </alignment>
+     <alignment number="6">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>3.6</expectation>
+      <identity>26.7</identity>
+      <positives>39.7</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ S  A N SQS S+ T+ ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++G  + +  +  TV    G  S+ NS +S     +T</pattern>
+      <matchSeq start="1770" end="1888">TTSSDEGQASTSSDLTVEVTQGSNSAGNSSQSSSTTTTTTSSDDGQTTVSSSPAVE-----------------VTEGSSSNDDGSSGQSSTTST----------TTTTTSSGEGQASTSSGPTVEVIQGSNSAGNSSQSSSTTTST</matchSeq>
+     </alignment>
+     <alignment number="7">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>6.4</expectation>
+      <identity>27.4</identity>
+      <positives>39.7</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>TTSSD     TS +     TQ +  A N SQS S+ TS ++S D  +  L    A   T                E   S+D GS+G+ S  +T          T  T ++   + +  +  TV    G  S+ NS +S     +T</pattern>
+      <matchSeq start="311" end="429">TTSSDEGQASTSSDPTVEVTQGTNSAGNSSQSSSTTTSTTSSDDVQT-TLSSSPAVEVT----------------EGSSSNDDGSSGQSSTTST----------TTSTTSSDEGQASTSSDPTVEVTQGSNSAENSSQSSSTTTST</matchSeq>
+     </alignment>
+     <alignment number="8">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>8.4</expectation>
+      <identity>26.0</identity>
+      <positives>37.7</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="190">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTT</querySeq>
+      <pattern>T SSD     TS       TQ S  A N SQS S+ T+ ++S D  + +    A                     E   S+D GS+G+ S  +T          T  T ++   + +  +  TV    G  S+ NS +S     TT</pattern>
+      <matchSeq start="2334" end="2454">TISSDEGQASTSSEPTVEVTQGSNSAGNSSQSSSTTTTTTSSDDGQTTVSSSPAVE-----------------VTEGSSSNDDGSSGQSSTTST--------TTTTTTTSSDEGQASTSSDPTVEVTQGTNSAGNSSQSSSSTSTT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A6P8R7Q7_GEOSA" ac="A0A6P8R7Q7" length="842" description="Protein inturned OS=Geotrypetes seraphini OX=260995 GN=INTU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>1.8</expectation>
+      <identity>34.3</identity>
+      <positives>46.1</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="136">RVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGS---QSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGS-DDQGSNGKGSLY</querySeq>
+      <pattern>R K +  T++      TS++AL  D   S +    S    SG SD       D A        +P +T V ERK      Y ++ESQGS D +GS G GSL+</pattern>
+      <matchSeq start="654" end="743">RDKLESFTNTKIATFPTSKSALFMDASSSLRTRRPSPSRNSGGSDNGSEGPGDGAGL------SPHSTPVLERK------YGRRESQGSGDSEGSGGSGSLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0A6P8R402_GEOSA" ac="A0A6P8R402" length="847" description="Protein inturned OS=Geotrypetes seraphini OX=260995 GN=INTU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>1.8</expectation>
+      <identity>34.3</identity>
+      <positives>46.1</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="136">RVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGS---QSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGS-DDQGSNGKGSLY</querySeq>
+      <pattern>R K +  T++      TS++AL  D   S +    S    SG SD       D A        +P +T V ERK      Y ++ESQGS D +GS G GSL+</pattern>
+      <matchSeq start="571" end="660">RDKLESFTNTKIATFPTSKSALFMDASSSLRTRRPSPSRNSGGSDNGSEGPGDGAGL------SPHSTPVLERK------YGRRESQGSGDSEGSGGSGSLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0AAU9PFD4_9ASTR" ac="A0AAU9PFD4" length="246" description="Uncharacterized protein OS=Lactuca virosa OX=75947 GN=LVIROSA_LOCUS34149 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>1.8</expectation>
+      <identity>26.7</identity>
+      <positives>46.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="150">SALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTP</querySeq>
+      <pattern>S  V  +  D++   S + +  ++ +  +T E  K+ NGS S SSDTS  +S +    +L     P A    ++  +L +P +       D+  +    SL  T+ D +VE  V+P</pattern>
+      <matchSeq start="43" end="151">SVEVENRADDSSEIKSKDANGEESNIEIETGEKPKSSNGSSSSSSDTSDEDSNEKKEVVL----EPEAEQTTDKVEELEIPPIVDP---VDETKAPAVESLPETIPDEVVESEVSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0A084G7R7_SCEAP" ac="A0A084G7R7" length="926" description="Beta-lactamase-related domain-containing protein OS=Scedosporium apiospermum OX=563466 GN=SAPIO_CDS4843 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>1.8</expectation>
+      <identity>31.3</identity>
+      <positives>40.0</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="139" end="246">LQDLLVEQPVTPYTPNAGL-----ARVNGVAQDTVHFGSGQESSWNSQ--RSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDRCMNPWIRPRRGRGRMRALGKIRKKQRRKMMP</querySeq>
+      <pattern>+ +LL+E+PVTP TP A        R +   QDT   GS   S W  Q   S       P P+ +P   S    R G+     R   P   P R  G    L K+    RR + P</pattern>
+      <matchSeq start="507" end="620">IPELLIEEPVTPSTPLAAAPPITPTRPSHAPQDTSLMGSTIASPWTPQTVASPSNASEFPTPLTNPDDYSDEDRRVGTLAHFRRLPIP-SSPVRDSGYRDLLAKVVSAARRTVFP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0A6P8QDX4_GEOSA" ac="A0A6P8QDX4" length="930" description="Protein inturned OS=Geotrypetes seraphini OX=260995 GN=INTU PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>1.8</expectation>
+      <identity>34.3</identity>
+      <positives>46.1</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="136">RVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGS---QSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGS-DDQGSNGKGSLY</querySeq>
+      <pattern>R K +  T++      TS++AL  D   S +    S    SG SD       D A        +P +T V ERK      Y ++ESQGS D +GS G GSL+</pattern>
+      <matchSeq start="654" end="743">RDKLESFTNTKIATFPTSKSALFMDASSSLRTRRPSPSRNSGGSDNGSEGPGDGAGL------SPHSTPVLERK------YGRRESQGSGDSEGSGGSGSLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0A059JD18_TRIIM" ac="A0A059JD18" length="413" description="Srp40 C-terminal domain-containing protein OS=Trichophyton interdigitale (strain MR816) OX=1215338 GN=H109_02501 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>1.9</expectation>
+      <identity>24.8</identity>
+      <positives>42.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="44" end="196">DTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGS---SDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSD-DQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+ SSD ++ D+  ++ S +  + + A +GS S S   SD+  S+S D  S      AA +     ++ IK  LP    +S  SD D  S+         +    ++       +A LA  +G +          + + N+ R   G + TPL   S</pattern>
+      <matchSeq start="200" end="352">DSDSSDDSSSDSDSDSDSEEVNDKKAASSGSDSSSDADSDSDSSDSSDSDSDSSSNAAAKKEASTLKKAIKTPLPESDSDSSSSDSDSDSSDSDDGDDVAESSAADEGKNSSDTSATLAATSGQSDSDFK----PKPASNTVRKHVGARPTPLAAAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0ACS6F4J7_NUCLP" ac="A0ACS6F4J7" length="1704" description="Uncharacterized protein OS=Nucella lapillus OX=51631 GN=ACOMHN_020775 PE=4 SV=1">
+    <alignments total="4">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>2.0</expectation>
+      <identity>24.5</identity>
+      <positives>40.2</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="202">KRVGQNKLVALVRSALVRVKFQDTT---SSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSI</querySeq>
+      <pattern>+ +G+ KL A V S+    + +DTT   SS +  +  +  AL   T   QK    S+S   +TS  +S     +++  + A R     ER+            QG DD  ++  G+  T   D         +    G       A+ TV  G GQ++    + S      TP+  P+ + SS+</pattern>
+      <matchSeq start="81" end="243">RNLGKMKLAAKVSSSPQTSESKDTTKPSSSPTPEESNTTKALLSATPNQQKKFKSSKS--KETSSEHS---VGWVVDRKGAHRTGGTQERE---------NMDQGQDDASADAVGTSQTNGADPCASNVSVSFASTCG-------ARKTVSIGDGQKTGGGQRVSVTDAVKTPVATPAVSASSV</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>2.0</expectation>
+      <identity>24.5</identity>
+      <positives>40.2</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="202">KRVGQNKLVALVRSALVRVKFQDTT---SSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSI</querySeq>
+      <pattern>+ +G+ KL A V S+    + +DTT   SS +  +  +  AL   T   QK    S+S   +TS  +S     +++  + A R     ER+            QG DD  ++  G+  T   D         +    G       A+ TV  G GQ++    + S      TP+  P+ + SS+</pattern>
+      <matchSeq start="359" end="521">RNLGKMKLAAKVSSSPQTSESKDTTKPSSSPTPEESNTTKALLSATPNQQKKFKSSKS--KETSSEHS---VGWVVDRKGAHRTGGTQERE---------NMDQGQDDASADAVGTSQTNGADPCASNVSVSFASTCG-------ARKTVSIGDGQKTGGGQRVSVTDAVKTPVATPAVSASSV</matchSeq>
+     </alignment>
+     <alignment number="3">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>2.0</expectation>
+      <identity>24.5</identity>
+      <positives>40.2</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="202">KRVGQNKLVALVRSALVRVKFQDTT---SSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSI</querySeq>
+      <pattern>+ +G+ KL A V S+    + +DTT   SS +  +  +  AL   T   QK    S+S   +TS  +S     +++  + A R     ER+            QG DD  ++  G+  T   D         +    G       A+ TV  G GQ++    + S      TP+  P+ + SS+</pattern>
+      <matchSeq start="671" end="833">RNLGKMKLAAKVSSSPQTSESKDTTKPSSSPTPEESNTTKALLSATPNQQKKFKSSKS--KETSSEHS---VGWVVDRKGAHRTGGTQERE---------NMDQGQDDASADAVGTSQTNGADPCASNVSVSFASTCG-------ARKTVSIGDGQKTGGGQRVSVTDAVKTPVATPAVSASSV</matchSeq>
+     </alignment>
+     <alignment number="4">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>2.0</expectation>
+      <identity>24.5</identity>
+      <positives>40.2</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="202">KRVGQNKLVALVRSALVRVKFQDTT---SSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSI</querySeq>
+      <pattern>+ +G+ KL A V S+    + +DTT   SS +  +  +  AL   T   QK    S+S   +TS  +S     +++  + A R     ER+            QG DD  ++  G+  T   D         +    G       A+ TV  G GQ++    + S      TP+  P+ + SS+</pattern>
+      <matchSeq start="949" end="1111">RNLGKMKLAAKVSSSPQTSESKDTTKPSSSPTPEESNTTKALLSATPNQQKKFKSSKS--KETSSEHS---VGWVVDRKGAHRTGGTQERE---------NMDQGQDDASADAVGTSQTNGADPCASNVSVSFASTCG-------ARKTVSIGDGQKTGGGQRVSVTDAVKTPVATPAVSASSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="F2PWL2_TRIEC" ac="F2PWL2" length="421" description="Srp40 C-terminal domain-containing protein OS=Trichophyton equinum (strain ATCC MYA-4606 / CBS 127.97) OX=559882 GN=TEQG_05284 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>2.0</expectation>
+      <identity>24.8</identity>
+      <positives>42.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="44" end="196">DTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGS---SDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSD-DQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPS</querySeq>
+      <pattern>D+ SSD ++ D+  ++ S +  + + A +GS S S   SD+  S+S D  S      AA +     ++ IK  LP    +S  SD D  S+         +    ++       +A LA  +G +          + + N+ R   G + TPL   S</pattern>
+      <matchSeq start="208" end="360">DSDSSDDSSSDSDSDSDSEEVNDKKAASSGSDSSSDADSDSDSSDSSDSDSDSSSNAAAKKEASTLKKAIKTPLPESDSDSSSSDSDSDSSDSDDGDDVAESSAADEGKNSSDTSATLAATSGQSDSDFK----PKPASNTVRKHVGARPTPLAAAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="B9QNC2_TOXGV" ac="B9QNC2" length="1140" description="Eukaryotic translation initiation factor 5B OS=Toxoplasma gondii (strain ATCC 50861 / VEG) OX=432359 GN=TGVEG_214270 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>2.5</expectation>
+      <identity>29.5</identity>
+      <positives>54.3</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="44" end="133">DTTSSDSNNQDTSQN----------ALSFDTQESQ-----KALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKG</querySeq>
+      <pattern>D+T S+S+++D+S++          AL+  + ES      ++ +GS+SGS   SGS  +D  S     +AAP+      RK++ +    ++E++ SD++  N KG</pattern>
+      <matchSeq start="34" end="134">DSTDSESSSEDSSEDERPRRGASRFALAVSSSESDSDSESESASGSESGSGSESGSERED-KSKAHDGKAAPKQA---GRKVESSSSADEKEAESSDEESKNAKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0A2Y9NBQ7_DELLE" ac="A0A2Y9NBQ7" length="1418" description="Inverted formin-2 isoform X2 OS=Delphinapterus leucas OX=9749 GN=INF2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>2.6</expectation>
+      <identity>27.2</identity>
+      <positives>42.2</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="191">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTP</querySeq>
+      <pattern>T SSD  ++ T    LS DT+E   A  G++   +DT+G  ++D A+                R     LP   +   G +D+ +    +L T+L     E  VT  + +  L R    AQ     G+G+       RSQ+GL+  P</pattern>
+      <matchSeq start="1293" end="1415">TFSSDKPSEATG---LSQDTEEPTAA-PGTRQAEADTTGEGTEDAAA----------------RGRGAGLPAAGRGGDGDEDERTAPDSALDTSLDRSFSEDAVTDSSGSGALPR----AQGRTSKGTGKRRKKRPSRSQEGLRPRP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0A7R8AIS1_9EURO" ac="A0A7R8AIS1" length="442" description="Srp40 C-terminal domain-containing protein OS=Aspergillus puulaauensis OX=1220207 GN=APUU_11586S PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>2.7</expectation>
+      <identity>26.8</identity>
+      <positives>42.3</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="192">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATW-VFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPL</querySeq>
+      <pattern>++SS S++  +S ++ S  +  S  + + S S SSD+S S+  +  S      +A +A     +   K  LP     S  S D  S G  S   TLQ+   E P       A  A ++  A       +G     N +R+  G + TPL</pattern>
+      <matchSeq start="240" end="377">SSSSSSSSSSSSSSSSSSSSSSSSSSSSDSSSDSSDSSSSSDSESES-----DSAKKADKKALKTATKTPLPPSDSSSSESSDDSSEGSSSTSGTLQNSESEAPAKT-AAAASQAPISSSASPAPGNDNG-----NGKRNHTGTRPTPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0AAE1Q7K1_9STOM" ac="A0AAE1Q7K1" length="466" description="Uncharacterized protein OS=Petrolisthes manimaculis OX=1843537 GN=Pmani_007921 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>2.7</expectation>
+      <identity>31.9</identity>
+      <positives>42.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="43" end="133">QDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKG</querySeq>
+      <pattern>+D TSS S N DT  N     T ES  A   S++ S+ T GSN    ++      +    T V   + K A   VK+ S G      +G G</pattern>
+      <matchSeq start="16" end="104">RDQTSSTSTNADTHTNTGELCTSESSNA--SSKNISNKTEGSNCSSTSNVSAKLPSKQPGTKVIASRFKAAAAAVKEHSSGYGSGSGSGSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0A2Z6Q6X2_9GLOM" ac="A0A2Z6Q6X2" length="94" description="Uncharacterized protein OS=Rhizophagus clarus OX=94130 GN=RclHR1_12340004 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.9</expectation>
+      <identity>36.1</identity>
+      <positives>55.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="93">KRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYI</querySeq>
+      <pattern>K  G N L AL  +A  +    +T+SS+S++ DTS ++ S  ++ S    + S+S SS+TS S S    S I</pattern>
+      <matchSeq start="7" end="77">KAFGVNHLTALT-NAPSKSSSSETSSSESSSSDTSSSSGSSSSKTSSFKSSSSESSSSETSSSESSSSDSDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0A226MW32_CALSU" ac="A0A226MW32" length="1026" description="Uncharacterized protein OS=Callipepla squamata OX=9009 GN=ASZ78_004801 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>3.3</expectation>
+      <identity>22.1</identity>
+      <positives>40.1</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="242">GQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSG----QESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDRCMNPWIRPRRGRGRMRALGKIRKKQRR</querySeq>
+      <pattern>GQ K  + +    V+    D++SSDS++ DT    +S     + KA N    G   T  SN +  A  I    A P+        +K AL   + + +  + QG        T L  +L+  P  P  P+ G       ++  V   +G    Q      ++ +K +K        P+ ++ +A +T      +       + R+  G   A+G+ ++K+R+</pattern>
+      <matchSeq start="755" end="951">GQGKAASSLAKVPVKAAPADSSSSDSSDSDTDIEQVS----ANHKADNKPPPGQEATGASNKEKVAGKIDASHANPKPA-----PVKKALAVKENDVEAKETQG--------TPLPSVLLSTP-QPAEPSLG-------SRSEVTTAAGVPAVQTPGLEEKKKKKKVKKEKKEKKKPSSTADKAVKTSKDKDKENKKQKASQKRKRPGEDGAVGQPKEKKRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="A0ACF4EPM6_9PEZI" ac="A0ACF4EPM6" length="1233" description="J domain-containing protein OS=Elasticomyces elasticus OX=574655 GN=LTR56_022472 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>3.3</expectation>
+      <identity>25.3</identity>
+      <positives>43.2</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="49" end="193">DSNNQDTSQNALSFDTQ-ESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLP</querySeq>
+      <pattern>D+ + D++  A    TQ ES+K + G+ +    T    +++   Y     A P + W   +            +  +   G    GSL T L DL   +P+   T +AGL  ++ V  DT+ F S   ++  +Q   + L  TP+P</pattern>
+      <matchSeq start="979" end="1106">DAMDIDSTPPAAKHQTQQESEKNIEGTPT----TQNGTAKEARMY-----AVPPSAWRQSQ--------TNGHAASNRSSGGGANGSLKTNLDDLAHVEPLARTTNSAGLGNLSDV-HDTLPFTSEASTTIPAQDDAENLPATPMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0A9P5GKJ5_PENCR" ac="A0A9P5GKJ5" length="399" description="Srp40 C-terminal domain-containing protein OS=Penicillium crustosum OX=36656 GN=PCG10_004771 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>3.4</expectation>
+      <identity>24.3</identity>
+      <positives>41.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="242">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQ----ESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDRCMNPWIRPRRGRGRMRALGKIRKKQRR</querySeq>
+      <pattern>++SSDS++ D+  ++ S  +  S  + + S   SSD+S  +S D +S      +   +    E++ K AL   K+    ES  S D  S+  GS  T        +PV          +V  VAQ T    S    +   ++   G + TPL + S    +  +    S+   DR     +   RG+G  +   K ++   R</pattern>
+      <matchSeq start="197" end="382">SSSSDSSSSDSDSSSSSSSSSSSDSSSDSSSDSSSDSSSDSSSDSSS-----DSDSSSESESEKESKKALKKAKKTPLPESDSSSDSESSSSGS-NTVAPSPAEIKPV---------KKVEEVAQTTSSSASPAPGNGPVKKKHTGARPTPLALLSELPHNHPSNDYMSYAYADRAWKD-LSVTRGKGFTKEKNKKKRGSYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="A0A1V6ULI8_9EURO" ac="A0A1V6ULI8" length="407" description="Srp40 C-terminal domain-containing protein OS=Penicillium coprophilum OX=36646 GN=PENCOP_c007G03598 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>3.4</expectation>
+      <identity>22.3</identity>
+      <positives>40.6</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="242">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQ----ESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDRCMNPWIRPRRGRGRMRALGKIRKKQRR</querySeq>
+      <pattern>++SSDS++  +  ++ S     S  + + S   SSD+S  +S D +S      ++  +    E++ K AL   K+    ES  S D  ++  GS      + L   P T   P   + +     Q T    S    +  +++   G + TPL + S    +  +    S+   DR     +   RG+G  +   K ++   R</pattern>
+      <matchSeq start="199" end="390">SSSSDSSSSSSDSSSSSSSDSSSDSSSDSSSDSSSDSSSDSSSDSSSGSSSSDSSSESESESEKESKKALKKAKKTPLPESDSSSDSETSSSGS------NTLAASPETETKP---VKKAVEAVQTTSSSASPAPGNGPAKKKHTGARPTPLALLSELPHNHPSNDYMSYAYADRAWKD-LSVTRGKGFTKEKNKKKRGSYR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="TR" id="A0A6I8TU60_AEDAE" ac="A0A6I8TU60" length="678" description="RING-type E3 ubiquitin transferase OS=Aedes aegypti OX=7159 GN=5577634 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>4.0</expectation>
+      <identity>28.7</identity>
+      <positives>47.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="44" end="149">DTTSSDSNNQDTSQNALSFDTQESQK--ALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVT</querySeq>
+      <pattern>DTT+S   N DT+    + D QE+ K  + +   SGS +    N+ DF   +L+ +     T V +  +    P + Q +  S D+    KG+L       LV++P+T</pattern>
+      <matchSeq start="375" end="481">DTTNSADGNNDTNLTNQTADKQETGKNSSKDMDTSGSREKLNQNAVDFRMSVLLSKEDGSVTCVTKELLTKHSP-LMQRAPVSRDKNPREKGTLRIQASQPLVKEPLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="A0A8S9XEE4_APOLU" ac="A0A8S9XEE4" length="889" description="Uncharacterized protein OS=Apolygus lucorum OX=248454 GN=GE061_018673 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>4.3</expectation>
+      <identity>26.4</identity>
+      <positives>47.2</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="130">GQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSN</querySeq>
+      <pattern>G N  +AL++ A   VK   T ++D+N Q T+Q A++  T ++  ++        D S   +QD A      Q + + T    +K  +A    +Q +Q + +  SN</pattern>
+      <matchSeq start="105" end="206">GLNNRLALIKKAQAAVKEYQTHATDANKQKTAQAAINALTDKNDASVKAQLQKLFDESNKQAQDAAKSAQAKQQSSQET----QKANVANTSNQQTAQNTQENNSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="A0ABD0PUD1_CIRMR" ac="A0ABD0PUD1" length="159" description="Uncharacterized protein OS=Cirrhinus mrigala OX=683832 GN=M9458_026296 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>4.3</expectation>
+      <identity>30.6</identity>
+      <positives>51.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="88">VVRAAHLHPSYELVDWKRVGQNKLVALVRSAL--VRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQD</querySeq>
+      <pattern>+++  HL+   EL+  +R+ Q +LVA+++ +    RV +Q  T  D      S  A   DT +  K+  GS+SG SD +    +D</pattern>
+      <matchSeq start="27" end="108">LLKPEHLNTGLELI--RRI-QERLVAILQHSTQDFRVGYQSKTGPDQEAAQASNLANHTDTNKESKSDGGSESGDSDNNNYAGED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="TR" id="A0A0C3S990_PHLG1" ac="A0A0C3S990" length="1303" description="RNA recognition motif domain-containing protein OS=Phlebiopsis gigantea (strain 11061_1 CR5-6) OX=745531 GN=PHLGIDRAFT_30662 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>4.5</expectation>
+      <identity>29.9</identity>
+      <positives>43.5</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="62" end="201">FDTQESQKALNGSQSGSSDTS-GSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGV------AQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSS</querySeq>
+      <pattern>+D Q S+  L    + S D S  ++S D  SY   F A+   T       +LA P + Q          NG G +  +L+    +Q    Y P  GLA   G+      A+  +  GSG + +   Q S   + T+P P+PSP LSS</pattern>
+      <matchSeq start="672" end="807">YDAQISEAQLRDFINSSRDRSMRTSSADPHSYK--FSASQPFTDPAIMSARLASPAMTQPMH------ENGYGGIQQSLESYQHQQQQLAYGPPPGLAYPPGMMPGLQMARHGLGMGSGMDVA---QASSAHVSTSPSPIPSPILSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="Q177I2_AEDAE" ac="Q177I2" length="2142" description="Uncharacterized protein OS=Aedes aegypti OX=7159 GN=5567518 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>4.7</expectation>
+      <identity>37.7</identity>
+      <positives>64.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="91">RVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFAS</querySeq>
+      <pattern>R+  ++ TSSDS++ D S ++ S  + ES +  NG+ S SS +S S+S  ++S</pattern>
+      <matchSeq start="481" end="533">RLSRKNDTSSDSSSSDDSSSSSSSSSSESHERNNGTSSDSSSSSSSSSSSYSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0A8J4U507_CLAMG" ac="A0A8J4U507" length="3719" description="Death-inducer obliterator 1-like isoform X2 OS=Clarias magur OX=1594786 GN=zmynd8 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>4.8</expectation>
+      <identity>24.1</identity>
+      <positives>38.8</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="219">GGLDVVRAAHLHP----SYELVDWKRVGQNK-LVALVRSALVRVKF---QDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSG------QESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDRCMNP</querySeq>
+      <pattern>G +   R   L P    S E+ DW++ G ++ L A  R    + K    QD    D + ++    +   D QES       QS +S T  S   D  S +L    A     +F+   K+         + ++D+ +  K  + T  +    E+P T   PN+  A  +   Q  V + +       Q SS   Q S   +     PM +PA+SS+  +R      + R   P</pattern>
+      <matchSeq start="2074" end="2295">GEVSPFRLVRLSPEELLSKEISDWRKTGTSESLDAGGRHQPGQSKAGSKQDAAPPDVDMEEAPSMSDGDDHQESSHPSAAPQSSASATKSSAVPDILSNMLKDTTAEHRAHLFDLNCKIC-----TGQRSAEDEPAAKKPKMSTPKKQDPPEKPKTEQRPNSKQAPAD---QPNVSYSASDASMPHQPSSTEDQNST--MPVAQAPMITPAVSSVTISRRDPRTAIHRSSAP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="TR" id="A0A914B0Z2_PATMI" ac="A0A914B0Z2" length="509" description="Uncharacterized protein OS=Patiria miniata OX=46514 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>5.0</expectation>
+      <identity>21.3</identity>
+      <positives>39.6</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="210">LDVVRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSW</querySeq>
+      <pattern>+ +VR+A     Y        G +     V        +   +S  S +  +  ++ S+  +E  +    S   SS +SGS S  ++SY         + +  E+  +    Y    S GS   GS+G  S Y+  ++   E+  + Y P++G          +   GS   SS++    +K  ++     PS  LS   ++ +GS+</pattern>
+      <matchSeq start="25" end="209">IQIVRSASYSSYYPSSGSSSSGYSSYSYYVEEKNFEESYSSYSSGSSGSGSSGYSSYSYYVEEKSEGSYSSYYPSSGSSGSGSSGYSSY---------SDYEEEKSEESYSSY--YPSSGSSGSGSSGYSS-YSDYEEEKSEESYSSYYPSSG----------SSGSGSSGYSSYSDYEEEKSEESYSSYYPSSGLSGSGSSSSGSY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0A2T3FK42_9FIRM" ac="A0A2T3FK42" length="221" description="Uncharacterized protein OS=Faecalibacillus faecis OX=1982628 GN=C7U55_12520 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>5.2</expectation>
+      <identity>37.5</identity>
+      <positives>58.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="44" end="91">DTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFAS</querySeq>
+      <pattern>++T+S+SNN + S N      QE   +++ SQ  +SD S  NS D +S</pattern>
+      <matchSeq start="158" end="205">NSTNSNSNNNENSNNTTEETKQEENTSIDSSQENNSDNSSDNSSDESS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="A0A9P6XEG3_RHIOR" ac="A0A9P6XEG3" length="324" description="LisH domain-containing protein OS=Rhizopus oryzae OX=64495 GN=G6F64_003534 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.4</expectation>
+      <identity>42.2</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="44" end="88">DTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQD</querySeq>
+      <pattern>D++SSDS++ D+S +  S + +E +K  + S S SSD+S S S D</pattern>
+      <matchSeq start="112" end="156">DSSSSDSSSSDSSSSESSDEEEEQKKESSSSSSSSSDSSSSESSD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="A0A6H0XJR3_9PEZI" ac="A0A6H0XJR3" length="789" description="Uncharacterized protein OS=Peltaster fructicola OX=286661 GN=AMS68_000277 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>5.5</expectation>
+      <identity>26.7</identity>
+      <positives>41.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="154">VRAAHLHPSYELVDWKRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLL--VEQPVTPYTPN</querySeq>
+      <pattern>VRA  LH S    D    G  ++      A+  +      +S+  +   ++   S  T  +     G+QS  SD SG+ S        +     RA++ F R ++  L    ++    D QGS     L++ LQ L+   EQP TP T N</pattern>
+      <matchSeq start="152" end="296">VRAKQLHQSVIRDDLALSGSRQVSLKFSEAVAAMPSNVNRTSEPRHFSQARTEASRVTSWTNSTTEGTQSALSDRSGTESAALQRSESVHTLRQRASF-FGRSVQNKL----RKPSRPDLQGSAQSQGLFSALQGLMQHKEQPSTPQTSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="A0A1Y2IJG9_TRAC3" ac="A0A1Y2IJG9" length="826" description="GATA-type domain-containing protein OS=Trametes coccinea (strain BRFM310) OX=1353009 GN=PYCCODRAFT_1370741 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>5.6</expectation>
+      <identity>24.0</identity>
+      <positives>37.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="210">TTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSW-NSQRSQKGLKTTPLPMPSPALSSIRAARTGSW</querySeq>
+      <pattern>T++ DSNN   + N ++   Q  Q  L G+  GS+D     +Q F +    F       ++ +     + P        SDD GS  + S    L +    +P +                  V FGS  +SSW +S  SQ+     P    S   S +R +    W</pattern>
+      <matchSeq start="586" end="735">TSNVDSNNNGNNNNCVNEYRQSMQSELMGAL-GSNDGGMHYTQMFGTNFTYFPGPYHPDYLSQMYTIPSDPLPFSSGDNSDDSGSESRSSKRRRLSNDSASEPPS----------------SAVSFGSYSDSSWSSSSASQRSSVDFPYSPYSSFSSMLRGSANTPW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="A0A8D2K210_THEGE" ac="A0A8D2K210" length="236" description="Histone deacetylase 11 OS=Theropithecus gelada OX=9565 GN=HDAC11 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>5.6</expectation>
+      <identity>32.0</identity>
+      <positives>40.0</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="175" end="249">ESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGSWMKVDRCMNPWIRPRRGRGRMRALGKIRKKQRRKMMPRWW</querySeq>
+      <pattern>E+SW +      + TT    P  AL S  +    SW    R MN WI   R RG +R+         R   P WW</pattern>
+      <matchSeq start="148" end="212">ETSWTTSVCTSWMSTTATSTPGTALPSRPSGGRWSWSGAQRMMNTWI---RWRGTLRS-------PSRSTCPTWW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="TR" id="A0AAD4CH58_ASPNN" ac="A0AAD4CH58" length="391" description="Uncharacterized protein OS=Aspergillus nanangensis OX=2582783 GN=FE257_012608 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>6.0</expectation>
+      <identity>27.3</identity>
+      <positives>42.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="50" end="170">SNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQ--------DFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTP--NAGLARVNG-VAQDTVHF</querySeq>
+      <pattern>S  Q  +  +L  + ++   +L G     S TS    Q          AS +   QA PR T  +   + +    V + SQ SDD+G +G   L T      V  P+ P  P   AG+ R+ G +++D + F</pattern>
+      <matchSeq start="78" end="205">STFQKQAVASLLNEVEKENASLQGPIGPLSKTSSREEQLPQAGSWAKVASSVSRLQALPRDTVQYMSPLSITSASVSKRSQNSDDEGDHGARGLPTP----RVPTPMVPEIPEAKAGVVRIYGRISKDIIQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0A813BQ41_9DINO" ac="A0A813BQ41" length="119" description="Uncharacterized protein (Fragment) OS=Symbiodinium necroappetens OX=1628268 GN=SNEC2469_LOCUS31444 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>6.2</expectation>
+      <identity>30.6</identity>
+      <positives>46.8</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="194" end="253">MPSPALSSIRAARTGSWMKVDRCMNPWIRPRRGRGRMRALGKIRKKQRRK--MMPRWWGWLE</querySeq>
+      <pattern>+P  AL+ +R     + +++ RC   W   R  R R  A G+  K +RR+      WW W E</pattern>
+      <matchSeq start="5" end="63">LPRAALAELRRLEHAAALRIQRCWRQW---RAARARKAAKGRRPKSRRRQRHAAEEWWAWEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="TR" id="W7LL90_GIBM7" ac="W7LL90" length="670" description="MUC1 Extracellular alpha-1,4-glucan glucosidase OS=Gibberella moniliformis (strain M3125 / FGSC 7600) OX=334819 GN=FVEG_00392 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>7.1</expectation>
+      <identity>33.0</identity>
+      <positives>43.0</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="117" end="209">VKQESQGSDDQGS-NGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTP------LPMPSPALSSIRAARTGS</querySeq>
+      <pattern>VK+ S      GS +G GS  TT    +V QP    TPNAG A+ + V       GS  ES+ +    +    T P      LP P+   SS  A +  S</pattern>
+      <matchSeq start="457" end="556">VKKISFACVSNGSGSGSGSGSTTKASTVVAQPSATKTPNAGAAKPSTVESADAAEGSSGESAVSEGAPRPSFTTVPGSVTNVLPAPTDVASSAAAEKPSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="A0A8J8W4H7_9EURO" ac="A0A8J8W4H7" length="797" description="Phosphatidate phosphatase APP1 catalytic domain-containing protein OS=Penicillium ucsense OX=2839758 GN=PECM_005123 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>7.4</expectation>
+      <identity>28.7</identity>
+      <positives>44.3</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="100" end="209">PRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGV-----AQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPALSSIRAARTGS</querySeq>
+      <pattern>P AT   +   K A P   +  QGS DQ + G  S  T+ Q+ +  +P  P  P    A+ + +     +  T    S Q S+ +S   + G    P P+P P  S+  ++ TGS</pattern>
+      <matchSeq start="554" end="665">PHATKPRQPPGKPAKPSSLRTVQGSSDQVAAGVSSGQTSFQETIRRKPNPPLPPRRAQAKSDSLIDLDTSPSTSRSSSAQPSNKDSSTYRSG---RPPPVPPPRRSNTASSSTGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="A0ACM8JP14_BUFVI" ac="A0ACM8JP14" length="903" description="Rho GTPase-activating protein 39 OS=Bufotes viridis OX=30338 GN=BUFVIR_LOCUS20549 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>7.5</expectation>
+      <identity>22.7</identity>
+      <positives>38.4</positives>
+      <gaps>19</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="199">VRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGL---------------ARVNGVAQDTVHFGSGQESSWNSQRSQKGLKT---TPLPMPSPAL</querySeq>
+      <pattern>+R   + VK  D +S + ++    Q    F +++S    +   S SS +   N++   S                RK  L+L      S+GS D+  + +  +       +  +P+   T +                  AR+   AQ   HF   Q SSW+SQ+   G ++    PLPMP P +</pattern>
+      <matchSeq start="224" end="391">MRDQRLEVKSGDYSSMEGSDSRQGQQQHPFHSEDSMSWSSQQDSMSSSSYSPNTRKRKS----------------RKPSLSLEPNPSPSEGSSDREGHNEQGMIEERPSSMPNRPLMSRTESRSSEADMHRASTEAFMAQARLAWEAQQA-HFHMKQRSSWDSQKDGSGYESDGAVPLPMPGPVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="A0ACM8JP12_BUFVI" ac="A0ACM8JP12" length="1073" description="Rho GTPase-activating protein 39 OS=Bufotes viridis OX=30338 GN=BUFVIR_LOCUS20549 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>7.7</expectation>
+      <identity>22.7</identity>
+      <positives>38.4</positives>
+      <gaps>19</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="199">VRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGL---------------ARVNGVAQDTVHFGSGQESSWNSQRSQKGLKT---TPLPMPSPAL</querySeq>
+      <pattern>+R   + VK  D +S + ++    Q    F +++S    +   S SS +   N++   S                RK  L+L      S+GS D+  + +  +       +  +P+   T +                  AR+   AQ   HF   Q SSW+SQ+   G ++    PLPMP P +</pattern>
+      <matchSeq start="394" end="561">MRDQRLEVKSGDYSSMEGSDSRQGQQQHPFHSEDSMSWSSQQDSMSSSSYSPNTRKRKS----------------RKPSLSLEPNPSPSEGSSDREGHNEQGMIEERPSSMPNRPLMSRTESRSSEADMHRASTEAFMAQARLAWEAQQA-HFHMKQRSSWDSQKDGSGYESDGAVPLPMPGPVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="A0ABQ8M4F7_LABRO" ac="A0ABQ8M4F7" length="2129" description="Cullin-9 OS=Labeo rohita OX=84645 GN=H4Q32_008905 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>8.2</expectation>
+      <identity>30.6</identity>
+      <positives>51.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="88">VVRAAHLHPSYELVDWKRVGQNKLVALVRSAL--VRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQD</querySeq>
+      <pattern>+++  HL+   EL+  +R+ Q +LVA+++ +    RV +Q  T  D      S  A   DT +  K+  GS+SG SD +    +D</pattern>
+      <matchSeq start="1997" end="2078">LLKPEHLNTGLELI--RRI-QERLVAILQHSTQDFRVGYQSKTGPDQETAQASNLANHTDTNKESKSDGGSESGDSDNNNYAGED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0A498MUU2_LABRO" ac="A0A498MUU2" length="2578" description="Cullin-9 isoform X1 OS=Labeo rohita OX=84645 GN=ROHU_024879 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>8.3</expectation>
+      <identity>30.6</identity>
+      <positives>51.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="88">VVRAAHLHPSYELVDWKRVGQNKLVALVRSAL--VRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQD</querySeq>
+      <pattern>+++  HL+   EL+  +R+ Q +LVA+++ +    RV +Q  T  D      S  A   DT +  K+  GS+SG SD +    +D</pattern>
+      <matchSeq start="2446" end="2527">LLKPEHLNTGLELI--RRI-QERLVAILQHSTQDFRVGYQSKTGPDQETAQASNLANHTDTNKESKSDGGSESGDSDNNNYAGED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="TR" id="A0A6J2V033_CHACN" ac="A0A6J2V033" length="2578" description="Cullin-9 isoform X1 OS=Chanos chanos OX=29144 GN=cul9 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>8.3</expectation>
+      <identity>29.4</identity>
+      <positives>54.1</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="88">VVRAAHLHPSYELVDWKRVGQNKLVALVRSAL--VRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQD</querySeq>
+      <pattern>+++  H++   EL+  +R+ Q +LVA+++ +    RV +Q  TSS+  +   S  A   DT +  K+  GS SG SD +    ++</pattern>
+      <matchSeq start="2447" end="2528">LLKPEHINTGLELI--RRI-QERLVAILQHSTQDFRVGYQSKTSSEQESAQASNLANHTDTNKESKSDRGSDSGDSDNNNYTGEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="TR" id="A0A6J2V503_CHACN" ac="A0A6J2V503" length="2588" description="Cullin-9 isoform X2 OS=Chanos chanos OX=29144 GN=cul9 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>8.3</expectation>
+      <identity>29.4</identity>
+      <positives>54.1</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="88">VVRAAHLHPSYELVDWKRVGQNKLVALVRSAL--VRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQD</querySeq>
+      <pattern>+++  H++   EL+  +R+ Q +LVA+++ +    RV +Q  TSS+  +   S  A   DT +  K+  GS SG SD +    ++</pattern>
+      <matchSeq start="2457" end="2538">LLKPEHINTGLELI--RRI-QERLVAILQHSTQDFRVGYQSKTSSEQESAQASNLANHTDTNKESKSDRGSDSGDSDNNNYTGEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="TR" id="A0AAE1QDA1_9STOM" ac="A0AAE1QDA1" length="455" description="Uncharacterized protein OS=Petrolisthes manimaculis OX=1843537 GN=Pmani_004698 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>8.5</expectation>
+      <identity>30.8</identity>
+      <positives>42.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="43" end="133">QDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKG</querySeq>
+      <pattern>+D +SS S N DT  N     T ES  A   S++ S+ T GSN    ++      +    T V   + K A   VK+ S G      +G G</pattern>
+      <matchSeq start="5" end="93">RDQSSSTSTNADTHTNTGELCTSESSNA--SSKNISNKTEGSNCSSTSNVSAKLPSKQPGTKVIASRFKAAAAAVKEHSSGYGSGSGSGSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="TR" id="A0A9P3PFI0_LYOSH" ac="A0A9P3PFI0" length="476" description="Phytocyanin domain-containing protein OS=Lyophyllum shimeji OX=47721 GN=LshimejAT787_0205580 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>8.6</expectation>
+      <identity>29.5</identity>
+      <positives>40.4</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="46" end="199">TSSDSNNQDTSQNALSFDTQESQKALNGSQ--SGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPAL</querySeq>
+      <pattern>+ S +NN  +S  A +  T  +  A +     SGSS+  GS+  D  S  L     P A+            YV   + GS  QGS+G G+ +T +  +   Q V  Y P A    VN    DT+ F  G     N+    KG    P    S AL</pattern>
+      <matchSeq start="136" end="267">SGSSNNNMWSSSAAATTSTSAAWPAYSSPAYGSGSSNWGGSSYDDCVSQCLAQHGNPMAS------------YVPTATSGS--QGSSGSGATHTVI--VAPTQGVLRYVPFA----VNASVGDTIKFMWGA----NNHTVTKGSALEPCNKSSDAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="TR" id="A1CPR9_ASPCL" ac="A1CPR9" length="476" description="DUF676 domain-containing protein OS=Aspergillus clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 3887 / NRRL 1 / QM 1276 / 107) OX=344612 GN=ACLA_023540 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>8.6</expectation>
+      <identity>28.1</identity>
+      <positives>45.8</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="161" end="252">NGVAQDTVHFGSGQESSWNSQRSQKGLKTTPLPMPSPA----LSSIRAARTGSWMKVDRCMNPWIRPRRGRGRMRALGKIRKKQRRKMMPRWWGWL</querySeq>
+      <pattern>N +++    FG G  ++ +S+ S    +T P P+PSP+     S+  AA T SW +  R    +       G M A G      +R+ +   WGW+</pattern>
+      <matchSeq start="203" end="294">NTISEVAGIFGFGGAANTSSKASDANRQTQPKPLPSPSASGTASAADAAATPSWQRWGR----YAMFAGAAGAMAAGGAAAMYSQRQRLTDGWGWV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="TR" id="E9E9P1_METAQ" ac="E9E9P1" length="286" description="Putative DNA-binding protein OS=Metarhizium acridum (strain CQMa 102) OX=655827 GN=MAC_06589 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>8.9</expectation>
+      <identity>38.0</identity>
+      <positives>54.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="43" end="92">QDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASY</querySeq>
+      <pattern>QDTT      QDT ++A   D Q+S+K    +++GSS   G N  D  S+</pattern>
+      <matchSeq start="219" end="268">QDTTDDAETEQDTQESASDEDGQQSKKTERSNKNGSSGKKGPNKGDTVSW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="TR" id="A0ABQ6M6L4_9STRA" ac="A0ABQ6M6L4" length="335" description="RRM domain-containing protein OS=Tetraparma gracilis OX=2962635 GN=TeGR_g4069 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>9.8</expectation>
+      <identity>26.8</identity>
+      <positives>38.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="47" end="188">SSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFASYILIFQAAPRATWVFERKIKLALPYVKQESQGSDDQGSNGKGSLYTTLQDLLVEQPVTPYTPNAGLARVNGVAQDTVHFGSGQESSWNSQRSQKGLK</querySeq>
+      <pattern>SSDS++ D    A +     + K ++ S S SSD+  S+S+D A      +AAP A        K A P  K+E   SD   S+         +D    +   P    A  A     A D+    S    S +     K  K</pattern>
+      <matchSeq start="75" end="195">SSDSDSSDDEAPAAAAAPAAATKKISKSDSDSSDSDSSDSEDEA------KAAPAA--------KKAAPAAKKEDSDSDSSSSSDS-------EDEAPAKAAAPAAKAAAKAAAKAAASDSDSSSSSDSDSDDEAEKPKAAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="TR" id="A0A7F8QDW7_LEPWE" ac="A0A7F8QDW7" length="838" description="Dentin sialophosphoprotein OS=Leptonychotes weddellii OX=9713 GN=DSPP PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>9.9</expectation>
+      <identity>41.7</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="44" end="91">DTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNSQDFAS</querySeq>
+      <pattern>D+ SSDS++ D+S ++ S D+ +S  + N S+S SSD+S S S   +S</pattern>
+      <matchSeq start="582" end="629">DSNSSDSDSSDSSDSSDSSDSSDSDSSDNDSKSDSSDSSNSKSDSDSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="TR" id="A0A2Z6R401_9GLOM" ac="A0A2Z6R401" length="110" description="Uncharacterized protein OS=Rhizophagus clarus OX=94130 GN=RclHR1_19040004 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>10.0</expectation>
+      <identity>36.9</identity>
+      <positives>56.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="86">KRVGQNKLVALVRSALVRVKFQDTTSSDSNNQDTSQNALSFDTQESQKALNGSQSGSSDTSGSNS</querySeq>
+      <pattern>K  G N L AL  +A  +    +T+SS+S + DTS ++ S  ++ S    + S+S SS+TS S S</pattern>
+      <matchSeq start="7" end="70">KAFGVNHLTALT-NAPSKSSSSETSSSESCSSDTSLSSGSSSSETSSSESSSSESSSSETSSSES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

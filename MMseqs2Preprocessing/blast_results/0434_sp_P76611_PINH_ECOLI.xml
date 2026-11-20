@@ -1,0 +1,1062 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-181001-0129-62132880-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-181001-0129-62132880-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P76611|PINH_ECOLI" type="PROTEIN" length="47"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T18:10:01+00:00" end="2026-11-13T18:11:21+00:00" search="P0Y0M0DT0H0M80.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="61">
+   <hit number="1" database="SP" id="PINH_ECOLI" ac="P76611" length="47" description="Putative protein PinH OS=Escherichia coli (strain K12) OX=83333 GN=pinH PE=5 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <bits>102.4</bits>
+      <expectation>7.9e-28</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MWHLVVLLEELCERGINFRALAQSIFAQQWGDECCKSKTICDLKVIV</querySeq>
+      <pattern>MWHLVVLLEELCERGINFRALAQSIFAQQWGDECCKSKTICDLKVIV</pattern>
+      <matchSeq start="1" end="47">MWHLVVLLEELCERGINFRALAQSIFAQQWGDECCKSKTICDLKVIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="Q3YYK3_SHISS" ac="Q3YYK3" length="47" description="Resolvase/invertase-type recombinase catalytic domain-containing protein OS=Shigella sonnei (strain Ss046) OX=300269 GN=SSON_2797 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>2.7e-26</expectation>
+      <identity>95.7</identity>
+      <positives>97.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MWHLVVLLEELCERGINFRALAQSIFAQQWGDECCKSKTICDLKVIV</querySeq>
+      <pattern>MWHLVVLLEELC+RGINFRALAQSIFAQQWGDECCKSK ICDLKVIV</pattern>
+      <matchSeq start="1" end="47">MWHLVVLLEELCKRGINFRALAQSIFAQQWGDECCKSKRICDLKVIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A1B7JYE9_9ENTR" ac="A0A1B7JYE9" length="136" description="Phage DNA invertase OS=Kluyvera georgiana ATCC 51603 OX=1354264 GN=M989_02148 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.08</expectation>
+      <identity>76.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL ERGINFR+L  SI</pattern>
+      <matchSeq start="23" end="47">MRHLVVLVEELRERGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A4Z0LDZ5_SALET" ac="A0A4Z0LDZ5" length="145" description="DNA-invertase (Fragment) OS=Salmonella enterica subsp. enterica serovar Poona OX=436295 GN=C9F07_19155 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.09</expectation>
+      <identity>76.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL ERGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEELRERGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="Q32D10_SHIDS" ac="Q32D10" length="146" description="DNA-invertase OS=Shigella dysenteriae serotype 1 (strain Sd197) OX=300267 GN=SDY_2752 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.09</expectation>
+      <identity>76.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL ERGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEELRERGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A9MQ33_SALAR" ac="A9MQ33" length="121" description="Resolvase/invertase-type recombinase catalytic domain-containing protein OS=Salmonella arizonae (strain ATCC BAA-731 / CDC346-86 / RSK2980) OX=41514 GN=SARI_01275 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.09</expectation>
+      <identity>72.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL ERG+NFR+L  SI</pattern>
+      <matchSeq start="1" end="25">MRHLVVLVEELRERGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A2X4TWI6_SALER" ac="A0A2X4TWI6" length="121" description="Phage DNA invertase OS=Salmonella enterica subsp. arizonae OX=59203 GN=hin_3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.09</expectation>
+      <identity>72.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL ERG+NFR+L  SI</pattern>
+      <matchSeq start="1" end="25">MRHLVVLVEELRERGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ABX5HAZ8_ESCAL" ac="A0ABX5HAZ8" length="184" description="DNA-invertase OS=Escherichia albertii OX=208962 GN=C7B09_24015 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.11</expectation>
+      <identity>76.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL ERGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEELRERGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="PINE_ECOLI" ac="P03014" length="184" description="Serine recombinase PinE OS=Escherichia coli (strain K12) OX=83333 GN=pinE PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.11</expectation>
+      <identity>76.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL ERGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEELRERGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A1S6L009_9CAUD" ac="A0A1S6L009" length="185" description="DNA invertase OS=Salmonella phage SEN8 OX=1647468 GN=SEN8_26 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.11</expectation>
+      <identity>76.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL ERGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEELRERGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="Q8ZMU9_SALTY" ac="Q8ZMU9" length="185" description="Fels-2 prophage protein OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=STM2702 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.11</expectation>
+      <identity>76.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL ERGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEELRERGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0ABU1DZ74_9ESCH" ac="A0ABU1DZ74" length="186" description="Recombinase family protein OS=Escherichia ruysiae OX=2608867 GN=RGV86_22175 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.11</expectation>
+      <identity>76.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL ERGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEELRERGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A485BLJ0_KLUCR" ac="A0A485BLJ0" length="106" description="DNA-invertase hin OS=Kluyvera cryocrescens OX=580 GN=hin_3 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.21</expectation>
+      <identity>68.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HL+VL+EEL +RGINFR+L  SI</pattern>
+      <matchSeq start="23" end="47">MRHLIVLVEELRDRGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="CIN_BPP7" ac="P21703" length="186" description="DNA-invertase OS=Enterobacteria phage P7 OX=10682 GN=cin PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.3</expectation>
+      <identity>72.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL +RGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEELRDRGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="CIN_BPP1" ac="P10311" length="186" description="DNA-invertase OS=Escherichia phage P1 OX=2886926 GN=cin PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.3</expectation>
+      <identity>72.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL +RGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEELRDRGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A1X1DCQ6_9GAMM" ac="A0A1X1DCQ6" length="192" description="DNA-invertase OS=Pantoea wallisii OX=1076551 GN=HA48_03865 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.3</expectation>
+      <identity>72.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL EEL ERG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLTEELRERGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0A2X4T433_SALER" ac="A0A2X4T433" length="112" description="DNA-invertase OS=Salmonella enterica subsp. arizonae OX=59203 GN=hin_2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.32</expectation>
+      <identity>72.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL ERGINFR+L+  I</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEELRERGINFRSLSDFI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="M1T2R9_9CAUD" ac="M1T2R9" length="164" description="Phage DNA invertase OS=Escherichia phage P2 OX=2681594 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.52</expectation>
+      <identity>64.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L+EEL ERG+NFR+L  +I</pattern>
+      <matchSeq start="70" end="94">MRHLVILVEELRERGVNFRSLTDAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A0H3JBU1_ECO57" ac="A0A0H3JBU1" length="184" description="DNA-invertase OS=Escherichia coli O157:H7 OX=83334 GN=pinE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.56</expectation>
+      <identity>64.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L+EEL ERG+NFR+L  +I</pattern>
+      <matchSeq start="70" end="94">MRHLVILVEELRERGVNFRSLTDAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A0F7LA37_9CAUD" ac="A0A0F7LA37" length="197" description="DNA invertase OS=Escherichia phage pro483 OX=1649240 GN=pro483_35 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.58</expectation>
+      <identity>64.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L+EEL ERG+NFR+L  +I</pattern>
+      <matchSeq start="70" end="94">MRHLVILVEELRERGVNFRSLTDAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0AAF0FNV2_9CAUD" ac="A0AAF0FNV2" length="197" description="DNA-invertase hin OS=Salmonella phage MET_P1_103_31 OX=3032420 GN=hin PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.58</expectation>
+      <identity>64.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L+EEL ERG+NFR+L  +I</pattern>
+      <matchSeq start="70" end="94">MRHLVILVEELRERGVNFRSLTDAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0ABY7L6Y2_CITFR" ac="A0ABY7L6Y2" length="197" description="Recombinase family protein OS=Citrobacter freundii OX=546 GN=O4000_26355 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.58</expectation>
+      <identity>64.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L+EEL ERG+NFR+L  +I</pattern>
+      <matchSeq start="70" end="94">MRHLVILVEELRERGVNFRSLTDAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="Q83QI9_SHIFL" ac="Q83QI9" length="146" description="DNA-invertase OS=Shigella flexneri OX=623 GN=SF2609 PE=3 SV=4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.64</expectation>
+      <identity>72.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+E L ERGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEALRERGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A317PUH7_9ENTR" ac="A0A317PUH7" length="182" description="DNA invertase Pin-like site-specific DNA recombinase OS=Mangrovibacter plantisponsor OX=451513 GN=DES37_112153 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.77</expectation>
+      <identity>64.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+E+L +RG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLIEDLRQRGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A1B7L6Y2_9ENTR" ac="A0A1B7L6Y2" length="185" description="DNA-invertase OS=Mangrovibacter phragmitis OX=1691903 GN=A9B99_18625 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.78</expectation>
+      <identity>64.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+E+L +RG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLIEDLRQRGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A2V2BLV2_9GAMM" ac="A0A2V2BLV2" length="192" description="Recombinase family protein OS=Pantoea allii OX=574096 GN=KYI95_14945 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.8</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L EEL ERG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVMLTEELRERGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A506PWQ3_9GAMM" ac="A0A506PWQ3" length="192" description="Recombinase family protein OS=Pantoea deleyi OX=470932 GN=FJW01_18290 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.8</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L EEL ERG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVMLTEELRERGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A2K1QCQ9_9GAMM" ac="A0A2K1QCQ9" length="198" description="DNA-invertase OS=Mixta theicola OX=1458355 GN=COO59_02525 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.81</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L EEL ERG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVMLTEELRERGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0ABU4E2G5_9ENTR" ac="A0ABU4E2G5" length="198" description="Recombinase family protein OS=Atlantibacter subterraneus OX=255519 GN=R4P48_11535 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.81</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV L+EEL +RGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVTLIEELRQRGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0ACS9WJB0_9GAMM" ac="A0ACS9WJB0" length="207" description="Recombinase family protein OS=Pantoea phosphatilytica OX=3425182 GN=ACR6AS_14740 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.82</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L EEL ERG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVMLTEELRERGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0ACC5PL86_ENTAG" ac="A0ACC5PL86" length="207" description="Recombinase family protein OS=Enterobacter agglomerans OX=549 GN=IFT41_06935 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.82</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L EEL ERG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVMLTEELRERGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A1I5FNB5_9GAMM" ac="A0A1I5FNB5" length="207" description="Site-specific DNA recombinase OS=Candidatus Pantoea varia OX=1881036 GN=SAMN05428971_3328 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.82</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L EEL ERG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVMLTEELRERGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="F1BUU6_9CAUD" ac="F1BUU6" length="129" description="DNA invertase-like protein OS=Erwinia phage ENT90 OX=947843 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.1</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L EEL E+GINFR+L  SI</pattern>
+      <matchSeq start="1" end="25">MRHLVMLTEELREKGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0AAD1QT89_9CAUD" ac="A0AAD1QT89" length="188" description="DNA-invertase OS=Escherichia phage Cartapus OX=2904709 GN=CARTA_23 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.1</expectation>
+      <identity>64.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV L+EEL +RG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVTLIEELRQRGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="B7UMT0_ECO27" ac="B7UMT0" length="188" description="Predicted DNA invertase OS=Escherichia coli O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=E2348C_0835 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.1</expectation>
+      <identity>64.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV L+EEL +RG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVTLIEELRQRGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0ABU1C5A8_9ESCH" ac="A0ABU1C5A8" length="188" description="Recombinase family protein OS=Escherichia marmotae OX=1499973 GN=KJE03_20240 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.1</expectation>
+      <identity>64.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV L+EEL +RG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVTLIEELRQRGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0ACH4E871_SHIBO" ac="A0ACH4E871" length="188" description="Recombinase family protein OS=Shigella boydii OX=621 GN=ACNKHP_23535 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.1</expectation>
+      <identity>64.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV L+EEL +RG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVTLIEELRQRGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="Q83SV1_SALTI" ac="Q83SV1" length="188" description="DNA-invertase OS=Salmonella typhi OX=90370 GN=pin PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.1</expectation>
+      <identity>64.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV L+EEL +RG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVTLIEELRQRGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="Q8Z4H4_SALTI" ac="Q8Z4H4" length="190" description="DNA-invertase OS=Salmonella typhi OX=90370 GN=t2667 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.1</expectation>
+      <identity>64.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV L+EEL +RG+NFR+L  SI</pattern>
+      <matchSeq start="72" end="96">MRHLVTLIEELRQRGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A4Z0P2V0_SALET" ac="A0A4Z0P2V0" length="91" description="DNA-invertase hin OS=Salmonella enterica subsp. enterica serovar Poona OX=436295 GN=C9F07_07845 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>1.3</expectation>
+      <identity>66.7</identity>
+      <positives>79.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="24">MWHLVVLLEELCERGINFRALAQS</querySeq>
+      <pattern>M HLVVL+EEL ERG+NF +L  S</pattern>
+      <matchSeq start="13" end="36">MRHLVVLVEELRERGVNFHSLTDS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A5B9T142_ECOLX" ac="A0A5B9T142" length="190" description="Site-specific recombinase OS=Escherichia coli OX=562 GN=pin PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.5</expectation>
+      <identity>60.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HL+ L+EEL E+G+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MKHLITLIEELREKGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="Q05517_ECOLX" ac="Q05517" length="190" description="DNA-invertase OS=Escherichia coli OX=562 GN=hin_1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.5</expectation>
+      <identity>60.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HL+ L+EEL E+G+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MKHLITLIEELREKGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="Q8Z6S3_SALTI" ac="Q8Z6S3" length="190" description="DNA-invertase OS=Salmonella typhi OX=90370 GN=t1346 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.5</expectation>
+      <identity>60.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HL+ L+EEL E+G+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MKHLITLIEELREKGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A6P1Q3P9_9GAMM" ac="A0A6P1Q3P9" length="196" description="DNA-invertase hin OS=Mixta intestinalis OX=1615494 GN=hin PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.5</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L E+L ERGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVMLTEQLRERGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A506V3W3_9GAMM" ac="A0A506V3W3" length="196" description="Recombinase family protein OS=Mixta tenebrionis OX=2562439 GN=FKM52_19165 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.5</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L E+L ERGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVMLTEQLRERGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0ABM6S4U0_9GAMM" ac="A0ABM6S4U0" length="198" description="DNA-invertase OS=Mixta calida OX=665913 GN=C2E16_17935 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.5</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L EEL E+GINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVMLTEELREKGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0ABN5HAD0_9GAMM" ac="A0ABN5HAD0" length="198" description="DNA-invertase OS=Mixta calida OX=665913 GN=C2E16_12310 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.5</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L EEL E+GINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVMLTEELREKGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="B7US85_ECO27" ac="B7US85" length="199" description="Predicted DNA invertase OS=Escherichia coli O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=E2348C_1831 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.5</expectation>
+      <identity>60.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HL+ L+EEL E+G+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MKHLITLIEELREKGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0ABM6S330_9GAMM" ac="A0ABM6S330" length="210" description="Recombinase family protein OS=Mixta calida OX=665913 GN=C2E16_15965 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.6</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L EEL E+GINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVMLTEELREKGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0ABR6RUI9_9ENTR" ac="A0ABR6RUI9" length="185" description="Recombinase family protein OS=Kluyvera sichuanensis OX=2725494 GN=HII27_13865 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>2.8</expectation>
+      <identity>64.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL +R +NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEELRQRAVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0ABX8KCJ0_9ENTR" ac="A0ABX8KCJ0" length="185" description="Recombinase family protein OS=Citrobacter pasteurii OX=1563222 GN=I6L54_07465 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>2.8</expectation>
+      <identity>64.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLVVL+EEL +R +NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVVLVEELRQRAVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0A2P8VGS6_9ENTR" ac="A0A2P8VGS6" length="195" description="DNA-invertase OS=Siccibacter turicensis OX=357233 GN=C7G83_14125 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>2.9</expectation>
+      <identity>68.0</identity>
+      <positives>76.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV L+EEL  RGINFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVTLIEELRVRGINFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0ABX8KDF1_9ENTR" ac="A0ABX8KDF1" length="184" description="Recombinase family protein OS=Citrobacter pasteurii OX=1563222 GN=I6L54_10770 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.9</expectation>
+      <identity>64.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV L+EEL E+G+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVGLVEELREKGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A286BTX0_9GAMM" ac="A0A286BTX0" length="190" description="Site-specific DNA recombinase OS=Candidatus Pantoea floridensis OX=1938870 GN=SAMN06273570_1962 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.9</expectation>
+      <identity>64.0</identity>
+      <positives>76.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L EEL  RG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MQHLVMLTEELRTRGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A2P8VEJ9_9ENTR" ac="A0A2P8VEJ9" length="185" description="DNA-invertase OS=Siccibacter turicensis OX=357233 GN=C7G83_19055 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>5.4</expectation>
+      <identity>60.0</identity>
+      <positives>76.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV L EEL +RG+NFR++  SI</pattern>
+      <matchSeq start="72" end="96">MRHLVTLTEELRQRGVNFRSMTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0A6M8HYH5_9PROT" ac="A0A6M8HYH5" length="123" description="Recombinase family protein OS=Lichenicola cladoniae OX=1484109 GN=HN018_24145 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>5.4</expectation>
+      <identity>40.0</identity>
+      <positives>62.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">HLVVLLEELCERGINFRALAQSIFAQQWGDECCKS</querySeq>
+      <pattern>HL+ L+ +L +RGI FR+L + + A      CC+S</pattern>
+      <matchSeq start="74" end="108">HLLTLVADLDKRGIGFRSLTEMVMAYAAATLCCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0ABY6JJ62_9ENTR" ac="A0ABY6JJ62" length="196" description="Recombinase family protein OS=Siccibacter colletis OX=1505757 GN=KFZ77_02780 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>5.5</expectation>
+      <identity>64.0</identity>
+      <positives>76.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV L+EEL  RG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVTLIEELRLRGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0ABX5HFK5_ESCAL" ac="A0ABX5HFK5" length="199" description="DNA invertase OS=Escherichia albertii OX=208962 GN=C7B09_18265 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>5.5</expectation>
+      <identity>56.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HL+ L+EEL ++G+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MKHLITLIEELRKKGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="D2TQ79_CITRI" ac="D2TQ79" length="190" description="Phage DNA invertase OS=Citrobacter rodentium (strain ICC168) OX=637910 GN=gin PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>7.5</expectation>
+      <identity>56.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV+L EEL +RG+NFR++  +I</pattern>
+      <matchSeq start="70" end="94">MQHLVLLTEELRQRGVNFRSITDNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="E3G768_ENTLS" ac="E3G768" length="197" description="Resolvase domain protein OS=Enterobacter lignolyticus (strain SCF1) OX=701347 GN=Entcl_1125 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>7.5</expectation>
+      <identity>60.0</identity>
+      <positives>76.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HL+ L EEL +RG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLISLTEELRQRGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0A485AJJ5_KLUCR" ac="A0A485AJJ5" length="168" description="DNA-invertase hin OS=Kluyvera cryocrescens OX=580 GN=hin_1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.8</expectation>
+      <identity>60.0</identity>
+      <positives>76.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MWHLVVLLEELCERGINFRALAQSI</querySeq>
+      <pattern>M HLV + EEL +RG+NFR+L  SI</pattern>
+      <matchSeq start="70" end="94">MRHLVSMTEELRQRGVNFRSLTDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

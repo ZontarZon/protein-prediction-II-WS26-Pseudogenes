@@ -1,0 +1,2864 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-181139-0799-65979996-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-181139-0799-65979996-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P77528|PEAD_ECOLI" type="PROTEIN" length="78"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T18:11:39+00:00" end="2026-11-13T18:13:26+00:00" search="P0Y0M0DT0H0M107.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="167">
+   <hit number="1" database="SP" id="PEAD_ECOLI" ac="P77528" length="78" description="Putative protein PeaD OS=Escherichia coli (strain K12) OX=83333 GN=peaD PE=5 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>387</score>
+      <bits>153.7</bits>
+      <expectation>3.3e-47</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A653FW87_9CAUD" ac="A0A653FW87" length="233" description="Host replicative helicase loader Lambda_P OS=Escherichia phage ev243 OX=2847063 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>380</score>
+      <bits>151.0</bits>
+      <expectation>4.1e-44</expectation>
+      <identity>97.4</identity>
+      <positives>98.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A0H3JIE0_ECO57" ac="A0A0H3JIE0" length="233" description="Phage replication protein OS=Escherichia coli O157:H7 OX=83334 GN=ECs_1612 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>380</score>
+      <bits>151.0</bits>
+      <expectation>4.1e-44</expectation>
+      <identity>97.4</identity>
+      <positives>98.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A7ZJF8_ECO24" ac="A7ZJF8" length="233" description="Replication protein P OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_0811 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>380</score>
+      <bits>151.0</bits>
+      <expectation>4.1e-44</expectation>
+      <identity>97.4</identity>
+      <positives>98.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABU1DLC2_9ESCH" ac="A0ABU1DLC2" length="169" description="Replication protein P (Fragment) OS=Escherichia ruysiae OX=2608867 GN=RGV86_00005 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>371</score>
+      <bits>147.5</bits>
+      <expectation>1.5e-43</expectation>
+      <identity>94.9</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL+CMTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="92" end="169">LVTNLYQNMRANALTDAELRRKAADELSCMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="C1JJ58_9CAUD" ac="C1JJ58" length="233" description="Replication protein P OS=Enterobacteria phage 22 OX=613119 GN=P PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>1.6e-43</expectation>
+      <identity>96.2</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="C1JJ54_9CAUD" ac="C1JJ54" length="233" description="Replication protein P OS=Enterobacteria phage 27 OX=613118 GN=P PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>1.6e-43</expectation>
+      <identity>96.2</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="C1JJ50_9CAUD" ac="C1JJ50" length="233" description="Replication protein P OS=Enterobacteria phage 32 OX=613117 GN=P PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>1.6e-43</expectation>
+      <identity>96.2</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="G8XV67_9CAUD" ac="G8XV67" length="233" description="Putative replication protein P OS=Enterobacteria phage ST286-24 OX=675828 GN=P PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>1.6e-43</expectation>
+      <identity>96.2</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A1I9LJ67_9CAUD" ac="A0A1I9LJ67" length="233" description="Replication protein P OS=Stx converting phage vB_EcoS_P27 OX=1792287 GN=vBEcoSP27_30 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>1.6e-43</expectation>
+      <identity>96.2</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A0P0ZC87_9CAUD" ac="A0A0P0ZC87" length="233" description="Replication protein P OS=Stx2-converting phage Stx2a_WGPS9 OX=1226258 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>1.6e-43</expectation>
+      <identity>96.2</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="O32558_BP933" ac="O32558" length="233" description="Replication protein P OS=Escherichia phage 933W OX=10730 GN=P PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>1.6e-43</expectation>
+      <identity>96.2</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A1U9AJJ8_9CAUD" ac="A0A1U9AJJ8" length="233" description="Replication protein P OS=Stx1 converting phage AU6Stx1 OX=1855816 GN=p PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>1.6e-43</expectation>
+      <identity>96.2</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A1U9AJ78_9CAUD" ac="A0A1U9AJ78" length="233" description="Replication protein P OS=Stx1 converting phage AU5Stx1 OX=1855815 GN=p PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>1.6e-43</expectation>
+      <identity>96.2</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A1I9LJY3_9CAUD" ac="A0A1I9LJY3" length="233" description="Replication protein P OS=Stx converting phage vB_EcoS_ST2-8624 OX=1792289 GN=vBEcoSST28624_31 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>1.6e-43</expectation>
+      <identity>96.2</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="Q6H9X6_9CAUD" ac="Q6H9X6" length="233" description="Putative replication protein P OS=Enterobacteria phage BP-4795 OX=196242 GN=P PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>1.6e-43</expectation>
+      <identity>96.2</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="B7LB96_ECO55" ac="B7LB96" length="233" description="Replication protein P of bacteriophage OS=Escherichia coli (strain 55989 / EAEC) OX=585055 GN=EC55989_0770 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>375</score>
+      <bits>149.1</bits>
+      <expectation>2.3e-43</expectation>
+      <identity>96.2</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGA V</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGARV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="B7LNE0_ESCF3" ac="B7LNE0" length="233" description="Replication protein P of bacteriophage OS=Escherichia fergusonii (strain ATCC 35469 / DSM 13698 / CCUG 18766 / IAM 14443 / JCM 21226 / LMG 7866 / NBRC 102419 / NCTC 12128 / CDC 0568-73) OX=585054 GN=EFER_2718 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>371</score>
+      <bits>147.5</bits>
+      <expectation>9.3e-43</expectation>
+      <identity>94.9</identity>
+      <positives>97.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL+CMTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELSCMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A0H3JIQ8_ECO57" ac="A0A0H3JIQ8" length="233" description="Phage replication protein OS=Escherichia coli O157:H7 OX=83334 GN=ECs_2986 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>371</score>
+      <bits>147.5</bits>
+      <expectation>9.3e-43</expectation>
+      <identity>94.9</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGE IPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGEAIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A653FVS4_9CAUD" ac="A0A653FVS4" length="233" description="DNA Helicase loader Lammda_P OS=Escherichia phage ev017 OX=2847060 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>370</score>
+      <bits>147.1</bits>
+      <expectation>1.3e-42</expectation>
+      <identity>94.9</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAK GLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKLGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A653FW76_9CAUD" ac="A0A653FW76" length="233" description="Host replicative helicase loader Lambda_P OS=Escherichia phage ev207 OX=2847062 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>370</score>
+      <bits>147.1</bits>
+      <expectation>1.3e-42</expectation>
+      <identity>94.9</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAK GLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKLGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A0H2YYL3_ECOK1" ac="A0A0H2YYL3" length="233" description="Replication protein P of bacteriophage OS=Escherichia coli O1:K1 / APEC OX=405955 GN=APECO1_234 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>370</score>
+      <bits>147.1</bits>
+      <expectation>1.3e-42</expectation>
+      <identity>94.9</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAK GLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKLGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="B7MJE9_ECO45" ac="B7MJE9" length="233" description="Replication protein P of bacteriophage OS=Escherichia coli O45:K1 (strain S88 / ExPEC) OX=585035 GN=ECS88_1176 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>370</score>
+      <bits>147.1</bits>
+      <expectation>1.3e-42</expectation>
+      <identity>94.9</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAK GLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKLGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A0H2V7R5_ECOL6" ac="A0A0H2V7R5" length="233" description="Putative replication protein P of bacteriophage OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=c1550 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>370</score>
+      <bits>147.1</bits>
+      <expectation>1.3e-42</expectation>
+      <identity>94.9</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNR QALAKIAEIKAK GLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKLGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A434AE63_9BACT" ac="A0A434AE63" length="98" description="Replication protein P (Fragment) OS=Ancylomarina longa OX=2487017 GN=DLK05_17130 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>1.6e-42</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="21" end="98">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A2V3ZJW1_9BACT" ac="A0A2V3ZJW1" length="129" description="Replication protein P (Fragment) OS=Marinifilum breve OX=2184082 GN=DF185_23360 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>4.1e-42</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="52" end="129">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A1S1V4S2_9FIRM" ac="A0A1S1V4S2" length="233" description="Replication protein P OS=Andreesenia angusta OX=39480 GN=EUAN_21180 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="Q9XJP9_9CAUD" ac="Q9XJP9" length="233" description="P protein OS=Escherichia phage 21 OX=2910191 GN=P PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A0K2FIT1_9CAUD" ac="A0A0K2FIT1" length="233" description="DNA replication protein OS=Escherichia phage DE3 OX=482822 GN=P PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A346FJ60_9CAUD" ac="A0A346FJ60" length="233" description="Replication protein OS=Enterobacteria phage O276 OX=2282412 GN=48 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A653FWH6_9CAUD" ac="A0A653FWH6" length="233" description="Host replicative helicase loader lambda_P OS=Escherichia phage ev099 OX=2847061 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A653FR33_9CAUD" ac="A0A653FR33" length="233" description="Host replicative helicase loader, Lambda_P OS=Escherichia phage 4A7 OX=2847059 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A0N7BTP7_9CAUD" ac="A0A0N7BTP7" length="233" description="Replication protein P OS=Escherichia phage PA28 OX=1660368 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEVIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0A6I8WFG9_9CAUD" ac="A0A6I8WFG9" length="233" description="Host replicative helicase loader Lambda_P OS=Escherichia phage 1H12 OX=2847055 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="K7P6G2_9CAUD" ac="K7P6G2" length="233" description="DNA replication protein P OS=Enterobacteria phage HK140 OX=1147143 GN=HK140_054 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A3S0J2N5_9GAMM" ac="A0A3S0J2N5" length="233" description="Replication protein P OS=Shewanella canadensis OX=271096 GN=EKG38_22690 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0A2G1VLM1_9FLAO" ac="A0A2G1VLM1" length="233" description="Replication protein P OS=Leeuwenhoekiella nanhaiensis OX=1655491 GN=CJ305_19100 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0A974PIR4_9BACL" ac="A0A974PIR4" length="233" description="Replication protein P OS=Paenibacillus sonchi OX=373687 GN=JI735_34955 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0ABV9JD03_9ACTN" ac="A0ABV9JD03" length="233" description="Replication protein P OS=Streptomyces mangrovi OX=1206892 GN=ACFPEU_56280 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A0H3EIF7_ECO8N" ac="A0A0H3EIF7" length="233" description="Putative replication protein P of bacteriophage OS=Escherichia coli O83:H1 (strain NRG 857C / AIEC) OX=685038 GN=NRG857_05575 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A417YDM4_9BACI" ac="A0A417YDM4" length="233" description="Replication protein P OS=Neobacillus notoginsengisoli OX=1578198 GN=D1B31_23415 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A417Y9H5_9BACI" ac="A0A417Y9H5" length="233" description="Replication protein P OS=Oceanobacillus profundus OX=372463 GN=D1B32_22610 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="SP" id="VRPP_LAMBD" ac="P03689" length="233" description="Helicase loader OS=Escherichia phage lambda OX=2681611 GN=P PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>93.6</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A444JHM6_9GAMM" ac="A0A444JHM6" length="143" description="Replication protein P (Fragment) OS=Photobacterium chitinilyticum OX=2485123 GN=EDI28_26785 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>350</score>
+      <bits>139.4</bits>
+      <expectation>1e-40</expectation>
+      <identity>93.4</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGA</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGA</pattern>
+      <matchSeq start="68" end="143">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="B7UN93_ECO27" ac="B7UN93" length="233" description="Predicted replication protein OS=Escherichia coli O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=E2348C_1000 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>357</score>
+      <bits>142.1</bits>
+      <expectation>1.2e-40</expectation>
+      <identity>92.3</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE+IPEPVKQLPVMGGRPLNRAQALAKIAE+KAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGESIPEPVKQLPVMGGRPLNRAQALAKIAELKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0A653FRW3_9CAUD" ac="A0A653FRW3" length="233" description="Helicase loader lambda_P OS=Escherichia phage 2G7b OX=2847057 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>356</score>
+      <bits>141.7</bits>
+      <expectation>1.7e-40</expectation>
+      <identity>92.3</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNRAQALAKIAE+KAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRAQALAKIAELKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="O48422_BPH19" ac="O48422" length="233" description="P protein OS=Enterobacteria phage H19B OX=69932 GN=P PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>354</score>
+      <bits>141.0</bits>
+      <expectation>3.5e-40</expectation>
+      <identity>91.0</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE +PEPVKQLPVMGGRPLNRAQALAKIAE+KAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEALPEPVKQLPVMGGRPLNRAQALAKIAELKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0A653FQF8_9CAUD" ac="A0A653FQF8" length="233" description="Host replicative helicase loader lambda_P OS=Escherichia phage 2B8 OX=2847056 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>354</score>
+      <bits>141.0</bits>
+      <expectation>3.5e-40</expectation>
+      <identity>92.3</identity>
+      <positives>93.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLNR QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEAIPEPVKQLPVMGGRPLNRVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="H6WZI3_9CAUD" ac="H6WZI3" length="233" description="DNA replication protein OS=Escherichia phage JLK-2012 OX=1147722 GN=P PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>349</score>
+      <bits>139.0</bits>
+      <expectation>2e-39</expectation>
+      <identity>91.0</identity>
+      <positives>92.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTARINRGE IPEPVKQLPVMGGRPLN  QALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="156" end="233">LVTNLYQNMRANALTDAELRRKAADELVHMTARINRGEVIPEPVKQLPVMGGRPLNHVQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0A0M3ULE2_9CAUD" ac="A0A0M3ULE2" length="233" description="Replication protein P OS=Salmonella phage SEN34 OX=1647463 GN=SEN34_47 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>303</score>
+      <bits>121.3</bits>
+      <expectation>1.7e-32</expectation>
+      <identity>80.0</identity>
+      <positives>86.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>+VT LY NMRANAL+D ELRRKA +EL  M  RINRGE IPEPVKQLPV+GGRPLNRAQ LAKIAEI+AKFGLKG</pattern>
+      <matchSeq start="156" end="230">LVTTLYSNMRANALSDTELRRKAVEELNHMVTRINRGEVIPEPVKQLPVLGGRPLNRAQNLAKIAEIRAKFGLKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0A2P5GSY9_9ENTR" ac="A0A2P5GSY9" length="234" description="Replication protein P OS=Superficieibacter electus OX=2022662 GN=CHU33_05350 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>280</score>
+      <bits>112.5</bits>
+      <expectation>4.9e-29</expectation>
+      <identity>72.0</identity>
+      <positives>85.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>+VT LY NMRAN+L+D ELRRKAADEL  M+ARINRG+ IPEPVKQLPV+GG+PL R Q LAKIAE++ K GL+G</pattern>
+      <matchSeq start="157" end="231">LVTTLYANMRANSLSDTELRRKAADELNHMSARINRGDKIPEPVKQLPVLGGKPLTRTQGLAKIAELREKHGLRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0A085AR24_9ENTR" ac="A0A085AR24" length="232" description="Origin specific replication binding factor OS=Trabulsiella guamensis ATCC 49490 OX=1005994 GN=GTGU_00285 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>278</score>
+      <bits>111.7</bits>
+      <expectation>9.4e-29</expectation>
+      <identity>73.3</identity>
+      <positives>86.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>+VT LY NMRANAL+D ELRRKAADEL+ M  RI RGETIP PVKQLPV+GG+PL+RA++LAKIAEI+A+ GL G</pattern>
+      <matchSeq start="156" end="230">LVTTLYANMRANALSDTELRRKAADELSVMADRIRRGETIPAPVKQLPVLGGKPLSRAKSLAKIAEIRARHGLGG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0A0H3FX62_KLEAK" ac="A0A0H3FX62" length="233" description="Replication protein P OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 / CCUG 1429 / JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006 / CDC 819-56) OX=1028307 GN=EAE_21180 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>271</score>
+      <bits>109.0</bits>
+      <expectation>1.1e-27</expectation>
+      <identity>69.3</identity>
+      <positives>85.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>+VT+LYQNMRAN L+DAELRRKA++EL  M  RIN GETIPEPVKQLPV+GG+PL+  Q LA++AEI+ K GL+G</pattern>
+      <matchSeq start="156" end="230">LVTSLYQNMRANGLSDAELRRKASEELARMANRINSGETIPEPVKQLPVLGGKPLSHMQGLARLAEIREKHGLRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A0H3G2I2_KLEAK" ac="A0A0H3G2I2" length="233" description="Replication protein P OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 / CCUG 1429 / JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006 / CDC 819-56) OX=1028307 GN=EAE_22425 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>271</score>
+      <bits>109.0</bits>
+      <expectation>1.1e-27</expectation>
+      <identity>69.3</identity>
+      <positives>85.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>+VT+LYQNMRAN L+DAELR KA++EL  M  RIN GETIPEPVKQLPV+GG+PL+R Q LA++AEI+ K GL+G</pattern>
+      <matchSeq start="156" end="230">LVTSLYQNMRANGLSDAELRHKASEELARMANRINSGETIPEPVKQLPVLGGKPLSRMQGLARLAEIREKHGLRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="Q5V9L0_KLEPN" ac="Q5V9L0" length="157" description="Replication protein P (Fragment) OS=Klebsiella pneumoniae OX=573 GN=kc01 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <bits>102.4</bits>
+      <expectation>5.9e-26</expectation>
+      <identity>68.5</identity>
+      <positives>82.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>+VT LY +MRANAL+D+ELRRKA+DEL  M  R+N GE IPEPVKQ+P +GGRPL+  Q L KIAEI+AKFGL</pattern>
+      <matchSeq start="78" end="150">LVTGLYTDMRANALSDSELRRKASDELLRMVRRMNAGEVIPEPVKQIPKLGGRPLSNEQGLNKIAEIRAKFGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0ABZ2E3B7_KLEOR" ac="A0ABZ2E3B7" length="237" description="Replication protein P OS=Klebsiella ornithinolytica OX=54291 GN=LM286_12510 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <bits>102.8</bits>
+      <expectation>2.9e-25</expectation>
+      <identity>67.1</identity>
+      <positives>83.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>MVT LY +MRAN+L+DAELRRKA+DEL+ M  R+N GE IPEPVK++P++GG+PL   Q L KIAEI+AKFGL</pattern>
+      <matchSeq start="158" end="230">MVTGLYTDMRANSLSDAELRRKASDELSRMVRRLNAGEVIPEPVKRIPLLGGKPLTNEQGLNKIAEIRAKFGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0AA94H1W6_9ENTR" ac="A0AA94H1W6" length="245" description="Replication protein P OS=Kosakonia oryzae OX=497725 GN=AWR26_14545 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>251</score>
+      <bits>101.3</bits>
+      <expectation>1.4e-24</expectation>
+      <identity>64.5</identity>
+      <positives>78.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGA</querySeq>
+      <pattern>+VT LYQ MRA+ L+DAE+RRKA +EL  M  RI RGE IPEP KQLP +GG+PL RAQ+LAKI E++ K GL+GA</pattern>
+      <matchSeq start="168" end="243">IVTTLYQQMRASGLSDAEVRRKAGEELAAMALRIRRGEEIPEPKKQLPKLGGKPLARAQSLAKIVELREKHGLRGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0AB35RKU0_9ENTR" ac="A0AB35RKU0" length="238" description="Replication protein P OS=Phytobacter ursingii OX=1972431 GN=R0H02_04975 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <bits>94.0</bits>
+      <expectation>8e-22</expectation>
+      <identity>62.7</identity>
+      <positives>76.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>MVT LYQ MR+  L+DAELRR+AADEL  M  RI  GE IP PV +LPV+G +PL R Q+ A+IAEI+A+FG KG</pattern>
+      <matchSeq start="160" end="234">MVTTLYQVMRSVGLSDAELRRRAADELAKMVKRIRNGEQIPAPVARLPVLGTKPLTREQSAARIAEIRARFGFKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0ABU4E8U0_9ENTR" ac="A0ABU4E8U0" length="243" description="Replication protein P OS=Atlantibacter subterraneus OX=255519 GN=R4P48_23125 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <bits>94.0</bits>
+      <expectation>8.8e-22</expectation>
+      <identity>59.0</identity>
+      <positives>71.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>+VT LYQ MR+  L+D EL RKA +EL  M  RI  GE IPEPV +LPV+G +P+ R Q +AKI EI+AKFGLKG  V</pattern>
+      <matchSeq start="166" end="243">LVTTLYQQMRSAGLSDMELNRKAGEELRKMVKRIRAGEVIPEPVARLPVLGSKPVTREQGMAKIQEIRAKFGLKGGRV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0ACT2EIA3_9ENTR" ac="A0ACT2EIA3" length="234" description="Replication protein P OS=Franconibacter helveticus 1159 OX=1405499 GN=ACP26D_07900 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>226</score>
+      <bits>91.7</bits>
+      <expectation>5.8e-21</expectation>
+      <identity>57.3</identity>
+      <positives>74.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>++T+LY  MRAN   +AELR++AA EL  M ARINRGE IP P   LP +GG+PL + + LAKIAEI+ KFG++G</pattern>
+      <matchSeq start="157" end="231">LITSLYSGMRANTWTEAELRKRAAAELALMAARINRGEEIPAPRAMLPQLGGKPLGQKEGLAKIAEIRKKFGIRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0ABW1Q3U7_9ENTR" ac="A0ABW1Q3U7" length="237" description="Replication protein P OS=Citrobacter bitternis OX=1585982 GN=ACFPZP_16210 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>225</score>
+      <bits>91.3</bits>
+      <expectation>8.6e-21</expectation>
+      <identity>60.0</identity>
+      <positives>74.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>MVT LYQ MR+  L+DAELRR+AA+EL  M  RI  GE IP PV +LPV+G +PL R Q ++K+ EI+AKFG KG</pattern>
+      <matchSeq start="160" end="234">MVTTLYQVMRSVGLSDAELRRRAAEELAKMVKRIRNGEQIPAPVARLPVLGTKPLTREQNMSKVQEIRAKFGFKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0ABW1Q257_9ENTR" ac="A0ABW1Q257" length="237" description="Replication protein P OS=Citrobacter bitternis OX=1585982 GN=ACFPZP_14155 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>221</score>
+      <bits>89.7</bits>
+      <expectation>3.4e-20</expectation>
+      <identity>58.7</identity>
+      <positives>73.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>MVT LYQ MR+  L+DAELRR+A +EL  M  RI  GE IP PV +LPV+G +PL R Q ++K+ EI+AKFG KG</pattern>
+      <matchSeq start="160" end="234">MVTTLYQVMRSVGLSDAELRRRAGEELAKMVRRIRNGEQIPAPVARLPVLGTKPLTREQNMSKVQEIRAKFGFKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0A090V6K8_PSEVU" ac="A0A090V6K8" length="244" description="Putative phage replication protein OS=Pseudescherichia vulneris NBRC 102420 OX=1115515 GN=EV102420_23_00070 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>219</score>
+      <bits>89.0</bits>
+      <expectation>7.6e-20</expectation>
+      <identity>56.8</identity>
+      <positives>74.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>+VT LYQ MR+  L+D EL RKAADEL+ +  RI  GE +PEPV +LPV+GG+PL R Q + ++ EI+ KFGLK</pattern>
+      <matchSeq start="167" end="240">LVTTLYQQMRSAGLSDMELNRKAADELSKIIKRIRHGEELPEPVARLPVLGGKPLTREQNMLRVKEIREKFGLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0ABW1Q0Z7_9ENTR" ac="A0ABW1Q0Z7" length="238" description="Replication protein P OS=Citrobacter bitternis OX=1585982 GN=ACFPZP_11955 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>217</score>
+      <bits>88.2</bits>
+      <expectation>1.3e-19</expectation>
+      <identity>58.7</identity>
+      <positives>70.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>+VT LYQ MR   L+D ELRR+AA+EL  M  RI  GE IP PV +LPV+G +PL R Q L K+ EI+ KFGLKG</pattern>
+      <matchSeq start="160" end="234">LVTTLYQVMRDAGLSDGELRRRAAEELAKMVKRIRNGEQIPAPVARLPVLGTKPLTREQGLRKVQEIREKFGLKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0ACT0PE72_9ENTR" ac="A0ACT0PE72" length="248" description="Replication protein P OS=Yokenella regensburgei OX=158877 GN=KXR87_09030 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>217</score>
+      <bits>88.2</bits>
+      <expectation>1.6e-19</expectation>
+      <identity>56.0</identity>
+      <positives>69.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>MVT L Q MR     D EL RKA DEL  M  R+  GE +PEPV +LPVMG +PL+R ++L+K+ EI+AKFG KG</pattern>
+      <matchSeq start="171" end="245">MVTTLSQQMRLQGFTDGELNRKAGDELAKMVKRVRSGEVLPEPVVRLPVMGKKPLSREESLSKVQEIRAKFGFKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0ABM9QD42_9ENTR" ac="A0ABM9QD42" length="234" description="Phage DNA replication protein P OS=Cronobacter dublinensis 1210 OX=1208656 GN=BN134_4278 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>215</score>
+      <bits>87.4</bits>
+      <expectation>2.5e-19</expectation>
+      <identity>56.0</identity>
+      <positives>73.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>+VT LY  MRAN   +AEL ++AA EL  M ARI+RGE IPEP   LP +G +PL++ + LAKIAEI+ KFG++G</pattern>
+      <matchSeq start="157" end="231">LVTALYSGMRANTWTEAELLKRAASELAAMAARISRGEEIPEPRVMLPKLGNKPLSQKEGLAKIAEIRKKFGIRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0ABU4ELB8_9GAMM" ac="A0ABU4ELB8" length="234" description="Replication protein P OS=Dickeya solani OX=1089444 GN=RUJ08_22290 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>208</score>
+      <bits>84.7</bits>
+      <expectation>2.7e-18</expectation>
+      <identity>56.8</identity>
+      <positives>71.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT LY  MRAN  +D+ELR KAA EL  M ARI +GE IP P   +PV+GG+PL++   LAKIAE++ K GL+</pattern>
+      <matchSeq start="157" end="230">MVTALYGGMRANNWSDSELRHKAAGELALMAARIQQGEQIPAPKVMIPVLGGKPLSKRDGLAKIAELREKHGLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0ABS5JCZ5_9GAMM" ac="A0ABS5JCZ5" length="231" description="DNA replication protein OS=Nissabacter archeti OX=1917880 GN=JK232_02370 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>177</score>
+      <bits>72.8</bits>
+      <expectation>9.3e-14</expectation>
+      <identity>48.1</identity>
+      <positives>68.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="77">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGAS</querySeq>
+      <pattern>MVT LY  MRAN L+++ELR++   ELT M+ R+  GE IP PV Q+P +   P++  + L+KIAEI+AK G++  S</pattern>
+      <matchSeq start="156" end="231">MVTKLYSEMRANNLSESELRKRCGKELTAMSRRLEAGEQIPAPVVQIPKL-HLPMSSERGLSKIAEIRAKLGMQRKS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0ABX0VJT0_9ENTR" ac="A0ABX0VJT0" length="233" description="DNA replication protein OS=Cedecea colo OX=2552946 GN=E2L00_07070 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>5.4e-12</expectation>
+      <identity>48.6</identity>
+      <positives>67.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT L+  MR+  L + ELR++ A EL  M+ RI  GE IP PV Q+P +   P++  +AL K+AEI++KFGLK</pattern>
+      <matchSeq start="156" end="228">MVTALFNQMRSLNLTEPELRKRCASELKAMSKRIEAGEAIPAPVVQIPKL-SIPVSNDKALDKLAEIRSKFGLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0A1B7IQK9_9ENTR" ac="A0A1B7IQK9" length="233" description="Origin-specific replication binding factor P OS=Buttiauxella brennerae ATCC 51605 OX=1354251 GN=M975_1911 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>5.4e-12</expectation>
+      <identity>48.6</identity>
+      <positives>67.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT L+  MR+  L + ELR++ A EL  M+ RI  GE IP PV Q+P +   P++  +AL K+AEI++KFGLK</pattern>
+      <matchSeq start="156" end="228">MVTALFNQMRSLNLTEPELRKRCASELKAMSKRIEAGEAIPAPVVQIPKL-SIPVSNDKALDKLAEIRSKFGLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0ACN3MWL0_9ENTR" ac="A0ACN3MWL0" length="234" description="Replication protein P OS=Dryocola clanedunensis OX=2925396 GN=AAE045_22725 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>160</score>
+      <bits>66.2</bits>
+      <expectation>2.9e-11</expectation>
+      <identity>48.6</identity>
+      <positives>64.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT LY  MR+  L +AELR++   EL  M+ RI  GE IP PV Q+P +   P++  + L KIAEI++K GLK</pattern>
+      <matchSeq start="156" end="228">MVTALYNQMRSQNLTEAELRKRCGTELKNMSRRIEAGEAIPAPVVQIPKL-HIPVSNEKGLDKIAEIRSKLGLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0A4Y1NRJ6_9CAUD" ac="A0A4Y1NRJ6" length="234" description="DNA replication protein P OS=Erwinia phage vB_EhrS_59 OX=2283025 GN=MZUP2_590 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>1.5e-10</expectation>
+      <identity>47.9</identity>
+      <positives>64.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>MVT LY  MR+  L D +LR++ A EL  M+ RI  GE IP PV Q+P +   P++  + L KIAEI++K GL</pattern>
+      <matchSeq start="154" end="225">MVTKLYSEMRSLNLTDPDLRKRCAKELKTMSRRIQAGEPIPAPVVQIPKL-HIPVSNEKGLDKIAEIRSKLGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="D8MV71_ERWBE" ac="D8MV71" length="234" description="DNA replication protein P OS=Erwinia billingiae (strain Eb661) OX=634500 GN=EbC_31970 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>154</score>
+      <bits>63.9</bits>
+      <expectation>2.1e-10</expectation>
+      <identity>46.6</identity>
+      <positives>64.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>MVT LY  MR+  L D ELR++ A EL  M+ RI  GE IP PV Q+P +   P++  + L KIAE++ ++GL</pattern>
+      <matchSeq start="154" end="225">MVTKLYSEMRSLNLTDPELRKRCAKELKTMSRRIQAGEPIPAPVVQIPKL-HIPVSNERGLDKIAELRERYGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="A0ACS9WBI8_9GAMM" ac="A0ACS9WBI8" length="234" description="Replication protein P OS=Pantoea phosphatilytica OX=3425182 GN=ACR6AS_01160 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>3e-10</expectation>
+      <identity>45.3</identity>
+      <positives>62.7</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>MVT +Y  MR+  L D+E R++  DEL  M+ RI  GE IP P KQ+P +   P    +AL  +A+I+ +FGLKG</pattern>
+      <matchSeq start="157" end="230">MVTAVYNQMRSFNLTDSECRKRLCDELRKMSRRIESGEVIPPPRKQIPQL-HIPTGNEKALDHLADIRRRFGLKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0A1B8YFJ2_9GAMM" ac="A0A1B8YFJ2" length="234" description="Replication protein P OS=Photorhabdus namnaonensis OX=1851568 GN=Phpb_03022 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>3e-10</expectation>
+      <identity>45.2</identity>
+      <positives>65.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>+VT LY  MR   L ++ELR++ ++EL  M+ R+  GE IP PVKQ+P +   P N+ +AL  +AEI+ KF L</pattern>
+      <matchSeq start="156" end="227">IVTRLYSQMRGLNLTESELRKRCSNELIAMSRRMELGEQIPAPVKQIPKL-HIPTNKERALNHLAEIRRKFNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0A3S5DPP9_9ENTR" ac="A0A3S5DPP9" length="231" description="Replication protein P OS=Cedecea lapagei OX=158823 GN=NCTC11466_02099 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>4e-10</expectation>
+      <identity>45.2</identity>
+      <positives>64.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>MVT LY  MR+  L ++ELR+    EL  M+ RI+ GE IP PV Q+P +   P++  + L KIAE++AK G+</pattern>
+      <matchSeq start="154" end="225">MVTKLYSQMRSLNLTESELRKHCTTELRAMSRRIDAGEAIPAPVVQIPKL-HIPMSNEKGLDKIAELRAKLGM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="H5UWH3_ATLHE" ac="H5UWH3" length="233" description="Putative DNA replication protein OS=Atlantibacter hermannii NBRC 105704 OX=1115512 GN=EH105704_01_02610 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>4.1e-10</expectation>
+      <identity>42.9</identity>
+      <positives>64.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="77">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGAS</querySeq>
+      <pattern>MVT LY  MR+  L ++ELR++ ++EL  M  R+  GE IP PV Q+P +   P++  + L KIAEI+ +F L+G +</pattern>
+      <matchSeq start="157" end="232">MVTKLYDQMRSFNLTESELRKRCSEELRKMARRVADGENIPAPVVQIPKL-HIPVSNEKGLDKIAEIRQRFKLRGGN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0ABX0GN29_9GAMM" ac="A0ABX0GN29" length="241" description="DNA replication protein OS=Photorhabdus tasmaniensis OX=1004159 GN=C5471_18500 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>6.2e-10</expectation>
+      <identity>45.2</identity>
+      <positives>63.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>MVT LY  MR   L ++ELR++ + EL  M+ R+  GE IP PVKQ+P +   P +  +AL  +AEI+ KF L</pattern>
+      <matchSeq start="163" end="234">MVTRLYSQMRGLNLTESELRKRCSTELIAMSRRVESGEQIPAPVKQIPKL-HIPSSNGRALNHLAEIRRKFNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0A432CTV4_9VIBR" ac="A0A432CTV4" length="50" description="Replication protein P (Fragment) OS=Vibrio aquaticus OX=2496559 GN=EJ063_20340 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>7.4e-10</expectation>
+      <identity>87.9</identity>
+      <positives>90.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="33">MVTNLYQNMRANALADAELRRKAADELTCMTAR</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  MTAR</pattern>
+      <matchSeq start="18" end="50">LVTNLYQNMRANALTDAELRRKAADELVHMTAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0A1S8Y9V8_9GAMM" ac="A0A1S8Y9V8" length="228" description="DNA replication protein OS=Izhakiella australiensis OX=1926881 GN=BTJ39_22420 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>7.5e-10</expectation>
+      <identity>45.9</identity>
+      <positives>59.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT L+  MR   L + ELR K   EL  MT+RI  GE IP P K +P +  RP+   + L KIAEI+ K G++</pattern>
+      <matchSeq start="154" end="226">MVTGLFSMMRGQNLTEKELRAKCRSELRSMTSRIQSGEDIPPPRKTIPKL-YRPVGNEKGLDKIAEIRQKLGMR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0ABS5T361_9GAMM" ac="A0ABS5T361" length="228" description="DNA replication protein OS=Rosenbergiella australiborealis OX=1544696 GN=HGT73_05295 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>7.5e-10</expectation>
+      <identity>44.6</identity>
+      <positives>64.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT LY  MRA  L++AEL+++   +L  M  R+N  ETIP P KQ+PV+   P  +  A + IA+I+ +FGL+</pattern>
+      <matchSeq start="154" end="226">MVTTLYDQMRALNLSEAELKKRCRKQLHSMVQRLNADETIPAPRKQIPVL-HIPSTKETAKSHIAQIRRRFGLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="C7BKG6_PHOAA" ac="C7BKG6" length="229" description="Phage dna replication protein (Fragment) OS=Photorhabdus asymbiotica subsp. asymbiotica (strain ATCC 43949 / 3105-77) OX=553480 GN=gene0091 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>7.6e-10</expectation>
+      <identity>43.8</identity>
+      <positives>65.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>+VT LY  MR   L ++ELR++ + EL  M+ R+  GE IP PVKQ+P +   P++  +AL ++AEI+ KF L</pattern>
+      <matchSeq start="153" end="224">IVTKLYSQMRGLNLTESELRKRCSQELISMSRRMESGEQIPAPVKQIPKL-HIPVSNERALNRLAEIRRKFNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0ABX9SNA9_9GAMM" ac="A0ABX9SNA9" length="232" description="Phage replication protein P OS=Photorhabdus asymbiotica OX=291112 GN=BDD30_1596 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>7.9e-10</expectation>
+      <identity>43.8</identity>
+      <positives>65.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>+VT LY  MR   L ++ELR++ + EL  M+ R+  GE IP PVKQ+P +   P++  +AL ++AEI+ KF L</pattern>
+      <matchSeq start="156" end="227">IVTKLYSQMRGLNLTESELRKRCSQELISMSRRMESGEQIPAPVKQIPKL-HIPVSNERALNRLAEIRRKFNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A1C0U6S8_9GAMM" ac="A0A1C0U6S8" length="234" description="Replication protein P OS=Photorhabdus australis subsp. thailandensis OX=2805096 GN=Ppb6_01219 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>8e-10</expectation>
+      <identity>45.2</identity>
+      <positives>64.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>MVT LY  MR   L ++ELR++ + EL  M+ R+  GE IP PVKQ+P +   P ++ +AL  +AEI+ KF L</pattern>
+      <matchSeq start="156" end="227">MVTKLYSQMRGLNLTESELRKRCSKELIAMSRRMESGEQIPAPVKQIPKL-HIPSSKERALNHLAEIRRKFNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="C7BH50_PHOAA" ac="C7BH50" length="239" description="Phage replication protein p OS=Photorhabdus asymbiotica subsp. asymbiotica (strain ATCC 43949 / 3105-77) OX=553480 GN=gene0074 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>8.5e-10</expectation>
+      <identity>43.8</identity>
+      <positives>65.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>+VT LY  MR   L ++ELR++ + EL  M+ R+  GE IP PVKQ+P +   P++  +AL ++AEI+ KF L</pattern>
+      <matchSeq start="163" end="234">IVTKLYSQMRGLNLTESELRKRCSQELISMSRRMESGEQIPAPVKQIPKL-HIPVSNERALNRLAEIRRKFNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0AA50DFW4_9GAMM" ac="A0AA50DFW4" length="230" description="Replication protein P OS=Erwinia pyri OX=3062598 GN=Q3V30_12880 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <bits>62.0</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>44.2</identity>
+      <positives>61.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="77">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGAS</querySeq>
+      <pattern>MVT LY  MR+  L   ELR+    EL  M+ RI  GE+IP PV Q+P +   P++  + L KIAEI+ K G++ +S</pattern>
+      <matchSeq start="154" end="229">MVTKLYSEMRSQNLTTPELRKHCLKELKSMSRRIESGESIPAPVVQIPKL-HIPVSNEKGLDKIAEIRRKLGIRRSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="R8ARF1_PLESH" ac="R8ARF1" length="231" description="DNA replication protein P OS=Plesiomonas shigelloides 302-73 OX=1315976 GN=PLESHI_08389 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>2.9e-09</expectation>
+      <identity>42.3</identity>
+      <positives>67.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="71">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKF</querySeq>
+      <pattern>M+T LY  MR+  L+++E R++ + EL+ M +RI  GE IP+P+KQ+  +   P+ +   +AKIAEIK +F</pattern>
+      <matchSeq start="157" end="226">MITKLYDVMRSQGLSESETRKRCSTELSDMASRIRAGEEIPKPIKQVAKL-YIPVTKEAGMAKIAEIKRRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0A6G6SKW5_PROVU" ac="A0A6G6SKW5" length="224" description="DNA replication protein OS=Proteus vulgaris OX=585 GN=GTH24_15325 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>3.8e-09</expectation>
+      <identity>44.6</identity>
+      <positives>63.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT +Y  MR+ +L D+E+++  A EL  MTARI  GETIP PV Q+      P +R ++L+ IA +K K G +</pattern>
+      <matchSeq start="152" end="224">MVTKIYSEMRSKSLTDSEVKKLCAKELRFMTARIKSGETIPAPVLQVE-HKVTPTSRNKSLSIIASLKQKHGFR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0ABW1VXX7_9GAMM" ac="A0ABW1VXX7" length="232" description="Replication protein P OS=Tatumella terrea OX=419007 GN=ACFP9W_05515 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>4.1e-09</expectation>
+      <identity>44.6</identity>
+      <positives>62.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT LY  M+A  L ++ELR++   +L  M  RI  GE IPEP KQ+P +   P     A + IA+I+A+FGL+</pattern>
+      <matchSeq start="158" end="230">MVTTLYSQMQAGNLTESELRQRCGKQLKSMADRITSGENIPEPRKQIPQL-HIPSKPDVAKSHIADIRARFGLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0AAX3RTP9_9GAMM" ac="A0AAX3RTP9" length="224" description="Replication protein P OS=Providencia vermicola OX=333965 GN=M5J11_00805 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <bits>60.1</bits>
+      <expectation>5.3e-09</expectation>
+      <identity>44.6</identity>
+      <positives>63.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT +Y  MR+ +L D+E+++  A EL  MTARI  GETIP P  Q+      P +R ++L+ IAE+K + G K</pattern>
+      <matchSeq start="152" end="224">MVTKIYSEMRSKSLTDSEVKKLCAKELRSMTARIKAGETIPAPALQVE-HKIIPTSRDKSLSIIAELKQRHGFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0ACH2VI05_9GAMM" ac="A0ACH2VI05" length="224" description="Replication protein P OS=Providencia zhejiangensis OX=3342829 GN=ACE2AM_15295 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <bits>60.1</bits>
+      <expectation>5.3e-09</expectation>
+      <identity>44.6</identity>
+      <positives>63.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT +Y  MR+ +L D+E+++  A EL  MTARI  GETIP P  Q+      P +R ++L+ IAE+K + G K</pattern>
+      <matchSeq start="152" end="224">MVTKIYSEMRSKSLTDSEVKKLCAKELRSMTARIKAGETIPAPALQVE-HKIIPTSRDKSLSIIAELKQRHGFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0A1Y0LLR6_TATCI" ac="A0A1Y0LLR6" length="232" description="DNA replication protein OS=Tatumella citrea OX=53336 GN=A7K99_12905 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>1.1e-08</expectation>
+      <identity>43.2</identity>
+      <positives>63.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>M+T LY  M+A  L ++ELR++ + +L  M  RI  GE IPEP KQ+P +   P     A + IA+I+A+FGL+</pattern>
+      <matchSeq start="158" end="230">MITALYSQMQAGNLTESELRQRCSKQLKSMADRITSGEDIPEPRKQIPQL-HIPSKPDVAKSHIADIRARFGLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="B6XGS6_PROIN" ac="B6XGS6" length="224" description="Replication protein P OS=Providencia alcalifaciens DSM 30120 OX=520999 GN=PROVALCAL_02562 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.4e-08</expectation>
+      <identity>43.2</identity>
+      <positives>60.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT +Y  MR+  L+D+E+R+  + EL  M  RI  GE IP+P+ QL      P  R +AL+ IA++K K G K</pattern>
+      <matchSeq start="152" end="224">MVTKIYSEMRSRNLSDSEVRKLCSSELNAMAKRIKSGEKIPDPMLQLE-SAVIPTKRDKALSIIADLKNKHGFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0A085JGT0_9GAMM" ac="A0A085JGT0" length="232" description="Origin-specific replication binding factor P OS=Tatumella ptyseos ATCC 33301 OX=1005995 GN=GTPT_1607 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>2.2e-08</expectation>
+      <identity>43.2</identity>
+      <positives>60.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>M+T LY  M+A  L ++ELR +   +L  M  RI  GE IPEP KQ+P +   P     A + IA+I+A+FGL+</pattern>
+      <matchSeq start="158" end="230">MITALYSQMQAGNLTESELRHRCGKQLKSMADRITSGEDIPEPRKQIPQL-HIPSKPDVAKSHIADIRARFGLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="B6XCV8_PROIN" ac="B6XCV8" length="224" description="Replication protein P OS=Providencia alcalifaciens DSM 30120 OX=520999 GN=PROVALCAL_01174 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>2.8e-08</expectation>
+      <identity>45.9</identity>
+      <positives>62.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT +Y  MR+  L+D+E+ +  A EL  M  RI  GE IP+PV QL  +   P  R +AL+ IA+ K K+GLK</pattern>
+      <matchSeq start="152" end="224">MVTKIYSEMRSRNLSDSEVIKLCASELKTMANRIKLGEKIPDPVLQLESL-VIPTKRDKALSIIADWKNKYGLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0ABS0DZ16_9GAMM" ac="A0ABS0DZ16" length="234" description="DNA replication protein OS=Rahnella laticis OX=2787622 GN=IV433_01560 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>3e-08</expectation>
+      <identity>41.0</identity>
+      <positives>59.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="77">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGR-PLNRAQALAKIAEIKAKFGLKGAS</querySeq>
+      <pattern>MVTNL  +MR    ++A+LR+    EL  M  RI  GE IP PV ++P M  +  +++   L K AE++ K GLK A+</pattern>
+      <matchSeq start="156" end="233">MVTNLCDHMRHENWSEAQLRKGCGTELKLMAKRIESGEKIPAPVARIPQMSVKSAMSKGDGLRKCAELREKLGLKKAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A7MGK9_CROS8" ac="A7MGK9" length="248" description="DNA replication protein OS=Cronobacter sakazakii (strain ATCC BAA-894) OX=290339 GN=ESA_01615 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>3.4e-08</expectation>
+      <identity>43.2</identity>
+      <positives>59.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL-PVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>MVT LY  MR    ++ EL  +A  E+  M  RI  GE IP+P   +     G+PL+R + LAK+AE++ KFGL</pattern>
+      <matchSeq start="162" end="235">MVTALYNGMRTYCWSETELANQAGYEIKKMANRIKSGEKIPKPRTLIRSNTSGKPLSREEGLAKLAELRVKFGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="A0ACG2GLN4_PROIN" ac="A0ACG2GLN4" length="224" description="Uncharacterized protein OS=Proteus inconstans OX=126385 GN=M2263_002335 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>3.9e-08</expectation>
+      <identity>39.2</identity>
+      <positives>59.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT +Y + R+  + D E+++    EL  M+ RI  GE IP+PV QL      P +R ++L+ IA +K K+G K</pattern>
+      <matchSeq start="152" end="224">MVTKIYSDSRSKGMTDLEVKKMCTSELLAMSGRIKSGEKIPDPVLQLD-RKNTPTSRDKSLSIIANLKQKYGFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0AAD0SH53_9GAMM" ac="A0AAD0SH53" length="238" description="DNA replication protein OS=Lonsdalea britannica OX=1082704 GN=CKQ53_12995 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>4.4e-08</expectation>
+      <identity>46.2</identity>
+      <positives>59.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEI--KAKFGLKGA</querySeq>
+      <pattern>MVT LY  MR+  L ++ELR++   EL  M  R  RGET P PV Q+P +   P++  + L KIAEI  K K G  GA</pattern>
+      <matchSeq start="158" end="234">MVTKLYSQMRSFNLTESELRKRCERELKDMARRAARGETFPAPVAQIPKL-HIPVSGEKGLDKIAEIRRKLKIGKAGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="A0ACH3J3B3_9GAMM" ac="A0ACH3J3B3" length="231" description="Replication protein P OS=Yersinia vastinensis OX=2890318 GN=ACIOG0_10165 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <bits>57.4</bits>
+      <expectation>5.7e-08</expectation>
+      <identity>41.1</identity>
+      <positives>60.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>MVT LY   R   L++ +LR++   EL  M+ RI  GE IP PV Q+P +   P++  +AL  IAE++AK  +</pattern>
+      <matchSeq start="156" end="227">MVTKLYSQQRVQGLSEQDLRKRCGKELADMSKRIEAGEPIPAPVVQIPKL-HIPVSNEKALDHIAELRAKLNM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="TR" id="A0AA91EFD9_9GAMM" ac="A0AA91EFD9" length="235" description="DNA replication protein OS=Obesumbacterium proteus ATCC 12841 OX=1354268 GN=M993_04538 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>2.2e-07</expectation>
+      <identity>42.5</identity>
+      <positives>57.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>MVT LY  MR    +++ELR+   +EL  M  RI  GE IP+PV QL  +   P++    L KIA+I+ K  L</pattern>
+      <matchSeq start="158" end="229">MVTKLYSQMRGKNQSESELRKSCTEELVIMGRRIESGEEIPKPVVQLEKL-HIPISNEAGLQKIADIRKKLNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="A0AA91EHD3_9GAMM" ac="A0AA91EHD3" length="235" description="DNA replication protein OS=Obesumbacterium proteus ATCC 12841 OX=1354268 GN=M993_00478 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>2.2e-07</expectation>
+      <identity>42.5</identity>
+      <positives>57.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>MVT LY  MR    +++ELR+   +EL  M  RI  GE IP+PV QL  +   P++    L KIA+I+ K  L</pattern>
+      <matchSeq start="158" end="229">MVTKLYSQMRGKNQSESELRKSCTEELVIMGRRIESGEEIPKPVVQLEKL-HIPISNEAGLQKIADIRKKLNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="A0ABT5LWQ6_9GAMM" ac="A0ABT5LWQ6" length="236" description="Replication protein P OS=Xenorhabdus anantnagensis OX=3025875 GN=PSI14_19090 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>2.2e-07</expectation>
+      <identity>43.2</identity>
+      <positives>59.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT LY  M    L+++ELR++   EL  M+ R+  GE IPEP  QL +    P +  +AL  +AEI+ KF LK</pattern>
+      <matchSeq start="158" end="230">MVTKLYSQMMGLNLSESELRKRCKQELVSMSRRMESGEQIPEPKVQL-IELHIPTSNERALNHLAEIRRKFNLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="TR" id="A0ACH3J1C6_9GAMM" ac="A0ACH3J1C6" length="231" description="Replication protein P OS=Yersinia vastinensis OX=2890318 GN=ACIOG0_06615 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>3e-07</expectation>
+      <identity>39.7</identity>
+      <positives>58.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>MVT LY   R   L++ +LR++   EL  M+ RI  GE IP PV Q+P +   P++  + L  IAE++AK  +</pattern>
+      <matchSeq start="156" end="227">MVTKLYSQQRVQGLSEQDLRKRCGKELADMSKRIEAGEPIPAPVVQIPKL-HIPVSSEKGLDHIAELRAKLNM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="A0ABY5UMH2_9GAMM" ac="A0ABY5UMH2" length="229" description="Replication protein P OS=Yersinia alsatica OX=2890317 GN=N0H69_18815 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>5.6e-07</expectation>
+      <identity>39.7</identity>
+      <positives>58.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>MVT LY   R   L++ +LR++   EL  M+ RI  GE IP PV Q+P +   P++  +AL  IA ++AK  +</pattern>
+      <matchSeq start="154" end="225">MVTKLYSQQRVQGLSEQDLRKRCGKELADMSKRIESGEPIPAPVVQIPKL-HIPVSSEKALDHIAALRAKLNM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0A1V9DJI0_9GAMM" ac="A0A1V9DJI0" length="230" description="DNA replication protein OS=Pantoea latae OX=1964541 GN=B2J69_10005 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>5.7e-07</expectation>
+      <identity>47.8</identity>
+      <positives>58.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="69">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKA</querySeq>
+      <pattern>MVT LY  MRAN L+++ELR K   EL  M +RI  GE IP P  QL  M   P    +AL  +A +KA</pattern>
+      <matchSeq start="157" end="224">MVTGLYSTMRANNLSESELRAKCRAELRKMASRIESGEEIPPPRAQLEKM-YMPTASEKALDNVARLKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="TR" id="A0A6P1PY83_9GAMM" ac="A0A6P1PY83" length="239" description="Replication protein P OS=Mixta intestinalis OX=1615494 GN=C7M51_01599 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>6e-07</expectation>
+      <identity>44.1</identity>
+      <positives>58.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="68">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIK</querySeq>
+      <pattern>+VT LY +MRAN   DAEL   A  EL  M ARI+ GE IPEP   +     +P++ A+    IAE++</pattern>
+      <matchSeq start="161" end="228">LVTGLYSDMRANNWTDAELAAHAKTELARMAARISSGEKIPEPAPMIEKPKHQPVSPARGREIIAELR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0ABS1Z0C7_9GAMM" ac="A0ABS1Z0C7" length="233" description="DNA replication protein OS=Pantoea eucrina OX=472693 GN=JJB79_00235 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>8e-07</expectation>
+      <identity>47.9</identity>
+      <positives>61.6</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL--PVMGGRPLNRAQALAKI-AEIKAK</querySeq>
+      <pattern>MVT+L   MRAN L+++ELR K   EL  M+ARI  GETIPEP +QL    M   P    + +A + A +KAK</pattern>
+      <matchSeq start="157" end="229">MVTSLCSLMRANNLSESELRIKCRSELRKMSARIEAGETIPEPRRQLLKAAMPSTPEKAREGVALLRATLKAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="A0A7Y6BS21_9BACL" ac="A0A7Y6BS21" length="161" description="Replication protein P (Fragment) OS=Paenibacillus xylanilyticus OX=248903 GN=HP552_00140 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>126</score>
+      <bits>53.1</bits>
+      <expectation>9.9e-07</expectation>
+      <identity>86.7</identity>
+      <positives>90.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="30">MVTNLYQNMRANALADAELRRKAADELTCM</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL  M</pattern>
+      <matchSeq start="132" end="161">LVTNLYQNMRANALTDAELRRKAADELVHM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="A0A7Y6BRL3_9BACL" ac="A0A7Y6BRL3" length="25" description="Replication protein (Fragment) OS=Paenibacillus xylanilyticus OX=248903 GN=HP552_00195 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>1.1e-06</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="54" end="78">PLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>PLNRAQALAKIAEIKAKFGLKGASV</pattern>
+      <matchSeq start="1" end="25">PLNRAQALAKIAEIKAKFGLKGASV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="A0A2G0Q5S7_XENHO" ac="A0A2G0Q5S7" length="236" description="DNA replication protein OS=Xenorhabdus hominickii OX=351679 GN=A9255_03005 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>128</score>
+      <bits>53.9</bits>
+      <expectation>1.1e-06</expectation>
+      <identity>43.2</identity>
+      <positives>58.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT LY  M    L+++ELR++   EL  M+ R+  GE IPEP  QL V    P +  +AL  +AEI+ K  LK</pattern>
+      <matchSeq start="158" end="230">MVTKLYSQMMGLNLSESELRKRCKQELISMSRRMESGEPIPEPKVQL-VELHLPTSNERALNHLAEIRRKLNLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="A0A2D0KAP4_9GAMM" ac="A0A2D0KAP4" length="233" description="DNA replication protein OS=Xenorhabdus stockiae OX=351614 GN=Xsto_03999 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>127</score>
+      <bits>53.5</bits>
+      <expectation>1.5e-06</expectation>
+      <identity>41.9</identity>
+      <positives>58.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT LY  M    L+++ELR++   EL  M+ R+  GE IPEP  QL  +   P +  +AL  +AEI+ K  LK</pattern>
+      <matchSeq start="155" end="227">MVTKLYSQMMGLNLSESELRKRCRQELISMSRRMESGEQIPEPRVQLTEL-HIPTSNERALDHLAEIRRKLNLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="TR" id="A0ABY2ZZS7_9GAMM" ac="A0ABY2ZZS7" length="228" description="DNA replication protein OS=Pantoea dispersa OX=59814 GN=FK492_06535 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>126</score>
+      <bits>53.1</bits>
+      <expectation>2.1e-06</expectation>
+      <identity>59.6</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL</querySeq>
+      <pattern>MVT LY  MRAN L+++ELR K   EL  M+ RI  GE IPEP KQL</pattern>
+      <matchSeq start="154" end="200">MVTGLYSMMRANNLSESELRVKCRSELRKMSQRIESGEQIPEPRKQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0ABX0QUJ5_9GAMM" ac="A0ABX0QUJ5" length="231" description="DNA replication protein OS=Candidatus Pantoea formicae OX=2608355 GN=F3J38_00185 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>126</score>
+      <bits>53.1</bits>
+      <expectation>2.1e-06</expectation>
+      <identity>59.6</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL</querySeq>
+      <pattern>MVT LY  MRAN L++ ELR K   EL  M+ RI  GE IPEP KQL</pattern>
+      <matchSeq start="157" end="203">MVTGLYSMMRANNLSEPELRVKCRSELRKMSQRIEAGEEIPEPCKQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="TR" id="A0A2M9WIN4_9GAMM" ac="A0A2M9WIN4" length="231" description="DNA replication protein OS=Pantoea rodasii OX=1076549 GN=PRCB_01340 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>126</score>
+      <bits>53.1</bits>
+      <expectation>2.1e-06</expectation>
+      <identity>59.6</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL</querySeq>
+      <pattern>MVT LY  MRAN L++ ELR K   EL  M+ RI  GE IPEP KQL</pattern>
+      <matchSeq start="157" end="203">MVTGLYSMMRANNLSEPELRVKCRSELRKMSQRIEAGEEIPEPCKQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="A0ABX1VYA3_9FIRM" ac="A0ABX1VYA3" length="183" description="Replication protein P (Fragment) OS=Lacrimispora defluvii OX=2719233 GN=G9470_27015 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>2.6e-06</expectation>
+      <identity>92.6</identity>
+      <positives>96.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="27">MVTNLYQNMRANALADAELRRKAADEL</querySeq>
+      <pattern>+VTNLYQNMRANAL DAELRRKAADEL</pattern>
+      <matchSeq start="156" end="182">LVTNLYQNMRANALTDAELRRKAADEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="A0ABW1VRD4_9GAMM" ac="A0ABW1VRD4" length="233" description="Replication protein P OS=Tatumella punctata OX=399969 GN=ACFP73_16065 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <bits>52.8</bits>
+      <expectation>3e-06</expectation>
+      <identity>42.6</identity>
+      <positives>58.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="68">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIK</querySeq>
+      <pattern>M+T LY  M+A  L ++ELR++   +L  MT RI  GE IPEP KQ+P +   P     A + IA I+</pattern>
+      <matchSeq start="158" end="224">MITTLYSQMQAGNLTESELRQRCGKQLKSMTDRITSGEEIPEPRKQIPQL-HIPSTTQTAKSHIANIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="A0A077KCC8_9CAUD" ac="A0A077KCC8" length="228" description="Putative DNA replication protein P OS=Edwardsiella phage GF-2 OX=1537091 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>4e-06</expectation>
+      <identity>40.8</identity>
+      <positives>62.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="71">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKF</querySeq>
+      <pattern>MVT L   MR+  L+++E+R +   E+  M  RI  GE IP PVKQ+P +   P++    L+KI+EI+ K+</pattern>
+      <matchSeq start="156" end="225">MVTKLRDQMRSLNLSESEVRSRCGVEIRKMADRIKAGEEIPAPVKQIPKL-CIPVSNEAGLSKISEIRNKY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="A0A3N4P6L1_9GAMM" ac="A0A3N4P6L1" length="230" description="DNA replication protein OS=Candidatus Pantoea deserta OX=1869313 GN=BBB56_06080 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>4e-06</expectation>
+      <identity>46.4</identity>
+      <positives>55.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="69">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKA</querySeq>
+      <pattern>MVT LY  MRAN L + ELR K   EL  M +RI  GE IP P  QL  +   P    +AL  +A +KA</pattern>
+      <matchSeq start="157" end="224">MVTGLYSTMRANNLTEPELRAKCRAELRKMASRIESGEEIPPPRAQLEKL-YMPTASEKALDNVARLKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0A0U3URC2_9GAMM" ac="A0A0U3URC2" length="231" description="DNA replication protein OS=Pantoea vagans OX=470934 GN=LK04_09905 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>4e-06</expectation>
+      <identity>59.6</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL</querySeq>
+      <pattern>MVT LY  MRAN L++ ELR K   EL  M+ RI  GE IPEP KQL</pattern>
+      <matchSeq start="157" end="203">MVTGLYSMMRANNLSEPELRVKCRSELRKMSQRIEAGEEIPEPRKQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="TR" id="K7ZZ08_9ENTR" ac="K7ZZ08" length="240" description="DNA replication protein OS=Cronobacter condimenti 1330 OX=1073999 GN=AFK62_13955 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>4.3e-06</expectation>
+      <identity>41.2</identity>
+      <positives>55.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="68">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIK</querySeq>
+      <pattern>+VT LY  MR N   + EL  +A  EL  M  RI  GETIP+PV  +     RP++R + L  IA ++</pattern>
+      <matchSeq start="162" end="229">LVTGLYSGMRLNGWTEKELAEQAKAELLNMARRIASGETIPDPVPMIEQPRPRPVSRERGLEIIARLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="TR" id="B6XBD3_PROIN" ac="B6XBD3" length="228" description="Replication protein P OS=Providencia alcalifaciens DSM 30120 OX=520999 GN=PROVALCAL_00631 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>5.5e-06</expectation>
+      <identity>39.2</identity>
+      <positives>58.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT +Y  MR   L+D+E+R+  + EL  M  RI  GE IPEPV Q+      P ++ ++L  +A I+ +  LK</pattern>
+      <matchSeq start="152" end="224">MVTKIYTEMRNRNLSDSEVRKLCSSELKTMANRIKSGEKIPEPV-QMIEQKHIPTSKEKSLHNLAAIRERLNLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="TR" id="A0A3G3BY81_9CAUD" ac="A0A3G3BY81" length="228" description="Origin specific replication binding factor OS=Edwardsiella phage Edno5 OX=2419942 GN=Edno5_0056 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>1.5e-05</expectation>
+      <identity>39.4</identity>
+      <positives>62.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="71">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKF</querySeq>
+      <pattern>MVT L   MR+  L+++E+R +   E+  +  RI  GE IP PVKQ+P +   P++    L+KI+EI+ K+</pattern>
+      <matchSeq start="156" end="225">MVTKLRDQMRSLNLSESEVRARCGVEIRKIADRIKAGEEIPAPVKQIPKL-CIPVSNETGLSKISEIRNKY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="TR" id="A0ABX0RII6_9GAMM" ac="A0ABX0RII6" length="231" description="DNA replication protein OS=Candidatus Pantoea communis OX=2608354 GN=F3J37_02075 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>1.5e-05</expectation>
+      <identity>55.3</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL</querySeq>
+      <pattern>MVT LY  MRAN L++ ELR K   EL  M+ RI  GE +P+P KQL</pattern>
+      <matchSeq start="157" end="203">MVTGLYSMMRANNLSEPELRVKCRSELRKMSQRIEAGEEVPQPRKQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="TR" id="A0AAJ5QP00_9GAMM" ac="A0AAJ5QP00" length="229" description="Replication protein P OS=Pantoea piersonii OX=2364647 GN=N5580_18695 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>2e-05</expectation>
+      <identity>44.9</identity>
+      <positives>55.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="69">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKA</querySeq>
+      <pattern>MVT LY  MR   L++ ELR K   EL  M ARI+ GE IP P  QL  +   P    +AL  +A +KA</pattern>
+      <matchSeq start="154" end="221">MVTGLYSMMRVQGLSEPELRAKCRAELRKMAARIDAGEEIPPPRAQLEKL-YMPTASEKALDNVARLKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="TR" id="A0A2D0IKQ5_9GAMM" ac="A0A2D0IKQ5" length="241" description="Phage replication protein P OS=Xenorhabdus ehlersii OX=290111 GN=BDE27_2430 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>40.5</identity>
+      <positives>55.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>MVT LY  M    L ++EL ++   EL  M+ R+  GE IPEP  QL  +   P +  +AL  +AEI+ K  LK</pattern>
+      <matchSeq start="158" end="230">MVTKLYSQMMGLNLNESELHKRCKQELISMSRRMESGEQIPEPRVQLTEL-HIPTSNERALDHLAEIRRKLNLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="TR" id="A0A095TEC0_9GAMM" ac="A0A095TEC0" length="233" description="DNA replication protein OS=Tatumella morbirosei OX=642227 GN=HA49_08465 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>2.9e-05</expectation>
+      <identity>41.2</identity>
+      <positives>57.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="68">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIK</querySeq>
+      <pattern>M+T LY  M+A  L ++ELR++   +L  M  RI  GE IPEP KQ+P +   P     A + IA I+</pattern>
+      <matchSeq start="158" end="224">MITALYSQMQAGNLTESELRQRCGKQLKSMADRITSGEDIPEPRKQIPQL-HIPSTTETAKSHIANIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="TR" id="A0AAJ5QMD8_9GAMM" ac="A0AAJ5QMD8" length="165" description="Replication protein P OS=Pantoea piersonii OX=2364647 GN=N5580_18710 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>4.3e-05</expectation>
+      <identity>39.2</identity>
+      <positives>55.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>+VT LY  MR   L++ ELR+  + EL  M  RI  GE IP P KQL  +   P++   AL  I  ++ + GL+</pattern>
+      <matchSeq start="75" end="147">LVTGLYSQMRVRNLSENELRQACSAELKKMLRRIRSGERIPAPRKQLAKL-YVPVSNQTALCHINSVRNQLGLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="TR" id="A0A1V9D780_9GAMM" ac="A0A1V9D780" length="236" description="DNA replication protein OS=Pantoea latae OX=1964541 GN=B2J69_23380 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>0.0002</expectation>
+      <identity>41.6</identity>
+      <positives>54.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="77">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGAS</querySeq>
+      <pattern>MVT LY  M A  L+++ELR +   EL  M ARI  GE IP P  QL  +   P +  +AL  +A +KA    K +S</pattern>
+      <matchSeq start="157" end="232">MVTGLYSMMLAQGLSESELRIQCRGELRKMAARIRSGEQIPAPRVQLEKL-YVPTSNKKALNHVAYLKALIKSKRSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="130" database="TR" id="A0A068R287_9GAMM" ac="A0A068R287" length="246" description="Replication protein P OS=Xenorhabdus poinarii G6 OX=1354304 GN=P PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0027</expectation>
+      <identity>44.7</identity>
+      <positives>63.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL</querySeq>
+      <pattern>MVT ++ +M    L D+E+R+  + EL  MT RI  GE IPEP+ Q+</pattern>
+      <matchSeq start="154" end="200">MVTKIHSDMIRQNLTDSEVRKLCSRELMAMTKRIQGGEKIPEPIVQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="131" database="TR" id="A0A2D0KZI9_9GAMM" ac="A0A2D0KZI9" length="247" description="DNA replication protein OS=Xenorhabdus kozodoii OX=351676 GN=Xkoz_03609 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0051</expectation>
+      <identity>46.8</identity>
+      <positives>59.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL</querySeq>
+      <pattern>MVT +Y +M    L D+E+R+    EL  MT RI  GE IP PV Q+</pattern>
+      <matchSeq start="151" end="197">MVTKIYSDMIRQNLTDSEVRKLCVRELRAMTKRIQAGEKIPVPVIQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="132" database="TR" id="A0A2G0Q259_XENHO" ac="A0A2G0Q259" length="247" description="DNA replication protein OS=Xenorhabdus hominickii OX=351679 GN=A9255_06185 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0051</expectation>
+      <identity>46.8</identity>
+      <positives>59.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL</querySeq>
+      <pattern>MVT +Y +M    L D+E+R+    EL  MT RI  GE IP PV Q+</pattern>
+      <matchSeq start="151" end="197">MVTKIYSDMIRQNLTDSEVRKLCVRELRAMTKRIQAGEKIPVPVIQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="133" database="TR" id="A0ABX3BRE0_9PAST" ac="A0ABX3BRE0" length="211" description="Holin OS=Haemophilus quentini OX=123834 GN=BFQ30_10165 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.0062</expectation>
+      <identity>34.8</identity>
+      <positives>53.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="68">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMG-GRPLNRAQALAKIAEIK</querySeq>
+      <pattern>++T+LY   R    +  +LR++    L  M  R+  GE +PEP KQLP      P+++A+    IA IK</pattern>
+      <matchSeq start="137" end="205">LITDLYCRCRRYTWSVEQLRKEIKQALRNMADRLKNGEVLPEPTKQLPSQATSMPVSKARQAEIIASIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="134" database="TR" id="Q2NTS1_SODGM" ac="Q2NTS1" length="215" description="Phage replication protein OS=Sodalis glossinidius (strain morsitans) OX=343509 GN=SG1179 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.01</expectation>
+      <identity>42.6</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL</querySeq>
+      <pattern>+VT+L+  MR   L D E+R+K+   L+ M  R+ RG+ IP PVK++</pattern>
+      <matchSeq start="141" end="187">LVTDLFDAMRRYRLTDEEVRKKSEPLLSKMENRLGRGDVIPAPVKRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="135" database="TR" id="A0A4V2PUE0_9PAST" ac="A0A4V2PUE0" length="214" description="Phage replication protein P OS=Lonepinella koalarum OX=53417 GN=EV692_1347 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.02</expectation>
+      <identity>33.3</identity>
+      <positives>48.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>++T LY   RAN   D +LR +   EL     R++ G  +P+P   LP     P ++ Q    IA ++A F  KG  V</pattern>
+      <matchSeq start="138" end="213">LITGLYCKERANQWTDKDLRSEIQQELNRTAKRLDAGWKVPKPQPALPEKVIIPASKEQVSQHIANMRAMF--KGVRV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="136" database="TR" id="A0A2V4DN10_9GAMM" ac="A0A2V4DN10" length="227" description="Replication protein P OS=Gilliamella apis OX=1970738 GN=DKK78_03420 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.03</expectation>
+      <identity>32.5</identity>
+      <positives>54.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPV-MGGRPLNRAQALAKIAEIKAKFGLKGA</querySeq>
+      <pattern>++ +L++ M+   L   +L+ +A   +  M  +I +G  IP P K LP  +  RPL+    L+K+ EIK +FG   A</pattern>
+      <matchSeq start="147" end="223">LINDLHRIMQDENLGIEKLQLRAEKMIAEMAKKIMKGYVIPTPNKALPKKIEERPLSNEMQLSKLEEIKRRFGFSYA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="137" database="TR" id="A0ABW1VRU6_9GAMM" ac="A0ABW1VRU6" length="229" description="Replication protein P OS=Tatumella punctata OX=399969 GN=ACFP73_15975 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.03</expectation>
+      <identity>33.8</identity>
+      <positives>55.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="68">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIK</querySeq>
+      <pattern>++T +Y  M +  L +AE +++  DE   ++ RI  GE +PEP KQ+P +   P     A + IA I+</pattern>
+      <matchSeq start="154" end="220">IITAVYGQMHSFNLTEAECQKRLTDEARKISRRIKAGEVLPEPRKQIPQL-HIPSTTQTAKSHIANIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="138" database="TR" id="A0ABY9XM70_9GAMM" ac="A0ABY9XM70" length="244" description="Replication protein P OS=Xenorhabdus griffiniae OX=351672 GN=QL112_008480 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.03</expectation>
+      <identity>36.8</identity>
+      <positives>52.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="68">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIK</querySeq>
+      <pattern>MVT ++  M    L D+E+++    EL  M  RI  GE IPEPV Q+      P +  ++L KI  +K</pattern>
+      <matchSeq start="153" end="219">MVTRVHSEMLRQNLTDSEVKKLCGRELGAMVKRIQAGEKIPEPVIQIEEK-YTPTDSYESLRKIYYLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="139" database="TR" id="A0A1N6N208_9GAMM" ac="A0A1N6N208" length="246" description="DNA replication protein OS=Xenorhabdus innexi OX=290109 GN=Xinn_01123 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.03</expectation>
+      <identity>40.4</identity>
+      <positives>57.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL</querySeq>
+      <pattern>MVT ++  M    L D+E+++    EL  M  RI  GE IPEP+ Q+</pattern>
+      <matchSeq start="154" end="200">MVTKIHAEMMRQNLTDSEVKKLCGRELKVMAKRIQAGEKIPEPITQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="140" database="TR" id="E6KYD4_9PAST" ac="E6KYD4" length="224" description="Putative phage replication protein OS=Aggregatibacter segnis ATCC 33393 OX=888057 GN=HMPREF9064_1166 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.04</expectation>
+      <identity>31.1</identity>
+      <positives>48.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>++T+L    R +     E +++    L  +  RI  GETIP   KQLP     P +  +A   IA++K   G+K</pattern>
+      <matchSeq start="150" end="223">LLTDLCSRGRRDQWTPTEFKKECEQALKAIAKRIESGETIPARRKQLPTQTTVPTSPEKAAENIAKLKQIIGMK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="141" database="TR" id="A0A9E5MG62_9GAMM" ac="A0A9E5MG62" length="233" description="Replicative helicase inhibitor G39P N-terminal domain-containing protein OS=Pseudomaricurvus hydrocarbonicus OX=1470433 GN=G8770_01735 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.06</expectation>
+      <identity>40.0</identity>
+      <positives>62.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="73">DELTCMTARINRGETIPEP-VKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>D    M  R+ RGET+P P +K+LP     PL++ + LA++A ++ K GL</pattern>
+      <matchSeq start="184" end="233">DHYLSMCERVVRGETLPPPEIKRLPEKSETPLSKDENLARLAALREKMGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="142" database="TR" id="A0A1C4DBC4_9GAMM" ac="A0A1C4DBC4" length="229" description="Phage replication protein P OS=Gilliamella intestini OX=1798183 GN=GA0061080_10668 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.08</expectation>
+      <identity>37.5</identity>
+      <positives>54.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="71">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQL-PVMGGRPLNRAQALAKIAEIKAKF</querySeq>
+      <pattern>+VT+L    R   L+  +L  +A   L  MT +I  G  IP+PVK++     G  L R ++L +I EIK KF</pattern>
+      <matchSeq start="148" end="219">LVTDLMYESRYRNLSKKDLLEQARIALFDMTKKILDGHKIPKPVKRIGSASVGVTLTREESLNRIQEIKRKF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="143" database="TR" id="A0A379C9P1_9PAST" ac="A0A379C9P1" length="222" description="Replication protein P OS=Phocoenobacter uteri OX=146806 GN=NCTC12872_00952 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.22</expectation>
+      <identity>31.1</identity>
+      <positives>52.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>++T+LY   ++    + +L+++    L  M  ++ RGE IPEP   LP     P+ R ++L  I  I+   GLK</pattern>
+      <matchSeq start="150" end="221">LITDLYCKNKSKGWTELQLKKEIKLALKKMAEKMERGEAIPEPQTTLPKKEKPPMPRERSLEWIRSIRK--GLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="144" database="TR" id="A0A4P7KWS7_9GAMM" ac="A0A4P7KWS7" length="234" description="Replication protein P OS=Arsenophonus nasoniae OX=638 GN=QE258_15330 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.3</expectation>
+      <identity>34.2</identity>
+      <positives>54.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMG-GRPLNRAQALAKIAEIKAKFG</querySeq>
+      <pattern>+V  LY+ M A +L   ++  +A   +  +T ++  G  IP+P   LP      P +++ AL KI+ IKAKFG</pattern>
+      <matchSeq start="149" end="221">LVHELYRAMIAESLNARQVEDRARLLIDGLTKKLRTGYVIPKPQLSLPQKTCMNPTSQSVALEKISAIKAKFG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="145" database="TR" id="A0ABZ0MYR5_9GAMM" ac="A0ABZ0MYR5" length="157" description="Replication protein P OS=Providencia zhijiangensis OX=3053982 GN=QS795_009370 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.43</expectation>
+      <identity>41.9</identity>
+      <positives>58.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEP</querySeq>
+      <pattern>M T+L   M  + L D E  R+ A  LT  T R+++GET+P P</pattern>
+      <matchSeq start="89" end="131">MFTDLRAQMLEHRLTDVECERRLAKMLTKWTERVHKGETVPRP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="146" database="TR" id="A0ABX4FM07_9PAST" ac="A0ABX4FM07" length="219" description="Replication protein P OS=Actinobacillus seminis OX=722 GN=CFY87_05950 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.77</expectation>
+      <identity>36.5</identity>
+      <positives>57.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="52">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGG</querySeq>
+      <pattern>++T LY+ MR + +   E+++   ++L  M  R+ RGE IPEP   LP   G</pattern>
+      <matchSeq start="145" end="194">LLTELYREMRMHTVF--EVKKAIKEKLFAMVQRLERGEAIPEPKITLPKKAG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="147" database="TR" id="A0ABW6CFJ3_RAHSY" ac="A0ABW6CFJ3" length="226" description="Replication protein P OS=Rahnella sp. (strain Y9602) OX=2703885 GN=ACFPK4_25275 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>1.1</expectation>
+      <identity>31.4</identity>
+      <positives>50.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAK</querySeq>
+      <pattern>+VT++ + M  N   + E+R+    +L     R+ +GE IP PV QL     +PL +  A    AE + K</pattern>
+      <matchSeq start="152" end="220">IVTDVRRIMLQNNYTEGEVRKSVQHQLNTWAKRLAKGEKIPAPVTQL-AAPSKPLGQTPAQLMYAEYQRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="148" database="TR" id="A0A4R2NAF5_9PAST" ac="A0A4R2NAF5" length="219" description="Phage replication protein P OS=Nicoletella semolina OX=271160 GN=EV693_10346 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>1.4</expectation>
+      <identity>41.1</identity>
+      <positives>48.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="55">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMG-GRPL</querySeq>
+      <pattern>++T+LYQ  R     D  LR +A   L  M  RI  GE IP P   LP     RPL</pattern>
+      <matchSeq start="137" end="192">LLTDLYQRNRQRGWKDDTLRNEAEKALKAMAKRIQVGEQIPAPNLTLPKKSESRPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="149" database="TR" id="B8F4F9_GLAP5" ac="B8F4F9" length="223" description="Possible bacteriophage replication protein P OS=Glaesserella parasuis serovar 5 (strain SH0165) OX=557723 GN=HAPS_0557 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>2.0</expectation>
+      <identity>35.4</identity>
+      <positives>54.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="48">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLP</querySeq>
+      <pattern>++T LY   RA   +D +L+ +    L  M+ R+  GE +PEP   LP</pattern>
+      <matchSeq start="151" end="198">LITGLYVRNRAGEWSDKQLKDEIKKSLVKMSKRLKTGEVLPEPKLALP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="150" database="TR" id="A0ABU3G5J6_9GAMM" ac="A0ABU3G5J6" length="227" description="Replication protein P OS=Shewanella scandinavica OX=3063538 GN=Q4Q50_21750 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>2.0</expectation>
+      <identity>45.1</identity>
+      <positives>58.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="77">TCMTARINRGE-TIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGAS</querySeq>
+      <pattern>T +  R +RGE T  E  K LP    RP   A+A + IA ++A FGLKGA+</pattern>
+      <matchSeq start="174" end="224">TVLCRRFSRGELTDIELPKALPETVTRPTEAAKAKSIIANLRANFGLKGAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="151" database="TR" id="A0A379B4Z4_9PAST" ac="A0A379B4Z4" length="213" description="Replication protein P OS=[Pasteurella] mairii OX=757 GN=NCTC10699_00953 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>2.7</expectation>
+      <identity>37.5</identity>
+      <positives>60.4</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="48">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLP</querySeq>
+      <pattern>++T LY+  R + +   E+++   ++L  M  R+ RGETIPEP   LP</pattern>
+      <matchSeq start="139" end="184">LLTELYRETRMHTVF--EVKKAIKEKLFAMVQRLERGETIPEPKITLP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="152" database="TR" id="A0A8J3GI86_9HYPH" ac="A0A8J3GI86" length="449" description="Phosphoglucosamine mutase OS=Limoniibacter endophyticus OX=1565040 GN=glmM PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>3.0</expectation>
+      <identity>39.0</identity>
+      <positives>58.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="38" end="78">ETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGASV</querySeq>
+      <pattern>E +P+ +K +   GG+PL  A  +A I + KA+ G KG  V</pattern>
+      <matchSeq start="369" end="409">EPVPQVLKNIRFSGGKPLENANVIAAIEDAKAQLGKKGRVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="153" database="TR" id="A0ACF7V0C4_9CHLO" ac="A0ACF7V0C4" length="795" description="FHA domain-containing protein OS=Micractinium tetrahymenae OX=2728915 GN=ABPG75_011540 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>3.1</expectation>
+      <identity>38.3</identity>
+      <positives>48.3</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="65">NMRANALADAELRR--KAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIA</querySeq>
+      <pattern>N  A   A+AE RR  KAADEL     +  +   +P+P K  P  GGR   R +   K A</pattern>
+      <matchSeq start="704" end="763">NAEAFMKAEAERRRRLKAADELFAANVKARKAPQLPDPDKDTPPKGGRGGGRGRGGKKAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="154" database="TR" id="A0A328C020_9PAST" ac="A0A328C020" length="224" description="Holin OS=Glaesserella australis OX=2094024 GN=C5N92_04745 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.8</expectation>
+      <identity>33.3</identity>
+      <positives>54.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="48">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLP</querySeq>
+      <pattern>++T+LY   R    +D +L+ +    L  M+ R+  GE +PEP   LP</pattern>
+      <matchSeq start="151" end="198">LITDLYVRCRTGEWSDKQLKDEIQKSLVKMSKRLKTGEVLPEPKLALP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="155" database="TR" id="A0A1B2IAH1_9CAUD" ac="A0A1B2IAH1" length="242" description="Uncharacterized protein OS=Erwinia phage vB_EamM_Asesino OX=1883370 GN=ASESINO_266 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.8</expectation>
+      <identity>30.0</identity>
+      <positives>53.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="76">AELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGA</querySeq>
+      <pattern>A  +RK  D  T     + +   +  PV+ +P+  G  LN+   LAK+A+++ K G++ A</pattern>
+      <matchSeq start="167" end="225">AHTQRKVGDPRTYFRDTLKKDSDLSNPVQFIPLRSGS-LNKTSRLAKLADVELKQGIRSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="156" database="TR" id="A0ABN9YTN1_9LACO" ac="A0ABN9YTN1" length="311" description="Ribokinase OS=Fructobacillus cardui OX=2893170 GN=rbsK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>4.0</expectation>
+      <identity>37.9</identity>
+      <positives>55.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="75">DELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAK-------IAEIKAKFGLKG</querySeq>
+      <pattern>D++T +    N GET+  P  Q  VMGG+ LN+A A+A+       I ++ A F L G</pattern>
+      <matchSeq start="14" end="71">DKVTRVPRLANSGETLSTPQHQEEVMGGKGLNQAVAVARAGGQANFITKVGAGFDLAG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="157" database="TR" id="A0ABY5BY50_9LACO" ac="A0ABY5BY50" length="311" description="Ribokinase OS=Fructobacillus americanaquae OX=2940302 GN=rbsK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>4.0</expectation>
+      <identity>37.9</identity>
+      <positives>55.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="75">DELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAK-------IAEIKAKFGLKG</querySeq>
+      <pattern>D++T +    N GET+  P  Q  VMGG+ LN+A A+A+       I ++ A F L G</pattern>
+      <matchSeq start="14" end="71">DKVTRVPRLANSGETLATPQHQEEVMGGKGLNQAVAVARAGGQANFITKVGAGFDLAG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="158" database="TR" id="A0ABN9YY25_9LACO" ac="A0ABN9YY25" length="311" description="Ribokinase OS=Fructobacillus evanidus OX=3064281 GN=rbsK PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>4.0</expectation>
+      <identity>37.9</identity>
+      <positives>55.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="75">DELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAK-------IAEIKAKFGLKG</querySeq>
+      <pattern>D++T +    N GET+  P  Q  VMGG+ LN+A A+A+       I ++ A F L G</pattern>
+      <matchSeq start="14" end="71">DKVTRVPRLANSGETLSTPQHQEEVMGGKGLNQAVAVARAGGQANFITKVGAGFDLAG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="159" database="TR" id="A0ABM7WXM0_9BACT" ac="A0ABM7WXM0" length="485" description="Response regulatory domain-containing protein OS=Anaeromyxobacter oryzae OX=2918170 GN=AMOR_32160 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>4.1</expectation>
+      <identity>36.5</identity>
+      <positives>50.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="67">YQNMRANALADAELRRKAADELTCMTARINRGETI-PEPVKQLPVMGGRPLNRAQALAKIAEI</querySeq>
+      <pattern>Y   RA    + +    AA EL  + ARI RG +  P+ V ++ V GG PL R  ALA+   +</pattern>
+      <matchSeq start="302" end="364">YARRRAGLAPEPQGELLAAHELHALRARIARGRSSGPQTVGKIVVAGGGPLARRAALARFLTV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="160" database="TR" id="A0ABU3G5X5_9GAMM" ac="A0ABU3G5X5" length="227" description="Replication protein P OS=Shewanella scandinavica OX=3063538 GN=Q4Q50_22265 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>5.2</expectation>
+      <identity>47.8</identity>
+      <positives>60.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="77">RINRGE-TIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKGAS</querySeq>
+      <pattern>R +RGE T  E  K LP    RP   A+A + IA ++A FGLKGA+</pattern>
+      <matchSeq start="179" end="224">RFSRGELTDVELPKALPETVTRPTEAAKAKSIIANLRANFGLKGAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="161" database="TR" id="A0ABZ1KKC4_STRAH" ac="A0ABZ1KKC4" length="454" description="Cytochrome P450 OS=Streptomyces achromogenes OX=67255 GN=OG350_02615 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>5.6</expectation>
+      <identity>30.6</identity>
+      <positives>52.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MVTNLYQNMRAN-ALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRP-LNRAQALAKIAEIKAK</querySeq>
+      <pattern>+V  L+   R + A+  AEL  + A+ LT +   +  G  +P P+   PV+G R  L+ A AL ++A+   +</pattern>
+      <matchSeq start="154" end="225">LVATLFSTERPDGAVGVAELGERVAEHLTTVMRGVFVGTVLPAPIASSPVLGHRTYLSAAAALRELADTSVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="162" database="TR" id="A0ABY9EBJ9_9GAMM" ac="A0ABY9EBJ9" length="221" description="Replication protein P OS=Microbulbifer spongiae OX=2944933 GN=M8T91_02675 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>7.0</expectation>
+      <identity>40.4</identity>
+      <positives>59.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="73">ADELTCMTARINRGE--TIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGL</querySeq>
+      <pattern>AD    + AR+  GE  T PEP+K L    G+PL++ Q   K+AE++ + GL</pattern>
+      <matchSeq start="171" end="221">ADHYRKLCARVLEGEKLTTPEPLK-LEQNPGKPLSKRQNARKLAELRRELGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="163" database="TR" id="A0A3N4VSQ3_9PAST" ac="A0A3N4VSQ3" length="224" description="Phage replication protein P OS=Vespertiliibacter pulmonis OX=1443036 GN=EDC46_0449 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>7.1</expectation>
+      <identity>25.7</identity>
+      <positives>44.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLK</querySeq>
+      <pattern>++T LY   +     + +LR   + EL  M  R+  GE IP P   LP      L+R +   +  ++++    K</pattern>
+      <matchSeq start="150" end="223">LITGLYCRNKTGEWTEKQLRESISKELVKMAKRLKSGEVIPAPKITLPRQEKPRLSREEICQRWQQLRSSLEAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="164" database="TR" id="A0A432VAV6_9HYPH" ac="A0A432VAV6" length="480" description="Relaxase OS=Borborobacter arsenicus OX=1851146 GN=EET67_03885 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>7.7</expectation>
+      <identity>32.5</identity>
+      <positives>46.8</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="75">VTNLYQNMRANALADAELRRKAADELTCMTAR---INRGETIPEPVKQLPVMGGRPLNRAQALAKIAEIKAKFGLKG</querySeq>
+      <pattern>++N Y N R   +   +LR   AD+L    A    I R     +P+  L +    PL+R Q +A I  I+ K GL G</pattern>
+      <matchSeq start="18" end="91">LSNEYDNTRVEIV---QLRGVVADDLHGALAEFTGIARATRCKQPLYSLAINPAEPLSREQYMAAIDHIEGKLGLSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="165" database="TR" id="A0A8D0FWT9_STROC" ac="A0A8D0FWT9" length="750" description="protein kinase C OS=Strix occidentalis caurina OX=311401 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>7.9</expectation>
+      <identity>41.5</identity>
+      <positives>61.0</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="55">ADAELRRKAADELTCMTARINRGETIPEPVKQLPVMGGRPL</querySeq>
+      <pattern>A AE    A++E+ C+     +GETI EP K++P   GRP+</pattern>
+      <matchSeq start="161" end="196">AQAEYTSSASEEVCCV-----KGETISEPSKRIPSWSGRPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="166" database="TR" id="B6XEW9_PROIN" ac="B6XEW9" length="157" description="Replication protein P OS=Providencia alcalifaciens DSM 30120 OX=520999 GN=PROVALCAL_01900 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.1</expectation>
+      <identity>39.5</identity>
+      <positives>55.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEP</querySeq>
+      <pattern>M T+L   M  + L D E  R+ A  L   T R+++GE IP+P</pattern>
+      <matchSeq start="89" end="131">MFTDLRAQMLEHRLTDIECERRLAKMLAKWTERVHKGEVIPKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="167" database="TR" id="A0ABX4ZRT4_9PAST" ac="A0ABX4ZRT4" length="225" description="Replication protein P OS=Avibacterium endocarditidis OX=380674 GN=C3Z13_06825 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>9.7</expectation>
+      <identity>37.5</identity>
+      <positives>58.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="48">MVTNLYQNMRANALADAELRRKAADELTCMTARINRGETIPEPVKQLP</querySeq>
+      <pattern>++T+LY N R     + +LR+  +  L  M AR+  GET+P+P   LP</pattern>
+      <matchSeq start="151" end="196">LLTDLYCNNRE--ATEEKLRKAVSKALKAMAARLEAGETLPKPQITLP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

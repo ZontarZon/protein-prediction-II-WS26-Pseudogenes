@@ -1,0 +1,467 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-190408-0270-61171014-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-190408-0270-61171014-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q86SH4|PRNT_HUMAN" type="PROTEIN" length="94"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T19:04:08+00:00" end="2026-11-13T19:10:58+00:00" search="P0Y0M0DT0H0M410.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="26">
+   <hit number="1" database="SP" id="PRNT_HUMAN" ac="Q86SH4" length="94" description="Putative testis-specific prion protein OS=Homo sapiens OX=9606 GN=PRNT PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>506</score>
+      <bits>199.5</bits>
+      <expectation>7.2e-65</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKKIYC</querySeq>
+      <pattern>MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKKIYC</pattern>
+      <matchSeq start="1" end="94">MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKKIYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A8I3B412_PONAB" ac="A0A8I3B412" length="94" description="PRNT isoform 1 OS=Pongo abelii OX=9601 GN=prnt PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>480</score>
+      <bits>189.5</bits>
+      <expectation>6.7e-61</expectation>
+      <identity>95.7</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKKIYC</querySeq>
+      <pattern>M HSLVFFFAVILHLSHLLHLDASIHPFRL FSSKPFLLIPMSNTTL HTAWPLSFLHQT+STLKAVAVTHSLWHLQIPVDCQACNRKSKKIYC</pattern>
+      <matchSeq start="1" end="94">MHHSLVFFFAVILHLSHLLHLDASIHPFRLAFSSKPFLLIPMSNTTLLHTAWPLSFLHQTMSTLKAVAVTHSLWHLQIPVDCQACNRKSKKIYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A2BDH7_PANTR" ac="A2BDH7" length="95" description="PRNT isoform 2 OS=Pan troglodytes OX=9598 GN=prnt PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>479</score>
+      <bits>189.1</bits>
+      <expectation>9.8e-61</expectation>
+      <identity>97.8</identity>
+      <positives>98.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="91">MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKK</querySeq>
+      <pattern>MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRK K+</pattern>
+      <matchSeq start="1" end="91">MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKQKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A2I3GDF5_NOMLE" ac="A0A2I3GDF5" length="94" description="Uncharacterized protein OS=Nomascus leucogenys OX=61853 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>478</score>
+      <bits>188.7</bits>
+      <expectation>1.4e-60</expectation>
+      <identity>95.7</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKKIYC</querySeq>
+      <pattern>M HSLVFFFAVILHLSHLLHLDASIHPFRL FSSKPFLLIPMSNTTL HTAWPLSFLHQTVSTLKAVAVTHSLWHLQ PVDCQACNRKSKKIYC</pattern>
+      <matchSeq start="1" end="94">MHHSLVFFFAVILHLSHLLHLDASIHPFRLAFSSKPFLLIPMSNTTLIHTAWPLSFLHQTVSTLKAVAVTHSLWHLQTPVDCQACNRKSKKIYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A2BDH9_MACMU" ac="A2BDH9" length="94" description="Prion protein, testis-specific protein Prt OS=Macaca mulatta OX=9544 GN=prnt PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>422</score>
+      <bits>167.2</bits>
+      <expectation>4.7e-52</expectation>
+      <identity>87.2</identity>
+      <positives>88.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKKIYC</querySeq>
+      <pattern>M HSLVFFFAVILHLSHLLHLDA IHPFRL FSSK FLLIPM NT L H+AW LS LHQTVSTLKAVAVTHSLW L IPVDCQACNRKSKKIYC</pattern>
+      <matchSeq start="1" end="94">MHHSLVFFFAVILHLSHLLHLDAPIHPFRLAFSSKSFLLIPMFNTALFHSAWSLSLLHQTVSTLKAVAVTHSLWLLWIPVDCQACNRKSKKIYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0ACF8P376_NASLA" ac="A0ACF8P376" length="93" description="Uncharacterized protein OS=Nasalis larvatus OX=43780 GN=H8958_006803 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>411</score>
+      <bits>162.9</bits>
+      <expectation>2.2e-50</expectation>
+      <identity>86.2</identity>
+      <positives>89.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKKIYC</querySeq>
+      <pattern>M HSLV FFAVIL+LSHL HLDA IHPFRL FSSK FLLIPM NTTL H+AW LSFLHQTVSTLKAVAVTHSLWHL IPVDC+ACNRKSKKIYC</pattern>
+      <matchSeq start="1" end="93">MHHSLVSFFAVILYLSHL-HLDAPIHPFRLAFSSKSFLLIPMFNTTLFHSAWSLSFLHQTVSTLKAVAVTHSLWHLWIPVDCEACNRKSKKIYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A340XXU9_LIPVE" ac="A0A340XXU9" length="138" description="LOW QUALITY PROTEIN: putative testis-specific prion protein OS=Lipotes vexillifer OX=118797 GN=LOC103078868 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>5.7e-14</expectation>
+      <identity>48.3</identity>
+      <positives>57.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="93">LVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKKIY</querySeq>
+      <pattern>LV  FA+IL LS+LLHL   IH FRL  S K FLL+P      P          QT  T KA  V HSLW+ Q P D QAC+R+S ++Y</pattern>
+      <matchSeq start="50" end="137">LVLVFAIILPLSYLLHLATLIHLFRLALSXKHFLLVPSVAYHFPTLLSHYPLPRQT-ETWKAAVVIHSLWYPQSPRDGQACDRESIEVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A8C5V9C9_MICMU" ac="A0A8C5V9C9" length="79" description="Secreted protein OS=Microcebus murinus OX=30608 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>3e-13</expectation>
+      <identity>48.9</identity>
+      <positives>51.1</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKKIYC</querySeq>
+      <pattern>M   LVF FA+IL  SHLLH  A IH FRL     PFLLIPM  T  P              TL+ VAVTHS       V CQ CNRKS  I C</pattern>
+      <matchSeq start="1" end="79">MHRGLVFTFAMILLPSHLLHPPAPIHSFRLALIGNPFLLIPMFGTCSP--------------TLR-VAVTHSCGICGAWVGCQVCNRKSTCICC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A5N3VIK9_MUNMU" ac="A0A5N3VIK9" length="39" description="Prion-related protein testis-specific (Fragment) OS=Muntiacus muntjak OX=9888 GN=FD754_013740 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.00084</expectation>
+      <identity>55.3</identity>
+      <positives>63.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="57" end="94">LHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKKIYC</querySeq>
+      <pattern>L Q   T KA     SLW+LQ P D QAC+R+S KIYC</pattern>
+      <matchSeq start="2" end="39">LPQLTETWKAAVAILSLWYLQSPGDGQACDRESVKIYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A5J5MWP5_MUNRE" ac="A0A5J5MWP5" length="39" description="Prion-related protein testis-specific (Fragment) OS=Muntiacus reevesi OX=9886 GN=FD755_006938 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.00084</expectation>
+      <identity>55.3</identity>
+      <positives>63.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="57" end="94">LHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKKIYC</querySeq>
+      <pattern>L Q   T KA     SLW+LQ P D QAC+R+S KIYC</pattern>
+      <matchSeq start="2" end="39">LPQLTETWKAAVAILSLWYLQSPGDGQACDRESVKIYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0ACF8G024_9ROSI" ac="A0ACF8G024" length="415" description="Casein kinase II subunit alpha OS=Castanea dentata OX=134033 GN=ACB092_02G180600 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.5</expectation>
+      <identity>44.0</identity>
+      <positives>58.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="50">MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHT</querySeq>
+      <pattern>+QH      AV+L LS LL L  ++  FR+P +  P L  P S+ TLPHT</pattern>
+      <matchSeq start="5" end="54">LQHPNTNNPAVLLLLSRLLLLLCALLAFRVPVAHPPILRTPHSHHTLPHT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A9P6DYP5_9AGAM" ac="A0A9P6DYP5" length="756" description="Zn(2)-C6 fungal-type domain-containing protein OS=Hydnum rufescens UP504 OX=1448309 GN=BS47DRAFT_1316385 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>2.1</expectation>
+      <identity>32.8</identity>
+      <positives>52.2</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="67">MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAV</querySeq>
+      <pattern>++H +  FF+ + H SHL+H  + +     P SS  F      +T+L H    L+ LH TV  +KA+</pattern>
+      <matchSeq start="244" end="305">LRHLVDVFFSCVPHASHLVHRPSFLASLLEPPSSTNF-----PSTSLLHAMCALASLHTTVPVIKAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0AAE1U2Y6_9STOM" ac="A0AAE1U2Y6" length="244" description="Uncharacterized protein OS=Petrolisthes manimaculis OX=1843537 GN=Pmani_021611 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.5</expectation>
+      <identity>40.3</identity>
+      <positives>53.2</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="80">LSHLLHLDASIHPFRLPFSSKPFLLIPMSN----TTLPHTAWPLSFLHQTVSTLK---AVAVTHSLW----HLQIPV</querySeq>
+      <pattern>LSHL  L +S H F +P  S P+LL P S+     +LPH   PL F H  + +L     ++ THSL     HL IP+</pattern>
+      <matchSeq start="76" end="149">LSHLHPLTSSSHHFLIP--SPPYLLTPTSHYPLIYSLPHPITPL-FNHSLIPSLSHFLILSFTHSLIPSLPHLLIPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0ABM4ELA5_9AVES" ac="A0ABM4ELA5" length="329" description="Uncharacterized protein OS=Apteryx mantelli OX=2696672 GN=LOC106494841 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.6</expectation>
+      <identity>43.2</identity>
+      <positives>59.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="47">SLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTL</querySeq>
+      <pattern>SL+ F +++L L   +HL +   PF LPF S P LL P S + L</pattern>
+      <matchSeq start="138" end="181">SLLLFLSLLLSLPASVHLPSLFLPFSLPFLSLPLLLSPFSPSLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A0F8B5S2_CERFI" ac="A0A0F8B5S2" length="774" description="DNA replication checkpoint protein tel2 OS=Ceratocystis fimbriata f. sp. platani OX=88771 GN=tel2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.9</expectation>
+      <identity>37.1</identity>
+      <positives>45.7</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="74">FFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNT--TLPHTAWPLSFLHQTVSTLKAVAVTHSLW</querySeq>
+      <pattern>FFF +  HL H +H+ AS+      FS  PFLL   + T   L H A P        STL    +T  LW</pattern>
+      <matchSeq start="618" end="673">FFFPLTAHLQHAIHIRASV------FSQHPFLLATAAKTLAILLHAAGP--------STLALPQMTTELW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A2C5WZ33_9PEZI" ac="A0A2C5WZ33" length="998" description="DNA replication checkpoint protein tel2 OS=Ceratocystis fimbriata CBS 114723 OX=1035309 GN=tel2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.9</expectation>
+      <identity>37.1</identity>
+      <positives>45.7</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="74">FFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNT--TLPHTAWPLSFLHQTVSTLKAVAVTHSLW</querySeq>
+      <pattern>FFF +  HL H +H+ AS+      FS  PFLL   + T   L H A P        STL    +T  LW</pattern>
+      <matchSeq start="842" end="897">FFFPLTAHLQHAIHIRASV------FSQHPFLLATAAKTLAILLHAAGP--------STLALPQMTTELW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0ABR3Z2M3_9PEZI" ac="A0ABR3Z2M3" length="998" description="Telomere binding protein OS=Ceratocystis pirilliformis OX=259994 GN=TEL2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.9</expectation>
+      <identity>37.1</identity>
+      <positives>45.7</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="74">FFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNT--TLPHTAWPLSFLHQTVSTLKAVAVTHSLW</querySeq>
+      <pattern>FFF +  HL H +H+ AS+      FS  PFLL   + T   L H A P        STL    +T  LW</pattern>
+      <matchSeq start="842" end="897">FFFPLTAHLQHAIHIRASV------FSQHPFLLATAAKTLAILLHAAGP--------STLALPQMTAELW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0ABR4MB05_9PEZI" ac="A0ABR4MB05" length="998" description="Telomere length regulation protein OS=Ceratocystis lukuohia OX=2019550 GN=HOO65_080400 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.9</expectation>
+      <identity>37.1</identity>
+      <positives>45.7</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="74">FFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNT--TLPHTAWPLSFLHQTVSTLKAVAVTHSLW</querySeq>
+      <pattern>FFF +  HL H +H+ AS+      FS  PFLL   + T   L H A P        STL    +T  LW</pattern>
+      <matchSeq start="842" end="897">FFFPLTAHLQHAIHIRASV------FSQHPFLLATAAKTLAILLHAAGP--------STLALPQMTTELW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A151T602_CAJCA" ac="A0A151T602" length="335" description="HMA domain-containing protein OS=Cajanus cajan OX=3821 GN=KK1_016993 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>3.6</expectation>
+      <identity>25.9</identity>
+      <positives>43.2</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="92">HLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPH-----TAWPLSFLHQTVSTLKAVAVTHSLWHLQIPVDCQACNRKSKKI</querySeq>
+      <pattern>H  H    ++P   P S       P SN+ +P      T+  LS +      L +  + +  W L++ + C+ C RK KK+</pattern>
+      <matchSeq start="33" end="107">HSWHFPFFLYPTHTPSS------FPPSNSPIPSIFHSTTSTSLSLMDAKPPQLASQPLNYQTWFLKVSIHCEGCRRKVKKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0ACG4MMZ2_9ASTR" ac="A0ACG4MMZ2" length="169" description="GTP binding domain, P-loop containing nucleoside triphosphate hydrolase OS=Helianthus anomalus OX=73274 GN=Hanom_Chr02g00141671 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>3.8</expectation>
+      <identity>31.3</identity>
+      <positives>49.4</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="92">HLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQ-------IPVDCQACNRKSKKI</querySeq>
+      <pattern>H +H  +S    RL FSSKP  L+ +S  + P T+        ++ TL+ +++T    HLQ       IP D + C+ K  +I</pattern>
+      <matchSeq start="10" end="91">HPIHHHSSYLFTRLLFSSKPKTLLILSALSSPQTSLSHFSTTSSLETLQDISITEQT-HLQIAQEKLFIPPDTEICSEKGPRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A0L0NGF9_TOLOC" ac="A0A0L0NGF9" length="680" description="Uncharacterized protein OS=Tolypocladium ophioglossoides (strain CBS 100239) OX=1163406 GN=TOPH_02474 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>3.9</expectation>
+      <identity>39.0</identity>
+      <positives>61.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="49">FAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPH</querySeq>
+      <pattern>+A I+++SHL    ++  P R P  S P +L P+S+T  PH</pattern>
+      <matchSeq start="579" end="619">YATIINMSHLSARRSATRPARAPAVSSPVVLAPLSSTNQPH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0ACS2P036_9PEZI" ac="A0ACS2P036" length="826" description="Uncharacterized protein OS=Berkeleyomyces rouxiae OX=2035830 GN=BROUX41_006392 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>3.9</expectation>
+      <identity>37.5</identity>
+      <positives>45.8</positives>
+      <gaps>22</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="76">FFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIP--MSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHL</querySeq>
+      <pattern>FFF +  HL H +H+ AS+      FS  PFLL     + T L H A P        STL    +T  LW L</pattern>
+      <matchSeq start="670" end="727">FFFPLTAHLQHAVHIRASV------FSQHPFLLATALKTLTILLHAAGP--------STLALPQMTAELWDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0AAE1BQ44_PETCI" ac="A0AAE1BQ44" length="203" description="Uncharacterized protein (Fragment) OS=Petrolisthes cinctipes OX=88211 GN=Pcinc_039091 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>4.4</expectation>
+      <identity>36.8</identity>
+      <positives>47.1</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="73">FAVILHLSHLLHLDASI--HPFRLPFSSKPFLL-IPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSL</querySeq>
+      <pattern>F+  LHL HL H+  S    P  +  SS P LL  P S+T LPH    L  L  ++  L    + H L</pattern>
+      <matchSeq start="122" end="189">FSTSLHLPHLTHIPTSFPTSPHHISTSSLPHLLTFPTSSTPLPHLPPRLPHLSTSLLHLSPTFLPHLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A0C2XBC4_AMAMK" ac="A0A0C2XBC4" length="430" description="RRM domain-containing protein OS=Amanita muscaria (strain Koide BX008) OX=946122 GN=M378DRAFT_155318 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>7.0</expectation>
+      <identity>42.3</identity>
+      <positives>55.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="65">HLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLK</querySeq>
+      <pattern>H+S LLH   SI  F LPFSS      P+ ++  P T+  LSFL ++  T K</pattern>
+      <matchSeq start="88" end="137">HVSTLLHRATSIRNFNLPFSSPHLPTTPVKDS--PRTSSRLSFLSKSSRTSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A251VHK3_HELAN" ac="A0A251VHK3" length="311" description="GTP-binding protein, ribosome biogenesis, YsxC OS=Helianthus annuus OX=4232 GN=HannXRQ_Chr02g0048051 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.1</expectation>
+      <identity>31.3</identity>
+      <positives>49.4</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="92">HLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHTAWPLSFLHQTVSTLKAVAVTHSLWHLQ-------IPVDCQACNRKSKKI</querySeq>
+      <pattern>H +H  +S    RL FSSKP  L+ +S  + P T+        ++ TL+ +++T    HLQ       IP D + C+ K  +I</pattern>
+      <matchSeq start="10" end="91">HPIHHHSSSLFTRLLFSSKPKTLLIISALSSPQTSLSHFSTTSSLETLQDISITEQT-HLQIAQEKLFIPPDTEICSEKGPRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A8J4RFN6_9ROSI" ac="A0A8J4RFN6" length="415" description="Casein kinase II subunit alpha OS=Castanea mollissima OX=60419 GN=CMV_004344 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.5</expectation>
+      <identity>42.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="50">MQHSLVFFFAVILHLSHLLHLDASIHPFRLPFSSKPFLLIPMSNTTLPHT</querySeq>
+      <pattern>+QH      AV+L LS LL L  ++  FR+P +  P L  P S+  LPHT</pattern>
+      <matchSeq start="5" end="54">LQHPNTNNPAVLLLLSRLLLLLCALLAFRVPVAHPPILRTPHSHHLLPHT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

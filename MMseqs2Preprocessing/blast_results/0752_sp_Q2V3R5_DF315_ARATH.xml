@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-203711-0792-30485312-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-203711-0792-30485312-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q2V3R5|DF315_ARATH" type="PROTEIN" length="88"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:37:11+00:00" end="2026-11-13T20:38:54+00:00" search="P0Y0M0DT0H0M103.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="6">
+   <hit number="1" database="SP" id="DF315_ARATH" ac="Q2V3R5" length="88" description="Putative defensin-like protein 315 OS=Arabidopsis thaliana OX=3702 GN=At3g33187 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>459</score>
+      <bits>181.4</bits>
+      <expectation>7e-58</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="88">MYLSSRTGSRLLFLVKASFNTFEKVATISSTLIYFVSHKLVSSRSCSHNFRNICGYIRHNCRKCIRFCFCTFSIKISLPLVIARRIEY</querySeq>
+      <pattern>MYLSSRTGSRLLFLVKASFNTFEKVATISSTLIYFVSHKLVSSRSCSHNFRNICGYIRHNCRKCIRFCFCTFSIKISLPLVIARRIEY</pattern>
+      <matchSeq start="1" end="88">MYLSSRTGSRLLFLVKASFNTFEKVATISSTLIYFVSHKLVSSRSCSHNFRNICGYIRHNCRKCIRFCFCTFSIKISLPLVIARRIEY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="D7ML23_ARALL" ac="D7ML23" length="72" description="Uncharacterized protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_684214 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>314</score>
+      <bits>125.6</bits>
+      <expectation>5.8e-36</expectation>
+      <identity>84.7</identity>
+      <positives>87.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MYLSSRTGSRLLFLVKASFNTFEKVATISSTLIYFVSHKLVSSRSCSHNFRNICGYIRHNCRKCIRFCFCTF</querySeq>
+      <pattern>MY+ S TGSRLLFLVKASFNTFEKVATISSTLIYFVSHKLV SRS  HN RNICGYIR+NCRKCI FCF  F</pattern>
+      <matchSeq start="1" end="72">MYVPSGTGSRLLFLVKASFNTFEKVATISSTLIYFVSHKLVCSRSSLHNLRNICGYIRYNCRKCIGFCFLEF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ABD1BZU0_CARAN" ac="A0ABD1BZU0" length="77" description="Defensin-like protein 2 OS=Cardamine amara subsp. amara OX=228776 GN=V5N11_004441 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>2.1</expectation>
+      <identity>32.4</identity>
+      <positives>44.6</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="71">MYLSSRTGSRLLFLVKASFNTFEKVATISSTLIYFVSHKLVSSRSCSHNFRNIC---GYIRHNCRKCIRFCFCT</querySeq>
+      <pattern>M LS R  S +LFL      T     T+ +      SH+   +   + N  N+C   G++  NCR   R CFCT</pattern>
+      <matchSeq start="1" end="74">MKLSMRLISAVLFLFMIFIATGMGPVTVEARTCESQSHRFKGTCVSASNCGNVCHNEGFMGGNCRGFRRRCFCT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0ABQ8S1X9_PERAM" ac="A0ABQ8S1X9" length="150" description="Uncharacterized protein OS=Periplaneta americana OX=6978 GN=ANN_25629 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.9</expectation>
+      <identity>32.7</identity>
+      <positives>48.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="68">ASFNTFEKVATISSTLIYFVSHKLVSSRSCSHNFRNICGYIRHNCRKCIRFC</querySeq>
+      <pattern>A+  T   VA I   L    +   V+ + C    +++C Y RH C  C+RFC</pattern>
+      <matchSeq start="85" end="136">AALFTSNYVARIRYRLAALFTSNYVARKRCIKAEKDLCKYYRHVCLPCVRFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="W7XBZ3_TETTS" ac="W7XBZ3" length="920" description="Transmembrane protein, putative OS=Tetrahymena thermophila (strain SB210) OX=312017 GN=TTHERM_000030595 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.0</expectation>
+      <identity>30.8</identity>
+      <positives>50.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="79">YLSSRTGSRLLFLVKASFNTFEKVATISSTLIYFVSHKLVSSRSCSHNFRNICGYIRHNCRKCIRFCFCTFSIKISLP</querySeq>
+      <pattern>Y+++  G  LL+L +A  N  EK+A    +   F++  +V+S  CS+ F     Y  H    C+ FCF  +   + LP</pattern>
+      <matchSeq start="642" end="715">YVNAFNGIVLLYLNRAETNFEEKIAIFMLSFSPFINF-IVTSEQCSNFF---FVYSSHIALYCLLFCFAAYLKILYLP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0ACE2FH50_ARAHA" ac="A0ACE2FH50" length="77" description="Knottins-like domain-containing protein OS=Arabidopsis halleri OX=81970 GN=ARAHAL_5.4723.1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>8.4</expectation>
+      <identity>31.1</identity>
+      <positives>43.2</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="71">MYLSSRTGSRLLFLVKASFNTFEKVATISSTLIYFVSHKLVSSRSCSHNFRNIC---GYIRHNCRKCIRFCFCT</querySeq>
+      <pattern>M LS R  S +L +      T     T+ +      SH+   +   + N  N+C   G+I  NCR   R CFCT</pattern>
+      <matchSeq start="1" end="74">MKLSMRLISAVLIMFMVFVATGMGPVTVEARTCESQSHRFKGTCVSASNCANVCHNEGFIGGNCRGFRRRCFCT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

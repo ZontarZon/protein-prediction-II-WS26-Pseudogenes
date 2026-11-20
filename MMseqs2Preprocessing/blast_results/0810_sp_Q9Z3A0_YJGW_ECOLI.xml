@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-205531-0220-25651841-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-205531-0220-25651841-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q9Z3A0|YJGW_ECOLI" type="PROTEIN" length="111"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:55:31+00:00" end="2026-11-13T20:57:38+00:00" search="P0Y0M0DT0H0M127.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="1">
+   <hit number="1" database="SP" id="YJGW_ECOLI" ac="Q9Z3A0" length="111" description="Putative uncharacterized protein YjgW OS=Escherichia coli (strain K12) OX=83333 GN=yjgW PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>606</score>
+      <bits>238.0</bits>
+      <expectation>1.4e-79</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="111">MIRKNKWLRFQTVCRYIPLSLKNHNRLVIFVCQRIEWRYIFSTNTGHPLKNTCEMTGTDFSTDGLMRRYVTGGNNQWHTVASLHMTIMMNRIGTVADRQPKARKVKHGEMT</querySeq>
+      <pattern>MIRKNKWLRFQTVCRYIPLSLKNHNRLVIFVCQRIEWRYIFSTNTGHPLKNTCEMTGTDFSTDGLMRRYVTGGNNQWHTVASLHMTIMMNRIGTVADRQPKARKVKHGEMT</pattern>
+      <matchSeq start="1" end="111">MIRKNKWLRFQTVCRYIPLSLKNHNRLVIFVCQRIEWRYIFSTNTGHPLKNTCEMTGTDFSTDGLMRRYVTGGNNQWHTVASLHMTIMMNRIGTVADRQPKARKVKHGEMT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

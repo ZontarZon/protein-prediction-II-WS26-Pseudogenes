@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-190950-0541-12891828-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-190950-0541-12891828-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q8IVK1|GLCM1_HUMAN" type="PROTEIN" length="47"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T19:09:50+00:00" end="2026-11-13T19:11:46+00:00" search="P0Y0M0DT0H0M116.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="GLCM1_HUMAN" ac="Q8IVK1" length="47" description="Putative glycosylation-dependent cell adhesion molecule 1 OS=Homo sapiens OX=9606 GN=GLYCAM1 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>228</score>
+      <bits>92.4</bits>
+      <expectation>7.4e-24</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MKFFMVLLPASLASTSLAILDVESGLLPQLSVLLSNRLRGKTCQTGP</querySeq>
+      <pattern>MKFFMVLLPASLASTSLAILDVESGLLPQLSVLLSNRLRGKTCQTGP</pattern>
+      <matchSeq start="1" end="47">MKFFMVLLPASLASTSLAILDVESGLLPQLSVLLSNRLRGKTCQTGP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0ACF8PLQ8_NASLA" ac="A0ACF8PLQ8" length="48" description="Uncharacterized protein OS=Nasalis larvatus OX=43780 GN=H8958_009698 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>1.3e-13</expectation>
+      <identity>81.2</identity>
+      <positives>83.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MKFFMVLLPASLASTSLAILDVESGLLPQLSV-LLSNRLRGKTCQTGP</querySeq>
+      <pattern>MKFFMVLL ASLASTSLAILD  SGLLP  SV LLSN +RGKT QTGP</pattern>
+      <matchSeq start="1" end="48">MKFFMVLLLASLASTSLAILDGVSGLLPHPSVPLLSNHIRGKTRQTGP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ACF8JTL1_SEMEN" ac="A0ACF8JTL1" length="48" description="Uncharacterized protein OS=Semnopithecus entellus OX=88029 GN=H8957_003541 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>2.6e-13</expectation>
+      <identity>81.2</identity>
+      <positives>81.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MKFFMVLLPASLASTSLAILDVESGLLPQLSV-LLSNRLRGKTCQTGP</querySeq>
+      <pattern>MKFFMVLL ASLAS SLAILD  SGLLP  SV LLSN LRGKT QTGP</pattern>
+      <matchSeq start="1" end="48">MKFFMVLLLASLASASLAILDGVSGLLPHSSVPLLSNHLRGKTHQTGP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="GLCM1_HUMAN" ac="Q8IVK1-2" length="33" description="Isoform 2 of Putative glycosylation-dependent cell adhesion molecule 1 OS=Homo sapiens OX=9606 GN=GLYCAM1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>9.4e-12</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="32">MKFFMVLLPASLASTSLAILDVESGLLPQLSV</querySeq>
+      <pattern>MKFFMVLLPASLASTSLAILDVESGLLPQLSV</pattern>
+      <matchSeq start="1" end="32">MKFFMVLLPASLASTSLAILDVESGLLPQLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A8C8ZUE7_PROSS" ac="A0A8C8ZUE7" length="152" description="Glycosylation-dependent cell adhesion molecule 1 OS=Prolemur simus OX=1328070 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.00061</expectation>
+      <identity>85.7</identity>
+      <positives>89.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MKFFMVLLPASLASTSLAILDVESGLLP</querySeq>
+      <pattern>MKFF VLL ASLASTSLAIL+ ESGLLP</pattern>
+      <matchSeq start="1" end="28">MKFFTVLLLASLASTSLAILNGESGLLP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A6F8V8L0_PANTR" ac="A0A6F8V8L0" length="134" description="Uncharacterized protein OS=Pan troglodytes OX=9598 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.0037</expectation>
+      <identity>84.0</identity>
+      <positives>88.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MKFFMVLLPASLASTSLAILDVESG</querySeq>
+      <pattern>MKFF+VLLPASLASTSLAILD   G</pattern>
+      <matchSeq start="1" end="25">MKFFLVLLPASLASTSLAILDEPEG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A6F8V636_HUMAN" ac="A0A6F8V636" length="136" description="Glycosylation-dependent cell adhesion molecule 1 OS=Homo sapiens OX=9606 GN=Glycam1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.0038</expectation>
+      <identity>84.0</identity>
+      <positives>88.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MKFFMVLLPASLASTSLAILDVESG</querySeq>
+      <pattern>MKFFMVLLPASLA+TSLAILD   G</pattern>
+      <matchSeq start="1" end="25">MKFFMVLLPASLAATSLAILDEPEG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A8C9IIS4_9PRIM" ac="A0A8C9IIS4" length="157" description="Glycosylation-dependent cell adhesion molecule 1 OS=Piliocolobus tephrosceles OX=591936 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.05</expectation>
+      <identity>55.1</identity>
+      <positives>61.2</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="47">KFFMVLLPASLASTSLAILDVESGLLPQL---SVLLSNRLRGKTCQTGP</querySeq>
+      <pattern>KFFMVLL ASLASTSLAILD +  LL  +   S   S  L G +C   P</pattern>
+      <matchSeq start="2" end="50">KFFMVLLLASLASTSLAILDGDGWLLLTMRSHSAPYSLYLPGSSCPGHP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A8D2F2Y3_THEGE" ac="A0A8D2F2Y3" length="135" description="Glycosylation-dependent cell adhesion molecule 1 OS=Theropithecus gelada OX=9565 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.06</expectation>
+      <identity>87.5</identity>
+      <positives>91.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="24">MKFFMVLLPASLASTSLAILDVES</querySeq>
+      <pattern>M+FFMVLL ASLASTSLAILD ES</pattern>
+      <matchSeq start="1" end="24">MEFFMVLLLASLASTSLAILDGES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A8D2F1R2_THEGE" ac="A0A8D2F1R2" length="137" description="Glycosylation-dependent cell adhesion molecule 1 OS=Theropithecus gelada OX=9565 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.22</expectation>
+      <identity>87.0</identity>
+      <positives>91.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="23">MKFFMVLLPASLASTSLAILDVE</querySeq>
+      <pattern>M+FFMVLL ASLASTSLAILD E</pattern>
+      <matchSeq start="1" end="23">MEFFMVLLLASLASTSLAILDGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A6F8V7L7_MACMU" ac="A0A6F8V7L7" length="149" description="Glycosylation-dependent cell adhesion molecule 1 OS=Macaca mulatta OX=9544 GN=Glycam1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.66</expectation>
+      <identity>76.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MKFFMVLLPASLASTSLAILDVESG</querySeq>
+      <pattern>M+FF+VLL ASLASTSLAILD   G</pattern>
+      <matchSeq start="1" end="25">MEFFVVLLLASLASTSLAILDEPEG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0AAX6SE51_HETGA" ac="A0AAX6SE51" length="171" description="Glycosylation-dependent cell adhesion molecule 1 OS=Heterocephalus glaber OX=10181 GN=LOC101700305 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.0</expectation>
+      <identity>56.5</identity>
+      <positives>58.7</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MKFFMVLLPASLASTSLAILDVESGLLP----QLSVLLSNRLRGKT</querySeq>
+      <pattern>MK   +LL ASLASTSLAIL  E GLLP     L V LS  L   T</pattern>
+      <matchSeq start="1" end="46">MKVIALLLLASLASTSLAILHGECGLLPTPCSPLEVKLSLPLTSST</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A8B9W5U9_BOSGR" ac="A0A8B9W5U9" length="148" description="Glycosylation-dependent cell adhesion molecule 1 OS=Bos grunniens OX=30521 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.3</expectation>
+      <identity>76.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MKFFMVLLPASLASTSLAILDVESG</querySeq>
+      <pattern>MKF  VLL ASLA+TSLAIL+ ESG</pattern>
+      <matchSeq start="1" end="25">MKFLCVLLLASLAATSLAILNSESG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A452EGX6_CAPHI" ac="A0A452EGX6" length="152" description="Glycosylation-dependent cell adhesion molecule-1 OS=Capra hircus OX=9925 GN=GLYCAM1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>2.5</expectation>
+      <identity>72.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MKFFMVLLPASLASTSLAILDVESG</querySeq>
+      <pattern>MKF  +LL ASLA+TSLAIL+ ESG</pattern>
+      <matchSeq start="1" end="25">MKFLCILLLASLAATSLAILNGESG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A452R1A2_URSAM" ac="A0A452R1A2" length="156" description="Uncharacterized protein OS=Ursus americanus OX=9643 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>2.5</expectation>
+      <identity>61.3</identity>
+      <positives>74.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="31">MKFFMVLLPASLASTSLAILDVESGLLPQLS</querySeq>
+      <pattern>MK F +LL ASLASTSLAIL +   L+P +S</pattern>
+      <matchSeq start="1" end="31">MKRFAILLLASLASTSLAILALSLPLVPSIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A0D9QZA3_CHLSB" ac="A0A0D9QZA3" length="151" description="Uncharacterized protein OS=Chlorocebus sabaeus OX=60711 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.4</expectation>
+      <identity>72.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MKFFMVLLPASLASTSLAILDVESG</querySeq>
+      <pattern>M+ FMVLL ASLASTSLA+LD   G</pattern>
+      <matchSeq start="1" end="25">MECFMVLLLASLASTSLAVLDEPEG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0ABD2PVH0_9PLAT" ac="A0ABD2PVH0" length="403" description="Uncharacterized protein (Fragment) OS=Cichlidogyrus casuarinus OX=1844966 GN=Ciccas_010676 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>7.8</expectation>
+      <identity>56.7</identity>
+      <positives>70.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="36">LLPASLASTSLAILDVESGLLPQLSVLLSN</querySeq>
+      <pattern>LLPA  A +S A+ DV  GLLP++ V LSN</pattern>
+      <matchSeq start="220" end="249">LLPAKFAQSSTALHDVVCGLLPRVIVTLSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0ABI0P144_BOVIN" ac="A0ABI0P144" length="141" description="Glycosylation dependent cell adhesion molecule 1 OS=Bos taurus OX=9913 GN=GLYCAM1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>8.7</expectation>
+      <identity>75.0</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="24">MKFFMVLLPASLASTSLAILDVES</querySeq>
+      <pattern>MKF  VLL ASLA+TSLAIL+ ES</pattern>
+      <matchSeq start="1" end="24">MKFLCVLLLASLAATSLAILNSES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A3Q0CM05_MESAU" ac="A0A3Q0CM05" length="151" description="Glycosylation-dependent cell adhesion molecule 1-like OS=Mesocricetus auratus OX=10036 GN=LOC101843024 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.2</expectation>
+      <identity>64.3</identity>
+      <positives>71.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MKFFMVLLPASLASTSLAILDVESGLLP</querySeq>
+      <pattern>MKFF VLL ASLA+TSLA+L      LP</pattern>
+      <matchSeq start="1" end="28">MKFFTVLLLASLATTSLAVLPGSEDELP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A061IHY1_CRIGR" ac="A0A061IHY1" length="151" description="Glycosylation-dependent cell adhesion molecule 1 isoform X1 OS=Cricetulus griseus OX=10029 GN=LOC100769029 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.2</expectation>
+      <identity>64.3</identity>
+      <positives>71.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MKFFMVLLPASLASTSLAILDVESGLLP</querySeq>
+      <pattern>MKFF VLL ASLA+TSLA+L      LP</pattern>
+      <matchSeq start="1" end="28">MKFFTVLLLASLATTSLAVLPGSEDELP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,1011 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-205258-0470-81984121-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-205258-0470-81984121-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q92IM4|Y396_RICCN" type="PROTEIN" length="94"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:52:58+00:00" end="2026-11-13T20:54:20+00:00" search="P0Y0M0DT0H0M82.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="58">
+   <hit number="1" database="SP" id="Y396_RICCN" ac="Q92IM4" length="94" description="Putative uncharacterized protein RC0396 OS=Rickettsia conorii (strain ATCC VR-613 / Malish 7) OX=272944 GN=RC0396 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>193.0</bits>
+      <expectation>2.8e-62</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGFC</querySeq>
+      <pattern>MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGFC</pattern>
+      <matchSeq start="1" end="94">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="Q7PBC8_RICS2" ac="Q7PBC8" length="94" description="Phage portal protein OS=Rickettsia sibirica (strain ATCC VR-151 / 246) OX=272951 GN=rsib_orf306 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>479</score>
+      <bits>189.1</bits>
+      <expectation>9.5e-61</expectation>
+      <identity>97.9</identity>
+      <positives>98.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGFC</querySeq>
+      <pattern>MIKNYRKKFWKNSTTKSQNFI+LNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFT KTESQKSRSGFC</pattern>
+      <matchSeq start="1" end="94">MIKNYRKKFWKNSTTKSQNFIKLNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTKKTESQKSRSGFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="C3PMZ7_RICAE" ac="C3PMZ7" length="94" description="Phage portal protein OS=Rickettsia africae (strain ESF-5) OX=347255 GN=RAF_ORF0370 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>474</score>
+      <bits>187.2</bits>
+      <expectation>5.5e-60</expectation>
+      <identity>96.8</identity>
+      <positives>98.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGFC</querySeq>
+      <pattern>MIKNYRKKFWKNSTTKSQNFI+LNDIA+GNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFT KTESQKSRSGFC</pattern>
+      <matchSeq start="1" end="94">MIKNYRKKFWKNSTTKSQNFIKLNDIAHGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTKKTESQKSRSGFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="B0BWY2_RICRO" ac="B0BWY2" length="94" description="Phage portal protein OS=Rickettsia rickettsii (strain Iowa) OX=452659 GN=RrIowa_0476 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>469</score>
+      <bits>185.3</bits>
+      <expectation>3.2e-59</expectation>
+      <identity>96.8</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGFC</querySeq>
+      <pattern>MIKNY KKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTG VIFRLSGALFT KTESQKSRSGFC</pattern>
+      <matchSeq start="1" end="94">MIKNYWKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGAVIFRLSGALFTKKTESQKSRSGFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="H6PT31_RICP3" ac="H6PT31" length="94" description="Phage portal protein OS=Rickettsia philipii (strain 364D) OX=481009 GN=RSA_02185 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>469</score>
+      <bits>185.3</bits>
+      <expectation>3.2e-59</expectation>
+      <identity>96.8</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGFC</querySeq>
+      <pattern>MIKNY KKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTG VIFRLSGALFT KTESQKSRSGFC</pattern>
+      <matchSeq start="1" end="94">MIKNYWKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGAVIFRLSGALFTKKTESQKSRSGFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0ABM5MNC8_RICS1" ac="A0ABM5MNC8" length="94" description="Phage portal protein OS=Rickettsia slovaca (strain 13-B) OX=941638 GN=Rsl_468 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>460</score>
+      <bits>181.8</bits>
+      <expectation>7.6e-58</expectation>
+      <identity>95.7</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="94">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGFC</querySeq>
+      <pattern>MIKNY KKFWKNSTTKSQNFI LNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFT KTESQKS SGFC</pattern>
+      <matchSeq start="1" end="94">MIKNYWKKFWKNSTTKSQNFIGLNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTKKTESQKSWSGFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A0F3RH91_9RICK" ac="A0A0F3RH91" length="149" description="Phage portal family protein OS=Rickettsia argasii T170-B OX=1268837 GN=RAT170B_0332 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>356</score>
+      <bits>141.7</bits>
+      <expectation>3e-41</expectation>
+      <identity>77.4</identity>
+      <positives>80.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGF</querySeq>
+      <pattern>MIKNY KKFWKNSTTKSQNFIELNDIAYGNLIRV IEAYRENVIVYRCINLIAQSAGHV WKVLKSKTGEVI          K   +K+ + F</pattern>
+      <matchSeq start="1" end="93">MIKNYWKKFWKNSTTKSQNFIELNDIAYGNLIRVGIEAYRENVIVYRCINLIAQSAGHVQWKVLKSKTGEVILDYPVHYLLKKPNPKKAGADF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0AAD1FKQ7_RICJA" ac="A0AAD1FKQ7" length="149" description="Predicted Phage portal protein OS=Rickettsia japonica OX=35790 GN=RJYHM_0363 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>348</score>
+      <bits>138.7</bits>
+      <expectation>4.9e-40</expectation>
+      <identity>76.3</identity>
+      <positives>79.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGF</querySeq>
+      <pattern>MIKNY KKFWKNSTTKSQNFIELNDIAYGNLIRV IEAYRENVIVYRCINLIAQSAGHV WKVLKSKT EVI          K   +K+ + F</pattern>
+      <matchSeq start="1" end="93">MIKNYWKKFWKNSTTKSQNFIELNDIAYGNLIRVGIEAYRENVIVYRCINLIAQSAGHVQWKVLKSKTREVILDYPVHYLLKKPNPKKAGADF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A0F3N1G6_RICAM" ac="A0A0F3N1G6" length="151" description="Phage portal family protein OS=Rickettsia amblyommatis str. Ac/Pa OX=1359164 GN=APHACPA_0859 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>336</score>
+      <bits>134.0</bits>
+      <expectation>3.4e-38</expectation>
+      <identity>72.6</identity>
+      <positives>77.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNL--IRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGF</querySeq>
+      <pattern>MI+NY KKFWKNSTTKSQNFIELNDIAYGNL  +RV IE YRENVIVYRCINLIAQS GHVPWKVLKSKTGEVI          K   +K+ + F</pattern>
+      <matchSeq start="1" end="95">MIQNYWKKFWKNSTTKSQNFIELNDIAYGNLKRVRVGIETYRENVIVYRCINLIAQSVGHVPWKVLKSKTGEVILDHPVHYLLKKPNPKKAGADF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0AAI8A9D2_RICR3" ac="A0AAI8A9D2" length="151" description="Phage portal protein OS=Rickettsia rhipicephali (strain 3-7-female6-CWPP) OX=1105113 GN=MCC_02820 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <bits>131.3</bits>
+      <expectation>4e-37</expectation>
+      <identity>71.6</identity>
+      <positives>76.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNL--IRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGF</querySeq>
+      <pattern>MIKNY KKFWKN TTKSQNFIELNDIAYGNL  +RV IEAY ENVIVYRCINLIAQS GHVPW+VLKSKTGEVI          K   +K+ + F</pattern>
+      <matchSeq start="1" end="95">MIKNYWKKFWKNGTTKSQNFIELNDIAYGNLKRVRVGIEAYGENVIVYRCINLIAQSTGHVPWEVLKSKTGEVILDHPVHYLLKKPNPKKAGADF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A510GCS2_9RICK" ac="A0A510GCS2" length="180" description="Phage portal protein OS=Rickettsia asiatica OX=238800 GN=RAS_08880 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>331</score>
+      <bits>132.1</bits>
+      <expectation>4.6e-37</expectation>
+      <identity>89.2</identity>
+      <positives>91.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNL--IRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVI</querySeq>
+      <pattern>MIKNY KKFWKNSTTKSQNFIELNDIAY NL  +RV IEAYRENVIVYRCINLIAQSAGHVPWKVLKSKT E+I</pattern>
+      <matchSeq start="1" end="74">MIKNYWKKFWKNSTTKSQNFIELNDIAYDNLKRVRVGIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTREII</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A0F3MRD0_RICFI" ac="A0A0F3MRD0" length="385" description="Phage portal protein, HK97 family OS=Rickettsia felis str. Pedreira OX=1359196 GN=RFEPED_0383 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>344</score>
+      <bits>137.1</bits>
+      <expectation>6.7e-37</expectation>
+      <identity>73.7</identity>
+      <positives>80.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNL--IRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGF</querySeq>
+      <pattern>MIKNY KKFWKNSTTKSQNFIELNDIAYGNL  ++V IEAYRENVIVYRCINLIAQSAGHVPWKVLKS+TGEVI  L       +   +K+   F</pattern>
+      <matchSeq start="1" end="95">MIKNYWKKFWKNSTTKSQNFIELNDIAYGNLKRVKVGIEAYRENVIVYRCINLIAQSAGHVPWKVLKSRTGEVISELPVHYLLKRPNPEKAGVDF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="Y471_RICFE" ac="Q4UM95" length="385" description="Uncharacterized protein RF_0471 OS=Rickettsia felis (strain ATCC VR-1525 / URRWXCal2) OX=315456 GN=RF_0471 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>344</score>
+      <bits>137.1</bits>
+      <expectation>6.7e-37</expectation>
+      <identity>73.7</identity>
+      <positives>80.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNL--IRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGF</querySeq>
+      <pattern>MIKNY KKFWKNSTTKSQNFIELNDIAYGNL  ++V IEAYRENVIVYRCINLIAQSAGHVPWKVLKS+TGEVI  L       +   +K+   F</pattern>
+      <matchSeq start="1" end="95">MIKNYWKKFWKNSTTKSQNFIELNDIAYGNLKRVKVGIEAYRENVIVYRCINLIAQSAGHVPWKVLKSRTGEVISELPVHYLLKRPNPEKAGVDF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0ABP0T500_RICHE" ac="A0ABP0T500" length="197" description="Phage portal protein OS=Rickettsia helvetica OX=35789 GN=OB144RH_04935 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>331</score>
+      <bits>132.1</bits>
+      <expectation>7.5e-37</expectation>
+      <identity>89.2</identity>
+      <positives>91.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNL--IRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVI</querySeq>
+      <pattern>MIKNY KKFWKNSTTKSQNFIELNDIAY NL  +RV IEAYRENVIVYRCINLIAQSAGHVPWKVLKSKT E+I</pattern>
+      <matchSeq start="18" end="91">MIKNYWKKFWKNSTTKSQNFIELNDIAYDNLKRVRVGIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTREII</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A9E6MHC7_9RICK" ac="A0A9E6MHC7" length="385" description="Phage portal protein OS=Rickettsia tillamookensis OX=2761623 GN=H6P87_00406 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>339</score>
+      <bits>135.2</bits>
+      <expectation>3.6e-36</expectation>
+      <identity>89.2</identity>
+      <positives>93.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNL--IRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVI</querySeq>
+      <pattern>MIKNY KKFWKNSTTKSQNFIELNDI YGNL  +++ IEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVI</pattern>
+      <matchSeq start="1" end="74">MIKNYWKKFWKNSTTKSQNFIELNDITYGNLKRVKIGIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="Y759_RICBR" ac="Q1RIH4" length="385" description="Uncharacterized protein RBE_0759 OS=Rickettsia bellii (strain RML369-C) OX=336407 GN=RBE_0759 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>304</score>
+      <bits>121.7</bits>
+      <expectation>4.9e-31</expectation>
+      <identity>79.7</identity>
+      <positives>90.5</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNL--IRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVI</querySeq>
+      <pattern>M+K+Y KKFW ++ TKSQ+FIELNDIAYGN   IRV I+AYRENVIVYRC+NLIAQSAGHVPWKVLKSK+GEVI</pattern>
+      <matchSeq start="1" end="74">MVKSYWKKFWGSNVTKSQHFIELNDIAYGNAKKIRVGIDAYRENVIVYRCVNLIAQSAGHVPWKVLKSKSGEVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0ABZ0UR30_9RICK" ac="A0ABZ0UR30" length="395" description="HK97 family phage portal protein OS=Candidatus Trichorickettsia mobilis OX=1346319 GN=Trichorick_00378 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>9.5e-11</expectation>
+      <identity>56.1</identity>
+      <positives>68.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="65">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIR-VDIEAYRENVIVYRCINLIAQSAGHVPWKVLK</querySeq>
+      <pattern>MI++Y KKF+K    KS N I+L     G   R + +EAY +NVIVYRC+NLIAQSAGHVP  V K</pattern>
+      <matchSeq start="1" end="66">MIQSYLKKFFKPKVHKSHNLIDLAYNYEGFADRAIGVEAYHKNVIVYRCVNLIAQSAGHVPLVVNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0ABU5ND39_9RICK" ac="A0ABU5ND39" length="401" description="Phage portal protein OS=Candidatus Megaera venefica OX=2055910 GN=Megvenef_01057 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>1.8e-10</expectation>
+      <identity>40.6</identity>
+      <positives>65.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="69">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTG</querySeq>
+      <pattern>MIK+Y KK     + KS ++++L    Y    RV +++Y+ N IV+RC+NLIA SA H+PW++ ++  G</pattern>
+      <matchSeq start="1" end="69">MIKSYFKKVSGKQSKKSTSYLDLPFFNYSQDERVGVDSYKNNAIVHRCVNLIATSASHIPWQIFRNNNG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A9Q0N7E1_9DIPT" ac="A0A9Q0N7E1" length="899" description="Phage portal protein OS=Pseudolycoriella hygida OX=35572 GN=Bhyg_00231 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>3.9e-08</expectation>
+      <identity>42.0</identity>
+      <positives>59.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="69">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTG</querySeq>
+      <pattern>++K    K  +       N + +    +G L ++ +EAY+ NVIV RC+NLIAQSA HVPW V K+K G</pattern>
+      <matchSeq start="517" end="584">LLKTKTHKLMQKQFKDMSNLMTMKTQEFGRL-KIGVEAYKNNVIVNRCVNLIAQSASHVPWIVSKNKGG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A0F3MIS6_9RICK" ac="A0A0F3MIS6" length="393" description="Phage portal protein, HK97 family OS=Orientia chuto str. Dubai OX=1359168 GN=OCHUTO_0864 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>6.1e-07</expectation>
+      <identity>45.5</identity>
+      <positives>55.8</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="67">MIKNYRKKFW-------KNSTTK---SQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSK</querySeq>
+      <pattern>MIK Y  K +       KN+  K   S N   +ND + G  I    +AY +NVIVYRC+NLIA SA HVPW + K K</pattern>
+      <matchSeq start="1" end="73">MIKGYLHKIFNKILFIKKNTDFKKFQSFNLQHINDNSTGTTI----DAYFQNVIVYRCVNLIANSASHVPWYIKKKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A2P1P852_9RICK" ac="A0A2P1P852" length="387" description="Phage portal protein OS=Candidatus Phycorickettsia trachydisci OX=2115978 GN=phytr_4940 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>2.1e-06</expectation>
+      <identity>49.2</identity>
+      <positives>66.7</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="65">YRKKFW--KNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLK</querySeq>
+      <pattern>Y +KF+  K STT   N++E    +     +  IE+YR NVIV RC+N+IAQSAGHVPW V++</pattern>
+      <matchSeq start="4" end="63">YIQKFFHSKKSTT---NYLENFYFSDPYEPKAGIESYRNNVIVNRCVNVIAQSAGHVPWVVMQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A0F3MGD3_ORITS" ac="A0A0F3MGD3" length="396" description="Uncharacterized protein OS=Orientia tsutsugamushi str. Gilliam OX=1359184 GN=GILLIAM_01553 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>128</score>
+      <bits>53.9</bits>
+      <expectation>2.9e-06</expectation>
+      <identity>43.4</identity>
+      <positives>52.6</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="67">MIKNYRKKFWK------NSTTKSQNF--IELNDIAYGNLIR-VDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSK</querySeq>
+      <pattern>MIK Y  K         N  T  +NF   +L  +A  N      + AY +NVIVYRC+NLIA SA HVPW + K K</pattern>
+      <matchSeq start="1" end="76">MIKGYLHKILNKVNILSNKNTCYKNFQPFDLQYVASSNYTTGATVSAYFQNVIVYRCVNLIANSASHVPWYIKKKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0ACG4DD60_9RICK" ac="A0ACG4DD60" length="101" description="Phage portal protein OS=Rickettsia koreansis OX=2358204 GN=GCO76_02960 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>108</score>
+      <bits>46.2</bits>
+      <expectation>0.00028</expectation>
+      <identity>53.3</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="49" end="93">INLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGF</querySeq>
+      <pattern>+NLIAQSAGHV W VLKSKTGEVI          K   +K+ + F</pattern>
+      <matchSeq start="1" end="45">MNLIAQSAGHVQWTVLKSKTGEVILDYPVHYLLKKPNPKKAGADF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A077ATD3_9PROT" ac="A0A077ATD3" length="401" description="Portal protein OS=Candidatus Odyssella acanthamoebae OX=91604 GN=ID47_06205 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.03</expectation>
+      <identity>35.9</identity>
+      <positives>50.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="71">NYRKKFWKNSTTKSQNFIELNDIAYGNLIR----------VDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEV</querySeq>
+      <pattern>N  K  W   T +  + +  + IAY  L +          +  E Y++NVIVYRC+ LIA+  G VPW +L  K  EV</pattern>
+      <matchSeq start="2" end="77">NILKNLWPQRTEQKSSSVA-SYIAYNTLGKPVWTPRNYALLADEGYQKNVIVYRCVTLIARGVGSVPW-LLYHKDHEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A5C0UG88_9PROT" ac="A0A5C0UG88" length="375" description="Phage portal protein OS=Candidatus Cytomitobacter indipagum OX=2601575 GN=FZC35_01540 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.06</expectation>
+      <identity>34.8</identity>
+      <positives>55.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="72">NYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVI</querySeq>
+      <pattern>N   +F K + +K +N I      Y +        Y +NVIVYRC+NLIAQ+  ++ ++ LK K G ++</pattern>
+      <matchSeq start="16" end="83">NEPSQFEKKNFSKPKNVIYDTIANYTSRESYCGNLYEDNVIVYRCVNLIAQNIANIKYE-LKDKDGNIL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0ACE2PQ58_9PROT" ac="A0ACE2PQ58" length="391" description="Portal protein OS=Litorimonas haliclonae OX=2081977 GN=LIHA111178_10815 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.16</expectation>
+      <identity>38.6</identity>
+      <positives>57.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="93">EAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSGF</querySeq>
+      <pattern>E +  N IVYRC+ LIA++A  VP KV  +KT    F     L ++ TE+ ++  G+</pattern>
+      <matchSeq start="53" end="108">EGFARNPIVYRCVRLIAEAAASVPLKVEGNKTASE-FLTRSPLMSSSTETLEAFYGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0ABZ2C6B4_9PROT" ac="A0ABZ2C6B4" length="390" description="Phage portal protein OS=Candidatus Bealeia paramacronuclearis OX=1921001 GN=Bealeia1_01157 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.3</expectation>
+      <identity>55.6</identity>
+      <positives>77.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="63">EAYRENVIVYRCINLIAQSAGHVPWKV</querySeq>
+      <pattern>E Y++NVIVYRC++LIA     VPW++</pattern>
+      <matchSeq start="44" end="70">EGYQKNVIVYRCVSLIAGGIASVPWEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A0C1QJB6_9RICK" ac="A0A0C1QJB6" length="407" description="Phage portal protein OS=Candidatus Jidaibacter acanthamoebae OX=86105 GN=NF27_DP01530 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.3</expectation>
+      <identity>36.5</identity>
+      <positives>55.3</positives>
+      <gaps>19</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="71">MIKNYRKKF-WKNSTTKSQNFIELN-DIAYGNLIRVDI-----------EAYRENVIVYRCINLIAQSAGHVPWKV-LKSKTGEV</querySeq>
+      <pattern>M K  ++KF +KN     +NF  +N D +Y   +   +           EAY +NVI +R I +IAQSA  VP+K+ L ++TG+V</pattern>
+      <matchSeq start="7" end="89">MFKKIKEKFLYKNFA--GRNFAHMNLDSSYIYALNKPVWMDREYRIFASEAYMKNVIAHRSITMIAQSAASVPFKLYLTNETGKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0ABW1S4Y3_9PROT" ac="A0ABW1S4Y3" length="379" description="Phage portal protein OS=Ponticaulis profundi OX=2665222 GN=ACFQDM_00710 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.4</expectation>
+      <identity>33.8</identity>
+      <positives>51.9</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="75">FWKNSTTKS--QNFIELNDIA-----YGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLK---SKTGEVIFRL</querySeq>
+      <pattern>FWK   TKS  Q  I L+ +       G   R+    +R+N I YRCI +IA++A  VP +++    +  G+ + RL</pattern>
+      <matchSeq start="2" end="78">FWKRHDTKSGAQALIALSGLGDAQWETGTPRRLFEAGFRQNPISYRCIRMIAETAASVPVRLVSEHDATDGKTLIRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A2V3U1W2_9HYPH" ac="A0A2V3U1W2" length="398" description="HK97 family phage portal protein OS=Chelatococcus asaccharovorans OX=28210 GN=C7450_10830 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.4</expectation>
+      <identity>47.1</identity>
+      <positives>67.6</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="61">YGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPW</querySeq>
+      <pattern>YG L R   E ++ N +V+RC+ LIA++A  VPW</pattern>
+      <matchSeq start="51" end="81">YGALAR---EGFQRNAVVHRCVRLIAEAAASVPW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0ABW6ZUR9_9HYPH" ac="A0ABW6ZUR9" length="477" description="Phage portal protein OS=Xanthobacter oligotrophicus OX=2607286 GN=V5F32_04915 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.5</expectation>
+      <identity>38.5</identity>
+      <positives>61.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="71">RVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEV</querySeq>
+      <pattern>R+  EAY  N + +RC+ +IA +A  +PW +  +K  EV</pattern>
+      <matchSeq start="39" end="77">RIADEAYVRNAVAHRCVKMIASAAATIPWLLADTKGREV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A7ILN8_XANVE" ac="A7ILN8" length="477" description="Phage portal protein, HK97 family OS=Xanthobacter versatilis OX=78245 GN=Xaut_3705 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.5</expectation>
+      <identity>38.5</identity>
+      <positives>61.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="71">RVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEV</querySeq>
+      <pattern>R+  EAY  N + +RC+ +IA +A  +PW +  +K  EV</pattern>
+      <matchSeq start="39" end="77">RIADEAYVRNAVAHRCVKMIASAAATIPWLLADTKGREV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A7HRJ3_PARL1" ac="A7HRJ3" length="391" description="Phage portal protein, HK97 family OS=Parvibaculum lavamentivorans (strain DS-1 / DSM 13023 / NCIMB 13966) OX=402881 GN=Plav_0903 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>2.0</expectation>
+      <identity>52.0</identity>
+      <positives>72.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="61">EAYRENVIVYRCINLIAQSAGHVPW</querySeq>
+      <pattern>E Y+ N I YRC+ +IA++A  VPW</pattern>
+      <matchSeq start="47" end="71">EGYQRNAIAYRCVRMIAEAAASVPW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0A7K1YBI8_9SPHI" ac="A0A7K1YBI8" length="793" description="FtsX-like permease family protein OS=Hufsiella arboris OX=2695275 GN=GS399_13265 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>2.1</expectation>
+      <identity>33.3</identity>
+      <positives>53.6</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="83">MIKNYRKKFWKN-STTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNK</querySeq>
+      <pattern>MIKNY K  W+N  T KS +FI ++ +A G  + + I  +  N + +   N   +   HV  +V++SKT      +SG + TN+</pattern>
+      <matchSeq start="1" end="74">MIKNYLKTAWRNILTKKSTSFINISGLAVGMAVALLIGLWINNELSFNKYN---EHYDHVA-RVMQSKT------ISGTINTNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0A5C0UEQ3_9PROT" ac="A0A5C0UEQ3" length="359" description="Phage portal protein OS=Candidatus Cytomitobacter primus OX=2066024 GN=FZC34_01225 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.7</expectation>
+      <identity>44.4</identity>
+      <positives>75.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="72">EAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVI</querySeq>
+      <pattern>+ Y +NVI+YRCINLIA++  ++P   LK++ G ++</pattern>
+      <matchSeq start="38" end="72">DLYSKNVIIYRCINLIAKNIANIPCN-LKNEDGIIL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A7L9RS62_9PROT" ac="A0A7L9RS62" length="381" description="Phage portal protein OS=Candidatus Bodocaedibacter vickermanii OX=2741701 GN=CPBP_00156 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.7</expectation>
+      <identity>46.9</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="68">EAYRENVIVYRCINLIAQSAGHVPWKVLKSKT</querySeq>
+      <pattern>E Y +NVIVYRC+ +IA+    VPW +    T</pattern>
+      <matchSeq start="37" end="68">EGYEKNVIVYRCVAMIARGIATVPWLLYDGDT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0A9X3U0C3_9PROT" ac="A0A9X3U0C3" length="398" description="Phage portal protein OS=Govanella unica OX=2975056 GN=NYP16_13340 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.7</expectation>
+      <identity>47.1</identity>
+      <positives>70.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="63">NLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKV</querySeq>
+      <pattern>N  R+  E +R+NVI +R I +IA+SA  VPW++</pattern>
+      <matchSeq start="40" end="73">NFRRLAEEGFRKNVIAHRSIKVIAESAAAVPWRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0A1G6CF23_9HYPH" ac="A0A1G6CF23" length="404" description="Phage portal protein, HK97 family OS=Bauldia litoralis OX=665467 GN=SAMN02982931_02410 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.7</expectation>
+      <identity>52.0</identity>
+      <positives>72.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="61">EAYRENVIVYRCINLIAQSAGHVPW</querySeq>
+      <pattern>E Y +N IVYRC+ +IA++A   PW</pattern>
+      <matchSeq start="47" end="71">EGYAKNAIVYRCVRMIAEAAASAPW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A370TAK9_9HELO" ac="A0A370TAK9" length="428" description="Fatty acid desaturase domain-containing protein OS=Venustampulla echinocandica OX=2656787 GN=BP5553_10191 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.7</expectation>
+      <identity>27.3</identity>
+      <positives>44.3</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="90">RKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLI---AQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSR</querySeq>
+      <pattern>R   + N+  K  N++ +    Y +L+RVD+E   E       +NLI    Q     PW +L + T        G+L   KT++  S+</pattern>
+      <matchSeq start="149" end="231">RHHIYANNLAKDHNYVPVTTAKYASLLRVDLEKLEETTEDSPLVNLIRILVQQLLGFPWYLLTNITSS-----QGSLAAGKTKNPPSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0ABQ1J024_9PROT" ac="A0ABQ1J024" length="371" description="Portal protein OS=Henriciella pelagia OX=1977912 GN=GCM10011503_01330 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>3.7</expectation>
+      <identity>31.0</identity>
+      <positives>51.7</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="63">KNSTTKSQNFIELNDIAYGNLIRVDI-----EAYRENVIVYRCINLIAQSAGHVPWKV</querySeq>
+      <pattern>K  T  + +F+ L  +   +  R+D      E Y  N +VYRC+ +IA++A  +P  V</pattern>
+      <matchSeq start="7" end="64">KTETRAASSFVALASLPASHWGRLDAGTLMREGYSGNAVVYRCVRMIAEAAASIPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A919AN82_9PROT" ac="A0A919AN82" length="401" description="Portal protein OS=Kordiimonas sediminis OX=1735581 GN=GCM10017044_10770 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>3.7</expectation>
+      <identity>42.9</identity>
+      <positives>65.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="67">RVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSK</querySeq>
+      <pattern>R+  E Y++NVI YR INL+A+    +P +V K +</pattern>
+      <matchSeq start="51" end="85">RLAAEGYQQNVIAYRAINLVARGVSSIPLRVKKGQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A2S0MZQ8_9BURK" ac="A0A2S0MZQ8" length="1382" description="TIGR02099 family protein OS=Simplicispira suum OX=2109915 GN=C6571_08740 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>5.5</expectation>
+      <identity>31.9</identity>
+      <positives>47.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="92">ELNDIAYGNLIRVDIE-AYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRSG</querySeq>
+      <pattern>+L+D+ + N  + +   A R   + Y  +    Q AG VPW  L   +GE+IF  SG      T S   R+G</pattern>
+      <matchSeq start="588" end="659">DLHDMPFDNPRQGEFRIAARVQDVTYAYVPPQLQDAGEVPWPALVKLSGELIFERSGMQVKGATGSFAGRTG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0A5M6HW16_9HYPH" ac="A0A5M6HW16" length="381" description="Phage portal protein OS=Blastochloris sulfoviridis OX=50712 GN=F1193_11240 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.9</expectation>
+      <identity>47.2</identity>
+      <positives>63.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="63">YGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKV</querySeq>
+      <pattern>YG L R   E Y  N +V+RC+ LIA++A  V W+V</pattern>
+      <matchSeq start="36" end="68">YGALAR---EGYAANPVVHRCVRLIAEAAASVLWRV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0AAE9XVX9_9PROT" ac="A0AAE9XVX9" length="385" description="Phage portal protein OS=Gimibacter soli OX=3024400 GN=PH603_04840 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.9</expectation>
+      <identity>43.8</identity>
+      <positives>71.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="64">RVDIEAYRENVIVYRCINLIAQSAGHVPWKVL</querySeq>
+      <pattern>R+  EAY++NV+ YR INL+A+    +P +V+</pattern>
+      <matchSeq start="39" end="70">RLASEAYQQNVVAYRAINLVARGMASIPLEVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A069D4N7_9BACE" ac="A0A069D4N7" length="386" description="Outer membrane efflux protein OS=Bacteroides graminisolvens DSM 19988 = JCM 15093 OX=1121097 GN=JCM15093_2548 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.9</expectation>
+      <identity>35.6</identity>
+      <positives>59.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="91">RVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNKTESQKSRS</querySeq>
+      <pattern>R +IEA R+ V + + +NL   SAG++  KV+  K   V F +S  L+ NK   ++++S</pattern>
+      <matchSeq start="231" end="289">RQEIEASRKQVSLSKAMNLPTFSAGYMSEKVVGQKYQGVAFGISVPLWENKNRIKQAKS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0A420WIP8_9PROT" ac="A0A420WIP8" length="390" description="HK97 family phage portal protein OS=Litorimonas taeanensis OX=568099 GN=DES40_0205 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.9</expectation>
+      <identity>50.0</identity>
+      <positives>70.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="66">EAYRENVIVYRCINLIAQSAGHVPWKVLKS</querySeq>
+      <pattern>E Y  N IVYRC+ LI+++A  VP  +L+S</pattern>
+      <matchSeq start="53" end="82">EGYGRNPIVYRCVRLISEAAASVPLTILES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0A6B8LVB0_9HYPH" ac="A0A6B8LVB0" length="395" description="Phage portal protein OS=Methylocystis parvus OX=134 GN=F7D14_01660 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.9</expectation>
+      <identity>35.3</identity>
+      <positives>61.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="63">NLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKV</querySeq>
+      <pattern>N + +  E Y  N + +RC+ ++A++A  VPW V</pattern>
+      <matchSeq start="41" end="74">NSVALTREGYERNAVCHRCVRMVAEAAASVPWLV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0AAW9RLN3_9HYPH" ac="A0AAW9RLN3" length="396" description="Phage portal protein OS=Microbaculum marinum OX=1764581 GN=V3328_16715 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.9</expectation>
+      <identity>48.0</identity>
+      <positives>76.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="61">EAYRENVIVYRCINLIAQSAGHVPW</querySeq>
+      <pattern>E +++N +VYRC+ LI ++A  VPW</pattern>
+      <matchSeq start="53" end="77">EGFQKNPVVYRCVRLICEAAASVPW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0A6N6VK37_9HYPH" ac="A0A6N6VK37" length="397" description="Phage portal protein OS=Parvibaculum sedimenti OX=2608632 GN=F2P47_04185 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.9</expectation>
+      <identity>44.1</identity>
+      <positives>61.8</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="61">YGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPW</querySeq>
+      <pattern>Y +L R   E +  N I YRC+ +IA++A  VPW</pattern>
+      <matchSeq start="49" end="79">YASLAR---EGFERNAIAYRCVRMIAEAAAGVPW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0A0N0E8F1_9HYPH" ac="A0A0N0E8F1" length="404" description="Portal protein OS=Ahrensia marina OX=1514904 GN=SU32_03085 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.9</expectation>
+      <identity>30.0</identity>
+      <positives>54.0</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="61">SQNFIELNDIAYGNLIRVDIEA-----YRENVIVYRCINLIAQSAGHVPW</querySeq>
+      <pattern>S  F+ L+++          EA     +  N +V+RC+ +I+++AG VPW</pattern>
+      <matchSeq start="31" end="80">SSGFVALHNVLGAGWTNASYEALSRQGFMRNAVVHRCVRMISEAAGSVPW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0A8D0KL46_SALMN" ac="A0A8D0KL46" length="827" description="Interleukin 31 receptor A OS=Salvator merianae OX=96440 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>7.3</expectation>
+      <identity>20.5</identity>
+      <positives>48.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="83">MIKNYRKKFWKNSTTKSQNFIELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKTGEVIFRLSGALFTNK</querySeq>
+      <pattern>++  YR K++K      +  ++LN    G  + +  EAY  +VI +  +    ++   +P    +S   ++I  L+ ++ ++K</pattern>
+      <matchSeq start="357" end="439">IVNGYRVKYFKEGNVSFERSVDLNKAITGYTLNLSEEAYEVSVIAHNTVGDSPEAILRIPSMYEESNGHQIILNLNASVSSDK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0ABX7ZZI8_9RALS" ac="A0ABX7ZZI8" length="1189" description="Awr type III effector family protein OS=Ralstonia nicotianae OX=3037696 GN=GO999_18260 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>7.4</expectation>
+      <identity>29.9</identity>
+      <positives>50.7</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="92">NLIRVDIEAYRENVIVYRCINLIAQSAG-HVPWKVLK---SKTGEVIFRLSGALFTNKTESQKSRSG</querySeq>
+      <pattern>+++ +D+E      ++YR +  + Q+AG H  W  +K   + T E +  LS  LF   TE Q+   G</pattern>
+      <matchSeq start="710" end="776">SVVPIDVEKGERVGVMYRAVRQVTQAAGPHADWDAVKYDDAATREAMIALSNWLFQQATEHQERPPG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0AAE9ZK96_9PROT" ac="A0AAE9ZK96" length="390" description="Phage portal protein OS=Hyphococcus flavus OX=1866326 GN=PUV54_03005 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.4</expectation>
+      <identity>41.0</identity>
+      <positives>61.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="66">YGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKS</querySeq>
+      <pattern>Y +L R     Y +NVI YRC+ L+A++A   P +V +S</pattern>
+      <matchSeq start="38" end="73">YASLARA---GYEKNVIAYRCVRLVAEAAASAPLRVAES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A9M9L3_BRUC2" ac="A9M9L3" length="397" description="Phage portal protein, HK97 family OS=Brucella canis (strain ATCC 23365 / NCTC 10854 / RM-666) OX=483179 GN=BCAN_A0600 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.4</expectation>
+      <identity>36.6</identity>
+      <positives>56.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="68">YGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVLKSKT</querySeq>
+      <pattern>Y  L R   E +  N + YRC+ LIA++A  +PW + +  T</pattern>
+      <matchSeq start="46" end="83">YSTLAR---EGFMRNPVAYRCVRLIAEAASTIPWLLYEGAT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0ABU9T8A5_9HYPH" ac="A0ABU9T8A5" length="404" description="Phage portal protein OS=Ahrensia kielensis OX=76980 GN=WNY59_12250 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.4</expectation>
+      <identity>30.0</identity>
+      <positives>54.0</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="61">SQNFIELNDIAYGNLIRVDIEA-----YRENVIVYRCINLIAQSAGHVPW</querySeq>
+      <pattern>S  F+ L+++          EA     +  N +V+RC+ +I+++AG VPW</pattern>
+      <matchSeq start="31" end="80">SSGFVALHNVLGAGWTSASYEALSRQGFMRNAVVHRCVRMISEAAGSVPW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0ACH2DD17_9HYPH" ac="A0ACH2DD17" length="428" description="Phage portal protein OS=Methylocystis echinoides OX=29468 GN=RVU70_10960 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.5</expectation>
+      <identity>35.5</identity>
+      <positives>64.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="67">EAYRENVIVYRCINLIAQSAGHVPWKVLKSK</querySeq>
+      <pattern>E Y  N + +RC+ ++A++A  VPW V + +</pattern>
+      <matchSeq start="48" end="78">EGYERNAVCHRCVRMVAEAAASVPWLVYEGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0A1D3TZL3_9FIRM" ac="A0A1D3TZL3" length="466" description="Transposase domain OS=Anaerobium acetethylicum OX=1619234 GN=SAMN05421730_10971 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.6</expectation>
+      <identity>31.8</identity>
+      <positives>56.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="64">IELNDIAYGNLIRVDIEAYRENVIVYRCINLIAQSAGHVPWKVL</querySeq>
+      <pattern>+ L+D  YG + ++  +AY E+ ++   IN   +  GH P +VL</pattern>
+      <matchSeq start="306" end="349">LSLDDNGYGRIEKISYDAYNESTVLIDTINRFKERTGHYPERVL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0ABW0TGA8_9BACL" ac="A0ABW0TGA8" length="704" description="Phage portal protein OS=Sporosarcina soli OX=334736 GN=ACFPRA_01405 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.9</expectation>
+      <identity>45.9</identity>
+      <positives>67.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="72">EAYRENVIVYRCINLIAQSAGHVPWKVL-KSKTGEVI</querySeq>
+      <pattern>E+Y +NV VY C+  IA++A  +P +V  K K GE+I</pattern>
+      <matchSeq start="43" end="79">ESYNKNVWVYACVRAIARAAASIPLEVYEKGKDGELI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-192803-0831-49336963-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-192803-0831-49336963-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q9BZ97|TTY13_HUMAN" type="PROTEIN" length="58"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T19:28:03+00:00" end="2026-11-13T19:29:42+00:00" search="P0Y0M0DT0H0M99.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="7">
+   <hit number="1" database="SP" id="TTY13_HUMAN" ac="Q9BZ97" length="58" description="Putative transcript Y 13 protein OS=Homo sapiens OX=9606 GN=TTTY13 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>310</score>
+      <bits>124.0</bits>
+      <expectation>4.6e-36</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="58">MKTQDDGVLPPYDVNQLLGWDLNLSLFLGLCLMLLLAGSCLPSPGITGLSHGSNREDR</querySeq>
+      <pattern>MKTQDDGVLPPYDVNQLLGWDLNLSLFLGLCLMLLLAGSCLPSPGITGLSHGSNREDR</pattern>
+      <matchSeq start="1" end="58">MKTQDDGVLPPYDVNQLLGWDLNLSLFLGLCLMLLLAGSCLPSPGITGLSHGSNREDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="Q9UMI4_HUMAN" ac="Q9UMI4" length="64" description="PFIV protein (Fragment) OS=Homo sapiens OX=9606 GN=pFIV PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>5.8e-11</expectation>
+      <identity>87.9</identity>
+      <positives>87.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="57">SLFLGLCLMLLLAGSCLPSPGITGLSHGSNRED</querySeq>
+      <pattern>SLFLGLCLMLLLA SCLP PGI GLSH SNRED</pattern>
+      <matchSeq start="13" end="45">SLFLGLCLMLLLAASCLPFPGIMGLSHRSNRED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A517VM65_9PLAN" ac="A0A517VM65" length="578" description="Uncharacterized protein OS=Gimesia algae OX=2527971 GN=Pan161_57970 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.39</expectation>
+      <identity>58.6</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="52">LSLFLGLCLMLLLAGSCLPSPGITGLSHG</querySeq>
+      <pattern>LSLF GLC  L+L G+C+ S  ITGL +G</pattern>
+      <matchSeq start="447" end="475">LSLFGGLCFALILIGACIQSESITGLLYG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0ABX5YW59_9PLAN" ac="A0ABX5YW59" length="578" description="ABC-2 family transporter protein OS=Gimesia maris OX=122 GN=GmarT_56940 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>2.6</expectation>
+      <identity>55.2</identity>
+      <positives>69.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="52">LSLFLGLCLMLLLAGSCLPSPGITGLSHG</querySeq>
+      <pattern>LSLF GLC  L+L  +C+ S  ITGL +G</pattern>
+      <matchSeq start="447" end="475">LSLFGGLCFALILISACIQSEAITGLLYG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A8T2GVC4_9BRAS" ac="A0A8T2GVC4" length="74" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_At01g060550 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>3.0</expectation>
+      <identity>60.0</identity>
+      <positives>72.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="48">LSLFLGLCLMLLLAGSCLPSPGITG</querySeq>
+      <pattern>+S FL LCL +LLAG C+ SP  TG</pattern>
+      <matchSeq start="6" end="30">VSFFLVLCLCILLAGECIESPIFTG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="DEF36_ARATH" ac="Q2V4D5" length="74" description="Putative defensin-like protein 36 OS=Arabidopsis thaliana OX=3702 GN=At1g69828 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>3.0</expectation>
+      <identity>60.0</identity>
+      <positives>72.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="48">LSLFLGLCLMLLLAGSCLPSPGITG</querySeq>
+      <pattern>+S FL LCL +LLAG C+ SP  TG</pattern>
+      <matchSeq start="6" end="30">VSFFLVLCLCILLAGECIESPIFTG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0ABX1E8W5_9PROT" ac="A0ABX1E8W5" length="772" description="P-type Zn(2+) transporter OS=Falsiroseomonas selenitidurans OX=2716335 GN=cadA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>3.6</expectation>
+      <identity>36.5</identity>
+      <positives>59.6</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="55">VLPPYDVNQLLGWDLNLSLFLGLCLMLLLAGSCL----PSPGITGLSHGSNR</querySeq>
+      <pattern>+LPP+    LLGWD + S++ GL ++L+     L    P+  ++GLS G+ R</pattern>
+      <matchSeq start="394" end="441">LLPPF----LLGWDWSTSIYRGLAVLLIACPCALVISVPAAMVSGLSAGARR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

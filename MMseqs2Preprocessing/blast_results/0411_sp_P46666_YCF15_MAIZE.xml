@@ -1,0 +1,4173 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-180006-0405-59478134-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-180006-0405-59478134-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P46666|YCF15_MAIZE" type="PROTEIN" length="99"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T18:00:06+00:00" end="2026-11-13T18:03:53+00:00" search="P0Y0M0DT0H0M227.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="244">
+   <hit number="1" database="TR" id="A0A513WYK5_9POAL" ac="A0A513WYK5" length="99" description="Ycf15 OS=Miscanthus lutarioriparius OX=422564 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>515</score>
+      <bits>203.0</bits>
+      <expectation>4.4e-66</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</pattern>
+      <matchSeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A140GZ64_PANMI" ac="A0A140GZ64" length="99" description="Chloroplast RF15 OS=Panicum miliaceum OX=4540 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>515</score>
+      <bits>203.0</bits>
+      <expectation>4.4e-66</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</pattern>
+      <matchSeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A8T0W933_PANVG" ac="A0A8T0W933" length="99" description="Ycf15 OS=Panicum virgatum OX=38727 GN=PVAP13_2KG222016 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>515</score>
+      <bits>203.0</bits>
+      <expectation>4.4e-66</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</pattern>
+      <matchSeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="YCF15_SACOF" ac="Q6ENR3" length="99" description="Putative uncharacterized protein ycf15 OS=Saccharum officinarum OX=4547 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>515</score>
+      <bits>203.0</bits>
+      <expectation>4.4e-66</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</pattern>
+      <matchSeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="YCF15_SACHY" ac="Q6L3C4" length="99" description="Putative uncharacterized protein ycf15 OS=Saccharum hybrid OX=15819 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>515</score>
+      <bits>203.0</bits>
+      <expectation>4.4e-66</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</pattern>
+      <matchSeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="YCF15_MAIZE" ac="P46666" length="99" description="Putative uncharacterized protein ycf15 OS=Zea mays OX=4577 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>515</score>
+      <bits>203.0</bits>
+      <expectation>4.4e-66</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</pattern>
+      <matchSeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0ABC9GQ38_9POAL" ac="A0ABC9GQ38" length="99" description="Ycf15 OS=Urochloa decumbens OX=240449 GN=URODEC1_LOCUS117957 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>512</score>
+      <bits>201.8</bits>
+      <expectation>1.3e-65</expectation>
+      <identity>99.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILD+IFYIYRNIIE</pattern>
+      <matchSeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDMIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A9W8CCK8_9POAL" ac="A0A9W8CCK8" length="99" description="Ycf15 OS=Paspalum vaginatum OX=158149 GN=BS78_K212700 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>508</score>
+      <bits>200.3</bits>
+      <expectation>5.2e-65</expectation>
+      <identity>99.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTD CLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</pattern>
+      <matchSeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDPCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0ACN2GPF6_9POAL" ac="A0ACN2GPF6" length="99" description="Uncharacterized protein OS=Paspalum vaginatum OX=158149 GN=BS78_01G218800 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>508</score>
+      <bits>200.3</bits>
+      <expectation>5.2e-65</expectation>
+      <identity>99.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTD CLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</pattern>
+      <matchSeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDPCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A835FJX4_9POAL" ac="A0A835FJX4" length="99" description="Ycf15 OS=Digitaria exilis OX=1010633 GN=HU200_009867 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>500</score>
+      <bits>197.2</bits>
+      <expectation>8.6e-64</expectation>
+      <identity>98.0</identity>
+      <positives>98.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFV PILIFRTKRSWILFRIGPERRREAEMPTD CLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</pattern>
+      <matchSeq start="1" end="99">MLIVLFRSKDIRGGRFVCPILIFRTKRSWILFRIGPERRREAEMPTDPCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A8T0N1Y6_PANVG" ac="A0A8T0N1Y6" length="99" description="Ycf15 OS=Panicum virgatum OX=38727 GN=PVAP13_9NG732831 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>494</score>
+      <bits>194.9</bits>
+      <expectation>7.1e-63</expectation>
+      <identity>96.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGP+RRREAEMPTDLCLFSNSPDPIVP+FGTSSAKVTEWVS+QSNPFDKSGVILDIIF IYRNIIE</pattern>
+      <matchSeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPKRRREAEMPTDLCLFSNSPDPIVPIFGTSSAKVTEWVSNQSNPFDKSGVILDIIFSIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A8T0NBA6_PANVG" ac="A0A8T0NBA6" length="99" description="Ycf15 OS=Panicum virgatum OX=38727 GN=PVAP13_9KG310881 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>493</score>
+      <bits>194.5</bits>
+      <expectation>1e-62</expectation>
+      <identity>97.0</identity>
+      <positives>98.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDL LFSNSPDPIV +FGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</pattern>
+      <matchSeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLYLFSNSPDPIVLIFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A453GPR9_AEGTS" ac="A0A453GPR9" length="104" description="Ycf15 OS=Aegilops tauschii subsp. strangulata OX=200361 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>482</score>
+      <bits>190.3</bits>
+      <expectation>5.6e-61</expectation>
+      <identity>95.8</identity>
+      <positives>97.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="99">VLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>VLFRSKDIRGGRFVRPILIFRTKR WILFRIGPERRR+AEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKS VILDIIFYIYRNII+</pattern>
+      <matchSeq start="5" end="100">VLFRSKDIRGGRFVRPILIFRTKRYWILFRIGPERRRKAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSDVILDIIFYIYRNIID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0ABC9H6M0_9POAL" ac="A0ABC9H6M0" length="93" description="Ycf15 OS=Urochloa decumbens OX=240449 GN=URODEC1_LOCUS122330 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>477</score>
+      <bits>188.3</bits>
+      <expectation>2.3e-60</expectation>
+      <identity>98.9</identity>
+      <positives>98.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYI</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILD IFYI</pattern>
+      <matchSeq start="1" end="93">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDKIFYI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A8T0Q5B7_PANVG" ac="A0A8T0Q5B7" length="98" description="Ycf15 OS=Panicum virgatum OX=38727 GN=PVAP13_7KG182725 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>473</score>
+      <bits>186.8</bits>
+      <expectation>1.1e-59</expectation>
+      <identity>93.9</identity>
+      <positives>94.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="98">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNII</querySeq>
+      <pattern>MLIVLFRSKDI GGRFVRPILIFRTKRSWILF IGPERRREAEMPTDLCLFSNSPD IVPVFGT SAKVTEW+SHQSNPFDK GVILDIIFYIYRNII</pattern>
+      <matchSeq start="1" end="98">MLIVLFRSKDICGGRFVRPILIFRTKRSWILFSIGPERRREAEMPTDLCLFSNSPDLIVPVFGTYSAKVTEWISHQSNPFDKLGVILDIIFYIYRNII</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A9W7XCN1_9POAL" ac="A0A9W7XCN1" length="99" description="Ycf15 OS=Paspalum vaginatum OX=158149 GN=BS78_K083200 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>466</score>
+      <bits>184.1</bits>
+      <expectation>1.3e-58</expectation>
+      <identity>90.9</identity>
+      <positives>93.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIV FRSKDIRGG F+RPILI RTKRSWILFRIGP+RRREAEMP D CLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPF+KSGVILDIIFYIY NIIE</pattern>
+      <matchSeq start="1" end="99">MLIVFFRSKDIRGGWFIRPILICRTKRSWILFRIGPKRRREAEMPIDPCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFEKSGVILDIIFYIYGNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0A9W8CCR9_9POAL" ac="A0A9W8CCR9" length="99" description="Ycf15 OS=Paspalum vaginatum OX=158149 GN=BS78_K158500 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>464</score>
+      <bits>183.3</bits>
+      <expectation>2.7e-58</expectation>
+      <identity>89.9</identity>
+      <positives>93.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>MLIV FRSKDIRGG F+RPILI RTKRSWILFRIGP+RRREAEMP D CLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPF+KSGVI+DIIFYIY NIIE</pattern>
+      <matchSeq start="1" end="99">MLIVFFRSKDIRGGWFIRPILICRTKRSWILFRIGPKRRREAEMPIDPCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFEKSGVIIDIIFYIYGNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0A0Q3FC59_BRADI" ac="A0A0Q3FC59" length="96" description="Ycf15 OS=Brachypodium distachyon OX=15368 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>460</score>
+      <bits>181.8</bits>
+      <expectation>9.9e-58</expectation>
+      <identity>92.7</identity>
+      <positives>95.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="99">VLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>VLFRSKDIRGG+FVRPILIFRTKR WILFRIGPERRR+AEMPTDL LFSNSP+PIVPVFGTS AKVTEWVSHQSNPFDKSGVILDIIF IYRNIIE</pattern>
+      <matchSeq start="1" end="96">VLFRSKDIRGGQFVRPILIFRTKRYWILFRIGPERRRKAEMPTDLYLFSNSPEPIVPVFGTSGAKVTEWVSHQSNPFDKSGVILDIIFSIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0ACC3P2K8_SETVI" ac="A0ACC3P2K8" length="117" description="Uncharacterized protein OS=Setaria viridis OX=4556 GN=SEVIR_J004301v4 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>449</score>
+      <bits>177.6</bits>
+      <expectation>9.1e-56</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="86">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVI</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVI</pattern>
+      <matchSeq start="1" end="86">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A0Q3PCF5_BRADI" ac="A0A0Q3PCF5" length="96" description="Ycf15 OS=Brachypodium distachyon OX=15368 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>446</score>
+      <bits>176.4</bits>
+      <expectation>1.4e-55</expectation>
+      <identity>90.6</identity>
+      <positives>95.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="99">VLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>VLF SKDIRGG+FVRPILIFRTKR WILFRIGPERRR+AEMPTDL LFSNSP+PIVPVFGTSSA+VTE +SHQSNPFDKSGVILDIIFYIYRNIIE</pattern>
+      <matchSeq start="1" end="96">VLFPSKDIRGGQFVRPILIFRTKRYWILFRIGPERRRKAEMPTDLSLFSNSPEPIVPVFGTSSAEVTESLSHQSNPFDKSGVILDIIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A2K2DMC1_BRADI" ac="A0A2K2DMC1" length="75" description="Ycf15 OS=Brachypodium distachyon OX=15368 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>383</score>
+      <bits>152.1</bits>
+      <expectation>2.9e-46</expectation>
+      <identity>96.0</identity>
+      <positives>98.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="99">TKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</querySeq>
+      <pattern>TKR WILFRIGPERRR+AEMPTDLCLFSNSP+PIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</pattern>
+      <matchSeq start="1" end="75">TKRYWILFRIGPERRRKAEMPTDLCLFSNSPEPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYIYRNIIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A835E0D3_9POAL" ac="A0A835E0D3" length="82" description="Ycf15 OS=Digitaria exilis OX=1010633 GN=HU200_058661 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>369</score>
+      <bits>146.7</bits>
+      <expectation>4.9e-44</expectation>
+      <identity>94.5</identity>
+      <positives>97.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="93">LIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIFYI</querySeq>
+      <pattern>+IFRTKRSWILFRIGPERRRE EMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDII +I</pattern>
+      <matchSeq start="1" end="73">MIFRTKRSWILFRIGPERRRETEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPFDKSGVILDIIMFI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0ACS3LE59_9POAL" ac="A0ACS3LE59" length="200" description="Uncharacterized protein OS=Stipagrostis hirtigluma subsp. patula OX=1137549 GN=ACP70R_045969 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>1.5e-43</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEW</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEW</pattern>
+      <matchSeq start="1" end="72">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0ACC3P240_SETVI" ac="A0ACC3P240" length="70" description="Uncharacterized protein OS=Setaria viridis OX=4556 GN=SEVIR_J003512v4 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>351</score>
+      <bits>139.8</bits>
+      <expectation>1.9e-41</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="68">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAK</querySeq>
+      <pattern>MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAK</pattern>
+      <matchSeq start="1" end="68">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A072TKF9_MEDTR" ac="A0A072TKF9" length="194" description="Uncharacterized protein ycf73 OS=Medicago truncatula OX=3880 GN=MTR_0002s0330 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>355</score>
+      <bits>141.4</bits>
+      <expectation>1.9e-40</expectation>
+      <identity>95.8</identity>
+      <positives>97.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="74">VLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVS</querySeq>
+      <pattern>VLFRSKDIRGGRFVRPILIFRTKR WILFRIGPERRR+AEMPTDLCLFSNSPDPIVPVFGTSSAKVTEW S</pattern>
+      <matchSeq start="33" end="103">VLFRSKDIRGGRFVRPILIFRTKRYWILFRIGPERRRKAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A453NT38_AEGTS" ac="A0A453NT38" length="98" description="Ycf15 OS=Aegilops tauschii subsp. strangulata OX=200361 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>327</score>
+      <bits>130.6</bits>
+      <expectation>2e-37</expectation>
+      <identity>95.5</identity>
+      <positives>97.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="69">VLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKV</querySeq>
+      <pattern>VLFRSKDIRGGRFV PILIFRTKR WILFRIGPERRR+AEMPTDLCLFSNSPDPIVPVFGTSSAKV</pattern>
+      <matchSeq start="33" end="98">VLFRSKDIRGGRFVHPILIFRTKRYWILFRIGPERRRKAEMPTDLCLFSNSPDPIVPVFGTSSAKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A452XER0_AEGTS" ac="A0A452XER0" length="83" description="Uncharacterized protein OS=Aegilops tauschii subsp. strangulata OX=200361 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>297</score>
+      <bits>119.0</bits>
+      <expectation>4.8e-33</expectation>
+      <identity>93.3</identity>
+      <positives>96.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="63">VLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFG</querySeq>
+      <pattern>VLFR KDIRGGRFVRPILIFRTKR WILFRIGP+RRR+AEMPTDLCLFSNSPDPIVPVFG</pattern>
+      <matchSeq start="4" end="63">VLFRRKDIRGGRFVRPILIFRTKRYWILFRIGPKRRRKAEMPTDLCLFSNSPDPIVPVFG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A452XEP1_AEGTS" ac="A0A452XEP1" length="91" description="Uncharacterized protein OS=Aegilops tauschii subsp. strangulata OX=200361 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>297</score>
+      <bits>119.0</bits>
+      <expectation>6.1e-33</expectation>
+      <identity>93.3</identity>
+      <positives>96.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="63">VLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFG</querySeq>
+      <pattern>VLFR KDIRGGRFVRPILIFRTKR WILFRIGP+RRR+AEMPTDLCLFSNSPDPIVPVFG</pattern>
+      <matchSeq start="12" end="71">VLFRRKDIRGGRFVRPILIFRTKRYWILFRIGPKRRRKAEMPTDLCLFSNSPDPIVPVFG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A2Z2C821_COCNU" ac="A0A2Z2C821" length="107" description="Hypothetical chloroplast RF15 OS=Cocos nucifera OX=13894 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>275</score>
+      <bits>110.5</bits>
+      <expectation>2.2e-29</expectation>
+      <identity>84.1</identity>
+      <positives>87.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="77">RFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQS</querySeq>
+      <pattern>R VRPI IF TKR WILFRIGPERRR A MPTD+CLFSNSPDPIVP+ GTSSAKVTEWVS QS</pattern>
+      <matchSeq start="18" end="80">RPVRPIQIFTTKRYWILFRIGPERRRRAGMPTDVCLFSNSPDPIVPILGTSSAKVTEWVSRQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A1B2FZY4_DENNO" ac="A0A1B2FZY4" length="77" description="Hypothetical chloroplast RF15 OS=Dendrobium nobile OX=94219 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>272</score>
+      <bits>109.4</bits>
+      <expectation>2.6e-29</expectation>
+      <identity>72.7</identity>
+      <positives>79.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="77">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQS</querySeq>
+      <pattern>MLI LFRSKDI GG FV  +  +   R  ILFRIGPERRR+A MPTD+CLFSNSPDPIVP+  TSSAKVTEWVS QS</pattern>
+      <matchSeq start="1" end="75">MLIALFRSKDIHGGGFV--LFRYSRPRGTILFRIGPERRRKAGMPTDVCLFSNSPDPIVPILRTSSAKVTEWVSRQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A889ZD91_9ASPA" ac="A0A889ZD91" length="77" description="Hypothetical chloroplast RF15 OS=Thunia alba OX=38195 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>269</score>
+      <bits>108.2</bits>
+      <expectation>7.5e-29</expectation>
+      <identity>72.7</identity>
+      <positives>77.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="77">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQS</querySeq>
+      <pattern>MLI LFRSKDI GG FV  +  +   R  ILFRIGPERRR A MPTD+CLFSNSPDPIVP+  TSSAKVTEWVS QS</pattern>
+      <matchSeq start="1" end="75">MLIALFRSKDIHGGGFV--LFRYSRPRGTILFRIGPERRRRAGMPTDVCLFSNSPDPIVPILITSSAKVTEWVSRQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A0K0N896_9LILI" ac="A0A0K0N896" length="126" description="Ycf15 OS=Dioscorea nipponica OX=64700 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>267</score>
+      <bits>107.5</bits>
+      <expectation>6.1e-28</expectation>
+      <identity>89.3</identity>
+      <positives>92.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="77">IFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQS</querySeq>
+      <pattern>IF TKR WILFRIGPERRREA MPTD+CLFSNSPDPIVP+FGTSSAKVTEWVS QS</pattern>
+      <matchSeq start="20" end="75">IFTTKRYWILFRIGPERRREAGMPTDVCLFSNSPDPIVPIFGTSSAKVTEWVSRQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0ACS3LEQ2_9POAL" ac="A0ACS3LEQ2" length="49" description="Uncharacterized protein OS=Stipagrostis hirtigluma subsp. patula OX=1137549 GN=ACP70R_045914 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>248</score>
+      <bits>100.1</bits>
+      <expectation>5.7e-26</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="27" end="72">RSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEW</querySeq>
+      <pattern>RSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEW</pattern>
+      <matchSeq start="4" end="49">RSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0A890A318_9LAMI" ac="A0A890A318" length="89" description="Uncharacterized protein ycf15 OS=Ligustrum quihoui OX=528268 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>200</score>
+      <bits>81.6</bits>
+      <expectation>3.3e-18</expectation>
+      <identity>68.3</identity>
+      <positives>75.0</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="77">RPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQS</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR A       L  NSPDPIVP+ GTSSAKVTEWVS QS</pattern>
+      <matchSeq start="17" end="72">QPVQIFTTKKYWILFRIGPERRRNATRR----LLLNSPDPIVPILGTSSAKVTEWVSRQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0AAP0B4M5_9ASPA" ac="A0AAP0B4M5" length="240" description="Protein ycf2 OS=Platanthera zijinensis OX=2320716 GN=ycf2-A PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>208</score>
+      <bits>84.7</bits>
+      <expectation>6.7e-18</expectation>
+      <identity>70.0</identity>
+      <positives>80.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="77">ILIFRTKR--SWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQS</querySeq>
+      <pattern>I++FR  R    ILFRIGPE RR+  MPTD+CLFSNSPDPI+P+F T SAKVTEWVS QS</pattern>
+      <matchSeq start="176" end="235">IVLFRYSRPRGMILFRIGPEIRRKVGMPTDVCLFSNSPDPIIPIFITYSAKVTEWVSRQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A9E7EUC1_9LILI" ac="A0A9E7EUC1" length="63" description="Protein ycf15 OS=Musa troglodytarum OX=320322 GN=MUK42_02606 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>178</score>
+      <bits>73.2</bits>
+      <expectation>3.6e-15</expectation>
+      <identity>66.7</identity>
+      <positives>71.9</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="77">TKRSWILFRIGPERRREAEMPTDLCLFSNSP----DPIVPVFGTSSAKVTEWVSHQS</querySeq>
+      <pattern>TKR WILFRIGPERRR+A MPTD+CL   S      P   + GTSSAKVTEWVS QS</pattern>
+      <matchSeq start="2" end="58">TKRYWILFRIGPERRRKAGMPTDVCLQQTSVYSLIHPTRSILGTSSAKVTEWVSRQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0A0K0N870_9LILI" ac="A0A0K0N870" length="85" description="Ycf15 OS=Dioscorea nipponica OX=64700 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>7.4e-14</expectation>
+      <identity>91.2</identity>
+      <positives>97.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="44" end="77">MPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQS</querySeq>
+      <pattern>MPTD+CLFSNSPDPIVP+FGTSSAKVTEWVS QS</pattern>
+      <matchSeq start="1" end="34">MPTDVCLFSNSPDPIVPIFGTSSAKVTEWVSRQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0A5D2WS65_GOSMU" ac="A0A5D2WS65" length="73" description="Uncharacterized protein (Fragment) OS=Gossypium mustelinum OX=34275 GN=E1A91_A12G093400v1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>7.7e-14</expectation>
+      <identity>56.6</identity>
+      <positives>65.8</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="77">VLFRSK--DIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVSHQS</querySeq>
+      <pattern>+LF SK  DI G   V PI  F T++ WILFRIGPERR ++   T   L  NSP PI+P+FGT SA VTE VS QS</pattern>
+      <matchSeq start="1" end="73">ILFCSKVKDIHG--VVHPIQTFTTEKYWILFRIGPERRTKSWNATRHLLL-NSPGPIIPIFGTPSASVTERVSSQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A453LML2_AEGTS" ac="A0A453LML2" length="109" description="Uncharacterized protein OS=Aegilops tauschii subsp. strangulata OX=200361 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>168</score>
+      <bits>69.3</bits>
+      <expectation>3.9e-13</expectation>
+      <identity>93.9</identity>
+      <positives>97.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="74">AEMPTDLCLFSNSPDPIVPVFGTSSAKVTEWVS</querySeq>
+      <pattern>AEMPTDLCLFSNSPDPIVP+FGTSSAKVTEW S</pattern>
+      <matchSeq start="1" end="33">AEMPTDLCLFSNSPDPIVPIFGTSSAKVTEWES</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A3N9TAE8_9VIBR" ac="A0A3N9TAE8" length="48" description="Ycf15 OS=Vibrio viridaestus OX=2487322 GN=EES38_21730 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>6.9e-13</expectation>
+      <identity>77.8</identity>
+      <positives>82.2</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="45">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>MLIVLFRSKDI G   VRPI IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="1" end="43">MLIVLFRSKDIHGX--VRPIQIFTTKKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A444JHX2_9GAMM" ac="A0A444JHX2" length="48" description="Ycf15 OS=Photobacterium chitinilyticum OX=2485123 GN=EDI28_26160 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>6.9e-13</expectation>
+      <identity>77.8</identity>
+      <positives>82.2</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="45">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>MLIVLFRSKDI G   VRPI IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="1" end="43">MLIVLFRSKDIHG--VVRPIQIFTTKKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A2P6P170_ROSCH" ac="A0A2P6P170" length="97" description="Uncharacterized protein OS=Rosa chinensis OX=74649 GN=RchiOBHm_CPg0501791 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <bits>67.4</bits>
+      <expectation>1.6e-12</expectation>
+      <identity>77.3</identity>
+      <positives>84.1</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="46">IVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>IVLFRSKDIRG   VRPI IF TK+ WILFR+GPERRR+A MPT</pattern>
+      <matchSeq start="52" end="93">IVLFRSKDIRGA--VRPIQIFTTKKYWILFRVGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0A3S0MGY8_9VIBR" ac="A0A3S0MGY8" length="48" description="Ycf15 OS=Vibrio aquaticus OX=2496559 GN=EJ063_20265 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>4.5e-11</expectation>
+      <identity>75.6</identity>
+      <positives>80.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="45">MLIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>MLIVLFRSKDI G   VRPI IF TK+  ILFRIGPERRR+A MP</pattern>
+      <matchSeq start="1" end="43">MLIVLFRSKDIHGX--VRPIQIFTTKKYXILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A2P6QFA9_ROSCH" ac="A0A2P6QFA9" length="69" description="Uncharacterized protein OS=Rosa chinensis OX=74649 GN=RchiOBHm_Chr5g0051131 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>2.4e-09</expectation>
+      <identity>72.5</identity>
+      <positives>80.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="46">RSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>R KDIRG   VRPI IF TK+ WILFR+GPERRR+A MPT</pattern>
+      <matchSeq start="28" end="65">RCKDIRGA--VRPIQIFTTKKYWILFRVGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A2P6P1D1_ROSCH" ac="A0A2P6P1D1" length="69" description="Uncharacterized protein OS=Rosa chinensis OX=74649 GN=RchiOBHm_CPg0502621 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>2.4e-09</expectation>
+      <identity>72.5</identity>
+      <positives>80.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="46">RSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>R KDIRG   VRPI IF TK+ WILFR+GPERRR+A MPT</pattern>
+      <matchSeq start="28" end="65">RCKDIRGA--VRPIQIFTTKKYWILFRVGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="W9S8N0_9ROSA" ac="W9S8N0" length="133" description="Uncharacterized protein OS=Morus notabilis OX=981085 GN=L484_005963 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>2.3e-07</expectation>
+      <identity>75.7</identity>
+      <positives>78.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="46">DIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>DI G   VRPI IF TK+ WILFRIGPERRREA MPT</pattern>
+      <matchSeq start="97" end="131">DIHGA--VRPIQIFTTKKYWILFRIGPERRREAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0AAV1QNX9_9ROSI" ac="A0AAV1QNX9" length="135" description="Uncharacterized protein OS=Dovyalis caffra OX=77055 GN=DCAF_LOCUS1054 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>127</score>
+      <bits>53.5</bits>
+      <expectation>9.4e-07</expectation>
+      <identity>64.4</identity>
+      <positives>73.3</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="47">LFRSKDIRGGRFVRPILIFRTKRSWILFRIGPER--RREAEMPTD</querySeq>
+      <pattern>++  KDI G   VRPI IF TK+ WILFRIGPER  RR+A MPTD</pattern>
+      <matchSeq start="1" end="43">MYGCKDIHGA--VRPIQIFTTKKYWILFRIGPERRKRRKAGMPTD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0A6D2JE02_9BRAS" ac="A0A6D2JE02" length="238" description="Orf77 OS=Microthlaspi erraticum OX=1685480 GN=MERR_LOCUS10744 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>1.3e-06</expectation>
+      <identity>73.7</identity>
+      <positives>78.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="45">SKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>SKDI G   VRPI IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="198" end="233">SKDIHG--VVRPIQIFTTKKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0A6D2I2Z4_9BRAS" ac="A0A6D2I2Z4" length="246" description="Orf77 OS=Microthlaspi erraticum OX=1685480 GN=MERR_LOCUS9614 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>1.3e-06</expectation>
+      <identity>73.7</identity>
+      <positives>78.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="45">SKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>SKDI G   VRPI IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="206" end="241">SKDIHG--VVRPIQIFTTKKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0A6D2IAB3_9BRAS" ac="A0A6D2IAB3" length="539" description="Orf77 OS=Microthlaspi erraticum OX=1685480 GN=MERR_LOCUS12856 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>1.9e-06</expectation>
+      <identity>73.7</identity>
+      <positives>78.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="45">SKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>SKDI G   VRPI IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="499" end="534">SKDIHG--VVRPIQIFTTKKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0ABR2CBW1_9ROSI" ac="A0ABR2CBW1" length="494" description="Protein Ycf2 OS=Hibiscus sabdariffa OX=183260 GN=V6N12_032175 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>2.6e-06</expectation>
+      <identity>67.5</identity>
+      <positives>77.5</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="48">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIGPERRR+A MP D+</pattern>
+      <matchSeq start="455" end="492">KDIHGA--VRPIQIFTTEKYWILFRIGPERRRKAGMPPDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0ACS1R201_CUCMM" ac="A0ACS1R201" length="499" description="Chloroplast RF2 (Plastid) OS=Cucumis melo var. makuwa OX=1194695 GN=E6C27_scaffold48914G00040 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>2.6e-06</expectation>
+      <identity>65.0</identity>
+      <positives>77.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="56">VRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPD</querySeq>
+      <pattern>+RPI IF TK+ WILFR+GPERRR+A MPT L  F+  PD</pattern>
+      <matchSeq start="394" end="432">LRPIQIFTTKKDWILFRVGPERRRKAGMPTGLIEFTR-PD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0ABR2CBY0_9ROSI" ac="A0ABR2CBY0" length="1720" description="Protein Ycf2 OS=Hibiscus sabdariffa OX=183260 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>2.8e-06</expectation>
+      <identity>67.5</identity>
+      <positives>77.5</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="48">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIGPERRR+A MP D+</pattern>
+      <matchSeq start="1681" end="1718">KDIHGA--VRPIQIFTTEKYWILFRIGPERRRKAGMPPDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A0D3CHF0_BRAOL" ac="A0A0D3CHF0" length="97" description="Orf77 OS=Brassica oleracea var. oleracea OX=109376 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>121</score>
+      <bits>51.2</bits>
+      <expectation>3.4e-06</expectation>
+      <identity>72.2</identity>
+      <positives>77.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="45">DIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>DI G   VRPI IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="59" end="92">DIHG--VVRPIQIFTTKKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="R4NP41_SESIN" ac="R4NP41" length="65" description="Uncharacterized protein ycf15 OS=Sesamum indicum OX=4182 GN=ylt_82 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>4.7e-06</expectation>
+      <identity>67.7</identity>
+      <positives>83.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="48">RPILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPTD+</pattern>
+      <matchSeq start="33" end="63">QPVQIFTTKKYWILFRIGPERRRKGGMPTDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="SP" id="YCF15_CUSRE" ac="P32034" length="77" description="Putative uncharacterized protein ycf15 OS=Cuscuta reflexa OX=4129 GN=ycf15 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.1e-06</expectation>
+      <identity>53.7</identity>
+      <positives>70.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="58">RPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPI</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MP    +    P+P+</pattern>
+      <matchSeq start="17" end="57">QPVHIFTTKKYWILFRIGPERRRKAGMPKASIISFTRPNPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="G9IBA7_SESIN" ac="G9IBA7" length="82" description="Uncharacterized protein ycf15 OS=Sesamum indicum OX=4182 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.9e-06</expectation>
+      <identity>67.7</identity>
+      <positives>83.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="48">RPILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPTD+</pattern>
+      <matchSeq start="50" end="80">QPVQIFTTKKYWILFRIGPERRRKGGMPTDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0ABR0QGQ1_GOSAR" ac="A0ABR0QGQ1" length="189" description="Ycf2 OS=Gossypium arboreum OX=29729 GN=PVK06_007211 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>8e-06</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="150" end="184">KDIHGA--VRPIQIFTTEKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0ABM2Z5L9_GOSHI" ac="A0ABM2Z5L9" length="191" description="Protein Ycf2-like OS=Gossypium hirsutum OX=3635 GN=LOC121209834 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>8.2e-06</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="152" end="186">KDIHGA--VRPIQIFTTEKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0A8B0R9J1_9ERIC" ac="A0A8B0R9J1" length="49" description="Uncharacterized protein ycf15 OS=Bryocarpum himalaicum OX=199607 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>9.2e-06</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="17" end="45">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0A891ZLT7_9LAMI" ac="A0A891ZLT7" length="49" description="Uncharacterized protein ycf15 OS=Osmanthus didymopetalus OX=653727 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>9.2e-06</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="17" end="45">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0A342K614_9LAMI" ac="A0A342K614" length="49" description="Uncharacterized protein ycf15 OS=Abeliophyllum distichum OX=126358 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>9.2e-06</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="17" end="45">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0ACN3VGX2_PHAVU" ac="A0ACN3VGX2" length="49" description="Ycf15 protein OS=Phaseolus vulgaris OX=3885 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>9.2e-06</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="17" end="45">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0ACN3VGR4_PHAVU" ac="A0ACN3VGR4" length="49" description="Ycf15 protein OS=Phaseolus vulgaris OX=3885 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>9.2e-06</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="17" end="45">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="F4MKT9_OLEEU" ac="F4MKT9" length="49" description="Uncharacterized protein ycf15 OS=Olea europaea subsp. europaea OX=158383 GN=OLEA9_PT000064 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>9.2e-06</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="17" end="45">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="SP" id="YCF15_PIPCE" ac="Q06GJ8" length="88" description="Putative uncharacterized protein ycf15 OS=Piper cenocladum OX=398741 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>1.1e-05</expectation>
+      <identity>71.0</identity>
+      <positives>83.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="48">RPILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>+PI IF T+R WILFRIGPERR +A MPTD+</pattern>
+      <matchSeq start="50" end="80">QPIQIFTTERYWILFRIGPERRGKARMPTDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0A2D3C301_9LAMI" ac="A0A2D3C301" length="65" description="Uncharacterized protein ycf15 OS=Forsythia suspensa OX=126418 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.3e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0A2P1M6X7_9LAMI" ac="A0A2P1M6X7" length="65" description="Uncharacterized protein ycf15 OS=Forsythia ovata OX=205694 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.3e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0A4Y5UCV7_9LAMI" ac="A0A4Y5UCV7" length="65" description="Uncharacterized protein ycf15 OS=Fraxinus pennsylvanica OX=56036 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.3e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="E3TJT0_OLEEU" ac="E3TJT0" length="67" description="Uncharacterized protein ycf15 OS=Olea europaea OX=4146 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.4e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="35" end="63">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0A7U0ITH4_LYCCN" ac="A0A7U0ITH4" length="70" description="Uncharacterized protein ycf15 OS=Lycium chinense OX=112883 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.5e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0A059Q5W3_HYONI" ac="A0A059Q5W3" length="70" description="Uncharacterized protein ycf15 OS=Hyoscyamus niger OX=4079 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.5e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="I6N9A0_DATST" ac="I6N9A0" length="70" description="Uncharacterized protein ycf15 OS=Datura stramonium OX=4076 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.5e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="SP" id="YCF15_TOBAC" ac="P12195" length="70" description="Putative uncharacterized protein ycf15 OS=Nicotiana tabacum OX=4097 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.5e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="SP" id="YCF15_ATRBE" ac="Q7FNR5" length="70" description="Putative uncharacterized protein ycf15 OS=Atropa belladonna OX=33113 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.5e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0ABR2CBZ5_9ROSI" ac="A0ABR2CBZ5" length="494" description="Protein Ycf2 OS=Hibiscus sabdariffa OX=183260 GN=V6N12_032205 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>1.7e-05</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="455" end="489">KDIHGA--VRPIQIFTTEKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0ABR1ZD13_9ROSI" ac="A0ABR1ZD13" length="494" description="Uncharacterized protein OS=Hibiscus sabdariffa OX=183260 GN=V6N11_059482 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>1.7e-05</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="455" end="489">KDIHGA--VRPIQIFTTEKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0ACC0RJD0_POPTR" ac="A0ACC0RJD0" length="62" description="Uncharacterized protein OS=Populus trichocarpa OX=3694 GN=POPTR_019G028450v4 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>1.7e-05</expectation>
+      <identity>60.0</identity>
+      <positives>71.1</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="47">LFRSKDIRGGRFVRPILIFRTKRSWILFRIGPER--RREAEMPTD</querySeq>
+      <pattern>++  KDI G   VRPI IF TK+ WILFRIG ER  RR+A MPT+</pattern>
+      <matchSeq start="17" end="59">MYGCKDIHGA--VRPIQIFTTKKYWILFRIGSERRKRRKAGMPTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0ABR0QA80_GOSAR" ac="A0ABR0QA80" length="750" description="ATPase AAA-type core domain-containing protein OS=Gossypium arboreum OX=29729 GN=PVK06_011644 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>1.8e-05</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="711" end="745">KDIHGA--VRPIQIFTTEKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0ABR2CBT4_9ROSI" ac="A0ABR2CBT4" length="820" description="Protein Ycf2 OS=Hibiscus sabdariffa OX=183260 GN=V6N12_032161 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>1.8e-05</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="781" end="815">KDIHGA--VRPIQIFTTEKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0ABR2EAZ1_9ROSI" ac="A0ABR2EAZ1" length="1537" description="Protein Ycf2 OS=Hibiscus sabdariffa OX=183260 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>1.8e-05</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="1498" end="1532">KDIHGA--VRPIQIFTTEKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0ABR1ZMT2_9ROSI" ac="A0ABR1ZMT2" length="1537" description="Protein Ycf2 OS=Hibiscus sabdariffa OX=183260 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>1.8e-05</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="1498" end="1532">KDIHGA--VRPIQIFTTEKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0ABR2AJN1_9ROSI" ac="A0ABR2AJN1" length="2243" description="Protein Ycf2 OS=Hibiscus sabdariffa OX=183260 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>1.8e-05</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="2204" end="2238">KDIHGA--VRPIQIFTTEKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0ABR1ZTQ2_9ROSI" ac="A0ABR1ZTQ2" length="2243" description="Protein Ycf2 OS=Hibiscus sabdariffa OX=183260 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>1.8e-05</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="2204" end="2238">KDIHGA--VRPIQIFTTEKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0A3A8PI68_9BACT" ac="A0A3A8PI68" length="49" description="Ycf15 OS=Corallococcus interemptor OX=2316720 GN=D7X96_39275 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>1.8e-05</expectation>
+      <identity>76.7</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="46">VRPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>VR I IF T+R WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="13" end="42">VRLIQIFTTERYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0A8A4HJ91_9ERIC" ac="A0A8A4HJ91" length="82" description="Uncharacterized protein ycf15 OS=Styrax duclouxii OX=2819571 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.9e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0A8A4HFI4_9ERIC" ac="A0A8A4HFI4" length="82" description="Uncharacterized protein ycf15 OS=Styrax odoratissimus OX=153543 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.9e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0A0U1Y8A3_9ERIC" ac="A0A0U1Y8A3" length="82" description="Uncharacterized protein ycf15 OS=Lysimachia coreana OX=1454370 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.9e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0A3G2KKV4_CAPAN" ac="A0A3G2KKV4" length="87" description="Uncharacterized protein ycf15 OS=Capsicum annuum OX=4072 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0A060BII5_CAPAN" ac="A0A060BII5" length="87" description="Uncharacterized protein ycf15 OS=Capsicum annuum var. glabriusculum OX=165789 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="G3LV48_9SOLA" ac="G3LV48" length="87" description="Uncharacterized protein ycf15 OS=Nicotiana undulata OX=118713 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0A482C2W3_9SOLN" ac="A0A482C2W3" length="87" description="Uncharacterized protein ycf15 OS=Solanum pinnatisectum OX=50273 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0A482CB45_SOLVR" ac="A0A482CB45" length="87" description="Uncharacterized protein ycf15 OS=Solanum verrucosum OX=315347 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0A291PVR9_9SOLN" ac="A0A291PVR9" length="87" description="Uncharacterized protein ycf15 OS=Solanum stoloniferum OX=62892 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0A6M3RI61_ANIAC" ac="A0A6M3RI61" length="87" description="Uncharacterized protein ycf15 OS=Anisodus acutangulus OX=402998 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0A0N7CF87_SOLCO" ac="A0A0N7CF87" length="87" description="Uncharacterized protein ycf15 OS=Solanum commersonii OX=4109 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="J7H9P3_CAPAN" ac="J7H9P3" length="87" description="Uncharacterized protein ycf15 OS=Capsicum annuum OX=4072 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="SP" id="YCF15_SOLTU" ac="Q2VED6" length="87" description="Putative uncharacterized protein ycf15 OS=Solanum tuberosum OX=4113 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="SP" id="YCF15_SOLBU" ac="Q2MIE3" length="87" description="Putative uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="SP" id="YCF15_NICTO" ac="Q33BV4" length="87" description="Putative uncharacterized protein ycf15 OS=Nicotiana tomentosiformis OX=4098 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="SP" id="YCF15_NICSY" ac="Q3C1N3" length="87" description="Putative uncharacterized protein ycf15 OS=Nicotiana sylvestris OX=4096 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>2.2e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="A0A0D3CHF1_BRAOL" ac="A0A0D3CHF1" length="167" description="Orf77 OS=Brassica oleracea var. oleracea OX=109376 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>2.3e-05</expectation>
+      <identity>79.3</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="45">VRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>VRPI IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="134" end="162">VRPIQIFTTKKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="A0ABD3C0E2_9LAMI" ac="A0ABD3C0E2" length="77" description="Uncharacterized protein ycf15 OS=Castilleja foliolosa OX=1961234 GN=YCF15A_1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>2.5e-05</expectation>
+      <identity>69.0</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF+TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFKTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="TR" id="A0ABR2U610_9ROSI" ac="A0ABR2U610" length="219" description="Protein Ycf2 OS=Hibiscus sabdariffa OX=183260 GN=V6N11_058748 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>2.8e-05</expectation>
+      <identity>65.8</identity>
+      <positives>78.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="45">SKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+KDI G   VRPI IF T++ WILFRIGP+RRR+A MP</pattern>
+      <matchSeq start="179" end="214">TKDIHGA--VRPIQIFTTEKYWILFRIGPKRRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="A0A804HXL5_MUSAM" ac="A0A804HXL5" length="29" description="Ycf15 OS=Musa acuminata subsp. malaccensis OX=214687 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>3.7e-05</expectation>
+      <identity>72.4</identity>
+      <positives>79.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="50">IFRTKRSWILFRIGPERRREAEMPTDLCL</querySeq>
+      <pattern>IF  KR WILF IGPERRR+A MPTD+ L</pattern>
+      <matchSeq start="1" end="29">IFTIKRYWILFHIGPERRRKARMPTDIYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0A1B0TCU0_9LAMI" ac="A0A1B0TCU0" length="49" description="Uncharacterized protein ycf15 OS=Scrophularia dentata OX=1684752 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>3.7e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="17" end="45">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="TR" id="A0A0U1YEK4_9LAMI" ac="A0A0U1YEK4" length="49" description="Uncharacterized protein ycf15 OS=Scrophularia takesimensis OX=692148 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>3.7e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="17" end="45">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0ABD3BAV9_9LAMI" ac="A0ABD3BAV9" length="49" description="Uncharacterized protein ycf15 OS=Castilleja foliolosa OX=1961234 GN=YCF15A_4 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>3.7e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="17" end="45">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="A0ABD3BM28_9LAMI" ac="A0ABD3BM28" length="50" description="Uncharacterized protein ycf15 OS=Castilleja foliolosa OX=1961234 GN=YCF15A_3 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>3.8e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="17" end="45">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="A0A1W5YJ08_ACTAR" ac="A0A1W5YJ08" length="82" description="Uncharacterized protein ycf15 OS=Actinidia arguta OX=64478 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>3.9e-05</expectation>
+      <identity>69.0</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ +F TK+ WILFRIGPER R+AEMPT</pattern>
+      <matchSeq start="50" end="78">QPVQLFTTKKYWILFRIGPERGRKAEMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="A0A1B1FJZ1_POGCB" ac="A0A1B1FJZ1" length="82" description="Uncharacterized protein ycf15 OS=Pogostemon cablin OX=28511 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>3.9e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKDWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="A0A3G3LN28_9ERIC" ac="A0A3G3LN28" length="82" description="Uncharacterized protein ycf15 OS=Actinidia rufa OX=165716 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>3.9e-05</expectation>
+      <identity>69.0</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ +F TK+ WILFRIGPER R+AEMPT</pattern>
+      <matchSeq start="50" end="78">QPVQLFTTKKYWILFRIGPERGRKAEMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="TR" id="A0A443Q561_9MAGN" ac="A0A443Q561" length="95" description="Uncharacterized protein OS=Cinnamomum micranthum f. kanehirae OX=337451 GN=CKAN_02765500 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>5.1e-05</expectation>
+      <identity>76.7</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="46">VRPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>VR I IF T+R WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="59" end="88">VRLIQIFTTERYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0A2G9G3T5_9LAMI" ac="A0A2G9G3T5" length="80" description="Uncharacterized protein ycf15 OS=Handroanthus impetiginosus OX=429701 GN=CDL12_27934 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>5.2e-05</expectation>
+      <identity>64.5</identity>
+      <positives>80.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="48">RPILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>+P+ IF TK+ WILFRI PERRR+  MPTD+</pattern>
+      <matchSeq start="48" end="78">QPVQIFTTKKYWILFRISPERRRKGGMPTDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="TR" id="A0A8E5I0Q7_9LAMI" ac="A0A8E5I0Q7" length="65" description="Uncharacterized protein ycf15 OS=Ocimum kilimandscharicum OX=1224218 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>5.3e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="A0A7U0M817_9LAMI" ac="A0A7U0M817" length="65" description="Uncharacterized protein ycf15 OS=Ocimum gratissimum OX=204144 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>5.3e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="A0A4Y5UGM1_9LAMI" ac="A0A4Y5UGM1" length="65" description="Uncharacterized protein ycf15 OS=Ocimum tenuiflorum OX=204149 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>5.3e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="A0A1B0TCT5_9LAMI" ac="A0A1B0TCT5" length="65" description="Uncharacterized protein ycf15 OS=Scrophularia dentata OX=1684752 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>5.3e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="A0A0K0N8Q0_PERFR" ac="A0A0K0N8Q0" length="65" description="Uncharacterized protein ycf15 OS=Perilla frutescens OX=48386 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>5.3e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0A0U1YHK8_9LAMI" ac="A0A0U1YHK8" length="65" description="Uncharacterized protein ycf15 OS=Scrophularia takesimensis OX=692148 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>5.3e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="TR" id="A0A0M4C5E7_9LAMI" ac="A0A0M4C5E7" length="65" description="Uncharacterized protein ycf15 OS=Tanaecium tetragonolobum OX=353963 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>5.3e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="TR" id="A0ABD3B6Y1_9LAMI" ac="A0ABD3B6Y1" length="65" description="Uncharacterized protein ycf15 OS=Castilleja foliolosa OX=1961234 GN=YCF15A_5 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>5.3e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="TR" id="A0ACM8UN26_THATH" ac="A0ACM8UN26" length="99" description="Hypothetical chloroplast RF15 OS=Thalictrum thalictroides OX=46969 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>5.6e-05</expectation>
+      <identity>71.0</identity>
+      <positives>83.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="48">RPILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>+P  IF TKR WILFRIGPERRR+A MPT++</pattern>
+      <matchSeq start="50" end="80">QPEPIFTTKRYWILFRIGPERRRKAGMPTNV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="TR" id="A0ACM8UNC4_THATH" ac="A0ACM8UNC4" length="100" description="Hypothetical chloroplast RF15 OS=Thalictrum thalictroides OX=46969 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>5.7e-05</expectation>
+      <identity>75.0</identity>
+      <positives>89.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="48">LIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>+IF TKR WILFRIGPERRR+A MPT++</pattern>
+      <matchSeq start="54" end="81">IIFTTKRYWILFRIGPERRRKAGMPTNV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="TR" id="A0A4V4HWE0_9FLAO" ac="A0A4V4HWE0" length="85" description="Ycf15 OS=Flagellimonas alvinocaridis OX=2530200 GN=EZV76_16800 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>5.8e-05</expectation>
+      <identity>71.4</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="53" end="80">QPVQIFTTKKYWILFRIGPERRRKARMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="TR" id="A0A890A2S2_SOLRO" ac="A0A890A2S2" length="87" description="Uncharacterized protein ycf15 OS=Solanum rostratum OX=45839 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>6.1e-05</expectation>
+      <identity>72.4</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P  IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPFQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="TR" id="A0A4S8I2E0_MUSBA" ac="A0A4S8I2E0" length="105" description="Uncharacterized protein OS=Musa balbisiana OX=52838 GN=C4D60_Mb00t11720 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>6.3e-05</expectation>
+      <identity>45.5</identity>
+      <positives>54.5</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="72">IVLFRSKDIRGGRFVRPILIFRTKR----SWILFRIGPERRREAEM---PTDLCLFSNSPDPIVPVFGTSSAKVTEW</querySeq>
+      <pattern>IVLFRSKDI GGRFV    +FR  R     ++   +  E R E +     TD+CLFSNSP      FG    +VTEW</pattern>
+      <matchSeq start="26" end="96">IVLFRSKDIHGGRFV----LFRYARPRGTGFLGSALKGEGRTECQQGSRSTDVCLFSNSPARY--HFGKVQCQVTEW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="TR" id="A0A8X7YJR5_POPTO" ac="A0A8X7YJR5" length="1829" description="Protein Ycf2 OS=Populus tomentosa OX=118781 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>6.3e-05</expectation>
+      <identity>62.2</identity>
+      <positives>71.1</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="47">LFRSKDIRGGRFVRPILIFRTKRSWILFRIGPER--RREAEMPTD</querySeq>
+      <pattern>++  KDI G   VRPI IF TK+ WILFRIG ER  RR+A MPTD</pattern>
+      <matchSeq start="1784" end="1826">MYGCKDIHGA--VRPIQIFTTKKYWILFRIGSERRKRRKAGMPTD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="TR" id="A0A1U9YE79_REHGL" ac="A0A1U9YE79" length="79" description="Uncharacterized protein ycf15 OS=Rehmannia glutinosa OX=99300 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.2e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="47" end="75">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="130" database="TR" id="A0A898NUP0_9LAMI" ac="A0A898NUP0" length="65" description="Uncharacterized protein ycf15 OS=Oreocharis esquirolii OX=871918 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>7.5e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKCWILFRIGPERRRKDGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="131" database="TR" id="A0A7U0FLM9_9LAMI" ac="A0A7U0FLM9" length="82" description="Uncharacterized protein ycf15 OS=Mentha canadensis OX=294733 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.7e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="132" database="TR" id="A0A7L7SA66_9LAMI" ac="A0A7L7SA66" length="82" description="Uncharacterized protein ycf15 OS=Salvia plebeia OX=424424 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.7e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="133" database="TR" id="A0A6N0A1E6_9LAMI" ac="A0A6N0A1E6" length="82" description="Uncharacterized protein ycf15 OS=Buddleja alternifolia OX=168488 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.7e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="134" database="TR" id="A0A6M3WCM8_9LAMI" ac="A0A6M3WCM8" length="82" description="Uncharacterized protein ycf15 OS=Salvia yunnanensis OX=342062 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.7e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="135" database="TR" id="A0A1I9QLX6_MENLO" ac="A0A1I9QLX6" length="82" description="Uncharacterized protein ycf15 OS=Mentha longifolia OX=38859 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.7e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="136" database="TR" id="M1FD83_SALMI" ac="M1FD83" length="82" description="Uncharacterized protein ycf15 OS=Salvia miltiorrhiza OX=226208 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.7e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="137" database="TR" id="A0A0M4BNM3_9LAMI" ac="A0A0M4BNM3" length="82" description="Uncharacterized protein ycf15 OS=Tanaecium tetragonolobum OX=353963 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.7e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="138" database="TR" id="A0A1B0VAP9_PERFH" ac="A0A1B0VAP9" length="82" description="Uncharacterized protein ycf15 OS=Perilla frutescens var. hirtella OX=608512 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.7e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="139" database="TR" id="A0A2G2Z220_CAPAN" ac="A0A2G2Z220" length="169" description="Uncharacterized protein ycf15 OS=Capsicum annuum OX=4072 GN=T459_19589 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>9.1e-05</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="132" end="160">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="140" database="TR" id="S8EEU9_9LAMI" ac="S8EEU9" length="92" description="Uncharacterized protein ycf15 (Fragment) OS=Genlisea aurea OX=192259 GN=M569_00240 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>9.6e-05</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="55" end="83">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="141" database="TR" id="A0ABR2CDS5_9ROSI" ac="A0ABR2CDS5" length="291" description="Ycf2 OS=Hibiscus sabdariffa OX=183260 GN=V6N12_032567 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>9.9e-05</expectation>
+      <identity>67.6</identity>
+      <positives>75.7</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>KDI G   VRPI IF  ++ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="252" end="286">KDIHGA--VRPIQIFTIEKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="142" database="TR" id="A0ABR2N8J0_9ROSI" ac="A0ABR2N8J0" length="291" description="Uncharacterized protein OS=Hibiscus sabdariffa OX=183260 GN=V6N11_034268 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>9.9e-05</expectation>
+      <identity>67.6</identity>
+      <positives>75.7</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="45">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>KDI G   VRPI IF  ++ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="252" end="286">KDIHGA--VRPIQIFTIEKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="143" database="TR" id="A0A8E7IUJ3_ORIMA" ac="A0A8E7IUJ3" length="82" description="Uncharacterized protein ycf15 OS=Origanum majorana OX=268884 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>0.00011</expectation>
+      <identity>65.5</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFR+GPERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRVGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="144" database="TR" id="S4T824_ORIVU" ac="S4T824" length="82" description="Uncharacterized protein ycf15 OS=Origanum vulgare subsp. vulgare OX=1183238 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>0.00011</expectation>
+      <identity>65.5</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFR+GPERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRVGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="145" database="TR" id="A0A7J8UEH6_9ROSI" ac="A0A7J8UEH6" length="138" description="Ycf2 N-terminal domain-containing protein OS=Gossypium klotzschianum OX=34286 GN=Goklo_016539 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.00011</expectation>
+      <identity>77.8</identity>
+      <positives>88.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="54" end="80">SPDPIVPVFGTSSAKVTEWVSHQSNPF</querySeq>
+      <pattern>SPDPIVP+FGTSSAKVTEWVS  ++ F</pattern>
+      <matchSeq start="102" end="128">SPDPIVPIFGTSSAKVTEWVSQFNSKF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="146" database="TR" id="A0A3Q7IT54_SOLLC" ac="A0A3Q7IT54" length="85" description="Uncharacterized protein ycf15 OS=Solanum lycopersicum OX=4081 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>0.00012</expectation>
+      <identity>71.4</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="48" end="75">QPVQIFTTKKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="147" database="TR" id="A0A2G2YBW8_CAPAN" ac="A0A2G2YBW8" length="87" description="Uncharacterized protein ycf15 OS=Capsicum annuum OX=4072 GN=T459_26686 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>0.00012</expectation>
+      <identity>71.4</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="50" end="77">QPVQIFTTKKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="148" database="SP" id="YCF15_SOLLC" ac="Q2MI39" length="87" description="Putative uncharacterized protein ycf15 OS=Solanum lycopersicum OX=4081 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>0.00012</expectation>
+      <identity>71.4</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="50" end="77">QPVQIFTTKKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="149" database="TR" id="A0A8A3WHW4_9ERIC" ac="A0A8A3WHW4" length="74" description="Uncharacterized protein ycf15 OS=Impatiens uliginosa OX=253066 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>0.00013</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WIL RIGPERRR+A MPT</pattern>
+      <matchSeq start="42" end="70">QPVQIFTTKKYWILLRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="150" database="TR" id="A0AAV0KSH1_9ROSI" ac="A0AAV0KSH1" length="43" description="Ycf15 (Fragment) OS=Linum tenue OX=586396 GN=LITE_LOCUS20231 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.00018</expectation>
+      <identity>65.6</identity>
+      <positives>78.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="48">VRPILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>V PI IF T++ WILFRIGP+RR +  MPTDL</pattern>
+      <matchSeq start="10" end="41">VCPIQIFTTQKYWILFRIGPKRRSKDGMPTDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="151" database="TR" id="A0AAN8XXZ1_SOLBU" ac="A0AAN8XXZ1" length="314" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_031279 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00019</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="277" end="305">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="152" database="TR" id="A0AAN8SR97_SOLBU" ac="A0AAN8SR97" length="421" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_031077 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.0002</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="384" end="412">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="153" database="TR" id="A0AAN8SR95_SOLBU" ac="A0AAN8SR95" length="525" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_030667 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00021</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="488" end="516">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="154" database="TR" id="A0AAN8SND7_SOLBU" ac="A0AAN8SND7" length="536" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_031905 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00021</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="499" end="527">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="155" database="TR" id="A0A2G2WI29_CAPBA" ac="A0A2G2WI29" length="572" description="Uncharacterized protein ycf15 OS=Capsicum baccatum OX=33114 GN=CQW23_14064 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00021</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="535" end="563">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="156" database="TR" id="A0A2L0VBP5_SCUBA" ac="A0A2L0VBP5" length="65" description="Uncharacterized protein ycf15 OS=Scutellaria baicalensis OX=65409 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.00021</expectation>
+      <identity>65.5</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF T++ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTQKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="157" database="TR" id="A0AAN8XVT0_SOLBU" ac="A0AAN8XVT0" length="794" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_031151 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00021</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="757" end="785">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="158" database="TR" id="A0AAN8SKJ4_SOLBU" ac="A0AAN8SKJ4" length="815" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_030491 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00021</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="778" end="806">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="159" database="TR" id="A0AAN8SKB9_SOLBU" ac="A0AAN8SKB9" length="832" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_030900 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00021</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="795" end="823">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="160" database="TR" id="A0AAN8SJ23_SOLBU" ac="A0AAN8SJ23" length="894" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_030911 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00021</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="857" end="885">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="161" database="TR" id="A0AAN8XRR1_SOLBU" ac="A0AAN8XRR1" length="937" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_033473 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00021</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="900" end="928">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="162" database="TR" id="A0AAN8SHY3_SOLBU" ac="A0AAN8SHY3" length="984" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_030903 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="947" end="975">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="163" database="TR" id="A0AAN8XW58_SOLBU" ac="A0AAN8XW58" length="1010" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_033753 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="973" end="1001">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="164" database="TR" id="A0AAN8SQS6_SOLBU" ac="A0AAN8SQS6" length="1028" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_031085 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="991" end="1019">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="165" database="TR" id="A0AAN8SFG0_SOLBU" ac="A0AAN8SFG0" length="1051" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_030402 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1014" end="1042">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="166" database="TR" id="A0A193BNW0_9ERIC" ac="A0A193BNW0" length="82" description="Uncharacterized protein ycf15 OS=Primula sinensis OX=170926 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>108</score>
+      <bits>46.2</bits>
+      <expectation>0.00022</expectation>
+      <identity>71.4</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P  IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="50" end="77">QPAQIFTTKKYWILFRIGPERRRKARMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="167" database="TR" id="A0AAN8SPL9_SOLBU" ac="A0AAN8SPL9" length="1385" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_030633 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1348" end="1376">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="168" database="TR" id="A0AAN8SNS8_SOLBU" ac="A0AAN8SNS8" length="1492" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_030611 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1455" end="1483">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="169" database="TR" id="A0AAN8XX99_SOLBU" ac="A0AAN8XX99" length="1522" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_033483 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1485" end="1513">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="170" database="TR" id="A0AAN8SGP9_SOLBU" ac="A0AAN8SGP9" length="1547" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_030430 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1510" end="1538">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="171" database="TR" id="A0AAN8SHN3_SOLBU" ac="A0AAN8SHN3" length="1581" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_000003 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1544" end="1572">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="172" database="TR" id="A0AAN8SJX3_SOLBU" ac="A0AAN8SJX3" length="1600" description="Uncharacterized protein ycf15 OS=Solanum bulbocastanum OX=147425 GN=RDI58_030525 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1563" end="1591">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="173" database="TR" id="A0A9J5Z281_SOLCO" ac="A0A9J5Z281" length="1603" description="Protein Ycf2 OS=Solanum commersonii OX=4109 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1451" end="1479">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="174" database="TR" id="A0AAN8XTE0_SOLBU" ac="A0AAN8XTE0" length="1637" description="Protein Ycf2 OS=Solanum bulbocastanum OX=147425 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1600" end="1628">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="175" database="TR" id="A0AAN8XZW9_SOLBU" ac="A0AAN8XZW9" length="1650" description="Protein Ycf2 OS=Solanum bulbocastanum OX=147425 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1613" end="1641">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="176" database="TR" id="A0AAN8XS28_SOLBU" ac="A0AAN8XS28" length="1664" description="Protein Ycf2 OS=Solanum bulbocastanum OX=147425 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1627" end="1655">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="177" database="TR" id="A0AAN8SNY1_SOLBU" ac="A0AAN8SNY1" length="1674" description="Protein Ycf2 OS=Solanum bulbocastanum OX=147425 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1637" end="1665">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="178" database="TR" id="A0AAN8ST17_SOLBU" ac="A0AAN8ST17" length="1677" description="Protein Ycf2 OS=Solanum bulbocastanum OX=147425 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1640" end="1668">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="179" database="TR" id="A0AAN8SR96_SOLBU" ac="A0AAN8SR96" length="1700" description="Protein Ycf2 OS=Solanum bulbocastanum OX=147425 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00022</expectation>
+      <identity>72.4</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="1663" end="1691">QPVQIFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="180" database="TR" id="A0A830BLJ5_9LAMI" ac="A0A830BLJ5" length="147" description="Uncharacterized protein ycf15 OS=Phtheirospermum japonicum OX=374723 GN=PHJA_000694100 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00026</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="115" end="143">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="181" database="TR" id="A0A7U1BFG7_9ERIC" ac="A0A7U1BFG7" length="82" description="Uncharacterized protein ycf15 OS=Camellia tachangensis OX=542753 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.00031</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIG ERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGSERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="182" database="TR" id="A0A0G3F1F3_SCUBA" ac="A0A0G3F1F3" length="82" description="Uncharacterized protein ycf15 OS=Scutellaria baicalensis OX=65409 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.00031</expectation>
+      <identity>65.5</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF T++ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTQKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="183" database="TR" id="L0E7E3_CAMSI" ac="L0E7E3" length="82" description="Uncharacterized protein ycf15 OS=Camellia sinensis OX=4442 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.00031</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIG ERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGSERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="184" database="TR" id="A0A075TM59_CAMSN" ac="A0A075TM59" length="82" description="Uncharacterized protein ycf15 OS=Camellia sinensis var. sinensis OX=542762 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.00031</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIG ERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGSERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="185" database="TR" id="A0A346SAN3_CAMSI" ac="A0A346SAN3" length="82" description="Uncharacterized protein ycf15 OS=Camellia sinensis OX=4442 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.00031</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIG ERRR+A MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGSERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="186" database="TR" id="A0A2G3AJX6_CAPAN" ac="A0A2G3AJX6" length="84" description="Uncharacterized protein ycf15 OS=Capsicum annuum OX=4072 GN=T459_02428 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.00032</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPER R+A MPT</pattern>
+      <matchSeq start="48" end="76">QPVQIFTTKKYWILFRIGPERIRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="187" database="TR" id="A0AAN8V6F9_9MAGN" ac="A0AAN8V6F9" length="78" description="Ycf15 OS=Dillenia turbinata OX=194707 GN=RJ641_011906 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.0004</expectation>
+      <identity>80.0</identity>
+      <positives>88.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="46">IFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>IF TK+ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="50" end="74">IFTTKKYWILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="188" database="TR" id="A0ABD3B6N5_9LAMI" ac="A0ABD3B6N5" length="1932" description="Protein Ycf2 OS=Castilleja foliolosa OX=1961234 GN=YCF2A_52 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.00041</expectation>
+      <identity>56.8</identity>
+      <positives>75.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="46">DIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+++ G   +P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="1892" end="1928">EMKIGFIEQPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="189" database="TR" id="A0ABD3CEE8_9LAMI" ac="A0ABD3CEE8" length="2096" description="Protein Ycf2 OS=Castilleja foliolosa OX=1961234 GN=YCF2A_26 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.00041</expectation>
+      <identity>56.8</identity>
+      <positives>75.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="46">DIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+++ G   +P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="2056" end="2092">EMKIGFIEQPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="190" database="TR" id="A0ABD3B6X8_9LAMI" ac="A0ABD3B6X8" length="2282" description="Protein Ycf2 OS=Castilleja foliolosa OX=1961234 GN=YCF2A_46 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.00041</expectation>
+      <identity>56.8</identity>
+      <positives>75.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="46">DIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+++ G   +P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="2242" end="2278">EMKIGFIEQPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="191" database="TR" id="A0ABD3BB07_9LAMI" ac="A0ABD3BB07" length="2316" description="Protein Ycf2 OS=Castilleja foliolosa OX=1961234 GN=YCF2A_37 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.00041</expectation>
+      <identity>56.8</identity>
+      <positives>75.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="46">DIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+++ G   +P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="2276" end="2312">EMKIGFIEQPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="192" database="TR" id="A0A2G9I6T2_9LAMI" ac="A0A2G9I6T2" length="80" description="Uncharacterized protein ycf15 OS=Handroanthus impetiginosus OX=429701 GN=CDL12_01784 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.00041</expectation>
+      <identity>69.0</identity>
+      <positives>79.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+PI IF TK+ WILFRI PERRR+  MPT</pattern>
+      <matchSeq start="48" end="76">QPIQIFTTKKYWILFRISPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="193" database="TR" id="A0A2G3AK53_CAPAN" ac="A0A2G3AK53" length="169" description="Uncharacterized protein ycf15 OS=Capsicum annuum OX=4072 GN=T459_02516 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>0.00048</expectation>
+      <identity>71.4</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="132" end="159">QPVQIFTTKKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="194" database="TR" id="A0A240FGA9_PLAGD" ac="A0A240FGA9" length="75" description="Uncharacterized protein ycf15 OS=Platycodon grandiflorus OX=94286 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.00052</expectation>
+      <identity>65.5</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF  ++ WILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="43" end="71">QPVQIFTPEKYWILFRIGPERRRKAVMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="195" database="TR" id="G9FCK8_9LAMI" ac="G9FCK8" length="82" description="Uncharacterized protein ycf15 OS=Dorcoceras hygrometricum OX=472368 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.00061</expectation>
+      <identity>65.5</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGP+RRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVQIFTTKKYWILFRIGPKRRRKDGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="196" database="TR" id="A0A2P1BY57_9ERIC" ac="A0A2P1BY57" length="74" description="Uncharacterized protein ycf15 OS=Hydrocera triflora OX=252972 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.00072</expectation>
+      <identity>65.5</identity>
+      <positives>79.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF  K+ WIL RIGPERRR+A MPT</pattern>
+      <matchSeq start="42" end="70">QPVQIFTNKKYWILLRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="197" database="TR" id="A0AAV6WL84_9LAMI" ac="A0AAV6WL84" length="1068" description="Uncharacterized protein ycf15 OS=Buddleja alternifolia OX=168488 GN=BUALT_Bualt15G0117100 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00075</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="1036" end="1064">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="198" database="TR" id="A0AAV6W116_9LAMI" ac="A0AAV6W116" length="2197" description="Protein Ycf2 OS=Buddleja alternifolia OX=168488 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00077</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="2165" end="2193">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="199" database="TR" id="A0ABD3B6S6_9LAMI" ac="A0ABD3B6S6" length="2250" description="Protein Ycf2 OS=Castilleja foliolosa OX=1961234 GN=YCF2A_50 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00077</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="2218" end="2246">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="200" database="TR" id="A0ABD3BBK5_9LAMI" ac="A0ABD3BBK5" length="2268" description="Protein Ycf2 OS=Castilleja foliolosa OX=1961234 GN=YCF2A_36 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00077</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="2236" end="2264">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="201" database="TR" id="A0ABD3CGW6_9LAMI" ac="A0ABD3CGW6" length="2307" description="Protein Ycf2 OS=Castilleja foliolosa OX=1961234 GN=YCF2A_27 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00077</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="2275" end="2303">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="202" database="TR" id="A0ABD3CFU2_9LAMI" ac="A0ABD3CFU2" length="2328" description="Protein Ycf2 OS=Castilleja foliolosa OX=1961234 GN=YCF2A_28 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00077</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MPT</pattern>
+      <matchSeq start="2296" end="2324">QPVQIFTTKKYWILFRIGPERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="203" database="SP" id="YCF15_JASNU" ac="Q06R69" length="49" description="Putative uncharacterized protein ycf15 OS=Jasminum nudiflorum OX=126431 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.00084</expectation>
+      <identity>69.0</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+  ILFRIGPERRR+A MPT</pattern>
+      <matchSeq start="17" end="45">QPVQIFTTKKYQILFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="204" database="TR" id="A0A2G9FWE1_9LAMI" ac="A0A2G9FWE1" length="65" description="Uncharacterized protein ycf15 OS=Handroanthus impetiginosus OX=429701 GN=CDL12_30329 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.00084</expectation>
+      <identity>61.3</identity>
+      <positives>77.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="48">RPILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>+P+ IF TK+ WILF+IGPERRRE  M T +</pattern>
+      <matchSeq start="33" end="63">QPVQIFTTKKYWILFQIGPERRREGGMLTSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="205" database="TR" id="A0ABR0DV23_9LAMI" ac="A0ABR0DV23" length="118" description="Uncharacterized protein ycf15 OS=Penstemon davidsonii OX=160366 GN=RD792_018085 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.00088</expectation>
+      <identity>67.9</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MP</pattern>
+      <matchSeq start="84" end="111">QPVQIFTTKKYWILFRIGPERRRKGGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="206" database="TR" id="A0A2G2ZTJ3_CAPAN" ac="A0A2G2ZTJ3" length="87" description="Uncharacterized protein ycf15 OS=Capsicum annuum OX=4072 GN=T459_07403 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.00096</expectation>
+      <identity>67.9</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF  K+ WILFRIGPERRR+A MP</pattern>
+      <matchSeq start="50" end="77">QPVQIFTIKKYWILFRIGPERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="207" database="TR" id="A0A6M3FZR7_BARPR" ac="A0A6M3FZR7" length="82" description="Uncharacterized protein ycf15 OS=Barleria prionitis OX=4189 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.0012</expectation>
+      <identity>65.5</identity>
+      <positives>79.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILFRIG ERRR+  MPT</pattern>
+      <matchSeq start="50" end="78">QPVRIFTTKKYWILFRIGSERRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="208" database="TR" id="A0A2G2Z811_CAPAN" ac="A0A2G2Z811" length="85" description="Uncharacterized protein ycf15 OS=Capsicum annuum OX=4072 GN=T459_16194 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.0013</expectation>
+      <identity>65.5</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WILF IGP+RRR+A MPT</pattern>
+      <matchSeq start="48" end="76">QPVQIFMTKKYWILFWIGPKRRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="209" database="TR" id="A0AA38SAR5_9ASTR" ac="A0AA38SAR5" length="96" description="Uncharacterized protein OS=Centaurea solstitialis OX=347529 GN=OSB04_un001454 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.0016</expectation>
+      <identity>79.2</identity>
+      <positives>87.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="50" end="73">LFSNSPDPIVPVFGTSSAKVTEWV</querySeq>
+      <pattern>L  NSPDP VPV+GTSSAKVTEW+</pattern>
+      <matchSeq start="49" end="72">LLLNSPDPTVPVWGTSSAKVTEWI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="210" database="TR" id="A0ACS4ISE5_ERYTI" ac="A0ACS4ISE5" length="49" description="Uncharacterized protein OS=Erythranthe tilingii OX=4161 GN=ACP275_03G025600 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.0017</expectation>
+      <identity>64.3</identity>
+      <positives>78.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERR +  MP</pattern>
+      <matchSeq start="17" end="44">QPVQIFTTKKYWILFRIGPERRMKGGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="211" database="TR" id="A0ABR0DBV0_9LAMI" ac="A0ABR0DBV0" length="663" description="Uncharacterized protein ycf15 OS=Penstemon davidsonii OX=160366 GN=RD792_006668 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.0035</expectation>
+      <identity>67.9</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MP</pattern>
+      <matchSeq start="629" end="656">QPVQIFTTKKYWILFRIGPERRRKGGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="212" database="TR" id="A0ABR0DCL0_9LAMI" ac="A0ABR0DCL0" length="1055" description="Uncharacterized protein ycf15 OS=Penstemon davidsonii OX=160366 GN=RD792_006830 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.0036</expectation>
+      <identity>67.9</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MP</pattern>
+      <matchSeq start="1021" end="1048">QPVQIFTTKKYWILFRIGPERRRKGGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="213" database="TR" id="A0ABD3EE17_9LAMI" ac="A0ABD3EE17" length="1427" description="Uncharacterized protein ycf15 OS=Castilleja foliolosa OX=1961234 GN=YCF2A_6 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.0036</expectation>
+      <identity>67.9</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MP</pattern>
+      <matchSeq start="1395" end="1422">QPVQIFTTKKYWILFRIGPERRRKGGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="214" database="TR" id="A0ABR0DBH9_9LAMI" ac="A0ABR0DBH9" length="2267" description="Protein Ycf2 OS=Penstemon davidsonii OX=160366 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.0037</expectation>
+      <identity>67.9</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MP</pattern>
+      <matchSeq start="2233" end="2260">QPVQIFTTKKYWILFRIGPERRRKGGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="215" database="TR" id="A0A2G2XPU4_CAPBA" ac="A0A2G2XPU4" length="421" description="Uncharacterized protein ycf15 OS=Capsicum baccatum OX=33114 GN=CQW23_01885 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0062</expectation>
+      <identity>67.9</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILFRIGPERRR+  MP</pattern>
+      <matchSeq start="384" end="411">QPVQIFTTKKYWILFRIGPERRRKDGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="216" database="SP" id="YCF15_OENVI" ac="P68942" length="80" description="Putative uncharacterized protein ycf15 OS=Oenothera villaricae OX=3941 GN=ycf15 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.01</expectation>
+      <identity>70.0</identity>
+      <positives>76.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="46">VRPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>VR I IF TK+  I FRIGPERRR+A MPT</pattern>
+      <matchSeq start="49" end="78">VRTIQIFTTKKYCIPFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="217" database="SP" id="YCF15_OENPI" ac="P68941" length="80" description="Putative uncharacterized protein ycf15 OS=Oenothera picensis OX=3946 GN=ycf15 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.01</expectation>
+      <identity>70.0</identity>
+      <positives>76.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="46">VRPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>VR I IF TK+  I FRIGPERRR+A MPT</pattern>
+      <matchSeq start="49" end="78">VRTIQIFTTKKYCIPFRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="218" database="TR" id="A0A2U1QA98_ARTAN" ac="A0A2U1QA98" length="903" description="Serine/threonine/dual specificity protein kinase, catalytic domain-containing protein OS=Artemisia annua OX=35608 GN=CTI12_AA055270 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.02</expectation>
+      <identity>79.2</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="50" end="73">LFSNSPDPIVPVFGTSSAKVTEWV</querySeq>
+      <pattern>L  NSPDP VPV+GTS AKVTEWV</pattern>
+      <matchSeq start="6" end="29">LLLNSPDPTVPVWGTSGAKVTEWV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="219" database="TR" id="A0A2G9FZU0_9LAMI" ac="A0A2G9FZU0" length="80" description="Uncharacterized protein ycf15 OS=Handroanthus impetiginosus OX=429701 GN=CDL12_28957 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.04</expectation>
+      <identity>58.1</identity>
+      <positives>74.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="48">RPILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>+P+ IF TK+ WILFRI  ERRR+  MPT +</pattern>
+      <matchSeq start="48" end="78">QPVQIFTTKKYWILFRIVLERRRKCGMPTSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="220" database="TR" id="A0ACS4PV16_9ERIC" ac="A0ACS4PV16" length="65" description="Uncharacterized protein OS=Camellia fascicularis OX=147913 GN=ACSBR1_018890 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.04</expectation>
+      <identity>66.7</identity>
+      <positives>81.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="44">RPILIFRTKRSWILFRIGPERRREAEM</querySeq>
+      <pattern>+PI IF TK+ WILFRIG +RRR+A M</pattern>
+      <matchSeq start="17" end="43">QPIQIFTTKKYWILFRIGSKRRRKAGM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="221" database="TR" id="A0A8J5CDT9_ZINOF" ac="A0A8J5CDT9" length="632" description="Uncharacterized protein OS=Zingiber officinale OX=94328 GN=ZIOFF_069889 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.04</expectation>
+      <identity>52.5</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="58">PILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPI</querySeq>
+      <pattern>P       +S+I     PERRR+A MPTD+CLFSNSP  I</pattern>
+      <matchSeq start="511" end="550">PFFFLFKDQSFISVFSRPERRRKAGMPTDICLFSNSPASI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="222" database="TR" id="A0A3Q7FHN1_SOLLC" ac="A0A3Q7FHN1" length="55" description="Uncharacterized protein ycf15 OS=Solanum lycopersicum OX=4081 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.08</expectation>
+      <identity>50.0</identity>
+      <positives>64.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="51">RPILIFRTKRSWILFRIGPERRREAEMPTDLCLF</querySeq>
+      <pattern>+P++IF T   WILFRIG ERRR+  M   +  F</pattern>
+      <matchSeq start="17" end="50">QPVMIFTTNNYWILFRIGLERRRKVRMTIGVYYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="223" database="TR" id="A0A2P5EEY8_TREOI" ac="A0A2P5EEY8" length="278" description="Uncharacterized protein OS=Trema orientale OX=63057 GN=TorRG33x02_200920 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.1</expectation>
+      <identity>59.0</identity>
+      <positives>69.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="50" end="87">LFSNSPDPIVPVFGTSSAKVTEW-VSHQSNPFDKSGVIL</querySeq>
+      <pattern>L  NSPDP VPV G+SSAKVTEW     ++ +D  GVIL</pattern>
+      <matchSeq start="116" end="154">LLLNSPDPRVPVLGSSSAKVTEWDWVLDTDKWDCPGVIL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="224" database="TR" id="A0A7J6I5Z8_CANSA" ac="A0A7J6I5Z8" length="86" description="Uncharacterized protein OS=Cannabis sativa OX=3483 GN=G4B88_010198 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.11</expectation>
+      <identity>60.5</identity>
+      <positives>68.4</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="45">SKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+KDI G   VR I IF TK    +FRIGPERRR+A MP</pattern>
+      <matchSeq start="49" end="81">NKDIHGA--VRSIQIFTTKN---IFRIGPERRRQAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="225" database="TR" id="A0A3Q7EBP1_SOLLC" ac="A0A3Q7EBP1" length="54" description="Uncharacterized protein ycf15 OS=Solanum lycopersicum OX=4081 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.12</expectation>
+      <identity>57.1</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WI  +IG ERRR+A MP</pattern>
+      <matchSeq start="17" end="44">QPVQIFTTKKYWIFIQIGSERRRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="226" database="TR" id="A0A830D522_9LAMI" ac="A0A830D522" length="142" description="Uncharacterized protein ycf15 OS=Phtheirospermum japonicum OX=374723 GN=PHJA_002862200 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.14</expectation>
+      <identity>63.0</identity>
+      <positives>77.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="46">ILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+ IF TK+ WILFRI P+RRR+  MPT</pattern>
+      <matchSeq start="116" end="142">VQIFTTKKYWILFRIDPKRRRKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="227" database="TR" id="A0ACS2PK82_9ROSI" ac="A0ACS2PK82" length="145" description="Uncharacterized protein OS=Xanthoceras sorbifolium OX=99658 GN=ACOSP7_032138 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.14</expectation>
+      <identity>81.8</identity>
+      <positives>86.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="50" end="71">LFSNSPDPIVPVFGTSSAKVTE</querySeq>
+      <pattern>L  NSPDPIVP+ GTSSAKVTE</pattern>
+      <matchSeq start="47" end="68">LLLNSPDPIVPILGTSSAKVTE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="228" database="TR" id="A0ACS5ZRN7_9LAMI" ac="A0ACS5ZRN7" length="65" description="Uncharacterized protein OS=Phlomoides rotata OX=572115 GN=ACS0TY_023480 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.15</expectation>
+      <identity>58.6</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF TK+ WI F IGPERR +  MPT</pattern>
+      <matchSeq start="33" end="61">QPVQIFTTKKYWIHFWIGPERRCKGGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="229" database="TR" id="A0A3Q7IUZ4_SOLLC" ac="A0A3Q7IUZ4" length="326" description="Uncharacterized protein ycf15 OS=Solanum lycopersicum OX=4081 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.19</expectation>
+      <identity>63.0</identity>
+      <positives>81.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="44">RPILIFRTKRSWILFRIGPERRREAEM</querySeq>
+      <pattern>+P+ IF TK+ WILF+IGPE RR+A M</pattern>
+      <matchSeq start="289" end="315">QPVQIFTTKKYWILFQIGPEMRRKAGM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="230" database="TR" id="K4AUN9_SOLLC" ac="K4AUN9" length="244" description="Uncharacterized protein ycf15 OS=Solanum lycopersicum OX=4081 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.32</expectation>
+      <identity>57.1</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+ WILF+IG ER+++A MP</pattern>
+      <matchSeq start="207" end="234">QPVQIFTTKKYWILFQIGHERKKKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="231" database="TR" id="A0A7T8V8C0_9ERIC" ac="A0A7T8V8C0" length="71" description="Uncharacterized protein ycf15 OS=Impatiens alpicola OX=2803581 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.33</expectation>
+      <identity>62.1</identity>
+      <positives>75.9</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="46">RPILIFRTKRSWILFRIGPERRREAEMPT</querySeq>
+      <pattern>+P+ IF+    WIL RIGPERRR+A MPT</pattern>
+      <matchSeq start="42" end="67">QPVQIFKY---WILLRIGPERRRKAGMPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="232" database="TR" id="A0A2D1UIR6_9GENT" ac="A0A2D1UIR6" length="78" description="Uncharacterized protein ycf15 OS=Gentiana lhassica OX=374092 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.38</expectation>
+      <identity>61.5</identity>
+      <positives>73.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="43">RPILIFRTKRSWILFRIGPERRREAE</querySeq>
+      <pattern>+P+ I  TK+ WILFRIGPERR   E</pattern>
+      <matchSeq start="52" end="77">QPVQILTTKKYWILFRIGPERRGRLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="233" database="TR" id="A0A0H3U5F2_9GENT" ac="A0A0H3U5F2" length="78" description="Uncharacterized protein ycf15 OS=Gentiana straminea OX=50768 GN=ycf15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.38</expectation>
+      <identity>61.5</identity>
+      <positives>73.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="43">RPILIFRTKRSWILFRIGPERRREAE</querySeq>
+      <pattern>+P+ I  TK+ WILFRIGPERR   E</pattern>
+      <matchSeq start="52" end="77">QPVQILTTKKYWILFRIGPERRGRLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="234" database="TR" id="A0ACB9NW25_9MYRT" ac="A0ACB9NW25" length="99" description="Uncharacterized protein OS=Melastoma candidum OX=119954 GN=MLD38_025513 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.4</expectation>
+      <identity>52.5</identity>
+      <positives>67.5</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="48">KDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>KDI G   VR I +F TK+  ILFR+G ER+ +A MPT +</pattern>
+      <matchSeq start="58" end="95">KDIHGA--VRTIQLFPTKKYCILFRMGSERKWKAGMPTSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="235" database="TR" id="A0A2G3ALI9_CAPAN" ac="A0A2G3ALI9" length="143" description="Uncharacterized protein ycf15 OS=Capsicum annuum OX=4072 GN=T459_02987 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.51</expectation>
+      <identity>58.6</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="48">ILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>+ I  TK+ WILF IGPERRR+  MPT +</pattern>
+      <matchSeq start="109" end="137">VQILTTKKYWILFWIGPERRRKDGMPTGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="236" database="TR" id="K4B4J1_SOLLC" ac="K4B4J1" length="388" description="Uncharacterized protein ycf15 OS=Solanum lycopersicum OX=4081 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.66</expectation>
+      <identity>64.3</identity>
+      <positives>78.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="45">RPILIFRTKRSWILFRIGPERRREAEMP</querySeq>
+      <pattern>+P+ IF TK+  ILFRIGPER R+A MP</pattern>
+      <matchSeq start="351" end="378">QPVQIFMTKKYCILFRIGPERIRKAGMP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="237" database="TR" id="A0ACE0NW75_PRUAR" ac="A0ACE0NW75" length="545" description="Protein Ycf2 OS=Prunus armeniaca OX=36596 GN=ARP2_LOCUS38403 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.94</expectation>
+      <identity>69.6</identity>
+      <positives>78.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="55" end="77">PDPIVPVFGTSSAKVTEWVSHQS</querySeq>
+      <pattern>PD  +P+ G SSAKVTEWVS QS</pattern>
+      <matchSeq start="518" end="540">PDSTIPILGMSSAKVTEWVSRQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="238" database="TR" id="A0A444ZR89_ARAHY" ac="A0A444ZR89" length="122" description="Uncharacterized protein OS=Arachis hypogaea OX=3818 GN=Ahy_B04g073752 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>1.5</expectation>
+      <identity>52.9</identity>
+      <positives>67.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="47" end="80">DLCLFSNSPDPIVPVFGTSSAKVTEWVSHQSNPF</querySeq>
+      <pattern>D  L  NSPDP VP++ TS AKV EW+   ++PF</pattern>
+      <matchSeq start="51" end="83">DRRLLWNSPDPRVPIWETSGAKVIEWIC-SNDPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="239" database="TR" id="A0A5A7QGC4_STRAF" ac="A0A5A7QGC4" length="189" description="Uncharacterized protein ycf15 OS=Striga asiatica OX=4170 GN=STAS_21292 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>1.9</expectation>
+      <identity>54.8</identity>
+      <positives>71.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="48">RPILIFRTKRSWILFRIGPERRREAEMPTDL</querySeq>
+      <pattern>+P  IF TK+ WILFRI  +RRR+  MPT +</pattern>
+      <matchSeq start="157" end="187">QPFQIFATKKYWILFRICLDRRRKDGMPTSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="240" database="TR" id="A0ACH3RED0_ARAHY" ac="A0ACH3RED0" length="87" description="Uncharacterized protein (Fragment) OS=Arachis hypogaea OX=3818 GN=HN873_049396 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>4.8</expectation>
+      <identity>61.5</identity>
+      <positives>69.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="47" end="72">DLCLFSNSPDPIVPVFGTSSAKVTEW</querySeq>
+      <pattern>D  L  NSPDP VP++ TS AKV EW</pattern>
+      <matchSeq start="62" end="87">DRRLLWNSPDPRVPIWETSGAKVIEW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="241" database="TR" id="A0ABS8TNI9_DATST" ac="A0ABS8TNI9" length="205" description="Cytochrome f OS=Datura stramonium OX=4076 GN=HAX54_013691 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>5.0</expectation>
+      <identity>56.7</identity>
+      <positives>76.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="47">ILIFRTKRSWILFRIGPERRRE--AEMPTD</querySeq>
+      <pattern>+L F TK+ WIL RIGPERRR+  ++ PT+</pattern>
+      <matchSeq start="120" end="149">MLSFTTKKYWILLRIGPERRRKVGSKSPTE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="242" database="TR" id="A0AAD6RQK4_9ROSI" ac="A0AAD6RQK4" length="183" description="Protein Ycf2 OS=Populus alba x Populus x berolinensis OX=444605 GN=NC653_003048 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.5</expectation>
+      <identity>65.4</identity>
+      <positives>73.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="40">RFVRPILIFRTKRSWILFRIGPERRR</querySeq>
+      <pattern>R VRP  IF TK+ WILFRIG ER +</pattern>
+      <matchSeq start="154" end="179">RTVRPSQIFTTKKYWILFRIGFERTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="243" database="TR" id="A0A4C1YPZ7_EUMVA" ac="A0A4C1YPZ7" length="148" description="Uncharacterized protein OS=Eumeta variegata OX=151549 GN=EVAR_9343_1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>7.3</expectation>
+      <identity>34.5</identity>
+      <positives>51.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="59">LIVLFRSKDIRGGRFVRPILIFRTKRSWILFRIGPERRREAEMPTDLCLFSNSPDPIV</querySeq>
+      <pattern>L+++F S  +R GR  R  L +R +R  +L  + P   REA  P  +  F N   P+V</pattern>
+      <matchSeq start="17" end="73">LVMIFTSF-VRAGRSARVRLAYRRRRRSLLVALAPRAGREAGTPRQIRFFLNKYPPVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="244" database="TR" id="A0A5J5SCW7_GOSBA" ac="A0A5J5SCW7" length="1744" description="Protein Ycf2 OS=Gossypium barbadense OX=3634 GN=ycf2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.8</expectation>
+      <identity>66.7</identity>
+      <positives>74.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="35">KDIRGGRFVRPILIFRTKRSWILFRIG</querySeq>
+      <pattern>KDI G   VRPI IF T++ WILFRIG</pattern>
+      <matchSeq start="1683" end="1707">KDIHGA--VRPIQIFTTEKYWILFRIG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-205506-0532-43185901-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-205506-0532-43185901-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q9UI72|YE014_HUMAN" type="PROTEIN" length="69"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:55:06+00:00" end="2026-11-13T20:56:50+00:00" search="P0Y0M0DT0H0M104.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="6">
+   <hit number="1" database="SP" id="YE014_HUMAN" ac="Q9UI72" length="69" description="Putative uncharacterized protein PRO0255 OS=Homo sapiens OX=9606 GN=PRO0255 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>384</score>
+      <bits>152.5</bits>
+      <expectation>5e-47</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="69">MGMALELYWLCGFRSYWPLGTNAENEGNRKENRRQMQSRNERGCNVRQTKTYRDREADRHIHGIACLLF</querySeq>
+      <pattern>MGMALELYWLCGFRSYWPLGTNAENEGNRKENRRQMQSRNERGCNVRQTKTYRDREADRHIHGIACLLF</pattern>
+      <matchSeq start="1" end="69">MGMALELYWLCGFRSYWPLGTNAENEGNRKENRRQMQSRNERGCNVRQTKTYRDREADRHIHGIACLLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A1L9Q0U0_ASPVE" ac="A0A1L9Q0U0" length="182" description="Uncharacterized protein OS=Aspergillus versicolor CBS 583.65 OX=1036611 GN=ASPVEDRAFT_56785 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>3.5</expectation>
+      <identity>39.0</identity>
+      <positives>56.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="64">ENEGNRKENRRQMQSRNERGCNVRQTKTYRDREADRHIHGI</querySeq>
+      <pattern>ENE N + NRR+  S   R C+  +T T  DR   +H+H +</pattern>
+      <matchSeq start="28" end="68">ENERNTRHNRRRTWSLPPRPCDASETSTISDRGDIQHLHRV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A225W1L3_9STRA" ac="A0A225W1L3" length="602" description="ZSWIM1/3 RNaseH-like domain-containing protein OS=Phytophthora megakarya OX=4795 GN=PHMEG_00015924 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.1</expectation>
+      <identity>33.3</identity>
+      <positives>51.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="68">WPLGTNAENEGNRKENRRQMQSRNERGCNVRQTKTYRDREADRHIH--GIACLL</querySeq>
+      <pattern>WPL +     G  K  R++ QS+ +R   +  TK YR  + D+ +H   +A LL</pattern>
+      <matchSeq start="521" end="574">WPLSSGPVISGMTKAQRKRAQSKKDREVALELTKKYRQGKVDKIVHFDDVAALL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0ABP0AXV2_9PEZI" ac="A0ABP0AXV2" length="966" description="Uncharacterized protein OS=Sporothrix eucalyptigena OX=1812306 GN=SEUCBS140593_001406 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.1</expectation>
+      <identity>34.1</identity>
+      <positives>58.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="62">NAENEGNRKENRRQMQSRNERGCNVRQTKTYRDREADRHIH</querySeq>
+      <pattern>N  N+ N + +R     RN+RG  V +T+ +RDR+ D  ++</pattern>
+      <matchSeq start="212" end="252">NDRNDRNDRNDRNDRNDRNDRGGRVDRTRNWRDRDPDNQLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0AA39KU13_9HYME" ac="A0AA39KU13" length="908" description="RNA-binding protein 25 OS=Microctonus aethiopoides OX=144406 GN=PV328_007041 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>5.7</expectation>
+      <identity>38.1</identity>
+      <positives>54.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="59">PLGTNAENEGNRKENRRQMQSRNERGCNVRQTKTYRDREADR</querySeq>
+      <pattern>P+   A NE NR++ RR      ER     +T+T RDR+ +R</pattern>
+      <matchSeq start="316" end="357">PMSHKAHNESNRRDKRRSKSRSKERDRERDRTRTDRDRDRER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A2Z6QM18_9GLOM" ac="A0A2Z6QM18" length="86" description="Uncharacterized protein OS=Rhizophagus clarus OX=94130 GN=RclHR1_18480001 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>7.7</expectation>
+      <identity>39.0</identity>
+      <positives>53.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="61">TNAENEGNRKENRRQMQSRNERGCNVRQTKTYRDREADRHI</querySeq>
+      <pattern>T  ENEG +K+  R       +G N R+T+T R R+  R I</pattern>
+      <matchSeq start="7" end="47">TKGENEGKQKQRERPKGKAETKGKNERETETKRKRKQKRKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

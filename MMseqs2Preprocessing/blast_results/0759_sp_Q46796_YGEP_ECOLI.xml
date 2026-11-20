@@ -1,0 +1,518 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-203937-0034-60045389-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-203937-0034-60045389-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q46796|YGEP_ECOLI" type="PROTEIN" length="99"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:39:37+00:00" end="2026-11-13T20:43:30+00:00" search="P0Y0M0DT0H0M233.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="29">
+   <hit number="1" database="SP" id="YGEP_ECOLI" ac="Q46796" length="99" description="Putative protein YgeP OS=Escherichia coli (strain K12) OX=83333 GN=ygeP PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>494</score>
+      <bits>194.9</bits>
+      <expectation>7.1e-63</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>MTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</pattern>
+      <matchSeq start="1" end="99">MTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A0H3JHM8_ECO57" ac="A0A0H3JHM8" length="352" description="Uncharacterized protein OS=Escherichia coli O157:H7 OX=83334 GN=ygeP PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>485</score>
+      <bits>191.4</bits>
+      <expectation>3.6e-58</expectation>
+      <identity>98.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>+TSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP NLSKINTRRKEQV</pattern>
+      <matchSeq start="97" end="195">VTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPANLSKINTRRKEQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A7ZQX1_ECO24" ac="A7ZQX1" length="550" description="GH15-like domain-containing protein OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_3187 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>485</score>
+      <bits>191.4</bits>
+      <expectation>2.9e-56</expectation>
+      <identity>98.0</identity>
+      <positives>99.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>+TSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP NLSKINTRRKEQV</pattern>
+      <matchSeq start="295" end="393">VTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPANLSKINTRRKEQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="Q93RB8_ECOLX" ac="Q93RB8" length="352" description="Orf15 OS=Escherichia coli OX=562 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>472</score>
+      <bits>186.4</bits>
+      <expectation>3.2e-56</expectation>
+      <identity>94.9</identity>
+      <positives>97.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>+TSGLERLSNLLSKKDSVFVSDLLREAK NELDE LSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP NL+KINTRRKEQV</pattern>
+      <matchSeq start="97" end="195">VTSGLERLSNLLSKKDSVFVSDLLREAKANELDEPLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPANLAKINTRRKEQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="Q3YY05_SHISS" ac="Q3YY05" length="495" description="GH15-like domain-containing protein OS=Shigella sonnei (strain Ss046) OX=300269 GN=SSON_3014 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>472</score>
+      <bits>186.4</bits>
+      <expectation>8.5e-55</expectation>
+      <identity>94.9</identity>
+      <positives>97.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>+TSGLERLSNLLSKKDSVFVSDLLREAK NELDE LSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP NL+KINTRRKEQV</pattern>
+      <matchSeq start="295" end="393">VTSGLERLSNLLSKKDSVFVSDLLREAKANELDEPLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPANLAKINTRRKEQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A160EFJ7_ECOLX" ac="A0A160EFJ7" length="540" description="Uncharacterized protein OS=Escherichia coli OX=562 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>473</score>
+      <bits>186.8</bits>
+      <expectation>1.4e-54</expectation>
+      <identity>96.0</identity>
+      <positives>97.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>+TSGLERLSNLLSKKDSVFVSDLLREAK NELDE LSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP NLSKINTRRKEQV</pattern>
+      <matchSeq start="285" end="383">VTSGLERLSNLLSKKDSVFVSDLLREAKSNELDEPLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPANLSKINTRRKEQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="B7LF50_ECO55" ac="B7LF50" length="550" description="Uncharacterized protein OS=Escherichia coli (strain 55989 / EAEC) OX=585055 GN=EC55989_3151 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>472</score>
+      <bits>186.4</bits>
+      <expectation>2.4e-54</expectation>
+      <identity>94.9</identity>
+      <positives>97.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>+TSGLERLSNLLSKKDSVFVSDLLREAK NELDE LSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP NL+KINTRRKEQV</pattern>
+      <matchSeq start="295" end="393">VTSGLERLSNLLSKKDSVFVSDLLREAKANELDEPLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPANLAKINTRRKEQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ABX5HL86_ESCAL" ac="A0ABX5HL86" length="354" description="GH15-like domain-containing protein OS=Escherichia albertii OX=208962 GN=C7B09_05130 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>396</score>
+      <bits>157.1</bits>
+      <expectation>8.3e-45</expectation>
+      <identity>77.8</identity>
+      <positives>87.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>+TSGLERL  LL++K S F ++L++EAK+NELDE L+  RLNH IDKGYERITLQLDLGGESPGYL  DKHYREADAALLN+IYP NLSKINTRRKEQV</pattern>
+      <matchSeq start="97" end="195">VTSGLERLVTLLARKQSDFATELVKEAKINELDEPLTIDRLNHQIDKGYERITLQLDLGGESPGYLGSDKHYREADAALLNIIYPANLSKINTRRKEQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="W7E2L0_9PROT" ac="W7E2L0" length="530" description="GH15-like domain-containing protein OS=Commensalibacter papalotli (ex Servin-Garciduenas et al. 2014) OX=1208583 GN=COMX_06420 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>212</score>
+      <bits>86.3</bits>
+      <expectation>1.5e-17</expectation>
+      <identity>45.1</identity>
+      <positives>62.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKKDSV---FVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>+TS LE L  +++K   V   FV  L   AK  +L+  +++  L  L+D GY RI  QL +GGESP Y + D  YR+ADAALLN+IYP  L ++  ++KEQV</pattern>
+      <matchSeq start="276" end="377">VTSALENLQKMIAKPSDVEKPFVESLQDRAKTLKLEHFINSENLLRLVDLGYLRIDKQLAMGGESPDYPKTDPRYRQADAALLNLIYPARLHRLTIKQKEQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0ABN8W8K0_9PROT" ac="A0ABN8W8K0" length="546" description="GH15 family (SGA1) (PDB:1AGM) OS=Commensalibacter papalotli (ex Botero et al. 2024) OX=2972766 GN=R83534S58_LOCUS722 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>212</score>
+      <bits>86.3</bits>
+      <expectation>1.5e-17</expectation>
+      <identity>45.1</identity>
+      <positives>62.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKKDSV---FVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>+TS LE L  +++K   V   FV  L   AK  +L+  +++  L  L+D GY RI  QL +GGESP Y + D  YR+ADAALLN+IYP  L ++  ++KEQV</pattern>
+      <matchSeq start="292" end="393">VTSALENLQKMIAKPSDVEKPFVESLQDRAKTLKLEHFINSENLLRLVDLGYLRIDKQLAMGGESPDYPKTDPRYRQADAALLNLIYPARLHRLTIKQKEQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A251ZV07_9PROT" ac="A0A251ZV07" length="546" description="GH15-like domain-containing protein OS=Commensalibacter intestini OX=479936 GN=HK18_08190 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>199</score>
+      <bits>81.3</bits>
+      <expectation>8.9e-16</expectation>
+      <identity>41.2</identity>
+      <positives>61.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKKDSV---FVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>+TS LE L  +++K       FV  L   A+  +L+  +++  L+ L+  GY+RI  QL +GGESP Y + D  YR+ADAALLN+IYP  L ++  ++KE V</pattern>
+      <matchSeq start="293" end="394">VTSALENLQGMIAKPQGAEKPFVEALRARAQELKLEHFITSENLSRLVSLGYQRIDKQLVIGGESPDYPKTDSRYRQADAALLNLIYPARLHRLTIKQKEHV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0ABT6Q305_9PROT" ac="A0ABT6Q305" length="547" description="Glycoside hydrolase family 15 protein OS=Commensalibacter oyaizuii OX=3043873 GN=QJV27_09115 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <bits>79.7</bits>
+      <expectation>3.1e-15</expectation>
+      <identity>43.1</identity>
+      <positives>58.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKK---DSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>+TS LE L  ++      D  FV  L   AK       +S+  L+ L+D GY+RI  QL+ GGESP Y + D  YR+ADAALLN+IYP  LS++    K++V</pattern>
+      <matchSeq start="294" end="395">VTSALENLQRIIDHPTVHDKDFVHALQDRAKQLNASSFVSSPNLSRLVDLGYKRIYQQLEQGGESPDYNKTDSRYRQADAALLNLIYPARLSRLTLEHKKRV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A2T1LUK4_9CHRO" ac="A0A2T1LUK4" length="541" description="GH15-like domain-containing protein OS=Aphanothece hegewaldii CCALA 016 OX=2107694 GN=C7H19_17485 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>121</score>
+      <bits>51.2</bits>
+      <expectation>3.2e-05</expectation>
+      <identity>34.4</identity>
+      <positives>53.3</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="88">TSGLERLSNLLSKKDSVFVSDLLRE---AKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNL</querySeq>
+      <pattern>T  L+    L+S +++   S  L++    +  ++    S   LN LI +G   + +QL LGGESP Y   D  +R ADAAL+ +I P+ L</pattern>
+      <matchSeq start="274" end="363">TRSLQVWGKLMSAQNNSAYSKRLKDFLLKQSTDISNVWSEPSLNTLISQGLNTVKIQLRLGGESPNYKPDDVRFRRADAALVVLIQPSPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0ABS1GAM1_9GAMM" ac="A0ABS1GAM1" length="482" description="Glycosyl hydrolases 15 family protein OS=Francisella philomiragia OX=28110 GN=IBE52_02920 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.14</expectation>
+      <identity>41.7</identity>
+      <positives>58.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="38" end="85">TTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP</querySeq>
+      <pattern>+  L  L D G  ++  Q+  GGESP Y   D  YRE+DAA+L++  P</pattern>
+      <matchSeq start="256" end="303">SVNLQQLSDLGINKVKTQIARGGESPLYDADDICYRESDAAMLHIFTP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0ABQ6PES0_9GAMM" ac="A0ABQ6PES0" length="482" description="Glycoside hydrolase family 15 protein OS=Francisella sciaenopsi OX=3055034 GN=fsci_04450 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.5</expectation>
+      <identity>42.2</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="85">LNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP</querySeq>
+      <pattern>L  L + G  ++  Q+  GGESP Y   D  YRE+DAA+L++  P</pattern>
+      <matchSeq start="259" end="303">LQQLSNLGINKVKTQIASGGESPLYNSDDICYRESDAAMLHIFTP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0AAJ4TLL9_9GAMM" ac="A0AAJ4TLL9" length="482" description="GH15-like domain-containing protein OS=Francisella salimarina OX=2599927 GN=KQR59_03585 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.68</expectation>
+      <identity>42.2</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="85">LNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP</querySeq>
+      <pattern>L  L + G  ++  Q+  GGESP Y   D  YRE+DAA+L++  P</pattern>
+      <matchSeq start="259" end="303">LQQLSNLGINKVKTQIARGGESPLYHADDICYRESDAAMLHIFTP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0ABN3ZSK1_FRAST" ac="A0ABN3ZSK1" length="482" description="Uncharacterized protein YgeP OS=Francisella salina OX=573569 GN=F7308_1601 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.93</expectation>
+      <identity>42.2</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="85">LNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP</querySeq>
+      <pattern>L  L + G  ++  Q+  GGESP Y   D  YRE+DAA+L++  P</pattern>
+      <matchSeq start="259" end="303">LQQLSNLGINKVKTQIARGGESPLYDADDICYRESDAAMLHIFTP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0ABX5ZE27_9GAMM" ac="A0ABX5ZE27" length="482" description="GH15-like domain-containing protein OS=Francisella marina OX=2249302 GN=F0R74_02075 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.93</expectation>
+      <identity>42.2</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="85">LNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP</querySeq>
+      <pattern>L  L + G  ++  Q+  GGESP Y   D  YRE+DAA+L++  P</pattern>
+      <matchSeq start="259" end="303">LQQLSNLGINKVKTQIARGGESPLYDADDICYRESDAAMLHIFTP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0ABS2FG49_9CLOT" ac="A0ABS2FG49" length="284" description="DUF3888 domain-containing protein OS=Clostridium saudiense OX=1414720 GN=H6A19_09365 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.6</expectation>
+      <identity>34.7</identity>
+      <positives>50.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="94">LREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYR-EADAALLNVIYPTNLSKINTR</querySeq>
+      <pattern>L +   N  DE L +   N   DK Y  ITL++D G +    + +DK +R E   AL+ +IY  NL   N +</pattern>
+      <matchSeq start="49" end="120">LDQINYNVRDEVLGSWEKNDKNDKVYLLITLEIDNGDDIGNTINRDKIFRQELTLALVAIIYGDNLFLENNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="V4AZR7_LOTGI" ac="V4AZR7" length="290" description="Uncharacterized protein OS=Lottia gigantea OX=225164 GN=LOTGIDRAFT_173773 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.6</expectation>
+      <identity>30.1</identity>
+      <positives>49.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="92">MTSGLERLSNLLSKKDSVFVSDL-LREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLSKIN</querySeq>
+      <pattern>+T G+  LSN L   D+ F  D  +++A  N + +T +TT  N+     +  + L+    G +P  +E  KH  E D  L  V+YP N   ++</pattern>
+      <matchSeq start="48" end="134">VTFGINSLSNWLLLSDAHFRCDFKIKDAAQNRIPQT-NTTLENNFFPSLFSEMVLE---AGSNP--IETIKHPGEFDTMLKTVLYPKNYDSVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0AAV5R7L6_PICKL" ac="A0AAV5R7L6" length="646" description="tRNA modification protein OS=Pichia kluyveri OX=36015 GN=DAPK24_038750 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.8</expectation>
+      <identity>27.0</identity>
+      <positives>49.0</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="99">SKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTN-------------LSKINTRRKEQV</querySeq>
+      <pattern>SK  S +     + + +NEL + +  ++LN   D+  +RI +++ + G   GY++K+K Y +A  A  N+  P N             +SK+N  R E +</pattern>
+      <matchSeq start="524" end="620">SKLKSAYEILRYKGSSINELLKIIDDSKLN---DELNDRIKMKITVEGNYEGYIKKEKEYIKAFKADENMKLPNNFDYRNIPSLSSEVISKLNENRPESI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A345JRZ6_9GAMM" ac="A0A345JRZ6" length="481" description="GH15-like domain-containing protein OS=Francisella opportunistica OX=2016517 GN=CGC43_05600 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>2.4</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="85">LNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP</querySeq>
+      <pattern>L  L  +G  ++  Q+  GGESP Y   D  YR++DAA+L++  P</pattern>
+      <matchSeq start="259" end="303">LELLYTQGINKVKNQIAYGGESPLYDLNDIRYRQSDAAMLHIFTP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A2V4E4H2_9GAMM" ac="A0A2V4E4H2" length="339" description="Endolytic murein transglycosylase OS=Gilliamella apicola OX=1196095 GN=mltG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>4.2</expectation>
+      <identity>29.1</identity>
+      <positives>48.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="89">ERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRL--NHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYPTNLS</querySeq>
+      <pattern>E L  L+S KDS FV   +   +V +  + LS T      L DK ++ I   L + GE  G+   D +   A+++  N++   +L+</pattern>
+      <matchSeq start="100" end="185">EFLKLLVSGKDSKFVVQFVEGKRVKDWFKVLSNTPYIQQTLTDKSHDEIAKLLGIEGELEGWFSPDTYQYTANSSDFNILKRAHLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A2T9ZJ22_9FUNG" ac="A0A2T9ZJ22" length="1258" description="Kinesin motor domain-containing protein OS=Smittium megazygosporum OX=133381 GN=BB560_000925 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>4.7</expectation>
+      <identity>33.3</identity>
+      <positives>46.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="98">DLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLN-VIYPTNLSKINTRRKEQ</querySeq>
+      <pattern>D L +   +  ++ +S+  +   IDK YE I    D GGE  G L K     E D  L N V+ PT    +N  + EQ</pattern>
+      <matchSeq start="1113" end="1190">DKLGQLNAHFPNKRISSGSIKIFIDKSYENIASPQDAGGEYEGDLIKGFKNYEIDGNLDNTVLSPTTSPNVNLVKSEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="C1FJ15_MICCD" ac="C1FJ15" length="590" description="Kinesin-like protein (Fragment) OS=Micromonas commoda OX=296587 GN=MICPUN_87350 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>6.1</expectation>
+      <identity>32.2</identity>
+      <positives>50.6</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="83">TSGLERLSNLLSKKDSVFV-----SDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVI</querySeq>
+      <pattern>T+G  R++ L S+  +VF+     S L  EA   EL ++    +LN +   G ER+     L G +   LE+ K   ++ +AL NVI</pattern>
+      <matchSeq start="241" end="323">TTGATRMNELSSRSHAVFIIIVENSKLTEEAGATELRQSFKVGKLNLVDLAGSERVR----LSGATGTRLEESKKINQSLSALGNVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0ABX7LER2_9BACL" ac="A0ABX7LER2" length="1401" description="TIGR02680 family protein OS=Paenibacillus tianjinensis OX=2810347 GN=JRJ22_08175 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>6.4</expectation>
+      <identity>29.2</identity>
+      <positives>42.5</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="99">MTSGLERLSNLLSKKDSVFVSDLLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYR-------EADAALLNVIYPTNLSKINTRRKEQV</querySeq>
+      <pattern>+ S +   + L S  + +FV D+   A   ELDETL T  +   I   Y++  + LD   +S    E  KH+        E DA L  V Y  N + I    +  V</pattern>
+      <matchSeq start="976" end="1078">LKSTIHFYNELCSAWEVIFVQDVRENASEYELDETLDTKMMAKQI---YDKFGVLLDKKEKSQVNTELSKHFTASSMSLIEYDAELKAVPYMVNFTNIPEEEQANV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0ABS1WYP5_9GAMM" ac="A0ABS1WYP5" length="698" description="Bifunctional diguanylate cyclase/phosphodiesterase OS=Steroidobacter gossypii OX=2805490 GN=JM946_15300 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.5</expectation>
+      <identity>30.2</identity>
+      <positives>49.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="85">LLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVIYP</querySeq>
+      <pattern>L ++    ELD+ LS  +LN ++D GY+    ++D  G +P      K    ADA +  +  P</pattern>
+      <matchSeq start="63" end="125">LAQQGSAGELDQVLSKLQLNRMVDAGYDFELSKVDGSGGAPRIFVSSKIEPLADAIISRIRLP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A4R7B3R2_9NEIS" ac="A0A4R7B3R2" length="173" description="Two-component system response regulator RegA OS=Paludibacterium purpuratum OX=1144873 GN=DFP86_11089 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.5</expectation>
+      <identity>40.0</identity>
+      <positives>58.2</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="62">LLSKKDSVFVSDLLREAKV---NELDETLSTTRLNHLIDKGYERITLQLDLGGES</querySeq>
+      <pattern>LL   D VF +D+L  A +   +E++   S      ++ KGYERI L L+LGG+S</pattern>
+      <matchSeq start="4" end="57">LLIDDDDVF-ADVLARALIRRGHEVERAASEAEALLMLGKGYERIVLDLNLGGDS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0AC54ZE66_ORYAF" ac="A0AC54ZE66" length="2397" description="RNA-directed DNA polymerase OS=Orycteropus afer afer OX=1230840 GN=ROBO1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.9</expectation>
+      <identity>35.1</identity>
+      <positives>51.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="97">LLREAKVNELDETLSTTRLNHLIDKGYERITLQLDLGGESPGYLEKDKHYREADAALLNVI--YPTNLSKINTRRKE</querySeq>
+      <pattern>+L EA+ N L +    T L +LID G+     + D   E     E  ++YR+   A L V    PTNL+K+N+ R+E</pattern>
+      <matchSeq start="1963" end="2037">ILNEARKNVLGDNGQPTTLQNLIDAGFPLTRPEWDF--EQSKGREHLRNYRQILMAGLRVAARKPTNLAKVNSVRQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

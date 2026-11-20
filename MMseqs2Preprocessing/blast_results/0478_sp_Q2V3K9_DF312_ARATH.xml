@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-182539-0409-21635253-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-182539-0409-21635253-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q2V3K9|DF312_ARATH" type="PROTEIN" length="69"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T18:25:39+00:00" end="2026-11-13T18:26:46+00:00" search="P0Y0M0DT0H0M67.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="9">
+   <hit number="1" database="SP" id="DF312_ARATH" ac="Q2V3K9" length="69" description="Putative defensin-like protein 312 OS=Arabidopsis thaliana OX=3702 GN=At4g08039 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>370</score>
+      <bits>147.1</bits>
+      <expectation>6.9e-45</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="69">MSCFSFLVYFLLFIVTKMSQSPLSQSSHEFTVVSPYLSCFGIEECLFYLYFKLYDLCVILLCTWFDLSE</querySeq>
+      <pattern>MSCFSFLVYFLLFIVTKMSQSPLSQSSHEFTVVSPYLSCFGIEECLFYLYFKLYDLCVILLCTWFDLSE</pattern>
+      <matchSeq start="1" end="69">MSCFSFLVYFLLFIVTKMSQSPLSQSSHEFTVVSPYLSCFGIEECLFYLYFKLYDLCVILLCTWFDLSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A8T2E6B3_ARASU" ac="A0A8T2E6B3" length="69" description="Uncharacterized protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As04g007360 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>356</score>
+      <bits>141.7</bits>
+      <expectation>9.4e-43</expectation>
+      <identity>95.7</identity>
+      <positives>97.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="69">MSCFSFLVYFLLFIVTKMSQSPLSQSSHEFTVVSPYLSCFGIEECLFYLYFKLYDLCVILLCTWFDLSE</querySeq>
+      <pattern>MSCFSFLVYFL FIVTKMSQSPLSQSSHEFTVVSPYLSCFGIEECLFYLYFK YDLCVILLCTWFDL+E</pattern>
+      <matchSeq start="1" end="69">MSCFSFLVYFLPFIVTKMSQSPLSQSSHEFTVVSPYLSCFGIEECLFYLYFKFYDLCVILLCTWFDLNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ACE2EKL5_ARAHA" ac="A0ACE2EKL5" length="207" description="Uncharacterized protein OS=Arabidopsis halleri OX=81970 GN=ARAHAL_2.1253.1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>108</score>
+      <bits>46.2</bits>
+      <expectation>0.00045</expectation>
+      <identity>76.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="34" end="58">SPYLSCFGIEECLFYLYFKLYDLCV</querySeq>
+      <pattern>SPYLSC+GI ECL YL FKL DLC+</pattern>
+      <matchSeq start="175" end="199">SPYLSCYGIGECLLYLCFKLCDLCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A437ANR7_9MICR" ac="A0A437ANR7" length="293" description="Uncharacterized protein OS=Tubulinosema ratisbonensis OX=291195 GN=TUBRATIS_006670 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>2.1</expectation>
+      <identity>30.4</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="59">FSFLVYFLLFIVTKMSQSPLSQSSHEFTVVSPYLSCFGIEECLFYLYFKLYDLCVI</querySeq>
+      <pattern>F  L+YFL F++ K     +   S    ++S + S F +   +F L+FKL  +C++</pattern>
+      <matchSeq start="72" end="127">FLLLIYFLQFLILKFRTFKILSISELQCILSEFFSLFHLALNVFLLFFKLVIVCIL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A812DF54_ACAPH" ac="A0A812DF54" length="3460" description="Uncharacterized protein OS=Acanthosepion pharaonis OX=158019 GN=SPHA_52933 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>5.8</expectation>
+      <identity>35.8</identity>
+      <positives>44.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="69">CFSFLVYFLLFIVTKMSQSPLSQSSHEFTVVSPYLSCFGIEECLFYLYFKLYDLCVILLCTWFDLSE</querySeq>
+      <pattern>C S  +Y L F+        LS SS     +S YL C  +   L  +   LY LCV L+C    LSE</pattern>
+      <matchSeq start="2736" end="2802">CVSLCLYLLCFVSFISFCLSLSLSSVSPFSLSLYLLCVSLSLYLLCVSLSLYLLCVYLICISLCLSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="F6KBI0_HETGL" ac="F6KBI0" length="277" description="NADH-ubiquinone oxidoreductase chain 1 (Fragment) OS=Heterodera glycines OX=51029 GN=ND1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>7.3</expectation>
+      <identity>30.4</identity>
+      <positives>53.6</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="68">CFSFLVYF---LLFIVTKMSQSPLSQSSHEFTVVSPYLSCFGIEECLFYLYFKLYDLCVILLCTWFDLS</querySeq>
+      <pattern>CF FL +F   L+F++ + ++SP   +  E  +VS Y   F     LF+++F L +  ++    +F LS</pattern>
+      <matchSeq start="161" end="226">CFFFLFFFFVLLIFVLAESNRSPFDLAEGESELVSGYNIEF---SSLFFIFFFLSEYSILFFLYFFFLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A8J5MWS9_HOMAM" ac="A0A8J5MWS9" length="489" description="Dol-P-Glc:Glc(2)Man(9)GlcNAc(2)-PP-Dol alpha-1,2-glucosyltransferase OS=Homarus americanus OX=6706 GN=ALG10-L PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>7.6</expectation>
+      <identity>41.1</identity>
+      <positives>53.6</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MSCFSF---LVYFLLFIVTKMSQSPLSQSSHEFTVVSPYLSCFGIEECLFYLYFKL</querySeq>
+      <pattern>+ CFS+   L  FLLF++   S     +S+HE TV  P L  F    CLF+L F L</pattern>
+      <matchSeq start="270" end="321">VDCFSYGIVLAGFLLFVMYNGSVVVGDRSAHEATVHLPQLGYF----CLFFLVFSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A6A5C7S6_NAEFO" ac="A0A6A5C7S6" length="545" description="Uncharacterized protein OS=Naegleria fowleri OX=5763 GN=FDP41_011701 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>7.6</expectation>
+      <identity>36.5</identity>
+      <positives>46.2</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="67">TKMSQSPLSQSSHEFTVVSPYLSCFGIEECLFYLYFKLYDLCVILLCTWFDL</querySeq>
+      <pattern>T+ + SP     H  TV+ PY+ C     C +Y  F L  L V L   W DL</pattern>
+      <matchSeq start="60" end="106">TRAATSPKKGLIHFRTVIKPYVQC-----CNYYFLFFLISLFVFLAGAWVDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A812ETH5_ACAPH" ac="A0A812ETH5" length="917" description="Uncharacterized protein OS=Acanthosepion pharaonis OX=158019 GN=SPHA_80049 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>7.8</expectation>
+      <identity>31.3</identity>
+      <positives>47.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="68">SCFSFLVYFLLFIVTKMSQSPLSQSSHEFTVVSPYLSCFGIEECLFYLYFKLYDLCVILLCTWFDLS</querySeq>
+      <pattern>S FSF   F+LF    +    LS  S   ++ S +LS + +   L+ L+  LY L + L   +  LS</pattern>
+      <matchSeq start="571" end="637">SFFSFFSLFILFFSLSLYSFSLSLYSFSLSLYSLFLSLYSLFLSLYSLFLSLYSLFLSLYSLFLSLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

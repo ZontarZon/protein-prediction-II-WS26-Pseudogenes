@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-200229-0421-71562445-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-200229-0421-71562445-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P0C5K6|CT18_HUMAN" type="PROTEIN" length="33"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:02:29+00:00" end="2026-11-13T20:03:36+00:00" search="P0Y0M0DT0H0M67.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="3">
+   <hit number="1" database="SP" id="CT18_HUMAN" ac="P0C5K6" length="33" description="Putative tumor antigen NA88-A OS=Homo sapiens OX=9606 GN=VENTXP1 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>1.6e-15</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="33">MSPPSSMCSPVPLLAAASGQNRMTQGQHFLQKV</querySeq>
+      <pattern>MSPPSSMCSPVPLLAAASGQNRMTQGQHFLQKV</pattern>
+      <matchSeq start="1" end="33">MSPPSSMCSPVPLLAAASGQNRMTQGQHFLQKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0ACF8JZ32_SEMEN" ac="A0ACF8JZ32" length="34" description="Uncharacterized protein (Fragment) OS=Semnopithecus entellus OX=88029 GN=H8957_016617 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>1.1e-13</expectation>
+      <identity>93.9</identity>
+      <positives>93.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="33">MSPPSSMCSPVPLLAAASGQNRMTQGQHFLQKV</querySeq>
+      <pattern>MSPPSSMCS VP LAAASGQNRMTQGQHFLQKV</pattern>
+      <matchSeq start="1" end="33">MSPPSSMCSSVPFLAAASGQNRMTQGQHFLQKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ACF8Q056_NASLA" ac="A0ACF8Q056" length="52" description="Uncharacterized protein OS=Nasalis larvatus OX=43780 GN=H8958_015408 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>1.5e-13</expectation>
+      <identity>93.9</identity>
+      <positives>93.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="33">MSPPSSMCSPVPLLAAASGQNRMTQGQHFLQKV</querySeq>
+      <pattern>MSPPSSMCS VP LAAASGQNRMTQGQHFLQKV</pattern>
+      <matchSeq start="1" end="33">MSPPSSMCSSVPFLAAASGQNRMTQGQHFLQKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

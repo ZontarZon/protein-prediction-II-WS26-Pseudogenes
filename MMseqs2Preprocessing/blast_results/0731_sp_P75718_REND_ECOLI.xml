@@ -1,0 +1,1334 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-203031-0231-37230908-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-203031-0231-37230908-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P75718|REND_ECOLI" type="PROTEIN" length="61"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:30:31+00:00" end="2026-11-13T20:32:16+00:00" search="P0Y0M0DT0H0M105.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="77">
+   <hit number="1" database="SP" id="REND_ECOLI" ac="P75718" length="61" description="Putative protein RenD OS=Escherichia coli (strain K12) OX=83333 GN=renD PE=5 SV=4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>315</score>
+      <bits>125.9</bits>
+      <expectation>9.8e-37</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</querySeq>
+      <pattern>MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</pattern>
+      <matchSeq start="1" end="61">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="B7LB97_ECO55" ac="B7LB97" length="100" description="Ren protein from phage origin OS=Escherichia coli (strain 55989 / EAEC) OX=585055 GN=EC55989_0771 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>315</score>
+      <bits>125.9</bits>
+      <expectation>3e-36</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</querySeq>
+      <pattern>MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</pattern>
+      <matchSeq start="40" end="100">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A0H3JDZ0_ECO57" ac="A0A0H3JDZ0" length="100" description="Phage exclusion protein OS=Escherichia coli O157:H7 OX=83334 GN=ECs_1613 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>301</score>
+      <bits>120.6</bits>
+      <expectation>4.1e-34</expectation>
+      <identity>98.4</identity>
+      <positives>98.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</querySeq>
+      <pattern>MARAGILVVDGKVWRTVYYRFATREE EGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</pattern>
+      <matchSeq start="40" end="100">MARAGILVVDGKVWRTVYYRFATREEREGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A7ZJF9_ECO24" ac="A7ZJF9" length="100" description="Protein ren OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_0812 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>301</score>
+      <bits>120.6</bits>
+      <expectation>4.1e-34</expectation>
+      <identity>98.4</identity>
+      <positives>98.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</querySeq>
+      <pattern>MARAGILVVDGKVWRTVYYRFATREE EGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</pattern>
+      <matchSeq start="40" end="100">MARAGILVVDGKVWRTVYYRFATREEREGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A653FT14_9CAUD" ac="A0A653FT14" length="100" description="Ren protein OS=Escherichia phage 4A7 OX=2847059 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>296</score>
+      <bits>118.6</bits>
+      <expectation>2.4e-33</expectation>
+      <identity>96.7</identity>
+      <positives>96.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</querySeq>
+      <pattern>MARAGILVVDGKVWRTVYYRFATREE EGKVS NLIFKECRQSAAMKRVLRVYKRTSMGTQ</pattern>
+      <matchSeq start="40" end="100">MARAGILVVDGKVWRTVYYRFATREEREGKVSANLIFKECRQSAAMKRVLRVYKRTSMGTQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A0H3EGB4_ECO8N" ac="A0A0H3EGB4" length="100" description="Ren protein OS=Escherichia coli O83:H1 (strain NRG 857C / AIEC) OX=685038 GN=NRG857_05580 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>296</score>
+      <bits>118.6</bits>
+      <expectation>2.4e-33</expectation>
+      <identity>96.7</identity>
+      <positives>96.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTSMGTQ</querySeq>
+      <pattern>MARAGILVVDGKVWRTVYYRFATREE EGKVS NLIFKECRQSAAMKRVLRVYKRTSMGTQ</pattern>
+      <matchSeq start="40" end="100">MARAGILVVDGKVWRTVYYRFATREEREGKVSANLIFKECRQSAAMKRVLRVYKRTSMGTQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0ABU1DLP1_9ESCH" ac="A0ABU1DLP1" length="97" description="Protein ren OS=Escherichia ruysiae OX=2608867 GN=RGV86_00010 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>1.3e-27</expectation>
+      <identity>87.7</identity>
+      <positives>93.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTS</querySeq>
+      <pattern>MARAGILV+DGK+WRTVYYRFATREE EGKV TNLIFKECRQSAAMKRVL VY RT+</pattern>
+      <matchSeq start="40" end="96">MARAGILVIDGKIWRTVYYRFATREEREGKVGTNLIFKECRQSAAMKRVLAVYGRTT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A0N6WES4_9CAUD" ac="A0A0N6WES4" length="96" description="Ren protein OS=Escherichia phage PA28 OX=1660368 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <bits>102.4</bits>
+      <expectation>5.3e-27</expectation>
+      <identity>94.3</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAGILV+DGKVWRTVYYRFATREE EGKVSTNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGILVIDGKVWRTVYYRFATREEREGKVSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="B7LND9_ESCF3" ac="B7LND9" length="97" description="Ren protein from phage origin OS=Escherichia fergusonii (strain ATCC 35469 / DSM 13698 / CCUG 18766 / IAM 14443 / JCM 21226 / LMG 7866 / NBRC 102419 / NCTC 12128 / CDC 0568-73) OX=585054 GN=EFER_2717 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>253</score>
+      <bits>102.1</bits>
+      <expectation>7.8e-27</expectation>
+      <identity>86.2</identity>
+      <positives>91.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="58">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTSM</querySeq>
+      <pattern>MARAGILV+DGKVWRTVYYRFATREE EGKVSTNLIFKECRQSAAMKRVL V+ R  +</pattern>
+      <matchSeq start="40" end="97">MARAGILVIDGKVWRTVYYRFATREEREGKVSTNLIFKECRQSAAMKRVLMVWGRVGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A1I9LJ68_9CAUD" ac="A0A1I9LJ68" length="96" description="Ren exclusion protein OS=Stx converting phage vB_EcoS_P27 OX=1792287 GN=vBEcoSP27_31 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>248</score>
+      <bits>100.1</bits>
+      <expectation>4.4e-26</expectation>
+      <identity>90.6</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGKVSTNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKVSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="Q6H9X5_9CAUD" ac="Q6H9X5" length="96" description="Putative Ren protein OS=Enterobacteria phage BP-4795 OX=196242 GN=ren PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>248</score>
+      <bits>100.1</bits>
+      <expectation>4.4e-26</expectation>
+      <identity>90.6</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGKVSTNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKVSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="H6WZI4_9CAUD" ac="H6WZI4" length="96" description="Putative Ren protein OS=Escherichia phage JLK-2012 OX=1147722 GN=ren PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>248</score>
+      <bits>100.1</bits>
+      <expectation>4.4e-26</expectation>
+      <identity>90.6</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGKVSTNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKVSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A0H3JFI3_ECO57" ac="A0A0H3JFI3" length="96" description="Phage exclusion protein OS=Escherichia coli O157:H7 OX=83334 GN=ECs_2985 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>248</score>
+      <bits>100.1</bits>
+      <expectation>4.4e-26</expectation>
+      <identity>90.6</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGKVSTNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKVSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="Q77AL8_9CAUD" ac="Q77AL8" length="96" description="Ren protein OS=Escherichia phage 21 OX=2910191 GN=ren PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <bits>99.0</bits>
+      <expectation>1.2e-25</expectation>
+      <identity>88.7</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A0P0ZC54_9CAUD" ac="A0A0P0ZC54" length="96" description="Exclusion protein OS=Stx2-converting phage Stx2a_WGPS9 OX=1226258 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <bits>99.0</bits>
+      <expectation>1.2e-25</expectation>
+      <identity>88.7</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A346FJ61_9CAUD" ac="A0A346FJ61" length="96" description="Exclusion protein OS=Enterobacteria phage O276 OX=2282412 GN=49 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <bits>99.0</bits>
+      <expectation>1.2e-25</expectation>
+      <identity>88.7</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="O32559_BP933" ac="O32559" length="96" description="Ren protein OS=Escherichia phage 933W OX=10730 GN=ren PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <bits>99.0</bits>
+      <expectation>1.2e-25</expectation>
+      <identity>88.7</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0A653FRE5_9CAUD" ac="A0A653FRE5" length="96" description="Ren protein OS=Escherichia phage 2G7b OX=2847057 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <bits>99.0</bits>
+      <expectation>1.2e-25</expectation>
+      <identity>88.7</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A1U9AJF1_9CAUD" ac="A0A1U9AJF1" length="96" description="Protein ren OS=Stx1 converting phage AU6Stx1 OX=1855816 GN=ren PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <bits>99.0</bits>
+      <expectation>1.2e-25</expectation>
+      <identity>88.7</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A1U9AJ76_9CAUD" ac="A0A1U9AJ76" length="96" description="Protein ren OS=Stx1 converting phage AU5Stx1 OX=1855815 GN=ren PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <bits>99.0</bits>
+      <expectation>1.2e-25</expectation>
+      <identity>88.7</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A653FWU1_9CAUD" ac="A0A653FWU1" length="96" description="Ren protein OS=Escherichia phage ev243 OX=2847063 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <bits>99.0</bits>
+      <expectation>1.2e-25</expectation>
+      <identity>88.7</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A1I9LJY4_9CAUD" ac="A0A1I9LJY4" length="96" description="Ren protein OS=Stx converting phage vB_EcoS_ST2-8624 OX=1792289 GN=vBEcoSST28624_32 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <bits>99.0</bits>
+      <expectation>1.2e-25</expectation>
+      <identity>88.7</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A653FVZ3_9CAUD" ac="A0A653FVZ3" length="96" description="Ren protein OS=Escherichia phage 1H12 OX=2847055 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <bits>99.0</bits>
+      <expectation>1.2e-25</expectation>
+      <identity>88.7</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A434AE92_9BACT" ac="A0A434AE92" length="95" description="Protein ren (Fragment) OS=Ancylomarina longa OX=2487017 GN=DLK05_17125 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>1.7e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+FKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLVFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A1S1V496_9FIRM" ac="A0A1S1V496" length="96" description="Protein ren OS=Andreesenia angusta OX=39480 GN=EUAN_21170 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>1.8e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+FKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLVFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="K7P7K7_9CAUD" ac="K7P7K7" length="96" description="Ren exclusion protein OS=Enterobacteria phage HK140 OX=1147143 GN=HK140_055 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>1.8e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+FKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLVFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A3S0RUM9_9GAMM" ac="A0A3S0RUM9" length="96" description="Protein ren OS=Shewanella canadensis OX=271096 GN=EKG38_22685 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>1.8e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+FKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLVFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A2G1VLI1_9FLAO" ac="A0A2G1VLI1" length="96" description="Protein ren OS=Leeuwenhoekiella nanhaiensis OX=1655491 GN=CJ305_19095 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>1.8e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+FKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLVFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A974PJL0_9BACL" ac="A0A974PJL0" length="96" description="Protein ren OS=Paenibacillus sonchi OX=373687 GN=JI735_34960 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>1.8e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+FKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLVFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A7Y6BRK7_9BACL" ac="A0A7Y6BRK7" length="96" description="Protein ren OS=Paenibacillus xylanilyticus OX=248903 GN=HP552_00200 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>1.8e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+FKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLVFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A417YDJ1_9BACI" ac="A0A417YDJ1" length="96" description="Protein ren OS=Neobacillus notoginsengisoli OX=1578198 GN=D1B31_23410 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>1.8e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+FKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLVFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A417Y9U8_9BACI" ac="A0A417Y9U8" length="96" description="Protein ren OS=Oceanobacillus profundus OX=372463 GN=D1B32_22615 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>1.8e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+FKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLVFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="SP" id="VREN_LAMBD" ac="P03761" length="96" description="Protein ren OS=Escherichia phage lambda OX=2681611 GN=ren PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>1.8e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+FKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLVFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="O48423_BPH19" ac="O48423" length="96" description="Ren protein OS=Enterobacteria phage H19B OX=69932 GN=ren PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>242</score>
+      <bits>97.8</bits>
+      <expectation>3.6e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFAT+EE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATKEEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0A653FQY1_9CAUD" ac="A0A653FQY1" length="96" description="Ren protein OS=Escherichia phage 2B8 OX=2847056 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>242</score>
+      <bits>97.8</bits>
+      <expectation>3.6e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFAT+EE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATKEEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A653FVU2_9CAUD" ac="A0A653FVU2" length="96" description="Ren protein OS=Escherichia phage ev099 OX=2847061 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>242</score>
+      <bits>97.8</bits>
+      <expectation>3.6e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFAT+EE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATKEEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="B7UN94_ECO27" ac="B7UN94" length="96" description="Predicted exclusion protein OS=Escherichia coli O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=E2348C_1001 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>242</score>
+      <bits>97.8</bits>
+      <expectation>3.6e-25</expectation>
+      <identity>86.8</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFAT+EE EGK+STNLIFKECRQSAAMKRVL VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATKEEREGKMSTNLIFKECRQSAAMKRVLAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0ABX1VY72_9FIRM" ac="A0ABX1VY72" length="72" description="Protein ren (Fragment) OS=Lacrimispora defluvii OX=2719233 GN=G9470_26955 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <bits>95.9</bits>
+      <expectation>1.1e-24</expectation>
+      <identity>84.9</identity>
+      <positives>94.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+FKECRQSAAMKRVL  Y</pattern>
+      <matchSeq start="16" end="68">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLVFKECRQSAAMKRVLAGY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A653FVR8_9CAUD" ac="A0A653FVR8" length="96" description="Ren protein OS=Escherichia phage ev017 OX=2847060 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <bits>95.9</bits>
+      <expectation>2.1e-24</expectation>
+      <identity>83.0</identity>
+      <positives>94.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFAT+EE EGK+STNLIFKECRQSA MKR+L VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATKEEREGKMSTNLIFKECRQSATMKRILAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A653FW80_9CAUD" ac="A0A653FW80" length="96" description="Ren protein OS=Escherichia phage ev207 OX=2847062 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <bits>95.9</bits>
+      <expectation>2.1e-24</expectation>
+      <identity>83.0</identity>
+      <positives>94.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFAT+EE EGK+STNLIFKECRQSA MKR+L VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATKEEREGKMSTNLIFKECRQSATMKRILAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A0H2YXU3_ECOK1" ac="A0A0H2YXU3" length="96" description="Exclusion protein ren of prophage OS=Escherichia coli O1:K1 / APEC OX=405955 GN=APECO1_235 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <bits>95.9</bits>
+      <expectation>2.1e-24</expectation>
+      <identity>83.0</identity>
+      <positives>94.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFAT+EE EGK+STNLIFKECRQSA MKR+L VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATKEEREGKMSTNLIFKECRQSATMKRILAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="B7MJF0_ECO45" ac="B7MJF0" length="96" description="Ren protein from phage origin OS=Escherichia coli O45:K1 (strain S88 / ExPEC) OX=585035 GN=ECS88_1177 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <bits>95.9</bits>
+      <expectation>2.1e-24</expectation>
+      <identity>83.0</identity>
+      <positives>94.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFAT+EE EGK+STNLIFKECRQSA MKR+L VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATKEEREGKMSTNLIFKECRQSATMKRILAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0A0H2V6N1_ECOL6" ac="A0A0H2V6N1" length="96" description="Putative exclusion protein ren of prophage OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=c1551 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <bits>95.9</bits>
+      <expectation>2.1e-24</expectation>
+      <identity>83.0</identity>
+      <positives>94.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFAT+EE EGK+STNLIFKECRQSA MKR+L VY</pattern>
+      <matchSeq start="40" end="92">MARAGLLVIEGKVWRTVYYRFATKEEREGKMSTNLIFKECRQSATMKRILAVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0ACG3PUZ6_9GAMM" ac="A0ACG3PUZ6" length="81" description="Protein ren (Fragment) OS=Rheinheimera metallidurans OX=2925781 GN=MN199_14785 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>207</score>
+      <bits>84.3</bits>
+      <expectation>5.1e-20</expectation>
+      <identity>86.4</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="44">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSA</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+FKECRQSA</pattern>
+      <matchSeq start="38" end="81">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLVFKECRQSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A807LJ27_9ENTR" ac="A0A807LJ27" length="97" description="Protein ren OS=Kosakonia cowanii JCM 10956 = DSM 18146 OX=1300165 GN=BWI95_17145 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>205</score>
+      <bits>83.6</bits>
+      <expectation>1.6e-19</expectation>
+      <identity>71.4</identity>
+      <positives>80.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="56">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRT</querySeq>
+      <pattern>+AR G+LVVDGKVWRTVYYR  T +E EG+ STN IF+ECR S AMKRVL VY RT</pattern>
+      <matchSeq start="40" end="95">LARKGLLVVDGKVWRTVYYRMVTEDEKEGRRSTNRIFQECRNSEAMKRVLAVYGRT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0ABT6EEB1_9ENTR" ac="A0ABT6EEB1" length="97" description="Protein ren OS=Klebsiella huaxiensis OX=2153354 GN=OXR69_016815 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>200</score>
+      <bits>81.6</bits>
+      <expectation>9.1e-19</expectation>
+      <identity>68.4</identity>
+      <positives>77.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTS</querySeq>
+      <pattern>+AR G+LVVDGK WRTVYYR  T +E  G+ STN IF+ECR S AMKRVL VY RTS</pattern>
+      <matchSeq start="40" end="96">LAREGVLVVDGKAWRTVYYRLTTEDERAGRRSTNRIFQECRNSEAMKRVLAVYGRTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0AAP2BQI7_KLEOX" ac="A0AAP2BQI7" length="97" description="Protein ren OS=Klebsiella oxytoca OX=571 GN=J7S78_33840 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>197</score>
+      <bits>80.5</bits>
+      <expectation>2.6e-18</expectation>
+      <identity>66.7</identity>
+      <positives>77.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTS</querySeq>
+      <pattern>+A+ G+LV + +VWRTVYYR AT EE  G+ STN IF ECRQS AMKRVL VY RTS</pattern>
+      <matchSeq start="40" end="96">LAKQGVLVAEARVWRTVYYRLATEEEISGRKSTNQIFNECRQSPAMKRVLAVYGRTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0AAJ5R0K6_9ENTR" ac="A0AAJ5R0K6" length="97" description="Protein ren OS=Klebsiella electrica OX=1259973 GN=OR613_10545 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>197</score>
+      <bits>80.5</bits>
+      <expectation>2.6e-18</expectation>
+      <identity>66.7</identity>
+      <positives>77.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTS</querySeq>
+      <pattern>+A+ G+LV + +VWRTVYYR AT EE  G+ STN IF ECRQS AMKRVL VY RTS</pattern>
+      <matchSeq start="40" end="96">LAKQGVLVAEARVWRTVYYRLATEEEISGRKSTNQIFNECRQSPAMKRVLAVYGRTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0A0H3GKQ0_KLEPH" ac="A0A0H3GKQ0" length="97" description="Protein ren OS=Klebsiella pneumoniae subsp. pneumoniae (strain HS11286) OX=1125630 GN=KPHS_12500 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>196</score>
+      <bits>80.1</bits>
+      <expectation>3.7e-18</expectation>
+      <identity>66.7</identity>
+      <positives>77.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTS</querySeq>
+      <pattern>+A+ G+LV + +VWRTVYYR AT EE  G+ STN IF ECRQS AMKRVL VY RTS</pattern>
+      <matchSeq start="40" end="96">LAKQGVLVAEARVWRTVYYRLATEEEIAGRKSTNQIFNECRQSPAMKRVLAVYGRTS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0ABZ2DWG8_KLEOR" ac="A0ABZ2DWG8" length="97" description="Protein ren OS=Klebsiella ornithinolytica OX=54291 GN=LM286_17620 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <bits>78.2</bits>
+      <expectation>2.1e-17</expectation>
+      <identity>64.9</identity>
+      <positives>75.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTS</querySeq>
+      <pattern>+A+ G+LV + +VWRTVYYR AT EE  G+ STN IF ECRQS AMKRVL VY R S</pattern>
+      <matchSeq start="40" end="96">LAKQGVLVAEARVWRTVYYRLATEEEITGRKSTNQIFNECRQSPAMKRVLAVYGRAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0A9J6Q600_9ENTR" ac="A0A9J6Q600" length="97" description="Protein ren OS=Silvania hatchlandensis OX=2926469 GN=M8014_17425 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>7.1e-16</expectation>
+      <identity>61.4</identity>
+      <positives>73.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKRTS</querySeq>
+      <pattern>+ + G++VVD K WR V+YR  TR+E  GK STNLIF+ECRQS AMKRVL  Y R S</pattern>
+      <matchSeq start="40" end="96">LEKQGVVVVDSKEWRAVHYRLITRDEQSGKRSTNLIFQECRQSEAMKRVLAFYGRVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0A0H3FUD5_KLEAK" ac="A0A0H3FUD5" length="97" description="Protein ren OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 / CCUG 1429 / JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006 / CDC 819-56) OX=1028307 GN=EAE_22420 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>176</score>
+      <bits>72.4</bits>
+      <expectation>4.1e-15</expectation>
+      <identity>61.8</identity>
+      <positives>72.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="55">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVYKR</querySeq>
+      <pattern>+A+ G+LV   KVWRTV+YR AT EE  G+ STN IF ECRQS  MKR+L VY R</pattern>
+      <matchSeq start="40" end="94">LAKQGVLVAVAKVWRTVHYRLATEEETSGQKSTNQIFNECRQSPVMKRILAVYGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0A0H3FTP4_KLEAK" ac="A0A0H3FTP4" length="154" description="Ren protein from phage origin OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 / CCUG 1429 / JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006 / CDC 819-56) OX=1028307 GN=EAE_21175 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>160</score>
+      <bits>66.2</bits>
+      <expectation>4e-12</expectation>
+      <identity>62.5</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="49">ARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRV</querySeq>
+      <pattern>A+ G+LV   KVWRTV+YR AT EE+ G+ STN IF ECRQS  MKR+</pattern>
+      <matchSeq start="41" end="88">AKQGVLVAVAKVWRTVHYRLATEEEFSGQKSTNQIFNECRQSPVMKRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="C6ZCW7_9CAUD" ac="C6ZCW7" length="267" description="Ren exclusion protein OS=Escherichia phage DE3 OX=482822 GN=ren PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>5.6e-12</expectation>
+      <identity>81.6</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="38">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFK</querySeq>
+      <pattern>MARAG+LV++GKVWRTVYYRFATREE EGK+STNL+ K</pattern>
+      <matchSeq start="40" end="77">MARAGLLVIEGKVWRTVYYRFATREEREGKMSTNLMNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0ABZ0H729_9ENTR" ac="A0ABZ0H729" length="99" description="Protein ren OS=Citrobacter portucalensis OX=1639133 GN=RY846_09100 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>6.2e-10</expectation>
+      <identity>59.3</identity>
+      <positives>64.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MARAGILVVDGKVWRTVYYRFATREEWEGKV--STNLIFKECRQSAAMKRVLRVYKRTS</querySeq>
+      <pattern>+ RA  LV   KVW+TV YR AT EE  G V  STN IF ECR SAAM+RVL  Y R S</pattern>
+      <matchSeq start="40" end="98">LERANRLVRISKVWQTVTYRLATPEEQAGTVRNSTNGIFNECRNSAAMQRVLAFYGRAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0A6L5EJ27_9ENTR" ac="A0A6L5EJ27" length="104" description="Protein ren OS=Citrobacter telavivensis OX=2653932 GN=GBB84_27560 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>2.8e-09</expectation>
+      <identity>57.9</identity>
+      <positives>68.4</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="55">MARAGILVVDGKVWRTVYYRFATREEWEG--KVSTNLIFKECRQSAAMKRVLRVYKR</querySeq>
+      <pattern>+ RA  +V   KVWRTV YR AT+EE  G  +  TN IF+ECR SAAMKRVL V+ R</pattern>
+      <matchSeq start="45" end="101">LERARKIVRVSKVWRTVTYRLATQEEQAGTARSCTNGIFQECRNSAAMKRVLMVWGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0ABY7L0S1_CITFR" ac="A0ABY7L0S1" length="99" description="Protein ren OS=Citrobacter freundii OX=546 GN=O4000_19045 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>135</score>
+      <bits>56.6</bits>
+      <expectation>7.1e-09</expectation>
+      <identity>55.9</identity>
+      <positives>64.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MARAGILVVDGKVWRTVYYRFATREEWEG--KVSTNLIFKECRQSAAMKRVLRVYKRTS</querySeq>
+      <pattern>+ RA  +V   KVWRTV YR AT EE  G  +  TN IF+ECR SAAM+RVL  Y R S</pattern>
+      <matchSeq start="40" end="98">LERARKIVRVSKVWRTVTYRLATPEEQAGTARSCTNGIFQECRNSAAMQRVLAFYGRVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0ABU9VB25_9ENTR" ac="A0ABU9VB25" length="93" description="Protein ren OS=Phytobacter palmae OX=1855371 GN=AAIG39_21690 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>8.7e-09</expectation>
+      <identity>54.7</identity>
+      <positives>69.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>M RAG LV+D + WRTV YR  T  +   +++ N IF+ECR SAAM+RVL VY</pattern>
+      <matchSeq start="40" end="89">MCRAGELVIDSRNWRTVTYRATTDFD---RMNKNFIFEECRSSAAMQRVLSVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A0H3CJX4_ENTCC" ac="A0A0H3CJX4" length="104" description="Ren protein from phage origin OS=Enterobacter cloacae subsp. cloacae (strain ATCC 13047 / DSM 30054 / NBRC 13535 / NCTC 10005 / WDCM 00083 / NCDC 279-56) OX=716541 GN=ECL_01307 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>1.1e-08</expectation>
+      <identity>53.3</identity>
+      <positives>65.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="58">MARAGILVVDGKVWRTVYYRFATREEWEG--KVSTNLIFKECRQSAAMKRVLRVYKRTSM</querySeq>
+      <pattern>+ RA  +V   KVWRTV YR AT EE +G  +  TN IF+ECR S AMKRVL V+ R  +</pattern>
+      <matchSeq start="45" end="104">LERARKIVRVSKVWRTVTYRLATPEEQDGTARSCTNGIFQECRNSPAMKRVLMVWGRVGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0A2P5GSV1_9ENTR" ac="A0A2P5GSV1" length="97" description="Protein ren OS=Superficieibacter electus OX=2022662 GN=CHU33_05355 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>1.9e-08</expectation>
+      <identity>50.9</identity>
+      <positives>66.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="55">MARAGILVVDGKVWRTVYYRFATREEWE--GKVSTNLIFKECRQSAAMKRVLRVYKR</querySeq>
+      <pattern>+A+ G+L+++ KVWR+V YR AT  E    G    N IF +CR+S AMKRVL VY R</pattern>
+      <matchSeq start="40" end="96">LAQEGVLILESKVWRSVTYRLATDAERRNGGCDGINTIFADCRKSDAMKRVLSVYGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0AAE9CAV0_9CAUD" ac="A0AAE9CAV0" length="133" description="Protein ren OS=Enterobacter phage vB_EclS_CobraSix OX=2894794 GN=COBRASIX_60 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>2.1e-08</expectation>
+      <identity>53.3</identity>
+      <positives>65.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="58">MARAGILVVDGKVWRTVYYRFATREEWEG--KVSTNLIFKECRQSAAMKRVLRVYKRTSM</querySeq>
+      <pattern>+ RA  +V   KVWRTV YR AT EE +G  +  TN IF+ECR S AMKRVL V+ R  +</pattern>
+      <matchSeq start="74" end="133">LERARKIVRVNKVWRTVTYRLATPEEQDGTARSCTNGIFQECRNSPAMKRVLMVWGRVGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0ABU6KQ07_ENTAS" ac="A0ABU6KQ07" length="99" description="Protein ren OS=Enterobacter asburiae OX=61645 GN=QAA55_006300 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>1.8e-06</expectation>
+      <identity>55.1</identity>
+      <positives>65.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="58">KVWRTVYYRFATREEWE--GKVSTNLIFKECRQSAAMKRVLRVYKRTSM</querySeq>
+      <pattern>KVWRT  YR AT EE +   +  TN IF+ECR S AMKRVL V+ R  +</pattern>
+      <matchSeq start="51" end="99">KVWRTATYRLATPEEQDCTARSCTNGIFQECRNSPAMKRVLMVWGRVGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0AB35RJ91_9ENTR" ac="A0AB35RJ91" length="94" description="Protein ren OS=Phytobacter ursingii OX=1972431 GN=R0H02_04980 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.0003</expectation>
+      <identity>49.1</identity>
+      <positives>58.2</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVST--NLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>M ++G LVV+ + WR   YR A      G VS   N I  +CR SAAMKRVL VY</pattern>
+      <matchSeq start="42" end="90">MCKSGELVVESRTWRKTVYRKA------GAVSEKKNSIIDDCRNSAAMKRVLSVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0ABN8T6Z4_9ENTR" ac="A0ABN8T6Z4" length="192" description="DUF977 domain-containing protein OS=Pseudocitrobacter vendiensis OX=2488306 GN=FBBNIHIM_04285 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.008</expectation>
+      <identity>40.7</identity>
+      <positives>59.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="58">MARAGILVVDGKVWRTVYYRFATREEWEGK-VSTNLIFKECRQSAAMKRVLRVYKRTSM</querySeq>
+      <pattern>MA+AG +   G+    +Y+    + + E K  S N+I +ECRQS AMKRVL V+ R  +</pattern>
+      <matchSeq start="134" end="192">MAKAGEIKFTGRTGHRIYHLSGLKRKAEVKRQSVNVICQECRQSEAMKRVLMVWGRVGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0ABX6DVY0_KLUIN" ac="A0ABX6DVY0" length="103" description="Protein ren OS=Kluyvera intermedia OX=61648 GN=GHC21_15960 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.008</expectation>
+      <identity>42.9</identity>
+      <positives>58.9</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MARAGILVVDGKVWRTVYYRFATREEWEGKVS---TNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>M R+G + +  + WR   Y +A   E + K+S    N IF ECR SAAM+RVL +Y</pattern>
+      <matchSeq start="45" end="99">MRRSGEITLLERRWRVGIYAWADEGE-DRKISRDGVNTIFSECRSSAAMRRVLSIY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0ABW1Q027_9ENTR" ac="A0ABW1Q027" length="95" description="Protein ren OS=Citrobacter bitternis OX=1585982 GN=ACFPZP_11950 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.01</expectation>
+      <identity>50.0</identity>
+      <positives>61.9</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQ</querySeq>
+      <pattern>M R+G LV++ + WRTV YR AT  + E K   N I  ECRQ</pattern>
+      <matchSeq start="41" end="79">MCRSGELVIENRTWRTVTYRAATNFDRENK---NTICDECRQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0ABY6J909_9ENTR" ac="A0ABY6J909" length="100" description="Protein ren OS=Siccibacter colletis OX=1505757 GN=KFZ77_10370 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.03</expectation>
+      <identity>41.7</identity>
+      <positives>48.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MARAGILVVDGKVWRTVYYRFATREE---WEGKVSTNLIFKECRQSAAMKRVLRVYKRTS</querySeq>
+      <pattern>M R G  VV  + W    YR  T EE   +      N+I  ECR S  MKR+L VY R S</pattern>
+      <matchSeq start="40" end="99">MTREGETVVVHRKWPDNTYRLTTDEERAKFGPLTGINVICAECRNSPVMKRILTVYGRAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0ABR6RZC2_9ENTR" ac="A0ABR6RZC2" length="98" description="Uncharacterized protein OS=Kluyvera sichuanensis OX=2725494 GN=HII27_22615 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.16</expectation>
+      <identity>42.4</identity>
+      <positives>54.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="55">MARAGILVVDGKVWRTVYYRFATREEWEGKV----STNLIFKECRQSAAMKRVLRVYKR</querySeq>
+      <pattern>M R G + +  + WR   Y +A   E +GK       N IF+EC QS AM+RVL VY R</pattern>
+      <matchSeq start="40" end="95">MRRRGEITLLERRWRVGVYAWA---EDDGKPISRDGVNTIFQECLQSEAMRRVLSVYGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0AAP4FX93_9ENTR" ac="A0AAP4FX93" length="99" description="Protein ren OS=Lelliottia wanjuensis OX=3050585 GN=QQF32_19390 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.65</expectation>
+      <identity>40.7</identity>
+      <positives>50.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MARAGILVVDGKVWRTVYYRFATREEWE--GKVSTNLIFKECRQSAAMKRVLRVYKRTS</querySeq>
+      <pattern>M   G +V+  + WRT  Y     +E +   +   N IF EC  S AMKRVL VY R S</pattern>
+      <matchSeq start="40" end="98">MRERGEIVLLERNWRTHVYVAGEDDEDKPINRDGENTIFSECLASDAMKRVLTVYGRLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0AAW8H4Y6_9ENTR" ac="A0AAW8H4Y6" length="114" description="Winged helix-turn-helix transcriptional regulator OS=Enterobacter soli OX=885040 GN=RBJ67_02770 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.6</expectation>
+      <identity>55.2</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="58">KVSTNLIFKECRQSAAMKRVLRVYKRTSM</querySeq>
+      <pattern>+  TN+I +ECR SAAMKRVL V+ R  +</pattern>
+      <matchSeq start="86" end="114">RTDTNVICQECRNSAAMKRVLMVWGRVGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0ACS9P4R9_9ENTR" ac="A0ACS9P4R9" length="251" description="Uncharacterized protein OS=Huaxiibacter chinensis OX=2899785 GN=ACQ4LJ_26110 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>2.8</expectation>
+      <identity>55.2</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="58">KVSTNLIFKECRQSAAMKRVLRVYKRTSM</querySeq>
+      <pattern>+  TN+I +ECR SAAMKRVL V+ R  +</pattern>
+      <matchSeq start="223" end="251">RTETNVICQECRNSAAMKRVLMVWGRVGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0AAW8H7P8_9ENTR" ac="A0AAW8H7P8" length="191" description="Winged helix-turn-helix domain-containing protein OS=Enterobacter soli OX=885040 GN=RBJ67_09845 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>3.7</expectation>
+      <identity>40.0</identity>
+      <positives>55.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="58">MARAGILVVDGKVWRTVYYRFATREEWEGK--VSTNLIFKECRQSAAMKRVLRVYKRTSM</querySeq>
+      <pattern>M  AG L  +G+    VY   A  ++  G+   S N+I +ECR S AMKRVL V+ R  +</pattern>
+      <matchSeq start="133" end="191">MVNAGELKFEGQKGHRVY-SLANPKKKVGRRAESVNVICEECRNSPAMKRVLMVWGRVGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="K7ZZS2_9ENTR" ac="K7ZZS2" length="102" description="Uncharacterized protein OS=Cronobacter condimenti 1330 OX=1073999 GN=AFK62_13950 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.8</expectation>
+      <identity>47.5</identity>
+      <positives>55.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="53">WRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>WR + Y        E   S N+IF ECR S AM+RVL VY</pattern>
+      <matchSeq start="52" end="88">WRRLIYSLPGDNTGE---SVNVIFDECRLSGAMRRVLCVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="A0ACS9P4S6_9ENTR" ac="A0ACS9P4S6" length="114" description="Winged helix-turn-helix transcriptional regulator OS=Huaxiibacter chinensis OX=2899785 GN=ACQ4LJ_26050 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>4.4</expectation>
+      <identity>51.7</identity>
+      <positives>75.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="58">KVSTNLIFKECRQSAAMKRVLRVYKRTSM</querySeq>
+      <pattern>+ ++N+I +ECR SAAMKRVL V+ R  +</pattern>
+      <matchSeq start="86" end="114">RTASNVICQECRNSAAMKRVLMVWGRVGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0ABX9EYG7_9ENTR" ac="A0ABX9EYG7" length="114" description="Winged helix-turn-helix transcriptional regulator OS=Enterobacter kobei OX=208224 GN=DP181_22460 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>6.1</expectation>
+      <identity>51.7</identity>
+      <positives>69.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="58">KVSTNLIFKECRQSAAMKRVLRVYKRTSM</querySeq>
+      <pattern>+  TN+I +ECR SA MKRVL V+ R  +</pattern>
+      <matchSeq start="86" end="114">RTDTNVICQECRNSATMKRVLMVWGRVGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0ABY0IZC7_9ENTR" ac="A0ABY0IZC7" length="114" description="Ren protein from phage origin OS=Enterobacter roggenkampii OX=1812935 GN=SAMEA2273443_01486 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>6.1</expectation>
+      <identity>62.5</identity>
+      <positives>79.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="53">KVSTNLIFKECRQSAAMKRVLRVY</querySeq>
+      <pattern>+  TN+I +ECR SAAMKRVL V+</pattern>
+      <matchSeq start="86" end="109">RTETNVICQECRNSAAMKRVLMVW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0ABX1KCW6_9MICO" ac="A0ABX1KCW6" length="442" description="Alpha/beta hydrolase OS=Microbacterium salsuginis OX=2722803 GN=HF576_13590 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>7.6</expectation>
+      <identity>34.0</identity>
+      <positives>52.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="50">MARAGILVVDGKVWRTVYYRFATREEWEGKVSTNLIFKECRQSAAMKRVL</querySeq>
+      <pattern>MA  G  V++G++  +  YRF    +W G V  NL F   R S A + ++</pattern>
+      <matchSeq start="28" end="77">MAAEGEQVIEGRLADSTAYRFIVPSDWNGTVFVNLDFAGGRPSGAQQELV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

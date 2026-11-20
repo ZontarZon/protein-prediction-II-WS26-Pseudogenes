@@ -1,0 +1,2490 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-205424-0215-29925862-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-205424-0215-29925862-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q9NRI7|PPY2_HUMAN" type="PROTEIN" length="21"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:54:24+00:00" end="2026-11-13T21:01:44+00:00" search="P0Y0M0DT0H0M440.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="145">
+   <hit number="1" database="SP" id="PPY2_HUMAN" ac="Q9NRI7" length="21" description="Putative pancreatic polypeptide 2 OS=Homo sapiens OX=9606 GN=PPY2P PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>2.7e-05</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAACRCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="G3RCZ6_GORGO" ac="G3RCZ6" length="97" description="Pancreatic polypeptide OS=Gorilla gorilla gorilla OX=9595 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.00011</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAACRCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A8B7W0U6_CASCN" ac="A0A8B7W0U6" length="95" description="Pancreatic polypeptide prohormone OS=Castor canadensis OX=51338 GN=Ppy PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.00043</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA CRCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAVCRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A8B7T5Z2_HIPAR" ac="A0A8B7T5Z2" length="95" description="Pancreatic polypeptide prohormone OS=Hipposideros armiger OX=186990 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.00043</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MA ACRCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MATACRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A2I3RRI4_PANTR" ac="A0A2I3RRI4" length="92" description="Pancreatic polypeptide OS=Pan troglodytes OX=9598 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.0023</expectation>
+      <identity>95.0</identity>
+      <positives>95.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="20">MAAACRCLSLLLLSTCVALL</querySeq>
+      <pattern>MAAACRCLSLLLLSTCV LL</pattern>
+      <matchSeq start="1" end="20">MAAACRCLSLLLLSTCVPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A1S3GFA9_DIPOR" ac="A0A1S3GFA9" length="95" description="Pancreatic prohormone OS=Dipodomys ordii OX=10020 GN=Ppy PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.0024</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAAC CLSLL LSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAACHCLSLLFLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A8B7AZU6_ORYAF" ac="A0A8B7AZU6" length="88" description="Pancreatic prohormone OS=Orycteropus afer afer OX=1230840 GN=PPY PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.0043</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAFRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0AA41T8D5_SCICA" ac="A0AA41T8D5" length="95" description="Pancreatic prohormone OS=Sciurus carolinensis OX=30640 GN=SUZIE_192830 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A8D2AL05_SCIVU" ac="A0A8D2AL05" length="95" description="Pancreatic polypeptide OS=Sciurus vulgaris OX=55149 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="I3M9J3_ICTTR" ac="I3M9J3" length="95" description="Pancreatic polypeptide OS=Ictidomys tridecemlineatus OX=43179 GN=Ppy PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A5F5Q2D0_HORSE" ac="A0A5F5Q2D0" length="95" description="Pancreatic polypeptide OS=Equus caballus OX=9796 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAGRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0ACS2C479_PLECU" ac="A0ACS2C479" length="95" description="Pancreatic prohormone OS=Plecturocebus cupreus OX=202457 GN=AAY473_032485 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A2K6U9F3_SAIBB" ac="A0A2K6U9F3" length="95" description="Pancreatic polypeptide OS=Saimiri boliviensis boliviensis OX=39432 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A7J7F904_DICBM" ac="A0A7J7F904" length="95" description="Pancreatic polypeptide OS=Diceros bicornis minor OX=77932 GN=HPG69_018916 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A9W3EVW8_CAMBA" ac="A0A9W3EVW8" length="95" description="Pancreatic polypeptide prohormone OS=Camelus bactrianus OX=9837 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="S9XLC1_CAMFR" ac="S9XLC1" length="95" description="Pancreatic prohormone OS=Camelus ferus OX=419612 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0A6J3HZ87_SAPAP" ac="A0A6J3HZ87" length="95" description="Pancreatic prohormone OS=Sapajus apella OX=9515 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0A5N4D2J8_CAMDR" ac="A0A5N4D2J8" length="95" description="Pancreatic prohormone OS=Camelus dromedarius OX=9838 GN=Cadr_000019536 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A2K5R6R5_CEBIM" ac="A0A2K5R6R5" length="95" description="Pancreatic polypeptide OS=Cebus imitator OX=2715852 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0ABM2EWK0_EQUPR" ac="A0ABM2EWK0" length="95" description="Pancreatic polypeptide prohormone OS=Equus przewalskii OX=9798 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0069</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAGRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A7J7U8F2_PIPKU" ac="A0A7J7U8F2" length="96" description="Pancreatic polypeptide OS=Pipistrellus kuhlii OX=59472 GN=mPipKuh1_014020 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.007</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A8C9QRM6_SPEDA" ac="A0A8C9QRM6" length="98" description="Pancreatic hormone OS=Spermophilus dauricus OX=99837 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0073</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A8C9QGG6_SPEDA" ac="A0A8C9QGG6" length="101" description="Pancreatic polypeptide OS=Spermophilus dauricus OX=99837 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0076</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A3Q2HQX8_HORSE" ac="A0A3Q2HQX8" length="104" description="Pancreatic polypeptide OS=Equus caballus OX=9796 GN=PPY PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.008</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAGRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A8D2GWS7_UROPR" ac="A0A8D2GWS7" length="105" description="Pancreatic polypeptide OS=Urocitellus parryii OX=9999 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0081</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A671FC39_RHIFE" ac="A0A671FC39" length="105" description="Pancreatic polypeptide OS=Rhinolophus ferrumequinum OX=59479 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0081</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MA AC CLSLLLLSTCVALL+</pattern>
+      <matchSeq start="1" end="21">MATACNCLSLLLLSTCVALLV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A2K5C4X3_AOTNA" ac="A0A2K5C4X3" length="105" description="Pancreatic polypeptide OS=Aotus nancymaae OX=37293 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0081</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A7J7U8P3_PIPKU" ac="A0A7J7U8P3" length="107" description="Pancreatic polypeptide OS=Pipistrellus kuhlii OX=59472 GN=mPipKuh1_014020 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.0084</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A8C7C9A5_NEOVI" ac="A0A8C7C9A5" length="95" description="Pancreatic polypeptide OS=Neogale vison OX=452646 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.01</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M AACRCLSLLLLS C ALLL</pattern>
+      <matchSeq start="1" end="21">MPAACRCLSLLLLSACAALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A8C2W0Z6_CHILA" ac="A0A8C2W0Z6" length="68" description="Pancreatic polypeptide OS=Chinchilla lanigera OX=34839 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.02</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLL TCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLGTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A6J2M483_9CHIR" ac="A0A6J2M483" length="95" description="Pancreatic prohormone OS=Phyllostomus discolor OX=89673 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.02</expectation>
+      <identity>90.5</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MA+A RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MASARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="G1U7C4_RABIT" ac="G1U7C4" length="95" description="Pancreatic polypeptide OS=Oryctolagus cuniculus OX=9986 GN=PPY PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.02</expectation>
+      <identity>90.5</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RC+SLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCVSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A8C4LNL7_EQUAS" ac="A0A8C4LNL7" length="95" description="Pancreatic polypeptide OS=Equus asinus OX=9793 GN=PPY PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.02</expectation>
+      <identity>90.5</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTC+ALLL</pattern>
+      <matchSeq start="1" end="21">MAAAGRCLSLLLLSTCMALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0ABN9ZIS1_PIPNA" ac="A0ABN9ZIS1" length="95" description="Pancreatic polypeptide OS=Pipistrellus nathusii OX=59473 GN=MPIPNATIZW_LOCUS6518 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.02</expectation>
+      <identity>90.5</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLL+TCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLLLATCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0ABQ9VMT6_SAGOE" ac="A0ABQ9VMT6" length="361" description="Uncharacterized protein OS=Saguinus oedipus OX=9490 GN=P7K49_010451 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.02</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="53" end="73">MAAARRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A9L0K0E5_EQUAS" ac="A0A9L0K0E5" length="104" description="Pancreatic polypeptide OS=Equus asinus OX=9793 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.02</expectation>
+      <identity>90.5</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLSTC+ALLL</pattern>
+      <matchSeq start="1" end="21">MAAAGRCLSLLLLSTCMALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0A2R9BYP1_PANPA" ac="A0A2R9BYP1" length="92" description="Pancreatic polypeptide OS=Pan paniscus OX=9597 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>90.0</identity>
+      <positives>90.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="20">MAAACRCLSLLLLSTCVALL</querySeq>
+      <pattern>MAAAC CLSLLLLSTCV LL</pattern>
+      <matchSeq start="1" end="20">MAAACGCLSLLLLSTCVPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0ABM4ZL29_VULVU" ac="A0ABM4ZL29" length="93" description="Pancreatic polypeptide prohormone OS=Vulpes vulpes OX=9627 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M AACRCL LLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPAACRCLFLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A8C0KHG2_CANLU" ac="A0A8C0KHG2" length="93" description="Pancreatic polypeptide OS=Canis lupus dingo OX=286419 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M AACRCL LLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPAACRCLFLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="SP" id="PAHO_CANLF" ac="P01299" length="93" description="Pancreatic polypeptide prohormone OS=Canis lupus familiaris OX=9615 GN=PPY PE=1 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M AACRCL LLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPAACRCLFLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0ABM0HRQ8_CERSS" ac="A0ABM0HRQ8" length="95" description="Pancreatic prohormone OS=Ceratotherium simum simum OX=73337 GN=LOC101389470 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA  RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A2K6EG59_PROCO" ac="A0A2K6EG59" length="95" description="Pancreatic polypeptide OS=Propithecus coquereli OX=379532 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA  RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="H0WYB4_OTOGA" ac="H0WYB4" length="95" description="Pancreatic polypeptide OS=Otolemur garnettii OX=30611 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA  RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A7J7T7N6_MYOMY" ac="A0A7J7T7N6" length="96" description="Pancreatic polypeptide OS=Myotis myotis OX=51298 GN=mMyoMyo1_015701 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLL LSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLSLLFLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A7J7T7J5_MYOMY" ac="A0A7J7T7J5" length="96" description="Pancreatic polypeptide OS=Myotis myotis OX=51298 GN=mMyoMyo1_015700 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLL LSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLFLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0A811XSJ4_NYCPR" ac="A0A811XSJ4" length="99" description="(raccoon dog) hypothetical protein OS=Nyctereutes procyonoides OX=34880 GN=NYPRO_LOCUS402 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M AACRCL LLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPAACRCLFLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="L7N129_MYOLU" ac="L7N129" length="99" description="Pancreatic polypeptide OS=Myotis lucifugus OX=59463 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLL LSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLSLLFLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0A8I3ND24_CANLF" ac="A0A8I3ND24" length="103" description="Pancreatic polypeptide OS=Canis lupus familiaris OX=9615 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M AACRCL LLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPAACRCLFLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0A8C8Z4Y3_PROSS" ac="A0A8C8Z4Y3" length="105" description="Pancreatic polypeptide OS=Prolemur simus OX=1328070 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.03</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA  RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATHRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0A452EHI4_CAPHI" ac="A0A452EHI4" length="95" description="Pancreatic polypeptide OS=Capra hircus OX=9925 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.04</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAYRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0A8I3W1Z7_CALJA" ac="A0A8I3W1Z7" length="104" description="Pancreatic polypeptide OS=Callithrix jacchus OX=9483 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.04</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARHCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0A6P3GGJ3_BISBB" ac="A0A6P3GGJ3" length="95" description="Pancreatic prohormone OS=Bison bison bison OX=43346 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.05</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0A8B9WIZ7_BOSGR" ac="A0A8B9WIZ7" length="95" description="Pancreatic polypeptide OS=Bos grunniens OX=30521 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.05</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A212D6W6_CEREH" ac="A0A212D6W6" length="95" description="PPY OS=Cervus elaphus hippelaphus OX=46360 GN=Celaphus_00001247 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.05</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A4W2EBS9_BOBOX" ac="A0A4W2EBS9" length="95" description="Pancreatic polypeptide OS=Bos indicus x Bos taurus OX=30522 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.05</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0A6B0RH19_9CETA" ac="A0A6B0RH19" length="95" description="Uncharacterized protein OS=Bos mutus OX=72004 GN=E5288_WYG007789 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.05</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0A5N3WM20_MUNMU" ac="A0A5N3WM20" length="95" description="Uncharacterized protein OS=Muntiacus muntjak OX=9888 GN=FD754_006917 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.05</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0A384CA45_URSMA" ac="A0A384CA45" length="95" description="Pancreatic prohormone OS=Ursus maritimus OX=29073 GN=PPY PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.05</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M AACRCLSLLLLS C  LLL</pattern>
+      <matchSeq start="1" end="21">MPAACRCLSLLLLSACAVLLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A8B7HXR9_MICMU" ac="A0A8B7HXR9" length="95" description="Pancreatic polypeptide OS=Microcebus murinus OX=30608 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.05</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA  RC+SLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATHRCISLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0A6P5DG15_BOSIN" ac="A0A6P5DG15" length="95" description="Pancreatic polypeptide prohormone OS=Bos indicus OX=9915 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.05</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0ABN8YS53_RANTA" ac="A0ABN8YS53" length="95" description="Pancreatic polypeptide OS=Rangifer tarandus platyrhynchus OX=3082113 GN=MRATA1EN1_LOCUS12438 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.05</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0A5N3X2K3_MUNRE" ac="A0A5N3X2K3" length="95" description="Uncharacterized protein OS=Muntiacus reevesi OX=9886 GN=FD755_021187 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.05</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0ABM0QW66_GALVR" ac="A0ABM0QW66" length="95" description="Pancreatic prohormone OS=Galeopterus variegatus OX=482537 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.05</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="K7EML0_HUMAN" ac="K7EML0" length="79" description="Pancreatic polypeptide OS=Homo sapiens OX=9606 GN=PPY PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.06</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0ACI6Q3R0_SHEEP" ac="A0ACI6Q3R0" length="105" description="Pancreatic polypeptide OS=Ovis aries OX=9940 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.06</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0A8C6E420_MOSMO" ac="A0A8C6E420" length="105" description="Pancreatic polypeptide OS=Moschus moschiferus OX=68415 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.06</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="E1B9Q7_BOVIN" ac="E1B9Q7" length="105" description="Pancreatic polypeptide OS=Bos taurus OX=9913 GN=PPY PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.06</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0A2I3H1Q6_NOMLE" ac="A0A2I3H1Q6" length="89" description="Pancreatic polypeptide OS=Nomascus leucogenys OX=61853 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.07</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0A452QP66_URSAM" ac="A0A452QP66" length="112" description="Pancreatic polypeptide OS=Ursus americanus OX=9643 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.07</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M AACRCLSLLLLS C  LLL</pattern>
+      <matchSeq start="1" end="21">MPAACRCLSLLLLSACAVLLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0A2J8J4A0_PANTR" ac="A0A2J8J4A0" length="95" description="Pancreatic polypeptide OS=Pan troglodytes OX=9598 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.08</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0ABD2DE38_DAUMA" ac="A0ABD2DE38" length="95" description="Pancreatic prohormone isoform 1 preproprotein OS=Daubentonia madagascariensis OX=31869 GN=WCI35_026689 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.08</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="G3RAQ1_GORGO" ac="G3RAQ1" length="95" description="Pancreatic polypeptide OS=Gorilla gorilla gorilla OX=9595 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.08</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A2R9BJ11_PANPA" ac="A0A2R9BJ11" length="95" description="Pancreatic polypeptide OS=Pan paniscus OX=9597 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.08</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="SP" id="PAHO_HUMAN" ac="P01298" length="95" description="Pancreatic polypeptide prohormone OS=Homo sapiens OX=9606 GN=PPY PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.08</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0A0P6K1H4_HETGA" ac="A0A0P6K1H4" length="98" description="Pancreatic prohormone OS=Heterocephalus glaber OX=10181 GN=Ppy PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.08</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA C CLSLLLLST VALLL</pattern>
+      <matchSeq start="1" end="21">MAATCHCLSLLLLSTSVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0A8C5YTK1_MARMA" ac="A0A8C5YTK1" length="101" description="Pancreatic polypeptide OS=Marmota marmota marmota OX=9994 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.08</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA  RCLSLLLLSTCV+LLL</pattern>
+      <matchSeq start="1" end="21">MAAVHRCLSLLLLSTCVSLLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0ABD2DDT8_DAUMA" ac="A0ABD2DDT8" length="101" description="Pancreatic prohormone isoform 2 OS=Daubentonia madagascariensis OX=31869 GN=WCI35_026689 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.08</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="7" end="27">MAAARLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0ACS1UJM8_SHEEP" ac="A0ACS1UJM8" length="131" description="Uncharacterized protein OS=Ovis aries OX=9940 GN=JEQ12_002689 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.09</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="SP" id="PAHO_BOVIN" ac="P01302" length="131" description="Pancreatic polypeptide prohormone OS=Bos taurus OX=9913 GN=PPY PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.09</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="K7EKP2_HUMAN" ac="K7EKP2" length="105" description="Pancreatic polypeptide OS=Homo sapiens OX=9606 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.09</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0A1S3AAJ7_ERIEU" ac="A0A1S3AAJ7" length="95" description="Pancreatic polypeptide OS=Erinaceus europaeus OX=9365 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.11</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M A  RCLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MVAVGRCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0ACB9UFD6_9CETA" ac="A0ACB9UFD6" length="176" description="Peptide YY OS=Ovis ammon polii x Ovis aries OX=2918886 GN=MJG53_015406 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.12</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="109" end="129">MAAAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0A8C9LVU4_9PRIM" ac="A0A8C9LVU4" length="111" description="Pancreatic polypeptide OS=Piliocolobus tephrosceles OX=591936 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.14</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARCCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="G1PYE6_MYOLU" ac="G1PYE6" length="96" description="Uncharacterized protein OS=Myotis lucifugus OX=59463 GN=LOC102427237 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.16</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLL LSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARHCLSLLFLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="L7N1L7_MYOLU" ac="L7N1L7" length="96" description="Uncharacterized protein OS=Myotis lucifugus OX=59463 GN=LOC102427534 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.16</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLL LSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARHCLSLLFLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="G1QGA1_MYOLU" ac="G1QGA1" length="96" description="Uncharacterized protein OS=Myotis lucifugus OX=59463 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.16</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLL LSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARHCLSLLFLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="SP" id="PAHO_HUMAN" ac="P01298-2" length="178" description="Isoform 2 of Pancreatic polypeptide prohormone OS=Homo sapiens OX=9606 GN=PPY">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.17</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0ABM5BID3_VICPA" ac="A0ABM5BID3" length="95" description="Pancreatic polypeptide prohormone OS=Vicugna pacos OX=30538 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>0.22</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MA A RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MATAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0A8D2EQ15_THEGE" ac="A0A8D2EQ15" length="175" description="Pancreatic polypeptide OS=Theropithecus gelada OX=9565 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.23</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARCCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0A2K6KG80_RHIBE" ac="A0A2K6KG80" length="78" description="Pancreatic polypeptide OS=Rhinopithecus bieti OX=61621 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.23</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0ACF8PAK3_NASLA" ac="A0ACF8PAK3" length="234" description="Uncharacterized protein (Fragment) OS=Nasalis larvatus OX=43780 GN=H8958_020467 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.25</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARCCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0ACF8JQM1_SEMEN" ac="A0ACF8JQM1" length="234" description="Uncharacterized protein OS=Semnopithecus entellus OX=88029 GN=H8957_003961 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.25</expectation>
+      <identity>90.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA  CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAARCCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0A1U7UJI8_CARSF" ac="A0A1U7UJI8" length="87" description="Pancreatic prohormone OS=Carlito syrichta OX=1868482 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.27</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAAVHGCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="F7EEN9_MACMU" ac="F7EEN9" length="89" description="Pancreatic polypeptide OS=Macaca mulatta OX=9544 GN=PPY PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.28</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0A2K5JAV2_COLAP" ac="A0A2K5JAV2" length="95" description="Uncharacterized protein OS=Colobus angolensis palliatus OX=336983 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.3</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0A2K5ZU72_MANLE" ac="A0A2K5ZU72" length="95" description="Pancreatic polypeptide OS=Mandrillus leucophaeus OX=9568 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.3</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0A2K6PS41_RHIRO" ac="A0A2K6PS41" length="95" description="Pancreatic polypeptide OS=Rhinopithecus roxellana OX=61622 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.3</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="A0A8D2F9H2_THEGE" ac="A0A8D2F9H2" length="95" description="Pancreatic polypeptide OS=Theropithecus gelada OX=9565 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.3</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0ACF8JHS0_9PRIM" ac="A0ACF8JHS0" length="95" description="Uncharacterized protein OS=Pygathrix nigripes OX=310352 GN=H8959_019565 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.3</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="A0A2K6D0L2_MACNE" ac="A0A2K6D0L2" length="95" description="Pancreatic polypeptide OS=Macaca nemestrina OX=9545 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.3</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="TR" id="G7PUY8_MACFA" ac="G7PUY8" length="105" description="Pancreatic polypeptide OS=Macaca fascicularis OX=9541 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.35</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="A0ACF8P8I8_NASLA" ac="A0ACF8P8I8" length="105" description="Uncharacterized protein OS=Nasalis larvatus OX=43780 GN=H8958_013665 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.35</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="A0A8C9LSZ4_9PRIM" ac="A0A8C9LSZ4" length="105" description="Pancreatic polypeptide OS=Piliocolobus tephrosceles OX=591936 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.35</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="TR" id="A0A2I3LWL3_PAPAN" ac="A0A2I3LWL3" length="105" description="Pancreatic polypeptide OS=Papio anubis OX=9555 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.35</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="A0ACF8IAT8_SEMEN" ac="A0ACF8IAT8" length="105" description="Uncharacterized protein OS=Semnopithecus entellus OX=88029 GN=H8957_009323 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.35</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0A2J8UY97_PONAB" ac="A0A2J8UY97" length="105" description="Pancreatic polypeptide OS=Pongo abelii OX=9601 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.35</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="TR" id="A0A2K6KG54_RHIBE" ac="A0A2K6KG54" length="105" description="Pancreatic polypeptide OS=Rhinopithecus bieti OX=61621 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.35</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0A5F8A940_MACMU" ac="A0A5F8A940" length="121" description="Pancreatic polypeptide OS=Macaca mulatta OX=9544 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.42</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="34" end="54">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="A0A5F8A9S1_MACMU" ac="A0A5F8A9S1" length="122" description="Pancreatic polypeptide OS=Macaca mulatta OX=9544 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.43</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="34" end="54">MAATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="A0ABI7WQV3_FELCA" ac="A0ABI7WQV3" length="94" description="Pancreatic polypeptide OS=Felis catus OX=9685 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>0.59</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M  A RCLSLLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MTVARRCLSLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="A0ABI7WQW3_FELCA" ac="A0ABI7WQW3" length="119" description="Pancreatic polypeptide OS=Felis catus OX=9685 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>0.81</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M  A RCLSLLLLS CVALLL</pattern>
+      <matchSeq start="25" end="45">MTVARRCLSLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="A0A8C9JZB9_PANTA" ac="A0A8C9JZB9" length="95" description="Pancreatic polypeptide OS=Panthera tigris altaica OX=74533 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>0.85</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M  A RCLSLLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPVARRCLSLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="TR" id="A0A9V1EWY2_PANPR" ac="A0A9V1EWY2" length="95" description="Pancreatic prohormone OS=Panthera pardus OX=9691 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>0.85</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M  A RCLSLLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPVARRCLSLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0A2Y9KQ46_ENHLU" ac="A0A2Y9KQ46" length="95" description="Pancreatic prohormone OS=Enhydra lutris kenyoni OX=391180 GN=LOC111158208 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>0.85</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M AA RCLSLLLLS C ALLL</pattern>
+      <matchSeq start="1" end="21">MPAAHRCLSLLLLSVCAALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="TR" id="A0A8C8X6Y2_PANLE" ac="A0A8C8X6Y2" length="95" description="Pancreatic polypeptide OS=Panthera leo OX=9689 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>0.85</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M  A RCLSLLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPVARRCLSLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="A0A6P6HCB2_PUMCO" ac="A0A6P6HCB2" length="95" description="Pancreatic prohormone OS=Puma concolor OX=9696 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>0.85</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M  A RCLSLLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPVARRCLSLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="A0A6J1YJN3_ACIJB" ac="A0A6J1YJN3" length="95" description="Pancreatic prohormone OS=Acinonyx jubatus OX=32536 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>0.85</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M  A RCLSLLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPVARRCLSLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="A0A485NWB5_LYNPA" ac="A0A485NWB5" length="95" description="Pancreatic prohormone-like OS=Lynx pardinus OX=191816 GN=LYPA_23C014484 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>0.85</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M  A RCLSLLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPVARRCLSLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="M3YDX0_MUSPF" ac="M3YDX0" length="95" description="Pancreatic prohormone OS=Mustela putorius furo OX=9669 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>0.85</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M AA RCLSLLLLS C ALLL</pattern>
+      <matchSeq start="1" end="21">MPAARRCLSLLLLSACAALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0ABI7WQU4_FELCA" ac="A0ABI7WQU4" length="128" description="Pancreatic polypeptide OS=Felis catus OX=9685 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>0.88</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M  A RCLSLLLLS CVALLL</pattern>
+      <matchSeq start="34" end="54">MTVARRCLSLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="TR" id="A0A667HW06_LYNCA" ac="A0A667HW06" length="109" description="Pancreatic polypeptide OS=Lynx canadensis OX=61383 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>1.0</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M  A RCLSLLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPVARRCLSLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="TR" id="A0A667HD43_LYNCA" ac="A0A667HD43" length="119" description="Pancreatic polypeptide OS=Lynx canadensis OX=61383 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>1.1</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M  A RCLSLLLLS CVALLL</pattern>
+      <matchSeq start="25" end="45">MPVARRCLSLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="TR" id="A0A2Y9FYC8_TRIMA" ac="A0A2Y9FYC8" length="71" description="LOW QUALITY PROTEIN: pancreatic polypeptide prohormone OS=Trichechus manatus latirostris OX=127582 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>1.1</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCLSLLLLS  VALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLSLLLLSISVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="TR" id="A0A8D1BKU7_PIG" ac="A0A8D1BKU7" length="93" description="Pancreatic polypeptide OS=Sus scrofa OX=9823 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>1.2</expectation>
+      <identity>89.5</identity>
+      <positives>89.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="21">AACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>AA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="2" end="20">AARRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="TR" id="A0A8J6DG43_GALPY" ac="A0A8J6DG43" length="285" description="Peptide YY OS=Galemys pyrenaicus OX=202257 GN=J0S82_005458 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>1.2</expectation>
+      <identity>81.0</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL+LLLL  CVALLL</pattern>
+      <matchSeq start="165" end="185">MAAARRCLALLLLCACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="TR" id="A0A0D9S135_CHLSB" ac="A0A0D9S135" length="95" description="Pancreatic polypeptide OS=Chlorocebus sabaeus OX=60711 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>1.2</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA   CLSLLLLSTCV LLL</pattern>
+      <matchSeq start="1" end="21">MAATRLCLSLLLLSTCVGLLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="TR" id="A0A2K5MK44_CERAT" ac="A0A2K5MK44" length="95" description="Pancreatic polypeptide OS=Cercocebus atys OX=9531 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>1.2</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M A   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MTATRLCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="TR" id="A0A8C3YPA7_9CETA" ac="A0A8C3YPA7" length="104" description="Pancreatic polypeptide OS=Catagonus wagneri OX=51154 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>1.3</expectation>
+      <identity>89.5</identity>
+      <positives>89.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="21">AACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>AA RCL LLLLSTCVALLL</pattern>
+      <matchSeq start="2" end="20">AAHRCLFLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="TR" id="A0A9J7JZE5_CRIGR" ac="A0A9J7JZE5" length="128" description="Pancreatic prohormone OS=Cricetulus griseus OX=10029 GN=Ppy PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>1.7</expectation>
+      <identity>76.2</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MA  CRCLSL LLST V LLL</pattern>
+      <matchSeq start="30" end="50">MATTCRCLSLFLLSTWVTLLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="130" database="TR" id="A0A6J0X416_ODOVR" ac="A0A6J0X416" length="95" description="Pancreatic polypeptide prohormone OS=Odocoileus virginianus OX=9874 GN=PPY PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>73</score>
+      <bits>32.7</bits>
+      <expectation>2.4</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLST VALLL</pattern>
+      <matchSeq start="1" end="21">MAAAHRCLFLLLLSTYVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="131" database="TR" id="A0ABM2XPE3_MESAU" ac="A0ABM2XPE3" length="99" description="Pancreatic prohormone OS=Mesocricetus auratus OX=10036 GN=Ppy PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>73</score>
+      <bits>32.7</bits>
+      <expectation>2.5</expectation>
+      <identity>81.0</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MA A RCLSLLLLST +ALLL</pattern>
+      <matchSeq start="1" end="21">MATAYRCLSLLLLSTWMALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="132" database="TR" id="A0A673VEF3_SURSU" ac="A0A673VEF3" length="95" description="Pancreatic polypeptide OS=Suricata suricatta OX=37032 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>72</score>
+      <bits>32.3</bits>
+      <expectation>3.3</expectation>
+      <identity>76.2</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M    RCLSLLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPVTGRCLSLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="133" database="TR" id="D2HCU4_AILME" ac="D2HCU4" length="95" description="Pancreatic polypeptide OS=Ailuropoda melanoleuca OX=9646 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>72</score>
+      <bits>32.3</bits>
+      <expectation>3.3</expectation>
+      <identity>76.2</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M A  RCLSLLLLS C ALLL</pattern>
+      <matchSeq start="1" end="21">MPATHRCLSLLLLSACAALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="134" database="TR" id="A0A6A1QGN8_BALPH" ac="A0A6A1QGN8" length="95" description="Uncharacterized protein OS=Balaenoptera physalus OX=9770 GN=E2I00_002679 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>72</score>
+      <bits>32.3</bits>
+      <expectation>3.3</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLST VALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLFLLLLSTGVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="135" database="TR" id="A0A6P3RDL5_PTEVA" ac="A0A6P3RDL5" length="95" description="Pancreatic prohormone OS=Pteropus vampyrus OX=132908 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>72</score>
+      <bits>32.3</bits>
+      <expectation>3.3</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M A   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MDATRCCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="136" database="TR" id="A0A383ZZC4_BALAC" ac="A0A383ZZC4" length="95" description="Pancreatic polypeptide prohormone OS=Balaenoptera acutorostrata OX=9767 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>72</score>
+      <bits>32.3</bits>
+      <expectation>3.3</expectation>
+      <identity>85.7</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAAA RCL LLLLST VALLL</pattern>
+      <matchSeq start="1" end="21">MAAARRCLFLLLLSTGVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="137" database="TR" id="A0A7J8GEC2_ROUAE" ac="A0A7J8GEC2" length="95" description="Pancreatic polypeptide OS=Rousettus aegyptiacus OX=9407 GN=HJG63_015813 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>71</score>
+      <bits>32.0</bits>
+      <expectation>4.7</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="21">CLSLLLLSTCVALLL</querySeq>
+      <pattern>CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="7" end="21">CLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="138" database="TR" id="L5KRU3_PTEAL" ac="L5KRU3" length="656" description="MAGUK p55 subfamily member 2 OS=Pteropus alecto OX=9402 GN=PAL_GLEAN10004224 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>72</score>
+      <bits>32.3</bits>
+      <expectation>5.5</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M A   CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="1" end="21">MDATRCCLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="139" database="TR" id="A0A091D4W7_FUKDA" ac="A0A091D4W7" length="502" description="Pancreatic prohormone OS=Fukomys damarensis OX=885580 GN=H920_13355 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>72</score>
+      <bits>32.3</bits>
+      <expectation>5.6</expectation>
+      <identity>76.2</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M A  RCL LLLL TCVALLL</pattern>
+      <matchSeq start="168" end="188">MTATHRCLLLLLLGTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="140" database="TR" id="A0A7J8GEI8_ROUAE" ac="A0A7J8GEI8" length="116" description="Pancreatic polypeptide OS=Rousettus aegyptiacus OX=9407 GN=HJG63_015813 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>71</score>
+      <bits>32.0</bits>
+      <expectation>5.9</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="21">CLSLLLLSTCVALLL</querySeq>
+      <pattern>CLSLLLLSTCVALLL</pattern>
+      <matchSeq start="7" end="21">CLSLLLLSTCVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="141" database="TR" id="A0A6G1A946_CROCR" ac="A0A6G1A946" length="93" description="PAHO protein (Fragment) OS=Crocuta crocuta OX=9678 GN=Ppy PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>70</score>
+      <bits>31.6</bits>
+      <expectation>6.4</expectation>
+      <identity>76.2</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>M  A RCL LLLLS CVALLL</pattern>
+      <matchSeq start="1" end="21">MPVAGRCLLLLLLSACVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="142" database="TR" id="A0A8C6R9W6_NANGA" ac="A0A8C6R9W6" length="98" description="Pancreatic polypeptide OS=Nannospalax galili OX=1026970 GN=Ppy PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>70</score>
+      <bits>31.6</bits>
+      <expectation>6.8</expectation>
+      <identity>81.0</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MA A  CLSLLLLST VALLL</pattern>
+      <matchSeq start="1" end="21">MAVAHHCLSLLLLSTWVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="143" database="TR" id="A0A6J3QQK0_TURTR" ac="A0A6J3QQK0" length="95" description="LOW QUALITY PROTEIN: pancreatic polypeptide prohormone OS=Tursiops truncatus OX=9739 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>69</score>
+      <bits>31.2</bits>
+      <expectation>9.2</expectation>
+      <identity>81.0</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA+ RCL LLLLST VALLL</pattern>
+      <matchSeq start="1" end="21">MAASHRCLFLLLLSTGVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="144" database="TR" id="A0A341CQD7_NEOAA" ac="A0A341CQD7" length="95" description="Pancreatic polypeptide prohormone OS=Neophocaena asiaeorientalis asiaeorientalis OX=1706337 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>69</score>
+      <bits>31.2</bits>
+      <expectation>9.2</expectation>
+      <identity>81.0</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA+ RCL LLLLST VALLL</pattern>
+      <matchSeq start="1" end="21">MAASRRCLFLLLLSTGVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="145" database="TR" id="A0A2Y9MF78_DELLE" ac="A0A2Y9MF78" length="95" description="Pancreatic prohormone OS=Delphinapterus leucas OX=9749 GN=PPY PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>69</score>
+      <bits>31.2</bits>
+      <expectation>9.2</expectation>
+      <identity>81.0</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MAAACRCLSLLLLSTCVALLL</querySeq>
+      <pattern>MAA+ RCL LLLLST VALLL</pattern>
+      <matchSeq start="1" end="21">MAASRRCLFLLLLSTGVALLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

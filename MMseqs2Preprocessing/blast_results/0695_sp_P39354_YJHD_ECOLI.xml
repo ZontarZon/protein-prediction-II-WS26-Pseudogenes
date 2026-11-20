@@ -1,0 +1,790 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-201217-0397-83672298-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-201217-0397-83672298-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P39354|YJHD_ECOLI" type="PROTEIN" length="76"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:12:17+00:00" end="2026-11-13T20:13:42+00:00" search="P0Y0M0DT0H0M85.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="45">
+   <hit number="1" database="SP" id="YJHD_ECOLI" ac="P39354" length="76" description="Putative uncharacterized protein YjhD OS=Escherichia coli (strain K12) OX=83333 GN=yjhD PE=5 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>418</score>
+      <bits>165.6</bits>
+      <expectation>5.3e-52</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMGDFN</querySeq>
+      <pattern>MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMGDFN</pattern>
+      <matchSeq start="1" end="76">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMGDFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="Q71CH1_ECOLX" ac="Q71CH1" length="124" description="Surface-adhesin protein E-like domain-containing protein OS=Escherichia coli OX=562 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>414</score>
+      <bits>164.1</bits>
+      <expectation>9.5e-51</expectation>
+      <identity>98.7</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMGDFN</querySeq>
+      <pattern>+NCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMGDFN</pattern>
+      <matchSeq start="49" end="124">VNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMGDFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A317Q3R8_9ENTR" ac="A0A317Q3R8" length="171" description="Surface-adhesin protein E OS=Mangrovibacter plantisponsor OX=451513 GN=DES37_104142 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>251</score>
+      <bits>101.3</bits>
+      <expectation>2.2e-25</expectation>
+      <identity>60.5</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMGDFN</querySeq>
+      <pattern>+NC+T QR QFE IYFSQYW +GD IAKR+PIGQW+   E SL GII  +VC+I  A LKPEPP+D    L+G+F+</pattern>
+      <matchSeq start="96" end="171">VNCDTHQRAQFERIYFSQYWGEGDVIAKRSPIGQWQDIPENSLAGIIDHAVCQIDPARLKPEPPKDTRPALLGEFD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A1C4CL07_9ENTR" ac="A0A1C4CL07" length="167" description="Surface-adhesin protein E OS=Kosakonia oryzendophytica OX=1005665 GN=GA0061071_10829 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <bits>95.1</bits>
+      <expectation>5.3e-23</expectation>
+      <identity>56.2</identity>
+      <positives>75.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="74">NCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMGD</querySeq>
+      <pattern>NC+T++  QFE IYF+Q WA+GD + KR  IGQW+PY +ESL+GI+  +VC I+ + LKPEPPRD   P +GD</pattern>
+      <matchSeq start="95" end="167">NCDTQEYAQFERIYFTQRWAEGDKVFKRHSIGQWQPYPQESLMGIVAAAVCLIEPSRLKPEPPRDTDTPDVGD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A443IHA5_9GAMM" ac="A0A443IHA5" length="168" description="Surface-adhesin protein E-like domain-containing protein OS=[Pantoea] beijingensis OX=1324864 GN=ED28_00025 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>231</score>
+      <bits>93.6</bits>
+      <expectation>2.2e-22</expectation>
+      <identity>53.9</identity>
+      <positives>69.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMGDFN</querySeq>
+      <pattern>+NC+TK R QFE IYFS+YW  GD IAKR+ +GQWE +  ESL+GI+ ++ C I    LK E PRD    L+G+FN</pattern>
+      <matchSeq start="93" end="168">VNCDTKMRAQFERIYFSRYWGDGDVIAKRSSVGQWEVFPAESLIGIVASAACSIDATHLKSELPRDTRPSLLGEFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="E3G4R8_ENTLS" ac="E3G4R8" length="170" description="Lipoprotein OS=Enterobacter lignolyticus (strain SCF1) OX=701347 GN=Entcl_4303 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>229</score>
+      <bits>92.8</bits>
+      <expectation>4.6e-22</expectation>
+      <identity>53.9</identity>
+      <positives>68.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMGDFN</querySeq>
+      <pattern>+NC+T QR  FE IYFS YW +G+ IAKR  +GQWE Y EESL+GI+    C+IK   LKPEP +D    L+G F+</pattern>
+      <matchSeq start="94" end="169">VNCDTHQRAVFERIYFSDYWGEGEAIAKRGAVGQWESYPEESLIGIVAGMTCQIKPERLKPEPAKDTRPTLLGGFD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A7V8PGG8_9GAMM" ac="A0A7V8PGG8" length="166" description="Surface-adhesin E family protein OS=Pectobacterium versatile OX=2488639 GN=WCT63_08505 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>185</score>
+      <bits>75.9</bits>
+      <expectation>1.7e-15</expectation>
+      <identity>46.6</identity>
+      <positives>68.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMG</querySeq>
+      <pattern>+NC++ +R  FE +YFSQ +A GD IA    IGQWEP+ +ES++G+I   VC+I    LKPE P++   P++G</pattern>
+      <matchSeq start="94" end="166">INCDSLERAVFERVYFSQPYALGDVIAIVDEIGQWEPFHKESMMGLIAGMVCQIAPERLKPELPKETRTPVLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ABT0MUB4_9GAMM" ac="A0ABT0MUB4" length="141" description="Surface-adhesin E family protein OS=Brenneria tiliae OX=2914984 GN=MFP26_12250 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>7.8e-15</expectation>
+      <identity>43.1</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NC+T +R  FE IYFSQ +A G+ +AK   +GQW  + + S++G++   VC+I  A LK EPP++   PL+</pattern>
+      <matchSeq start="68" end="139">VNCDTYERAVFERIYFSQPYALGEVVAKTGEVGQWASFPKASMMGVLADMVCQIDPARLKTEPPKERRTPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A0H3I5G0_PECPM" ac="A0A0H3I5G0" length="164" description="Lipoprotein, putative OS=Pectobacterium parmentieri OX=1905730 GN=W5S_2396 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>9.2e-15</expectation>
+      <identity>46.6</identity>
+      <positives>67.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMG</querySeq>
+      <pattern>+NC++ +R  FE +YFSQ +A GD IA    IGQWE + +ES++G+I   VC+I    LKPE P++   PL+G</pattern>
+      <matchSeq start="92" end="164">INCDSLERAVFERVYFSQPYALGDVIAIVDEIGQWEAFHKESMMGLIAGMVCQIAPERLKPELPKETRTPLLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0AAP9ILJ6_9GAMM" ac="A0AAP9ILJ6" length="166" description="Surface-adhesin E family protein OS=Pectobacterium parvum OX=2778550 GN=ACIPSN_04480 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>9.6e-15</expectation>
+      <identity>45.2</identity>
+      <positives>67.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMG</querySeq>
+      <pattern>+NC++ +R  FE +YFSQ +A GD IA    IGQW P+ +ES++G+I   VC+I    LKPE P++   P++G</pattern>
+      <matchSeq start="94" end="166">INCDSLERAVFERVYFSQPYALGDVIAVVDEIGQWGPFHKESMMGLIADMVCQIAPERLKPELPKETRTPVLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0AAE9T0X1_9GAMM" ac="A0AAE9T0X1" length="166" description="Surface-adhesin E family protein OS=Pectobacterium polonicum OX=2485124 GN=ABRQ07_01805 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>178</score>
+      <bits>73.2</bits>
+      <expectation>1.9e-14</expectation>
+      <identity>45.2</identity>
+      <positives>67.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMG</querySeq>
+      <pattern>+NC++ +R  FE +YFSQ +A GD IA    IGQW P+ +ES++G+I   VC+I    LKPE P++   P++G</pattern>
+      <matchSeq start="94" end="166">INCDSFERAVFERVYFSQPYALGDVIAIVDEIGQWAPFHKESMMGLIAGMVCQIAPERLKPELPKETRTPVLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0ABX6L2D1_9GAMM" ac="A0ABX6L2D1" length="166" description="Surface-adhesin protein E-like domain-containing protein OS=Pectobacterium punjabense OX=2108399 GN=E2566_11160 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>5.4e-14</expectation>
+      <identity>43.8</identity>
+      <positives>65.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMG</querySeq>
+      <pattern>+NC++ +R  FE +YFSQ +A GD I     IGQW P+ +ES++G+I   VC+I    LKPE P++   P++G</pattern>
+      <matchSeq start="94" end="166">INCDSLERAVFERVYFSQPYALGDVITIVDEIGQWAPFHKESMMGLIAGMVCQIAPERLKPELPKETRTPVLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0ABV1PKT4_9ENTR" ac="A0ABV1PKT4" length="169" description="Surface-adhesin E family protein OS=Franconibacter daqui OX=2047724 GN=ABQG75_06840 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>172</score>
+      <bits>70.9</bits>
+      <expectation>1.6e-13</expectation>
+      <identity>49.3</identity>
+      <positives>73.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="65">MNCETKQRTQFECIYFSQYWAKGDFIA--KRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPR</querySeq>
+      <pattern>+NC+T++RT FE IYFSQ +A+G+ IA  ++  IGQW  + +ESL+GI+   VC+I  + LKPEP +</pattern>
+      <matchSeq start="94" end="160">INCDTQERTLFERIYFSQPYAQGEAIAASRKDAIGQWRSFPKESLIGIVAEMVCQIDPSRLKPEPAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A0J8YA58_9ENTR" ac="A0A0J8YA58" length="169" description="Surface-adhesin protein E-like domain-containing protein OS=Franconibacter pulveris OX=435910 GN=ACH50_13065 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>172</score>
+      <bits>70.9</bits>
+      <expectation>1.6e-13</expectation>
+      <identity>49.3</identity>
+      <positives>73.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="65">MNCETKQRTQFECIYFSQYWAKGDFIA--KRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPR</querySeq>
+      <pattern>+NC+T++RT FE IYFSQ +A+G+ IA  ++  IGQW  + +ESL+GI+   VC+I  + LKPEP +</pattern>
+      <matchSeq start="94" end="160">INCDTQERTLFERIYFSQPYAQGEAIAASRKDAIGQWRSFPKESLIGIVAEMVCQIDPSRLKPEPAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0ACT2EI43_9ENTR" ac="A0ACT2EI43" length="178" description="Surface-adhesin E family protein OS=Franconibacter helveticus 1159 OX=1405499 GN=ACP26D_07155 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>3.8e-13</expectation>
+      <identity>47.0</identity>
+      <positives>74.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MNCETKQRTQFECIYFSQYWAKGDFIA--KRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPP</querySeq>
+      <pattern>+NC+T++RT F+ IYFS+ +A+GD IA  ++  +GQW  + +ESL+GI+   VC++  + LKPEPP</pattern>
+      <matchSeq start="102" end="167">INCDTQERTLFDRIYFSKPYAQGDAIASSRQDAVGQWSAFPKESLIGIVAGMVCQLDPSRLKPEPP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0ABY8E630_9ENTR" ac="A0ABY8E630" length="165" description="Surface-adhesin E family protein OS=Enterobacter quasiroggenkampii OX=2497436 GN=OM418_10615 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>4.1e-13</expectation>
+      <identity>43.2</identity>
+      <positives>60.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMGD</querySeq>
+      <pattern>+NC+  QR      YFS+ +A+GD +     +GQWE Y ++SL GII  S+C I V  LKPEP +D   PL+ +</pattern>
+      <matchSeq start="92" end="165">INCDKNQRAVMARTYFSKPFAEGDVVHVTQDVGQWESYPKDSLFGIIAESMCSIPVEKLKPEPAKDNRKPLLDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0ABD7KFB8_9ENTR" ac="A0ABD7KFB8" length="165" description="Lipoprotein OS=Enterobacter roggenkampii OX=1812935 GN=SAMEA2273443_00531 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>4.1e-13</expectation>
+      <identity>43.2</identity>
+      <positives>60.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMGD</querySeq>
+      <pattern>+NC+  QR      YFS+ +A+GD +     +GQWE Y ++SL GII  S+C I V  LKPEP +D   PL+ +</pattern>
+      <matchSeq start="92" end="165">INCDKNQRAVMARTYFSKPFAEGDVVHVTQDVGQWESYPKDSLFGIIAESMCSIPVEKLKPEPAKDNRKPLLDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0A1C0U695_9GAMM" ac="A0A1C0U695" length="160" description="Surface-adhesin protein E-like domain-containing protein OS=Photorhabdus australis subsp. thailandensis OX=2805096 GN=Ppb6_01331 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>2.1e-12</expectation>
+      <identity>42.5</identity>
+      <positives>64.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMG</querySeq>
+      <pattern>+NC+  +   FE  +FS+ +AKG  IA+R  +GQW  +SE+S++ +I   VCRI  + LKP  P+D   PL+G</pattern>
+      <matchSeq start="88" end="160">VNCDRMETAAFELTFFSEPFAKGLVIARRDEVGQWRTFSEKSIIEMIRGLVCRIDPSRLKPALPKDTQTPLLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A1S8YJA8_9GAMM" ac="A0A1S8YJA8" length="166" description="Surface-adhesin protein E-like domain-containing protein OS=Izhakiella australiensis OX=1926881 GN=BTJ39_14535 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>4.7e-12</expectation>
+      <identity>42.5</identity>
+      <positives>61.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLMG</querySeq>
+      <pattern>+NC T +R +FE + F+Q +A+G+ I     IGQWE Y + S LG++   VC+I    LKP P R+   PL+G</pattern>
+      <matchSeq start="94" end="166">INCTTHERARFERVAFTQPFAQGEVIVITQEIGQWESYPQNSPLGLVGGMVCKIPADRLKPAPARETRKPLLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A286DNH5_9GAMM" ac="A0A286DNH5" length="164" description="Surface-adhesin protein E OS=Candidatus Pantoea floridensis OX=1938870 GN=SAMN06273570_4634 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>1.8e-11</expectation>
+      <identity>43.1</identity>
+      <positives>59.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NC+  QR       FS+ +A+GD I     +GQWE Y ++SL GII  S+C I V  LKPEP ++   PL+</pattern>
+      <matchSeq start="92" end="163">INCDKNQRAVMGRTLFSKPFAEGDLIHASPDVGQWETYPKDSLFGIIAESMCSIPVERLKPEPAKENRKPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0AB35RHK8_9ENTR" ac="A0AB35RHK8" length="166" description="Surface-adhesin E family protein OS=Phytobacter ursingii OX=1972431 GN=R0H02_02485 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>1.8e-11</expectation>
+      <identity>40.3</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NC+T +R  F+  + +  + +GD +A    IG+W  + +ESL+GI+  SVCRI  A LKPEP  +   PL+</pattern>
+      <matchSeq start="90" end="161">INCDTFERASFDKAFMTLPFGEGDIVATSDEIGRWSSFPKESLIGIVAESVCRITPASLKPEPGPESRKPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A9J9GGC1_ENT38" ac="A0A9J9GGC1" length="164" description="Lipoprotein, putative OS=Enterobacter sp. (strain 638) OX=399742 GN=Ent638_1538 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>5e-11</expectation>
+      <identity>41.7</identity>
+      <positives>59.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NC+  QR       FS+ +A+GD +     +GQWE Y ++SL GII  S+C I V  LKPEP ++   PL+</pattern>
+      <matchSeq start="92" end="163">INCDKNQRAVMGRSLFSKPFAEGDLVHAGLDVGQWETYPKDSLFGIIAESMCSIPVEKLKPEPAKENRKPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A848MEB1_9GAMM" ac="A0A848MEB1" length="154" description="Surface-adhesin protein E-like domain-containing protein OS=Rouxiella aceris OX=2703884 GN=GW590_00815 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>8.1e-11</expectation>
+      <identity>40.3</identity>
+      <positives>61.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NCE  QR       FS+ +A+GD I  +  +GQWE + ++SL+GI+   +C I V  LKPEP ++   PL+</pattern>
+      <matchSeq start="82" end="153">INCEKNQRAVMGRTRFSKPFAEGDLIQTQLDVGQWETFPKDSLIGIMAERMCSIPVEKLKPEPAKENRKPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="C7BND0_PHOAA" ac="C7BND0" length="160" description="Surface-adhesin protein E-like domain-containing protein OS=Photorhabdus asymbiotica subsp. asymbiotica (strain ATCC 43949 / 3105-77) OX=553480 GN=PAU_03897 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>9.1e-11</expectation>
+      <identity>41.7</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NC+  +   FE  +FS+ +AKG  IA+R  +GQW  +SE+S++ +I   VCRI  A LKP   +D   PL+</pattern>
+      <matchSeq start="88" end="159">VNCDRMETAAFELTFFSEPFAKGLVIARRDEVGQWRTFSEKSIMEMIRGLVCRIDPARLKPALSKDTQTPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0ABX9SP66_9GAMM" ac="A0ABX9SP66" length="160" description="Surface-adhesin protein E OS=Photorhabdus asymbiotica OX=291112 GN=BDD30_1933 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>9.1e-11</expectation>
+      <identity>41.7</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NC+  +   FE  +FS+ +AKG  IA+R  +GQW  +SE+S++ +I   VCRI  A LKP   +D   PL+</pattern>
+      <matchSeq start="88" end="159">VNCDRMETAAFELTFFSEPFAKGLVIARRDEVGQWRTFSEKSIMEMIRGLVCRIDPARLKPALSKDTQTPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A2R4NK19_9GAMM" ac="A0A2R4NK19" length="161" description="Surface-adhesin protein E-like domain-containing protein OS=Yersinia massiliensis OX=419257 GN=DA391_01645 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>9.3e-11</expectation>
+      <identity>43.1</identity>
+      <positives>59.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NCE  +R  F+ +YFS+ + KG  IAKR  IGQWE + E S+ GII   VC+I    LK    ++   PL+</pattern>
+      <matchSeq start="89" end="160">VNCERLERAVFDRVYFSETFGKGKVIAKRESIGQWESFPENSIAGIIREMVCKIPAEKLKSLSLKNDQQPLI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0ABM5SAP2_YERRO" ac="A0ABM5SAP2" length="164" description="Surface-adhesin protein E-like domain-containing protein OS=Yersinia rohdei OX=29485 GN=CH64_817 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>9.8e-11</expectation>
+      <identity>40.3</identity>
+      <positives>59.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NC+  QR       FS+ +A+GD I     +GQWE + ++SL GII  ++C I V  LKPEP ++   PL+</pattern>
+      <matchSeq start="92" end="163">INCDKNQRAVMGRTLFSKPFAEGDLIHAELDVGQWETFQKDSLFGIIAETMCSIPVEKLKPEPAKENRKPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A502G8I4_9GAMM" ac="A0A502G8I4" length="154" description="Surface-adhesin protein E-like domain-containing protein OS=Ewingella americana OX=41202 GN=EAH77_20710 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>1.6e-10</expectation>
+      <identity>40.3</identity>
+      <positives>59.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NC+  QR       FS+ +A+GD I     +GQWE + ++SL G+I  S+C I V  LKPEP ++   PL+</pattern>
+      <matchSeq start="82" end="153">INCDKNQRAVMGHTLFSKPFAEGDLIHATLDVGQWETFPKDSLFGMIAESMCSIPVEKLKPEPAKENRKPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0ABR4W780_YERFR" ac="A0ABR4W780" length="164" description="Surface-adhesin protein E-like domain-containing protein OS=Yersinia frederiksenii ATCC 33641 OX=349966 GN=DJ58_3644 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>2.7e-10</expectation>
+      <identity>40.3</identity>
+      <positives>59.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NC+  QR       FS+ +A+GD I     +GQWE + ++SL GII  ++C I V  LKPEP ++   PL+</pattern>
+      <matchSeq start="92" end="163">INCDKNQRAIMGRTLFSKPFAEGDLIHAELDVGQWETFPKDSLFGIIAETMCSIPVEKLKPEPVKENRKPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A9X1YYU6_9PSED" ac="A0A9X1YYU6" length="163" description="Surface-adhesin E family protein OS=Pseudomonas morbosilactucae OX=2938197 GN=M1B35_15560 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>5.8e-09</expectation>
+      <identity>38.8</identity>
+      <positives>58.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="67">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDP</querySeq>
+      <pattern>+NCE  +  QF  +YFS+ +AKG  + ++  + QW P+  +SLLG +    C I  A LK  P +DP</pattern>
+      <matchSeq start="95" end="161">INCERDESAQFGRVYFSEPFAKGVEVMRKEDVAQWTPFPRQSLLGELRNLACGIDAARLKAPPSKDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A830ZAH1_9ENTR" ac="A0A830ZAH1" length="165" description="Surface-adhesin protein E-like domain-containing protein OS=Kosakonia cowanii JCM 10956 = DSM 18146 OX=1300165 GN=BWI95_22125 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>6e-09</expectation>
+      <identity>36.1</identity>
+      <positives>59.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NC+  QR+      F++ +A+GD I  +  IGQWE +  +S++G++   VC+I    L PEP +D   PL+</pattern>
+      <matchSeq start="92" end="163">INCDKNQRSVMGWTLFTKPYAEGDIIYAKPDIGQWESFPPKSIIGMLAQLVCKIPADRLNPEPGQDIRKPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0ABU7HX51_9PSED" ac="A0ABU7HX51" length="159" description="Surface-adhesin E family protein OS=Pseudomonas ulcerans OX=3115852 GN=V0R50_23210 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>7.6e-09</expectation>
+      <identity>37.5</identity>
+      <positives>60.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPP</querySeq>
+      <pattern>+NCE  +  QF  +YFSQ +A+G  + ++  I QWEP   +SL+G++    C++  A L+P  P</pattern>
+      <matchSeq start="95" end="158">INCERDEMAQFGRVYFSQPFAQGQEVVRKNDIAQWEPLQRQSLIGMLRDVACKVDAARLRPGSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0ABX4IMN0_9ENTR" ac="A0ABX4IMN0" length="173" description="Surface-adhesin protein E-like domain-containing protein OS=Kosakonia pseudosacchari OX=1646340 GN=BK796_17915 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>1.9e-08</expectation>
+      <identity>36.1</identity>
+      <positives>56.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIPLM</querySeq>
+      <pattern>+NC+T Q      ++FS+ +A GD +A+    GQW+ Y   SL+G+    +C++ V  L  EP RD   PL+</pattern>
+      <matchSeq start="94" end="165">VNCDTHQFAHVHKLFFSEPFATGDKVARMNTPGQWQDYPPTSLIGLTAGLLCKLPVERLVAEPERDTQTPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0ABZ0MU37_9ENTR" ac="A0ABZ0MU37" length="173" description="Surface-adhesin E family protein OS=Kosakonia sacchari OX=1158459 GN=Q8Y70_04825 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>7.3e-08</expectation>
+      <identity>35.7</identity>
+      <positives>55.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIP</querySeq>
+      <pattern>+NC+T Q      ++FS+++A GD IA+    GQW+ Y   SL+G+    +C++    L  EP RD   P</pattern>
+      <matchSeq start="94" end="163">VNCDTHQFAHVHKLFFSEHFATGDKIARMNTPGQWQDYPPTSLIGLTAGLLCKLPADRLPAEPERDTQTP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0A1I7AZ72_9ENTR" ac="A0A1I7AZ72" length="173" description="Surface-adhesin protein E OS=Kosakonia arachidis OX=551989 GN=SAMN05192562_102173 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>7.3e-08</expectation>
+      <identity>35.7</identity>
+      <positives>55.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIP</querySeq>
+      <pattern>+NC+T Q      ++FS+++A GD IA+    GQW+ Y   SL+G+    +C++    L  EP RD   P</pattern>
+      <matchSeq start="94" end="163">VNCDTHQFAHVHKLFFSEHFATGDKIARMNTPGQWQDYPPTSLIGLTAGLLCKLPADRLPAEPERDTQTP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A4R0HG95_9ENTR" ac="A0A4R0HG95" length="173" description="Surface-adhesin protein E-like domain-containing protein OS=Kosakonia quasisacchari OX=2529380 GN=E0L21_09135 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>1.4e-07</expectation>
+      <identity>35.7</identity>
+      <positives>55.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDPHIP</querySeq>
+      <pattern>+NC+T Q      ++FS+++A GD IA+    GQW+ Y   SL+G+    +C++    L  EP RD   P</pattern>
+      <matchSeq start="94" end="163">VNCDTHQFAHVHKLFFSEHFATGDKIARMNTPGQWQDYPPTSLIGLTAGLLCKLPEDRLAAEPERDTQTP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0ABM7CPV4_9PSED" ac="A0ABM7CPV4" length="159" description="Surface-adhesin protein E-like domain-containing protein OS=Pseudomonas oryziphila OX=2894079 GN=EI693_10200 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>128</score>
+      <bits>53.9</bits>
+      <expectation>4.5e-07</expectation>
+      <identity>39.1</identity>
+      <positives>59.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPP</querySeq>
+      <pattern>+NCE  +  QF  +YFSQ +A GD +A+++ I QW P   +SL+G +   +C I  A L+   P</pattern>
+      <matchSeq start="95" end="158">INCERDEMAQFGRVYFSQPFALGDEVARKSDIAQWGPLERQSLIGKLRDVMCNIDAAHLQAGNP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0ABU5VKQ4_9PSED" ac="A0ABU5VKQ4" length="159" description="Surface-adhesin E family protein OS=Pseudomonas machongensis OX=3110229 GN=VA602_21805 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>1.8e-06</expectation>
+      <identity>38.3</identity>
+      <positives>61.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLK</querySeq>
+      <pattern>+NCE  Q  QF  +YFS  +A+G  +A++  I QW+P   +SL+G +  +VC+I    L+</pattern>
+      <matchSeq start="95" end="154">INCEQDQTAQFGRVYFSLPFAQGQEVARKNDIAQWKPLQRQSLIGNLRDAVCKIDATHLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A1H4PGS1_9PSED" ac="A0A1H4PGS1" length="158" description="Surface-adhesin protein E OS=Pseudomonas saponiphila OX=556534 GN=SAMN05216178_3302 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>6.7e-06</expectation>
+      <identity>38.8</identity>
+      <positives>55.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="65">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLK--PEPPR</querySeq>
+      <pattern>+NCET Q  QF  +YFS+ +A+G  + ++    QW  +  +SLLG +   VC I    LK  P P R</pattern>
+      <matchSeq start="92" end="158">INCETDQSAQFGRVYFSEPFAQGVEVTRKEDTAQWAAFPRQSLLGELRNMVCAIDPTRLKLAPAPSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A0R2ZE08_9PSED" ac="A0A0R2ZE08" length="159" description="Surface-adhesin protein E OS=Pseudomonas trivialis OX=200450 GN=SAMN04490205_0599 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>9.5e-06</expectation>
+      <identity>35.9</identity>
+      <positives>57.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPP</querySeq>
+      <pattern>+NCE  +  QF  +YFS+ +A G  + +++   QW P   +SL+G +  SVC+I  A L+   P</pattern>
+      <matchSeq start="95" end="158">INCERDEMAQFGRVYFSEPFALGHEVTRKSDTPQWGPLERQSLIGRLRDSVCKIDAAHLRAGNP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A2C9ELH4_PSEPH" ac="A0A2C9ELH4" length="158" description="Lipoprotein OS=Pseudomonas protegens (strain DSM 19095 / LMG 27888 / CFBP 6595 / CHA0) OX=1124983 GN=PFLCHA0_c27360 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.00074</expectation>
+      <identity>31.3</identity>
+      <positives>53.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="65">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLK--PEPPR</querySeq>
+      <pattern>+NCE  +  QF  +YFS+ +A+G  + ++  + QW  +  +SL+G +    C +    LK  P P R</pattern>
+      <matchSeq start="92" end="158">INCEKDESAQFGRVYFSEPFAQGVEVMRKEDLAQWAAFPRQSLIGELRNMACAVDPTRLKLAPAPSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="Q4KDA7_PSEF5" ac="Q4KDA7" length="158" description="Lipoprotein OS=Pseudomonas fluorescens (strain ATCC BAA-477 / NRRL B-23932 / Pf-5) OX=220664 GN=PFL_2669 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.001</expectation>
+      <identity>31.3</identity>
+      <positives>53.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="65">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLK--PEPPR</querySeq>
+      <pattern>+NCE  +  QF  +YFS+ +A+G  + ++  + QW  +  +SL+G +    C +    LK  P P R</pattern>
+      <matchSeq start="92" end="158">INCEKDESAQFGRVYFSEPFAQGVEVMRKDDLAQWAAFPRQSLIGELRNMACAVDPTRLKLAPAPSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0ABY9N9L0_9PSED" ac="A0ABY9N9L0" length="159" description="Surface-adhesin E family protein OS=Pseudomonas piscis OX=2614538 GN=QL104_17480 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.02</expectation>
+      <identity>28.4</identity>
+      <positives>50.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="67">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDP</querySeq>
+      <pattern>+NCE  +  Q   +YFS+ +A+G  + ++    QW  +  +S++G +    C I  A L   P + P</pattern>
+      <matchSeq start="90" end="156">INCERDESAQLGRVYFSEPFAQGVEVMRKEAHAQWAAFPRQSVIGELRNMACGIDAARLGAPPFKGP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0ABX8MVQ0_9PSED" ac="A0ABX8MVQ0" length="159" description="Surface-adhesin E family protein OS=Pseudomonas sessilinigenes OX=658629 GN=KSS89_14090 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.02</expectation>
+      <identity>28.4</identity>
+      <positives>50.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="67">MNCETKQRTQFECIYFSQYWAKGDFIAKRAPIGQWEPYSEESLLGIIVTSVCRIKVAMLKPEPPRDP</querySeq>
+      <pattern>+NCE  +  Q   +YFS+ +A+G  + ++    QW  +  +S++G +    C I  A L   P + P</pattern>
+      <matchSeq start="90" end="156">INCERDESAQLGRVYFSEPFAQGVEVMRKEAHAQWAAFPRQSVIGELRNMACGIDAARLGAPPFKGP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A365XUS0_9BACT" ac="A0A365XUS0" length="516" description="FAD-dependent oxidoreductase OS=Chitinophaga flava OX=2259036 GN=DF182_26840 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>9.9</expectation>
+      <identity>39.1</identity>
+      <positives>56.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="64">WAKGDFIAKRAPIGQWEPY-SEESLLGIIVTSVCRIKVAMLKPEPP</querySeq>
+      <pattern>W     I K+AP G  + Y +E   +G+ V    R +VA++KPEPP</pattern>
+      <matchSeq start="339" end="384">WKLAATIQKKAPAGLLDSYHTERHPIGVQVLDWSRAQVAIMKPEPP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-195649-0450-44866870-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-195649-0450-44866870-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|O25599|Y945_HELPY" type="PROTEIN" length="98"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T19:56:49+00:00" end="2026-11-13T19:59:51+00:00" search="P0Y0M0DT0H0M182.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="4">
+   <hit number="1" database="SP" id="Y945_HELPY" ac="O25599" length="98" description="Putative uncharacterized protein HP_0945 OS=Helicobacter pylori (strain ATCC 700392 / 26695) OX=85962 GN=HP_0945 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>487</score>
+      <bits>192.2</bits>
+      <expectation>7.7e-62</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="98">MVYLPTIPKKLFVSRLTILILVTPPLLAAFSTEQLPAATRLKTLQQLARPSLEYCASFPETGIVTIVIRVPVGEEDAQPLIKTPKHTLANFKRNLKSS</querySeq>
+      <pattern>MVYLPTIPKKLFVSRLTILILVTPPLLAAFSTEQLPAATRLKTLQQLARPSLEYCASFPETGIVTIVIRVPVGEEDAQPLIKTPKHTLANFKRNLKSS</pattern>
+      <matchSeq start="1" end="98">MVYLPTIPKKLFVSRLTILILVTPPLLAAFSTEQLPAATRLKTLQQLARPSLEYCASFPETGIVTIVIRVPVGEEDAQPLIKTPKHTLANFKRNLKSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0ABQ5M8Z6_9FIRM" ac="A0ABQ5M8Z6" length="2039" description="Cyclic beta 1-2 glucan synthetase OS=Lacrimispora amygdalina OX=253257 GN=LAD12857_33510 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.52</expectation>
+      <identity>33.3</identity>
+      <positives>51.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="95">TIPKKLFVSRLTILILVTPPLLAAFSTEQLP-AATRLKTLQQLARPSLEYCASFPETGIVTIVIRVPVG--EEDAQPLIKTPKHTLANFKRNL</querySeq>
+      <pattern>T+ K   VSR  I++L   PLL   S E +    TR  T++++  P+L+Y    PE     +V+ V V   E+  + + +  KH LAN + NL</pattern>
+      <matchSeq start="461" end="551">TLGKMQTVSRSVIILLAVMPLLTGISMEIINFIFTRRITVRKI--PALDYLKEIPEDARTFVVMPVIVSSKEQGLEYMERLQKHYLANRQPNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A1G8S0L1_9BACI" ac="A0A1G8S0L1" length="361" description="Acetyltransferase OS=Alteribacillus bidgolensis OX=930129 GN=SAMN05216352_1373 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>5.6</expectation>
+      <identity>31.0</identity>
+      <positives>45.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="94">PLLAAFSTEQLPAATRLKTLQQLARPSLEYCASFPETGIVTIVIRVPVGEEDAQ-PLIKTPKHTLANFKRN</querySeq>
+      <pattern>P LA FS          K   ++++  LEY    P  GIV++ I  P+G+ D +     TP   LA  + N</pattern>
+      <matchSeq start="2" end="72">PELAPFSNPLDAWGKSKKEFSEVSKTCLEYLTKDPNIGIVSVAIDAPIGQGDHEFSFTGTPAKHLAQLREN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A1H2JZ10_9ACTN" ac="A0A1H2JZ10" length="391" description="Xylose isomerase-like TIM barrel OS=Jiangella alkaliphila OX=419479 GN=SAMN04488563_3239 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>5.7</expectation>
+      <identity>31.4</identity>
+      <positives>50.0</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="27" end="92">LAAFSTEQLPAATRLKTLQQLAR----PSLEYCASFPETGIVTIVIRVPVGEEDAQPLIKTPKHTLANFK</querySeq>
+      <pattern>LAA++ ++    TR++T  Q+      P+    A FP+ G   +   VPV E+ A PL  T +H  A  +</pattern>
+      <matchSeq start="263" end="332">LAAYAEDRFLHQTRVRTRGQVIGTDDLPAALSSAGFPDDGTWRVHFHVPVHEQPAPPLAATQQHLTATLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

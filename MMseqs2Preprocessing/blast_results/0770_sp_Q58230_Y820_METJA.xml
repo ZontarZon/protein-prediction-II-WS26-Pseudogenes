@@ -1,0 +1,1470 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-204300-0756-98309931-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-204300-0756-98309931-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q58230|Y820_METJA" type="PROTEIN" length="47"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:43:00+00:00" end="2026-11-13T20:44:44+00:00" search="P0Y0M0DT0H0M104.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="85">
+   <hit number="1" database="SP" id="Y820_METJA" ac="Q58230" length="47" description="Putative uncharacterized protein MJ0820 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0820 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>247</score>
+      <bits>99.8</bits>
+      <expectation>9.3e-27</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPINRNCY</querySeq>
+      <pattern>MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPINRNCY</pattern>
+      <matchSeq start="1" end="47">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPINRNCY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="Y439_METJA" ac="Q57881" length="361" description="Uncharacterized ATP-binding protein MJ0439 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0439 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>205</score>
+      <bits>83.6</bits>
+      <expectation>9.7e-18</expectation>
+      <identity>92.9</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA+KFMDFLAEEILNKKLS+DEKELIYSYVGGKPI</pattern>
+      <matchSeq start="217" end="258">VDDFDKETALKFMDFLAEEILNKKLSDDEKELIYSYVGGKPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="C7P718_METFA" ac="C7P718" length="349" description="ATPase OS=Methanocaldococcus fervens (strain DSM 4213 / JCM 15782 / AG86) OX=573064 GN=Mefer_0528 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <bits>79.7</bits>
+      <expectation>2.3e-16</expectation>
+      <identity>90.2</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKETAIKFMDFL+EEILNKKLS++EKELIYSYVGGKP</pattern>
+      <matchSeq start="205" end="245">VDDFDKETAIKFMDFLSEEILNKKLSDNEKELIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="D5VTC7_METIM" ac="D5VTC7" length="350" description="ATPase OS=Methanocaldococcus infernus (strain DSM 11812 / JCM 15783 / ME) OX=573063 GN=Metin_1177 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>193</score>
+      <bits>79.0</bits>
+      <expectation>4.5e-16</expectation>
+      <identity>85.7</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA+KFMDFLAE ILNKKLS +EKELIYSYVGGKP+</pattern>
+      <matchSeq start="203" end="244">VDDFDKETALKFMDFLAENILNKKLSNEEKELIYSYVGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="C7P6A7_METFA" ac="C7P6A7" length="364" description="ATPase OS=Methanocaldococcus fervens (strain DSM 4213 / JCM 15782 / AG86) OX=573064 GN=Mefer_0251 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>193</score>
+      <bits>79.0</bits>
+      <expectation>4.8e-16</expectation>
+      <identity>81.4</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA++ILNKKLS+++KELIYSYVGGKPI+</pattern>
+      <matchSeq start="210" end="252">VDDFDKETALKFMDFLADDILNKKLSDEDKELIYSYVGGKPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="C9RF25_METVM" ac="C9RF25" length="278" description="ATPase OS=Methanocaldococcus vulcanius (strain ATCC 700851 / DSM 12094 / M7) OX=579137 GN=Metvu_0310 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>190</score>
+      <bits>77.8</bits>
+      <expectation>6.2e-16</expectation>
+      <identity>83.3</identity>
+      <positives>97.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA+KFMDFLAEEIL KKLS+++KE+IYSYVGGKPI</pattern>
+      <matchSeq start="210" end="251">VDDFDKETALKFMDFLAEEILGKKLSDEDKEIIYSYVGGKPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A076L9G3_9EURY" ac="A0A076L9G3" length="364" description="ATPase OS=Methanocaldococcus bathoardescens OX=1301915 GN=JH146_0010 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>192</score>
+      <bits>78.6</bits>
+      <expectation>6.7e-16</expectation>
+      <identity>85.7</identity>
+      <positives>97.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETAIKF+DFL+E ILNK+LS+DEKELIYSYVGGKPI</pattern>
+      <matchSeq start="210" end="251">VDDFDKETAIKFIDFLSENILNKRLSDDEKELIYSYVGGKPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="Y1010_METJA" ac="Q58416" length="377" description="Uncharacterized ATP-binding protein MJ1010 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ1010 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <bits>78.2</bits>
+      <expectation>9.9e-16</expectation>
+      <identity>83.3</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA+KF+DFL+EEILNKKLS+++KELIYSYVGGKPI</pattern>
+      <matchSeq start="223" end="264">VDDFDKETALKFIDFLSEEILNKKLSDEDKELIYSYVGGKPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="Y147_METJA" ac="Q57611" length="371" description="Uncharacterized ATP-binding protein MJ0147 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0147 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>190</score>
+      <bits>77.8</bits>
+      <expectation>1.3e-15</expectation>
+      <identity>81.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA+EILNKKLS+++KELIY+YVGGKP+</pattern>
+      <matchSeq start="214" end="255">VDDFDKETALKFMDFLAKEILNKKLSDEDKELIYNYVGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="D5VR81_METIM" ac="D5VR81" length="357" description="ATPase OS=Methanocaldococcus infernus (strain DSM 11812 / JCM 15783 / ME) OX=573063 GN=Metin_0414 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>1.7e-15</expectation>
+      <identity>81.4</identity>
+      <positives>95.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDFDKETA+KFMDFLAE IL+KKLS +EKELIYSYVGGKP++</pattern>
+      <matchSeq start="203" end="245">VDDFDKETALKFMDFLAESILDKKLSNEEKELIYSYVGGKPVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A076LGX6_9EURY" ac="A0A076LGX6" length="359" description="ATPase OS=Methanocaldococcus bathoardescens OX=1301915 GN=JH146_1270 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>1.7e-15</expectation>
+      <identity>81.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA+EILNK+LS+++KELIYSYVGGKP+</pattern>
+      <matchSeq start="205" end="246">VDDFDKETALKFMDFLAKEILNKELSDEDKELIYSYVGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="H1KX94_9EURY" ac="H1KX94" length="365" description="AAA ATPase OS=Methanotorris formicicus Mc-S-70 OX=647171 GN=MetfoDRAFT_0417 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>1.8e-15</expectation>
+      <identity>81.4</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDF+KETA+KF+DFL+EEILNKKLS++EKELIYSYVGGKPI+</pattern>
+      <matchSeq start="221" end="263">VDDFNKETALKFIDFLSEEILNKKLSDNEKELIYSYVGGKPID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="Y075_METJA" ac="Q60388" length="365" description="Uncharacterized ATP-binding protein MJ0075 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0075 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>1.8e-15</expectation>
+      <identity>85.4</identity>
+      <positives>97.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKETA+KFMDFL+E+IL +KLSEDEKELIYSYVGGKP</pattern>
+      <matchSeq start="217" end="257">VDDFDKETALKFMDFLSEDILGRKLSEDEKELIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="F6BAA0_METIK" ac="F6BAA0" length="350" description="AAA ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0233 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>187</score>
+      <bits>76.6</bits>
+      <expectation>3.1e-15</expectation>
+      <identity>85.4</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKETA+KFMDFL+E ILNKKLS +EKELIYSYVGGKP</pattern>
+      <matchSeq start="205" end="245">VDDFDKETALKFMDFLSERILNKKLSNEEKELIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="C7P849_METFA" ac="C7P849" length="350" description="ATPase OS=Methanocaldococcus fervens (strain DSM 4213 / JCM 15782 / AG86) OX=573064 GN=Mefer_0913 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>187</score>
+      <bits>76.6</bits>
+      <expectation>3.1e-15</expectation>
+      <identity>79.1</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDFDKETAIKF+DFL+E ILNKKLS+DEKELIY++VGGKP++</pattern>
+      <matchSeq start="205" end="247">VDDFDKETAIKFIDFLSENILNKKLSDDEKELIYTHVGGKPVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="Y1609_METJA" ac="Q59004" length="374" description="Uncharacterized ATP-binding protein MJ1609 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ1609 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>187</score>
+      <bits>76.6</bits>
+      <expectation>3.5e-15</expectation>
+      <identity>81.0</identity>
+      <positives>97.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDK+TA+KF+DFLA+EILNKKL +DEKELIYSYVGGKP+</pattern>
+      <matchSeq start="220" end="261">VDDFDKQTALKFIDFLAKEILNKKLPKDEKELIYSYVGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="F6BA99_METIK" ac="F6BA99" length="359" description="AAA ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0232 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>186</score>
+      <bits>76.3</bits>
+      <expectation>4.5e-15</expectation>
+      <identity>85.4</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKETA+KFMDFL+E ILNKKLS +EKELIYSYVGGKP</pattern>
+      <matchSeq start="205" end="245">VDDFDKETAMKFMDFLSERILNKKLSNEEKELIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="D5VTX1_METIM" ac="D5VTX1" length="347" description="ATPase OS=Methanocaldococcus infernus (strain DSM 11812 / JCM 15783 / ME) OX=573063 GN=Metin_1374 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>184</score>
+      <bits>75.5</bits>
+      <expectation>8.1e-15</expectation>
+      <identity>79.1</identity>
+      <positives>93.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDFDKETA++FMDFLA+ ILNKKLS  EKELIYSYVGGKP++</pattern>
+      <matchSeq start="203" end="245">VDDFDKETALRFMDFLAKNILNKKLSNKEKELIYSYVGGKPVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="F6BA97_METIK" ac="F6BA97" length="349" description="AAA ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0230 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <bits>75.1</bits>
+      <expectation>1.1e-14</expectation>
+      <identity>76.7</identity>
+      <positives>93.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDFDKETAIKFMDFL+E +L+KKLS +EKELIYSY GGKP++</pattern>
+      <matchSeq start="205" end="247">VDDFDKETAIKFMDFLSERVLDKKLSNEEKELIYSYAGGKPVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="F6BC79_METIK" ac="F6BC79" length="356" description="Uncharacterized protein OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_1753 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>182</score>
+      <bits>74.7</bits>
+      <expectation>1.6e-14</expectation>
+      <identity>74.4</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDFDKETA+KFMDFL+E+IL +KL+++EKELIYSYVGGKP++</pattern>
+      <matchSeq start="211" end="253">VDDFDKETALKFMDFLSEDILKRKLTKEEKELIYSYVGGKPVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="F6BA96_METIK" ac="F6BA96" length="359" description="AAA ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0229 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>182</score>
+      <bits>74.7</bits>
+      <expectation>1.6e-14</expectation>
+      <identity>81.4</identity>
+      <positives>93.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDFDKETAIKFMDFL++ ILNKKLS +EKELIYSYVGGK I+</pattern>
+      <matchSeq start="205" end="247">VDDFDKETAIKFMDFLSKRILNKKLSNEEKELIYSYVGGKSID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A8D6SYJ4_9EURY" ac="A0A8D6SYJ4" length="374" description="ATPase OS=Methanocaldococcus lauensis OX=2546128 GN=MLAUSG7_0163 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>182</score>
+      <bits>74.7</bits>
+      <expectation>1.7e-14</expectation>
+      <identity>81.0</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDF+K+ A+KFMDFLA+EILNKKLS DEKELIYS+VGGKPI</pattern>
+      <matchSeq start="220" end="261">VDDFEKDKALKFMDFLAQEILNKKLSNDEKELIYSHVGGKPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A076LK12_9EURY" ac="A0A076LK12" length="359" description="ATPase OS=Methanocaldococcus bathoardescens OX=1301915 GN=JH146_1081 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>2.3e-14</expectation>
+      <identity>80.5</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKETA++F+DFL+E ILNKKLS+D KELIYSYVGGKP</pattern>
+      <matchSeq start="205" end="245">VDDFDKETALRFIDFLSENILNKKLSDDNKELIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="D5VUC0_METIM" ac="D5VUC0" length="347" description="ATPase OS=Methanocaldococcus infernus (strain DSM 11812 / JCM 15783 / ME) OX=573063 GN=Metin_0060 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>2.9e-14</expectation>
+      <identity>82.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA+EIL K+LS +EKELIYSYVGGKP</pattern>
+      <matchSeq start="203" end="243">VDDFDKETALKFMDFLAKEILGKELSTEEKELIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A8D6PSZ2_9EURY" ac="A0A8D6PSZ2" length="349" description="ATPase OS=Methanocaldococcus lauensis OX=2546128 GN=MLAUSG7_0506 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>3e-14</expectation>
+      <identity>82.9</identity>
+      <positives>92.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA+EILNK LS +EKE IYSYVGGKP</pattern>
+      <matchSeq start="205" end="245">VDDFDKETALKFMDFLAKEILNKNLSNEEKEKIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A8D6SWH5_9EURY" ac="A0A8D6SWH5" length="374" description="AAA ATPase OS=Methanocaldococcus lauensis OX=2546128 GN=MLAUSG7_1202 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>3.3e-14</expectation>
+      <identity>78.6</identity>
+      <positives>92.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA+EILNK L+ +EKE IYSYVGGKP+</pattern>
+      <matchSeq start="220" end="261">VDDFDKETALKFMDFLAKEILNKNLTNEEKEKIYSYVGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="F6BA98_METIK" ac="F6BA98" length="348" description="AAA ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0231 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>4.1e-14</expectation>
+      <identity>76.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA E+LN+ LSE++KELIY+YVGGKP+</pattern>
+      <matchSeq start="204" end="245">VDDFDKETALKFMDFLAGEVLNRALSEEKKELIYNYVGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="F6BCD0_METIK" ac="F6BCD0" length="361" description="ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0587 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>177</score>
+      <bits>72.8</bits>
+      <expectation>8.2e-14</expectation>
+      <identity>71.4</identity>
+      <positives>97.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA+KF+DFL+E +LNKKLS+++KELI+SY+GGKP+</pattern>
+      <matchSeq start="207" end="248">VDDFDKETALKFIDFLSENLLNKKLSDEDKELIFSYIGGKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A8D6PXM0_9EURY" ac="A0A8D6PXM0" length="374" description="AAA ATPase OS=Methanocaldococcus lauensis OX=2546128 GN=MLAUSG7_1475 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>177</score>
+      <bits>72.8</bits>
+      <expectation>8.6e-14</expectation>
+      <identity>76.7</identity>
+      <positives>90.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA+ ILNKKLS +EKE IY YVGGKP++</pattern>
+      <matchSeq start="220" end="262">VDDFDKETALKFMDFLAKNILNKKLSNEEKEKIYYYVGGKPLD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A8D6SWD9_9EURY" ac="A0A8D6SWD9" length="360" description="AAA ATPase OS=Methanocaldococcus lauensis OX=2546128 GN=MLAUSG7_0893 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>176</score>
+      <bits>72.4</bits>
+      <expectation>1.1e-13</expectation>
+      <identity>82.5</identity>
+      <positives>97.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>+DDFDKETA++FMDFLA+EILNK LS++EKELIYSYVGGK</pattern>
+      <matchSeq start="205" end="244">VDDFDKETALRFMDFLAKEILNKYLSDEEKELIYSYVGGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="F6BAT2_METIK" ac="F6BAT2" length="397" description="AAA ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0340 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>1.7e-13</expectation>
+      <identity>78.6</identity>
+      <positives>92.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKE A++FMDFLAEE+LNK LSE++KELIYS VGGKPI</pattern>
+      <matchSeq start="248" end="289">VDDFDKEMALRFMDFLAEELLNKPLSEEQKELIYSTVGGKPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="C9RDT0_METVM" ac="C9RDT0" length="350" description="ATPase OS=Methanocaldococcus vulcanius (strain ATCC 700851 / DSM 12094 / M7) OX=579137 GN=Metvu_1606 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>174</score>
+      <bits>71.6</bits>
+      <expectation>2.1e-13</expectation>
+      <identity>74.4</identity>
+      <positives>93.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDFDKETA+KFMDFLAE+IL +KLS ++KELIYSYVGGK ++</pattern>
+      <matchSeq start="205" end="247">VDDFDKETALKFMDFLAEDILGRKLSNEDKELIYSYVGGKIVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A8D6PPW9_9EURY" ac="A0A8D6PPW9" length="364" description="ATPase OS=Methanocaldococcus lauensis OX=2546128 GN=MLAUSG7_0289 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>172</score>
+      <bits>70.9</bits>
+      <expectation>4.1e-13</expectation>
+      <identity>73.8</identity>
+      <positives>92.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDF+++TA+KFMDFLA+EILNK LS +EKE IYSYVGGKP+</pattern>
+      <matchSeq start="210" end="251">VDDFNRDTALKFMDFLAKEILNKNLSNEEKEKIYSYVGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="F6BBA7_METIK" ac="F6BBA7" length="345" description="AAA ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_1581 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>7.3e-13</expectation>
+      <identity>73.8</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKE A +FMDFL+E ILN+ LS++EKELIYSYVGGKP+</pattern>
+      <matchSeq start="201" end="242">IDDFDKEKAYEFMDFLSERILNRSLSKEEKELIYSYVGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="F6BEM3_METIK" ac="F6BEM3" length="351" description="AAA ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_1283 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>7.5e-13</expectation>
+      <identity>73.8</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA+KFM FLA ++LN+ LSE+EKE IYSYVGGKP+</pattern>
+      <matchSeq start="204" end="245">VDDFDKETALKFMGFLAGDVLNRALSEEEKEKIYSYVGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="F6BC94_METIK" ac="F6BC94" length="370" description="AAA ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_1768 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>7.9e-13</expectation>
+      <identity>72.1</identity>
+      <positives>90.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDFDKET+ KFMDFL+E +LNKKLS +EKELIYS+VGGK ++</pattern>
+      <matchSeq start="226" end="268">VDDFDKETSFKFMDFLSERVLNKKLSNEEKELIYSHVGGKLVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="F6BA68_METIK" ac="F6BA68" length="356" description="AAA ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0201 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>2.7e-12</expectation>
+      <identity>75.0</identity>
+      <positives>95.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>+DDFDKETA+KFMDFL+E+IL KKL +++K+LIYSYVGGK</pattern>
+      <matchSeq start="210" end="249">VDDFDKETALKFMDFLSEDILGKKLPDEDKKLIYSYVGGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="F8AMA0_METOI" ac="F8AMA0" length="364" description="AAA ATPase OS=Methanothermococcus okinawensis (strain DSM 14208 / JCM 11175 / IH1) OX=647113 GN=Metok_0813 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <bits>67.4</bits>
+      <expectation>7.3e-12</expectation>
+      <identity>77.5</identity>
+      <positives>90.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>+DDFDK+ A+KFM+FLA E LN+KLS DEKELIYSYVGGK</pattern>
+      <matchSeq start="210" end="249">VDDFDKKIALKFMEFLAREKLNRKLSNDEKELIYSYVGGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="F8AJS0_METOI" ac="F8AJS0" length="374" description="AAA ATPase OS=Methanothermococcus okinawensis (strain DSM 14208 / JCM 11175 / IH1) OX=647113 GN=Metok_1300 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>1e-11</expectation>
+      <identity>67.4</identity>
+      <positives>93.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>++DFDKET++ FMDFLA+E+L  +LS+++KELIYSYVGGKPI+</pattern>
+      <matchSeq start="220" end="262">IEDFDKETSLIFMDFLAKELLKSELSKEQKELIYSYVGGKPID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="F6BF01_METIK" ac="F6BF01" length="361" description="ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0180 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>2.6e-11</expectation>
+      <identity>70.7</identity>
+      <positives>87.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKET +KF+DFL +E LNK LS+ ++ELIYSYVGGKP</pattern>
+      <matchSeq start="216" end="256">VDDFDKETTLKFIDFLTKEKLNKTLSDGDRELIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="H1KX95_9EURY" ac="H1KX95" length="363" description="AAA ATPase OS=Methanotorris formicicus Mc-S-70 OX=647171 GN=MetfoDRAFT_0418 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>2.6e-11</expectation>
+      <identity>78.0</identity>
+      <positives>92.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDK+TAI+FMDFLA+E  N KLS+D+KELIYSYVGGKP</pattern>
+      <matchSeq start="210" end="249">VDDFDKQTAIRFMDFLAKEN-NIKLSDDDKELIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A076LHC7_9EURY" ac="A0A076LHC7" length="356" description="ATPase OS=Methanocaldococcus bathoardescens OX=1301915 GN=JH146_0083 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>9e-11</expectation>
+      <identity>67.5</identity>
+      <positives>92.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>+DDFDK+TA+KF+DFL+ ++LN+ LS D+KELIY+YVGGK</pattern>
+      <matchSeq start="210" end="249">VDDFDKDTALKFIDFLSGDLLNRHLSNDDKELIYNYVGGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="F6BAP1_METIK" ac="F6BAP1" length="359" description="ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0299 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>2.3e-10</expectation>
+      <identity>75.0</identity>
+      <positives>92.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>+DDFDKETA+KFMDF+A+E  N KLS++EKEL+YSYVGGK</pattern>
+      <matchSeq start="215" end="253">VDDFDKETALKFMDFIAKE-NNIKLSDEEKELVYSYVGGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A8D6STJ2_9EURY" ac="A0A8D6STJ2" length="287" description="ATPase OS=Methanocaldococcus lauensis OX=2546128 GN=MLAUSG7_0016 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>2.5e-10</expectation>
+      <identity>65.9</identity>
+      <positives>86.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSE-DEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDF K  A++F+DFLAE+ILNK +S  +EKELIYSYVGGKP++</pattern>
+      <matchSeq start="141" end="184">VDDFSKNKALQFIDFLAEDILNKTISSTEEKELIYSYVGGKPVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="H1KZC0_9EURY" ac="H1KZC0" length="384" description="ATPase OS=Methanotorris formicicus Mc-S-70 OX=647171 GN=MetfoDRAFT_1143 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>3.3e-10</expectation>
+      <identity>75.6</identity>
+      <positives>87.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKETA+KFMDFLAEE  N KL+ ++K LIYSYVGGKP</pattern>
+      <matchSeq start="241" end="280">VDDFDKETALKFMDFLAEE-NNIKLTNEDKGLIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="SP" id="Y1301_METJA" ac="Q58697" length="400" description="Uncharacterized ATP-binding protein MJ1301 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ1301 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>3.4e-10</expectation>
+      <identity>69.0</identity>
+      <positives>88.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA+E  N  L+ ++KELIY+YVGGKP+</pattern>
+      <matchSeq start="257" end="297">VDDFDKETALKFMDFLAKE-NNMSLTNEDKELIYNYVGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="F6BCF7_METIK" ac="F6BCF7" length="363" description="Uncharacterized protein OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0617 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>4.4e-10</expectation>
+      <identity>73.8</identity>
+      <positives>85.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDK+TAIKF+DFLA+E  N  LS  +KELIYSYVGGKPI</pattern>
+      <matchSeq start="220" end="260">VDDFDKQTAIKFIDFLAKE-YNINLSNKDKELIYSYVGGKPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="H1KZT8_9EURY" ac="H1KZT8" length="262" description="ATPase OS=Methanotorris formicicus Mc-S-70 OX=647171 GN=MetfoDRAFT_1312 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>7.9e-10</expectation>
+      <identity>84.8</identity>
+      <positives>97.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="33">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELI</querySeq>
+      <pattern>+DDFDKE A+KFMDFL+EEILNKKLS+DEKELI</pattern>
+      <matchSeq start="229" end="261">VDDFDKENALKFMDFLSEEILNKKLSDDEKELI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="SP" id="Y632_METJA" ac="Q58049" length="363" description="Uncharacterized ATP-binding protein MJ0632 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0632 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>8.4e-10</expectation>
+      <identity>67.4</identity>
+      <positives>88.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPIN</querySeq>
+      <pattern>+DDFD+ETA+KFMDFLA+E  N  L+ ++KELIY+YVGGKPI+</pattern>
+      <matchSeq start="220" end="261">VDDFDRETALKFMDFLAKE-NNINLTNEDKELIYNYVGGKPID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="F8AJT3_METOI" ac="F8AJT3" length="365" description="AAA ATPase OS=Methanothermococcus okinawensis (strain DSM 14208 / JCM 11175 / IH1) OX=647113 GN=Metok_1314 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>8.4e-10</expectation>
+      <identity>69.0</identity>
+      <positives>90.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNK-KLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKET+++FMDFLA+EILNK +L +++KE IYS VGGKP</pattern>
+      <matchSeq start="210" end="251">VDDFDKETSLRFMDFLAKEILNKPELPKEQKEQIYSLVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0A8D6SVD5_9EURY" ac="A0A8D6SVD5" length="363" description="ATPase_2 domain-containing protein OS=Methanocaldococcus lauensis OX=2546128 GN=MLAUSG7_0292 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>70.7</identity>
+      <positives>90.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDK+TA+KF+DFL+E I N KL+ +E+ELIYSYVGGKP</pattern>
+      <matchSeq start="220" end="259">VDDFDKDTALKFIDFLSE-INNIKLTNEERELIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="C9RF44_METVM" ac="C9RF44" length="365" description="ATPase OS=Methanocaldococcus vulcanius (strain ATCC 700851 / DSM 12094 / M7) OX=579137 GN=Metvu_0329 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>75.0</identity>
+      <positives>87.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA+E  N  L+ D+KELIYSYVGGK</pattern>
+      <matchSeq start="220" end="258">VDDFDKETALKFMDFLAKE-KNINLTNDDKELIYSYVGGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="SP" id="Y074_METJA" ac="Q60380" length="358" description="Uncharacterized ATP-binding protein MJ0074 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0074 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.6e-09</expectation>
+      <identity>70.7</identity>
+      <positives>87.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA+E  N  L+ ++KELIY+YVGGKP</pattern>
+      <matchSeq start="205" end="244">VDDFDKETALKFMDFLAKE-NNISLTNEDKELIYNYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="SP" id="Y801_METJA" ac="Q58211" length="379" description="Uncharacterized ATP-binding protein MJ0801 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJ0801 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.6e-09</expectation>
+      <identity>73.2</identity>
+      <positives>85.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA E  N  L+ ++KELIYSYVGGKP</pattern>
+      <matchSeq start="226" end="265">VDDFDKETALKFMDFLAVE-NNINLTNEDKELIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="F6BDA3_METIK" ac="F6BDA3" length="360" description="AAA ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0921 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>7.6e-09</expectation>
+      <identity>69.0</identity>
+      <positives>85.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFD+ETA+KF++F A+E  N KL + EKELIYSYVGGKPI</pattern>
+      <matchSeq start="215" end="255">VDDFDEETALKFINFYAKE-KNIKLDKKEKELIYSYVGGKPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="C9RF49_METVM" ac="C9RF49" length="369" description="ATPase OS=Methanocaldococcus vulcanius (strain ATCC 700851 / DSM 12094 / M7) OX=579137 GN=Metvu_0334 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>7.6e-09</expectation>
+      <identity>68.3</identity>
+      <positives>87.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDK+TA+KFMDFLA +  N +L+ ++KELIYSYVGGKP</pattern>
+      <matchSeq start="216" end="255">VDDFDKQTALKFMDFLAVD-NNIELNNEDKELIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="F8AJR9_METOI" ac="F8AJR9" length="355" description="AAA ATPase OS=Methanothermococcus okinawensis (strain DSM 14208 / JCM 11175 / IH1) OX=647113 GN=Metok_1299 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>1.9e-08</expectation>
+      <identity>69.0</identity>
+      <positives>81.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA++FMDFLA+E     LS  +KE IYSYVGGKPI</pattern>
+      <matchSeq start="210" end="250">VDDFDKETALRFMDFLAKE-NRVSLSNRDKEKIYSYVGGKPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="C7P717_METFA" ac="C7P717" length="369" description="ATPase OS=Methanocaldococcus fervens (strain DSM 4213 / JCM 15782 / AG86) OX=573064 GN=Mefer_0527 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>2e-08</expectation>
+      <identity>72.5</identity>
+      <positives>85.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>+DDFDKETA+KFMDFLA E  N  L+ ++KELIYSYVGGK</pattern>
+      <matchSeq start="216" end="254">VDDFDKETALKFMDFLAIE-ENINLTNEDKELIYSYVGGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="H1KZC3_9EURY" ac="H1KZC3" length="360" description="AAA ATPase OS=Methanotorris formicicus Mc-S-70 OX=647171 GN=MetfoDRAFT_1146 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>3.7e-08</expectation>
+      <identity>72.5</identity>
+      <positives>85.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>+DDFDKETAIKFMDFLA+E  N  L+  +KELIYS+VGGK</pattern>
+      <matchSeq start="214" end="252">VDDFDKETAIKFMDFLAKE-NNISLTNKDKELIYSHVGGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="SP" id="Y3515_METJA" ac="Q60277" length="365" description="Uncharacterized ATP-binding protein MJECL15 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJECL15 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>3.7e-08</expectation>
+      <identity>67.5</identity>
+      <positives>87.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>+DDFDK+TA+KFMDFLA++  N  L+ ++KELIYSYVGGK</pattern>
+      <matchSeq start="220" end="258">VDDFDKKTALKFMDFLAKQ-KNINLTNEDKELIYSYVGGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="SP" id="Y3514_METJA" ac="Q60276" length="314" description="Uncharacterized protein MJECL14 OS=Methanocaldococcus jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 GN=MJECL14 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>135</score>
+      <bits>56.6</bits>
+      <expectation>4.7e-08</expectation>
+      <identity>70.0</identity>
+      <positives>85.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>+DDFDKET++KFMDFLA E  N  L+ ++KELIYSYVGGK</pattern>
+      <matchSeq start="163" end="201">VDDFDKETSLKFMDFLAVE-GNINLTNEDKELIYSYVGGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="F6BD58_METIK" ac="F6BD58" length="364" description="AAA ATPase OS=Methanotorris igneus (strain DSM 5666 / JCM 11834 / Kol 5) OX=880724 GN=Metig_0876 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>3.3e-07</expectation>
+      <identity>70.0</identity>
+      <positives>82.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>++DFDKETA+KFM+FLA E    KL+  EKELIYSYVGGK</pattern>
+      <matchSeq start="210" end="248">VNDFDKETALKFMNFLAVE-YGIKLTNREKELIYSYVGGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="F8AJR8_METOI" ac="F8AJR8" length="364" description="AAA ATPase OS=Methanothermococcus okinawensis (strain DSM 14208 / JCM 11175 / IH1) OX=647113 GN=Metok_1298 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>1.6e-06</expectation>
+      <identity>61.0</identity>
+      <positives>80.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKET+++F+ FLA+E     LS+ +KE IYSYVGGKP</pattern>
+      <matchSeq start="210" end="249">VDDFDKETSLRFISFLAKE-NGVALSDSDKEKIYSYVGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="N6UWN0_9EURY" ac="N6UWN0" length="128" description="ATPase AAA (Fragment) OS=Methanocaldococcus villosus KIN24-T80 OX=1069083 GN=J422_00871 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>2.9e-05</expectation>
+      <identity>84.0</identity>
+      <positives>92.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="42">EEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>E ILNKKLS +EKELIYSYVGGKP+</pattern>
+      <matchSeq start="1" end="25">ENILNKKLSNEEKELIYSYVGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0A8D6SZ41_9EURY" ac="A0A8D6SZ41" length="224" description="ATPase OS=Methanocaldococcus lauensis OX=2546128 GN=MLAUSG7_0452 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>2.9e-05</expectation>
+      <identity>64.3</identity>
+      <positives>81.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKE A+KF++F A+E  N +L E EKELIYS+VGGK I</pattern>
+      <matchSeq start="81" end="120">VDDFDKENALKFINFYAKE-KNIELKE-EKELIYSHVGGKLI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0ABV4T3S2_9EURY" ac="A0ABV4T3S2" length="342" description="ATP-binding protein OS=Pyrococcus kukulkanii OX=1609559 GN=P8X34_06510 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.00084</expectation>
+      <identity>47.6</identity>
+      <positives>71.4</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDKETA+KF+       +++  + DE EL++SY GGKP+</pattern>
+      <matchSeq start="204" end="238">VDDFDKETALKFL-------VSQGFTNDEAELVWSYFGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="SP" id="Y948_PYRAB" ac="Q9V050" length="339" description="Uncharacterized ATP-binding protein PYRAB09480 OS=Pyrococcus abyssi (strain GE5 / Orsay) OX=272844 GN=PYRAB09480 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.0041</expectation>
+      <identity>45.2</identity>
+      <positives>69.0</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDF +ETA++F+        N  LS+DE EL+++Y GGKP+</pattern>
+      <matchSeq start="204" end="238">VDDFKRETALRFLK-------NNGLSDDEAELVWNYFGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0ABV4T6W0_9EURY" ac="A0ABV4T6W0" length="341" description="ATP-binding protein OS=Pyrococcus kukulkanii OX=1609559 GN=P8X34_06500 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.0076</expectation>
+      <identity>47.6</identity>
+      <positives>64.3</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFDK+T + F+           LSEDE EL++SY GGKP+</pattern>
+      <matchSeq start="204" end="238">VDDFDKKTTLDFLKV-------NGLSEDEAELVWSYFGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0ABV4T6X8_9EURY" ac="A0ABV4T6X8" length="331" description="ATP-binding protein OS=Pyrococcus kukulkanii OX=1609559 GN=P8X34_08205 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.01</expectation>
+      <identity>46.3</identity>
+      <positives>68.3</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDKETAI+F+            +++E EL++SY+GGKP</pattern>
+      <matchSeq start="203" end="236">VDDFDKETAIEFLR-------ENGFTKEESELVWSYIGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0A160VT63_9EURY" ac="A0A160VT63" length="331" description="ATP-binding protein OS=Thermococcus chitonophagus OX=54262 GN=A3L04_10365 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.18</expectation>
+      <identity>41.5</identity>
+      <positives>65.9</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFDK+T I+F+            +++E EL++SY+GGKP</pattern>
+      <matchSeq start="203" end="236">VDDFDKKTTIEFLTM-------NGFTKEEGELVWSYIGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0ABV4T2H3_9EURY" ac="A0ABV4T2H3" length="332" description="ATP-binding protein OS=Pyrococcus kukulkanii OX=1609559 GN=P8X34_00520 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.33</expectation>
+      <identity>40.5</identity>
+      <positives>59.5</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DD DK T +KF+  L        L ++E E ++SY GGKP+</pattern>
+      <matchSeq start="198" end="232">VDDLDKNTTLKFLKELG-------LEDEEAEFVWSYFGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0A4R2KMD6_9FIRM" ac="A0A4R2KMD6" length="224" description="Putative RDD family membrane protein YckC OS=Marinisporobacter balticus OX=2018667 GN=EV214_11273 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.44</expectation>
+      <identity>41.7</identity>
+      <positives>77.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="40">DKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>+KE+  ++ D L+E+ +NK L+EDEK+L+++Y+  K</pattern>
+      <matchSeq start="155" end="189">EKESLYRYFDHLSEDTINK-LTEDEKQLLFTYINEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A160VU46_9EURY" ac="A0A160VU46" length="332" description="ATP-binding protein OS=Thermococcus chitonophagus OX=54262 GN=A3L04_07125 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.46</expectation>
+      <identity>40.5</identity>
+      <positives>59.5</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DD DK T +KF+  L        L ++E E ++SY GGKP+</pattern>
+      <matchSeq start="198" end="232">VDDLDKTTTLKFLKELG-------LEDEEAEFVWSYFGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="A0A160VS30_9EURY" ac="A0A160VS30" length="326" description="AAA+ ATPase domain-containing protein OS=Thermococcus chitonophagus OX=54262 GN=A3L04_09280 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.6</expectation>
+      <identity>40.5</identity>
+      <positives>59.5</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="42">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>+DDFD ETA+ F+       L+  L+E E ++   Y GGKP+</pattern>
+      <matchSeq start="195" end="229">VDDFDDETALAFL-------LSNGLTEKEAQIAVEYFGGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0A650CJU1_SULOH" ac="A0A650CJU1" length="351" description="AAA family ATPase OS=Sulfurisphaera ohwakuensis OX=69656 GN=D1869_13610 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>3.0</expectation>
+      <identity>39.5</identity>
+      <positives>68.4</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="41">FDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>FDKETAI+F++   E    ++++ ++KE +Y  +GG P</pattern>
+      <matchSeq start="200" end="234">FDKETAIRFLE---EGFREQRINFEDKERVYDILGGNP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0ABV4T4F3_9EURY" ac="A0ABV4T4F3" length="224" description="ATP-binding protein OS=Pyrococcus kukulkanii OX=1609559 GN=P8X34_07890 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>4.1</expectation>
+      <identity>37.5</identity>
+      <positives>65.0</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>+DDFD+ETA+ F       +++  L+E+E +++  Y GGK</pattern>
+      <matchSeq start="187" end="219">VDDFDEETALAF-------LISNGLTEEESKIVVDYFGGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0ABT5XP44_9FLAO" ac="A0ABT5XP44" length="389" description="SIR2 family protein OS=Flagellimonas okinawensis OX=3031324 GN=PY091_10460 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>4.2</expectation>
+      <identity>50.0</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="45">DFLAEEILNKKLSEDEKELIYSYVGGKPINRN</querySeq>
+      <pattern>DFL E IL++ L ED+  LIY+Y G  P   N</pattern>
+      <matchSeq start="189" end="220">DFLVESILDETLGEDDTHLIYAYRGFTPKTTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="SP" id="Y1200_PYRAB" ac="Q9UZE8" length="326" description="Uncharacterized ATP-binding protein PYRAB12000 OS=Pyrococcus abyssi (strain GE5 / Orsay) OX=272844 GN=PYRAB12000 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>5.7</expectation>
+      <identity>36.6</identity>
+      <positives>63.4</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFD+ T ++F+        +  LSE+E ++ + Y+GGKP</pattern>
+      <matchSeq start="187" end="220">VDDFDERTTLEFLT-------SNGLSEEEAKIAWHYLGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0A4S1DZ63_9FLAO" ac="A0A4S1DZ63" length="449" description="TlpA family protein disulfide reductase OS=Flavivirga rizhaonensis OX=2559571 GN=EM932_06180 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>5.7</expectation>
+      <identity>51.7</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="45">AEEILNKKLSEDEKELIYSYVGGKPINRN</querySeq>
+      <pattern>AEE L KK SE+  E++++ +GGK IN N</pattern>
+      <matchSeq start="299" end="327">AEETLEKKSSEEPLEMVFTSMGGKEINLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0ABW0K5P8_9BACL" ac="A0ABW0K5P8" length="519" description="Extracellular solute-binding protein OS=Paenibacillus aestuarii OX=516965 GN=ACFPOG_09790 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>5.7</expectation>
+      <identity>44.7</identity>
+      <positives>60.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="42">DKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPI</querySeq>
+      <pattern>DKE A+KF+D+L  E   K LS   +   Y+ V GKP+</pattern>
+      <matchSeq start="351" end="388">DKERAVKFLDYLVSEEGTKYLSLGIEGKSYTMVDGKPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0A7L2SZ25_POMRU" ac="A0A7L2SZ25" length="616" description="Carnitine O-acetyltransferase (Fragment) OS=Pomatostomus ruficeps OX=9176 GN=Crat PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>5.7</expectation>
+      <identity>39.1</identity>
+      <positives>54.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="47">DDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKPINRNCY</querySeq>
+      <pattern>D  D++  ++F   L E ILN K   D + L   Y+GGKP+  N Y</pattern>
+      <matchSeq start="118" end="163">DFLDRQGQLRFAARLIEGILNFKSMIDNETLPVEYMGGKPLCMNQY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="SP" id="Y626_PYRAB" ac="Q9V103" length="335" description="Uncharacterized ATP-binding protein PYRAB06260 OS=Pyrococcus abyssi (strain GE5 / Orsay) OX=272844 GN=PYRAB06260 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>7.8</expectation>
+      <identity>39.0</identity>
+      <positives>61.0</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="41">MDDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGKP</querySeq>
+      <pattern>+DDFD++TA+ F+        ++ L+E+E  L   Y GGKP</pattern>
+      <matchSeq start="204" end="237">VDDFDEKTALNFLK-------SQGLTEEEANLALEYFGGKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0ABU9DJL1_9BACL" ac="A0ABU9DJL1" length="565" description="Extracellular solute-binding protein OS=Paenibacillus filicis OX=669464 GN=WMW72_08480 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>7.9</expectation>
+      <identity>47.2</identity>
+      <positives>58.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="40">DKETAIKFMDFLAEEILNKKLSEDEKELIYSYVGGK</querySeq>
+      <pattern>DKE AIKF+ +L  E  NK L   EK + Y  + GK</pattern>
+      <matchSeq start="388" end="423">DKERAIKFLSYLISEEGNKDLFFGEKGVSYDVINGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A9P3HEI9_ENTPA" ac="A0A9P3HEI9" length="1541" description="Uncharacterized protein OS=Entomortierella parvispora OX=205924 GN=EMPS_07617 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>7.9</expectation>
+      <identity>43.2</identity>
+      <positives>54.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="38">DDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVG</querySeq>
+      <pattern>DD DKET I+  D   + IL K+   D KE I   +G</pattern>
+      <matchSeq start="407" end="443">DDLDKETLIRVCDLPIKRILRKEFDADAKETIIDLLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0A9P3LUJ1_ENTPA" ac="A0A9P3LUJ1" length="1626" description="Uncharacterized protein OS=Entomortierella parvispora OX=205924 GN=EMPS_03070 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>7.9</expectation>
+      <identity>43.2</identity>
+      <positives>54.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="38">DDFDKETAIKFMDFLAEEILNKKLSEDEKELIYSYVG</querySeq>
+      <pattern>DD DKET I+  D   + IL K+   D KE I   +G</pattern>
+      <matchSeq start="406" end="442">DDLDKETLIRVCDLPIKRILRKEFDADTKEAIIDLLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

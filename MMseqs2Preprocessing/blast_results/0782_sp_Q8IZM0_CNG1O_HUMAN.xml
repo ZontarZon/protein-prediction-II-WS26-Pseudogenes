@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-204650-0937-45420148-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-204650-0937-45420148-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q8IZM0|CNG1O_HUMAN" type="PROTEIN" length="81"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:46:50+00:00" end="2026-11-13T20:48:28+00:00" search="P0Y0M0DT0H0M98.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="11">
+   <hit number="1" database="SP" id="CNG1O_HUMAN" ac="Q8IZM0" length="81" description="Putative CNGA1-overlapping antisense gene protein OS=Homo sapiens OX=9606 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>399</score>
+      <bits>158.3</bits>
+      <expectation>6e-49</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="81">MDSYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAMFRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</querySeq>
+      <pattern>MDSYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAMFRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</pattern>
+      <matchSeq start="1" end="81">MDSYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAMFRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0ACF8PWM5_NASLA" ac="A0ACF8PWM5" length="81" description="Uncharacterized protein OS=Nasalis larvatus OX=43780 GN=H8958_009735 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>393</score>
+      <bits>156.0</bits>
+      <expectation>5e-48</expectation>
+      <identity>98.8</identity>
+      <positives>98.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="81">MDSYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAMFRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</querySeq>
+      <pattern>MDSYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAM RSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</pattern>
+      <matchSeq start="1" end="81">MDSYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAMLRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ACF8IWI2_SEMEN" ac="A0ACF8IWI2" length="81" description="Uncharacterized protein OS=Semnopithecus entellus OX=88029 GN=H8957_007281 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>393</score>
+      <bits>156.0</bits>
+      <expectation>5e-48</expectation>
+      <identity>98.8</identity>
+      <positives>98.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="81">MDSYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAMFRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</querySeq>
+      <pattern>MDSYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAM RSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</pattern>
+      <matchSeq start="1" end="81">MDSYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAMLRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0ACF8DUG3_ARAGI" ac="A0ACF8DUG3" length="89" description="Uncharacterized protein OS=Arapaima gigas OX=113544 GN=GN956_G20992 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>270</score>
+      <bits>108.6</bits>
+      <expectation>3.6e-29</expectation>
+      <identity>72.2</identity>
+      <positives>81.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="81">SYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAMFRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</querySeq>
+      <pattern>S+SA IRANLVC+ S  P IR+TFSS SLGS P  A  +SSRPSFI+IC PFSSS+ LASGYSV AS+RSS ERQNRSE</pattern>
+      <matchSeq start="11" end="89">SWSASIRANLVCKISKVPVIRLTFSSMSLGSGPCLATSKSSRPSFIRICLPFSSSMALASGYSVSASIRSSLERQNRSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABR1A923_HUSHU" ac="A0ABR1A923" length="108" description="Uncharacterized protein (Fragment) OS=Huso huso OX=61971 GN=HHUSO_G3217 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>261</score>
+      <bits>105.1</bits>
+      <expectation>1.5e-27</expectation>
+      <identity>69.6</identity>
+      <positives>75.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="81">SYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAMFRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</querySeq>
+      <pattern>SYSA   ANL+C RS D  IRVTFSS S GS P+ A  RS  PSFI+IC PFSSSI  ASGYSVRASMRSS +RQN+SE</pattern>
+      <matchSeq start="3" end="81">SYSASSLANLICMRSKDEYIRVTFSSMSFGSGPSAATSRSKSPSFIRICLPFSSSIAFASGYSVRASMRSSLDRQNKSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0ABR1A9T6_HUSHU" ac="A0ABR1A9T6" length="108" description="Uncharacterized protein (Fragment) OS=Huso huso OX=61971 GN=HHUSO_G247 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <bits>102.8</bits>
+      <expectation>1.2e-26</expectation>
+      <identity>69.6</identity>
+      <positives>75.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="81">SYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAMFRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</querySeq>
+      <pattern>SYSA   ANLVC  S D  IRVTFSS S GS P+ A  RS+ PSFI+IC PFSSSI  ASGYSVRASMRSS +RQN+SE</pattern>
+      <matchSeq start="3" end="81">SYSANSLANLVCMSSKDEYIRVTFSSISFGSGPSAATSRSNSPSFIRICLPFSSSIAFASGYSVRASMRSSLDRQNKSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A8T2P392_9TELE" ac="A0A8T2P392" length="150" description="Transmembrane protein OS=Albula glossodonta OX=121402 GN=JZ751_005962 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>241</score>
+      <bits>97.4</bits>
+      <expectation>5.1e-24</expectation>
+      <identity>68.4</identity>
+      <positives>73.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="81">SYSAKIRANLVCRRSTDPSIRVTFSSRSLGSLPAFAMFRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</querySeq>
+      <pattern>S SA  RANLVCRRS  P I +TFSS S GS P  A  RS  PSFI+IC PFSSS+ LASGYSV AS+RSS ERQ RSE</pattern>
+      <matchSeq start="45" end="123">SCSANSRANLVCRRSRVPVILITFSSISFGSGPWAATSRSRSPSFIRICLPFSSSMALASGYSVSASIRSSLERQKRSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0AAD8G810_ACIOX" ac="A0AAD8G810" length="179" description="Uncharacterized protein OS=Acipenser oxyrinchus oxyrinchus OX=40147 GN=AOXY_G8462 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>8.5e-14</expectation>
+      <identity>56.0</identity>
+      <positives>64.3</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="81">MDSYSAKIRANLVCRRSTDPSI---RVTFSSRSLGSLPAFAMFRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</querySeq>
+      <pattern>+DS SA  RA+LVCR S+ PSI   R+T SS    S P   M  S  P FI+IC PFSS I+LASG SV+   RSS ERQ RSE</pattern>
+      <matchSeq start="71" end="151">LDSSSANRRASLVCRESSLPSISFKRLTVSS-FFSSTPT--MLSSRMPIFIRICRPFSSRILLASGNSVKTPFRSSLERQKRSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A5J5D2N1_9PERO" ac="A0A5J5D2N1" length="421" description="Ras-related GTP-binding protein OS=Etheostoma spectabile OX=54343 GN=FQN60_000976 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>3.1e-08</expectation>
+      <identity>63.8</identity>
+      <positives>74.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="81">PAFAMFRSSRPSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</querySeq>
+      <pattern>P  ++F SSRPSFI+I  P SSS VLA GYS  AS++SS ERQ RSE</pattern>
+      <matchSeq start="310" end="356">PPLSVFSSSRPSFIRISRPLSSSTVLAFGYSATASIKSSLERQKRSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A1D1VIY7_RAMVA" ac="A0A1D1VIY7" length="113" description="Uncharacterized protein OS=Ramazzottius varieornatus OX=947166 GN=RvY_09594 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>4.1e-08</expectation>
+      <identity>51.3</identity>
+      <positives>57.9</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="73">DSYSAKIRANLVCRRSTDPSIR----VTFSSRSLGSLPAFAMFRSSRPSFIKICFPFSSSIVLASGYSVRASMRSS</querySeq>
+      <pattern>+ YSA+ RAN V   ST  S R     TF  R   S  A +   SS+PSFIKIC P S S   ASGYSVRAS +SS</pattern>
+      <matchSeq start="32" end="104">EEYSARSRANRVWTLSTSVSSRSILSTTFCCRFSASRTASS---SSKPSFIKICRPRSISFFFASGYSVRASHKSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A4Z2FWJ2_9TELE" ac="A0A4Z2FWJ2" length="366" description="Uncharacterized protein OS=Liparis tanakae OX=230148 GN=EYF80_044521 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>1.3</expectation>
+      <identity>48.6</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="81">PSFIKICFPFSSSIVLASGYSVRASMRSSFERQNRSE</querySeq>
+      <pattern>P  ++IC PFSS   LA+G S   S+RSS ++ N+SE</pattern>
+      <matchSeq start="2" end="38">PILVRICRPFSSRWRLAAGNSDNTSVRSSLDKLNKSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

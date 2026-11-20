@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-200842-0627-13111829-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-200842-0627-13111829-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P28247|BICB_ECOLI" type="PROTEIN" length="167"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:08:42+00:00" end="2026-11-13T20:12:27+00:00" search="P0Y0M0DT0H0M225.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="5">
+   <hit number="1" database="SP" id="BICB_ECOLI" ac="P28247" length="167" description="Putative uncharacterized protein BicB OS=Escherichia coli (strain K12) OX=83333 GN=bicB PE=5 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>866</score>
+      <bits>338.2</bits>
+      <expectation>2e-117</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="167">MMARRSNAVRPLTIISHQHQTGGINIQPPRRMQFPRYRFIKKIEHRWVIRVVRGANIALRLIEHEVTWTVLLRQRVAIVSDIMFRKQFERCITDDFAIDGDTIAADFTPGNSTANAELLCDKFIKSHVCDFACKNGGRALTRKSELLSAQYSGLITSLKGKRSMAYY</querySeq>
+      <pattern>MMARRSNAVRPLTIISHQHQTGGINIQPPRRMQFPRYRFIKKIEHRWVIRVVRGANIALRLIEHEVTWTVLLRQRVAIVSDIMFRKQFERCITDDFAIDGDTIAADFTPGNSTANAELLCDKFIKSHVCDFACKNGGRALTRKSELLSAQYSGLITSLKGKRSMAYY</pattern>
+      <matchSeq start="1" end="167">MMARRSNAVRPLTIISHQHQTGGINIQPPRRMQFPRYRFIKKIEHRWVIRVVRGANIALRLIEHEVTWTVLLRQRVAIVSDIMFRKQFERCITDDFAIDGDTIAADFTPGNSTANAELLCDKFIKSHVCDFACKNGGRALTRKSELLSAQYSGLITSLKGKRSMAYY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A7MLN2_CROS8" ac="A7MLN2" length="250" description="Uncharacterized protein OS=Cronobacter sakazakii (strain ATCC BAA-894) OX=290339 GN=ESA_01054 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>353</score>
+      <bits>140.6</bits>
+      <expectation>2.4e-38</expectation>
+      <identity>52.0</identity>
+      <positives>74.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="127">MMARRSNAVRPLTIISHQHQTGGINIQPPRRMQFPRYRFIKKIEHRWVIRVVRGANIALRLIEHEVTWTVLLRQRVAIVSDIMFRKQFERCITDDFAIDGDTIAADFTPGNSTANAELLCDKFIKSH</querySeq>
+      <pattern>M+ARR +AVRPL ++SHQHQ GG++IQPP  +Q  R R ++KIEHR VIR+V GA++ALR ++H++   VLL +R+A++ D++ R+QF+  +  + AI  D   A+FT  NS A+A+LL DKFIKSH</pattern>
+      <matchSeq start="75" end="201">MVARRGDAVRPLAVVSHQHQPGGVDIQPPCGVQLMRDRLVQKIEHRRVIRIVGGADVALRFVQHKIARAVLLDERIAVILDVVIRQQFKSAVFYNLAIHRDPAGANFTASNSAADAKLLGDKFIKSH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ACD7U4P0_KLEPN" ac="A0ACD7U4P0" length="271" description="Uncharacterized protein OS=Klebsiella pneumoniae subsp. pneumoniae NTUH-K2044 OX=484021 GN=KP1_3846 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>333</score>
+      <bits>132.9</bits>
+      <expectation>4.1e-35</expectation>
+      <identity>43.4</identity>
+      <positives>68.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="145">MMARRSNAVRPLTIISHQHQTGGINIQPPRRMQFPRYRFIKKIEHRWVIRVVRGANIALRLIEHEVTWTVLLRQRVAIVSDIMFRKQFERCITDDFAIDGDTIAADFTPGNSTANAELLCDKFIKSHVCDFACKNGGRALTRKSE</querySeq>
+      <pattern>++ARR NA+RPL +I HQHQ GG++IQP   +Q  R+R +++I+   +I +V G ++ LRL+EH+VT  +LL QR++++  ++ R + +R I  + A+ G+  AA+FTPGNS A+A+LL DK IKSH    AC + G   + + E</pattern>
+      <matchSeq start="121" end="265">VVARRGNAMRPLAVIGHQHQPGGVDIQPSGGVQLMRHRLVEEIKDSRMIGIVGGTDVPLRLVEHKVTRAILLGQRISVILHLVLRLELKRGIFHNVAVHGNAAAANFTPGNSPADAQLLSDKLIKSHEIFLACHSAGAGKSPEKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0ABX5HM16_ESCAL" ac="A0ABX5HM16" length="40" description="Aldose epimerase OS=Escherichia albertii OX=208962 GN=C7B09_05440 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>6.5e-15</expectation>
+      <identity>87.5</identity>
+      <positives>95.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="128" end="167">VCDFACKNGGRALTRKSELLSAQYSGLITSLKGKRSMAYY</querySeq>
+      <pattern>+CDFACKNGGRALTRKSELL AQYSGLITSLK K+S+AYY</pattern>
+      <matchSeq start="1" end="40">MCDFACKNGGRALTRKSELLFAQYSGLITSLKRKKSVAYY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0AA37HRE6_9HYPH" ac="A0AA37HRE6" length="256" description="Uncharacterized protein OS=Methylobacterium gregans OX=374424 GN=NBEOAGPD_3681 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>2.8</expectation>
+      <identity>26.6</identity>
+      <positives>50.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="106">IISHQHQTGGINIQPPRRMQFPRYRFIKKIEH-RWVIRVVRGANIALRLIEHEVTWTVLLRQRVAIVSDIMFRKQFERCITDDFAIDGDTIAAD</querySeq>
+      <pattern>++  Q QT G++++P  R     +   +++EH R  +RV R  + A RL+E      + LRQR+A+  D +  +  +    +D  ++ D    D</pattern>
+      <matchSeq start="81" end="173">VVRQQQQTLGVDVEPAHRDD-AGHVLGQRLEHGRAPLRVARRGDEAARLVEDPQPGALPLRQRLAVDEDAVGLRDVDGRRVEDLPVEADPTRGD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

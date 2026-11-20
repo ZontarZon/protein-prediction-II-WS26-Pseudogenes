@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-195845-0669-85265647-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-195845-0669-85265647-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|O59297|Y1631_PYRHO" type="PROTEIN" length="130"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T19:58:45+00:00" end="2026-11-13T20:00:55+00:00" search="P0Y0M0DT0H0M130.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="12">
+   <hit number="1" database="SP" id="Y1631_PYRHO" ac="O59297" length="130" description="Putative uncharacterized protein PH1631 OS=Pyrococcus horikoshii (strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 100139 / OT-3) OX=70601 GN=PH1631 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>753</score>
+      <bits>294.7</bits>
+      <expectation>2.1e-101</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="130">MEHWIVIYGGSESTKTLVCCNIYLNRIFSTSQYGNSADNVLYHTHYSSARPYYCYWNYSLFKFHYSCFKRGYSFGNIYKHWSAHGNLKGPCTYNSSLLKPRVLKHSAPPQVFWWGRRDLNPGLRRPRPGG</querySeq>
+      <pattern>MEHWIVIYGGSESTKTLVCCNIYLNRIFSTSQYGNSADNVLYHTHYSSARPYYCYWNYSLFKFHYSCFKRGYSFGNIYKHWSAHGNLKGPCTYNSSLLKPRVLKHSAPPQVFWWGRRDLNPGLRRPRPGG</pattern>
+      <matchSeq start="1" end="130">MEHWIVIYGGSESTKTLVCCNIYLNRIFSTSQYGNSADNVLYHTHYSSARPYYCYWNYSLFKFHYSCFKRGYSFGNIYKHWSAHGNLKGPCTYNSSLLKPRVLKHSAPPQVFWWGRRDLNPGLRRPRPGG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A673XQB2_SALTR" ac="A0A673XQB2" length="3150" description="Dynein axonemal heavy chain 7 OS=Salmo trutta OX=8032 GN=DNAH7 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.21</expectation>
+      <identity>28.1</identity>
+      <positives>40.0</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="128">GGSESTKTLVCCNIYLNRIFSTSQYGNSADNVLYHTHYSSARP--------YYCYWNYSLFKFHYSCFKRGYSFGNIYKHWSAHGNLKGPCTYNSSLLK-------PRVLKHSAPPQVFWWGRRDLNPGLRRPRP</querySeq>
+      <pattern>G    TK L+CC ++         Y   ++ VLY   + +ARP        Y         + HY      Y    +    +A GNLK P T N  LL+       P+ L H  P  +F     DL PG++ P+P</pattern>
+      <matchSeq start="670" end="796">GDGAKTKPLLCCALFRTVAMMVPDYAMISEIVLYSCGFVTARPLSVKIVATYRLCSEQLSMQHHYD-----YGMRAVKSVLTAAGNLKVPVT-NILLLRSIIDVNLPKFLAHDLP--LFGGITSDLFPGVKLPKP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ABY7DNJ6_MYAAR" ac="A0ABY7DNJ6" length="97" description="Uncharacterized protein OS=Mya arenaria OX=6604 GN=MAR_023642 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.1</expectation>
+      <identity>29.2</identity>
+      <positives>45.8</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="86">YLNRIFSTSQYGNSADNVLYH--------THYSSARPYYCYWNYSLFKFHYSCFKRGYSFGNIYKHWSAHGN</querySeq>
+      <pattern>Y N  F+ + Y N + N  YH        THY++   +Y   NY+ + +HY+ +   Y+  N   H   H N</pattern>
+      <matchSeq start="15" end="81">YTNNNFNYTNYNNHSTNNNYHYTNYNYHFTHYNNHNAHY---NYTNYHYHYTNYNYHYTINN--NHHYTHNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0AAE0UIW7_9TELE" ac="A0AAE0UIW7" length="1831" description="N(6)-adenosine-methyltransferase non-catalytic subunit METTL14 OS=Hemibagrus guttatus OX=175788 GN=QTP70_010216 PE=3 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>2.4</expectation>
+      <identity>27.6</identity>
+      <positives>51.3</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="96">YLNRIFSTSQYGNSADNVLYHTH--YSSARPYYCYWNYSLFKFHYSCFKRGYSFGNIYKHWSAHGNLKGPCTYNSS</querySeq>
+      <pattern>Y    +S+S + +S+    +++   +SS+  YYC+++ S   F+Y CF    SF + Y ++         C Y+SS</pattern>
+      <matchSeq start="293" end="359">YYYCFYSSSSFSSSSSYYCFYSSSFFSSSYYYYCFYSSSSSSFYYYCFYSSSSFSSSYYYY---------CFYSSS</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>6.1</expectation>
+      <identity>27.3</identity>
+      <positives>49.4</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="96">YLNRIFSTSQYGNSADNVLYHTHYSSARP---YYCYWNYSLFKFHYSCFKRGYSFGNIYKHWSAHGNLKGPCTYNSS</querySeq>
+      <pattern>Y    +S+S + +S+    +++  SS+     YYC+++ S   F+Y CF    SF + Y ++         C Y+SS</pattern>
+      <matchSeq start="70" end="137">YYYCFYSSSSFSSSSSYYCFYSSSSSSSSSYYYYCFYSSSSSSFYYYCFYSSSSFSSSYYYY---------CFYSSS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABM3CE31_SALSA" ac="A0ABM3CE31" length="249" description="Homeobox protein 2-like OS=Salmo salar OX=8030 GN=LOC123725095 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.5</expectation>
+      <identity>33.3</identity>
+      <positives>52.4</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="84">FSTSQYGNSADNVLYHTHYSSARPYYCYWNYSLFKFHY------SCFKRGYSFGNIYKHWSAH</querySeq>
+      <pattern>+S  Q  +   N  YH HYS  + Y  +WNYS +  HY      +C+ + YS+   ++H+S H</pattern>
+      <matchSeq start="151" end="209">YSYHQNYSYHQNYSYHQHYSYHQNYSYHWNYS-YNQHYIPTTRTNCYHQNYSY---HQHYSYH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0AAV9XDE9_9PEZI" ac="A0AAV9XDE9" length="169" description="Uncharacterized protein OS=Orbilia ellipsospora OX=2528407 GN=TWF694_008947 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>4.8</expectation>
+      <identity>28.6</identity>
+      <positives>42.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="44" end="113">THYSSARPYYCYWNYSLFKFHYSCFKRGYSFGNIYKHWSAHGNLKGPCTYNSSLLKPRVLKHSAPPQVFW</querySeq>
+      <pattern>T+Y  A+P Y YW +  +  ++S F   Y +G +  +    G          S+  P V    APP  FW</pattern>
+      <matchSeq start="84" end="153">TYYGPAQPGYEYWTFRSYVPYFSQFYAYYYYGGVAYYDPQRGQYYYYNNQPRSIEGPAVTDPKAPPPPFW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="K2P4E1_9FLAO" ac="K2P4E1" length="1032" description="TonB-dependent receptor plug OS=Galbibacter marinus OX=555500 GN=I215_05030 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>5.9</expectation>
+      <identity>25.9</identity>
+      <positives>36.6</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="118">IYGGSESTKTLVCCNIYLNRIFSTSQYGNSADNVLYHTHYSSARPYYCYWNYSLFKFHYSCFKRGYSFGNIYKHWSAHGNLKGPCTYNSSLLKPRVLKHSAPPQVFWWGRRD</querySeq>
+      <pattern>IYG  E T+  +      +RIF+     NSA  V++   Y  + PY  Y  Y    + Y       S+ N    +   G + G             L +S   Q  WWG  D</pattern>
+      <matchSeq start="791" end="888">IYGEKEQTENFIRVGDRTDRIFADIYQTNSAGEVVFENGYPISDPYKRYIGYDQPDWTYG-INNTISYKNFRLSFLFDGRIGG-------------LMYSTTNQKMWWGGTD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A6P8EJZ0_CLUHA" ac="A0A6P8EJZ0" length="334" description="Uncharacterized protein LOC116218514 OS=Clupea harengus OX=7950 GN=LOC116218514 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>6.9</expectation>
+      <identity>23.1</identity>
+      <positives>41.7</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="101">MEHWIVIYGGSESTKTLVCCNIYLNRIF------STSQYGNSADNVLYHTHYSSARPYYCYWN-YSLFKFHYSCFKRGYSFGNIYKHWSAHGNLKGPCTYNSSLLKPR</querySeq>
+      <pattern>M  W+ +  G+    +    N+Y  R +        S Y +      Y+ H  S R YYCY + YS   ++   + R   +G++Y   S +G++    +Y   +   R</pattern>
+      <matchSeq start="55" end="162">MPLWVGVVLGAYRRSSAYYGNVYSRRSYYDHLYSRRSYYDHLYSRRSYYGHVYSRRSYYCYGDVYSRRSYYGHVYSRRSYYGDVYSRRSYYGHVYSRRSYYGDVYSRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="E6XBK1_CELAD" ac="E6XBK1" length="398" description="Prolyl-tRNA synthetase OS=Cellulophaga algicola (strain DSM 14237 / IC166 / ACAM 630) OX=688270 GN=Celal_0497 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>7.2</expectation>
+      <identity>30.8</identity>
+      <positives>44.0</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="95">YGGSESTKTLVCCNIYLNRIFSTSQYGNSADNVLYHTHYSS--ARPY-YCYWNYSLFKFHYSCFKRGYSFGNIYKHWSAHGNLKGPCTYNS</querySeq>
+      <pattern>YGG     T V  N Y N     + YG   +N  Y+ +Y +    P+ Y  WN   +  +Y     GY +G  Y H+S + N   P  YN+</pattern>
+      <matchSeq start="117" end="204">YGGWGENPTSVSINYYNNNNLGWNNYGYGWNNWGYNNYYGNNWGSPWGYNRWNSWGYSGYYG--YNGY-YGGGYGHYSPYYNHYNPYRYNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A812K8J8_9DINO" ac="A0A812K8J8" length="190" description="Uncharacterized protein OS=Symbiodinium natans OX=878477 GN=SNAT2548_LOCUS7912 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>7.4</expectation>
+      <identity>26.5</identity>
+      <positives>45.6</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="81">TKTLVCCNIYLNRIFSTSQYGNSADNVLYHTHYSSARPYYCYWNYSLFKFHYSCFKRGYSFGNIYKHW</querySeq>
+      <pattern>T T  CC  Y    ++   YGN++    Y+ +      YY Y+ Y  + ++YSC    Y +   Y ++</pattern>
+      <matchSeq start="114" end="175">TVTATCCCCYFYSYYNNYNYGNNSCYYYYYYY------YYYYYYYYYYYYYYSCCYYYYYYYYYYYYY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0AC58GY84_DANRE" ac="A0AC58GY84" length="651" description="NIDO domain-containing protein OS=Danio rerio OX=7955 GN=LOC141376830 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>7.7</expectation>
+      <identity>30.9</identity>
+      <positives>48.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="88">NIYLNRIFSTSQYGNSADNVLYHTHYSSARPYYCYWNYSLFKFHYSCFKRGYSFGNIYKHWSAHGNLK</querySeq>
+      <pattern>N Y N  +ST  Y +   N  Y+ +YS+   Y  Y+NY     +YS + R Y     Y ++ +  N+K</pattern>
+      <matchSeq start="313" end="373">NTYYNYYYST--YNSKYYNTYYNYYYSTYNNYNTYYNY-----YYSTYNRKYYNNTYYNYYYSTYNIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0ABD2M422_9BILA" ac="A0ABD2M422" length="1340" description="Uncharacterized protein OS=Heterodera trifolii OX=157864 GN=niasHT_000103 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>8.2</expectation>
+      <identity>27.7</identity>
+      <positives>46.4</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="110">YLNRIFSTSQYGNSADNVLYH-THYSSARPYYCYWNYSLFKFHY--SCFKRGYSFGNIYKHWS------AHGNLKGPCTYNSS-------------LLK--PRVLKHSAPPQ</querySeq>
+      <pattern>+ N  +ST Q+ N  D++L+H  H+ S   ++ +W+ +L  F+Y  S  +    + +I++H++       H N     + NSS             LLK  PR L  S  PQ</pattern>
+      <matchSeq start="1216" end="1327">HFNHWYSTHQHSNPWDSILHHFNHWDSTLHHFNHWDSTLQHFNYWDSIHQHSNHWDSIHQHFNPWDSILRHSNHWDSTSANSSAFLTFYVPCDVEPLLKAPPRCLVRSTRPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-201440-0138-23767326-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-201440-0138-23767326-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P44213|Y1486_HAEIN" type="PROTEIN" length="57"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:14:40+00:00" end="2026-11-13T20:15:50+00:00" search="P0Y0M0DT0H0M70.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="15">
+   <hit number="1" database="SP" id="Y1486_HAEIN" ac="P44213" length="57" description="Putative uncharacterized protein HI_1486 in Mu-like prophage FluMu region OS=Haemophilus influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 GN=HI_1486 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>286</score>
+      <bits>114.8</bits>
+      <expectation>2e-32</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MMTETRKNELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGNVSDQLPNMRMMLARG</querySeq>
+      <pattern>MMTETRKNELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGNVSDQLPNMRMMLARG</pattern>
+      <matchSeq start="1" end="57">MMTETRKNELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGNVSDQLPNMRMMLARG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="Q7VNL7_HAEDU" ac="Q7VNL7" length="59" description="Uncharacterized protein OS=Haemophilus ducreyi (strain 35000HP / ATCC 700724) OX=233412 GN=HD_0492 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>172</score>
+      <bits>70.9</bits>
+      <expectation>5.3e-15</expectation>
+      <identity>58.2</identity>
+      <positives>81.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="55">MMTETRKNELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGNVSDQLPNMRMMLA</querySeq>
+      <pattern>MMT++RK ELE++LN+ I+ L++AQKSL K ++THA+IF+GN   QLP MR+ LA</pattern>
+      <matchSeq start="1" end="55">MMTDSRKAELESRLNEAIIQLQQAQKSLRKDEFTHASIFIGNAQSQLPKMRIALA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ABM5PAP5_BIBTR" ac="A0ABM5PAP5" length="58" description="Uncharacterized protein OS=Bibersteinia trehalosi USDA-ARS-USMARC-189 OX=1263831 GN=F543_6070 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>126</score>
+      <bits>53.1</bits>
+      <expectation>5.4e-08</expectation>
+      <identity>46.4</identity>
+      <positives>67.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="56">MMTETRKNELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGNVSDQLPNMRMMLAR</querySeq>
+      <pattern>MM+E  ++ LE QL + IV L++AQ +L   Q+ HA+I+V NV +QLP MR  L +</pattern>
+      <matchSeq start="1" end="56">MMSELHRDLLEAQLCEAIVQLQQAQTALQNNQFIHASIYVSNVQNQLPQMRQKLTQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A547EFC8_MANHA" ac="A0A547EFC8" length="60" description="Uncharacterized protein OS=Mannheimia haemolytica OX=75985 GN=FEB89_09110 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>1.5e-05</expectation>
+      <identity>37.7</identity>
+      <positives>64.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="54">MTETRKNELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGNVSDQLPNMRMML</querySeq>
+      <pattern>MTE  KNEL +QLN+ ++ + +AQK L +  +  + +++G V D LP + + L</pattern>
+      <matchSeq start="1" end="53">MTEQEKNELNSQLNEALMQIIQAQKYLKQSDFIRSGVYLGTVQDLLPKVHLKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABY1VRN1_HAEAE" ac="A0ABY1VRN1" length="55" description="Uncharacterized protein OS=Haemophilus aegyptius OX=197575 GN=NCTC8502_00245 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>1.9e-05</expectation>
+      <identity>45.5</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="56">MTETRKNELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGNVSDQLPNMRMMLAR</querySeq>
+      <pattern>MTE  K  L+ QL Q  + L +AQ  L   Q  +AA++VGNV + LP +RM L R</pattern>
+      <matchSeq start="1" end="55">MTEQEKVRLDEQLEQAAMQLIKAQTYLRTRQAQYAAVYVGNVQNLLPGLRMRLGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0ABT5MSA9_9PAST" ac="A0ABT5MSA9" length="63" description="Uncharacterized protein OS=Mannheimia cairinae OX=3025936 GN=PTQ27_04490 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>6.6e-05</expectation>
+      <identity>39.6</identity>
+      <positives>62.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="54">MTETRKNELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGNVSDQLPNMRMML</querySeq>
+      <pattern>MTET K +L +QLN+ I+ L +AQK L +     + +++G V D LP + + L</pattern>
+      <matchSeq start="4" end="56">MTETVKEQLNSQLNEAIIQLIQAQKYLNQDDAIRSGVYIGTVQDLLPKVHLKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A249A1Y3_MANHA" ac="A0A249A1Y3" length="60" description="Uncharacterized protein OS=Mannheimia haemolytica OX=75985 GN=FEB89_07720 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.00013</expectation>
+      <identity>39.6</identity>
+      <positives>62.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="54">MTETRKNELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGNVSDQLPNMRMML</querySeq>
+      <pattern>MTET K +L +QLN+ I+ L +AQK L +     + +++G V D LP + + L</pattern>
+      <matchSeq start="1" end="53">MTETVKAQLNSQLNEAIIQLIQAQKYLNQDDAIRSGVYIGTVQDLLPKVHLKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ABT5MQW3_9PAST" ac="A0ABT5MQW3" length="64" description="Uncharacterized protein OS=Mannheimia cairinae OX=3025936 GN=PTQ27_07745 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.00019</expectation>
+      <identity>37.0</identity>
+      <positives>61.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="54">MMTETRKNELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGNVSDQLPNMRMML</querySeq>
+      <pattern>MMTE  K+EL +QLN+ ++ L +AQK L +  +  + + +  V D LP + + L</pattern>
+      <matchSeq start="1" end="54">MMTEREKSELNSQLNEAVMQLIQAQKYLNQRDFIRSGVHLSTVQDMLPKVHLKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0ABU7QLB9_AVIPA" ac="A0ABU7QLB9" length="55" description="Uncharacterized protein OS=Avibacterium paragallinarum OX=728 GN=M5S13_13110 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.03</expectation>
+      <identity>36.0</identity>
+      <positives>64.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="51">MTETRKNELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGNVSDQLPNMR</querySeq>
+      <pattern>MT  ++NEL+ +L+ MI  L++A +++  G Y  A +++  V +QLP  R</pattern>
+      <matchSeq start="1" end="50">MTTQQQNELQLKLDMMIGQLQQAVRAINAGNYIAAGVYLDLVQNQLPKAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A379AQC1_AVIAV" ac="A0A379AQC1" length="52" description="Uncharacterized protein OS=Avibacterium avium OX=751 GN=NCTC11297_00911 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.06</expectation>
+      <identity>46.3</identity>
+      <positives>65.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="50">LENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGNVSDQLPNM</querySeq>
+      <pattern>L+ QL Q I+ L++A+KSL K + THA+I+V N    L  M</pattern>
+      <matchSeq start="8" end="48">LKMQLRQAIIQLEQAEKSLNKEEMTHASIYVQNAKGILMKM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="Q65WC9_MANSM" ac="Q65WC9" length="53" description="Uncharacterized protein OS=Mannheimia succiniciproducens (strain KCTC 0769BP / MBEL55E) OX=221988 GN=MS0124 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.24</expectation>
+      <identity>47.1</identity>
+      <positives>79.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="42">ELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGN</querySeq>
+      <pattern>+L+ Q++Q IV L++A+K+L K + THA+I+V N</pattern>
+      <matchSeq start="7" end="40">QLKLQIHQAIVQLEQAEKALHKQKMTHASIYVEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A380U0V5_9PAST" ac="A0A380U0V5" length="53" description="Uncharacterized protein OS=[Actinobacillus] rossii OX=123820 GN=NCTC10801_02261 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.68</expectation>
+      <identity>50.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="42">QLNQMIVMLKEAQKSLFKGQYTHAAIFVGN</querySeq>
+      <pattern>Q++Q IV L++A+K+L K + THA+I+V N</pattern>
+      <matchSeq start="11" end="40">QIHQAIVQLEQAEKALHKQEMTHASIYVEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="B8F589_GLAP5" ac="B8F589" length="52" description="Uncharacterized protein OS=Glaesserella parasuis serovar 5 (strain SH0165) OX=557723 GN=HAPS_0862 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>0.95</expectation>
+      <identity>45.5</identity>
+      <positives>78.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="42">LENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGN</querySeq>
+      <pattern>L+ Q+++ IV L++A+K+L K + THA+I+V N</pattern>
+      <matchSeq start="7" end="39">LKLQIHEAIVQLQQAEKALHKQEMTHASIYVEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A011NCQ7_9PAST" ac="A0A011NCQ7" length="50" description="Uncharacterized protein OS=Mannheimia granulomatis OX=85402 GN=AK33_05580 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>1.8</expectation>
+      <identity>36.1</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="42">KNELENQLNQMIVMLKEAQKSLFKGQYTHAAIFVGN</querySeq>
+      <pattern>K++L  +L + I  LK+A+K++++ + THA+++V N</pattern>
+      <matchSeq start="3" end="38">KDDLIMRLQKSITQLKQAEKAVYREEMTHASVYVEN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A814DAF0_9BILA" ac="A0A814DAF0" length="1645" description="GRIP domain-containing protein (Fragment) OS=Didymodactylos carnosus OX=1234261 GN=GPM918_LOCUS11275 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>4.8</expectation>
+      <identity>38.0</identity>
+      <positives>60.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="51">TETRKNELENQLNQMIVMLKEAQKSLFK-GQYTHAAIFVGNVSDQLPNMR</querySeq>
+      <pattern>T+T KNE EN++NQ+   LKE  + + K  + T+  I + NVS +   +R</pattern>
+      <matchSeq start="673" end="722">TDTMKNEYENKINQLTTELKEQMEKIQKLDEITNLQISLDNVSKERDAIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

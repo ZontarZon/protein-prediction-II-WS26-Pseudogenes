@@ -1,0 +1,2082 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-203924-0706-60659006-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-203924-0706-60659006-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q46793|YGEN_ECOLI" type="PROTEIN" length="235"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:39:24+00:00" end="2026-11-13T20:44:31+00:00" search="P0Y0M0DT0H0M307.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="121">
+   <hit number="1" database="SP" id="YGEN_ECOLI" ac="Q46793" length="235" description="Putative uncharacterized protein YgeN OS=Escherichia coli (strain K12) OX=83333 GN=ygeN PE=5 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1213</score>
+      <bits>471.9</bits>
+      <expectation>4.5e-168</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="235">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVLASPEDL</pattern>
+      <matchSeq start="1" end="235">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVLASPEDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A160EG12_ECOLX" ac="A0A160EG12" length="235" description="Putative oxygen-regulated invasion protein OS=Escherichia coli OX=562 GN=orgB PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1084</score>
+      <bits>422.2</bits>
+      <expectation>2.1e-148</expectation>
+      <identity>89.8</identity>
+      <positives>94.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="235">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>MRKKIEMSLIKSPANGVVIKR ISDGLKEIVSLKE+ILLETTAKIQSIEEKREEK IQGYYDGY KGIID MDNFIPLISLL SELEK RINMINDLKSILLK SEEV+VFIKIFESWVTKLPSISGP+NL+IPTSFKDKS+EVESYFVDKSIWNVHI++HDDKRF+FFTDQFIAEFSPQEFVDNCEQYLI+NHCFSPDKVNEICE ARHYLVE+M ET SL MNNS L +PEDL</pattern>
+      <matchSeq start="1" end="235">MRKKIEMSLIKSPANGVVIKRIISDGLKEIVSLKEQILLETTAKIQSIEEKREEKVIQGYYDGYAKGIIDVMDNFIPLISLLSSELEKNRINMINDLKSILLKSSEEVEVFIKIFESWVTKLPSISGPLNLYIPTSFKDKSIEVESYFVDKSIWNVHISYHDDKRFIFFTDQFIAEFSPQEFVDNCEQYLISNHCFSPDKVNEICEHARHYLVERMCETDSLAMNNSNLTNPEDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="B7LF33_ECO55" ac="B7LF33" length="143" description="Uncharacterized protein OS=Escherichia coli (strain 55989 / EAEC) OX=585055 GN=ygeM PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>719</score>
+      <bits>281.6</bits>
+      <expectation>3.3e-94</expectation>
+      <identity>95.1</identity>
+      <positives>96.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="93" end="235">MINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>MINDLKSILLK SEEVDVFIKIFESW  KLP+ISGPVNL+IPT FKDK LEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVLASPEDL</pattern>
+      <matchSeq start="1" end="143">MINDLKSILLKSSEEVDVFIKIFESWRKKLPAISGPVNLYIPTRFKDKYLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVLASPEDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A7ZQW2_ECO24" ac="A7ZQW2" length="143" description="Oxygen-regulated invasion protein OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_3176 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>719</score>
+      <bits>281.6</bits>
+      <expectation>3.3e-94</expectation>
+      <identity>95.1</identity>
+      <positives>96.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="93" end="235">MINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>MINDLKSILLK SEEVDVFIKIFESW  KLP+ISGPVNL+IPT FKDK LEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVLASPEDL</pattern>
+      <matchSeq start="1" end="143">MINDLKSILLKSSEEVDVFIKIFESWRKKLPAISGPVNLYIPTRFKDKYLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVLASPEDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="Q8X6G8_ECO57" ac="Q8X6G8" length="143" description="Oxygen-regulated invasion protein OS=Escherichia coli O157:H7 OX=83334 GN=ygeM PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>717</score>
+      <bits>280.8</bits>
+      <expectation>6.7e-94</expectation>
+      <identity>95.1</identity>
+      <positives>96.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="93" end="234">MINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVLASPED</querySeq>
+      <pattern>MINDLKSILLK SEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHI +HDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKM ETHSL MNNSVL +PED</pattern>
+      <matchSeq start="1" end="142">MINDLKSILLKSSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHIAYHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMCETHSLAMNNSVLTNPED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0ABX5HN54_ESCAL" ac="A0ABX5HN54" length="233" description="Oxygen-regulated invasion protein OS=Escherichia albertii OX=208962 GN=C7B09_05235 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>457</score>
+      <bits>180.6</bits>
+      <expectation>3.6e-53</expectation>
+      <identity>40.4</identity>
+      <positives>63.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="235">VIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLV-----EKMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>+IK +++D L EI S+KE  ++E   ++Q I+E  E+KF+QGYYDGY KGIID   + + +I +  + LE  R+ +I++LK ILLK  E V+VF  +FE W+ KLP+    V L++P+ +K+K L  ES    +    + I +H+D +FVFFT+QFIAEF P  +VD CE +L  N+ FSP+K+ EI + A   ++     ++M +   +++ N V  S E +</pattern>
+      <matchSeq start="1" end="223">MIKGELADELTEIASIKENSIIEARQRMQEIDECAEKKFVQGYYDGYVKGIIDARGSVVSIIDVFSNALEIDRLRIIDELKRILLKSLENVEVFKSVFEQWLEKLPTTDSLVYLYVPSRYKEKFLYTESSCFTRLQKEIRIDYHEDNQFVFFTEQFIAEFCPHNYVDKCELFLSKNNYFSPEKIREISDFALDIIMKDLNSKRMTDNSDVEIFNKVECSEETI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="Q8X6G7_ECO57" ac="Q8X6G7" length="86" description="Oxygen-regulated invasion protein OS=Escherichia coli O157:H7 OX=83334 GN=ECs_3714 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>390</score>
+      <bits>154.8</bits>
+      <expectation>5e-45</expectation>
+      <identity>98.8</identity>
+      <positives>98.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="81">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISL</querySeq>
+      <pattern>MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIID MDNFIPLISL</pattern>
+      <matchSeq start="1" end="81">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDVMDNFIPLISL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A6G9RJN2_9ENTR" ac="A0A6G9RJN2" length="237" description="Oxygen-regulated invasion protein OrgB OS=Kluyvera genomosp. 3 OX=2774055 GN=GY169_10340 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>4e-09</expectation>
+      <identity>24.3</identity>
+      <positives>44.7</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="216">PANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKS--IWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKM</querySeq>
+      <pattern>PA+ + + ++  D + +      +I+ E  A+ + I         + Y  GY +G++  + +    I       ++  + + NDLK+ L     E D  +K+ E W   L      + LHI   + ++ L+       K      V   FHD+ RFVF  +  +AEF P+EF+      L + + F+ ++  EI  +A  YL E++</pattern>
+      <matchSeq start="20" end="217">PASKLSLIKRSHDIIAQAKKNASRIIKEAEAECEQIRR-------ESYSAGYEQGLVMSLSSVCQFIDNSEKYTQEMAVKIRNDLKNTLSDIISEDDFNVKVVEHWAEGLDKSDESLPLHILMPYANRKLKERFAQAIKKNHSGGVIFEFHDEPRFVFKYNNRLAEFYPEEFIYATVDALTSKYTFA-ERKREISNEAIRYLHEQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0AAJ2RYD9_9ENTR" ac="A0AAJ2RYD9" length="237" description="Oxygen-regulated invasion protein OrgB OS=Scandinavium lactucae OX=3095028 GN=SIK69_06690 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <bits>65.1</bits>
+      <expectation>5.5e-09</expectation>
+      <identity>26.4</identity>
+      <positives>46.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="216">IQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLE--VESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKM</querySeq>
+      <pattern>I+  E + E+   + Y  GY +G++  + +    I       ++  + + NDLK+ L     E D  +K+ E W   L      + LHI   + ++ L+         K   +V   +HD+ RFVF  +  +AEF P EFV      L + + F+ ++  EI  +A  YL E++</pattern>
+      <matchSeq start="45" end="217">IKEAEAECEQIRCESYRAGYEQGLMMSIGSVCQFIDNSEKHTQEMEVKIRNDLKNTLSDIISEDDFNVKVVEHWAEGLDKSDESLPLHILMPYANRKLKERFSQAIKQKYAGSVIFEYHDEPRFVFKYNNRLAEFYPDEFVYATVDALTSKYTFA-ERTREISNEAIMYLHEQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0ABP2XGB3_9NEIS" ac="A0ABP2XGB3" length="231" description="Oxygen-regulated invasion protein OrgB OS=Pseudogulbenkiania ferrooxidans EGD-HP2 OX=1388764 GN=O166_16700 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>7.1e-09</expectation>
+      <identity>20.0</identity>
+      <positives>47.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="193">KSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLH--IPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINN</querySeq>
+      <pattern>++ A GV+I+R   + L+ + +L+ +        ++  + + E    Q Y DGY +G++  +D     ++   +  E+ R ++    +++L    +  D  + + + W+   P  +    LH  +P + + +   + S   ++    + I +HDD RF+       AEFSP+++++   + L+ +</pattern>
+      <matchSeq start="5" end="189">QTAAEGVLIRRGQLERLRRVHNLERQARRRAGQVLREAQNQAEAIRGQAYSDGYQQGMLTALDQVAAALADSQALAERWRGHLEQQARAMLAAAVDHPDTLLLLLDEWLKSQPPAAPAATLHLRVPKASRPRQGALMSLLAERWHGAIQIDYHDDSRFIMRCADQAAEFSPEQYLEPASRQLLQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0ABV0CLE8_9NEIS" ac="A0ABV0CLE8" length="231" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium indicum OX=3110228 GN=VA599_12915 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>9.7e-09</expectation>
+      <identity>20.0</identity>
+      <positives>47.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="193">KSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLH--IPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINN</querySeq>
+      <pattern>++ A GV+I+R   + L+ + +L+++        ++  + + E    Q Y DGY +G++  +D     ++   +  E+ R ++    +++L    +  D  + + + W+   P  +    LH  +P + + +   + S   ++    + I  HDD RF+       AEFSP+++++   + L+ +</pattern>
+      <matchSeq start="5" end="189">QTAAEGVLIRRGQLERLRRVHNLEQQARRRAGQVLREAQNQAEAIRGQAYSDGYQQGMLTALDQIAAALADSQALAERWRGHLEQQARAMLAAAVDHPDTLLLLLDEWLKSQPPAAPEATLHLRVPKASRPRQGALMSLLAERWHGAIQIDHHDDSRFIMRCADQAAEFSPEQYLEPASRQLLQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A248K6F4_SALBN" ac="A0A248K6F4" length="223" description="Invasion protein OrgB OS=Salmonella bongori serovar 66:z41:- str. SA19983605 OX=1243617 GN=LFZ56_05025 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>2.3e-08</expectation>
+      <identity>19.7</identity>
+      <positives>43.6</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="214">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS----LLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVE</querySeq>
+      <pattern>M K I +    SP  G++IKRK  +    +  L+++        ++  EE+ +   +  Y +GY +G+ID +      ++    +    +EK +I      + +     +  +  + + + W+       G + L +P + K +  ++    ++      H+ +H + RF+      IAEFSP++FV+     + ++    P     I + A + L++</pattern>
+      <matchSeq start="1" end="214">MLKNIPIQSPLSPVEGILIKRKTLERYFSLERLEQQAHQRAKRILREAEEEAKTLRMYAYQEGYEQGMIDALQQVAAYLTDSQTMAWKWMEKIQIYA----RELFSAAVDHPETLLTVLDEWLRDFNKPEGQLFLTLPVNAKKEHQKLMVLLMENWPGTFHLKYHQEPRFIMSCGDQIAEFSPEQFVETAVSVIKHHLDELPQDCRTISDSAINALID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="Q8Z4A4_SALTI" ac="Q8Z4A4" length="223" description="Oxygen-regulated invasion protein OS=Salmonella typhi OX=90370 GN=orgA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>8.1e-08</expectation>
+      <identity>19.6</identity>
+      <positives>44.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="215">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS----LLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEK</querySeq>
+      <pattern>M K I +    SP  G++IKRK  +    I  L+++        ++  EE+ +   +  Y +GY +G+ID +      ++    +    +EK +I      + +     +  +  + + + W+       G + L +P + K +  ++    ++      ++ +H ++RF+      IAEFSP++FV+     + ++    P     I + A + L+++</pattern>
+      <matchSeq start="1" end="215">MLKNIPIPSPLSPVEGILIKRKTLERYFSIERLEQQAHQRAKRILREAEEEAKTLRMYAYQEGYEQGMIDALQQVAAYLTDNQTMAWKWMEKIQIYA----RELFSAAVDHPETLLTVLDEWLRDFDKPEGQLFLTLPVNAKKEHQKLMVLLMENWPGTFNLKYHQEQRFIMSCGDQIAEFSPEQFVETAVGVIKHHLDELPQDCRTISDNAINALIDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="B8Y8F4_SALER" ac="B8Y8F4" length="223" description="Oxygen-regulated invasion protein OrgB OS=Salmonella enterica subsp. salamae serovar Sofia OX=46629 GN=orgB PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.5e-07</expectation>
+      <identity>21.3</identity>
+      <positives>44.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="184">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS----LLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVD</querySeq>
+      <pattern>M K I +    SP  G++IKRK  +    I  L+++        ++  EE+ +   +  Y +GY +G+ID +      ++    +    +EK +I      + +     +  +  + + + W+       G + L +P S K    ++    ++      ++ +H ++RF+      IAEFSP++FV+</pattern>
+      <matchSeq start="1" end="184">MLKNIPIPSPLSPVEGILIKRKTLERYFSIERLEQQAHQRAKRILREAEEEAKTLRMYAYQEGYEQGMIDALQQVAAYLTDNQTMAWKWMEKIQIYA----REVFSAAVDHPETLLTVLDEWLRDFDKPEGQLFLTLPVSAKKDHQKLMVLLMENWPGTFNLKYHQEQRFIMSCGDQIAEFSPEQFVE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A0F6B5T8_SALT1" ac="A0A0F6B5T8" length="226" description="Needle complex export protein OS=Salmonella typhimurium (strain 14028s / SGSC 2262) OX=588858 GN=orgB PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.6e-07</expectation>
+      <identity>19.6</identity>
+      <positives>43.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="215">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS----LLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEK</querySeq>
+      <pattern>M K I +    SP  G++IKRK  +    I  L+++        ++  EE+ +   +  Y +GY +G+ID +      ++    +    +EK +I      + +     +  +  + + + W+       G + L +P + K    ++    ++      ++ +H ++RF+      IAEFSP++FV+     + ++    P     I + A + L+++</pattern>
+      <matchSeq start="1" end="215">MLKNIPIPSPLSPVEGILIKRKTLERYFSIERLEQQAHQRAKRILREAEEEAKTLRMYAYQEGYEQGMIDALQQVAAYLTDNQTMAWKWMEKIQIYA----RELFSAAVDHPETLLTVLDEWLRDFDKPEGQLFLTLPVNAKKDHQKLMVLLMENWPGTFNLKYHQEQRFIMSCGDQIAEFSPEQFVETAVGVIKHHLDELPQDCRTISDNAINALIDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="SCTL1_SALTY" ac="P0CL45" length="226" description="SPI-1 type 3 secretion system stator protein OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=sctL1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.6e-07</expectation>
+      <identity>19.6</identity>
+      <positives>43.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="215">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS----LLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEK</querySeq>
+      <pattern>M K I +    SP  G++IKRK  +    I  L+++        ++  EE+ +   +  Y +GY +G+ID +      ++    +    +EK +I      + +     +  +  + + + W+       G + L +P + K    ++    ++      ++ +H ++RF+      IAEFSP++FV+     + ++    P     I + A + L+++</pattern>
+      <matchSeq start="1" end="215">MLKNIPIPSPLSPVEGILIKRKTLERYFSIERLEQQAHQRAKRILREAEEEAKTLRMYAYQEGYEQGMIDALQQVAAYLTDNQTMAWKWMEKIQIYA----RELFSAAVDHPETLLTVLDEWLRDFDKPEGQLFLTLPVNAKKDHQKLMVLLMENWPGTFNLKYHQEQRFIMSCGDQIAEFSPEQFVETAVGVIKHHLDELPQDCRTISDNAINALIDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="SCTL1_SALTS" ac="E1WAB4" length="226" description="SPI-1 type 3 secretion system stator protein OS=Salmonella typhimurium (strain SL1344) OX=216597 GN=sctL1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.6e-07</expectation>
+      <identity>19.6</identity>
+      <positives>43.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="215">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS----LLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEK</querySeq>
+      <pattern>M K I +    SP  G++IKRK  +    I  L+++        ++  EE+ +   +  Y +GY +G+ID +      ++    +    +EK +I      + +     +  +  + + + W+       G + L +P + K    ++    ++      ++ +H ++RF+      IAEFSP++FV+     + ++    P     I + A + L+++</pattern>
+      <matchSeq start="1" end="215">MLKNIPIPSPLSPVEGILIKRKTLERYFSIERLEQQAHQRAKRILREAEEEAKTLRMYAYQEGYEQGMIDALQQVAAYLTDNQTMAWKWMEKIQIYA----RELFSAAVDHPETLLTVLDEWLRDFDKPEGQLFLTLPVNAKKDHQKLMVLLMENWPGTFNLKYHQEQRFIMSCGDQIAEFSPEQFVETAVGVIKHHLDELPQDCRTISDNAINALIDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A9MFA5_SALAR" ac="A9MFA5" length="223" description="Oxygen-regulated invasion protein OrgB OS=Salmonella arizonae (strain ATCC BAA-731 / CDC346-86 / RSK2980) OX=41514 GN=SARI_00104 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <bits>60.1</bits>
+      <expectation>2.9e-07</expectation>
+      <identity>19.2</identity>
+      <positives>43.4</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="215">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS----LLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEK</querySeq>
+      <pattern>M K I +    SP  G++IKRK  +    I  L+++        ++  EE+     +  Y +GY +G++D +      ++    +    +EK +I      + +     +  +  + + + W+       G + L +P + K    ++    ++      ++ +H ++RF+      IAEFSP++FV+     + ++    P     I + A + L+++</pattern>
+      <matchSeq start="1" end="215">MLKNIPIPSPLSPVEGILIKRKTLERYFSIERLEQQAHQRAKRILREAEEEARTLRMYAYQEGYEQGMVDALQQVAAYLTDSQTMAWKWMEKIQIYA----RELFSAAVDHPETLLTVLDEWLRDFDKPEGQLFLTLPVNAKKDHQKLMVLLMENWPGTFNLKYHQEQRFIMSCGDQIAEFSPEQFVETAVGVIKHHLDELPQDCRTISDNAINSLIDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A2H9U8Y4_9GAMM" ac="A0A2H9U8Y4" length="229" description="Oxygen-regulated invasion protein OrgB OS=Aeromonas cavernicola OX=1006623 GN=CUC53_01740 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>5.7e-07</expectation>
+      <identity>21.8</identity>
+      <positives>44.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="208">SPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDL----KSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVF-FTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQA</querySeq>
+      <pattern>+P   V+I RK         +L+++        ++  +++ E+     Y DGY +G++D M+     I    ++ +   IN+ + L    + +L    E  +  + + E  +  LP +   + L +P S + ++ +              + FH D  FV  + DQ I EFSP+++ +   + LIN     P++  ++ +QA</pattern>
+      <matchSeq start="12" end="208">TPLERVLIPRKTLQRHARGANLEQQAQQHARQLLREAQQQAEQIRKLAYKDGYQQGMLDAMNQ----IGTFLADSQTLAINLRDSLHQHARQLLTHAVEHPETLLLLLEECLRNLPVVDTTLYLILPRSMRRQNTQFSDVLAAHWPHPYQLDFHTDAGFVLRYADQVI-EFSPEQYTETASRALINTLASLPEECRQLSQQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0ACG5B587_9GAMM" ac="A0ACG5B587" length="243" description="Uncharacterized protein OS=Erwinia tasmaniensis OX=338565 GN=ACLRGG_06685 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>6.6e-07</expectation>
+      <identity>22.4</identity>
+      <positives>45.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="199">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL--PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPD</querySeq>
+      <pattern>++K +E  L+  P + +   RK  D +    S   KI+     + ++I +       + Y  GY +G++  +D+    I       E   + + +DLK+++ +  +E  V +KI + W+  L       P+N+ +P + +   + +      K        +H + RFVF   + +AEF P+E + +  + L++N  F  D</pattern>
+      <matchSeq start="10" end="201">LQKVLENVLV--PGSTLRKMRKSDDIIANAESRARKIVKNAVREGENIRK-------ESYRTGYERGLLISVDSVCQYIDNSVQYAETLYLKIESDLKNLVTELFDEESVLLKIVDEWIDTLDKTDTDAPLNILMPYTNRRFKVNLTEAIKSKHPSGAIFQYHQEPRFVFKYKEHLAEFYPEEHIASTVKSLMDNCDFYHD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0ABS6DCL5_9ENTR" ac="A0ABS6DCL5" length="236" description="Oxygen-regulated invasion protein OrgB OS=Cedecea davisae OX=158484 GN=KC222_00645 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>1.6e-06</expectation>
+      <identity>22.5</identity>
+      <positives>44.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="216">NGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL--PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKM</querySeq>
+      <pattern>+ V+I  K    L+   S+ E+        I+  +++ E    +    GY +G++  +++    I    +   +  + +  D+K +L    +E  + +KI E WV +L       PV + +P + +     +      K   ++   +H++ RFVF   + +AEF P+EF+ +    L     F PD    I  QA  +L E++</pattern>
+      <matchSeq start="15" end="217">DNVLIPSKTLRKLRAGESVVEQAKYRAQRLIKEAQQESERIRNEAQRIGYERGLLMSIESICQFIDSSSAYAHELYLKVREDIKDLLSDILDEETIILKILEQWVDELDKDDKKSPVCILMPYANRRFRTGLSRVVESKYAGSLVFEYHNEPRFVFKYKERLAEFYPEEFIYSTVTKLTGEIAFLPDN-QRISSQAIQHLHEQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0ABV0F613_9NEIS" ac="A0ABV0F613" length="243" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium vaccinii OX=1108595 GN=ABGV49_00285 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>4.2e-06</expectation>
+      <identity>19.1</identity>
+      <positives>44.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="190">NGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHI--PTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYL</querySeq>
+      <pattern>+GV+I+      L+ I +L ++       ++   E + +      Y DGY +G++  +D     ++   ++  + R ++  + +++L    +  D  + + + W+      SG   L++  P   + +   + +   D     + I +HDD RF+       AEFSP+++++   + L</pattern>
+      <matchSeq start="15" end="192">DGVLIRSPQLRRLRRIDNLDQQARKRARQRLDDAEREADAIRRHAYRDGYQQGMLAALDQLAAHLANSQAQAARWREHLSEEARAMLAAAVDHPDTLLLLLDEWLRTRDGPSGDAVLYLQLPKRARSQQTALMALLADNWFGAIQIDYHDDDRFIMRCADQAAEFSPEQYLEPASRQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="E0WUA8_9ENTR" ac="E0WUA8" length="223" description="Oxygen-regulated invasion protein OS=Candidatus Regiella insecticola LSR1 OX=663321 GN=orgAb PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>6.5e-06</expectation>
+      <identity>25.0</identity>
+      <positives>46.0</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="184">GVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSIS----GPVNLHIPTSFKDKSLEVESYFVDKSIWN--VHITFHDDKRFVF-FTDQFIAEFSPQEFVD</querySeq>
+      <pattern>GV++ R    G ++  ++  +  L     I+      E+   Q Y +GY +G+I         I+   +  EK  I ++   K IL    +  D+ I + + W+ KL   S      ++L +P S K + +++  +  +   WN  + I +H + R +  + DQ IAEF P EF++</pattern>
+      <matchSeq start="12" end="184">GVLLTRAQVTGQRQAKNILSEACLHAKKMIKQAGTDAEKIRKQAYAEGYQQGVITAAKQIKKYINASNALSEKLNIVLVERAKEILSTALDHSDILIILVDEWLRKLDKKSVVNDDLLHLILPLSAKKRHVQLLEFLNEN--WNKPIKIEYHAESRLIIKYVDQ-IAEFVPDEFIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0ABM9S085_9GAMM" ac="A0ABM9S085" length="233" description="Oxygen-regulated invasion protein OrgB OS=Yersinia nurmii OX=685706 GN=orgB PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>9.8e-06</expectation>
+      <identity>23.8</identity>
+      <positives>45.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="185">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHI--PTSFKDKSLEVESYFVDKSIWN--VHITFHDDKRFVFFTDQFIAEFSPQEFVDN</querySeq>
+      <pattern>M+  IE S   +   G+++ +      K   ++  +  +     I+  + + E    Q Y  GY KGI+   +  +  I    S   +    +  ++K+IL     + +VF+ + ++W+ +L     P +LH+  P +    S E+      + IW   V I +H ++RFV      +AEF P EF+D+</pattern>
+      <matchSeq start="1" end="187">MQNDIETSHPLNALEGILLTKSAILRRKMAKNILVEAQIRARKIIKQAQAEAEVLHHQAYTQGYEKGIVSAAEAVVGYIEDYQSLSHQLYQELQLEVKNILSGILHQDEVFLALLDNWLHELRVEDTPQSLHLLLPATMNQGSKELTGLL--ERIWKGPVVIDYHAERRFVMKYKDQLAEFIPDEFIDS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0ABM6BQW9_YERET" ac="A0ABM6BQW9" length="233" description="Oxygen-regulated invasion protein OrgB OS=Yersinia entomophaga OX=935293 GN=PL78_18230 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>1.3e-05</expectation>
+      <identity>24.5</identity>
+      <positives>44.4</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="185">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDE-------MDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHI--PTSFKDKSLEVESYFVDKSIWN--VHITFHDDKRFVFFTDQFIAEFSPQEFVDN</querySeq>
+      <pattern>M+  IE S   +   G+++ +      K   ++  +  +     I+  +   E    Q Y  GY KGI+         M+++  L   L  EL+ +  NM++ +         + +VF+ + ++W+ +L     P +LH+  P +    S E+      + IW   V I +H D+RFV      +AEF P EF+D+</pattern>
+      <matchSeq start="1" end="187">MQNDIETSHPLNALEGILLTKSAILRRKMAKNILVEAQIRARKIIKQAQADAEILHHQAYTQGYEKGIVSAAEAVVGYMEDYQSLSHQLYQELQLEVKNMLSGIL-------HQDEVFLALLDNWLHELRVEDTPQSLHLLLPATMNQGSKELAGLL--ERIWKGPVVIDYHADRRFVMKYKDQLAEFIPDEFIDS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A481WFS5_PLESH" ac="A0A481WFS5" length="213" description="Oxygen-regulated invasion protein OS=Plesiomonas shigelloides OX=703 GN=orgA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>1.5e-05</expectation>
+      <identity>19.7</identity>
+      <positives>42.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="213">VVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVF-FTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLV</querySeq>
+      <pattern>++I RK         +L+++        ++  +++ E+     Y DGY +G++D M+     I+   +     R  +    + +L    E  +  + + +  +  LP +   + L +P S + +  +              + FH D  FV  + DQ I EFSP+++ +   + L+N     P++  ++ +QA   L+</pattern>
+      <matchSeq start="1" end="197">MLIPRKTLQRHARAANLEQQAQHHARQLLREAQQQAEQIRQLAYQDGYQQGMLDAMNQIGTFIADSQTLAVNLRDRLHQQARQLLAHAVEHPETLLLLLKECLRNLPVVDTTLYLILPRSMRHQHTQFSDVLAAHWPHPYQLDFHTDAGFVLRYADQVI-EFSPEQYTEAASRTLVNTLASLPEECRQLSQQALQALI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0ABV0H765_9NEIS" ac="A0ABV0H765" length="237" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium piscinae OX=686831 GN=ABH309_15785 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>127</score>
+      <bits>53.5</bits>
+      <expectation>6.4e-05</expectation>
+      <identity>17.8</identity>
+      <positives>45.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="193">GVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLH--IPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINN</querySeq>
+      <pattern>GV+I+R   + ++    L+ +     +  ++  + + +      Y DGY +G++  +D     ++   +  E+ R ++    +++L    +  D  + + + W+   P  +    L+  +P + + +   + S   ++    + I  HDD RF+       AEFSP+ +++   + L+ +</pattern>
+      <matchSeq start="16" end="195">GVLIRRGQLERIRRAHKLERQARRHASQLLREAQNQADAIRSHAYSDGYQQGMLTALDQIAAALTDSQALAERWRGHLEQQARAMLAAAVDHPDTLLLLLDEWLKSQPPAAPEATLYLRLPKTARPRQGALMSLLAERWHGVIQIDHHDDDRFIMRCADQAAEFSPEHYLEPASRQLLQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="G2GWF6_9ENTR" ac="G2GWF6" length="180" description="Uncharacterized protein (Fragment) OS=Candidatus Regiella insecticola 5.15 OX=1005043 GN=Rin_00000920 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>0.00031</expectation>
+      <identity>26.9</identity>
+      <positives>48.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="58" end="184">QGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSIS----GPVNLHIPTSFKDKSLEVESYFVDKSIWN--VHITFHDDKRFVF-FTDQFIAEFSPQEFVD</querySeq>
+      <pattern>Q Y +GY +G+I         I+   +  EK  I ++   K IL    +  D+ I + + W+ KL   S      ++L +P S + + +++  +  +   WN  + I +H + R +  + DQ IAEF P EF++</pattern>
+      <matchSeq start="12" end="142">QAYAEGYQQGVITAAKQIKKYINASHALSEKLNIVLVERAKEILSTALDHPDILIILVDEWLRKLDKKSIVNDNLLHLILPLSARKRHVQLLEFLNEN--WNKPIKIEYHAESRLIIKYVDQ-IAEFVPDEFIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0ABV0HDZ5_9NEIS" ac="A0ABV0HDZ5" length="233" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium piscinae OX=686831 GN=ABH309_25130 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>121</score>
+      <bits>51.2</bits>
+      <expectation>0.00039</expectation>
+      <identity>17.4</identity>
+      <positives>41.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="215">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVH--ITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLIN-NHCFSPDKVNEICEQARHYLVEK</querySeq>
+      <pattern>M + I +        GV++ R      +   +++        A ++  +++     +Q Y DGY +G++   +     ++      ++ R  +   +++++    +  D+ + + + W+ +L   +    LH+    +     V+     ++ W+    I +HD   F+      +AEF P++F+   EQ L      FSP      C+Q  H  +++</pattern>
+      <matchSeq start="1" end="213">MPRHIPLYRFPPAREGVLVTRAQLTQQRSAANVQHAAKARARALVREAQQQATGIQLQAYADGYQEGVMAASETIAGFLADSHELYQRLRAELDAHMRALMHGALDHADLLLALLDEWLIRLDKSAQEEELHLTLPRRAHPHHVQLLAALEASWHGRSTIAYHDAPAFIMRCGDQVAEFVPEQFIARAEQRLRTLVSDFSPH-----CQQLSHAALQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A840RM46_9BURK" ac="A0A840RM46" length="238" description="Oxygen-regulated invasion protein OrgB OS=Glaciimonas immobilis OX=728004 GN=HNR39_000643 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>0.00055</expectation>
+      <identity>21.5</identity>
+      <positives>43.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="222">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISG-PVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSL</querySeq>
+      <pattern>M K I+     SP  GV+++        +  +L  +        + + + + ++   Q   +GY +GII      I  +S   +     +  +   ++++LL      +V I +FE  + +    +   VN  +P SF+     + +        ++HI +H + RFV    + ++EFSP +FV      L++    +  + + I E+ R  L + +FE+ SL</pattern>
+      <matchSeq start="1" end="222">MPKIIQTICDFSPEEGVLVRGSYLQNNSKSSNLLAEARRRAKILVAAAQIEAQQLRQQAQSEGYAEGIIQVAGELIAYLSRHTALAASMQACLEEKMRTLLLGCVNNPEVVIGLFEESILQENLKNKLDVNFVLPESFRSSHRSLVARLRPYFDGDIHIEYHQEIRFVLRLGEHVSEFSPDDFVSLASSRLMSELPAAYMQSHAIKEECRLRLAQ-IFESGSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0ABX9AHZ7_9ENTR" ac="A0ABX9AHZ7" length="234" description="Uncharacterized protein OS=Symbiopectobacterium purcellii OX=2871826 GN=K6K13_16185 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>0.00072</expectation>
+      <identity>20.8</identity>
+      <positives>40.3</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="217">MRKKIEMSLIKSPANGVVI--KRKISDGLKEIVSLK-----EKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISG--PVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMF</querySeq>
+      <pattern>M K++E S        V++  K +++  L+  V  +     +KI+ + +   ++I +       Q Y +GY  G++  ++     I      + +    +    K +L     +  V   +FESW  ++       P  + +P+  +     + +Y        V   +H D R+VF     + EF P+ FVDN          F    ++E CEQ     +EK++</pattern>
+      <matchSeq start="1" end="214">MLKEVETSYANMLQENVLLTNKNRVAHNLRISVVAQAREHAKKIISDASRDAEAIRQ-------QAYRNGYEHGVVTSIETVTGFIQDKQGIVNELYGQVRQRAKRLLSDTVNKESVICALFESWADEIDGRDDKTPFYILLPSDRRRYKRRLMAYIDSMHRGGVIFEYHQDLRYVFKYRDQLVEFLPETFVDNQIDTF-----FDTQSMHESCEQLSQQTLEKLY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0ABY2SF45_9HYPH" ac="A0ABY2SF45" length="217" description="Oxygen-regulated invasion protein OrgB OS=Martelella alba OX=2590451 GN=FCN80_23890 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.004</expectation>
+      <identity>23.1</identity>
+      <positives>43.8</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="190">ETTAKIQSIEEKREEKFIQGYYDGYTKGIIDE---MDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGP----VNLHIPTSFKDKSLEVESYFVDKSIW--NVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYL</querySeq>
+      <pattern>+ +  ++  +E  +    Q + DGY +G++     +  F+     + ++L+++       + S  L  SE   + + + E W+  LP  SG     + L  P S +   + ++      ++W     +T+HDDKRFV      +AEF    FV    Q L</pattern>
+      <matchSeq start="23" end="177">QASRMVKQAQEDAQAIHRQAFSDGYQEGLVASAGVVAEFLAQEQQMAAQLQRQTRQFAQRILSSALDHSE---ILLDLVEEWLAALPEESGSTGEGLELLAPESARHAHVRLKERIA--AVWPGKFSLTYHDDKRFVMKYADQLAEFDADAFVTAATQRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0ABT0K9S8_9GAMM" ac="A0ABT0K9S8" length="228" description="Oxygen-regulated invasion protein OrgB OS=Serratia silvae OX=2824122 GN=KAJ71_07025 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.0043</expectation>
+      <identity>21.0</identity>
+      <positives>43.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="194">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGP---VNLHIPTS---FKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNH</querySeq>
+      <pattern>M+ K   + + + + GV++KR      K+  +L  +        +++ + + +E +      GY  GI+   D  +       S        +  +++++L       D+F+ + E W +   + +     V+L IP S   FK K +E+      +  W VH+ +H + RFV      IAEF P++        +I+++</pattern>
+      <matchSeq start="1" end="197">MQNKKSPNFLDNASEGVLLKRAGVAQQKQNNALIAEAQRRAKMLVKAADNEAQEIYHHARAMGYEHGILTATDAVVHYFRESNSRELAFYKRIKEEVRTLLSGIFNSSDIFLAVLEEWSSGFEAYNDANETVSLLIPESCHQFKPKMVEL---LKKERNWKVHVEYHVENRFVIRFQNNIAEFCPEDITLEITNRVISHY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0ABX3CBU4_9NEIS" ac="A0ABX3CBU4" length="224" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium sphagni OX=1903179 GN=BI344_17180 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>0.0056</expectation>
+      <identity>18.5</identity>
+      <positives>42.7</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="193">VVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSI-SGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINN</querySeq>
+      <pattern>++I+RK   G      L+ +   +  A ++    + +    Q   DGY +G+ + +      ++   ++  + R  +    + +L    +  D  + + + W+    S+ +  +NL +P   +     + +   D     + I +H D RFV       AEFSP+++V+   + L+ +</pattern>
+      <matchSeq start="1" end="178">MLIRRKQIHGANRHHQLERQARKQAQALLRDARREADAIQRQACRDGYQQGMQEALGQVAAHLADSQAQARRWRERLGEQAREMLSAAVDHPDTLLLLLDEWLRSQDSVQTDTLNLQLPQHARHLQPRLMALLADNWPGTIRIDYHADPRFVMRCADQAAEFSPEQYVEPAGRQLLQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0ABX0LNY0_9NEIS" ac="A0ABX0LNY0" length="231" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium fluminis OX=3044269 GN=HA052_26830 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>0.0059</expectation>
+      <identity>17.2</identity>
+      <positives>41.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="216">ANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKM</querySeq>
+      <pattern>A GV+++R           L+ +   +    ++  E + E    Q   +GY +G++  +++    ++   +   + R  +  + +++L    +  D  + + + W+  L      + L +P   +    ++ +   +     + I +H D RF+       AEFSP+++V+   + L+      P     + EQA   L+ ++</pattern>
+      <matchSeq start="14" end="216">AEGVLVRRGQLRRAARADQLEREARQQAQRVLREAERQAEALRRQANQEGYQQGMLVALEHAAAHLAANQAMAWRWRERLEQEARAMLAAAVDHPDTLLLLLDEWLRGLDQPDATLYLQLPKRARALQPQLMTLLAENWPGAIQIDYHADARFMMRCADQAAEFSPEQYVEPASRQLLQCLEPLPQDCRRLSEQALRGLIAQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="Q326R6_SHIDS" ac="Q326R6" length="231" description="MxiN OS=Shigella dysenteriae serotype 1 (strain Sd197) OX=300267 GN=mxiN PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.008</expectation>
+      <identity>21.6</identity>
+      <positives>43.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="183">NGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIP--TSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFV</querySeq>
+      <pattern>+GVVIKR   +  K I     +   +    I+   +K E   I    DGY  GI    ++ +  I     +  + R N+ + + S+L +   +  +   + E W++ L +    + + +P   S   K LE++ Y     +  +   + +   ++F +   + EFSPQ+ +</pattern>
+      <matchSeq start="20" end="189">DGVVIKRMEKELCKTIKDRDTESKKKAICVIKDATKKAESLRIDAVCDGYQIGIQTAFEHIVDYICEWKLKQNENRRNIEDYITSLLSENLHDERIISTLLEQWLSSLRNTVTELKVVLPKCNSALRKKLELDLYKYRSDV-KIIFKYSEGNNYIFCSGNQVVEFSPQDVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0ABS3GIS1_9NEIS" ac="A0ABS3GIS1" length="231" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium haemolyticum OX=394935 GN=J1C50_05410 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.008</expectation>
+      <identity>17.2</identity>
+      <positives>40.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="216">ANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKM</querySeq>
+      <pattern>A GV+++R           L+     +    ++  E + E    Q   +GY +G++  +++    ++   +     R  +  + +++L    +  D  + + + W+  L      + L +P   +    ++ +   +     + I +H D RF+       AEFSP+++V+   + L+      P     + EQA   L+ ++</pattern>
+      <matchSeq start="14" end="216">AEGVLVRRGQLRRAARADQLERDARQQAQRVLREAERQAESLRRQASQEGYQQGMLAALEHAAAHLAASQAMAWNWRERLEQEARAMLAAAVDHPDTLLLLLDEWLRGLDQPDATLYLQLPKRARALQPQLMTLLAENWPGAIQIDYHADARFMMRCADQAAEFSPEQYVEPASRQLLQCLEPLPQDCRRLSEQALRGLIAQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="W0HM38_9GAMM" ac="W0HM38" length="223" description="Oxygen-regulated invasion protein OrgB OS=Candidatus Sodalis pierantonii str. SOPE OX=2342 GN=orgB PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>0.01</expectation>
+      <identity>20.3</identity>
+      <positives>43.9</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="216">GVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDL----KSILLKPSEEVDVFIKIFESWVTKL--PSISGPVNLHIPTSFKDKSLEVESYFVDKSIW--NVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPD---KVNEICEQARHYLVEKM</querySeq>
+      <pattern>G++IKR+     +  + L ++   ET   ++   E+ E    Q   +GY +G++   D     ++   +E +  R+++  ++    +++L       D+ + + E W+ +   PSI  P+ L +P   +  +L ++      ++W     I  HD   F+      +AEF  + F+D   + + +     PD   K   + EQ    L +++</pattern>
+      <matchSeq start="7" end="208">GILIKREHLQRQRCAMDLIKQTRRETVKCLKQAAEEAERLRSQAISEGYQQGVLAAAD----AVADYLAERQGLRLSLQREVEDHTRALLTAALSHADLLLVLLEEWLAQQPEPSIPAPLELWVPAVRRAAALRLKRQI--GALWRGKYDIIAHDGGSFIMKHGDQVAEFDAEAFIDAATRQMAS----CPDYGTKARRLSEQGLQALSDRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="W0HU02_9GAMM" ac="W0HU02" length="223" description="Oxygen-regulated invasion protein OS=Sodalis praecaptivus OX=1239307 GN=orgB PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>0.01</expectation>
+      <identity>20.9</identity>
+      <positives>44.1</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="216">GVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGII---DEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL--PSISGPVNLHIPTSFKDKSLEVESYFVDKSIW--NVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPD---KVNEICEQARHYLVEKM</querySeq>
+      <pattern>G++IKR+     +  + L ++   E    ++   E+ E    Q   +GY +G++   D + +++     L   L+++   + +  +++L       D+ + + E W+ +   PSI  P+ L +P   +  +L ++      ++W     I  HD   F+      +AEF  + F+D   + + +     PD   KV  + EQ    L E++</pattern>
+      <matchSeq start="7" end="208">GILIKREHLQRQRCAMDLIKQARREAVKCLKQAAEEAERLRSQAISEGYQQGVLAAADAVADYLAERQGLHLSLQRE---VEDHARALLTAALSHADLLLVLLEEWLAQQPEPSIPAPLELWVPADRRAAALRLKRQI--GALWRGKYDIIAHDGGSFIMKYGDQVAEFDAEAFIDAATRQMAS----CPDYGTKVRRLSEQGLQALSERL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A1T5LSX5_9FIRM" ac="A0A1T5LSX5" length="574" description="Phosphoglucomutase OS=Maledivibacter halophilus OX=36842 GN=SAMN02194393_03252 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.01</expectation>
+      <identity>26.4</identity>
+      <positives>44.0</positives>
+      <gaps>19</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="166">SLIKSPANGVVIKRKISDGLKEIVSLKEKILLETT----------AKIQSIEEKREEKFIQGYYD--GYTKG-IIDEMDNFIP--LISLLCSELEKKRINMIN--------------DLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKD----KSLEVESYFVDKSIWNV-HITFHDDKRF</querySeq>
+      <pattern>S+   P N V+IK  ++  L   ++  EK  LET            KI+  EE++++ FI GY +  GY  G  + + D  I   LI+ + +  + + +N+++              DLKSI LK  E ++  ++I +S     P +   + + I   +K+      L     F+D    NV H T  DD  F</pattern>
+      <matchSeq start="340" end="530">SMKNVPENSVIIKTIVTSELGAAIA--EKYGLETLNTLTGFKFIGEKIKEFEERQDKNFIFGYEESYGYLAGTFVRDKDGVISSMLIAEMAAYYKSRNMNLLDVLRKLYREYGYYKEDLKSITLKGKEGLEKIVRIMDSLRNNPPLVIEDLRVKIIRDYKEGKARNILSNTESFLDLEKSNVLHFTLEDDSWF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A918P637_9NEIS" ac="A0A918P637" length="247" description="Oxygen-regulated invasion protein OrgB OS=Paludibacterium paludis OX=1225769 GN=GCM10011289_29460 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>0.02</expectation>
+      <identity>19.3</identity>
+      <positives>42.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="226">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEK----REEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMIND-LKSILLKPSEEVDVFIKIFESWVTKLPSISG-PVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHC------FSPDKVNEICEQARHYLVEKMFETHSLDMNN</querySeq>
+      <pattern>M ++I ++   S  +G V+  +     ++   L  +   + T  I+   E+    R+  F+QGY DG+    ++ +D F+   S L + +E   +  +   L   +  P+    V + + + W  + P+ +  PV L +P S ++ +  +++    +      I +HD+  F+      +  F PQE   +    L  +        F+   +N+  E    Y +++ + +H  + N+</pattern>
+      <matchSeq start="1" end="232">MPREIYINHAVSVIDGDVVTARRLGEARQANRLLLRARRQATTMIRKAREEADNCRQLGFVQGYRDGFFSVAMNTVD-FLDARSALFARVEADIVERLRQRLSGAMANPA----VLLSLIDEWQMRQPADADTPVLLRLPRSVEEPACLLKARMPGRPQRRFEIEYHDEPGFILEAGDEVVRFDPQESAADIAAQLKRSLMKETLPQFADSAINDAIENL-WYALQERYRSHKEEEND</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A4R1NFB3_9GAMM" ac="A0A4R1NFB3" length="215" description="Oxygen-regulated invasion protein OrgB OS=Sodalis ligni OX=2697027 GN=EZJ58_4385 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.03</expectation>
+      <identity>22.3</identity>
+      <positives>43.5</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="223">IQSIEEKREEKFIQGYYDGYTKGIIDE---MDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGP--VNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLD</querySeq>
+      <pattern>++  +E+ +    Q   +GY +GI+     +  F+     L ++++K RIN     + +L       D+ +++ + W+  LP  + P  ++L IP + +     ++            +T+HDD RFV      +AEF    F+    Q L++     P++   + E A   L E   +  S D</pattern>
+      <matchSeq start="28" end="207">VKQAQEESQAIRAQAVGEGYQEGILASAAAVAGFLAQERQLAADVQK-RIN--GHARQLLSSALNHPDILLELVDEWLAALPDPASPAVLDLLIPEAARKSHAALKQRVESGWAGKFTLTYHDDSRFVMKYGDQLAEFDADAFMAAGMQRLVSADSL-PEQCRALSETALGRLNEVFLQFASGD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0AAD0RWB9_9NEIS" ac="A0AAD0RWB9" length="215" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium rhizoryzae OX=1778675 GN=D1345_20565 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.03</expectation>
+      <identity>17.4</identity>
+      <positives>42.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="216">IQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKM</querySeq>
+      <pattern>++  E + E    Q   +GY +G++  +++    ++   +     R  +  + +++L    +  D  + + + W+  L      + L +P   +    ++ +   +     + I +H D RF+       AEFSP+++V+   + L+      P     + EQA   L+ ++</pattern>
+      <matchSeq start="29" end="200">LREAERQAESLRRQASQEGYQQGMLAALEHAAAHLAASQAMAWNWRERLEQEARAMLAAAVDHPDTLLLLLDEWLRGLDQPDATLYLQLPKRARALQPQLMTLLAENWPGAIQIDYHADARFMMRCADQAAEFSPEQYVEPASRQLLQCLEPLPQDCRRLSEQALRGLIAQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="Q6R8A1_SODGL" ac="Q6R8A1" length="215" description="OrgAb OS=Sodalis glossinidius OX=63612 GN=orgAb PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.06</expectation>
+      <identity>18.7</identity>
+      <positives>41.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="216">VIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTK--LPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWN--VHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKM</querySeq>
+      <pattern>+IKR+     +  + L ++   E    ++   E+ E+   Q   +GY +G++  +D      +     +   +  +    +++L+      D+ + + E W+ +   PSI  P+ L +P   +  +L +       ++W+    I  HD + F+      +AEF    F+D   + L +   +       + EQ    LV+++</pattern>
+      <matchSeq start="1" end="200">MIKREHLQRQRCAMDLVKQARREAVKCLKQATEEAEQLRNQARNEGYQQGVLAAVDTVAGFFAERQKLIFSLQREVEEHARTLLMTALSHTDLLLLLLEDWLAQQPAPSIPAPLELWVPADRRAAALRLNRQI--GALWSGKYDIITHDGESFIMKYGDQVAEFDAGAFIDAATRQLTSRPDYE-TLARHLSEQGLQALVKRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="Q2NR76_SODGM" ac="Q2NR76" length="215" description="Type III secretion apparatus OS=Sodalis glossinidius (strain morsitans) OX=343509 GN=SG2074 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.06</expectation>
+      <identity>18.7</identity>
+      <positives>41.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="216">VIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTK--LPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWN--VHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKM</querySeq>
+      <pattern>+IKR+     +  + L ++   E    ++   E+ E+   Q   +GY +G++  +D      +     +   +  +    +++L+      D+ + + E W+ +   PSI  P+ L +P   +  +L +       ++W+    I  HD + F+      +AEF    F+D   + L +   +       + EQ    LV+++</pattern>
+      <matchSeq start="1" end="200">MIKREHLQRQRCAMDLVKQARREAVKCLKQATEEAEQLRNQARNEGYQQGVLAAVDTVAGFFAERQKLIFSLQREVEEHARTLLMTALSHTDLLLLLLEDWLAQQPAPSIPAPLELWVPADRRAAALRLNRQI--GALWSGKYDIITHDGESFIMKYGDQVAEFDAGAFIDAATRQLTSRPDYE-TLARHLSEQGLQALVKRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0A7G3G5G2_9NEIS" ac="A0A7G3G5G2" length="233" description="Oxygen-regulated invasion protein OrgB OS=Iodobacter fluviatilis OX=537 GN=C1H71_02410 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.07</expectation>
+      <identity>22.1</identity>
+      <positives>43.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="191">IQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL--PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLI</querySeq>
+      <pattern>++  E + ++   Q + +GY  GII    +    I    S L +    +    K++L    +  D+ + + + W+  +  PS  G + L +P   +    ++ +   +     + I +H D +FV      IA+FSP EF+    Q L+</pattern>
+      <matchSeq start="45" end="193">LKQAEVETQQIRTQAWMNGYQDGIIAAASSVAKHIDESESLLLRFHNQLGEQAKAMLSASLDHPDLLLILLDEWLRGIDTPSPQGTLQLQLPLHRRAAHSQLLNSLQELWGGKIQIEYHADTQFVMRYADQIAQFSPDEFISEATQSLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0AA40X2X2_9GAMM" ac="A0AA40X2X2" length="223" description="Oxygen-regulated invasion protein OrgB OS=Rouxiella silvae OX=1646373 GN=BS639_15290 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.08</expectation>
+      <identity>24.0</identity>
+      <positives>41.5</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="214">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLI----SLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL--PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWN--VHITFHDDKRFVFFTDQFIAEFSPQEFV-------DNCEQYLINNHCFSPDKVNEICEQARHYLVE</querySeq>
+      <pattern>M + IE  LI  P + +  + ++ + LK+      KI+ E   + Q+I E  +         GY  GII  +++    I    S+      K   +M  +L+  L  P    ++F  + E W+  +        + L +P     +  E+ SY    S+W+  V I  H D RFV      +AEFSP  +V       D C+Q   + +  S + + ++       LV+</pattern>
+      <matchSeq start="10" end="223">MIESIEGVLI--PGSDLKKRERVENILKQAKHNASKIIKEANIQAQTIRESAQSA-------GYQAGIILSINSVADFIGNNQSIYLKFYTKTHESMQKNLRHALNSP----EIFPLLLEHWLADVIPDEEHSTLFLLVPKMALKQQSELSSYIA--SLWHGKVVIEQHTDNRFVIKYKNDLAEFSPDVWVEQQRIQADFCQQLEKDCNSLSSNSIQQLLNDLAVRLVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="Q3YTN9_SHISS" ac="Q3YTN9" length="231" description="MxiN OS=Shigella sonnei (strain Ss046) OX=300269 GN=mxiN PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.12</expectation>
+      <identity>21.4</identity>
+      <positives>42.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="183">NGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIP----TSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFV</querySeq>
+      <pattern>+GVVIKR   +  K I     +   +    I+   +K E   I    DGY  GI    ++ I  I     +  + R N+ + + S+L +   +  +   + E W++ L +    + + +P       K   L++  Y   +S   + + + +   ++F +   + EFSPQ+ +</pattern>
+      <matchSeq start="20" end="189">DGVVIKRIEKELCKTIKDRDTESKKKAICVIKDATKKAESLRIDAVCDGYQIGIQTAFEHIIDYICEWKLKQNENRRNIEDYITSLLSENLHDERIISTLLEQWLSSLRNTVTELKVVLPKCNLALRKKLELDLHKY---RSDVKIILKYSEGNNYIFCSGNQVVEFSPQDVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="Q6XVX6_SHIFL" ac="Q6XVX6" length="231" description="MxiN OS=Shigella flexneri OX=623 GN=mxiN PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.12</expectation>
+      <identity>21.4</identity>
+      <positives>42.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="183">NGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIP----TSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFV</querySeq>
+      <pattern>+GVVIKR   +  K I     +   +    I+   +K E   I    DGY  GI    ++ I  I     +  + R N+ + + S+L +   +  +   + E W++ L +    + + +P       K   L++  Y   +S   + + + +   ++F +   + EFSPQ+ +</pattern>
+      <matchSeq start="20" end="189">DGVVIKRIEKELCKTIKDRDTESKKKAICVIKDATKKAESLRIDAVCDGYQIGIQTAFEHIIDYICEWKLKQNENRRNIEDYITSLLSENLHDERIISTLLEQWLSSLRNTVTELKVVLPKCNLALRKKLELDLHKY---RSDVKIILKYSEGNNYIFCSGNQVVEFSPQDVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="SP" id="SCTL_SHIFL" ac="Q99PY0" length="231" description="Type 3 secretion system stator protein OS=Shigella flexneri OX=623 GN=sctL PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.12</expectation>
+      <identity>21.4</identity>
+      <positives>42.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="183">NGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIP----TSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFV</querySeq>
+      <pattern>+GVVIKR   +  K I     +   +    I+   +K E   I    DGY  GI    ++ I  I     +  + R N+ + + S+L +   +  +   + E W++ L +    + + +P       K   L++  Y   +S   + + + +   ++F +   + EFSPQ+ +</pattern>
+      <matchSeq start="20" end="189">DGVVIKRIEKELCKTIKDRDTESKKKAICVIKEATKKAESLRIDAVCDGYQIGIQTAFEHIIDYICEWKLKQNENRRNIEDYITSLLSENLHDERIISTLLEQWLSSLRNTVTELKVVLPKCNLALRKKLELDLHKY---RSDVKIILKYSEGNNYIFCSGNQVVEFSPQDVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0ABU8UYW3_9NEIS" ac="A0ABU8UYW3" length="197" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium amazonense OX=1382803 GN=QCL97_005045 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.13</expectation>
+      <identity>16.1</identity>
+      <positives>40.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="60" end="233">YYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVLASPE</querySeq>
+      <pattern>Y +GY +G++  +      +    +     R  +    +++L    +  D  + + + W+ +L   +  ++L +P + +     +     +     + + +H D R +      +AEFSP+ +V+   + L    C   D + + C Q     + ++        N+++  +PE</pattern>
+      <matchSeq start="28" end="197">YQEGYQQGLLSALHQVATYLLASQTMAWSWRERLNEHARAMLSAAVDHPDTLLLLLDEWLRQLEQGNATLHLTLPETSRSHQHRLMELLAEHWSGPIQLDYHSDPRCIMRCADQLAEFSPELYVEPASRQL--QQCL--DALPQDCRQVSAQALRELIAQWEQQANDTINRNPE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0ABQ8XQE6_9EUKA" ac="A0ABQ8XQE6" length="1303" description="Dual adapter for phosphotyrosine and 3-phosphotyrosine and 3-phosphoinositide OS=Anaeramoeba flamelloides OX=1746091 GN=M0813_29232 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>104</score>
+      <bits>44.7</bits>
+      <expectation>0.13</expectation>
+      <identity>30.0</identity>
+      <positives>46.2</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="121">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRI---------NMINDLKSILLKPSEEVDVFIKIFESWVTK</querySeq>
+      <pattern>++KK E   ++   N   IK K     KE+    +K L+ET  KI  I E+ E+K   G  +    G   + ++       + SEL KK +          M+ND K  L+K ++E    +KIFE  VT+</pattern>
+      <matchSeq start="374" end="500">IQKKFEKLKLEMKENETSIKNK-KKKYKELKKKFQKTLIETENKISQINEEHEKK--NGNENENENGNGKQNEDHKSKYEQIFSELSKKNLLIKNIQNDLKMLNDEKDDLIKKNQENKKQLKIFEEQVTE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="B2TSZ1_SHIB3" ac="B2TSZ1" length="226" description="MxiN OS=Shigella boydii serotype 18 (strain CDC 3083-94 / BS512) OX=344609 GN=SbBS512_A0174 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.16</expectation>
+      <identity>21.4</identity>
+      <positives>42.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="183">NGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIP----TSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFV</querySeq>
+      <pattern>+GVVIKR   +  K I     +   +    I+   +K E   I    DGY  GI    ++ I  I     +  + R N+ + + S+L +   +  +   + E W++ L +    + + +P       K   L++  Y   +S   + + + +   ++F +   + EFSPQ+ +</pattern>
+      <matchSeq start="15" end="184">DGVVIKRIEKELCKTIKDRDTESKKKAICIIKDATKKAESLRIDAVCDGYQIGIQTAFEHIIDYICEWKLKQNENRRNIEDYITSLLSENLHDERIISTLLEQWLSSLRNTVTELKVVLPKCNLALRKKLELDLHKY---RSDVKIILKYSEGNNYIFCSGNQVVEFSPQDVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="SP" id="SYA_CAMHC" ac="A7I206" length="845" description="Alanine--tRNA ligase OS=Campylobacter hominis (strain ATCC BAA-381 / DSM 21671 / CCUG 45161 / LMG 19568 / NCTC 13146 / CH001A) OX=360107 GN=alaS PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.17</expectation>
+      <identity>33.0</identity>
+      <positives>51.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="114">RKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKI</querySeq>
+      <pattern>+K+ D   EI SLK +I   + AK+  ++EK   KF+   +DG  K  IDE+ N    I  +  ++E  R+ +   +K+  LK  E V    KI</pattern>
+      <matchSeq start="718" end="808">KKLKD---EIKSLKNEISKASAAKVIDLDEKNGIKFVVSEFDGDIKTKIDELKNENDKIVAVFFKVEDGRVQIAAGVKNAPLKAGEIVKQIAKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A1X0WGH8_9GAMM" ac="A0A1X0WGH8" length="224" description="Oxygen-regulated invasion protein OrgB OS=Rouxiella badensis OX=1646377 GN=BS640_08270 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>97</score>
+      <bits>42.0</bits>
+      <expectation>0.51</expectation>
+      <identity>20.6</identity>
+      <positives>45.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="183">PANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISG--PVNLHIPTSFKDKSLEVESYFVDKSIWN--VHITFHDDKRFVFFTDQFIAEFSPQEFV</querySeq>
+      <pattern>PA+ +   ++I   L++      KI+ +  A    + +       Q       K + + +DN   +    C++  +   +++ +L+  L KP    ++F ++ + W+ +   +    P+ + IP +   + + + S+   +SIW   V I  H + RFV      +AEFSP+ ++</pattern>
+      <matchSeq start="20" end="185">PASSLAQSKRIQSLLQQAQHHAAKIIKQANADAVLLRDSARSAGYQAGLMISIKSVAEYLDNNQSIYQSFCNKAHE---SVVANLRQALGKP----EIFPQLLQEWIAETSPVDAISPLFVLIPETSHREKMGLLSFI--QSIWKGAVIIEQHRENRFVVKYGNSLAEFSPEVWI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0A2X4W4Y3_SALER" ac="A0A2X4W4Y3" length="154" description="Invasion protein OrgB OS=Salmonella enterica subsp. arizonae OX=59203 GN=orgB PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.52</expectation>
+      <identity>20.0</identity>
+      <positives>46.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="111" end="215">FIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEK</querySeq>
+      <pattern>F+ + + W+       G + L +P + K    ++    ++      ++ +H ++RF+      IAEFSP++FV+     + ++    P     I + A + L+++</pattern>
+      <matchSeq start="42" end="146">FLTVLDEWLRDFDKPEGQLFLTLPVNAKKDHQKLMVLLMENWPGTFNLKYHQEQRFIMSCGDQIAEFSPEQFVETAVGVIKHHLDELPQDCRTISDNAINSLIDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0ABV6KTC0_9BACI" ac="A0ABV6KTC0" length="282" description="Macro domain-containing protein OS=Robertmurraya beringensis OX=641660 GN=ACFFHF_13530 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.85</expectation>
+      <identity>26.0</identity>
+      <positives>43.3</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="159">KSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINM-INDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHIT</querySeq>
+      <pattern>+S  NG+ IK KI D    +  L  K+  +     + I+  R E   QG  D Y  G I + D+F  L++       K R ++ +ND  + L+    EVD+   ++      +P +   +     T FK   +  E   ++  IW+  IT</pattern>
+      <matchSeq start="113" end="248">ESSLNGIYIKNKIQD----VAELDRKMEQDDHLNSEDIKIGRNENRRQGKKDKYKLGTIFQHDDF--LLTAFSKFDSKNRAHLHMNDYVNFLMNFWNEVDI---VYNGRSISIPLLGTGI-----TRFKGYDMITEQELLELLIWSFKIT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0ABV8ZMA1_9NEIS" ac="A0ABV8ZMA1" length="231" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium aquaticum OX=467180 GN=ACFO0R_03185 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>1.3</expectation>
+      <identity>16.3</identity>
+      <positives>40.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="216">IQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKM</querySeq>
+      <pattern>++  E + E    Q    GY +G++  ++      +   +   + R  +  + +++L    +  D  + + + W+    +    + L +P   +     + +   +     + I +H D RF+       AEF P+++V+   + L+      P     + EQA   L+ ++</pattern>
+      <matchSeq start="45" end="216">LRDAEHQAETLRRQASQAGYQQGMLAALEQAAGHFAASQAMAWRWRERLEQEARAMLAAAVDHPDTLLLLLDEWLRDRDAPDATLYLQLPKRARALQPRLMALLTENWPGTIQIDYHADARFMMRCADQAAEFEPEQYVEPASRQLLQCLEQMPQDCRALSEQALRELIARL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0ABV0IPH1_9NEIS" ac="A0ABV0IPH1" length="231" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium phragmitis OX=2202141 GN=ABI908_03465 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>1.3</expectation>
+      <identity>18.5</identity>
+      <positives>40.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="190">EMSLIKSPA--NGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHI--PTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYL</querySeq>
+      <pattern>++ + + PA   GV+I R+      + + L++         ++  E + +    Q   DGY +G+ + M +    +S     L + R  +  + + +L    +  +  +   + W+ +         L++  P S      ++ S   +     + + +HDD RF+    +  A+F P  +VD   Q L</pattern>
+      <matchSeq start="4" end="192">DIPIFRPPAAIEGVLIPRERLWRQNQALGLEQAARRHAARIVREAERQADSLREQARRDGYAQGMREAMSHVANYLSDGDDLLRRFRGILDAEARRMLAAAVDHPEALLLALDEWLRERRGEEAEQTLYLRLPRSAGIAHAQLMSLLAESWQGRLDVEYHDDARFLMRCGELAADFDPARYVDEGVQLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="G0QP10_ICHMU" ac="G0QP10" length="447" description="TOG domain-containing protein (Fragment) OS=Ichthyophthirius multifiliis OX=5932 GN=IMG5_062950 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>1.4</expectation>
+      <identity>28.0</identity>
+      <positives>48.6</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="122">VIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSI--LLKPSEEVDVFIKIFESWVTKL</querySeq>
+      <pattern>+I++ IS    +I  +  ++L+    K   + +K +   +Q YY    K         +P+I L  SE EK +IN  N   +I  + + ++ VD+FIK  E W  K+</pattern>
+      <matchSeq start="111" end="208">LIEKCISSPKPQIQQISRELLILIFEKSSEVLKKLQLDELQKYYIELEK---------VPMIPLRASEEEKNKINNNNKNNNIQDIYEIADGVDIFIKFNEKWCDKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0ABY5E4Y6_9BACT" ac="A0ABY5E4Y6" length="643" description="histidine kinase OS=Arcobacter roscoffensis OX=2961520 GN=NJU99_11355 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>1.6</expectation>
+      <identity>25.3</identity>
+      <positives>47.6</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="163">MSLIKSPANGVVIKRKISDGLKEIVSLK-EKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLK--PSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDK----------SIWNVHITFHDD</querySeq>
+      <pattern>+S+I +   G+ +KR++ +   E+     +KI  +     ++I++ R+  F +   D Y K  IDE   F+    L+ ++LE K IN+I D+ S+ +    +E + VFI I  +   +L  ++    + I    K+  LE+   F+D           S++  + T  DD</pattern>
+      <matchSeq start="423" end="585">LSIISTMVTGLKVKRELGEQDLELEKNSYDKINRQIQYLSKTIDDFRD--FFKPQKD-YEKFYIDE--TFVKTFDLVEAQLESKYINLIKDIDSVEINSLENELIQVFINIINNSKDELLKLNTKRFIKIDCKNKEDYLEIT--FIDNAGGIDISIIDSVFEAYFTTKDD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0A6J4GE24_9FLAO" ac="A0A6J4GE24" length="830" description="VIT domain-containing protein OS=Flavobacterium bizetiae OX=2704140 GN=FLA105534_01188 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>1.7</expectation>
+      <identity>31.5</identity>
+      <positives>56.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="121">ETTAKIQS-----IEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLK--SILLKPSEEVDVFIKIFESWVTK</querySeq>
+      <pattern>ETT++IQ+     IE  ++ +  +GYY   +KG +D+ + ++PL  +  S   K +I  + D++  +I  KPSE   + + +  SW TK</pattern>
+      <matchSeq start="480" end="564">ETTSRIQTVGNTKIETSKDFELNKGYYINQSKG-LDDWEAYMPLTKVSNSFAWKNKIYEVKDIQKTTIPFKPSE---IILDLNSSWTTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0A1B2M0G5_9GAMM" ac="A0A1B2M0G5" length="834" description="Outer membrane protein assembly factor BamA OS=Acinetobacter larvae OX=1789224 GN=bamA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>1.7</expectation>
+      <identity>19.8</identity>
+      <positives>43.9</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="204">IKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQ-GYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKD-KSLEVESYFVDKSIWNVHITFHDDKRFVFF-------------TDQFIAE--FSPQEFVDNCEQYLINNHCFSPDKVNEI</querySeq>
+      <pattern>++   N ++ K  + +GLK++   + ++L ++T  +Q++E + E+++ Q G YD   K       N    + +  +E +  ++  IN + + + K  E   +F      W + L          +  S +  ++L +   ++D  I N ++   +DK+ +F              T +F+ +  F P E      Q   + + +S +KVN +</pattern>
+      <matchSeq start="101" end="308">VEFKGNKLIPKEALQEGLKKMGLAEGEVLKKST--LQTLETELEQQYSQQGRYDATVKVNTIAQTNNRVYLEIEFNEGKPAKVFDINIIGNSIFKDDEIKQIFAVKESGWASVLTRNDRYAREKMAASLEALRALYLNKGYIDFKINNSYLNISEDKKHIFIEVSVTEGDQYTFGTTKFLGDALFKPDEL--KALQVYKDGNIYSQEKVNNV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0ABQ8YCZ8_9EUKA" ac="A0ABQ8YCZ8" length="836" description="Dual adapter for phosphotyrosine and 3-phosphotyrosine and 3-phosphoinositide OS=Anaeramoeba flamelloides OX=1746091 GN=M0813_22580 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>1.7</expectation>
+      <identity>29.2</identity>
+      <positives>46.9</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="121">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRI---------NMINDLKSILLKPSEEVDVFIKIFESWVTK</querySeq>
+      <pattern>++KK E   ++   N   IK K     KE+    +K L+ET  KI  I E+ E+K  +   +   +   +  D+      +  SEL KK +         N++ND K  L+K ++E    +KIFE  VT+</pattern>
+      <matchSeq start="374" end="500">IQKKFEKLKLEMKENEASIKNK-KKKYKELKKKFQKTLIETENKISQINEEHEKKS-ENENENENENENENEDHKTKYEEIF-SELSKKNLLIKNIQNNLNILNDEKVDLIKKNKEKKKQLKIFEEQVTE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0A6P4CGP9_ARADU" ac="A0A6P4CGP9" length="1613" description="Protein SCAR OS=Arachis duranensis OX=130453 GN=LOC107475427 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>1.8</expectation>
+      <identity>36.4</identity>
+      <positives>53.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="87">ANGVVIK---RKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELE</querySeq>
+      <pattern>ANG V+K   +K S   +EI S   K  +ET   +       E+K I+G  DGY    I E+DN++  ++ + SELE</pattern>
+      <matchSeq start="297" end="367">ANGDVVKVKEQKFSRVTEEISSNHPKFPMETELAVD------EQKKIEGILDGYHSDTISEVDNYMDALNTMESELE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0A445E9V4_ARAHY" ac="A0A445E9V4" length="1647" description="Protein SCAR OS=Arachis hypogaea OX=3818 GN=Ahy_A02g006498 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>1.8</expectation>
+      <identity>36.4</identity>
+      <positives>53.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="87">ANGVVIK---RKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELE</querySeq>
+      <pattern>ANG V+K   +K S   +EI S   K  +ET   +       E+K I+G  DGY    I E+DN++  ++ + SELE</pattern>
+      <matchSeq start="332" end="402">ANGDVVKVKEQKFSRVTEEISSNHPKFPMETELAVD------EQKKIEGILDGYHSDTISEVDNYMDALNTMESELE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0ACH3TIR1_ARAHY" ac="A0ACH3TIR1" length="1647" description="Protein SCAR OS=Arachis hypogaea OX=3818 GN=HN873_005578 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>1.8</expectation>
+      <identity>36.4</identity>
+      <positives>53.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="87">ANGVVIK---RKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELE</querySeq>
+      <pattern>ANG V+K   +K S   +EI S   K  +ET   +       E+K I+G  DGY    I E+DN++  ++ + SELE</pattern>
+      <matchSeq start="332" end="402">ANGDVVKVKEQKFSRVTEEISSNHPKFPMETELAVD------EQKKIEGILDGYHSDTISEVDNYMDALNTMESELE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0A0K0FT43_STRVS" ac="A0A0K0FT43" length="4222" description="DUF8031 domain-containing protein OS=Strongyloides venezuelensis OX=75913 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>1.9</expectation>
+      <identity>28.0</identity>
+      <positives>46.2</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="109">LIKSPANGVVIKRKISDGL-------KEIVSLK---EKILLETTAKIQSIEEK-REEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELE--------------------KKRINMINDLKSILLKPSEEVD</querySeq>
+      <pattern>L+ SP + ++  + I DG+       KE    K   EKI L+ + KI++I+EK +E K I+   +     +I   DN + + S L SELE                    K++I + +D+K+I     E +D</pattern>
+      <matchSeq start="1610" end="1741">LLHSPFSNILDLKDIIDGIAITLADRKEDAKKKLEVEKIALDVSDKIRNIQEKLKEAKIIESNPNSSVNDLIRASDNIMNINSTLISELEEDLNKLPQAKEFDNIRIINLKEKIKLTDDIKNIEFAIRERID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0ABX0XFX4_9BACT" ac="A0ABX0XFX4" length="547" description="Gliding motility-associated protein GldM OS=Neolewinella antarctica OX=442734 GN=GGR27_003621 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>2.1</expectation>
+      <identity>23.6</identity>
+      <positives>48.8</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="117">PANGVVIKRKISDGLKEIVSLKEKIL-----------LETTAKIQSIEEKR-----EEKFIQGYYDGYTKGIIDEMD--NFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFES</querySeq>
+      <pattern>P  G ++K++I+D  KE+++   ++L            +  A+IQS+         ++ +++   D ++      M     +PL+S + ++L+    NMIND+ SI    + E+D F  +F +</pattern>
+      <matchSeq start="149" end="271">PGEGEMLKQRIADTRKELIAAYSRLLNDHGTDMDLKQADIDARIQSVAVNMPFNIDDKSWVEADRDSWSDYKFGHMPVAAVLPLLSQMKADLKISEANMINDMVSIAGGKTIEIDEFFPVFSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0AB38DVQ2_XANPP" ac="A0AB38DVQ2" length="224" description="Oxygen-regulated invasion protein orgb OS=Xanthomonas phaseoli pv. phaseoli OX=317013 GN=orgB PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>2.3</expectation>
+      <identity>25.8</identity>
+      <positives>42.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="53" end="206">EEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSP-QEFVDNCEQYLINNHCFSPDKVNEICE</querySeq>
+      <pattern>E+   +GY DG    +   +D  + L     S+LE++R  + +D++  L + SE     IK  E + T+      PV +H+P   +     VE +    S   + +T   + +FV    QF   F+P     D C +    N    PD   +I E</pattern>
+      <matchSeq start="59" end="209">EQARFEGYRDGIALFVDVLVDETVRLSQTYASQLEQERGAIAHDVQK-LFEDSETATALIK--EYFDTQDADSDRPVTVHLPQWCRLNQCAVE-HLQANSGRRIALTASPNDQFVISDGQFSISFTPFSASTDVCMRAAHRNRQGVPDATADIVE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0A401STD4_CHIPU" ac="A0A401STD4" length="418" description="B30.2/SPRY domain-containing protein OS=Chiloscyllium punctatum OX=137246 GN=chiPu_0012119 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>2.5</expectation>
+      <identity>27.6</identity>
+      <positives>45.5</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="153">KRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSI</querySeq>
+      <pattern>K+K  D +KE    K KI+ ++ A  + IE    E F   Y D   K +I E+D  I        EL ++  N    L  +     E+  +FI++F S   KLPS+S P  +    S     L+  + ++++ +</pattern>
+      <matchSeq start="104" end="225">KQKAKDEIKE---KKMKIMEKSDALRKRIERDEREMF--EYLDREEKRVIVEIDAQI-------RELSERESNTREYLSKLNYISKEKGTIFIQMFNSKADKLPSLSKPFPMLPAPSLDTAKLQALAQWLEERV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0ABU0KT96_9BACL" ac="A0ABU0KT96" length="114" description="Flagellar protein FliT OS=Paenibacillus brasilensis OX=128574 GN=QOZ95_000810 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>2.5</expectation>
+      <identity>23.4</identity>
+      <positives>49.2</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="151">SDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDK</querySeq>
+      <pattern>S+ +++++   +K+ +ETT ++  IEE+    F+    +     I+  M+ +  L+    +E +K+ I +I D+  ++LK   ++        SW+ K  SI    N +       ++  V+S F+DK</pattern>
+      <matchSeq start="3" end="112">SNNIQDLIQALKKMTIETTNRLSIIEEEELVAFVDRRQE-----IVHAMEKYRALL----TEEDKQEIGLILDMDGLILKRMNKLK---DEAGSWMEKKGSIRVQQNAY------QRAYSVDSLFIDK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A1B7JU20_9GAMM" ac="A0A1B7JU20" length="218" description="Uncharacterized protein OS=Providencia heimbachae ATCC 35613 OX=1354272 GN=M998_2299 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>2.9</expectation>
+      <identity>22.6</identity>
+      <positives>43.0</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="227">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEV-------DVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFS-PDKVNEICEQARHYLVEKMFETHSLDMNNS</querySeq>
+      <pattern>M +K + ++ ++    V+IK  I    K   ++ ++   +  A  Q+  +++ E +   Y +GY  GI   + NFI  I       EK+    I   +++L++   E        D+ +  F+   TKL +    V L++P+       +++  F D ++ ++ +            D  I  FSP   ++N     I  H FS   + N + EQ  +Y  +KM E  +L  N +</pattern>
+      <matchSeq start="1" end="212">MSEKTQPNIKQTLFEKVLIKSPILSADKYCRAVVKQAHKKANAYYQTAIQEKNEIYNTAYQNGYNNGIKQLLSNFINTI----ENSEKQYQEKIKTSEALLVQRLTEFFTDERLHDIIVHYFKQQRTKLEN----VTLYLPS-------KMQKQFRD-TMPDISLKVSTSNTIALEIDNKITYFSPTVAINN-----ILPHVFSVSTRCNLLKEQKDNY--QKMIELINLSSNQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="A0A9J6P2M5_9CLOT" ac="A0A9J6P2M5" length="1057" description="Nuclease SbcCD subunit C OS=Oceanirhabdus seepicola OX=2828781 GN=KDK92_08495 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>3.1</expectation>
+      <identity>28.9</identity>
+      <positives>45.9</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="130">IEMSLIKSPANGVVIKRKISDGLKEIVSLKEKIL--------LETTAKIQSIEEKREEKFI-QGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVN</querySeq>
+      <pattern>+EM+++K        K+KI     E+  LK++IL        L T  +I++IE K+EE  I + Y +   K  I+E+     L S    EL + +I    D +  +LK +EE D   +     +  L  I G  N</pattern>
+      <matchSeq start="326" end="457">LEMNVLKREEEINNTKKKIELEDSELKELKDRILEEKKEYTQLNTQEQIEAIERKKEEVIILKKYIEKVNK--IEELKKEFKLYSCRLEELRQLKIQE-TDKREKILKTTEEKDKLKEKLSKELMSLSEIKGDYN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0A3S8R5J7_9FLAO" ac="A0A3S8R5J7" length="359" description="Glycosyltransferase OS=Tenacibaculum singaporense OX=2358479 GN=D6T69_05660 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>3.2</expectation>
+      <identity>26.1</identity>
+      <positives>50.4</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="32" end="147">SLKEKI-LLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVF--IKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESY</querySeq>
+      <pattern>+L +KI +L  T+ I ++  K +   +  +Y+G    +ID M   +P   +L S++   +I  ++  K +L  P  + D+   I +F+S   +  +  G +N  I  +F +K   VE+Y</pattern>
+      <matchSeq start="235" end="349">NLNKKIRILVPTSDIYNVMTKYDAMILPSFYEGCPNAVIDAMLCGVP---ILASDVSDNKI-YLDTQKELLFNPYLKEDIIDKINLFKSMNVEKRTRIGEMNYKISRNFFNKKTMVENY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0ABS7FEN7_9NEIS" ac="A0ABS7FEN7" length="236" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium subtsugae OX=251747 GN=KIF53_12960 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>3.2</expectation>
+      <identity>19.1</identity>
+      <positives>44.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="43" end="191">AKIQSIEEKREEKFI--QGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPV-NLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLI</querySeq>
+      <pattern>A++   E +RE   I  Q   +GY +G+ + +      ++   +  E+ R+ +  + +++L    +  D  + + + W+         V  L +P+  K     + +   +     + I +H + RFV       AEF P+++V++  + L+</pattern>
+      <matchSeq start="41" end="192">AQVLLREARREADAIRQQACQEGYRQGMREALGQVAAHLADSRALAEQWRLRLGAEARAMLSAAVDHPDTLLLLLDEWLRAQDGARSDVLTLQLPSRAKALQPRLMALLAEHWPGAIRIDYHSEPRFVMRCADQAAEFEPEQYVESASRQLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0AAN8Q941_PATCE" ac="A0AAN8Q941" length="1541" description="Poly [ADP-ribose] polymerase OS=Patella caerulea OX=87958 GN=SNE40_007899 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>3.2</expectation>
+      <identity>22.8</identity>
+      <positives>47.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="192">SDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGY----------TKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESW-VTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLIN</querySeq>
+      <pattern>S  +  I +LK+K ++ TTA+++ ++  R  K I   +               G  +E+     +++ + S L+K +IN+ +D   IL +P  E D++ K+ E + +TK   +    ++++ TS  D    V +  + + I    +T  DDK+ ++   Q   +   +   DN  + +I+</pattern>
+      <matchSeq start="408" end="584">SKKINRIKNLKDKEIVLTTAQMEYLKRTRNFKLIDEKFPRMITSIGKDRLCVNGTDEEISTAETMMNHVVSALKKFKINLTSDQLKILREPCNEEDIYKKLEEKFGMTKGIWLWEDNDMNMYTSLGDYKDWVNT--LGELIPTETVTVDDDKK-IYVKSQICNDKLEEIVTDNMNKVVID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0A445AKX1_ARAHY" ac="A0A445AKX1" length="1650" description="Protein SCAR OS=Arachis hypogaea OX=3818 GN=Ahy_B02g061426 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>3.3</expectation>
+      <identity>36.4</identity>
+      <positives>51.9</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="87">ANGVVIK---RKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELE</querySeq>
+      <pattern>ANG V+K   +K S    EI S   K  +ET   +       E+K I+G  DGY    I E+DN++  ++ + SELE</pattern>
+      <matchSeq start="332" end="402">ANGDVVKVKEQKFSRVTDEISSNHPKFPMETELAVD------EQKKIEGILDGYHSDTISEVDNYMDALNTMESELE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0ACH3QMU4_ARAHY" ac="A0ACH3QMU4" length="1650" description="Protein SCAR OS=Arachis hypogaea OX=3818 GN=HN873_040371 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>3.3</expectation>
+      <identity>36.4</identity>
+      <positives>51.9</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="87">ANGVVIK---RKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELE</querySeq>
+      <pattern>ANG V+K   +K S    EI S   K  +ET   +       E+K I+G  DGY    I E+DN++  ++ + SELE</pattern>
+      <matchSeq start="332" end="402">ANGDVVKVKEQKFSRVTDEISSNHPKFPMETELAVD------EQKKIEGILDGYHSDTISEVDNYMDALNTMESELE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0A1I7EA83_9RHOB" ac="A0A1I7EA83" length="156" description="Transcriptional regulator, AsnC family OS=Sedimentitalea nanhaiensis OX=999627 GN=SAMN05216236_15411 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>3.3</expectation>
+      <identity>28.6</identity>
+      <positives>48.1</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="153">VIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYD-------GYTKGIIDEMD---NFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKI-------FESWVT-KLPSISGPVNLHIPTSFKDKSLEVESYFVDKSI</querySeq>
+      <pattern>+++  + +G      L E + L T+   Q ++  + E +I+GYY        GY+  ++ E+    + +  +S LC EL K     I ++  + L  S E D FIK+       FE++++ KL  I G  +    +SF  KS + ES FV  SI</pattern>
+      <matchSeq start="11" end="156">ILRTLLKEGNIPNTKLSEIVSLSTSQCWQRVQRLQREGYIEGYYAVINHRLLGYSDIVLVEISAARDEVTRVSELCEELSK-----IPEVLEVHL-TSGEFDCFIKVAVDGTRGFEAFLSQKLYRIKGIRDSR--SSFSLKSFKNESGFVPDSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0A0K0FT42_STRVS" ac="A0A0K0FT42" length="495" description="Reticulocyte binding protein OS=Strongyloides venezuelensis OX=75913 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>3.6</expectation>
+      <identity>27.3</identity>
+      <positives>46.2</positives>
+      <gaps>23</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="109">LIKSPANGVVIKRKISDGL-------KEIVSLK---EKILLETTAKIQSIEEK-REEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELE--------------------KKRINMINDLKSILLKPSEEVD</querySeq>
+      <pattern>L+ SP + ++  + I DG+       KE    K   EKI L+ + K+++I+EK +E K I+   +     +I   DN + + S L SELE                    K++I + +D+K+I     E +D</pattern>
+      <matchSeq start="342" end="473">LLHSPFSNILDLKDIIDGVAITLADRKEDAKKKLEVEKIALDISDKVRNIQEKLKEAKIIESNPNSSVNDLIKVSDNIMNINSTLISELEEDLNRLPQAKEFDNIRIINLKEKIKLTDDIKNIEFAIRERID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0AAV8XEZ2_9CUCU" ac="A0AAV8XEZ2" length="766" description="DDE Tnp4 domain-containing protein OS=Rhamnusium bicolor OX=1586634 GN=NQ314_012027 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>4.0</expectation>
+      <identity>33.8</identity>
+      <positives>56.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="93">EIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINM</querySeq>
+      <pattern>E+V+ KE  +L     ++S     EE+FI  YY  Y KG I ++ N+I L+    S+ +KK +++</pattern>
+      <matchSeq start="2" end="66">EVVNKKEASMLIINEFLESDSSSDEEEFINYYYINYPKGRIPKIKNYIELVVHQYSDHQKKFLDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0A914Y5A7_9BILA" ac="A0A914Y5A7" length="221" description="Ima1 N-terminal domain-containing protein OS=Panagrolaimus superbus OX=310955 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>4.0</expectation>
+      <identity>23.4</identity>
+      <positives>51.4</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="128">SDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYT--KGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGP</querySeq>
+      <pattern>++GL E+ + K+ +++E   K ++I+E++       Y++ Y   K  +++  +  P     C E  ++++  +N++     KP ++  VF K FES    +P  + P</pattern>
+      <matchSeq start="17" end="112">TNGLCEMCNQKQSVIIERLNKFEAIDERQ-------YFEEYERYKTKLNQQYSLCPQ----CQEYTEQKLQSVNEMYLPKPKPVKKASVFSKPFESRNVAIPKSNAP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="M1LNJ7_9PROT" ac="M1LNJ7" length="930" description="UvrABC system protein A OS=Candidatus Kinetoplastidibacterium desouzai TCC079E OX=1208919 GN=CDSE_0141 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>4.1</expectation>
+      <identity>25.2</identity>
+      <positives>47.4</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="98" end="229">KSILLKPSEEVDVFIKIFESWVTK-LPSISGPVNLHIPTSFKDKSLEVESYFV--DKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVEKMFETHSLDMNNSVL</querySeq>
+      <pattern>K++L+   + +  FIKI      K + S+    N++I T+FK     +++ F+  + S  N  I F   K  + + ++ + +   Q+ +   ++Y     C S  K ++ICE+ARH           +  NNS+L</pattern>
+      <matchSeq start="289" end="410">KNLLINQDQTISTFIKIVNKTNLKEIQSLISKYNINIDTTFKSLPDNIKNIFLYGEASSSNEKILF---KGIISYLEKELEDTKSQKVISILKKYTNIKECDSC-KGSKICEEARHI---------KISYNNSLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0A2S9H1Q2_9BURK" ac="A0A2S9H1Q2" length="240" description="Oxygen-regulated invasion protein OrgB OS=Solimicrobium silvestre OX=2099400 GN=S2091_1489 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>4.4</expectation>
+      <identity>16.8</identity>
+      <positives>42.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="212">PANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTK--LPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYL</querySeq>
+      <pattern>P  GV+++        +  +L  +      + +   +++    + +   +GY  GI+   D     ++   +   + ++ +   + ++L +     DV +  FE  +++  L ++ G ++L +P S + +  ++           V+I + +D RF+      +AEF+P +F+       + N        +E+ +Q R  L</pattern>
+      <matchSeq start="13" end="213">PDEGVLVRSAYLRNNIKASALVAEARRRARSLVMQADDEAARSYREAKSEGYAAGILLAADALAGYLAGHAALAVQLQVQLQQQVGTLLERSVSNSDVVMAAFEECLSEQDLSAVHG-LDLLLPDSMRARHQDLIERLQKHVHGQVNIEYQNDARFLLRLGDHVAEFAPDDFIARAGVRAMRNLSSIHAASSELSDQCRQRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0A202B7Q2_CHRVL" ac="A0A202B7Q2" length="253" description="Oxygen-regulated invasion protein OrgB OS=Chromobacterium violaceum OX=536 GN=CBW21_13150 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>4.6</expectation>
+      <identity>19.3</identity>
+      <positives>42.7</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="184">GVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVT--KLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVD</querySeq>
+      <pattern>GV++ R+      + VSL+ +        ++  E++ E    +   DGY  G+I  +      ++   + L   R  +  + +++L    +  D  +   + W+   +    S  ++L +P   +    E+ +   +     + + +H D RFV    +  AEFSP+ +V+</pattern>
+      <matchSeq start="36" end="206">GVLVCREQLLRHDKAVSLEREARRHAARIVRQAEQEAESLRGRALLDGYGDGMIQALGQLARHLANGDALLRHCRERLEAESRAMLSAAVDHPDALLLALDEWLRERRREDESRTLHLLLPQQARASQAELMALLAESWGGRLSLDYHADSRFVMRCGEQAAEFSPELYVE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0A2T0MB11_9FLAO" ac="A0A2T0MB11" length="435" description="tRNA(Ile)-lysidine synthase OS=Flagellimonas meridianipacifica OX=1080225 GN=tilS PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>4.6</expectation>
+      <identity>23.9</identity>
+      <positives>44.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="169">KRKISDGLKEIVSLKEKILLET--TAKIQSIEEKRE---EKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFF</querySeq>
+      <pattern>K  + + +KE+   KEK+  E   T K++  + K     E ++ G + GY     D++ + +  +S    E+      ++ D   +LL+P +E    I   +        I  P+ LHI T+ + + L+    F+DK   N  +T    K+  +F</pattern>
+      <matchSeq start="224" end="370">KTVLENRIKEV---KEKVFKEKGDTVKVRIADLKALQPLEMYLYGLFKGYGFTEWDDVKSLLDAMS--GKEIHSNTHRLLKDRDFLLLRPKQEKPEAIFFIDE---NKERIEAPIPLHIETTAEFEKLDGSIVFLDKEKLNYPLTLRKWKKGDYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0ACB5U976_AMBMO" ac="A0ACB5U976" length="466" description="Unnamed protein product OS=Ambrosiozyma monospora OX=43982 GN=Amon02_001206500 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>4.7</expectation>
+      <identity>24.6</identity>
+      <positives>46.2</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="94" end="202">INDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSI--------WNVHITFHDDKRFVFFTDQFIAEFSPQEFVD-------------NCEQYLINNHCFSPDKVN</querySeq>
+      <pattern>++ L  IL++   ++D   K+ +  + +LP I+    LH+  SF +K L+ E+ + DK +        WN  +   ++ R++F      A ++P  FV              N +++ I +HC S D  N</pattern>
+      <matchSeq start="326" end="452">LHSLTYILVETKTQIDSLTKVIDQ-LMQLPPITDDCKLHL-LSF-NKFLKQENDYCDKQMLWIKIQTEWNAFLAAEENNRYMFTLATVSAVYAPLSFVCSIFGMSFFDNSYLNYDRFYILHHCHSSDYNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0A7X5YDT5_9BACT" ac="A0A7X5YDT5" length="484" description="Uncharacterized protein OS=Butyricimonas paravirosa OX=1472417 GN=F1644_14765 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>4.7</expectation>
+      <identity>24.6</identity>
+      <positives>43.5</positives>
+      <gaps>22</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="36" end="164">KILLETTAKIQSIEEKREEKFIQGYY---------DGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDK</querySeq>
+      <pattern>K ++E   K   IEE+R+E+   G Y         DG    +   +D +I ++  + ++   + +NMI  LK ++L      D F +I+                 IP  ++ KSL +   F+D  + N++    DDK</pattern>
+      <matchSeq start="261" end="376">KYIIEVLLK-PKIEEERDEQIAVGVYDENKNSGKKDGDAGDVFGSIDGYITVLKRIHAD---ESLNMIRLLKDVVLTRENIYDKFDEIYR---------------EIPKKYRTKSLPI---FIDPDLLNLYELARDDK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="Q7NVC5_CHRVO" ac="Q7NVC5" length="217" description="Probable oxygen-regulated invasion protein-cell invasion protein OS=Chromobacterium violaceum (strain ATCC 12472 / DSM 30191 / JCM 1249 / CCUG 213 / NBRC 12614 / NCIMB 9131 / NCTC 9757 / MK) OX=243365 GN=CV_2418 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>5.3</expectation>
+      <identity>19.2</identity>
+      <positives>42.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="184">VSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVT--KLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVD</querySeq>
+      <pattern>VSL+ +        ++  E++ E    +   DGY  G+I  +      ++   + L   R  +  + +++L    +  D  +   + W+   +    S  ++L +P   +    E+ +   +     + + +H D RFV    +  AEFSP+ +V+</pattern>
+      <matchSeq start="15" end="170">VSLEREARRHAARIVRQAEQEAESLRGRALLDGYGDGMIQALGQLARHLANGDALLRHCRERLEAESRAMLSAAVDHPDALLLALDEWLRERRREDESRTLHLLLPQQARASQAELMALLAESWGGRLSLDYHADSRFVMCCGEQAAEFSPELYVE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0A0L7T8B3_9GAMM" ac="A0A0L7T8B3" length="218" description="Oxygen-regulated invasion protein OrgB OS=Winslowiella iniecta OX=1560201 GN=NG42_05095 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>5.3</expectation>
+      <identity>18.3</identity>
+      <positives>39.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLP-SISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYL</querySeq>
+      <pattern>M+K +      +     ++ R      K   S+      E    I    +K +E   + +  G+  G+I  + + I   + L  E ++    +   + S+L +   + D+F+ I   W  K   S +  + L +P   K  + ++      + +    +TFH    F   +   + EF+  EF+    ++L+ N+      +  I  ++R  L</pattern>
+      <matchSeq start="1" end="213">MQKNLPSHFELAAIEDTLLTRDYFSARKRTSSIDAVARDEAKKIINQAWQKSDEIKKEAFNHGFETGLIYCIGHIISHFNALDKEQQRMESLLAERITSMLQENFRDNDLFVNIVIDWYKKNKVSKNDEILLTLPLRHKKMAEQLCDRLRHQILSEPKVTFHSYDFFQVKSGDQLIEFNSDEFIATLIRHLVYNNEAIQSSIRNISYESREQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="U5MNK8_CLOSA" ac="U5MNK8" length="867" description="DNA polymerase I OS=Clostridium saccharobutylicum DSM 13864 OX=1345695 GN=polA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.4</expectation>
+      <identity>23.9</identity>
+      <positives>42.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="212">KEIVSLKEKILLETTAK-IQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKI----------FESWVTKLPSISGPVNL-HIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYL</querySeq>
+      <pattern>K++ ++  ++ +E T + I + E++  E+  +       K I+ +  N  P     C+ +E K I+ I ++K +LL  SE + +   +           E  +    S    +N  HI    K +SLE+    ++    NV    HD K F+ F ++   E    +F      YLI+    S     EI E   HY+</pattern>
+      <matchSeq start="240" end="427">KKLATIMREVPIELTVEDIHNSEKENIEEIKKMLVKLEMKSILSKFKNDEP--EEACN-IEIKNIDTIEEMKELLLNKSERIYIDYTLENASKYSTLELEYLILGEESHGNIINFKHINAENKHESLEILKKCMEDE--NVKKVIHDGKNFITFLNKNNIEIKGFDFDTAIASYLID----SSKSQYEILELVNHYI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0A377Q621_9NEIS" ac="A0A377Q621" length="233" description="Uncharacterized protein OS=Iodobacter fluviatilis OX=537 GN=EV682_10540 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>5.7</expectation>
+      <identity>18.2</identity>
+      <positives>40.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="226">IQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL--PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICE---QARHYLVEKMFETHSLDMNN</querySeq>
+      <pattern>++  E + ++   Q + +GY  G+I    +    I    + L +    +    +++L    +  D+ + + + W+  +  P   G + L +P   +    ++ +   +     + I +H D  FV      IA+FSP EF+    Q L++     P +   + +   Q+   +    F T    +N+</pattern>
+      <matchSeq start="45" end="231">LKQAEVETQQIRTQAWMNGYQDGVIAAASSVANHIDESENLLLRFHNKLGEQARAMLSASLDHPDLLLILLDEWLRGIDTPLPQGTLQLQLPLHRRAAHSQLLNSLQELWGGKIQIEYHADTHFVMRYADQIAQFSPDEFIAEAAQSLLHGMHEMPAECRSLSQASMQSLQNIFTSQFSTQPQMLNS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0A814M6P2_9BILA" ac="A0A814M6P2" length="1410" description="RNA helicase OS=Rotaria sordida OX=392033 GN=JXQ802_LOCUS27483 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.7</expectation>
+      <identity>20.0</identity>
+      <positives>41.2</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="233">KKIEMSLIKSPANGV---VIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVD--VFIKIFESWVTKLPSI---SGPVNLHIP--------TSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNE---ICEQARHYLVEKMFETHSLDMNNSVLASPE</querySeq>
+      <pattern>K  E  +IK   N     +IK    D +KE ++ + K ++++  + QSI +  E+  ++           + +++F+P+    C+   +  IN +   K   +K ++E+    F+K   S +  + S    +  +N +IP        T     S++        SI N+    H D            E+SP + + N +Q  I+++  +P +V     I  + +   +E+  E    +     + +PE</pattern>
+      <matchSeq start="835" end="1062">KSNEQDIIKEEINKQSKSIIKSNEQDIIKEEINEQSKSIIKSNEQSQSIIKSNEQDIVKE----------EIIEDFLPVFKPFCNRSGQLIINPVGRSKQFFIKHNQELQNFDFVKRISSEINDIQSSIENNNTINRYIPLGRGHKIHTESSSSSVKNILLSPPPSISNIGDFQHSD------------EYSPFQTLVNIQQSSIDSNVTTPSEVEPSKMIQCETKTEQIEEQEEDEIFEDTTDTIPNPE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0ACD7QN53_9PSED" ac="A0ACD7QN53" length="239" description="Uncharacterized protein OS=Pseudomonas chlororaphis subsp. piscium OX=1513890 GN=C4K36_3807 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>5.8</expectation>
+      <identity>19.7</identity>
+      <positives>43.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="43" end="214">AKIQSIEEKREEKFIQG--YYDGYTKGIIDEMDNFIPLI---SLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFES-WVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVE</querySeq>
+      <pattern>AK    E ++E   I+   + DGY++G++    +   L+    +L + L+ + I     L   LL   + +D  ++ ++  W  +     GP+ + +P   K +   +++      + +V I+FH  +R++F     + E       +     LI      P+ V ++ E +R   ++</pattern>
+      <matchSeq start="41" end="215">AKSCMAEAQQEADLIRANAFQDGYSQGVLQAAGDLSGLLLQSRVLATALQTELIQAARSLLGDLLMDEQLLDALLQRWQGEWAGQG---RGPLQIILPLRCKPEQATLKTTLKSLGVEHVDISFHAQERYLFRLADQVVELDIGATQERLAPRLIAQLKQLPESVRQLDEASRDLFID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0A4V0KDI6_PLACU" ac="A0A4V0KDI6" length="1874" description="Cilia- and flagella-associated protein 61 N-terminal domain-containing protein OS=Plasmodium chabaudi chabaudi OX=31271 GN=PCHAS_1452700 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.8</expectation>
+      <identity>25.3</identity>
+      <positives>48.1</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="166">SDGLKEIVSLKEKIL-------LETTAKIQSIE--EKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVD--KSIWNVHITFHDDKRF</querySeq>
+      <pattern>+DG K +  +K+K L       +  + KI+S+E  EK+ E   +  YD  ++ +I ++D++           + K +N+ N +K+I  K   + + F    E     L  ++  +NL+   SF D S +V   F D  + I  ++  F++DK +</pattern>
+      <matchSeq start="347" end="492">NDGDKNLNKMKKKYLFVEFKQYILKSIKIESVEDLEKKYEIDNKIIYDYLSEHLIKDVDSYFEYF-------KNKNLNINNTIKNIYNKMQYDYENFKSDGEGGTINLFQLNKLINLYAHISFSDIS-KVSKTFYDNFEKIEILYFNFNNDKTY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0ACI8V3T5_HUMAN" ac="A0ACI8V3T5" length="2471" description="Centromere-associated protein E OS=Homo sapiens OX=9606 GN=CENPE PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.9</expectation>
+      <identity>23.3</identity>
+      <positives>42.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="235">LKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS-LLCSELE----KKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL-PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSP------QEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVE----KMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>LKE I  ET AKIQ  + K+E+       D  T  I+ EM+ F P  S LL  E+E     KR+   +D    + K  +++    ++ +S   +L  +I   V  H+ T  + K         +++I  + +   + +  +    + +   +       QE  +  EQ+ I       +KVNE+ +   H   +    +  E+  L++ N +  S E++</pattern>
+      <matchSeq start="1235" end="1452">LKEHIR-ETLAKIQESQSKQEQSLNMKEKDNETTKIVSEMEQFKPKDSALLRIEIEMLGLSKRLQESHDEMKSVAKEKDDLQRLQEVLQSESDQLKENIKEIVAKHLETEEELKVAHCCLKEQEETINELRVNLSEKETEISTIQKQLEAINDKLQNKIQEIYEKEEQFNIKQISEVQEKVNELKQFKEHRKAKDSALQSIESKMLELTNRLQESQEEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="A0ACI8TRT0_HUMAN" ac="A0ACI8TRT0" length="2526" description="Centromere-associated protein E OS=Homo sapiens OX=9606 GN=CENPE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.9</expectation>
+      <identity>23.3</identity>
+      <positives>42.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="235">LKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS-LLCSELE----KKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL-PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSP------QEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVE----KMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>LKE I  ET AKIQ  + K+E+       D  T  I+ EM+ F P  S LL  E+E     KR+   +D    + K  +++    ++ +S   +L  +I   V  H+ T  + K         +++I  + +   + +  +    + +   +       QE  +  EQ+ I       +KVNE+ +   H   +    +  E+  L++ N +  S E++</pattern>
+      <matchSeq start="1343" end="1560">LKEHIR-ETLAKIQESQSKQEQSLNMKEKDNETTKIVSEMEQFKPKDSALLRIEIEMLGLSKRLQESHDEMKSVAKEKDDLQRLQEVLQSESDQLKENIKEIVAKHLETEEELKVAHCCLKEQEETINELRVNLSEKETEISTIQKQLEAINDKLQNKIQEIYEKEEQFNIKQISEVQEKVNELKQFKEHRKAKDSALQSIESKMLELTNRLQESQEEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0ACI8TRH0_HUMAN" ac="A0ACI8TRH0" length="2579" description="Centromere-associated protein E OS=Homo sapiens OX=9606 GN=CENPE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.9</expectation>
+      <identity>23.3</identity>
+      <positives>42.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="235">LKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS-LLCSELE----KKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL-PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSP------QEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVE----KMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>LKE I  ET AKIQ  + K+E+       D  T  I+ EM+ F P  S LL  E+E     KR+   +D    + K  +++    ++ +S   +L  +I   V  H+ T  + K         +++I  + +   + +  +    + +   +       QE  +  EQ+ I       +KVNE+ +   H   +    +  E+  L++ N +  S E++</pattern>
+      <matchSeq start="1343" end="1560">LKEHIR-ETLAKIQESQSKQEQSLNMKEKDNETTKIVSEMEQFKPKDSALLRIEIEMLGLSKRLQESHDEMKSVAKEKDDLQRLQEVLQSESDQLKENIKEIVAKHLETEEELKVAHCCLKEQEETINELRVNLSEKETEISTIQKQLEAINDKLQNKIQEIYEKEEQFNIKQISEVQEKVNELKQFKEHRKAKDSALQSIESKMLELTNRLQESQEEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="SP" id="CENPE_HUMAN" ac="Q02224-3" length="2580" description="Isoform 3 of Centromere-associated protein E OS=Homo sapiens OX=9606 GN=CENPE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.9</expectation>
+      <identity>23.3</identity>
+      <positives>42.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="235">LKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS-LLCSELE----KKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL-PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSP------QEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVE----KMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>LKE I  ET AKIQ  + K+E+       D  T  I+ EM+ F P  S LL  E+E     KR+   +D    + K  +++    ++ +S   +L  +I   V  H+ T  + K         +++I  + +   + +  +    + +   +       QE  +  EQ+ I       +KVNE+ +   H   +    +  E+  L++ N +  S E++</pattern>
+      <matchSeq start="1343" end="1560">LKEHIR-ETLAKIQESQSKQEQSLNMKEKDNETTKIVSEMEQFKPKDSALLRIEIEMLGLSKRLQESHDEMKSVAKEKDDLQRLQEVLQSESDQLKENIKEIVAKHLETEEELKVAHCCLKEQEETINELRVNLSEKETEISTIQKQLEAINDKLQNKIQEIYEKEEQFNIKQISEVQEKVNELKQFKEHRKAKDSALQSIESKMLELTNRLQESQEEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="TR" id="A0ACI8TR69_HUMAN" ac="A0ACI8TR69" length="2604" description="Centromere-associated protein E OS=Homo sapiens OX=9606 GN=CENPE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.9</expectation>
+      <identity>23.3</identity>
+      <positives>42.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="235">LKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS-LLCSELE----KKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL-PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSP------QEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVE----KMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>LKE I  ET AKIQ  + K+E+       D  T  I+ EM+ F P  S LL  E+E     KR+   +D    + K  +++    ++ +S   +L  +I   V  H+ T  + K         +++I  + +   + +  +    + +   +       QE  +  EQ+ I       +KVNE+ +   H   +    +  E+  L++ N +  S E++</pattern>
+      <matchSeq start="1368" end="1585">LKEHIR-ETLAKIQESQSKQEQSLNMKEKDNETTKIVSEMEQFKPKDSALLRIEIEMLGLSKRLQESHDEMKSVAKEKDDLQRLQEVLQSESDQLKENIKEIVAKHLETEEELKVAHCCLKEQEETINELRVNLSEKETEISTIQKQLEAINDKLQNKIQEIYEKEEQFNIKQISEVQEKVNELKQFKEHRKAKDSALQSIESKMLELTNRLQESQEEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="A0ACI8TRF1_HUMAN" ac="A0ACI8TRF1" length="2605" description="Centromere-associated protein E OS=Homo sapiens OX=9606 GN=CENPE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.9</expectation>
+      <identity>23.3</identity>
+      <positives>42.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="235">LKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS-LLCSELE----KKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL-PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSP------QEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVE----KMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>LKE I  ET AKIQ  + K+E+       D  T  I+ EM+ F P  S LL  E+E     KR+   +D    + K  +++    ++ +S   +L  +I   V  H+ T  + K         +++I  + +   + +  +    + +   +       QE  +  EQ+ I       +KVNE+ +   H   +    +  E+  L++ N +  S E++</pattern>
+      <matchSeq start="1368" end="1585">LKEHIR-ETLAKIQESQSKQEQSLNMKEKDNETTKIVSEMEQFKPKDSALLRIEIEMLGLSKRLQESHDEMKSVAKEKDDLQRLQEVLQSESDQLKENIKEIVAKHLETEEELKVAHCCLKEQEETINELRVNLSEKETEISTIQKQLEAINDKLQNKIQEIYEKEEQFNIKQISEVQEKVNELKQFKEHRKAKDSALQSIESKMLELTNRLQESQEEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="A0ACI8TQW1_HUMAN" ac="A0ACI8TQW1" length="2676" description="Centromere-associated protein E OS=Homo sapiens OX=9606 GN=CENPE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.9</expectation>
+      <identity>23.3</identity>
+      <positives>42.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="235">LKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS-LLCSELE----KKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL-PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSP------QEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVE----KMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>LKE I  ET AKIQ  + K+E+       D  T  I+ EM+ F P  S LL  E+E     KR+   +D    + K  +++    ++ +S   +L  +I   V  H+ T  + K         +++I  + +   + +  +    + +   +       QE  +  EQ+ I       +KVNE+ +   H   +    +  E+  L++ N +  S E++</pattern>
+      <matchSeq start="1343" end="1560">LKEHIR-ETLAKIQESQSKQEQSLNMKEKDNETTKIVSEMEQFKPKDSALLRIEIEMLGLSKRLQESHDEMKSVAKEKDDLQRLQEVLQSESDQLKENIKEIVAKHLETEEELKVAHCCLKEQEETINELRVNLSEKETEISTIQKQLEAINDKLQNKIQEIYEKEEQFNIKQISEVQEKVNELKQFKEHRKAKDSALQSIESKMLELTNRLQESQEEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="SP" id="CENPE_HUMAN" ac="Q02224" length="2701" description="Centromere-associated protein E OS=Homo sapiens OX=9606 GN=CENPE PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.9</expectation>
+      <identity>23.3</identity>
+      <positives>42.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="235">LKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS-LLCSELE----KKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL-PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSP------QEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVE----KMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>LKE I  ET AKIQ  + K+E+       D  T  I+ EM+ F P  S LL  E+E     KR+   +D    + K  +++    ++ +S   +L  +I   V  H+ T  + K         +++I  + +   + +  +    + +   +       QE  +  EQ+ I       +KVNE+ +   H   +    +  E+  L++ N +  S E++</pattern>
+      <matchSeq start="1368" end="1585">LKEHIR-ETLAKIQESQSKQEQSLNMKEKDNETTKIVSEMEQFKPKDSALLRIEIEMLGLSKRLQESHDEMKSVAKEKDDLQRLQEVLQSESDQLKENIKEIVAKHLETEEELKVAHCCLKEQEETINELRVNLSEKETEISTIQKQLEAINDKLQNKIQEIYEKEEQFNIKQISEVQEKVNELKQFKEHRKAKDSALQSIESKMLELTNRLQESQEEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="A0ACI8TRH3_HUMAN" ac="A0ACI8TRH3" length="2702" description="Centromere-associated protein E OS=Homo sapiens OX=9606 GN=CENPE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.9</expectation>
+      <identity>23.3</identity>
+      <positives>42.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="235">LKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS-LLCSELE----KKRINMINDLKSILLKPSEEVDVFIKIFESWVTKL-PSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSP------QEFVDNCEQYLINNHCFSPDKVNEICEQARHYLVE----KMFETHSLDMNNSVLASPEDL</querySeq>
+      <pattern>LKE I  ET AKIQ  + K+E+       D  T  I+ EM+ F P  S LL  E+E     KR+   +D    + K  +++    ++ +S   +L  +I   V  H+ T  + K         +++I  + +   + +  +    + +   +       QE  +  EQ+ I       +KVNE+ +   H   +    +  E+  L++ N +  S E++</pattern>
+      <matchSeq start="1368" end="1585">LKEHIR-ETLAKIQESQSKQEQSLNMKEKDNETTKIVSEMEQFKPKDSALLRIEIEMLGLSKRLQESHDEMKSVAKEKDDLQRLQEVLQSESDQLKENIKEIVAKHLETEEELKVAHCCLKEQEETINELRVNLSEKETEISTIQKQLEAINDKLQNKIQEIYEKEEQFNIKQISEVQEKVNELKQFKEHRKAKDSALQSIESKMLELTNRLQESQEEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="C4K5N0_HAMD5" ac="C4K5N0" length="155" description="Oxygen-regulated invasion protein OS=Hamiltonella defensa subsp. Acyrthosiphon pisum (strain 5AT) OX=572265 GN=orgAb PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>6.0</expectation>
+      <identity>20.2</identity>
+      <positives>42.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="124">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPS</querySeq>
+      <pattern>M KKI      S   GV++        K   ++  +        I+  EE  E+   Q Y DGY +G++  + + +  ++   + + +  +++ +  + I     +  D+ I + + W+  LPS</pattern>
+      <matchSeq start="1" end="124">MSKKIPNLSPLSAREGVLLTYAQIQQHKRAKNILNEAYRNAKKIIRQAEEDAEKIQKQAYMDGYQQGVMSAIKHIVGYMNNTKNLMHQLNLDLEDHARQIFSTALDHPDILIVLLDEWLNTLPS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="TR" id="A0A401UG15_9CLOT" ac="A0A401UG15" length="277" description="Lipoprotein OS=Clostridium tagluense OX=360422 GN=Ctaglu_00520 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>6.5</expectation>
+      <identity>26.6</identity>
+      <positives>48.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="164">SLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLK-PSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDK</querySeq>
+      <pattern>+L  S  + +V KR  +D ++   ++++ I  +T     SI  K  +K+++G   G   G+    DN +    +L ++LE  + N+I+D  + LLK  + + DV IK+ ++   K         +    S K+K   V + +  K +WN+  TF D K</pattern>
+      <matchSeq start="122" end="273">NLYSSDKSYIVSKRIDNDIIQNFWNIRKPIDFKTVY-YDSIS-KVLDKYVEGEGKGKKIGLDISEDNSVAKF-VLSTDLESFKSNLIDDYNATLLKGKATDYDVLIKV-KTQGYKATIYKATATIKTTLSEKEKVYYVVAKYY-KGLWNIE-TFEDKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0AA51RD51_9BACT" ac="A0AA51RD51" length="631" description="Uncharacterized protein OS=Marivirga arenosa OX=3059076 GN=QYS48_28600 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>6.8</expectation>
+      <identity>25.4</identity>
+      <positives>47.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="155">GLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSI----LLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWN</querySeq>
+      <pattern>GL+ I SL E   L T +  + +E+K + K +Q        G+I+E ++   +I  L  +       ++  +KS     L   S   D+ +K  E+   K   I+  +  +  +S K +  E+E+ ++D+ IWN</pattern>
+      <matchSeq start="406" end="538">GLEAIYSLCEYTYLYTLSLKEKLEQKLKTKELQNELQDLESGLINESNSLNKVIDSLQEKTSGNDSKLLTAIKSFSNEALKNYSSISDIVVKQEEAKNLKECMINLKMLANRISSLKSQQKEIENLYIDE-IWN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="V7PY33_PLAYE" ac="V7PY33" length="789" description="Uncharacterized protein OS=Plasmodium yoelii 17X OX=1323249 GN=YYC_00661 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>7.1</expectation>
+      <identity>22.4</identity>
+      <positives>43.9</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="189">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEK----ILLETTAKIQSIEEKRE--EKFIQGYYDGYTKGIIDEMDNFIPLISL-LCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQY</querySeq>
+      <pattern>M+K+IE   I        +K       K  + +K+K    I +E  AK++ IE+K +  +      YD Y   +I++M ++I      + + L KK  ++  ++    +    +++++  ++ S+ TK        + H   ++K KSL   +    KSI   +I +H       F  +F  E+    F + CE +</pattern>
+      <matchSeq start="1" end="182">MKKRIENIQINDEKKKNNLKNIGEKNEKGKIKIKKKKIPKITIENEAKVEDIEKKNDILDNVRISTYDEYDDKLINKMGSYIETTKEGIETNLFKKYYSLNKNVPLFYI----DINIYKCVYNSFFTKYIHNKELNDTHNGVNYKIKSLYFYNILNSKSI---NIIYH-------FFKEFFKEYELSSFQNCCEMF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="A0A2Z6P539_TRISU" ac="A0A2Z6P539" length="1019" description="MHD1 domain-containing protein OS=Trifolium subterraneum OX=3900 GN=TSUD_414020 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>7.3</expectation>
+      <identity>27.4</identity>
+      <positives>50.9</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="113">ANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKS------ILLKPSEEVDVFIK</querySeq>
+      <pattern>A  V++    +D  +E  SL  KIL      IQS  EKR    +  Y++ + +G + +++N +PL+ LL S++  + + + +  KS      I+    + VD +I+</pattern>
+      <matchSeq start="368" end="468">ATSVMLNEVANDAKREKESLYVKILSSVLVSIQSWIEKR----LLNYHEYFQRGNVTQIENLVPLV-LLVSKISGEDLTITDGKKSQKGDITIVDSSGDRVDNYIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="A0AAV7ERI0_ARIFI" ac="A0AAV7ERI0" length="1200" description="Reverse transcriptase OS=Aristolochia fimbriata OX=158543 GN=H6P81_010202 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>7.5</expectation>
+      <identity>40.0</identity>
+      <positives>54.0</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="138" end="184">KDKSLEVESYFVDKSIWNVHI---TFHDDKRFVFFTDQFIAEFSPQEFVD</querySeq>
+      <pattern>+DK + + SY++D   W       T HDD  + FF+ QF A F P EF D</pattern>
+      <matchSeq start="97" end="146">EDKRVSLASYYLDGEAWQWLASLWTDHDDISWDFFSGQFCASFEPSEFED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="A0A9P1JG79_BACAS" ac="A0A9P1JG79" length="1422" description="Partial Phage-like element PBSX protein xkdO OS=Bacillus amyloliquefaciens (strain ATCC 23350 / DSM 7 / BCRC 11601 / CCUG 28519 / NBRC 15535 / NRRL B-14393 / F) OX=692420 GN=xkdO2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>7.6</expectation>
+      <identity>22.6</identity>
+      <positives>40.1</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="223">IVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLIS--LLCSELEKKRINMINDLKSILLKPS-----EEVDVFIKIFESWVTKLPSISGPVNL-----HIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINN--------HCFSPDKVNEICEQARHYL---VEKMFETHSLD</querySeq>
+      <pattern>I++  +K       K+  I  K   + I G  D +T   + ++D      S   + +EL+K   + +  +  I+ K S     +E+D F   F   +  + S   P  +         SF  K  ++ S F  ++I      F D   F+   D  + +FSP + +D  EQ++ +            +PDK+ E  +Q    L   ++K F   S D</pattern>
+      <matchSeq start="151" end="365">ILTELDKFTTSFMGKVDEIASKFSPEAILGELDKFTTSFMGKVDEIASKFSPETILTELDKFADSFMKKIDGIVSKFSPEAILKELDKFADSFMKKIDGIVSKFSPETILKELDKFTDSFMKKVDDLVSKFSPEAILKELDHFTDS--FMKKVDDVVGKFSPDKLIDRAEQFVNDTIDRISEKFDFLNPDKILEKVDQFTSSLFGGIDKKFGKFSPD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="TR" id="A0A1H2ABQ3_9PSED" ac="A0A1H2ABQ3" length="236" description="Oxygen-regulated invasion protein OrgB OS=Pseudomonas asplenii OX=53407 GN=SAMN05216598_5706 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>7.7</expectation>
+      <identity>19.4</identity>
+      <positives>43.3</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="36" end="212">KILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGP---VNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINNHCFSPDKVNEICEQARHYL</querySeq>
+      <pattern>++L E   ++++I+E     F +GY  G  +  +D +   +     L  +L ++    +  L   LL   ++   F ++ E W+ +   +  P   + + +P   + +   +       ++ +V   F + +R+V    + + EF  +   +     +++     PD V E+ EQARH L</pattern>
+      <matchSeq start="45" end="215">ELLDEAQGQVEAIQEAA---FAEGYGQGLVQAAVD-LARGLCESQRLAGQLHRQMAEAVRQLLKHLL---DDPRWFDEMLEHWLAE--QVDPPQMTLQVLLPQRCRRRVAVLREQLAQTAVTSVTFEFSEQERYVVRLGEQLFEFELEPAREQLAPRVLSQLAALPDSVRELDEQARHAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0A5B8MSJ7_9CHLO" ac="A0A5B8MSJ7" length="245" description="FAS1 domain-containing protein OS=Chloropicon primus OX=1764295 GN=A3770_07p48500 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>8.0</expectation>
+      <identity>33.3</identity>
+      <positives>50.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="95" end="175">NDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIA</querySeq>
+      <pattern>ND  S L+K  E V   I IFE+   KL +I  P N    T FKD +   E +  DK++  + +++H     V ++D  +A</pattern>
+      <matchSeq start="66" end="145">NDDFSTLVKALESVPDLIPIFENKKDKL-TILAPTNEAFATFFKDFNSSAEEFLKDKNLVKLVLSYHVIPSVVPYSDMEMA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="TR" id="A0A3M6V907_9STRA" ac="A0A3M6V907" length="129" description="RxLR effector protein OS=Peronospora effusa OX=542832 GN=DD238_008300 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>8.1</expectation>
+      <identity>22.7</identity>
+      <positives>47.1</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="121">SLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELE-----KKRINMINDLKSILLKPSEEVDVFIKIFESWVTK</querySeq>
+      <pattern>S   S  N + +K  I+D  +E+V    + L E  A+     E+ +E   +GY  G  + I+  +D+ +  + +   +L+      K++++++D+K ++           KI+ SW  K</pattern>
+      <matchSeq start="19" end="126">STFASAENVIQVKSLITDSQRELVDESHRNLREGVAEDDMKPEEEDESEERGYAFG-RRQIVATVDDLVRTMRMSVKDLKHFIELSKKVSIMSDIKQLM----------YKIYRSWTNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="Q7RG63_PLAYO" ac="Q7RG63" length="444" description="Uncharacterized protein OS=Plasmodium yoelii yoelii OX=73239 GN=PY04486 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>8.2</expectation>
+      <identity>22.4</identity>
+      <positives>43.9</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="189">MRKKIEMSLIKSPANGVVIKRKISDGLKEIVSLKEK----ILLETTAKIQSIEEKRE--EKFIQGYYDGYTKGIIDEMDNFIPLISL-LCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQY</querySeq>
+      <pattern>M+K+IE   I        +K       K  + +K+K    I +E  AK++ IE+K +  +      YD Y   +I++M ++I      + + L KK  ++  ++    +    +++++  ++ S+ TK        + H   ++K KSL   +    KSI   +I +H       F  +F  E+    F + CE +</pattern>
+      <matchSeq start="1" end="182">MKKRIENIQINDEKKKNNLKNIGEKNEKGKIKIKKKXIPKIKIENEAKVEDIEKKNDILDNVRISTYDEYDDKLINKMGSYIETTKEGIETNLFKKYYSLNKNVPLFYI----DINIYKCVYNSFFTKYIHNKELNDTHNGVNYKIKSLYFYNILNSKSI---NIIYH-------FFKEFFKEYELSSFQNCCEMF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="A0ABS3JM90_9BACT" ac="A0ABS3JM90" length="258" description="Uncharacterized protein OS=Fibrella forsythiae OX=2817061 GN=J2I46_15630 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>8.3</expectation>
+      <identity>18.8</identity>
+      <positives>54.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="110">IKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDV</querySeq>
+      <pattern>I++    +++   + D  ++I   +  I ++T A ++++EE+ +++++  YYDG  K ++  +D  +     + +   +   +++N L SIL +   ++++</pattern>
+      <matchSeq start="145" end="244">IRTEDEAMILLNNLRDAYEQIRWYRTLIPVKTKAALRAVEEQTDDEYLLSYYDGKAKLVLVSIDQSLKAWQTVMAYYPETTDDLLNTL-SILSRLGRQIEM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="A0A419T654_9FIRM" ac="A0A419T654" length="268" description="Flagellar assembly protein FliH/Type III secretion system HrpE domain-containing protein OS=Lacrimispora algidixylanolytica OX=94868 GN=BET01_15580 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>8.6</expectation>
+      <identity>24.8</identity>
+      <positives>46.8</positives>
+      <gaps>20</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="108">IKRKISDGLKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGIID---------------EMDNFIPLISLLCSELEKKRINMI----NDLKSILLKPSEEV</querySeq>
+      <pattern>I ++ SD  KE     E+ILL+   + + ++E+  E    GY +GY  G++D               +M+ F   + L    + +++  ++    +DLK I L  +E+V</pattern>
+      <matchSeq start="62" end="167">IYKQASDAYKEATKRSEEILLQAEEEARRLQEEAREN---GYLNGYEAGLLDGTNKAYEDHKTELDLQMEEFKTTVRLTIESITREKDKLLEKYMDDLKKITLTIAEKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="A0A3S8ZQZ5_9NEIS" ac="A0A3S8ZQZ5" length="208" description="Oxygen-regulated invasion protein OrgB OS=Iodobacter ciconiae OX=2496266 GN=EJO50_05080 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>9.1</expectation>
+      <identity>21.7</identity>
+      <positives>41.7</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="27" end="193">LKEIVSLKEKILLETTAKIQSIEEKREEKFIQGYYDGYTKGI------IDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLP--SISGPVNLHIPTSFKDKSLEVESYFVDKSIWNVHITFHDDKRFVFFTDQFIAEFSPQEFVDNCEQYLINN</querySeq>
+      <pattern>L E     +++L E  A+   I   R++ +  GY DG           I++ DN   L   L  +LE       +  +++L    +  D+ + +   W++ +   S    + L +P   +     + S   ++    + I +H   RFV      IA+F P+EF+    Q L+++</pattern>
+      <matchSeq start="4" end="165">LAEARQRAKQLLKEAAAQAGQI---RQQAWASGYQDGVIAAAGTLTKHINDSDN---LTRRLQGKLE-------DQARAMLSASLDHPDLLLVLLNEWLSGVDKNSSQSTLKLQLPQYCRAAHSRLSSSLQEQWEGKIQIEYHAKARFVMRYADQIAQFIPEEFITEATQALLHD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0A1L8RFX6_9ENTE" ac="A0A1L8RFX6" length="667" description="Reverse transcriptase domain-containing protein OS=Enterococcus canis OX=214095 GN=RU97_GL001309 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>9.2</expectation>
+      <identity>26.5</identity>
+      <positives>43.2</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="155">KIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKRE---EKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWN</querySeq>
+      <pattern>KI   +  +  +G+V+  + S  + E++  +  I LE  AK   ++ KRE    +FI  Y+   TK      ++   L S L SELEK  + +      +  KP E       I+++ +  L             S   K +EVE Y  +K+ WN</pattern>
+      <matchSeq start="214" end="356">KISQKINFNETHGLVVGPEFSRVIAELLFTRIDIDLEIFAKKNGLQNKREYSLYRFIDDYFIFATK-----KEHIELLQSFLRSELEKYNLTLNIGKTELQEKPFE-------IYDASIIGLKRAIKEFEFDKLLSAVKKHIEVEDYKGEKNQWN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="TR" id="S1P1T2_9ENTE" ac="S1P1T2" length="695" description="Reverse transcriptase domain-containing protein OS=Enterococcus dispar ATCC 51266 OX=1139219 GN=OMK_02255 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>9.2</expectation>
+      <identity>26.5</identity>
+      <positives>43.2</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="155">KIEMSLIKSPANGVVIKRKISDGLKEIVSLKEKILLETTAKIQSIEEKRE---EKFIQGYYDGYTKGIIDEMDNFIPLISLLCSELEKKRINMINDLKSILLKPSEEVDVFIKIFESWVTKLPSISGPVNLHIPTSFKDKSLEVESYFVDKSIWN</querySeq>
+      <pattern>KI   +  +  +G+V+  + S  + E++  +  I LE  AK   ++ KRE    +FI  Y+   TK      ++   L S L SELEK  + +      +  KP E       I+++ +  L             S   K +EVE Y  +K+ WN</pattern>
+      <matchSeq start="242" end="384">KISQKINFNETHGLVVGPEFSRVIAELLFTRIDIDLEIFAKKNGLQNKREYSLYRFIDDYFIFATK-----KEHIELLQSFLRSELEKYNLTLNIGKTELQEKPFE-------IYDASIIGLKRAIKEFEFDKLLSAVKKHIEVEDYKGEKNQWN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

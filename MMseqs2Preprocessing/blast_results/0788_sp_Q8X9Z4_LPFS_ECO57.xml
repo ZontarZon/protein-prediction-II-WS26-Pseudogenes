@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-204837-0688-19266529-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-204837-0688-19266529-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q8X9Z4|LPFS_ECO57" type="PROTEIN" length="28"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:48:37+00:00" end="2026-11-13T20:52:17+00:00" search="P0Y0M0DT0H0M220.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="12">
+   <hit number="1" database="TR" id="Q3Z5T1_SHISS" ac="Q3Z5T1" length="28" description="FruR leader peptide OS=Shigella sonnei (strain Ss046) OX=300269 GN=fruL PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>3.2e-13</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</querySeq>
+      <pattern>MRNLQPNMSRWAFFAKSVGTWNKSSCRS</pattern>
+      <matchSeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="Q32K13_SHIDS" ac="Q32K13" length="28" description="FruR leader peptide OS=Shigella dysenteriae serotype 1 (strain Sd197) OX=300267 GN=fruL PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>3.2e-13</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</querySeq>
+      <pattern>MRNLQPNMSRWAFFAKSVGTWNKSSCRS</pattern>
+      <matchSeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="LPFS_SHIFL" ac="P0ADF2" length="28" description="Putative fruR/shl operon leader peptide OS=Shigella flexneri OX=623 GN=fruL PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>3.2e-13</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</querySeq>
+      <pattern>MRNLQPNMSRWAFFAKSVGTWNKSSCRS</pattern>
+      <matchSeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="LPFS_ECOLI" ac="P0ADF0" length="28" description="Putative fruR/shl operon leader peptide OS=Escherichia coli (strain K12) OX=83333 GN=fruL PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>3.2e-13</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</querySeq>
+      <pattern>MRNLQPNMSRWAFFAKSVGTWNKSSCRS</pattern>
+      <matchSeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="LPFS_ECOL6" ac="P0ADF1" length="28" description="Putative fruR/shl operon leader peptide OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=fruL PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>3.2e-13</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</querySeq>
+      <pattern>MRNLQPNMSRWAFFAKSVGTWNKSSCRS</pattern>
+      <matchSeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="LPFS_ECO57" ac="Q8X9Z4" length="28" description="Putative fruR/shl operon leader peptide OS=Escherichia coli O157:H7 OX=83334 GN=fruL PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>3.2e-13</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</querySeq>
+      <pattern>MRNLQPNMSRWAFFAKSVGTWNKSSCRS</pattern>
+      <matchSeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="B7UIC9_ECO27" ac="B7UIC9" length="28" description="FruR leader peptide OS=Escherichia coli O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=E2348C_0084 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>1.9e-12</expectation>
+      <identity>96.4</identity>
+      <positives>96.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</querySeq>
+      <pattern>MRNLQPNMSRWAFFA SVGTWNKSSCRS</pattern>
+      <matchSeq start="1" end="28">MRNLQPNMSRWAFFANSVGTWNKSSCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ACH4E7Z2_SHIBO" ac="A0ACH4E7Z2" length="28" description="FruR/shl operon leader peptide OS=Shigella boydii OX=621 GN=ACNKHP_18235 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>5.4e-12</expectation>
+      <identity>96.4</identity>
+      <positives>96.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</querySeq>
+      <pattern>M NLQPNMSRWAFFAKSVGTWNKSSCRS</pattern>
+      <matchSeq start="1" end="28">MCNLQPNMSRWAFFAKSVGTWNKSSCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0ABR8T713_9ESCH" ac="A0ABR8T713" length="28" description="FruR/shl operon leader peptide OS=Escherichia whittamii OX=2762229 GN=H9644_00635 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>7.6e-12</expectation>
+      <identity>92.9</identity>
+      <positives>96.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</querySeq>
+      <pattern>MRNLQPN+SRWAFFA SVGTWNKSSCRS</pattern>
+      <matchSeq start="1" end="28">MRNLQPNISRWAFFANSVGTWNKSSCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A7H9KGK9_9ESCH" ac="A0A7H9KGK9" length="28" description="FruR/shl operon leader peptide OS=Escherichia marmotae OX=1499973 GN=KJE03_11010 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>4.4e-11</expectation>
+      <identity>92.9</identity>
+      <positives>92.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</querySeq>
+      <pattern>MRNLQP MSRWAFFA SVGTWNKSSCRS</pattern>
+      <matchSeq start="1" end="28">MRNLQPCMSRWAFFANSVGTWNKSSCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0ABU1DV77_9ESCH" ac="A0ABU1DV77" length="28" description="FruR/shl operon leader peptide OS=Escherichia ruysiae OX=2608867 GN=RGV86_16395 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>1.7e-08</expectation>
+      <identity>82.1</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="28">MRNLQPNMSRWAFFAKSVGTWNKSSCRS</querySeq>
+      <pattern>M NLQPN SRWAFFA  VG WNKSSCRS</pattern>
+      <matchSeq start="1" end="28">MCNLQPNKSRWAFFANLVGIWNKSSCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A8ALL9_CITK8" ac="A8ALL9" length="45" description="Uncharacterized protein OS=Citrobacter koseri (strain ATCC BAA-895 / CDC 4225-83 / SGSC4696) OX=290338 GN=CKO_03298 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>0.34</expectation>
+      <identity>75.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="28">SRWAFFAKSVGTWNKSSCRS</querySeq>
+      <pattern>+RW FFAKSV T NKS CRS</pattern>
+      <matchSeq start="19" end="38">TRWLFFAKSVVTRNKSGCRS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

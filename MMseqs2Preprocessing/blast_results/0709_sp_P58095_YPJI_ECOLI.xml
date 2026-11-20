@@ -1,0 +1,3918 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-201811-0824-11716797-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-201811-0824-11716797-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P58095|YPJI_ECOLI" type="PROTEIN" length="90"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:18:11+00:00" end="2026-11-13T20:23:46+00:00" search="P0Y0M0DT0H0M335.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="229">
+   <hit number="1" database="SP" id="YPJI_ECOLI" ac="P58095" length="90" description="Putative UPF0401 protein YpjI OS=Escherichia coli (strain K12) OX=83333 GN=ypjI PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>476</score>
+      <bits>188.0</bits>
+      <expectation>2e-60</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="90">MSNSEGWXSFXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>MSNSEGWXSFXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</pattern>
+      <matchSeq start="1" end="90">MSNSEGWXSFXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A1B7JQG7_9ENTR" ac="A0A1B7JQG7" length="79" description="Putative cytoplasmic protein OS=Kluyvera georgiana ATCC 51603 OX=1354264 GN=M989_03302 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <bits>99.0</bits>
+      <expectation>2.5e-25</expectation>
+      <identity>81.5</identity>
+      <positives>88.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="90">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>++ IEDDQG H RL+VRDAEGRMVWRAWNFEPDAGEG NRYI R+GIRTDTF R</pattern>
+      <matchSeq start="26" end="79">NVCIEDDQGSHFRLVVRDAEGRMVWRAWNFEPDAGEGLNRYIRRTGIRTDTFTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ABY0J6C0_9ENTR" ac="A0ABY0J6C0" length="79" description="Bacterial protein of uncharacterized function (DUF905) OS=Enterobacter roggenkampii OX=1812935 GN=ykfF_1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>243</score>
+      <bits>98.2</bits>
+      <expectation>5.1e-25</expectation>
+      <identity>73.3</identity>
+      <positives>81.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="90">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>V+   ++I +EDDQG H RL+VRD EGRMVWRAWNFEPDAGEG NRYI  SGIRTDT PR</pattern>
+      <matchSeq start="20" end="79">VTTTYSNITLEDDQGSHFRLVVRDTEGRMVWRAWNFEPDAGEGLNRYIRTSGIRTDTAPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A263VQE4_ENTAS" ac="A0A263VQE4" length="79" description="DUF905 domain-containing protein OS=Enterobacter asburiae OX=61645 GN=QAA55_020945 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <bits>95.1</bits>
+      <expectation>8.4e-24</expectation>
+      <identity>71.7</identity>
+      <positives>81.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="90">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>V+   ++I +EDDQG H RL+VR+AEGRMVWRAWNFEPDAGEG NRYI  SGIRTDT  R</pattern>
+      <matchSeq start="20" end="79">VTTTYSNITLEDDQGSHFRLVVREAEGRMVWRAWNFEPDAGEGLNRYIRTSGIRTDTSTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0AA91EEJ1_9GAMM" ac="A0AA91EEJ1" length="79" description="NgrB family protein OS=Obesumbacterium proteus ATCC 12841 OX=1354268 GN=M993_02145 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <bits>95.1</bits>
+      <expectation>8.4e-24</expectation>
+      <identity>71.7</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="90">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>V+   ++I +EDDQG H RL+VRD EGRMVWRAWNFEPDAGEG NRYI  SGIRTDT  R</pattern>
+      <matchSeq start="20" end="79">VTTTYSNITLEDDQGSHFRLVVRDTEGRMVWRAWNFEPDAGEGLNRYIRTSGIRTDTATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A506V9R3_9GAMM" ac="A0A506V9R3" length="79" description="DUF905 domain-containing protein OS=Mixta tenebrionis OX=2562439 GN=FKM52_10485 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <bits>95.1</bits>
+      <expectation>8.4e-24</expectation>
+      <identity>71.7</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="90">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>V+   ++I +EDDQG H RL+VRD EGRMVWRAWNFEPDAGEG NRYI  SGIRTDT  R</pattern>
+      <matchSeq start="20" end="79">VTTTYSNITLEDDQGSHFRLVVRDTEGRMVWRAWNFEPDAGEGLNRYIRTSGIRTDTATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0ABV4A8H1_9ENTR" ac="A0ABV4A8H1" length="79" description="DUF905 domain-containing protein OS=Pseudenterobacter timonensis OX=1755099 GN=AB7Z85_13010 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <bits>95.1</bits>
+      <expectation>8.4e-24</expectation>
+      <identity>71.7</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="90">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>V+   ++I +EDDQG H RL+VRD EGRMVWRAWNFEPDAGEG NRYI  SGIRTDT  R</pattern>
+      <matchSeq start="20" end="79">VTTTYSNITLEDDQGSHFRLVVRDTEGRMVWRAWNFEPDAGEGLNRYIRTSGIRTDTATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ABV4E617_9GAMM" ac="A0ABV4E617" length="79" description="DUF905 domain-containing protein OS=Erwinia aeris OX=3239803 GN=AB6T85_07885 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <bits>95.1</bits>
+      <expectation>8.4e-24</expectation>
+      <identity>71.7</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="90">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>V+   ++I +EDDQG H RL+VRD EGRMVWRAWNFEPDAGEG NRYI  SGIRTDT  R</pattern>
+      <matchSeq start="20" end="79">VTTTYSNITLEDDQGSHFRLVVRDTEGRMVWRAWNFEPDAGEGLNRYIRTSGIRTDTATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0AB35XAX2_9ENTR" ac="A0AB35XAX2" length="79" description="DUF905 domain-containing protein OS=Kluyvera ascorbata OX=51288 GN=V4836_12810 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <bits>95.1</bits>
+      <expectation>8.4e-24</expectation>
+      <identity>71.7</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="90">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>V+   ++I +EDDQG H RL+VRD EGRMVWRAWNFEPDAGEG NRYI  SGIRTDT  R</pattern>
+      <matchSeq start="20" end="79">VTTTYSNITLEDDQGSHFRLVVRDTEGRMVWRAWNFEPDAGEGLNRYIRTSGIRTDTATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0AAW3HB15_9ENTR" ac="A0AAW3HB15" length="79" description="DUF905 domain-containing protein OS=Enterobacter chengduensis OX=2494701 GN=SG71_21745 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <bits>95.1</bits>
+      <expectation>8.4e-24</expectation>
+      <identity>71.7</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="90">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>V+   ++I +EDDQG H RL+VRD EGRMVWRAWNFEPDAGEG NRYI  SGIRTDT  R</pattern>
+      <matchSeq start="20" end="79">VTTTYSNITLEDDQGSHFRLVVRDTEGRMVWRAWNFEPDAGEGLNRYIRTSGIRTDTATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="YKFF_ECOLI" ac="P75677" length="79" description="UPF0401 protein YkfF OS=Escherichia coli (strain K12) OX=83333 GN=ykfF PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>235</score>
+      <bits>95.1</bits>
+      <expectation>8.4e-24</expectation>
+      <identity>71.7</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="90">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>V+   ++I +EDDQG H RL+VRD EGRMVWRAWNFEPDAGEG NRYI  SGIRTDT  R</pattern>
+      <matchSeq start="20" end="79">VTTTYSNITLEDDQGSHFRLVVRDTEGRMVWRAWNFEPDAGEGLNRYIRTSGIRTDTATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A2T2XXY8_9ENTR" ac="A0A2T2XXY8" length="79" description="DUF905 domain-containing protein OS=Kluyvera genomosp. 2 OX=2774054 GN=C8256_19365 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>228</score>
+      <bits>92.4</bits>
+      <expectation>9.8e-23</expectation>
+      <identity>70.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="90">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>V+   ++I +EDDQG H RL+VRDAE RMVWRAWNFEP+AGEG NRYI  SGIRTDT  R</pattern>
+      <matchSeq start="20" end="79">VTTTYSNITLEDDQGSHFRLVVRDAESRMVWRAWNFEPNAGEGLNRYIRTSGIRTDTSTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0ABX5K1X8_9ENTR" ac="A0ABX5K1X8" length="79" description="DUF905 domain-containing protein OS=Cronobacter malonaticus OX=413503 GN=AUM46_07370 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>216</score>
+      <bits>87.8</bits>
+      <expectation>6.6e-21</expectation>
+      <identity>66.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="90">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>V+   ++I +EDDQG H RL+VRD EGRMVWRAWNFEPDA E  NRYI  SGIRT T  R</pattern>
+      <matchSeq start="20" end="79">VTTTYSNITLEDDQGSHFRLVVRDTEGRMVWRAWNFEPDAAESLNRYIRTSGIRTGTSTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0ABU6IAG0_9ENTR" ac="A0ABU6IAG0" length="79" description="DUF905 domain-containing protein OS=Leclercia adecarboxylata OX=83655 GN=VOF76_20645 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>207</score>
+      <bits>84.3</bits>
+      <expectation>1.5e-19</expectation>
+      <identity>70.4</identity>
+      <positives>75.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="90">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>+I IEDDQG H RL+VRD EGR VWRAWNFEPDAGEG N YI + GI  DT  R</pattern>
+      <matchSeq start="26" end="79">NITIEDDQGSHFRLVVRDTEGRTVWRAWNFEPDAGEGLNGYIRQYGIHKDTVTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0ABU4E4H2_9ENTR" ac="A0ABU4E4H2" length="79" description="DUF905 domain-containing protein OS=Atlantibacter subterraneus OX=255519 GN=R4P48_12580 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>207</score>
+      <bits>84.3</bits>
+      <expectation>1.5e-19</expectation>
+      <identity>70.4</identity>
+      <positives>75.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="90">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>+I IEDDQG H RL+VRD EGR VWRAWNFEPDAGEG N YI + GI  DT  R</pattern>
+      <matchSeq start="26" end="79">NITIEDDQGSHFRLVVRDTEGRTVWRAWNFEPDAGEGLNGYIRQYGIHKDTVTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A0H3CRU1_ENTCC" ac="A0A0H3CRU1" length="79" description="DUF905 domain-containing protein OS=Enterobacter cloacae subsp. cloacae (strain ATCC 13047 / DSM 30054 / NBRC 13535 / NCTC 10005 / WDCM 00083 / NCDC 279-56) OX=716541 GN=ECL_03713 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>207</score>
+      <bits>84.3</bits>
+      <expectation>1.5e-19</expectation>
+      <identity>70.4</identity>
+      <positives>75.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="90">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>+I IEDDQG H RL+VRD EGR VWRAWNFEPDAGEG N YI + GI  DT  R</pattern>
+      <matchSeq start="26" end="79">NITIEDDQGSHFRLVVRDTEGRTVWRAWNFEPDAGEGLNGYIRQYGIHKDTVTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="E3GBN3_ENTLS" ac="E3GBN3" length="78" description="Cytoplasmic protein OS=Enterobacter lignolyticus (strain SCF1) OX=701347 GN=Entcl_3835 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>206</score>
+      <bits>84.0</bits>
+      <expectation>2.1e-19</expectation>
+      <identity>78.7</identity>
+      <positives>83.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>DI IEDDQG H RL+ RD EGRMVWRAWNFEPDAGEG NRYI + GI</pattern>
+      <matchSeq start="26" end="72">DIAIEDDQGSHFRLVARDPEGRMVWRAWNFEPDAGEGLNRYIRQCGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0ABS6DBY6_9ENTR" ac="A0ABS6DBY6" length="78" description="DUF905 domain-containing protein OS=Cedecea davisae OX=158484 GN=KC222_01655 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>202</score>
+      <bits>82.4</bits>
+      <expectation>8.6e-19</expectation>
+      <identity>74.5</identity>
+      <positives>87.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+I+IEDDQG H RL+VRD+EGRM+WRAW FEPDAGEG NRYI  SG+</pattern>
+      <matchSeq start="26" end="72">NISIEDDQGTHFRLVVRDSEGRMIWRAWCFEPDAGEGLNRYIRNSGM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0ACH3IZ77_9GAMM" ac="A0ACH3IZ77" length="78" description="DUF905 domain-containing protein OS=Yersinia vastinensis OX=2890318 GN=ACIOG0_04240 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>202</score>
+      <bits>82.4</bits>
+      <expectation>8.6e-19</expectation>
+      <identity>74.5</identity>
+      <positives>87.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+I+IEDDQG H RL+VRD+EGRM+WRAW FEPDAGEG NRYI  SG+</pattern>
+      <matchSeq start="26" end="72">NISIEDDQGTHFRLVVRDSEGRMIWRAWCFEPDAGEGLNRYIRNSGM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0ABY2PWZ5_9ENTR" ac="A0ABY2PWZ5" length="78" description="DUF905 domain-containing protein OS=Citrobacter murliniae OX=67829 GN=DJ535_10250 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>194</score>
+      <bits>79.3</bits>
+      <expectation>1.4e-17</expectation>
+      <identity>72.3</identity>
+      <positives>87.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+++IEDDQG H  L+VRD+EGRMVWRAW+FEPDAGEG N YI +SGI</pattern>
+      <matchSeq start="26" end="72">NMSIEDDQGSHFHLVVRDSEGRMVWRAWSFEPDAGEGPNHYIRKSGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0ACT2EG88_9ENTR" ac="A0ACT2EG88" length="79" description="DUF905 domain-containing protein OS=Franconibacter helveticus 1159 OX=1405499 GN=ACP26D_04770 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>193</score>
+      <bits>79.0</bits>
+      <expectation>2.1e-17</expectation>
+      <identity>76.6</identity>
+      <positives>80.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+I IEDDQG H RLIVRD EGRMVWRAWNFEPDAG   NRYI + GI</pattern>
+      <matchSeq start="26" end="72">NIAIEDDQGSHFRLIVRDPEGRMVWRAWNFEPDAGTALNRYIGQDGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0ACN3MWP3_9ENTR" ac="A0ACN3MWP3" length="79" description="DUF905 domain-containing protein OS=Dryocola clanedunensis OX=2925396 GN=AAE045_19440 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>192</score>
+      <bits>78.6</bits>
+      <expectation>2.9e-17</expectation>
+      <identity>59.7</identity>
+      <positives>67.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="83">SADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>S  C     ++    +I IEDDQG H RL+VRD EGRMVWRAWNFEPDAG   NRYI + GI</pattern>
+      <matchSeq start="11" end="72">SFTCQQAEAITRRYHNIAIEDDQGSHFRLVVRDPEGRMVWRAWNFEPDAGTVLNRYIGQDGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0ABY3NZZ5_9ENTR" ac="A0ABY3NZZ5" length="78" description="DUF905 domain-containing protein OS=Lelliottia nimipressuralis OX=69220 GN=FZO59_16075 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <bits>78.2</bits>
+      <expectation>4.1e-17</expectation>
+      <identity>74.5</identity>
+      <positives>85.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+I+IEDDQG H RL+VRD+EGRMVWRAW FEPDAGEG  RY  +SGI</pattern>
+      <matchSeq start="26" end="72">NISIEDDQGSHFRLVVRDSEGRMVWRAWCFEPDAGEGLYRYGRKSGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0ABD6M9F9_9ENTR" ac="A0ABD6M9F9" length="78" description="DUF905 domain-containing protein OS=Citrobacter gillenii OX=67828 GN=FCH32_21915 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>191</score>
+      <bits>78.2</bits>
+      <expectation>4.1e-17</expectation>
+      <identity>72.3</identity>
+      <positives>85.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+I+IEDDQ  H RL+VRD EGRMVWRAW+FEPDAGEG NRY+ + GI</pattern>
+      <matchSeq start="26" end="72">NISIEDDQCSHFRLVVRDLEGRMVWRAWSFEPDAGEGLNRYLRQYGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A949Q593_9ENTR" ac="A0A949Q593" length="79" description="DUF905 domain-containing protein OS=Tenebrionicola larvae OX=2815733 GN=JZ788_15230 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>8.4e-17</expectation>
+      <identity>64.2</identity>
+      <positives>75.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+   ++I IEDDQG H RL+VRD EG MVWRAW+FEPD G G NRYI + GI</pattern>
+      <matchSeq start="20" end="72">VTVAYSNITIEDDQGSHFRLVVRDPEGLMVWRAWSFEPDGGAGLNRYIRQYGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0ABX5A5P7_9ENTR" ac="A0ABX5A5P7" length="82" description="DUF905 domain-containing protein OS=Lelliottia aquatilis OX=2080838 GN=C3712_04370 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>188</score>
+      <bits>77.0</bits>
+      <expectation>1.3e-16</expectation>
+      <identity>54.1</identity>
+      <positives>72.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="90">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>+V A   ++ IEDDQG H RL++RD EG+++WRAWNFE +AGE  NRY+   GI  +TF R</pattern>
+      <matchSeq start="21" end="81">VVVAAYQNVTIEDDQGTHFRLVIRDHEGQLIWRAWNFEAEAGEWLNRYLLSHGIPKNTFTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0ABZ1DHL3_9ENTR" ac="A0ABZ1DHL3" length="87" description="DUF905 domain-containing protein OS=Enterobacter wuhouensis OX=2529381 GN=VPX56_18450 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>187</score>
+      <bits>76.6</bits>
+      <expectation>2.1e-16</expectation>
+      <identity>66.0</identity>
+      <positives>75.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   +I IEDDQG H RL++RDA+GRMVWRAWNFEP AG G N YI   GI</pattern>
+      <matchSeq start="25" end="77">VNAAYQNIFIEDDQGSHFRLVLRDADGRMVWRAWNFEPKAGTGLNAYIRDYGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A8K0UZN3_9ENTR" ac="A0A8K0UZN3" length="79" description="DUF905 domain-containing protein OS=Tenebrionibacter intestinalis OX=2799638 GN=JJB97_03405 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>186</score>
+      <bits>76.3</bits>
+      <expectation>2.4e-16</expectation>
+      <identity>68.8</identity>
+      <positives>77.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++ IEDDQ  H RL+VRD +G MVWRAWNFEPDAG G N YI R GIR</pattern>
+      <matchSeq start="26" end="73">NVTIEDDQNTHFRLVVRDDDGSMVWRAWNFEPDAGAGLNPYIRRYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A2L1UZ51_9GAMM" ac="A0A2L1UZ51" length="76" description="DUF905 domain-containing protein OS=Rahnella sikkimica OX=1805933 GN=BV494_24455 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>184</score>
+      <bits>75.5</bits>
+      <expectation>4.5e-16</expectation>
+      <identity>63.0</identity>
+      <positives>77.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   +I IEDDQG H RL++R  +G+MVWRAWNFEP+AG G NRYI R G+R</pattern>
+      <matchSeq start="22" end="74">VAAAYANIAIEDDQGTHFRLVIR-VDGQMVWRAWNFEPEAGAGLNRYIIRCGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0ACC8S8W1_9ENTR" ac="A0ACC8S8W1" length="79" description="Uncharacterized protein OS=Enterobacter kobei OX=208224 GN=BH713_04365 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <bits>75.1</bits>
+      <expectation>6.9e-16</expectation>
+      <identity>62.3</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    +I IEDDQG H RL+ RD EG MVWRAW+FEPD G G NRYI + GI</pattern>
+      <matchSeq start="20" end="72">VTVAYRNITIEDDQGSHFRLVARDPEGLMVWRAWSFEPDGGAGLNRYIRQYGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A6M8U8L3_9GAMM" ac="A0A6M8U8L3" length="78" description="DUF905 domain-containing protein OS=Paramixta manurensis OX=2740817 GN=PMPD1_1041 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>1.3e-15</expectation>
+      <identity>68.1</identity>
+      <positives>85.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++ IED+Q IH RL+VRD+EGR+VWRAW+FE DAGEG NRYI + GI</pattern>
+      <matchSeq start="26" end="72">NVAIEDEQCIHFRLVVRDSEGRIVWRAWSFETDAGEGLNRYIRQYGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0ABY8GAT7_9GAMM" ac="A0ABY8GAT7" length="78" description="DUF905 domain-containing protein OS=Dickeya lacustris OX=2259638 GN=O1Q98_07750 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>1.3e-15</expectation>
+      <identity>64.2</identity>
+      <positives>75.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="89">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFP</querySeq>
+      <pattern>+I IED +  H RL+VRD+EGRMVWR W FEPDAGEG NRYI +SGI   + P</pattern>
+      <matchSeq start="26" end="78">NIAIEDARHSHFRLVVRDSEGRMVWRTWCFEPDAGEGLNRYIRKSGILKASSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A6M2B805_9GAMM" ac="A0A6M2B805" length="87" description="DUF905 domain-containing protein OS=Rahnella contaminans OX=2703882 GN=GW579_20355 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>3.4e-15</expectation>
+      <identity>62.3</identity>
+      <positives>73.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   +I IEDDQG H RL++RDA GRM+WR WNFEP+AG G N YI   GI</pattern>
+      <matchSeq start="25" end="77">VTAAYQNIFIEDDQGSHFRLVLRDANGRMLWRDWNFEPEAGTGLNAYIRDYGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0ABX4ZYS6_9ENTR" ac="A0ABX4ZYS6" length="79" description="DUF905 domain-containing protein OS=Lelliottia aquatilis OX=2080838 GN=C3712_16200 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>178</score>
+      <bits>73.2</bits>
+      <expectation>3.9e-15</expectation>
+      <identity>60.3</identity>
+      <positives>70.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="87">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDT</querySeq>
+      <pattern>+V+A   +I IEDDQ  H RL+VRD EGRM  RAWNFEPDAG G N YI + GI  +T</pattern>
+      <matchSeq start="19" end="76">VVTATYRNITIEDDQHSHFRLVVRDREGRMARRAWNFEPDAGAGLNPYIRQCGILKET</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0ABY5UUY6_9GAMM" ac="A0ABY5UUY6" length="79" description="DUF905 domain-containing protein OS=Yersinia alsatica OX=2890317 GN=N0H69_05945 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>178</score>
+      <bits>73.2</bits>
+      <expectation>3.9e-15</expectation>
+      <identity>66.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++ IEDDQ  H RL+VRD +G MVWRAWNFEPDAG G   YI R GIR</pattern>
+      <matchSeq start="26" end="73">NVTIEDDQTTHFRLVVRDDDGSMVWRAWNFEPDAGAGLTPYIRRYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A9X3YCE0_9ENTR" ac="A0A9X3YCE0" length="79" description="DUF905 domain-containing protein OS=Leclercia adecarboxylata OX=83655 GN=VOF76_27040 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>178</score>
+      <bits>73.2</bits>
+      <expectation>3.9e-15</expectation>
+      <identity>66.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++ IEDDQ  H RL+VRD +G MVWRAWNFEPDAG G   YI R GIR</pattern>
+      <matchSeq start="26" end="73">NVTIEDDQTTHFRLVVRDDDGSMVWRAWNFEPDAGAGLTPYIRRYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0ABX5QWP4_9GAMM" ac="A0ABX5QWP4" length="79" description="DUF905 domain-containing protein OS=Yersinia hibernica OX=2339259 GN=D5F51_02895 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>176</score>
+      <bits>72.4</bits>
+      <expectation>7.9e-15</expectation>
+      <identity>68.1</identity>
+      <positives>74.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+I IEDDQG H RL+VRD EG MVWRAWNFEPD G G N YI +  I</pattern>
+      <matchSeq start="26" end="72">NITIEDDQGSHFRLVVRDPEGLMVWRAWNFEPDGGAGLNLYIRQYSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0A6L5E5T4_9ENTR" ac="A0A6L5E5T4" length="79" description="DUF905 domain-containing protein OS=Citrobacter telavivensis OX=2653932 GN=GBB84_05020 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>176</score>
+      <bits>72.4</bits>
+      <expectation>7.9e-15</expectation>
+      <identity>66.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++ IEDDQ  H RL+VRD +G MVWRAWNFEPDAG G N  I R GIR</pattern>
+      <matchSeq start="26" end="73">NVTIEDDQNTHFRLVVRDDDGGMVWRAWNFEPDAGAGLNPNIRRYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0ACA8DFQ6_9ENTR" ac="A0ACA8DFQ6" length="76" description="DUF905 domain-containing protein OS=Citrobacter farmeri OX=67824 GN=CI104_27865 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>1e-14</expectation>
+      <identity>63.6</identity>
+      <positives>74.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A  T++ IEDDQG H RL+VR   G MVWRAWNFE DAG+  NRYI R GIR</pattern>
+      <matchSeq start="20" end="73">VVAAQYTNVAIEDDQGTHFRLVVRQ-NGVMVWRAWNFEADAGKWLNRYIERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A2T2XX05_9ENTR" ac="A0A2T2XX05" length="76" description="DUF905 domain-containing protein OS=Kluyvera genomosp. 2 OX=2774054 GN=C8256_21370 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>1e-14</expectation>
+      <identity>63.6</identity>
+      <positives>74.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A  T++ IEDDQG H RL+VR   G MVWRAWNFE DAG+  NRYI R GIR</pattern>
+      <matchSeq start="20" end="73">VVAAQYTNVAIEDDQGTHFRLVVRQ-NGVMVWRAWNFEADAGKWLNRYIERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A7I7DRS3_9ENTR" ac="A0A7I7DRS3" length="76" description="DUF905 domain-containing protein OS=Citrobacter portucalensis OX=1639133 GN=RY846_26615 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>1e-14</expectation>
+      <identity>63.6</identity>
+      <positives>74.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A  T++ IEDDQG H RL+VR   G MVWRAWNFE DAG+  NRYI R GIR</pattern>
+      <matchSeq start="20" end="73">VVAAQYTNVAIEDDQGTHFRLVVRQ-NGVMVWRAWNFEADAGKWLNRYIERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0ABX9F4N6_9ENTR" ac="A0ABX9F4N6" length="76" description="DUF905 domain-containing protein OS=Enterobacter kobei OX=208224 GN=DP181_12180 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>1e-14</expectation>
+      <identity>63.6</identity>
+      <positives>74.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A  T++ IEDDQG H RL+VR   G MVWRAWNFE DAG+  NRYI R GIR</pattern>
+      <matchSeq start="20" end="73">VVAAQYTNVAIEDDQGTHFRLVVRQ-NGVMVWRAWNFEADAGKWLNRYIERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0ACG2ZZ42_9ENTR" ac="A0ACG2ZZ42" length="76" description="DUF905 domain-containing protein OS=Enterobacter hormaechei OX=158836 GN=QAA82_026730 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>1e-14</expectation>
+      <identity>63.6</identity>
+      <positives>74.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A  T++ IEDDQG H RL+VR   G MVWRAWNFE DAG+  NRYI R GIR</pattern>
+      <matchSeq start="20" end="73">VVAAQYTNVAIEDDQGTHFRLVVRQ-NGVMVWRAWNFEADAGKWLNRYIERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A2L1UZ05_9GAMM" ac="A0A2L1UZ05" length="76" description="DUF905 domain-containing protein OS=Rahnella sikkimica OX=1805933 GN=BV494_25180 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>174</score>
+      <bits>71.6</bits>
+      <expectation>1.5e-14</expectation>
+      <identity>59.3</identity>
+      <positives>75.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL+VR   G+MVWRAWNFEP+AGEG N+YI   G++</pattern>
+      <matchSeq start="22" end="74">VAAAYRNVAIEDDQGTHFRLVVR-VFGQMVWRAWNFEPNAGEGLNKYISSEGVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0ABD6M0I3_9ENTR" ac="A0ABD6M0I3" length="79" description="DUF905 domain-containing protein OS=Citrobacter gillenii OX=67828 GN=FCH32_08900 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>173</score>
+      <bits>71.2</bits>
+      <expectation>2.3e-14</expectation>
+      <identity>62.3</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   +I IEDDQ  H RL+VRD EGRM WRAW+FE DAG G N YI + GI</pattern>
+      <matchSeq start="20" end="72">VTATYRNITIEDDQHSHFRLVVRDREGRMAWRAWSFESDAGAGLNPYIRQYGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0ABV1ZFF5_9ENTR" ac="A0ABV1ZFF5" length="71" description="DUF905 family protein OS=Enterobacter intestinihominis OX=3133180 GN=ABMC12_12885 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>3.7e-14</expectation>
+      <identity>57.4</identity>
+      <positives>76.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="38" end="84">INIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+ IEDDQ  H RL +RDAEG+++WR WNFEP AG+G N Y+ R G++</pattern>
+      <matchSeq start="24" end="70">VAIEDDQHTHFRLAIRDAEGQLIWRVWNFEPGAGQGLNHYLQRYGVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0A0G3B3H1_9ENTR" ac="A0A0G3B3H1" length="76" description="DUF905 domain-containing protein OS=Leclercia adecarboxylata OX=83655 GN=VOF76_22010 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>4.2e-14</expectation>
+      <identity>61.8</identity>
+      <positives>72.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A  T++ IEDDQG H RL+VR   G MVWRAWNFE D G+  NRYI R GIR</pattern>
+      <matchSeq start="20" end="73">VVAAQYTNVAIEDDQGTHFRLVVRQ-NGVMVWRAWNFEADTGKWLNRYIERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0A7Y7BBX6_STRMO" ac="A0A7Y7BBX6" length="76" description="DUF905 domain-containing protein OS=Streptomyces morookaense OX=1970 GN=HG542_32570 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>4.2e-14</expectation>
+      <identity>61.8</identity>
+      <positives>72.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A  T++ IEDDQG H RL+VR   G MVWRAWNFE D G+  NRYI R GIR</pattern>
+      <matchSeq start="20" end="73">VVAAQYTNVAIEDDQGTHFRLVVRQ-NGVMVWRAWNFEADTGKWLNRYIERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0AAW3HBW6_9ENTR" ac="A0AAW3HBW6" length="76" description="DUF905 domain-containing protein OS=Enterobacter chengduensis OX=2494701 GN=SG71_21140 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>4.2e-14</expectation>
+      <identity>61.8</identity>
+      <positives>72.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A  T++ IEDDQG H RL+VR   G MVWRAWNFE D G+  NRYI R GIR</pattern>
+      <matchSeq start="20" end="73">VVAAQYTNVAIEDDQGTHFRLVVRQ-NGVMVWRAWNFEADTGKWLNRYIERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0A485D3T1_KLEPL" ac="A0A485D3T1" length="77" description="DUF905 domain-containing protein OS=Klebsiella planticola OX=575 GN=U5E74_25435 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>4.3e-14</expectation>
+      <identity>63.0</identity>
+      <positives>72.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL+VR   G MVWRAWNFE DAG+  NRYI R GIR</pattern>
+      <matchSeq start="22" end="74">VAAQFENVAIEDDQGSHFRLVVRQ-NGEMVWRAWNFEADAGKWLNRYIERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0ABT2E7T8_9ENTR" ac="A0ABT2E7T8" length="83" description="DUF905 domain-containing protein OS=Scandinavium hiltneri OX=2926519 GN=MUU47_23040 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>5e-14</expectation>
+      <identity>53.1</identity>
+      <positives>67.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="84">ASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>A AD VA     A  T++ IEDDQG H RL++R++EG ++WR WNF P+AG   NRYI   GIR</pattern>
+      <matchSeq start="18" end="76">AQADAVA-----AMYTNVAIEDDQGTHFRLVIRNSEGMLLWRDWNFAPEAGAMLNRYIASDGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0ABU5M3P2_KLEPL" ac="A0ABU5M3P2" length="82" description="DUF905 domain-containing protein OS=Klebsiella planticola OX=575 GN=U5E74_14290 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>7e-14</expectation>
+      <identity>63.0</identity>
+      <positives>74.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++A   +I IEDDQG H RL++R  EG MVWRAWNFEP+AG   NRYI R GIR</pattern>
+      <matchSeq start="28" end="80">IAAQYDNIAIEDDQGTHFRLVIR-CEGVMVWRAWNFEPEAGVMLNRYIARYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0ABY3P1Z4_9ENTR" ac="A0ABY3P1Z4" length="76" description="DUF905 domain-containing protein OS=Lelliottia nimipressuralis OX=69220 GN=FZO59_11865 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>8.5e-14</expectation>
+      <identity>64.8</identity>
+      <positives>74.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A  ++I IEDDQG H RL++R  E  MVWRAWNFEPDAG   NRYI R GIR</pattern>
+      <matchSeq start="20" end="72">VAAQYSNIAIEDDQGTHFRLVIRH-ERCMVWRAWNFEPDAGYWLNRYITRYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0ABY6V7C6_9ENTR" ac="A0ABY6V7C6" length="76" description="DUF905 domain-containing protein OS=Klebsiella spallanzanii OX=2587528 GN=SB6411_04232 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>8.5e-14</expectation>
+      <identity>61.1</identity>
+      <positives>74.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++A   ++ IEDDQG H RL++R  EG MVWRAWNFEP+AG   NRYI R GIR</pattern>
+      <matchSeq start="22" end="74">IAAQYDNVAIEDDQGTHFRLVIR-CEGVMVWRAWNFEPEAGVMLNRYIARYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0ABY6X2J4_9ENTR" ac="A0ABY6X2J4" length="77" description="Bacterial protein of uncharacterized function (DUF905) OS=Klebsiella quasivariicola OX=2026240 GN=ykfF_1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>8.7e-14</expectation>
+      <identity>59.6</identity>
+      <positives>76.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++ IEDDQG H RL++RD+EG ++WRAWNFE  AGE  NRY+   GI</pattern>
+      <matchSeq start="28" end="74">NVTIEDDQGTHFRLVIRDSEGTLIWRAWNFEASAGEWLNRYLLSHGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0ABU5M6C9_KLEPL" ac="A0ABU5M6C9" length="77" description="DUF905 domain-containing protein OS=Klebsiella planticola OX=575 GN=U5E74_19205 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>8.7e-14</expectation>
+      <identity>59.6</identity>
+      <positives>76.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++ IEDDQG H RL++RD+EG ++WRAWNFE  AGE  NRY+   GI</pattern>
+      <matchSeq start="28" end="74">NVTIEDDQGTHFRLVIRDSEGTLIWRAWNFEASAGEWLNRYLLSHGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0ABN7GSF6_9ENTR" ac="A0ABN7GSF6" length="77" description="Bacterial protein of uncharacterized function (DUF905) OS=Citrobacter youngae OX=133448 GN=ykfF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>8.7e-14</expectation>
+      <identity>59.6</identity>
+      <positives>76.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++ IEDDQG H RL++RD+EG ++WRAWNFE  AGE  NRY+   GI</pattern>
+      <matchSeq start="28" end="74">NVTIEDDQGTHFRLVIRDSEGTLIWRAWNFEASAGEWLNRYLLSHGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0ACG2ZK65_9ENTR" ac="A0ACG2ZK65" length="77" description="DUF905 domain-containing protein OS=Enterobacter hormaechei OX=158836 GN=QAA82_001950 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>8.7e-14</expectation>
+      <identity>59.6</identity>
+      <positives>76.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++ IEDDQG H RL++RD+EG ++WRAWNFE  AGE  NRY+   GI</pattern>
+      <matchSeq start="28" end="74">NVTIEDDQGTHFRLVIRDSEGTLIWRAWNFEASAGEWLNRYLLSHGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0AAW3HJD6_9ENTR" ac="A0AAW3HJD6" length="77" description="DUF905 domain-containing protein OS=Enterobacter chengduensis OX=2494701 GN=SG71_08450 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>8.7e-14</expectation>
+      <identity>59.6</identity>
+      <positives>76.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++ IEDDQG H RL++RD+EG ++WRAWNFE  AGE  NRY+   GI</pattern>
+      <matchSeq start="28" end="74">NVTIEDDQGTHFRLVIRDSEGTLIWRAWNFEASAGEWLNRYLLSHGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0AAW3HJL9_9ENTR" ac="A0AAW3HJL9" length="77" description="DUF905 domain-containing protein OS=Enterobacter chengduensis OX=2494701 GN=SG71_09065 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>8.7e-14</expectation>
+      <identity>56.6</identity>
+      <positives>73.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V A   ++ IEDDQG H RL++RD+EG+++WRAW+FE  AGE  NRYI   GI</pattern>
+      <matchSeq start="22" end="74">VVAVYLNVAIEDDQGTHFRLVIRDSEGKLIWRAWSFEASAGEWLNRYIASHGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0ABS1A7B4_9ENTR" ac="A0ABS1A7B4" length="91" description="DUF905 family protein OS=Citrobacter cronae OX=1748967 GN=I6M80_12125 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>8.8e-14</expectation>
+      <identity>51.9</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++A  T++ IEDDQG H RL++RD  G ++WR WNF P+AG   NRYI  +GI+</pattern>
+      <matchSeq start="22" end="75">IAAAYTNVTIEDDQGTHFRLVIRDKSGMLIWRDWNFAPEAGVMLNRYIASNGIQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0ACT0PFJ0_9ENTR" ac="A0ACT0PFJ0" length="79" description="DUF905 domain-containing protein OS=Yokenella regensburgei OX=158877 GN=KXR87_11520 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>9.2e-14</expectation>
+      <identity>64.6</identity>
+      <positives>72.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++ IEDDQ  H RL+VRD +G MVWRAWNFEPDAG     YI R GIR</pattern>
+      <matchSeq start="26" end="73">NVTIEDDQTTHFRLVVRDDDGGMVWRAWNFEPDAGAELTPYIRRYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0A949Q2D4_9ENTR" ac="A0A949Q2D4" length="79" description="DUF905 domain-containing protein OS=Tenebrionicola larvae OX=2815733 GN=JZ788_06425 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>9.2e-14</expectation>
+      <identity>64.6</identity>
+      <positives>72.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++ IEDDQ  H RL+VRD +G MVWRAWNFEPDAG     YI R GIR</pattern>
+      <matchSeq start="26" end="73">NVTIEDDQTTHFRLVVRDDDGGMVWRAWNFEPDAGAELTPYIRRYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0ABY6V7E8_9ENTR" ac="A0ABY6V7E8" length="82" description="DUF905 domain-containing protein OS=Klebsiella spallanzanii OX=2587528 GN=SB6411_04478 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>9.9e-14</expectation>
+      <identity>61.1</identity>
+      <positives>74.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++A   ++ IEDDQG H RL++R  EG MVWRAWNFEP+AG   NRYI R GIR</pattern>
+      <matchSeq start="28" end="80">IAAQYDNVAIEDDQGTHFRLVIR-CEGVMVWRAWNFEPEAGVMLNRYIARYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0ABT6E987_9ENTR" ac="A0ABT6E987" length="85" description="DUF905 domain-containing protein OS=Klebsiella huaxiensis OX=2153354 GN=OXR69_008315 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>1.1e-13</expectation>
+      <identity>61.1</identity>
+      <positives>74.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++A   ++ IEDDQG H RL++R  EG MVWRAWNFEP+AG   NRYI R GIR</pattern>
+      <matchSeq start="31" end="83">IAAQYDNVAIEDDQGTHFRLVIR-CEGVMVWRAWNFEPEAGVMLNRYIARYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0A1B7ISG2_9ENTR" ac="A0A1B7ISG2" length="190" description="Putative cytoplasmic protein OS=Buttiauxella brennerae ATCC 51605 OX=1354251 GN=M975_1215 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>1.5e-13</expectation>
+      <identity>54.5</identity>
+      <positives>72.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="85">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRT</querySeq>
+      <pattern>V A   ++ IEDDQ  H RL++RDAEG +VWRAWNFE DAG+G N Y+   G+++</pattern>
+      <matchSeq start="135" end="189">VVAAYCNVTIEDDQRAHFRLVIRDAEGLLVWRAWNFEADAGQGLNAYLLSHGVKS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0A7Z9CNW4_KLETE" ac="A0A7Z9CNW4" length="77" description="Bacterial protein of uncharacterized function (DUF905) OS=Klebsiella terrigena OX=577 GN=ykfF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>167</score>
+      <bits>68.9</bits>
+      <expectation>1.8e-13</expectation>
+      <identity>61.8</identity>
+      <positives>70.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V A   ++ IEDDQG H RL+VR   G MVWRAWNFE DAG+  NRYI R GIR</pattern>
+      <matchSeq start="21" end="74">VVVAQFENVAIEDDQGSHFRLVVRQ-NGDMVWRAWNFEADAGKWLNRYIERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0AAJ5QSG3_9ENTR" ac="A0AAJ5QSG3" length="82" description="DUF905 domain-containing protein OS=Klebsiella electrica OX=1259973 GN=OR613_23375 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>167</score>
+      <bits>68.9</bits>
+      <expectation>2e-13</expectation>
+      <identity>62.3</identity>
+      <positives>73.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++A   +I IEDDQG H RL++R  EG MVWRAWNFEP+AG   NRYI R GI</pattern>
+      <matchSeq start="28" end="79">IAAQYDNITIEDDQGTHFRLVIR-CEGVMVWRAWNFEPEAGVMLNRYIARYGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0ABN0Q6Y1_ENTCL" ac="A0ABN0Q6Y1" length="76" description="DUF905 domain-containing protein OS=Enterobacter cloacae S611 OX=1399146 GN=EDP2_2703 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>2.4e-13</expectation>
+      <identity>63.0</identity>
+      <positives>74.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A  +++ IEDDQG H RL++R  E  MVWRAWNFEPDAG   NRYI R GIR</pattern>
+      <matchSeq start="20" end="72">VAAQYSNVVIEDDQGTHFRLVIRH-ECCMVWRAWNFEPDAGYWLNRYIARYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="H5V7Q2_ATLHE" ac="H5V7Q2" length="307" description="Putative DeoR family transcriptional regulator YfjR OS=Atlantibacter hermannii NBRC 105704 OX=1115512 GN=yfjR PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>178</score>
+      <bits>73.2</bits>
+      <expectation>2.5e-13</expectation>
+      <identity>66.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++ IEDDQ  H RL+VRD +G MVWRAWNFEPDAG G   YI R GIR</pattern>
+      <matchSeq start="258" end="305">NVTIEDDQTTHFRLVVRDDDGSMVWRAWNFEPDAGAGLTPYIRRYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0A0H3DVT0_EDWTF" ac="A0A0H3DVT0" length="76" description="Putative cytoplasmic protein OS=Edwardsiella tarda (strain FL6-60) OX=718251 GN=ETAF_2486 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>3.4e-13</expectation>
+      <identity>63.0</identity>
+      <positives>72.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL++R  E  MVWRAWNFEPDAG   NRYI R GIR</pattern>
+      <matchSeq start="20" end="72">VAAQYCNVAIEDDQGSHFRLVIRH-ERCMVWRAWNFEPDAGYWLNRYITRYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="Q8GA19_ECOLX" ac="Q8GA19" length="77" description="CP4-6 prophage protein OS=Escherichia coli OX=562 GN=ykfF_4 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>3.5e-13</expectation>
+      <identity>52.8</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    ++ IEDDQG H RL++R+AEG++ WR WNFEPDAG+  N Y+   GI</pattern>
+      <matchSeq start="22" end="74">VTTAYRNVLIEDDQGTHFRLVIRNAEGQLRWRCWNFEPDAGKQLNSYLASEGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A0L0GQB8_9ENTR" ac="A0A0L0GQB8" length="77" description="DUF905 domain-containing protein OS=Trabulsiella odontotermitis OX=379893 GN=GM31_02640 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>3.5e-13</expectation>
+      <identity>56.2</identity>
+      <positives>77.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+I IEDDQG H RL++RD++ +++WRAWNFE  AGE  NRY+   G+R</pattern>
+      <matchSeq start="28" end="75">NIAIEDDQGTHFRLVIRDSDNQLIWRAWNFEASAGEWLNRYLVSHGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="B7MK16_ECO45" ac="B7MK16" length="77" description="DUF905 domain-containing protein OS=Escherichia coli O45:K1 (strain S88 / ExPEC) OX=585035 GN=ECS88_4647 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>3.5e-13</expectation>
+      <identity>50.0</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="83">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+++    ++ IEDDQG H RL++R+AEG++ WR WNFEPDAG+  N Y+   GI</pattern>
+      <matchSeq start="21" end="74">VITTAYRNVLIEDDQGTHFRLVIRNAEGQLRWRCWNFEPDAGKQLNSYLASEGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="B7MN71_ECO45" ac="B7MN71" length="77" description="DUF905 domain-containing protein OS=Escherichia coli O45:K1 (strain S88 / ExPEC) OX=585035 GN=ECS88_3308 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>3.5e-13</expectation>
+      <identity>52.8</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    ++ IEDDQG H RL++R+AEG++ WR WNFEPDAG+  N Y+   GI</pattern>
+      <matchSeq start="22" end="74">VTTAYRNVLIEDDQGTHFRLVIRNAEGQLRWRCWNFEPDAGKQLNSYLASEGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0ABU1C775_9ESCH" ac="A0ABU1C775" length="77" description="DUF905 family protein OS=Escherichia marmotae OX=1499973 GN=KJE03_19915 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>3.5e-13</expectation>
+      <identity>52.8</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    ++ IEDDQG H RL++R+AEG++ WR WNFEPDAG+  N Y+   GI</pattern>
+      <matchSeq start="22" end="74">VTTAYRNVLIEDDQGTHFRLVIRNAEGQLRWRCWNFEPDAGKQLNSYLASEGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="B7LDN4_ECO55" ac="B7LDN4" length="77" description="DUF905 domain-containing protein OS=Escherichia coli (strain 55989 / EAEC) OX=585055 GN=EC55989_4889 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>3.5e-13</expectation>
+      <identity>52.8</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    ++ IEDDQG H RL++R+AEG++ WR WNFEPDAG+  N Y+   GI</pattern>
+      <matchSeq start="22" end="74">VTTAYRNVLIEDDQGTHFRLVIRNAEGQLRWRCWNFEPDAGKQLNSYLASEGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="SP" id="Y4569_ECOL6" ac="Q8FBZ5" length="77" description="UPF0401 protein c4569 OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=c4569 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>3.5e-13</expectation>
+      <identity>52.8</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    ++ IEDDQG H RL++R+AEG++ WR WNFEPDAG+  N Y+   GI</pattern>
+      <matchSeq start="22" end="74">VTTAYRNVLIEDDQGTHFRLVIRNAEGQLRWRCWNFEPDAGKQLNSYLASEGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="SP" id="Y3853_ECOL5" ac="Q0TB55" length="77" description="UPF0401 protein ECP_3853 OS=Escherichia coli O6:K15:H31 (strain 536 / UPEC) OX=362663 GN=ECP_3853 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>3.5e-13</expectation>
+      <identity>52.8</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    ++ IEDDQG H RL++R+AEG++ WR WNFEPDAG+  N Y+   GI</pattern>
+      <matchSeq start="22" end="74">VTTAYRNVLIEDDQGTHFRLVIRNAEGQLRWRCWNFEPDAGKQLNSYLASEGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0ABW6CKC0_RAHSY" ac="A0ABW6CKC0" length="93" description="DUF905 family protein OS=Rahnella sp. (strain Y9602) OX=2703885 GN=ACFPK4_27340 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>3.7e-13</expectation>
+      <identity>57.4</identity>
+      <positives>77.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A  ++I IEDDQG H RL++R   G+MVWRAWNF+PDAG  FN++I  +G+R</pattern>
+      <matchSeq start="39" end="91">VAAAYSNIAIEDDQGTHFRLVLR-VFGQMVWRAWNFQPDAGAEFNKFIVSNGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0ABS6GCH3_9ENTR" ac="A0ABS6GCH3" length="73" description="DUF905 domain-containing protein OS=Enterobacter sichuanensis OX=2071710 GN=KQV47_05980 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>4.5e-13</expectation>
+      <identity>63.0</identity>
+      <positives>74.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A  ++I IEDDQG H RL++R  E  MVWRAW+FEPDAG   NRYI R GIR</pattern>
+      <matchSeq start="17" end="69">VAAQYSNIAIEDDQGTHFRLVIRH-ERCMVWRAWDFEPDAGYWLNRYITRYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0ABN3U9Q5_9ACTN" ac="A0ABN3U9Q5" length="76" description="DUF905 domain-containing protein OS=Streptomyces luteosporeus OX=173856 GN=GCM10010315_60800 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>4.9e-13</expectation>
+      <identity>60.0</identity>
+      <positives>70.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A  T++ IED QG H RL+VR   G MVWRAWNFE D G+  NRYI R GIR</pattern>
+      <matchSeq start="20" end="73">VVAAQYTNVAIEDGQGTHFRLVVRQ-NGVMVWRAWNFEADTGKWLNRYIERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0A085A7S0_9ENTR" ac="A0A085A7S0" length="77" description="Putative cytoplasmic protein OS=Trabulsiella guamensis ATCC 49490 OX=1005994 GN=ykfF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>5e-13</expectation>
+      <identity>54.7</identity>
+      <positives>73.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   +I IEDDQG H RL++RD + +++WRAWNFE +AGE  NRY+   GI</pattern>
+      <matchSeq start="22" end="74">VAALYCNITIEDDQGSHFRLVIRDRDSQLIWRAWNFEANAGEWLNRYLLSHGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A7ZRH5_ECO24" ac="A7ZRH5" length="77" description="DUF905 domain-containing protein OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_3407 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>5e-13</expectation>
+      <identity>52.8</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    ++ IEDDQG H RL++R+AEG++ WR WNFEPDAG+  N Y+   GI</pattern>
+      <matchSeq start="22" end="74">VTTAYRNVLIEDDQGTHFRLVIRNAEGQLRWRCWNFEPDAGKQLNPYLASEGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="SP" id="Y3010_ECOL5" ac="Q0TDI6" length="77" description="UPF0401 protein ECP_3010 OS=Escherichia coli O6:K15:H31 (strain 536 / UPEC) OX=362663 GN=ECP_3010 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>5e-13</expectation>
+      <identity>52.8</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    ++ IEDDQG H RL++R+AEG++ WR WNFEPDAG+  N Y+   GI</pattern>
+      <matchSeq start="22" end="74">VTTAYLNVLIEDDQGTHFRLVIRNAEGQLRWRCWNFEPDAGKQLNPYLASEGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0ACD8BEH0_9ENTR" ac="A0ACD8BEH0" length="82" description="UPF0401 protein YubL OS=Klebsiella michiganensis OX=1134687 GN=yubL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>5.7e-13</expectation>
+      <identity>61.1</identity>
+      <positives>72.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++A   +I IEDDQG H RL++R  EG MVWRAWNFEP+AG   N YI R GIR</pattern>
+      <matchSeq start="28" end="80">IAAQYDNIAIEDDQGTHFRLVIR-CEGVMVWRAWNFEPEAGVMLNSYIARYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0AB35XCR7_9ENTR" ac="A0AB35XCR7" length="82" description="DUF905 family protein OS=Kluyvera ascorbata OX=51288 GN=V4836_21385 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>5.7e-13</expectation>
+      <identity>52.1</identity>
+      <positives>77.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++ IEDDQ  H RL++RDA+G+++WRAWNFEP AG   N ++ R G++</pattern>
+      <matchSeq start="33" end="80">NVGIEDDQHTHFRLVIRDADGQLIWRAWNFEPGAGHDLNTHLQRYGVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0ABT5CYT4_9ENTR" ac="A0ABT5CYT4" length="76" description="DUF905 domain-containing protein OS=Klebsiella pasteurii OX=2587529 GN=PIK62_29500 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <bits>67.4</bits>
+      <expectation>6.9e-13</expectation>
+      <identity>59.3</identity>
+      <positives>72.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++A   ++ IEDDQG H RL++R  EG MVWRAWNFEP+AG   N YI R GIR</pattern>
+      <matchSeq start="22" end="74">IAAQYDNVAIEDDQGTHFRLVIR-CEGVMVWRAWNFEPEAGVMLNSYIARYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0ABX9WQT3_9GAMM" ac="A0ABX9WQT3" length="76" description="DUF905 domain-containing protein OS=Dickeya undicola OX=1577887 GN=EFS38_19855 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <bits>67.4</bits>
+      <expectation>6.9e-13</expectation>
+      <identity>61.1</identity>
+      <positives>74.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V++  +++ IEDDQG H RL++R  E  MVWRAWNFEPDAG   NRYI R GIR</pattern>
+      <matchSeq start="20" end="72">VASQYSNVVIEDDQGTHFRLVIRH-ECCMVWRAWNFEPDAGYWLNRYIARYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0ABT6EBK0_9ENTR" ac="A0ABT6EBK0" length="85" description="DUF905 domain-containing protein OS=Klebsiella huaxiensis OX=2153354 GN=OXR69_004260 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <bits>67.4</bits>
+      <expectation>8.7e-13</expectation>
+      <identity>59.3</identity>
+      <positives>72.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++A   ++ IEDDQG H RL++R  EG MVWRAWNFEP+AG   N YI R GIR</pattern>
+      <matchSeq start="31" end="83">IAAQYDNVAIEDDQGTHFRLVIR-CEGVMVWRAWNFEPEAGVMLNSYIARYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0ABX5K6Z1_9ENTR" ac="A0ABX5K6Z1" length="77" description="DUF905 domain-containing protein OS=Cronobacter malonaticus OX=413503 GN=AUM46_07140 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>1e-12</expectation>
+      <identity>54.4</identity>
+      <positives>68.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="87">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDT</querySeq>
+      <pattern>V++  T++  EDDQ  H RL+VRD +GRM WRA NFEP+AG   NRY+   GIR  T</pattern>
+      <matchSeq start="20" end="76">VASQYTNVATEDDQNTHFRLVVRDTDGRMHWRARNFEPEAGYWLNRYLTSDGIRRAT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0ABV3NNN2_9ENTR" ac="A0ABV3NNN2" length="79" description="DUF905 domain-containing protein OS=Buttiauxella gaviniae OX=82990 GN=AB1E22_00140 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>1.5e-12</expectation>
+      <identity>51.9</identity>
+      <positives>70.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL+VR++ G ++WR WNFE D G   NRYI R G++</pattern>
+      <matchSeq start="24" end="77">VAARYHNVAIEDDQGTHFRLVVRESTGPLIWRNWNFEADGGAMLNRYIERYGVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0ABX4ZZU9_9ENTR" ac="A0ABX4ZZU9" length="83" description="DUF905 domain-containing protein OS=Lelliottia aquatilis OX=2080838 GN=C3712_14405 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>160</score>
+      <bits>66.2</bits>
+      <expectation>2.4e-12</expectation>
+      <identity>54.7</identity>
+      <positives>69.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V A   ++ IEDDQG H RL++ D EG+++WRAWNFE  AGE  NRY+   GI</pattern>
+      <matchSeq start="22" end="74">VVAAYQNVAIEDDQGTHFRLVIPDHEGQLLWRAWNFEAGAGEWLNRYLVSHGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0A0H3H3G7_KLEM8" ac="A0A0H3H3G7" length="76" description="DUF905 domain-containing protein OS=Klebsiella michiganensis (strain ATCC 8724 / DSM 4798 / JCM 20051 / NBRC 3318 / NRRL B-199 / KCTC 1686 / BUCSAV 143 / CCM 1901) OX=1006551 GN=KOX_02155 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>2.8e-12</expectation>
+      <identity>61.1</identity>
+      <positives>72.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V++  +++ IEDD G H RL+VR  E  MVWRAWNFEPDAG   NRYI R GIR</pattern>
+      <matchSeq start="20" end="72">VASQYSNVAIEDDLGTHFRLVVRH-ERCMVWRAWNFEPDAGYWLNRYITRYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0ABW1Q2J4_9ENTR" ac="A0ABW1Q2J4" length="77" description="DUF905 domain-containing protein OS=Citrobacter bitternis OX=1585982 GN=ACFPZP_15255 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>2.9e-12</expectation>
+      <identity>50.9</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+   T++ +EDD G   RL++RD+EG+++WRAWNFE DAG   NRY+   GI</pattern>
+      <matchSeq start="22" end="74">VATQYTNLTLEDDHGNQFRLVIRDSEGQLIWRAWNFEADAGYWLNRYLLSHGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="SP" id="Y5157_ECOL6" ac="Q8FAS0" length="77" description="UPF0401 protein c5157 OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=c5157 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>2.9e-12</expectation>
+      <identity>50.9</identity>
+      <positives>69.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    ++ IEDDQG H RL++ +AEG++ WR WNFEPDAG+  N Y+   GI</pattern>
+      <matchSeq start="22" end="74">VTTAYRNVLIEDDQGTHFRLVIHNAEGQLRWRCWNFEPDAGKQLNPYLASEGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0ABY0J8J0_9ENTR" ac="A0ABY0J8J0" length="79" description="Bacterial protein of uncharacterized function (DUF905) OS=Enterobacter roggenkampii OX=1812935 GN=ykfF_2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>3e-12</expectation>
+      <identity>66.7</identity>
+      <positives>70.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>DI IE DQG H  L+V D EGRMVWRAWNFE DAG   NRYI +  IR</pattern>
+      <matchSeq start="26" end="73">DIAIEYDQGSHFLLVVCDPEGRMVWRAWNFELDAGTALNRYIGQDCIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="A0A0H3FMR5_KLEAK" ac="A0A0H3FMR5" length="83" description="DUF905 domain-containing protein OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 / CCUG 1429 / JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006 / CDC 819-56) OX=1028307 GN=EAE_08855 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>3.3e-12</expectation>
+      <identity>50.9</identity>
+      <positives>69.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++A   +I IEDDQG H RL++RD +  ++WR WNF P+AG   NRYI  +GI</pattern>
+      <matchSeq start="22" end="74">IAAAYINIAIEDDQGTHFRLVIRDTDNMLIWRDWNFAPEAGVMLNRYIASNGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0ABY0HX34_CITAM" ac="A0ABY0HX34" length="118" description="DUF905 domain-containing protein OS=Citrobacter amalonaticus OX=35703 GN=EAJ18_09490 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>3.9e-12</expectation>
+      <identity>44.3</identity>
+      <positives>55.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="89">WASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFP</querySeq>
+      <pattern>WA A  +A     A   ++ +EDD G H RL++RD  G ++WR WNF P AGE  NRYI   GI     P</pattern>
+      <matchSeq start="16" end="80">WAQAKAMA-----AHYLNVTVEDDLGTHFRLVIRDCRGMLIWRDWNFAPQAGEMLNRYIISDGIPVSPQP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="SP" id="Y4989_ECOUT" ac="Q1R2M2" length="77" description="UPF0401 protein UTI89_C4989 OS=Escherichia coli (strain UTI89 / UPEC) OX=364106 GN=UTI89_C4989 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>4.1e-12</expectation>
+      <identity>50.9</identity>
+      <positives>69.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    ++ IEDDQG H RL++R+A G++ WR WNFEPDAG+  N Y+   GI</pattern>
+      <matchSeq start="22" end="74">VTTAYRNVLIEDDQGTHFRLVIRNAGGQLRWRCWNFEPDAGKQLNSYLASEGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="TR" id="A0A085FYV3_9ENTR" ac="A0A085FYV3" length="79" description="Putative cytoplasmic protein OS=Buttiauxella agrestis ATCC 33320 OX=1006004 GN=ykfF PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <bits>65.1</bits>
+      <expectation>6.1e-12</expectation>
+      <identity>54.2</identity>
+      <positives>72.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++ IEDDQG H RL+VR++ G ++WR WNFE D G   NRYI R G++</pattern>
+      <matchSeq start="30" end="77">NVAIEDDQGTHFRLVVRESTGPLIWRNWNFEADGGAMLNRYIERYGVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="A0ABS1AEF6_9ENTR" ac="A0ABS1AEF6" length="193" description="DUF905 family protein OS=Citrobacter cronae OX=1748967 GN=I6M80_25350 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>6.5e-12</expectation>
+      <identity>52.1</identity>
+      <positives>77.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++ IEDDQ  H RL++RDA+G+++WRAWNFEP AG   N ++ R G++</pattern>
+      <matchSeq start="144" end="191">NVGIEDDQHTHFRLVIRDADGQLIWRAWNFEPGAGHDLNTHLQRYGVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="A0AB35XGL4_9ENTR" ac="A0AB35XGL4" length="205" description="TA system toxin CbtA family protein OS=Kluyvera ascorbata OX=51288 GN=V4836_23065 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>7.9e-12</expectation>
+      <identity>55.3</identity>
+      <positives>74.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="38" end="84">INIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+ IEDD   H RL +RDAEG+++WR WNFEP AG+G N Y+ R G++</pattern>
+      <matchSeq start="158" end="204">VAIEDDLHTHFRLAIRDAEGQLIWRVWNFEPGAGQGLNHYLQRYGVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="TR" id="A0A6G9RQR8_9ENTR" ac="A0A6G9RQR8" length="76" description="DUF905 domain-containing protein OS=Kluyvera genomosp. 3 OX=2774055 GN=GY169_20660 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>8e-12</expectation>
+      <identity>59.3</identity>
+      <positives>72.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V++  +++ IEDDQG H RL++R  E  MVWRAWNFE DAG   NRYI R GIR</pattern>
+      <matchSeq start="20" end="72">VASQYSNVAIEDDQGTHFRLVIRH-EYCMVWRAWNFEQDAGYWLNRYIARYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="A0A4R6E1B5_SCAGO" ac="A0A4R6E1B5" length="77" description="Uncharacterized protein DUF905 OS=Scandinavium goeteborgense OX=1851514 GN=EC847_11844 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>8.2e-12</expectation>
+      <identity>59.3</identity>
+      <positives>70.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQ  H RL+VR  +G MVWRAWNFE D G+  NRYI R GIR</pattern>
+      <matchSeq start="22" end="74">VAAEFENVAIEDDQVSHFRLVVR-RDGVMVWRAWNFEADGGKWLNRYIERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0A5J5FW91_9GAMM" ac="A0A5J5FW91" length="77" description="DUF905 domain-containing protein OS=Affinibrenneria salicis OX=2590031 GN=FJU30_16610 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>1.2e-11</expectation>
+      <identity>56.2</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="78">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYI</querySeq>
+      <pattern>V A   ++ IEDDQG H RL++RD+EG+++WRAW+FE  AGE  N YI</pattern>
+      <matchSeq start="22" end="69">VVAVYLNVAIEDDQGTHFRLVIRDSEGQLIWRAWSFEASAGEWLNLYI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="TR" id="A0ABY2ZTA6_9GAMM" ac="A0ABY2ZTA6" length="71" description="DUF905 domain-containing protein OS=Pantoea dispersa OX=59814 GN=FK492_20550 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>2e-11</expectation>
+      <identity>59.3</identity>
+      <positives>70.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A  T++ IEDDQG H RL+VR  +G MVWRAW+FE  AG   NRYI   GIR</pattern>
+      <matchSeq start="16" end="68">VAAQYTNVAIEDDQGTHFRLVVRK-DGDMVWRAWDFEAKAGYWLNRYIDDYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0A248KC80_SALBN" ac="A0A248KC80" length="81" description="DUF905 domain-containing protein OS=Salmonella bongori serovar 66:z41:- str. SA19983605 OX=1243617 GN=LFZ56_16955 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>2.6e-11</expectation>
+      <identity>49.2</identity>
+      <positives>62.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="89">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFP</querySeq>
+      <pattern>VSA   ++ IEDDQ  H RL+VRD +G ++WR WNF   AG+G NR+I   GI     P</pattern>
+      <matchSeq start="20" end="78">VSACYQNVAIEDDQQTHFRLVVRDTDGSLIWRDWNFAAGAGQGLNRFIADYGIPVPEAP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="A0A9N8CVC5_9ENTR" ac="A0A9N8CVC5" length="83" description="Bacterial protein of uncharacterized function (DUF905) OS=Citrobacter werkmanii OX=67827 GN=ykfF_1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>3.8e-11</expectation>
+      <identity>52.8</identity>
+      <positives>67.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   +I IEDDQG H RL++RD +  ++WR WNF P+AG   NRYI   GI</pattern>
+      <matchSeq start="22" end="74">VAAVYINIAIEDDQGSHFRLVIRDIDNTLIWRDWNFAPNAGVMLNRYIASHGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="A0ABU6L189_ENTAS" ac="A0ABU6L189" length="84" description="DUF905 domain-containing protein OS=Enterobacter asburiae OX=61645 GN=QAA55_027085 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>3.9e-11</expectation>
+      <identity>59.3</identity>
+      <positives>66.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V A  T++ IEDDQG H RL+VR  EG M+WRAWNFE  AG   NRYI   G R</pattern>
+      <matchSeq start="29" end="81">VVAFYTNVFIEDDQGTHFRLVVR-REGEMIWRAWNFEAGAGYWLNRYISGYGTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="A0A286DS02_9GAMM" ac="A0A286DS02" length="185" description="Uncharacterized protein OS=Candidatus Pantoea floridensis OX=1938870 GN=SAMN06273570_5143 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>4.4e-11</expectation>
+      <identity>51.9</identity>
+      <positives>74.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A  +++ IEDDQG H RL+VR+  G ++WRA+NFE +AG G    I+RSG+R</pattern>
+      <matchSeq start="31" end="84">VTAAFSNVFIEDDQGTHFRLVVREPSGCLIWRAFNFEAEAGRGLRTDINRSGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="A0A0A3YNN5_9GAMM" ac="A0A0A3YNN5" length="76" description="DUF905 domain-containing protein OS=Erwinia typographi OX=371042 GN=NG99_24000 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>4.6e-11</expectation>
+      <identity>57.4</identity>
+      <positives>66.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A  T++ IEDDQG H RL+VR  +G MVWR WNFEP      NRYI   GIR</pattern>
+      <matchSeq start="21" end="73">VAAQYTNVAIEDDQGAHFRLVVRK-DGEMVWRTWNFEPGGTYWLNRYIADYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="SP" id="YUBL_YERPN" ac="Q1CC63" length="76" description="UPF0401 protein YubL OS=Yersinia pestis bv. Antiqua (strain Nepal516) OX=377628 GN=yubL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>4.6e-11</expectation>
+      <identity>56.4</identity>
+      <positives>65.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A  T++ IEDDQG H RL+VR   G MVWR WNFEP      NRYI   GIR</pattern>
+      <matchSeq start="20" end="73">VVAAQYTNVAIEDDQGAHFRLVVRQ-NGEMVWRTWNFEPGGTYWLNRYIADYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="SP" id="YUBL_YERPE" ac="Q7ARC3" length="76" description="UPF0401 protein YubL OS=Yersinia pestis OX=632 GN=yubL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>4.6e-11</expectation>
+      <identity>56.4</identity>
+      <positives>65.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A  T++ IEDDQG H RL+VR   G MVWR WNFEP      NRYI   GIR</pattern>
+      <matchSeq start="20" end="73">VVAAQYTNVAIEDDQGAHFRLVVRQ-NGEMVWRTWNFEPGGTYWLNRYIADYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="SP" id="YUBL_YERPA" ac="Q1BZY8" length="76" description="UPF0401 protein YubL OS=Yersinia pestis bv. Antiqua (strain Antiqua) OX=360102 GN=yubL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>4.6e-11</expectation>
+      <identity>56.4</identity>
+      <positives>65.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A  T++ IEDDQG H RL+VR   G MVWR WNFEP      NRYI   GIR</pattern>
+      <matchSeq start="20" end="73">VVAAQYTNVAIEDDQGAHFRLVVRQ-NGEMVWRTWNFEPGGTYWLNRYIADYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="A0ABS6VJM6_9GAMM" ac="A0ABS6VJM6" length="77" description="DUF905 domain-containing protein OS=Pantoea allii OX=574096 GN=KYI95_20065 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>4.7e-11</expectation>
+      <identity>57.4</identity>
+      <positives>72.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A  T++ IEDDQ  H RL+VR  +G++VWRAWNFE +AG   NRYI   GIR</pattern>
+      <matchSeq start="22" end="74">VAAQYTNVAIEDDQVTHFRLVVRK-DGQVVWRAWNFEANAGYWLNRYIGEYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="A0A949V3G0_9ENTR" ac="A0A949V3G0" length="75" description="DUF905 family protein OS=Tenebrionicola larvae OX=2815733 GN=JZ788_05550 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>6.3e-11</expectation>
+      <identity>51.7</identity>
+      <positives>63.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="83">VAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V    V+A   ++ IEDDQG H RL++R   G MVWRAWNFE DAG   N++I   GI</pattern>
+      <matchSeq start="17" end="73">VQAETVAAACLNVAIEDDQGTHFRLVIR-RNGLMVWRAWNFESDAGLWLNKFIESDGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="A0A8K0V450_9ENTR" ac="A0A8K0V450" length="75" description="DUF905 family protein OS=Tenebrionibacter intestinalis OX=2799638 GN=JJB97_05195 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>6.3e-11</expectation>
+      <identity>51.7</identity>
+      <positives>63.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="83">VAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V    V+A   ++ IEDDQG H RL++R   G MVWRAWNFE DAG   N++I   GI</pattern>
+      <matchSeq start="17" end="73">VQAETVAAACLNVAIEDDQGTHFRLVIR-RNGLMVWRAWNFESDAGLWLNKFIESDGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="A0ABW7Q1D4_9GAMM" ac="A0ABW7Q1D4" length="80" description="DUF905 domain-containing protein OS=Pantoea osteomyelitidis OX=3230026 GN=ABU178_19840 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>7.2e-11</expectation>
+      <identity>62.5</identity>
+      <positives>72.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="84">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+++IEDDQG H RL+VR  EG MVWRAWNFEP A    NR+  R GIR</pattern>
+      <matchSeq start="31" end="77">NVSIEDDQGTHFRLVVRH-EGCMVWRAWNFEPGAEFELNRFTERYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0ABV1ZMD8_9ENTR" ac="A0ABV1ZMD8" length="74" description="DUF905 domain-containing protein OS=Enterobacter intestinihominis OX=3133180 GN=ABMC12_24625 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <bits>62.0</bits>
+      <expectation>8.7e-11</expectation>
+      <identity>57.4</identity>
+      <positives>66.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V A  T++ IEDDQG H RL+VR  +G M+WRAWNFE  AG   NRYI   G R</pattern>
+      <matchSeq start="19" end="71">VVAFYTNVFIEDDQGTHFRLVVR-RDGEMIWRAWNFEAGAGYWLNRYISDYGTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="TR" id="A0A6L6IR00_9ENTR" ac="A0A6L6IR00" length="76" description="DUF905 domain-containing protein OS=Intestinirhabdus alba OX=2899544 GN=GJV78_14475 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1.3e-10</expectation>
+      <identity>56.4</identity>
+      <positives>63.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V A  T++ IEDDQG H RL+VR   G MVWR WNFEP      NRYI   GIR</pattern>
+      <matchSeq start="20" end="73">VVVAQYTNVAIEDDQGAHFRLVVRQ-NGEMVWRTWNFEPGGTYWLNRYIADYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="TR" id="A0ABU9PLC3_9ENTR" ac="A0ABU9PLC3" length="76" description="DUF905 domain-containing protein OS=Enterobacter quasihormaechei OX=2529382 GN=AAGT82_18850 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1.3e-10</expectation>
+      <identity>53.7</identity>
+      <positives>64.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL+VR  +G M+WR WNFEP      NRYI   GIR</pattern>
+      <matchSeq start="21" end="73">VAAQYVNVAIEDDQGTHFRLVVRQ-DGEMIWRTWNFEPGGTYWLNRYIAEYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="TR" id="A0ABV0HL88_9ENTR" ac="A0ABV0HL88" length="76" description="DUF905 domain-containing protein OS=Pseudocitrobacter cyperus OX=3112843 GN=VSR74_13360 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1.3e-10</expectation>
+      <identity>57.4</identity>
+      <positives>68.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V++   ++ IEDDQ  H RL++R  E  MVWRAWNFE DAG   NRYI R GIR</pattern>
+      <matchSeq start="20" end="72">VASQYFNVAIEDDQSTHFRLVIRH-ERCMVWRAWNFEQDAGYWLNRYIARYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="TR" id="A0ABY8DY79_9ENTR" ac="A0ABY8DY79" length="77" description="DUF905 domain-containing protein OS=Enterobacter quasiroggenkampii OX=2497436 GN=OM418_18015 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1.3e-10</expectation>
+      <identity>50.9</identity>
+      <positives>67.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V A   ++ IEDDQG H  L++RD+E  ++WRAWNFE +AG   NRY+   GI</pattern>
+      <matchSeq start="22" end="74">VVAVYLNVAIEDDQGTHFGLVIRDSENLLIWRAWNFEANAGGWLNRYLVSHGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="TR" id="A0ABY6X5J1_9ENTR" ac="A0ABY6X5J1" length="82" description="Bacterial protein of uncharacterized function (DUF905) OS=Klebsiella quasivariicola OX=2026240 GN=ykfF_2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1.5e-10</expectation>
+      <identity>50.0</identity>
+      <positives>66.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A   ++ IEDDQG H RL+VR  + G M+WR WNFEP   +  NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">IVAAQYQNVAIEDDQGTHFRLVVRHQDDGSMIWRVWNFEPGGEDMMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="TR" id="A0ABZ2E511_KLEOR" ac="A0ABZ2E511" length="82" description="DUF905 domain-containing protein OS=Klebsiella ornithinolytica OX=54291 GN=LM286_28010 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1.5e-10</expectation>
+      <identity>50.0</identity>
+      <positives>66.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A   ++ IEDDQG H RL+VR  + G M+WR WNFEP   +  NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">IVAAQYQNVAIEDDQGTHFRLVVRHQDDGSMIWRVWNFEPGGEDMMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="TR" id="A0ABT6EML4_9ENTR" ac="A0ABT6EML4" length="82" description="DUF905 domain-containing protein OS=Klebsiella huaxiensis OX=2153354 GN=OXR69_032825 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>2.1e-10</expectation>
+      <identity>50.0</identity>
+      <positives>66.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A   ++ IEDDQG H RL+VR  + G M+WR WNFEP   +  NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">VVAAQYQNVAIEDDQGTHFRLVVRHQDDGSMIWRVWNFEPGGEDMMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="TR" id="D4HQH9_KLEPN" ac="D4HQH9" length="82" description="DUF905 domain-containing protein OS=Klebsiella pneumoniae OX=573 GN=hypothetical protein PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>2.1e-10</expectation>
+      <identity>50.0</identity>
+      <positives>66.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A   ++ IEDDQG H RL+VR  + G M+WR WNFEP   +  NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">VVAAQYQNVAIEDDQGTHFRLVVRHQDDGSMIWRVWNFEPGGEDMMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="TR" id="A0AAW6XAE2_9GAMM" ac="A0AAW6XAE2" length="82" description="DUF905 domain-containing protein OS=Serratia nevei OX=2703794 GN=P9921_25290 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>2.1e-10</expectation>
+      <identity>50.0</identity>
+      <positives>66.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A   ++ IEDDQG H RL+VR  + G M+WR WNFEP   +  NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">VVAAQYQNVAIEDDQGTHFRLVVRHQDDGSMIWRVWNFEPGGEDMMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="130" database="TR" id="A0A839CP61_9ENTR" ac="A0A839CP61" length="82" description="DUF905 domain-containing protein OS=Klebsiella grimontii OX=2058152 GN=AAFL32_26680 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>2.1e-10</expectation>
+      <identity>50.0</identity>
+      <positives>66.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A   ++ IEDDQG H RL+VR  + G M+WR WNFEP   +  NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">VVAAQYQNVAIEDDQGTHFRLVVRHQDDGSMIWRVWNFEPGGEDMMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="131" database="TR" id="A0A0H3H1I6_KLEPH" ac="A0A0H3H1I6" length="82" description="DUF905 domain-containing protein OS=Klebsiella pneumoniae subsp. pneumoniae (strain HS11286) OX=1125630 GN=KPHS_p201310 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>2.1e-10</expectation>
+      <identity>50.0</identity>
+      <positives>66.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A   ++ IEDDQG H RL+VR  + G M+WR WNFEP   +  NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">VVAAQYQNVAIEDDQGTHFRLVVRHQDDGSMIWRVWNFEPGGEDMMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="132" database="TR" id="A0AAI8IQK2_9ENTR" ac="A0AAI8IQK2" length="82" description="DUF905 domain-containing protein OS=Klebsiella quasipneumoniae OX=1463165 GN=DKC11_01565 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>2.1e-10</expectation>
+      <identity>50.0</identity>
+      <positives>66.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A   ++ IEDDQG H RL+VR  + G M+WR WNFEP   +  NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">VVAAQYQNVAIEDDQGTHFRLVVRHQDDGSMIWRVWNFEPGGEDMMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="133" database="TR" id="A0ABZ2E4L3_KLEOR" ac="A0ABZ2E4L3" length="82" description="DUF905 domain-containing protein OS=Klebsiella ornithinolytica OX=54291 GN=LM286_27545 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>2.1e-10</expectation>
+      <identity>50.0</identity>
+      <positives>66.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A   ++ IEDDQG H RL+VR  + G M+WR WNFEP   +  NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">VVAAQYQNVAIEDDQGTHFRLVVRHQDDGSMIWRVWNFEPGGEDMMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="134" database="TR" id="A0ABR6U1T1_CITBR" ac="A0ABR6U1T1" length="69" description="DUF905 family protein OS=Citrobacter braakii OX=57706 GN=H6P72_24680 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>2.2e-10</expectation>
+      <identity>47.2</identity>
+      <positives>69.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    ++ IEDDQG H RL++R+AEG++ WR WNFE DAG+  N ++   G+</pattern>
+      <matchSeq start="14" end="66">VTTAYRNVLIEDDQGTHFRLVIRNAEGQLRWRYWNFESDAGKQLNVWLASEGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="135" database="TR" id="A0A6L5EFY1_9ENTR" ac="A0A6L5EFY1" length="80" description="DUF905 domain-containing protein OS=Citrobacter telavivensis OX=2653932 GN=GBB84_26220 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>2.9e-10</expectation>
+      <identity>55.6</identity>
+      <positives>63.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL+VR   G MVWR WNFEP      NRYI   GIR</pattern>
+      <matchSeq start="25" end="77">VAAQYQNVAIEDDQGTHFRLVVRQ-NGEMVWRTWNFEPGGEYWINRYIRDYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="136" database="TR" id="A6TIE0_KLEP7" ac="A6TIE0" length="82" description="DUF905 domain-containing protein OS=Klebsiella pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 78578) OX=272620 GN=KPN_pKPN3p05984 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>3e-10</expectation>
+      <identity>50.0</identity>
+      <positives>66.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A   ++ IEDDQG H RL+VR  + G M+WR WNFEP   +  NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">VVAAQYQNVAIEDDQGTHFRLVVRHKDDGSMIWRVWNFEPGGEDIMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="137" database="TR" id="W1DGI1_KLEPN" ac="W1DGI1" length="82" description="Cytoplasmic protein OS=Klebsiella pneumoniae IS43 OX=1432552 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>3e-10</expectation>
+      <identity>50.0</identity>
+      <positives>66.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A   ++ IEDDQG H RL+VR  + G M+WR WNFEP   +  NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">VVAAQYQNVAIEDDQGTHFRLVVRHKDDGSMIWRVWNFEPGGEDIMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="138" database="TR" id="A0ACA8DA01_9ENTR" ac="A0ACA8DA01" length="76" description="Uncharacterized protein OS=Citrobacter farmeri OX=67824 GN=CI104_19335 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>3.7e-10</expectation>
+      <identity>53.7</identity>
+      <positives>68.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+   +++ IEDDQ  H RL++R  +  MVW+AWNFEPD G   NRYI R GIR</pattern>
+      <matchSeq start="20" end="72">VAPQYSNVAIEDDQRSHFRLVIRH-DSCMVWQAWNFEPDGGYWLNRYIARYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="139" database="TR" id="A0A1W6BBG7_9GAMM" ac="A0A1W6BBG7" length="76" description="DUF905 domain-containing protein OS=Pantoea alhagi OX=1891675 GN=B1H58_20520 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>3.7e-10</expectation>
+      <identity>49.1</identity>
+      <positives>67.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="85">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRT</querySeq>
+      <pattern>V+   +++ IEDDQG H RL+VR   G M+W+A+NFEP+AG     YI  +G RT</pattern>
+      <matchSeq start="21" end="75">VARTYSNVTIEDDQGTHFRLVVRSRGGNMLWQAFNFEPEAGFWLGLYIELNGTRT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="140" database="TR" id="A0ABS0EAF9_9GAMM" ac="A0ABS0EAF9" length="78" description="DUF905 family protein OS=Rahnella laticis OX=2787622 GN=IV433_21945 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>3.9e-10</expectation>
+      <identity>52.7</identity>
+      <positives>69.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDA-EGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IED Q  + RL+VR    G+MVWRAWN+EP+AG G  RYI R G+R</pattern>
+      <matchSeq start="22" end="76">VAAAYDNVAIEDGQRANFRLVVRHRIGGQMVWRAWNYEPEAGGGLKRYIIRCGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="141" database="TR" id="A0ABT1BEC2_9ENTR" ac="A0ABT1BEC2" length="80" description="DUF905 domain-containing protein OS=Citrobacter meridianamericanus OX=2894201 GN=LOD26_23235 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>4.1e-10</expectation>
+      <identity>55.6</identity>
+      <positives>64.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL+VR  +G MVWR WNFEP      NRYI   GIR</pattern>
+      <matchSeq start="25" end="77">VAAQYQNVAIEDDQGTHFRLVVRK-DGEMVWRVWNFEPGGEYLMNRYIRDYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="142" database="TR" id="A0A6P1Q4S7_9GAMM" ac="A0A6P1Q4S7" length="78" description="DUF905 domain-containing protein OS=Mixta intestinalis OX=1615494 GN=C7M51_04411 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <bits>60.1</bits>
+      <expectation>5.5e-10</expectation>
+      <identity>55.6</identity>
+      <positives>63.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   D+ IEDDQG H RL+VR   G MVWR WNF+P      NRYI   GIR</pattern>
+      <matchSeq start="15" end="67">VAAQYQDVAIEDDQGTHFRLVVRQ-NGEMVWRLWNFKPGGEYLMNRYIQDYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="143" database="TR" id="A0ABU4E0H3_9ENTR" ac="A0ABU4E0H3" length="81" description="DUF905 family protein OS=Atlantibacter subterraneus OX=255519 GN=R4P48_05075 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <bits>60.1</bits>
+      <expectation>5.9e-10</expectation>
+      <identity>56.6</identity>
+      <positives>67.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+   ++++IEDDQ  H RL+VR   G MVW AWNFE DAG   NRYI R GI</pattern>
+      <matchSeq start="21" end="72">VARAYSNVDIEDDQRSHFRLVVR-ISGCMVWWAWNFEADAGFWLNRYISRDGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="144" database="TR" id="A0ABX2WDB1_9ENTR" ac="A0ABX2WDB1" length="83" description="Cytoplasmic protein OS=Buttiauxella ferragutiae ATCC 51602 OX=1354252 GN=M976_00313 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <bits>59.7</bits>
+      <expectation>8.8e-10</expectation>
+      <identity>45.3</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++A  T++ IEDDQG H RL++ D  G  +W  WN+ P+AG   +RYI  +GI</pattern>
+      <matchSeq start="22" end="74">IAAAYTNVTIEDDQGTHFRLVISDNGGMFIWLDWNYAPEAGVMLSRYIASNGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="145" database="TR" id="Q4L1R7_SALDU" ac="Q4L1R7" length="75" description="DUF905 domain-containing protein OS=Salmonella dublin OX=98360 GN=PSLT067 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>1e-09</expectation>
+      <identity>53.7</identity>
+      <positives>64.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H+RL+VR  +G MVWR WNFEP      NR I   GIR</pattern>
+      <matchSeq start="20" end="72">VAAQYQNVAIEDDQGTHLRLVVRK-DGEMVWRGWNFEPGGEYWLNRCIESHGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="146" database="TR" id="A0ACD8BSF8_9ENTR" ac="A0ACD8BSF8" length="77" description="Uncharacterized protein OS=Klebsiella michiganensis OX=1134687 GN=THOKLE011_P10890 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>53.7</identity>
+      <positives>66.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V A   ++ IEDDQG H RL+VR  +G ++WR+WNFE  AG   NRYI   GIR</pattern>
+      <matchSeq start="24" end="76">VVAQYRNVFIEDDQGTHFRLVVRQ-DGSLIWRSWNFEDCAGYWMNRYIRDFGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="147" database="TR" id="A0A0F6AW77_SALT1" ac="A0A0F6AW77" length="80" description="Cytoplasmic protein OS=Salmonella typhimurium (strain 14028s / SGSC 2262) OX=588858 GN=STM14_5588 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>1.2e-09</expectation>
+      <identity>53.7</identity>
+      <positives>64.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H+RL+VR  +G MVWR WNFEP      NR I   GIR</pattern>
+      <matchSeq start="25" end="77">VAAQYQNVAIEDDQGTHLRLVVRK-DGEMVWRGWNFEPGGEYWLNRCIESHGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="148" database="TR" id="A0A9N8GWL8_9ENTR" ac="A0A9N8GWL8" length="80" description="Bacterial protein of uncharacterized function (DUF905) OS=Citrobacter werkmanii OX=67827 GN=ykfF_2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>1.2e-09</expectation>
+      <identity>53.7</identity>
+      <positives>63.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL+VR   G M+WR WNFEP      NRYI   GIR</pattern>
+      <matchSeq start="25" end="77">VAAQYRNVAIEDDQGTHFRLVVRK-NGEMIWRVWNFEPGGEYLMNRYIRDYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="149" database="TR" id="A0A0H3NXD5_SALTS" ac="A0A0H3NXD5" length="80" description="Uncharacterized protein OS=Salmonella typhimurium (strain SL1344) OX=216597 GN=SL1344_P1_0040 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>1.2e-09</expectation>
+      <identity>53.7</identity>
+      <positives>64.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H+RL+VR  +G MVWR WNFEP      NR I   GIR</pattern>
+      <matchSeq start="25" end="77">VAAQYQNVAIEDDQGTHLRLVVRK-DGEMVWRGWNFEPGGEYWLNRCIESHGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="150" database="SP" id="YUBL_SALTY" ac="Q93GP6" length="80" description="UPF0401 protein YubL OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=yubL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>1.2e-09</expectation>
+      <identity>53.7</identity>
+      <positives>64.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H+RL+VR  +G MVWR WNFEP      NR I   GIR</pattern>
+      <matchSeq start="25" end="77">VAAQYQNVAIEDDQGTHLRLVVRK-DGEMVWRGWNFEPGGEYWLNRCIESHGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="151" database="TR" id="A0ABY2PZD6_9ENTR" ac="A0ABY2PZD6" length="83" description="DUF905 domain-containing protein OS=Citrobacter murliniae OX=67829 GN=DJ535_00965 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>1.3e-09</expectation>
+      <identity>45.3</identity>
+      <positives>60.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="89">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFP</querySeq>
+      <pattern>++ +EDDQG H RL++RD    ++WR WNF P AGE  NR +   GI     P</pattern>
+      <matchSeq start="28" end="80">NVTVEDDQGTHFRLVIRDCSEMLIWRDWNFAPQAGEMLNRCLISDGIPVSPQP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="152" database="TR" id="A0ABY4REP2_9GAMM" ac="A0ABY4REP2" length="76" description="DUF905 domain-containing protein OS=Mixta hanseatica OX=2872648 GN=K6958_20350 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.5e-09</expectation>
+      <identity>47.3</identity>
+      <positives>67.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="85">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRT</querySeq>
+      <pattern>V+   +++ IEDDQG H RL+VR   G M+W+A+NFEP+AG     YI  +G +T</pattern>
+      <matchSeq start="21" end="75">VARTYSNVTIEDDQGSHFRLVVRSRGGNMLWQAFNFEPEAGFWLGLYIELNGTKT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="153" database="SP" id="YUBL_SALTM" ac="Q5QJF4" length="79" description="UPF0401 protein YubL OS=Salmonella typhimurium OX=90371 GN=yubL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.6e-09</expectation>
+      <identity>44.6</identity>
+      <positives>58.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="83">FXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+ + L GLP        A   V+A   ++ IEDDQG H RL+VR  +G ++WR+WNFE  AG   NRYI   GI</pattern>
+      <matchSeq start="6" end="77">YFRILQGLPDGPFTRKQA-EAVAAQYRNVFIEDDQGTHFRLVVRQ-DGTLIWRSWNFEDCAGYWMNRYIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="154" database="TR" id="A6TIR7_KLEP7" ac="A6TIR7" length="80" description="DUF905 domain-containing protein OS=Klebsiella pneumoniae subsp. pneumoniae (strain ATCC 700721 / MGH 78578) OX=272620 GN=KPN_pKPN4p07110 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.7e-09</expectation>
+      <identity>51.9</identity>
+      <positives>63.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+    ++ IEDDQG H RL+VR  +G M+WR WNFE  A    NRYI   GIR</pattern>
+      <matchSeq start="25" end="77">VAEQFQNVTIEDDQGTHFRLVVR-RDGEMIWRGWNFEKGAAYWLNRYIEFYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="155" database="TR" id="A0ACA8DFN4_9ENTR" ac="A0ACA8DFN4" length="80" description="DUF905 domain-containing protein OS=Citrobacter farmeri OX=67824 GN=CI104_28180 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.7e-09</expectation>
+      <identity>51.9</identity>
+      <positives>63.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+    ++ IEDDQG H RL+VR  +G M+WR WNFE  A    NRYI   GIR</pattern>
+      <matchSeq start="25" end="77">VAEQFQNVTIEDDQGTHFRLVVR-RDGEMIWRGWNFEKGAAYWLNRYIEFYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="156" database="TR" id="A0AAJ5QZK9_9ENTR" ac="A0AAJ5QZK9" length="82" description="DUF905 domain-containing protein OS=Klebsiella electrica OX=1259973 GN=OR613_26570 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.7e-09</expectation>
+      <identity>52.7</identity>
+      <positives>63.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL+VR  + G MVWR WNFEP      NRYI   G+R</pattern>
+      <matchSeq start="25" end="79">VAAQYQNVAIEDDQGTHFRLVVRHQDDGSMVWRVWNFEPGGEFLMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="157" database="TR" id="A0ABV3NV78_9ENTR" ac="A0ABV3NV78" length="83" description="DUF905 family protein OS=Buttiauxella gaviniae OX=82990 GN=AB1E22_12210 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.8e-09</expectation>
+      <identity>45.3</identity>
+      <positives>67.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++A  T++  EDDQGIH RL++ D +G ++W  W+F P+AG   NR+I   GI</pattern>
+      <matchSeq start="22" end="74">IAATYTNVTFEDDQGIHFRLVIHDTDGMLIWWDWDFVPEAGVMPNRFIASYGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="158" database="TR" id="A0A0H2XJL9_ECOK1" ac="A0A0H2XJL9" length="86" description="DUF905 domain-containing protein OS=Escherichia coli O1:K1 / APEC OX=405955 GN=APECO1_O1CoBM15 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.9e-09</expectation>
+      <identity>44.6</identity>
+      <positives>58.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="83">FXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+ + L GLP        A   V+A   ++ IEDDQG H RL+VR  +G ++WR+WNFE  AG   NRYI   GI</pattern>
+      <matchSeq start="13" end="84">YFRILQGLPDGPFTRKQA-EAVAAQYRNVFIEDDQGTHFRLVVRQ-DGTLIWRSWNFEDCAGYWMNRYIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="159" database="SP" id="YUBL_SALCH" ac="Q5J3W6" length="79" description="UPF0401 protein YubL OS=Salmonella choleraesuis (strain SC-B67) OX=321314 GN=yubL PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>2.3e-09</expectation>
+      <identity>43.2</identity>
+      <positives>58.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="83">FXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+ + L GLP   S        V+A   ++ IEDDQG H RL+VR  +G ++WR+WNFE  AG   N+YI   GI</pattern>
+      <matchSeq start="6" end="77">YFRILQGLPD-GSFTREQAEAVAAQYRNVFIEDDQGTHFRLVVRQ-DGTLIWRSWNFEDCAGYWMNQYIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="160" database="TR" id="A0A328TR58_9GAMM" ac="A0A328TR58" length="76" description="DUF905 domain-containing protein OS=Candidatus Erwinia dacicola OX=252393 GN=ACZ87_00053 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>3e-09</expectation>
+      <identity>53.7</identity>
+      <positives>63.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL+ R  +G MVWR WNFEP      NRYI   GIR</pattern>
+      <matchSeq start="21" end="73">VAAQYVNVVIEDDQGTHFRLVDRK-DGEMVWRTWNFEPSGTYWLNRYIADYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="161" database="TR" id="A0ABX0RGV7_9GAMM" ac="A0ABX0RGV7" length="77" description="DUF905 domain-containing protein OS=Candidatus Pantoea multigeneris OX=2608357 GN=F3J40_20920 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>3.1e-09</expectation>
+      <identity>43.4</identity>
+      <positives>69.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V A   ++ IE+D+  H +L++RD +GRMVWRA+NF+ +AG   NR + + G+</pattern>
+      <matchSeq start="22" end="74">VEAAYDNVTIENDKNFHFQLVIRDGQGRMVWRAFNFDHEAGYWLNRNLEKYGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="162" database="TR" id="A0ABW6CFQ5_RAHSY" ac="A0ABW6CFQ5" length="80" description="DUF905 family protein OS=Rahnella sp. (strain Y9602) OX=2703885 GN=ACFPK4_25505 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>4.7e-09</expectation>
+      <identity>49.1</identity>
+      <positives>63.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="87">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDT</querySeq>
+      <pattern>V++  +++ IEDD G   RL+VR  EG MVWR WNFE  AG   NRYI   G++  T</pattern>
+      <matchSeq start="22" end="77">VASQYSNVAIEDDNGKAFRLVVRK-EGEMVWRGWNFEAGAGFWLNRYIKNHGVKNQT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="163" database="TR" id="A0ABT6ENZ5_9ENTR" ac="A0ABT6ENZ5" length="82" description="DUF905 domain-containing protein OS=Klebsiella huaxiensis OX=2153354 GN=OXR69_031205 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>4.9e-09</expectation>
+      <identity>48.2</identity>
+      <positives>62.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+ +A   ++ IEDDQG H RL+VR  + G M+WR WNFEP      NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">VAAAQYQNVAIEDDQGTHFRLVVRHQDDGSMIWRVWNFEPGGEYLMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="164" database="TR" id="A0ABX5NHJ4_SERMA" ac="A0ABX5NHJ4" length="82" description="DUF905 domain-containing protein OS=Serratia marcescens OX=615 GN=DMW51_06700 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>4.9e-09</expectation>
+      <identity>48.2</identity>
+      <positives>62.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+ +A   ++ IEDDQG H RL+VR  + G M+WR WNFEP      NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">VAAAQYQNVAIEDDQGTHFRLVVRHQDDGSMIWRVWNFEPGGEYLMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="165" database="TR" id="A0ABR5YR94_9ENTR" ac="A0ABR5YR94" length="76" description="DUF905 domain-containing protein OS=Enterobacter genomosp. S OX=2364151 GN=A3466_18025 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <bits>57.4</bits>
+      <expectation>6e-09</expectation>
+      <identity>51.9</identity>
+      <positives>63.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V++   ++ IEDDQG H RL+VR  +G MVWR WNF P      NRYI   GIR</pattern>
+      <matchSeq start="21" end="73">VASQYDNVAIEDDQGTHFRLVVRK-DGEMVWRTWNFGPGGTYWLNRYIAEYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="166" database="TR" id="A0ACE2R2X3_9GAMM" ac="A0ACE2R2X3" length="78" description="DUF905 domain-containing protein OS=Rahnella bruchi OX=1510573 GN=RABR111495_24520 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <bits>57.4</bits>
+      <expectation>6.3e-09</expectation>
+      <identity>48.1</identity>
+      <positives>66.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDA-EGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+    +I IEDDQG H R++VR   +G+M+WR W+FEP AG   N+YI   G+</pattern>
+      <matchSeq start="22" end="75">VADAYENIAIEDDQGSHFRMVVRHRIDGQMLWRGWDFEPQAGAELNKYIVSHGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="167" database="TR" id="A0AAP2FM68_KLEOX" ac="A0AAP2FM68" length="82" description="DUF905 domain-containing protein OS=Klebsiella oxytoca OX=571 GN=J7S78_25890 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <bits>57.4</bits>
+      <expectation>7e-09</expectation>
+      <identity>50.9</identity>
+      <positives>61.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAE-GRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+    ++ IEDDQG H RL+VR  + G MVWR WNFEP      NRYI   G+R</pattern>
+      <matchSeq start="25" end="79">VAVQYQNVAIEDDQGTHFRLVVRHQDDGSMVWRVWNFEPGGEFLMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="168" database="TR" id="A0AAP4FRR5_9ENTR" ac="A0AAP4FRR5" length="77" description="DUF905 family protein OS=Lelliottia wanjuensis OX=3050585 GN=QQF32_07020 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>135</score>
+      <bits>56.6</bits>
+      <expectation>1.2e-08</expectation>
+      <identity>51.1</identity>
+      <positives>72.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++ IED+   H RL++R+  GRM+WRAWN+EPDAG   N++I   GI</pattern>
+      <matchSeq start="24" end="69">NVTIEDELCHHFRLVIRN-HGRMIWRAWNYEPDAGLWLNKFIESDGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="169" database="TR" id="A0ABT6ELX3_9ENTR" ac="A0ABT6ELX3" length="80" description="DUF905 domain-containing protein OS=Klebsiella huaxiensis OX=2153354 GN=OXR69_031785 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>135</score>
+      <bits>56.6</bits>
+      <expectation>1.3e-08</expectation>
+      <identity>48.1</identity>
+      <positives>63.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V++   ++ IEDD+G H RL+VR  +G M+WR WNFEP      NRYI   G R</pattern>
+      <matchSeq start="25" end="77">VASQYQNVAIEDDEGTHFRLVVR-RDGEMIWRVWNFEPGGEYWMNRYIQNYGKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="170" database="TR" id="A0AAP2BQV2_KLEOX" ac="A0AAP2BQV2" length="80" description="DUF905 domain-containing protein OS=Klebsiella oxytoca OX=571 GN=J7S78_29985 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>135</score>
+      <bits>56.6</bits>
+      <expectation>1.3e-08</expectation>
+      <identity>48.1</identity>
+      <positives>63.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V++   ++ IEDD+G H RL+VR  +G M+WR WNFEP      NRYI   G R</pattern>
+      <matchSeq start="25" end="77">VASQYQNVAIEDDEGTHFRLVVR-RDGEMIWRVWNFEPGGEYWMNRYIQNYGKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="171" database="SP" id="YUBL_ECOUT" ac="Q1R1U5" length="79" description="UPF0401 protein YubL OS=Escherichia coli (strain UTI89 / UPEC) OX=364106 GN=yubL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>2.6e-08</expectation>
+      <identity>43.2</identity>
+      <positives>54.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="83">FXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+ + L GLP   S        V+A   ++ IEDDQG H RL+VR+  G +VWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="6" end="77">YFRILQGLPD-GSFTREQAEAVAAQYRNVFIEDDQGTHFRLVVRNNSG-LVWRTWNFEDGAGYWMNHVIRNFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="172" database="TR" id="A0ABT6EL76_9ENTR" ac="A0ABT6EL76" length="82" description="DUF905 domain-containing protein OS=Klebsiella huaxiensis OX=2153354 GN=OXR69_030455 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>4e-08</expectation>
+      <identity>48.2</identity>
+      <positives>62.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="84">LVSAGITDINIEDDQGIHVRLIVRDAEG-RMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>+V+A   ++ IEDDQG H RL+VR  +   +VWR WNFEP      NRYI   G+R</pattern>
+      <matchSeq start="24" end="79">VVAAQYQNVAIEDDQGTHFRLVVRHQDDDSLVWRVWNFEPGGEFLMNRYIRDYGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="173" database="TR" id="A0A1X1D468_9GAMM" ac="A0A1X1D468" length="178" description="Uncharacterized protein OS=Pantoea wallisii OX=1076551 GN=HA48_15490 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <bits>57.4</bits>
+      <expectation>4.8e-08</expectation>
+      <identity>42.6</identity>
+      <positives>68.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>++A  +++ IEDDQ  H RL+VR+  G ++WR ++FE DAG    +YI+  G+R</pattern>
+      <matchSeq start="30" end="83">ITAAFSNVFIEDDQDSHFRLVVREPSGSLIWRTFSFEHDAGYWLRKYINSRGVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="174" database="TR" id="A0ABS6LQI1_9GAMM" ac="A0ABS6LQI1" length="66" description="DUF905 family protein OS=Rahnella bonaserana OX=2816248 GN=J1778_03675 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>5.4e-08</expectation>
+      <identity>54.3</identity>
+      <positives>73.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="76">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNR</querySeq>
+      <pattern>V+    +I IEDDQG + R++VR  + +MVWRAW+FEP+AG G NR</pattern>
+      <matchSeq start="22" end="66">VADAYENIAIEDDQGTYFRIVVR-IDRQMVWRAWDFEPEAGAGLNR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="175" database="TR" id="D2D9G8_KLEPN" ac="D2D9G8" length="77" description="DUF905 domain-containing protein OS=Klebsiella pneumoniae OX=573 GN=KF3.70-77 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>1e-07</expectation>
+      <identity>50.9</identity>
+      <positives>62.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL+VR+  G +VWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="24" end="75">VAAQYRNVFIEDDQGTHFRLVVRNNSG-LVWRTWNFEDGAGYWMNHVIRNFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="176" database="TR" id="E2GHJ1_ECOLX" ac="E2GHJ1" length="77" description="DUF905 domain-containing protein OS=Escherichia coli OX=562 GN=pHK17a_040 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>1e-07</expectation>
+      <identity>50.9</identity>
+      <positives>62.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL+VR+  G +VWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="24" end="75">VAAQYRNVFIEDDQGTHFRLVVRNNSG-LVWRTWNFEDGAGYWMNHVIRNFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="177" database="TR" id="A0ABU1C904_9ESCH" ac="A0ABU1C904" length="77" description="DUF905 domain-containing protein OS=Escherichia marmotae OX=1499973 GN=KJE03_24995 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>1e-07</expectation>
+      <identity>50.9</identity>
+      <positives>62.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   ++ IEDDQG H RL+VR+  G +VWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="24" end="75">VAAQYRNVFIEDDQGTHFRLVVRNNSG-LVWRTWNFEDGAGYWMNHVIRNFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="178" database="TR" id="D0Z6Q8_ECOH1" ac="D0Z6Q8" length="77" description="Uncharacterized protein OS=Escherichia coli O78:H11 (strain H10407 / ETEC) OX=316401 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <bits>52.8</bits>
+      <expectation>4e-07</expectation>
+      <identity>49.1</identity>
+      <positives>62.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   ++ IE+DQG H RL+VR+  G +VWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="24" end="75">VAAQYRNVFIEEDQGTHFRLVVRNNSG-LVWRTWNFEDGAGYWMNHVIRNFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="179" database="TR" id="A0ABX5HDF7_ESCAL" ac="A0ABX5HDF7" length="77" description="DUF905 domain-containing protein OS=Escherichia albertii OX=208962 GN=C7B09_19400 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>5.7e-07</expectation>
+      <identity>50.9</identity>
+      <positives>60.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   ++ IEDD G H RL+VR+  G MVWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="24" end="75">VAAQYRNVFIEDDHGEHFRLVVRN-NGAMVWRTWNFEDGAGYWMNHVIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="180" database="TR" id="A7ZGU9_ECO24" ac="A7ZGU9" length="77" description="DUF905 domain-containing protein OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_D0001 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>5.7e-07</expectation>
+      <identity>41.9</identity>
+      <positives>52.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="83">FXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+ + L GLP   S        V+A   ++ IEDD G H RL+VR+  G +VWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="4" end="75">YFRILQGLPD-GSFTREQAEAVAAQYRNVFIEDDHGEHFRLVVRN-NGALVWRTWNFEDGAGYWMNHAIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="181" database="TR" id="A0ABX5T050_9ENTR" ac="A0ABX5T050" length="110" description="DUF905 domain-containing protein OS=Citrobacter tructae OX=2562449 GN=E4Z61_00415 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <bits>52.8</bits>
+      <expectation>8.5e-07</expectation>
+      <identity>40.4</identity>
+      <positives>67.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="82">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSG</querySeq>
+      <pattern>VSA  +++ +E+DQ  H +L++RD   +++ R WNF+PDAG+  N Y+   G</pattern>
+      <matchSeq start="54" end="105">VSAYYSNVTLENDQSSHFQLVMRDEHEQLIERVWNFQPDAGQVLNGYLKSHG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="182" database="TR" id="A0ABR6U1D4_CITBR" ac="A0ABR6U1D4" length="110" description="DUF905 family protein OS=Citrobacter braakii OX=57706 GN=H6P72_23930 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <bits>52.8</bits>
+      <expectation>8.5e-07</expectation>
+      <identity>40.4</identity>
+      <positives>67.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="82">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSG</querySeq>
+      <pattern>VSA  +++ +E+DQ  H +L++RD   +++ R WNF+PDAG+  N Y+   G</pattern>
+      <matchSeq start="54" end="105">VSAYYSNVTLENDQSSHFQLVMRDEHEQLIERVWNFQPDAGQVLNGYLKSHG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="183" database="TR" id="A0ABX8KDX7_9ENTR" ac="A0ABX8KDX7" length="110" description="DUF905 family protein OS=Citrobacter pasteurii OX=1563222 GN=I6L54_23935 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <bits>52.8</bits>
+      <expectation>8.5e-07</expectation>
+      <identity>40.4</identity>
+      <positives>67.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="82">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSG</querySeq>
+      <pattern>VSA  +++ +E+DQ  H +L++RD   +++ R WNF+PDAG+  N Y+   G</pattern>
+      <matchSeq start="54" end="105">VSAYYSNVTLENDQSSHFQLVMRDEHEQLIERVWNFQPDAGQVLNGYLKTHG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="184" database="TR" id="A0ABX0R8Z0_9GAMM" ac="A0ABX0R8Z0" length="90" description="DUF905 domain-containing protein OS=Candidatus Pantoea multigeneris OX=2608357 GN=F3J40_08065 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>4.4e-06</expectation>
+      <identity>34.6</identity>
+      <positives>67.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="82">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSG</querySeq>
+      <pattern>++A   ++ +E+D   H +L++RD +G+++WR +NF+  AG   N+Y+ R G</pattern>
+      <matchSeq start="20" end="71">IAAAYRNVTVENDLDFHCQLVIRDRKGKILWRTFNFDDHAGFWANKYLQRYG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="185" database="TR" id="A0A3K0TC55_SALER" ac="A0A3K0TC55" length="77" description="DUF905 domain-containing protein OS=Salmonella enterica OX=28901 GN=EEM47_22985 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>6.5e-06</expectation>
+      <identity>41.9</identity>
+      <positives>51.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="83">FXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+ + L GLP        A   V+A   ++ IEDD G   RL+VR+  G MVWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="4" end="75">YFRILQGLPDGPFTRKQA-EAVAAQYRNVFIEDDHGEQFRLVVRN-NGTMVWRTWNFEDGAGYWMNHVIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="186" database="TR" id="Q1A2L2_ECOLX" ac="Q1A2L2" length="77" description="Bacterial protein of uncharacterized function (DUF905) OS=Escherichia coli OX=562 GN=yubL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>6.5e-06</expectation>
+      <identity>41.9</identity>
+      <positives>51.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="83">FXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+ + L GLP        A   V+A   ++ IEDD G   RL+VR+  G MVWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="4" end="75">YFRILQGLPDGPFTRKQA-EAVAAQYRNVFIEDDHGEQFRLVVRN-NGTMVWRTWNFEDGAGYWMNHVIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="187" database="TR" id="A0A7Y7EBF5_STRMO" ac="A0A7Y7EBF5" length="77" description="DUF905 family protein OS=Streptomyces morookaense OX=1970 GN=HG542_33805 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>6.5e-06</expectation>
+      <identity>41.9</identity>
+      <positives>51.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="83">FXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+ + L GLP        A   V+A   ++ IEDD G   RL+VR+  G MVWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="4" end="75">YFRILQGLPDGPFTRKQA-EAVAAQYRNVFIEDDHGEQFRLVVRN-NGTMVWRTWNFEDGAGYWMNHVIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="188" database="TR" id="Q6SJ43_ECOLX" ac="Q6SJ43" length="79" description="YdeA OS=Escherichia coli OX=562 GN=ydeA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>6.8e-06</expectation>
+      <identity>41.9</identity>
+      <positives>51.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="83">FXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+ + L GLP        A   V+A   ++ IEDD G   RL+VR+  G MVWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="6" end="77">YFRILQGLPDGPFTRKQA-EAVAAQYRNVFIEDDHGEQFRLVVRN-NGTMVWRTWNFEDGAGYWMNHVIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="189" database="TR" id="A0A0H3ETM8_ECO8N" ac="A0A0H3ETM8" length="77" description="DUF905 domain-containing protein OS=Escherichia coli O83:H1 (strain NRG 857C / AIEC) OX=685038 GN=NRG857_30220 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>9.2e-06</expectation>
+      <identity>49.1</identity>
+      <positives>58.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   ++ IEDD G   RL+VR+  G MVWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="24" end="75">VAAQYRNVFIEDDHGEQFRLVVRN-NGAMVWRTWNFEDGAGYWMNHVIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="190" database="SP" id="YUBL2_ECOLX" ac="Q5JBK6" length="79" description="UPF0401 protein YubL OS=Escherichia coli OX=562 GN=yubL PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>9.6e-06</expectation>
+      <identity>40.5</identity>
+      <positives>50.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="83">FXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+ + L GLP   S        V+    ++ IEDD G   RL+VR+  G MVWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="6" end="77">YFRILQGLPD-GSFTREQAEAVAVQYRNVFIEDDHGEQFRLVVRN-NGAMVWRTWNFEDGAGYWMNHVIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="191" database="SP" id="YUBL1_ECOLI" ac="Q9JMR3" length="79" description="UPF0401 protein YubL OS=Escherichia coli (strain K12) OX=83333 GN=yubL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>9.6e-06</expectation>
+      <identity>49.1</identity>
+      <positives>58.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   ++ IEDD G   RL+VR+  G MVWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="26" end="77">VAAQYRNVFIEDDHGEQFRLVVRN-NGAMVWRTWNFEDGAGYWMNHVIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="192" database="TR" id="B7LI51_ECO45" ac="B7LI51" length="86" description="DUF905 domain-containing protein OS=Escherichia coli O45:K1 (strain S88 / ExPEC) OX=585035 GN=yubL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.6e-05</expectation>
+      <identity>49.1</identity>
+      <positives>58.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   ++ IEDD G   RL+VR+  G MVWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="33" end="84">VAAQYRNVFIEDDHGEQFRLVVRN-NGAMVWRTWNFEDGAGYWMNHAIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="193" database="TR" id="T2K1E6_ECOLX" ac="T2K1E6" length="86" description="DUF905 domain-containing protein OS=Escherichia coli OX=562 GN=ECS286_0015 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>3.2e-05</expectation>
+      <identity>47.2</identity>
+      <positives>58.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   ++ IEDD G   RL+VR+  G +VWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="33" end="84">VAAQYRNVFIEDDHGEQFRLVVRN-NGALVWRTWNFEDGAGYWMNHVIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="194" database="TR" id="A0A173GM62_ECOLX" ac="A0A173GM62" length="77" description="Uncharacterized protein OS=Escherichia coli OX=562 GN=RCS79_P0103 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>3.7e-05</expectation>
+      <identity>47.2</identity>
+      <positives>58.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   ++ IEDD G   RL+VR+  G +VWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="24" end="75">VAAQYRNVFIEDDHGEQFRLVVRN-NGAIVWRTWNFEDGAGYWMNHVIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="195" database="TR" id="Q5I3J5_ECOLX" ac="Q5I3J5" length="77" description="Aec70 OS=Escherichia coli OX=562 GN=ykfF_2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>3.7e-05</expectation>
+      <identity>42.6</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++ I+DD G+H R ++R+AEG+  WR  N EPDAG+  N  +   G+</pattern>
+      <matchSeq start="28" end="74">NVFIQDDPGMHFRRVIRNAEGQRRWRCRNSEPDAGKVLNTRLASDGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="196" database="TR" id="A0ABU1C6S1_9ESCH" ac="A0ABU1C6S1" length="77" description="DUF905 family protein OS=Escherichia marmotae OX=1499973 GN=KJE03_20635 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>3.7e-05</expectation>
+      <identity>40.5</identity>
+      <positives>50.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="83">FXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>+ + L GLP   S        V+A   ++ I DD G   RL+VR+  G MVWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="4" end="75">YFRILQGLPD-GSFTRKHAEAVAAQYRNVFIGDDHGEQFRLVVRN-NGAMVWRTWNFEDGAGYWMNHVIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="197" database="TR" id="B7LG87_ECO55" ac="B7LG87" length="77" description="DUF905 domain-containing protein OS=Escherichia coli (strain 55989 / EAEC) OX=585055 GN=EC55989_3360 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>3.7e-05</expectation>
+      <identity>42.6</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++ I+DD G+H R ++R+AEG+  WR  N EPDAG+  N  +   G+</pattern>
+      <matchSeq start="28" end="74">NVFIQDDPGMHFRRVIRNAEGQRRWRCRNSEPDAGKVLNTRLASDGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="198" database="TR" id="A0A6M8UKA0_9GAMM" ac="A0A6M8UKA0" length="77" description="DUF905 domain-containing protein OS=Paramixta manurensis OX=2740817 GN=PMPD1_4433 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>5.2e-05</expectation>
+      <identity>35.2</identity>
+      <positives>59.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+    ++ IE++   H RL++RD +GR +W  +NF+ + G   NR +   GIR</pattern>
+      <matchSeq start="22" end="75">VAKAYANVTIENEMITHFRLVIRDRQGRFIWGCYNFDHEGGYWMNRNLKTYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="199" database="SP" id="YUBL_ECO57" ac="Q9ZGR9" length="79" description="UPF0401 protein YubL OS=Escherichia coli O157:H7 OX=83334 GN=yubL PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>5.4e-05</expectation>
+      <identity>47.2</identity>
+      <positives>58.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="83">VSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>V+A   ++ IE+D G   RL+VR+  G MVWR WNFE  AG   N  I   GI</pattern>
+      <matchSeq start="26" end="77">VAAQYRNVFIENDHGEQFRLVVRN-NGAMVWRTWNFEDGAGYWMNHVIRDFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="200" database="SP" id="Y279_ECOL6" ac="Q8FKW2" length="77" description="UPF0401 protein c0279 OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=c0279 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>7.4e-05</expectation>
+      <identity>43.5</identity>
+      <positives>65.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="82">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSG</querySeq>
+      <pattern>++ I+DD G+H R ++R+AEG+  WR  N EPDAG+  N  +   G</pattern>
+      <matchSeq start="28" end="73">NVFIQDDPGMHFRWVIRNAEGQRRWRCRNSEPDAGKVLNTRLASDG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="201" database="SP" id="Y3666_ECOL6" ac="Q8FDS2" length="77" description="UPF0401 protein c3666 OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=c3666 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>0.0001</expectation>
+      <identity>40.4</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="83">DINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGI</querySeq>
+      <pattern>++ I+DD G+H R ++R+AEG+  WR  N E DAG+  N ++   G+</pattern>
+      <matchSeq start="28" end="74">NVFIQDDPGMHFRRVIRNAEGQRRWRCRNSEADAGKQLNAWLASGGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="202" database="TR" id="A0ACG2ZY49_9ENTR" ac="A0ACG2ZY49" length="81" description="DUF905 family protein OS=Enterobacter hormaechei OX=158836 GN=QAA82_026025 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.00045</expectation>
+      <identity>47.7</identity>
+      <positives>65.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="76">AGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNR</querySeq>
+      <pattern>A  T+++IE+DQG + +L+VR  EG +   AWNFE D G   NR</pattern>
+      <matchSeq start="27" end="70">AQYTNVSIENDQGTYFQLVVRGEEGFLTKCAWNFENDVGALLNR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="203" database="TR" id="A0A0H3FJK4_KLEAK" ac="A0A0H3FJK4" length="28" description="DUF905 domain-containing protein OS=Klebsiella aerogenes (strain ATCC 13048 / DSM 30053 / CCUG 1429 / JCM 1235 / KCTC 2190 / NBRC 13534 / NCIMB 10102 / NCTC 10006 / CDC 819-56) OX=1028307 GN=EAE_00175 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.0035</expectation>
+      <identity>69.2</identity>
+      <positives>73.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="59" end="84">MVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>MVWRAWNFEP+AG   N YI   GIR</pattern>
+      <matchSeq start="1" end="26">MVWRAWNFEPEAGRLLNCYITSYGIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="204" database="TR" id="A0AAW8HFK3_9ENTR" ac="A0AAW8HFK3" length="78" description="DUF905 family protein OS=Enterobacter soli OX=885040 GN=RBJ67_24130 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.01</expectation>
+      <identity>32.8</identity>
+      <positives>62.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGI-HVRLIVR---DAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+AG  ++ IE+ Q   H ++ +R   D + +++WR WN+EPDA +  N ++   G++</pattern>
+      <matchSeq start="19" end="76">VAAGYQNVFIENLQPAGHFQIAIRNHRDHDRQLIWRNWNYEPDAYDALNSHLQSHGLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="205" database="TR" id="A0AB34RXP3_CITFR" ac="A0AB34RXP3" length="78" description="DUF905 family protein OS=Citrobacter freundii OX=546 GN=O4000_25565 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.01</expectation>
+      <identity>32.8</identity>
+      <positives>62.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGI-HVRLIVR---DAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+AG  ++ IE+ Q   H ++ +R   D + +++WR WN+EPDA +  N ++   G++</pattern>
+      <matchSeq start="19" end="76">VAAGYQNVFIENLQPAGHFQIAIRNHRDHDRQLIWRNWNYEPDAYDALNSHLQSHGLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="206" database="TR" id="A0ABN8TJ09_9ENTR" ac="A0ABN8TJ09" length="78" description="DUF905 domain-containing protein OS=Pseudocitrobacter vendiensis OX=2488306 GN=FBBNIHIM_20905 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.01</expectation>
+      <identity>32.8</identity>
+      <positives>62.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGI-HVRLIVR---DAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+AG  ++ IE+ Q   H ++ +R   D + +++WR WN+EPDA +  N ++   G++</pattern>
+      <matchSeq start="19" end="76">VAAGYQNVFIENLQPAGHFQIAIRNHRDHDRQLIWRNWNYEPDAYDALNSHLQSHGLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="207" database="TR" id="A0ABV5A7J5_9ENTR" ac="A0ABV5A7J5" length="78" description="DUF905 family protein OS=Enterobacter chuandaensis OX=2497875 GN=ACE3KR_20985 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.01</expectation>
+      <identity>32.8</identity>
+      <positives>62.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGI-HVRLIVR---DAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+AG  ++ IE+ Q   H ++ +R   D + +++WR WN+EPDA +  N ++   G++</pattern>
+      <matchSeq start="19" end="76">VAAGYQNVFIENLQPAGHFQIAIRNHRDHDRQLIWRNWNYEPDAYDALNSHLQSHGLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="208" database="SP" id="YUBL_SALTI" ac="Q9L5N1" length="78" description="UPF0401 protein YubL OS=Salmonella typhi OX=90370 GN=yubL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.01</expectation>
+      <identity>32.8</identity>
+      <positives>60.3</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="84">VSAGITDINIEDDQGI-HVRLIVRDA---EGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>V+AG  ++ IE+ Q   H ++++RD    + ++VWR WN+E  A +  N Y+   G++</pattern>
+      <matchSeq start="19" end="76">VAAGYQNVFIENLQPAGHFQIVIRDHRDHDSQLVWRNWNYESGANDALNSYLQSHGLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="209" database="TR" id="A0ACT2EKL7_9ENTR" ac="A0ACT2EKL7" length="68" description="DUF905 family protein OS=Franconibacter helveticus 1159 OX=1405499 GN=ACP26D_22350 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.48</expectation>
+      <identity>34.6</identity>
+      <positives>57.7</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="80">PLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHR</querySeq>
+      <pattern>P V+  + + +  D + I +R +V   +GR+VWRAW++E     GF   +HR</pattern>
+      <matchSeq start="15" end="59">PTVTVEVANTDRYDSEQIEIRQVV---DGRLVWRAWDYE----TGFENDLHR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="210" database="TR" id="A0ABN4FI08_YERRO" ac="A0ABN4FI08" length="287" description="Dynamin family protein OS=Yersinia rohdei OX=29485 GN=CH64_2079 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.65</expectation>
+      <identity>77.3</identity>
+      <positives>86.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="22">MSNSEGWXSFXQTLSGLPQWAS</querySeq>
+      <pattern>M+NSEG  SF Q+LSGLPQWAS</pattern>
+      <matchSeq start="1" end="22">MNNSEGLKSFRQSLSGLPQWAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="211" database="TR" id="A0A2T2XVF6_9ENTR" ac="A0A2T2XVF6" length="287" description="G domain-containing protein OS=Kluyvera genomosp. 2 OX=2774054 GN=C8256_23920 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.65</expectation>
+      <identity>77.3</identity>
+      <positives>86.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="22">MSNSEGWXSFXQTLSGLPQWAS</querySeq>
+      <pattern>M+NSEG  SF Q+LSGLPQWAS</pattern>
+      <matchSeq start="1" end="22">MNNSEGLKSFQQSLSGLPQWAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="212" database="TR" id="A0A8K0XYC0_9ENTR" ac="A0A8K0XYC0" length="287" description="GTPase family protein OS=Tenebrionibacter intestinalis OX=2799638 GN=JJB97_03380 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.65</expectation>
+      <identity>77.3</identity>
+      <positives>86.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="22">MSNSEGWXSFXQTLSGLPQWAS</querySeq>
+      <pattern>M+NSEG  SF Q+LSGLPQWAS</pattern>
+      <matchSeq start="1" end="22">MNNSEGLKSFHQSLSGLPQWAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="213" database="TR" id="A0A375A6V6_9GAMM" ac="A0A375A6V6" length="288" description="NgrB OS=Dickeya aquatica OX=1401087 GN=DAQ1742_00665 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.65</expectation>
+      <identity>77.3</identity>
+      <positives>86.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="22">MSNSEGWXSFXQTLSGLPQWAS</querySeq>
+      <pattern>M+NSEG  SF Q+LSGLPQWAS</pattern>
+      <matchSeq start="1" end="22">MNNSEGLKSFQQSLSGLPQWAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="214" database="TR" id="H1ZMW5_KLEPN" ac="H1ZMW5" length="68" description="Hypothertical protein OS=Klebsiella pneumoniae OX=573 GN=p0801-IMP-034 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.68</expectation>
+      <identity>32.7</identity>
+      <positives>57.7</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="80">PLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHR</querySeq>
+      <pattern>P ++  + + +  D + I +R +V   +GR+VWRAW++E     GF   +HR</pattern>
+      <matchSeq start="15" end="59">PTITVEVANTDRYDSEQIEIRQVV---DGRLVWRAWDYE----TGFENDLHR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="215" database="TR" id="A0ABV5A8L9_9ENTR" ac="A0ABV5A8L9" length="68" description="DUF905 family protein OS=Enterobacter chuandaensis OX=2497875 GN=ACE3KR_24135 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.68</expectation>
+      <identity>32.7</identity>
+      <positives>57.7</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="80">PLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHR</querySeq>
+      <pattern>P V+  + + +  D + I +R +V   +GR++WRAW++E     GF   +HR</pattern>
+      <matchSeq start="15" end="59">PTVTVEVANTDRYDSEQIEIRQVV---DGRLIWRAWDYE----AGFESALHR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="216" database="TR" id="A0A0R8C780_KLEPN" ac="A0A0R8C780" length="68" description="DUF905 domain-containing protein OS=Klebsiella pneumoniae subsp. pneumoniae OX=72407 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>2.7</expectation>
+      <identity>32.7</identity>
+      <positives>55.8</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="80">PLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHR</querySeq>
+      <pattern>P V+  + + +  D + I +R +V   +GR+ WRAW++E     GF   +HR</pattern>
+      <matchSeq start="15" end="59">PTVTVEVANTDRYDSEQIEIRHVV---DGRLAWRAWDYE----TGFENDLHR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="217" database="TR" id="A0A5E3ZYJ8_9ACTN" ac="A0A5E3ZYJ8" length="405" description="Alpha-galactosidase OS=Lawsonella clevelandensis OX=1528099 GN=agaA_2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>4.5</expectation>
+      <identity>27.4</identity>
+      <positives>47.6</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="84">GWXSFXQTLSGLPQWASADCVAGPLVSAGITD-----INIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>GW S+ +    + QW   + +A  +VS+G+ D     +N++D      + + R   G + W    F PD   G  RY+H  G++</pattern>
+      <matchSeq start="45" end="122">GWSSWNRFGCDIDQWKIRE-IADAMVSSGLKDAGYRYVNVDDCW----QAVQRLPNGDLTWNPQRF-PDGIPGLARYVHAKGLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="218" database="TR" id="A0ABY0J6D7_9ENTR" ac="A0ABY0J6D7" length="287" description="GTP-binding protein HSR1-like protein OS=Enterobacter roggenkampii OX=1812935 GN=era_2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>5.8</expectation>
+      <identity>68.2</identity>
+      <positives>81.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="22">MSNSEGWXSFXQTLSGLPQWAS</querySeq>
+      <pattern>M+NSEG  SF Q+L+GLPQW S</pattern>
+      <matchSeq start="1" end="22">MNNSEGLKSFQQSLAGLPQWVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="219" database="TR" id="A0A5C5VA59_9BACT" ac="A0A5C5VA59" length="444" description="DUF1598 domain-containing protein OS=Posidoniimonas corsicana OX=1938618 GN=KOR34_03980 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.1</expectation>
+      <identity>40.9</identity>
+      <positives>52.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="47" end="90">HVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>H    +  A+ RM   A NFEP   +G   Y+H +G  TD FPR</pattern>
+      <matchSeq start="226" end="269">HFARTIVAADFRMKRLAMNFEPAPIDGMPSYLHIAGTNTDAFPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="220" database="TR" id="A0ABU1C300_9ESCH" ac="A0ABU1C300" length="59" description="DUF905 family protein OS=Escherichia marmotae OX=1499973 GN=KJE03_16270 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>6.3</expectation>
+      <identity>38.7</identity>
+      <positives>71.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="61">VSAGITDINIEDDQGIHVRLIVRDAEGRMVW</querySeq>
+      <pattern>++    ++ IE+DQG H R ++R+AEG++ W</pattern>
+      <matchSeq start="29" end="59">ITTDYCNVFIENDQGTHFRRVIRNAEGQLRW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="221" database="TR" id="A0A2U0SAK5_9SPHN" ac="A0A2U0SAK5" length="2624" description="Uncharacterized protein OS=Sphingomonas pokkalii OX=2175090 GN=DD559_02840 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.6</expectation>
+      <identity>34.7</identity>
+      <positives>50.0</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="68">MSNSEGWXSFXQTLSGLPQWASADCVAGPLVSAGITDINIEDDQGIHVRLIVRDAEGRMVWRA----WNFEP</querySeq>
+      <pattern>++ S GW S  +T+  +P W + D VA  L S  + D+   D  G  +  +  DA GR V+RA    W  EP</pattern>
+      <matchSeq start="620" end="686">LAGSAGWRSDARTMPAVPFWRAGDDVATGL-SGDLMDV---DGDGA-IDFVSDDASGRSVYRAQADYWILEP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="222" database="TR" id="B7MMG6_ECO45" ac="B7MMG6" length="64" description="DUF905 domain-containing protein OS=Escherichia coli O45:K1 (strain S88 / ExPEC) OX=585035 GN=ECS88_4892 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>6.9</expectation>
+      <identity>41.9</identity>
+      <positives>67.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="61">VSAGITDINIEDDQGIHVRLIVRDAEGRMVW</querySeq>
+      <pattern>V     ++  EDDQG + RL++R+AEG++ W</pattern>
+      <matchSeq start="34" end="64">VKTAYRNVFTEDDQGTYSRLVIRNAEGQLRW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="223" database="TR" id="A7ZVJ2_ECO24" ac="A7ZVJ2" length="64" description="DUF905 domain-containing protein OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_4893 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>6.9</expectation>
+      <identity>41.9</identity>
+      <positives>67.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="61">VSAGITDINIEDDQGIHVRLIVRDAEGRMVW</querySeq>
+      <pattern>V     ++  EDDQG + RL++R+AEG++ W</pattern>
+      <matchSeq start="34" end="64">VKTAYRNVFTEDDQGTYSRLVIRNAEGQLRW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="224" database="TR" id="A0A5C5XXI4_9BACT" ac="A0A5C5XXI4" length="444" description="DUF1598 domain-containing protein OS=Posidoniimonas polymericola OX=2528002 GN=Pla123a_47060 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.4</expectation>
+      <identity>40.9</identity>
+      <positives>52.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="47" end="90">HVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIRTDTFPR</querySeq>
+      <pattern>H    +  A+ RM   A NFEP   +G   Y+H +G  TD FPR</pattern>
+      <matchSeq start="226" end="269">HFARAIVAADFRMKRLAMNFEPAPIDGMPSYLHLAGKNTDAFPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="225" database="TR" id="A0AAX3EKE5_PAEUR" ac="A0AAX3EKE5" length="529" description="Molybdopterin-dependent oxidoreductase OS=Paenarthrobacter ureafaciens OX=37931 GN=NL394_03330 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.5</expectation>
+      <identity>35.6</identity>
+      <positives>53.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="34" end="78">GITDINIEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYI</querySeq>
+      <pattern>GIT + ++ D G  V   + D    + WR W++E DA  G N Y+</pattern>
+      <matchSeq start="451" end="494">GITKVEVQIDDGDWVEATLSDEASTITWRQWSYEWDATPG-NHYV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="226" database="TR" id="A0A6A6TQB3_9PLEO" ac="A0A6A6TQB3" length="544" description="Alpha-galactosidase OS=Lophiostoma macrostomum CBS 122681 OX=1314788 GN=K491DRAFT_647893 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.6</expectation>
+      <identity>32.9</identity>
+      <positives>47.6</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="84">GWXSFXQTLSGLPQWASADCVAGPLVSAGITDIN---IEDDQGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYIHRSGIR</querySeq>
+      <pattern>GW S+  + S  P  A     A  L+S G+ D+    +  D G   +   RDA+ +M W A  F P  GE   +Y+H  G+R</pattern>
+      <matchSeq start="29" end="106">GWNSY-NSYSCNPSEAIIKLNAEGLISTGLKDLGYTLVTPDCGWQNQS--RDAQQQMQWNATLF-PSGGEALGKYLHGLGLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="227" database="TR" id="A0A1Y1ZJP1_9PLEO" ac="A0A1Y1ZJP1" length="682" description="GAL4-like transcription factor-like protein OS=Clohesyomyces aquaticus OX=1231657 GN=BCR34DRAFT_625245 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.7</expectation>
+      <identity>33.3</identity>
+      <positives>49.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="78">LVSAGITDINIEDD--QGIHVRLIVRDAEGRMVWRAWNFEPDAGEGFNRYI</querySeq>
+      <pattern>L+S  + D+ +  +    +HV   +RD   R+ W AW  E   G GF R I</pattern>
+      <matchSeq start="317" end="367">LISQAVVDLGLHQELPSDVHVTPYLRDMRRRLFWCAWEMEVAVGAGFLRPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="228" database="TR" id="A0ABR2YEC0_9CHLO" ac="A0ABR2YEC0" length="4111" description="DNA-dependent protein kinase catalytic subunit OS=Coccomyxa subellipsoidea OX=248742 GN=WJX75_008988 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.1</expectation>
+      <identity>33.3</identity>
+      <positives>47.6</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="67">GLPQWASADCVAGPLVSAGITDINIEDD-----------QGIHVRLIVRDAEGRMVWRAWNFE</querySeq>
+      <pattern>G  Q ASA  VAG +VS G T++ +  D            G  ++  ++D EGR+ W  W  E</pattern>
+      <matchSeq start="1214" end="1276">GKSQSASAAWVAGLMVSEGKTELQVAQDFLMMSSAVPAVGGTQMKRWLQDLEGRLHWAVWGIE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="229" database="TR" id="B2VB73_ERWT9" ac="B2VB73" length="63" description="Uncharacterized protein OS=Erwinia tasmaniensis (strain DSM 17950 / CFBP 7177 / CIP 109463 / NCPPB 4357 / Et1/99) OX=465817 GN=ETA_pET460460 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>9.6</expectation>
+      <identity>43.3</identity>
+      <positives>70.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="60">VSAGITDINIEDDQGIHVRLIVRDAEGRMV</querySeq>
+      <pattern>V+A  +++ I+DDQG H RL+VR+  G  +</pattern>
+      <matchSeq start="34" end="63">VTAAFSNVFIDDDQGSHFRLVVREPSGSFI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

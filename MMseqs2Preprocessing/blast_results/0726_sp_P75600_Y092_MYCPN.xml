@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-202657-0259-67666677-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-202657-0259-67666677-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P75600|Y092_MYCPN" type="PROTEIN" length="173"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:26:57+00:00" end="2026-11-13T20:30:26+00:00" search="P0Y0M0DT0H0M209.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="16">
+   <hit number="1" database="SP" id="Y092_MYCPN" ac="P75600" length="173" description="Putative MgpC-like protein MPN_092 OS=Mycoplasmoides pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_092 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>925</score>
+      <bits>360.9</bits>
+      <expectation>3.2e-126</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="173">MVSKWGAGSAFGLQGNGSNSSGLRPLLKRTAQINLRQTQDNAQTGKFSKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAVGGVSVQAATRLDFYKWRSAECNNKVIPHLHVPTRLLKWPDRCDGFKRGTEFVVLGCRGGPGIGSRNLMSPHRAQLGHRQAEAVCRKPVGF</querySeq>
+      <pattern>MVSKWGAGSAFGLQGNGSNSSGLRPLLKRTAQINLRQTQDNAQTGKFSKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAVGGVSVQAATRLDFYKWRSAECNNKVIPHLHVPTRLLKWPDRCDGFKRGTEFVVLGCRGGPGIGSRNLMSPHRAQLGHRQAEAVCRKPVGF</pattern>
+      <matchSeq start="1" end="173">MVSKWGAGSAFGLQGNGSNSSGLRPLLKRTAQINLRQTQDNAQTGKFSKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAVGGVSVQAATRLDFYKWRSAECNNKVIPHLHVPTRLLKWPDRCDGFKRGTEFVVLGCRGGPGIGSRNLMSPHRAQLGHRQAEAVCRKPVGF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="Y149_MYCPN" ac="P75037" length="434" description="Putative MgpC-like protein MPN_149 OS=Mycoplasmoides pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_149 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>382</score>
+      <bits>151.8</bits>
+      <expectation>8.6e-41</expectation>
+      <identity>49.7</identity>
+      <positives>62.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="173">QGNGSNSSGLRPLLKRTAQINLRQTQDNAQTG------KFSKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAVGGV-SVQAATRLDFYKWRSAECNNKVIPHLHVPTRLLKWPDRCDGFKRGTEFVVLGCRGGPGIGSRNLMSPHRAQLGHRQAEAVCRKPVGF</querySeq>
+      <pattern>Q +G N+ GL  L +R+  + ++++  +   G      KF KYLNT QALHQMGVIVPSLETW G+              S  +   + F+KWRS ECN+ VIP+ + PTRLLKWPDRCDGF+RGTEFVVLG      +    LMSPHR +LGHRQAE VC +   F</pattern>
+      <matchSeq start="260" end="425">QQSGDNN-GLVSLAQRSTTVAVQKSDSSGSQGQGTTDNKFQKYLNTTQALHQMGVIVPSLETWAGENKYWNRYPCCWWCFSPSSDPAIVFHKWRSTECNHPVIPYFNRPTRLLKWPDRCDGFERGTEFVVLGRGWANHVRKGYLMSPHRVELGHRQAEGVCGESAWF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="Y503_MYCPN" ac="P75283" length="381" description="Putative MgpC-like protein MPN_503 OS=Mycoplasmoides pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_503 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>249</score>
+      <bits>100.5</bits>
+      <expectation>7e-22</expectation>
+      <identity>64.0</identity>
+      <positives>74.4</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="93">QGNGSNSSGLRPLLKRTAQINLRQTQDNAQTG------KFSKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAVGGVSVQAATR</querySeq>
+      <pattern>Q +G NS GL  L +R+  + ++++  +   G      KF KYLNTAQALHQMGVIVPSLETWPGKPSTGIATRA GGVSVQAATR</pattern>
+      <matchSeq start="103" end="187">QQSGHNS-GLVSLAQRSTTVAVQKSDSSGSQGQGTTDNKFQKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAGGGVSVQAATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="B2BDZ7_MYCPM" ac="B2BDZ7" length="545" description="Cytadherence-involved protein (Fragment) OS=Mycoplasmoides pneumoniae OX=2104 GN=MPN142 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>249</score>
+      <bits>100.5</bits>
+      <expectation>1.9e-21</expectation>
+      <identity>64.0</identity>
+      <positives>74.4</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="93">QGNGSNSSGLRPLLKRTAQINLRQTQDNAQTG------KFSKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAVGGVSVQAATR</querySeq>
+      <pattern>Q +G NS GL  L +R+  + ++++  +   G      KF KYLNTAQALHQMGVIVPSLETWPGKPSTGIATRA GGVSVQAATR</pattern>
+      <matchSeq start="307" end="391">QQSGHNS-GLVSLAQRSTTVAVQKSDSSGSQGQGTTDNKFQKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAGGGVSVQAATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A2Z6I6Q2_MYCPM" ac="A0A2Z6I6Q2" length="1148" description="Cytadherence-related protein OS=Mycoplasmoides pneumoniae OX=2104 GN=MPN142 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>249</score>
+      <bits>100.5</bits>
+      <expectation>2.4e-21</expectation>
+      <identity>64.0</identity>
+      <positives>74.4</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="93">QGNGSNSSGLRPLLKRTAQINLRQTQDNAQTG------KFSKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAVGGVSVQAATR</querySeq>
+      <pattern>Q +G NS GL  L +R+  + ++++  +   G      KF KYLNTAQALHQMGVIVPSLETWPGKPSTGIATRA GGVSVQAATR</pattern>
+      <matchSeq start="304" end="388">QQSGHNS-GLVSLAQRSTTVAVQKSDSSGSQGQGTTDNKFQKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAGGGVSVQAATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A348GSS8_MYCPM" ac="A0A348GSS8" length="1151" description="Adhesin P1 OS=Mycoplasmoides pneumoniae OX=2104 GN=MPN142 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>249</score>
+      <bits>100.5</bits>
+      <expectation>2.4e-21</expectation>
+      <identity>64.0</identity>
+      <positives>74.4</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="93">QGNGSNSSGLRPLLKRTAQINLRQTQDNAQTG------KFSKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAVGGVSVQAATR</querySeq>
+      <pattern>Q +G NS GL  L +R+  + ++++  +   G      KF KYLNTAQALHQMGVIVPSLETWPGKPSTGIATRA GGVSVQAATR</pattern>
+      <matchSeq start="307" end="391">QQSGHNS-GLVSLAQRSTTVAVQKSDSSGSQGQGTTDNKFQKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAGGGVSVQAATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="Y464_MYCPN" ac="P75319" length="445" description="Putative MgpC-like protein MPN_464 OS=Mycoplasmoides pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_464 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>246</score>
+      <bits>99.4</bits>
+      <expectation>3.2e-21</expectation>
+      <identity>61.6</identity>
+      <positives>73.3</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="93">QGNGSNSSGLRPLLKRTAQINLRQTQDNAQTG------KFSKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAVGGVSVQAATR</querySeq>
+      <pattern>Q +G N+ GL  L +R+  + ++++  +   G      KF KYLNT QALHQMGVIVPSLETWPGKPSTGIATRA GGVSVQAATR</pattern>
+      <matchSeq start="8" end="92">QQSGDNN-GLVSLAQRSTTVAVQKSDSSGSQGQGTTDNKFQKYLNTTQALHQMGVIVPSLETWPGKPSTGIATRAAGGVSVQAATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="Y414_MYCPN" ac="P75372" length="493" description="Putative MgpC-like protein MPN_414 OS=Mycoplasmoides pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_414 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>246</score>
+      <bits>99.4</bits>
+      <expectation>4.2e-21</expectation>
+      <identity>64.0</identity>
+      <positives>74.4</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="93">QGNGSNSSGLRPLLKRTAQINLRQTQDNAQTG------KFSKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAVGGVSVQAATR</querySeq>
+      <pattern>Q +G NS GL  L +R+  + ++++  +   G      KF KYLNTAQALHQMGVIVPSLETWPGKPSTGIATRA GGVSVQAATR</pattern>
+      <matchSeq start="86" end="170">QQSGHNS-GLVSLAQRSTTVAVQKSDSSGFQGQGTTDNKFQKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAGGGVSVQAATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="Y367_MYCPN" ac="P75414" length="322" description="Putative MgpC-like protein MPN_367 OS=Mycoplasmoides pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_367 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <bits>75.1</bits>
+      <expectation>8e-13</expectation>
+      <identity>42.1</identity>
+      <positives>49.1</positives>
+      <gaps>33</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVSKWGAGSAFGLQGNGSNSSGLRPLLKR------------------------------------TAQINLRQTQDNAQTGKFSKYLNTAQALHQMGVIVPSLETWPGKPSTGI</querySeq>
+      <pattern>MV    AGSA  LQGNGSNSSGL+ LL+                                     TA +++ +T  +  T  FSKYLNTAQALHQMGVIVP LE W G   TG+</pattern>
+      <matchSeq start="1" end="112">MVGSGAAGSASSLQGNGSNSSGLKSLLRSAPVSVPPSSTSNQTLSLSNPAPVGPQAVVSQPAGGATAAVSVNRTASDTAT--FSKYLNTAQALHQMGVIVPGLEKWGGNNGTGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="MGP3_MYCPN" ac="Q50341" length="1218" description="Adhesin P40/P90 OS=Mycoplasmoides pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=orf6 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <bits>75.1</bits>
+      <expectation>1.7e-12</expectation>
+      <identity>42.1</identity>
+      <positives>49.1</positives>
+      <gaps>33</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="78">MVSKWGAGSAFGLQGNGSNSSGLRPLLKR------------------------------------TAQINLRQTQDNAQTGKFSKYLNTAQALHQMGVIVPSLETWPGKPSTGI</querySeq>
+      <pattern>MV    AGSA  LQGNGSNSSGL+ LL+                                     TA +++ +T  +  T  FSKYLNTAQALHQMGVIVP LE W G   TG+</pattern>
+      <matchSeq start="295" end="406">MVGSGAAGSASSLQGNGSNSSGLKSLLRSAPVSVPPSSTSNQTLSLSNPAPVGPQAVVSQPAGGATAAVSVNRTASDTAT--FSKYLNTAQALHQMGVIVPGLEKWGGNNGTGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="Y102_MYCPN" ac="P75567" length="272" description="Putative MgpC-like protein MPN_102 OS=Mycoplasmoides pneumoniae (strain ATCC 29342 / M129 / Subtype 1) OX=272634 GN=MPN_102 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <bits>59.7</bits>
+      <expectation>1.9e-07</expectation>
+      <identity>46.7</identity>
+      <positives>61.3</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="83">GNGSNSSGLRPLLK---RTAQINLRQTQDNAQTG-KFSKYLNTAQALHQMGVIVPSLET--WPGKPSTGIATRAV</querySeq>
+      <pattern>GN  +++ L PLL+    T  + L+QT  N+Q   KF KYLNTAQALHQMGVIVP L    W  + +   +TR +</pattern>
+      <matchSeq start="8" end="82">GNVGDTTALTPLLRGATTTTTVQLKQTDSNSQDQQKFQKYLNTAQALHQMGVIVPELSQGGWQSQTARHSSTRGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0ABT1VA69_9ACTN" ac="A0ABT1VA69" length="430" description="Zinc-binding alcohol dehydrogenase family protein OS=Streptomyces rugosispiralis OX=2967341 GN=NP777_37700 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>2.8</expectation>
+      <identity>34.7</identity>
+      <positives>43.6</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="102">SKWGAGSAFGLQGNGSNSSGLRPLLKRTAQINLRQTQDNAQTGKFS-KYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAVGGVSVQAATRLDFYKWRSA</querySeq>
+      <pattern>S WGAG   GL  +G+ +  L     RTA   +      A+    +  YL  A AL   G +        G+ ST I T AVGGV   AA   D  +WR A</pattern>
+      <matchSeq start="172" end="259">SVWGAGGEIGLSCDGAYAQYLAS--SRTAVTPMPAGLSFAEAAASALSYLTAAAALRLAGPV--------GRESTVIVTGAVGGVGAAAA---DVARWRGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0ABT9KI41_9PAST" ac="A0ABT9KI41" length="114" description="Protein-export membrane protein SecG OS=Bisgaard Taxon 45 OX=304289 GN=secG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>5.3</expectation>
+      <identity>31.9</identity>
+      <positives>52.2</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="69">AGSAFGLQGNGSNSSGLRPLLKRTAQI------NLRQTQDNAQTGKFSKYLNTAQALHQMGVIVPSLET</querySeq>
+      <pattern>+G+ FG  G+G+  S +  LL     +      N+   +DN + GKF    +TA+ + Q  V VP++ET</pattern>
+      <matchSeq start="39" end="107">SGTIFGSVGSGNFLSKMTALLATAFFVMSIVIGNMNAHRDNVKQGKFDDLSSTAEQIQQQKVNVPAVET</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0ABS6C6T6_9ACTN" ac="A0ABS6C6T6" length="324" description="Zinc-binding alcohol dehydrogenase family protein OS=Streptomyces niphimycinicus OX=2842201 GN=KN815_00330 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>6.2</expectation>
+      <identity>33.0</identity>
+      <positives>41.0</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="102">SKWGAGSAFGLQGNGSNSSGLRPLLKRTAQINLRQTQDNAQTGKFSKYLNTAQALHQMGVIVPSLETWPGKPSTGIATRAVGGVSVQAATRLDFYKWRSA</querySeq>
+      <pattern>S WGAG   GL  +G+ +  L         +    +   A     S YL  A AL   G +        G+ ST I T AVGGV   AA   D  +WR A</pattern>
+      <matchSeq start="66" end="153">SVWGAGGEIGLSCDGAYAQYLAAAGTAVTPMPAGLSFTEAAASALS-YLTAAAALRLTGPV--------GRESTVIVTGAVGGVGAAAA---DVARWRGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0ABQ9WDR4_SAGOE" ac="A0ABQ9WDR4" length="1149" description="SPATA31 domain-containing protein OS=Saguinus oedipus OX=9490 GN=P7K49_001141 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>7.9</expectation>
+      <identity>35.4</identity>
+      <positives>60.0</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="67">SKWGAGSAFGLQGNGSNSSGLRPLLKRTAQINLRQTQDNAQTGKFSKYLNTAQALHQMGVIVPSL</querySeq>
+      <pattern>S+  AGS F L  +G N  G++  +   A+IN+R+ ++  + G F K +NT + L+ +G +V SL</pattern>
+      <matchSeq start="178" end="238">SQMEAGSPFLLSSDGQNVVGIQ--VTERARINIREEKE--KDGSFPKQMNTEKHLNSLGNLVKSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A401TDI3_CHIPU" ac="A0A401TDI3" length="150" description="Uncharacterized protein OS=Chiloscyllium punctatum OX=137246 GN=chiPu_0024887 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>8.2</expectation>
+      <identity>31.9</identity>
+      <positives>51.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="70" end="116">WPGKPSTGIATRAVGGVSVQAATRLDFYKWRSAECNNKVIPHLHVPT</querySeq>
+      <pattern>WP  PS G+    +GG S  A  R  F  W+ ++ ++ + P  H P+</pattern>
+      <matchSeq start="97" end="143">WPAAPSIGVRADLIGGTSDNAPARGTFQPWKQSQSDSGLTPLEHRPS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

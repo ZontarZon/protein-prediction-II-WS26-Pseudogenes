@@ -1,0 +1,654 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-181356-0057-41876363-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-181356-0057-41876363-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P9WIH6|MAZF8_MYCTO" type="PROTEIN" length="105"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T18:13:56+00:00" end="2026-11-13T18:15:45+00:00" search="P0Y0M0DT0H0M109.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="37">
+   <hit number="1" database="TR" id="A0ACD3TUJ5_9MYCO" ac="A0ACD3TUJ5" length="105" description="Toxin OS=Mycobacterium orygis OX=1305738 GN=FHI80_05000 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>555</score>
+      <bits>218.4</bits>
+      <expectation>5.4e-72</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</querySeq>
+      <pattern>MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</pattern>
+      <matchSeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0ABV1MHW5_9MYCO" ac="A0ABV1MHW5" length="105" description="Toxin OS=Mycobacterium canetti OX=78331 GN=ABDZ14_16300 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>555</score>
+      <bits>218.4</bits>
+      <expectation>5.4e-72</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</querySeq>
+      <pattern>MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</pattern>
+      <matchSeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A5U4V7_MYCTA" ac="A5U4V7" length="105" description="Toxin MazF8 OS=Mycobacterium tuberculosis (strain ATCC 25177 / H37Ra) OX=419947 GN=MRA_2293 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>555</score>
+      <bits>218.4</bits>
+      <expectation>5.4e-72</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</querySeq>
+      <pattern>MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</pattern>
+      <matchSeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="MAZF8_MYCTU" ac="P9WIH7" length="105" description="Putative toxin MazF8 OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=mazF8 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>555</score>
+      <bits>218.4</bits>
+      <expectation>5.4e-72</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</querySeq>
+      <pattern>MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</pattern>
+      <matchSeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="MAZF8_MYCTO" ac="P9WIH6" length="105" description="Putative toxin MazF8 OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=mazF8 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>555</score>
+      <bits>218.4</bits>
+      <expectation>5.4e-72</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</querySeq>
+      <pattern>MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</pattern>
+      <matchSeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A1R3Y0N0_MYCBO" ac="A0A1R3Y0N0" length="105" description="Possible toxin mazf8 OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=mazf8 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>552</score>
+      <bits>217.2</bits>
+      <expectation>1.5e-71</expectation>
+      <identity>99.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</querySeq>
+      <pattern>MSIARSAQPIGWISCPPKGGSSCCRCGGGYTH+FCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</pattern>
+      <matchSeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHMFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0ABX2VGM6_9MYCO" ac="A0ABX2VGM6" length="105" description="Toxin OS=Mycobacterium mungi OX=1844474 GN=A7J32_13855 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>550</score>
+      <bits>216.5</bits>
+      <expectation>3.1e-71</expectation>
+      <identity>99.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFGE</querySeq>
+      <pattern>MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQ+REFRQFTGRSAPPSATIAFGE</pattern>
+      <matchSeq start="1" end="105">MSIARSAQPIGWISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQSREFRQFTGRSAPPSATIAFGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A7Z7NBI0_9MYCO" ac="A0A7Z7NBI0" length="115" description="mRNA interferase OS=Mycobacterium simulans OX=627089 GN=mazF9_2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>0.00026</expectation>
+      <identity>68.4</identity>
+      <positives>76.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="68">IFCVSAWTGLVVD--LQAEQVRSVVTERLRRRIGRGAP</querySeq>
+      <pattern>+F  +A TGL VD   QAEQVRSV TERLRRRIGR +P</pattern>
+      <matchSeq start="62" end="99">VFLPAATTGLAVDSKAQAEQVRSVATERLRRRIGRVSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0ABS5RRC9_9MYCO" ac="A0ABS5RRC9" length="115" description="mRNA interferase OS=Mycolicibacter acidiphilus OX=2835306 GN=KIH27_20985 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0039</expectation>
+      <identity>67.6</identity>
+      <positives>70.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="74">TGLVVD--LQAEQVRSVVTERLRRRIGRGAPILAGTL</querySeq>
+      <pattern>TGL VD   QAEQVRSV  ERLRRRIGR  P+  G L</pattern>
+      <matchSeq start="69" end="105">TGLTVDSKAQAEQVRSVAVERLRRRIGRVPPVELGQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A1X1R2G7_MYCBE" ac="A0A1X1R2G7" length="116" description="mRNA interferase OS=Mycobacterium bohemicum OX=56425 GN=AWB93_14335 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.0077</expectation>
+      <identity>68.6</identity>
+      <positives>74.3</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="65">IFCVSAWTGLVVD--LQAEQVRSVVTERLRRRIGR</querySeq>
+      <pattern>+F  +A TGL VD   QAEQVRSV  ERLRRRIGR</pattern>
+      <matchSeq start="63" end="97">VFLPAATTGLAVDSKAQAEQVRSVAVERLRRRIGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0ABM7KK39_9MYCO" ac="A0ABM7KK39" length="115" description="mRNA interferase OS=Mycobacterium branderi OX=43348 GN=mazF9 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.01</expectation>
+      <identity>62.9</identity>
+      <positives>80.0</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="69">SAWTGLVVD--LQAEQVRSVVTERLRRRIGRGAPI</querySeq>
+      <pattern>+A TGL VD   QAEQ+RSV T+RL+RRIGR +P+</pattern>
+      <matchSeq start="66" end="100">AAGTGLAVDSKAQAEQIRSVATQRLQRRIGRLSPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A1X1XC24_9MYCO" ac="A0A1X1XC24" length="115" description="mRNA interferase OS=Mycobacterium kyorinense OX=487514 GN=AWC14_16980 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.11</expectation>
+      <identity>64.5</identity>
+      <positives>80.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="65">SAWTGLVVD--LQAEQVRSVVTERLRRRIGR</querySeq>
+      <pattern>+A TGL VD   QAEQ+RS+ T+RLRRR+GR</pattern>
+      <matchSeq start="66" end="96">AATTGLAVDSKAQAEQIRSIATQRLRRRLGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A1G6JAQ4_9PSEU" ac="A0A1G6JAQ4" length="115" description="mRNA interferase OS=Actinokineospora iranica OX=1271860 GN=SAMN05216174_101318 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.22</expectation>
+      <identity>61.1</identity>
+      <positives>66.7</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="74">GLVVD--LQAEQVRSVVTERLRRRIGRGAPILAGTL</querySeq>
+      <pattern>GLV D   QAEQVRS+ T RLRRR+GR  P L   L</pattern>
+      <matchSeq start="70" end="105">GLVTDSKAQAEQVRSIATARLRRRLGRVPPALLARL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A117QKW9_9ACTN" ac="A0A117QKW9" length="773" description="Serine/threonine protein kinase OS=Streptomyces longwoodensis OX=68231 GN=AQJ30_31405 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.46</expectation>
+      <identity>32.6</identity>
+      <positives>42.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="100">WISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSAT</querySeq>
+      <pattern>W S    G +S  RC  G   +FC  A +GLV  L A     +   R+R+  G   P+LAG L     +A Q R       R+  P  T</pattern>
+      <matchSeq start="434" end="518">WESASVSGAASVPRCSYGSGALFC--AQSGLVFALDASDGAVLWKHRVRKAYGSAPPVLAGGLVQ--PMADQERRLEGLDPRTGTPRWT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A1X1YUY5_9MYCO" ac="A0A1X1YUY5" length="115" description="mRNA interferase OS=Mycobacterium lacus OX=169765 GN=mazf9 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.6</expectation>
+      <identity>67.7</identity>
+      <positives>77.4</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="68">TGLVVD--LQAEQVRSVVTERLRRRIGRGAP</querySeq>
+      <pattern>+GL VD   QAEQVRSV T+RL RRIGR +P</pattern>
+      <matchSeq start="69" end="99">SGLAVDSKAQAEQVRSVATQRLLRRIGRVSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="F5YTQ4_MYCSD" ac="F5YTQ4" length="115" description="mRNA interferase OS=Mycolicibacter sinensis (strain JDM601) OX=875328 GN=JDM601_4085 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.83</expectation>
+      <identity>71.4</identity>
+      <positives>78.6</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="65">TGLVVD--LQAEQVRSVVTERLRRRIGR</querySeq>
+      <pattern>TGL VD   QAEQ+RSV  ERL+RRIGR</pattern>
+      <matchSeq start="69" end="96">TGLAVDSKAQAEQIRSVAVERLQRRIGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0ABX3RQD0_MYCAL" ac="A0ABX3RQD0" length="115" description="mRNA interferase OS=Mycolicibacter algericus DSM 45454 OX=723879 GN=BST10_12300 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.83</expectation>
+      <identity>71.4</identity>
+      <positives>78.6</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="65">TGLVVD--LQAEQVRSVVTERLRRRIGR</querySeq>
+      <pattern>TGL VD   QAEQ+RSV  ERL+RRIGR</pattern>
+      <matchSeq start="69" end="96">TGLAVDSKAQAEQIRSVAVERLQRRIGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0A7I9XMP8_9MYCO" ac="A0A7I9XMP8" length="115" description="mRNA interferase OS=Mycolicibacter senuensis OX=386913 GN=mazf9 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.83</expectation>
+      <identity>71.4</identity>
+      <positives>78.6</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="65">TGLVVD--LQAEQVRSVVTERLRRRIGR</querySeq>
+      <pattern>TGL VD   QAEQ+RSV  ERL+RRIGR</pattern>
+      <matchSeq start="69" end="96">TGLAVDSKAQAEQIRSVAVERLQRRIGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A7I7JP61_9MYCO" ac="A0A7I7JP61" length="115" description="mRNA interferase OS=Mycobacterium novum OX=2492438 GN=mazF9 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.83</expectation>
+      <identity>71.4</identity>
+      <positives>78.6</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="65">TGLVVD--LQAEQVRSVVTERLRRRIGR</querySeq>
+      <pattern>TGL VD   QAEQ+RSV  ERL+RRIGR</pattern>
+      <matchSeq start="69" end="96">TGLAVDSKAQAEQIRSVAVERLQRRIGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0ABR7LBY3_9PSEU" ac="A0ABR7LBY3" length="116" description="mRNA interferase OS=Actinokineospora xionganensis OX=2684470 GN=GPZ80_23195 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>1.2</expectation>
+      <identity>58.3</identity>
+      <positives>69.4</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="74">GLVVD--LQAEQVRSVVTERLRRRIGRGAPILAGTL</querySeq>
+      <pattern>GLVVD   QAEQVRSV T R+R+R+G+  P L   L</pattern>
+      <matchSeq start="70" end="105">GLVVDSKAQAEQVRSVATNRVRKRVGKLPPQLLARL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="I0V361_9PSEU" ac="I0V361" length="116" description="mRNA interferase OS=Saccharomonospora xinjiangensis XJ-54 OX=882086 GN=SacxiDRAFT_2335 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>1.6</expectation>
+      <identity>59.5</identity>
+      <positives>64.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="74">TGLVVD--LQAEQVRSVVTERLRRRIGRGAPILAGTL</querySeq>
+      <pattern>TGL  D   QAEQVRS+  ERL RRIGR  P L+  L</pattern>
+      <matchSeq start="69" end="105">TGLAKDSKAQAEQVRSIAVERLGRRIGRLTPPLSRAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A1H0VTE3_9PSEU" ac="A0A1H0VTE3" length="116" description="mRNA interferase OS=Actinokineospora alba OX=504798 GN=SAMN05192558_11578 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>1.6</expectation>
+      <identity>58.3</identity>
+      <positives>69.4</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="74">GLVVD--LQAEQVRSVVTERLRRRIGRGAPILAGTL</querySeq>
+      <pattern>GLVVD   QAEQVRS+ T R+R+RIG+  P L   L</pattern>
+      <matchSeq start="70" end="105">GLVVDSKAQAEQVRSIATNRVRKRIGKLPPELLDRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A5B1BRJ6_MYCSI" ac="A0A5B1BRJ6" length="66" description="Type II toxin-antitoxin system PemK/MazF family toxin OS=Mycobacterium simiae OX=1784 GN=F0Q45_11885 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.9</expectation>
+      <identity>54.1</identity>
+      <positives>70.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="34" end="68">FCVSAWTGLVVD--LQAEQVRSVVTERLRRRIGRGAP</querySeq>
+      <pattern>F  +  +GL V+   QAEQVRS+ T+RL RRIGR +P</pattern>
+      <matchSeq start="14" end="50">FLSAPTSGLQVESKAQAEQVRSIATQRLLRRIGRVSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0ACN7DLN2_9GAMM" ac="A0ACN7DLN2" length="312" description="TIGR01620 family protein OS=Rheinheimera sediminis OX=2761104 GN=EMM73_11470 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.9</expectation>
+      <identity>40.0</identity>
+      <positives>58.2</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="32" end="83">HIFCVSAWTG---LVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQ</querySeq>
+      <pattern>H+F    W G   L +DL A+ V + +T +L  R G+G  ++AG L   +GLAAQ</pattern>
+      <matchSeq start="224" end="276">HLFAALLWAGSSELALDLGADVVGAELTSKLSMRAGQG--LIAGMLVARLGLAAQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0ABR0Z433_HUSHU" ac="A0ABR0Z433" length="194" description="Small ribosomal subunit protein uS12m OS=Huso huso OX=61971 GN=HHUSO_G20374 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>2.2</expectation>
+      <identity>30.0</identity>
+      <positives>40.0</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="104">GWISCP------PKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSATIAFG</querySeq>
+      <pattern>GW+ C       PKGG   C   GG   +  +S W G         VR +V+  LR  +G  A   +       G+A  N+  RQ   R  PP A+   G</pattern>
+      <matchSeq start="20" end="109">GWLDCEASYPRFPKGGLMACL--GGLRSVMSLSHWGGC--------VRPLVSPLLRAAVGSLAGQGSARWGQLCGMATLNQMHRQGKPRPVPPGASPTSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A6L3VNK9_9ACTN" ac="A0A6L3VNK9" length="269" description="Uncharacterized protein OS=Actinomadura montaniterrae OX=1803903 GN=F9B16_25585 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>2.6</expectation>
+      <identity>34.6</identity>
+      <positives>44.4</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="73">ARSAQPIGWI--SCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRR---------RIGRGAPILAGT</querySeq>
+      <pattern>AR+  P+ WI  S  P GG    R GGG+TH+ C +    + V L A    ++V     R          IGRG  IL  T</pattern>
+      <matchSeq start="178" end="258">ARAGGPVSWIGYSTDPVGGFQLLRPGGGWTHVTCDAEGEIVCVRLPAAYGTALVFATRPRVYPSPGNGLHIGRGLRILGPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0ABX3T4Z3_9MYCO" ac="A0ABX3T4Z3" length="115" description="mRNA interferase OS=Mycobacterium noviomagense OX=459858 GN=BST37_14475 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>4.4</expectation>
+      <identity>61.3</identity>
+      <positives>74.2</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="65">SAWTGLVVD--LQAEQVRSVVTERLRRRIGR</querySeq>
+      <pattern>+A TGL VD   QAEQ+RSV T+R  RR+GR</pattern>
+      <matchSeq start="66" end="96">AATTGLAVDSKAQAEQIRSVATQRFIRRLGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A4U5WJ46_STRLS" ac="A0A4U5WJ46" length="760" description="Serine/threonine protein kinase OS=Streptomyces lasalocidi OX=324833 GN=E4U91_19600 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>5.5</expectation>
+      <identity>31.5</identity>
+      <positives>42.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="100">WISCPPKGGSSCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSAT</querySeq>
+      <pattern>W      G +S  RC  G   +FC  A +GLV  L A         R+R+  G   P+LAG L     +A Q R+ +    R+  P  T</pattern>
+      <matchSeq start="421" end="505">WEVASVSGAASVPRCSYGSGTLFC--AQSGLVFALDASDGALRWKHRVRKAYGSAPPVLAGGLVQ--PMADQERQLQGLDPRTGRPRWT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A2S6GNH8_9PSEU" ac="A0A2S6GNH8" length="115" description="mRNA interferase OS=Actinokineospora auranticolor OX=155976 GN=CLV40_109152 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>6.1</expectation>
+      <identity>62.5</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="47" end="70">QAEQVRSVVTERLRRRIGRGAPIL</querySeq>
+      <pattern>QAEQ+R+V T R+RRR+GR  P+L</pattern>
+      <matchSeq start="78" end="101">QAEQIRTVATARVRRRLGRVPPVL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0ABU1VZX0_9GAMM" ac="A0ABU1VZX0" length="337" description="Membrane protein OS=Rheinheimera soli OX=443616 GN=J2W69_002211 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>6.8</expectation>
+      <identity>36.4</identity>
+      <positives>58.2</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="32" end="83">HIFCVSAWTG---LVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQ</querySeq>
+      <pattern>H+F    W G   L +DL ++ + + +T +L  R G+G  ++AG L   +GLAAQ</pattern>
+      <matchSeq start="249" end="301">HLFAALLWAGSSELALDLGSDLIGAELTSKLSMRAGQG--LIAGMLVARLGLAAQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0ABT1I6X7_9PSEU" ac="A0ABT1I6X7" length="115" description="mRNA interferase OS=Actinokineospora diospyrosa OX=103728 GN=LV75_000864 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>8.5</expectation>
+      <identity>55.6</identity>
+      <positives>63.9</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="74">GLVVD--LQAEQVRSVVTERLRRRIGRGAPILAGTL</querySeq>
+      <pattern>GLV D   QAEQVRS+   RL RR+GR  P L G +</pattern>
+      <matchSeq start="70" end="105">GLVADSKAQAEQVRSIAVGRLGRRLGRVPPRLLGAV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0ACC6MIM7_MYCPF" ac="A0ACC6MIM7" length="115" description="mRNA interferase OS=Mycolicibacterium parafortuitum OX=39692 GN=OHX15_15505 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>8.5</expectation>
+      <identity>61.8</identity>
+      <positives>70.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="68">SAWTGLVVD--LQAEQVRSVVTERLRRRIGRGAP</querySeq>
+      <pattern>+A +GL V    QAEQVRSV  ERL RRIGR +P</pattern>
+      <matchSeq start="66" end="99">AATSGLAVHSKAQAEQVRSVSVERLLRRIGRVSP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A850PNP1_9MYCO" ac="A0A850PNP1" length="116" description="mRNA interferase OS=Mycolicibacterium hippocampi OX=659824 GN=HLY00_1464 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>8.6</expectation>
+      <identity>66.7</identity>
+      <positives>73.3</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="68">GLVVD--LQAEQVRSVVTERLRRRIGRGAP</querySeq>
+      <pattern>GL VD   QAEQVRSV  +RL RRIGR +P</pattern>
+      <matchSeq start="71" end="100">GLPVDSKAQAEQVRSVAVQRLSRRIGRISP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0A9R0EMR6_SPOFR" ac="A0A9R0EMR6" length="285" description="Collagen alpha-3(IV) chain-like isoform X4 OS=Spodoptera frugiperda OX=7108 GN=LOC118272843 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>9.0</expectation>
+      <identity>31.5</identity>
+      <positives>41.6</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="97">SCPPKGGS-----SCCRCGGGYTHIFCVSAWTGLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPP</querySeq>
+      <pattern>S PP  G      SC RC     H   +  +  +      E+ +    ER+R  +GR A  LA TL  G   AA   E  Q  G++ PP</pattern>
+      <matchSeq start="23" end="106">SLPPSAGYIDCRISCRRCHENTEHPSVLEVYCAM-----CEECKQRRRERMRDGVGRSAEALAKTLMLGPHAAAPPPEHIQDAGQAIPP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0ABV9JK88_9GAMM" ac="A0ABV9JK88" length="328" description="TIGR01620 family protein OS=Rheinheimera marina OX=1774958 GN=ACFO3I_06485 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>9.3</expectation>
+      <identity>38.2</identity>
+      <positives>58.2</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="84">IFCVSAWTG---LVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQN</querySeq>
+      <pattern>+F    W G   L +DL A+ + + +T RL  R G+G  ++AG L   +GLAAQ+</pattern>
+      <matchSeq start="244" end="296">LFASLVWAGGSELALDLSADFIGTELTSRLSARAGQG--LIAGLLVARLGLAAQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A2A2I5G1_9GAMM" ac="A0A2A2I5G1" length="354" description="Arginine N-succinyltransferase OS=Tamilnaduibacter salinus OX=1484056 GN=astA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>9.4</expectation>
+      <identity>43.3</identity>
+      <positives>50.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="99">GLVVDLQAEQVRSVVTERLRR-RIGRGAPILAGTLAPGVGLAAQNREFRQFTGRSAPPSA</querySeq>
+      <pattern>G VV+     VR+V   RLR   I  GAP  AG L+ G  L   NR F  F   +AP SA</pattern>
+      <matchSeq start="256" end="315">GPVVEAFLHNVRTVRESRLRPVTIASGAPRPAGPLSSGDQLMVSNRSFADFRVITAPRSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0A147KG55_THECS" ac="A0A147KG55" length="365" description="Adenosine deaminase OS=Thermobifida cellulosilytica TB100 OX=665004 GN=add PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>9.4</expectation>
+      <identity>39.6</identity>
+      <positives>52.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="93">GLVVDLQAEQVRSVVTERLRRRIGRGAPILAGTLAPGVGLAAQNREFRQFTGR</querySeq>
+      <pattern>GL ++   E V + V E  RR  GRG PI  GTL   +  AA++RE  +   R</pattern>
+      <matchSeq start="116" end="168">GLRLEEVVEAVLAGVAEGCRRAAGRGTPIRVGTLLTAMRHAARSREIAELAVR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

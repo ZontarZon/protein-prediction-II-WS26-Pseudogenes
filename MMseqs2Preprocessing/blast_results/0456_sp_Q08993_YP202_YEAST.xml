@@ -1,0 +1,1385 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-181656-0796-58851147-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-181656-0796-58851147-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q08993|YP202_YEAST" type="PROTEIN" length="238"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T18:16:56+00:00" end="2026-11-13T18:20:59+00:00" search="P0Y0M0DT0H0M243.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="80">
+   <hit number="1" database="SP" id="YP202_YEAST" ac="Q08993" length="238" description="Putative uncharacterized protein YPR202W OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YPR202W PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1251</score>
+      <bits>486.5</bits>
+      <expectation>9.2e-174</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="238">MEIENEQICTCIAQILHLLNSLIITFSDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</querySeq>
+      <pattern>MEIENEQICTCIAQILHLLNSLIITFSDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</pattern>
+      <matchSeq start="1" end="238">MEIENEQICTCIAQILHLLNSLIITFSDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="H0GQK4_SACCK" ac="H0GQK4" length="203" description="YPR202W-like protein (Fragment) OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_5291 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1070</score>
+      <bits>416.8</bits>
+      <expectation>1e-146</expectation>
+      <identity>99.5</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="36" end="238">QSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</querySeq>
+      <pattern>QSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</pattern>
+      <matchSeq start="1" end="203">QSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="B3LFC9_YEAS1" ac="B3LFC9" length="1059" description="Helicase ATP-binding domain-containing protein (Fragment) OS=Saccharomyces cerevisiae (strain RM11-1a) OX=285006 GN=SCRG_00001 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1108</score>
+      <bits>431.4</bits>
+      <expectation>2.4e-141</expectation>
+      <identity>99.5</identity>
+      <positives>99.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="214">MEIENEQICTCIAQILHLLNSLIITFSDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MEIENEQICTCIAQILHLLNSLIITF DDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="214">MEIENEQICTCIAQILHLLNSLIITFLDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="YRF17_YEAST" ac="P0CX15" length="1859" description="Y' element ATP-dependent helicase protein 1 copy 7 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YRF1-7 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1107</score>
+      <bits>431.0</bits>
+      <expectation>2.8e-136</expectation>
+      <identity>99.1</identity>
+      <positives>99.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="214">MEIENEQICTCIAQILHLLNSLIITFSDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MEIENEQICTCIAQILHLLNSLIITF DDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="214">MEIENEQICTCIAQILHLLNSLIITFLDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="YRF16_YEAST" ac="P53819" length="1859" description="Y' element ATP-dependent helicase protein 1 copy 6 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YRF1-6 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1107</score>
+      <bits>431.0</bits>
+      <expectation>2.8e-136</expectation>
+      <identity>99.1</identity>
+      <positives>99.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="214">MEIENEQICTCIAQILHLLNSLIITFSDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MEIENEQICTCIAQILHLLNSLIITF DDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="214">MEIENEQICTCIAQILHLLNSLIITFLDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="YRF13_YEAST" ac="P0CX14" length="1859" description="Y' element ATP-dependent helicase protein 1 copy 3 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YRF1-3 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1107</score>
+      <bits>431.0</bits>
+      <expectation>2.8e-136</expectation>
+      <identity>99.1</identity>
+      <positives>99.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="214">MEIENEQICTCIAQILHLLNSLIITFSDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MEIENEQICTCIAQILHLLNSLIITF DDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="214">MEIENEQICTCIAQILHLLNSLIITFLDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="H0GFT2_SACCK" ac="H0GFT2" length="174" description="YPR202W-like protein OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_1574 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>914</score>
+      <bits>356.7</bits>
+      <expectation>2.2e-123</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="238">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</pattern>
+      <matchSeq start="1" end="174">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="H0GFI7_SACCK" ac="H0GFI7" length="174" description="YPR202W-like protein OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_1467 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>913</score>
+      <bits>356.3</bits>
+      <expectation>3.1e-123</expectation>
+      <identity>99.4</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="238">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</pattern>
+      <matchSeq start="1" end="174">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="YFG4_YEAST" ac="P43540" length="174" description="Uncharacterized protein YFL064C OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YFL064C PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>909</score>
+      <bits>354.8</bits>
+      <expectation>1.3e-122</expectation>
+      <identity>99.4</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="238">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAM+RKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</pattern>
+      <matchSeq start="1" end="174">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMNRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRNSECQAERQLYDAYFH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="YL462_YEAST" ac="O13556" length="202" description="Putative uncharacterized protein YLR462W OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YLR462W PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>771</score>
+      <bits>301.6</bits>
+      <expectation>3.5e-101</expectation>
+      <identity>98.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEK+VISVMVGKNV+KFLTFVEDEPDFQGGPIPSKYL+PKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKVVISVMVGKNVKKFLTFVEDEPDFQGGPIPSKYLVPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="YHE9_YEAST" ac="P38722" length="271" description="Uncharacterized protein YHL049C OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YHL049C PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>776</score>
+      <bits>303.5</bits>
+      <expectation>6.4e-101</expectation>
+      <identity>99.3</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="H0GFW9_SACCK" ac="H0GFW9" length="308" description="Yrf1-8p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_1576 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>777</score>
+      <bits>303.9</bits>
+      <expectation>1.5e-100</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="H0GQJ5_SACCK" ac="H0GQJ5" length="271" description="YHL049C-like protein OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_5282 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>770</score>
+      <bits>301.2</bits>
+      <expectation>5.2e-100</expectation>
+      <identity>98.7</identity>
+      <positives>99.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFE ALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFELALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="YB111_YEAST" ac="Q3E7Y5" length="667" description="Uncharacterized helicase-like protein YBL111C OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YBL111C PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>776</score>
+      <bits>303.5</bits>
+      <expectation>6.6e-96</expectation>
+      <identity>99.3</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="H0GQM0_SACCK" ac="H0GQM0" length="145" description="Yrf1-7p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_5307 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>716</score>
+      <bits>280.4</bits>
+      <expectation>1.1e-93</expectation>
+      <identity>97.2</identity>
+      <positives>98.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="206">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNR</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKK NLMVYTLFQVHTLKFNRKDYDTLSLFYL +</pattern>
+      <matchSeq start="1" end="142">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKXNLMVYTLFQVHTLKFNRKDYDTLSLFYLEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="B3LUR8_YEAS1" ac="B3LUR8" length="988" description="Helicase C-terminal domain-containing protein OS=Saccharomyces cerevisiae (strain RM11-1a) OX=285006 GN=SCRG_05607 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>776</score>
+      <bits>303.5</bits>
+      <expectation>3.5e-93</expectation>
+      <identity>99.3</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="H0GLL4_SACCK" ac="H0GLL4" length="147" description="Yrf1-8p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_3541 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>710</score>
+      <bits>278.1</bits>
+      <expectation>1e-92</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="202">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLF</pattern>
+      <matchSeq start="1" end="138">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="H0GQL1_SACCK" ac="H0GQL1" length="190" description="Yrf1-8p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_5298 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>707</score>
+      <bits>276.9</bits>
+      <expectation>1.2e-91</expectation>
+      <identity>91.3</identity>
+      <positives>96.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEKANF+EFESALNNKNDLV+C SITLFESI TEVRSFYEDEKS LIKVVK+RT AMDRKRSFEKIVI+VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKANFEEFESALNNKNDLVYCHSITLFESIRTEVRSFYEDEKSSLIKVVKYRTDAMDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="YMN3_YEAST" ac="Q03099" length="1374" description="Y' element ATP-dependent helicase YML133C OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YML133C PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>776</score>
+      <bits>303.5</bits>
+      <expectation>1.7e-91</expectation>
+      <identity>99.3</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="YL067_YEAST" ac="Q07888" length="1374" description="Y' element ATP-dependent helicase YLL067C OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YLL067C PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>776</score>
+      <bits>303.5</bits>
+      <expectation>1.7e-91</expectation>
+      <identity>99.3</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="SP" id="YL066_YEAST" ac="Q99208" length="1374" description="Y' element ATP-dependent helicase YLL066C OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YLL066C PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>776</score>
+      <bits>303.5</bits>
+      <expectation>1.7e-91</expectation>
+      <identity>99.3</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="SP" id="YRF18_YEAST" ac="P0CX22" length="1796" description="Y' element ATP-dependent helicase protein 1 copy 8 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YRF1-8 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>777</score>
+      <bits>303.9</bits>
+      <expectation>3.3e-91</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="SP" id="YRF15_YEAST" ac="P0CX21" length="1796" description="Y' element ATP-dependent helicase protein 1 copy 5 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YRF1-5 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>777</score>
+      <bits>303.9</bits>
+      <expectation>3.3e-91</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="SP" id="YRF11_YEAST" ac="P0CX20" length="1796" description="Y' element ATP-dependent helicase protein 1 copy 1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YRF1-1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>777</score>
+      <bits>303.9</bits>
+      <expectation>3.3e-91</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="SP" id="YJW5_YEAST" ac="P40889" length="1758" description="Y' element ATP-dependent helicase YJL225C OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YJL225C PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>772</score>
+      <bits>302.0</bits>
+      <expectation>1.5e-90</expectation>
+      <identity>98.7</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEK+VISVMVGKNV+KFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKVVISVMVGKNVKKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="SP" id="YIR7_YEAST" ac="P40434" length="1758" description="Y' element ATP-dependent helicase YIL177C OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YIL177C PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>772</score>
+      <bits>302.0</bits>
+      <expectation>1.5e-90</expectation>
+      <identity>98.7</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEK+VISVMVGKNV+KFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="150">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKVVISVMVGKNVKKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="H0GQA4_SACCK" ac="H0GQA4" length="135" description="Yrf1-7p (Fragment) OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_5202 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>689</score>
+      <bits>270.0</bits>
+      <expectation>1e-89</expectation>
+      <identity>98.5</identity>
+      <positives>99.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="199">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTL</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFE ALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTL</pattern>
+      <matchSeq start="1" end="135">MKVSDRRKFEKANFDEFELALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0AA35J1I3_SACK1" ac="A0AA35J1I3" length="542" description="SKDI11G3195 protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI11G3195 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>709</score>
+      <bits>277.7</bits>
+      <expectation>3e-87</expectation>
+      <identity>91.3</identity>
+      <positives>95.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEK NF+EFESALNNKNDLVHC SITLFESI TEVRSFYEDEKS LIKVVK+RT AMDRKRSFEKIVI+VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKVNFEEFESALNNKNDLVHCHSITLFESIRTEVRSFYEDEKSSLIKVVKYRTDAMDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="H0H2V4_SACCK" ac="H0H2V4" length="306" description="Yrf1-7p (Fragment) OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_8192 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>689</score>
+      <bits>270.0</bits>
+      <expectation>3.2e-87</expectation>
+      <identity>89.3</identity>
+      <positives>94.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEKANF+EFESALNNKNDLVHC SITLFESI TEVRSFYEDEKSGLIKVVKFRT AMDRKRSFEKIVI+VMV KNVQKFLTFVEDEPD Q GPIPSKY  PKKINLMVYTLFQVHTLKFNR DY+TLSLFYLN+GYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKANFEEFESALNNKNDLVHCHSITLFESIRTEVRSFYEDEKSGLIKVVKFRTDAMDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDSQSGPIPSKYPTPKKINLMVYTLFQVHTLKFNRNDYNTLSLFYLNKGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0AA35J8D2_SACK1" ac="A0AA35J8D2" length="916" description="SKDI15G0025 protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI15G0025 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>709</score>
+      <bits>277.7</bits>
+      <expectation>6e-84</expectation>
+      <identity>91.3</identity>
+      <positives>95.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEK NF+EFESALNNKNDLVHC SITLFESI TEVRSFYEDEKS LIKVVK+RT AMDRKRSFEKIVI+VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKVNFEEFESALNNKNDLVHCHSITLFESIRTEVRSFYEDEKSSLIKVVKYRTDAMDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="H0GQL6_SACCK" ac="H0GQL6" length="674" description="Yrf1-7p (Fragment) OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_5303 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>686</score>
+      <bits>268.9</bits>
+      <expectation>1.8e-82</expectation>
+      <identity>89.3</identity>
+      <positives>93.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEKANF+EFESALNNKNDLVHC SITLFESI TEVRSFYEDEKSGLIKVVKFRT AMDRKRSFEKIVI+VMV KNVQKFLTFVEDEPD Q GPIPSKY  PKKINLMVYTLFQVHTLKFNR DY+TLSLFYLN GYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKANFEEFESALNNKNDLVHCHSITLFESIRTEVRSFYEDEKSGLIKVVKFRTDAMDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDSQSGPIPSKYPTPKKINLMVYTLFQVHTLKFNRNDYNTLSLFYLNXGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0AA35NI98_SACK1" ac="A0AA35NI98" length="1717" description="Helicase C-terminal domain-containing protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI10G0030 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>709</score>
+      <bits>277.7</bits>
+      <expectation>4.5e-82</expectation>
+      <identity>91.3</identity>
+      <positives>95.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEK NF+EFESALNNKNDLVHC SITLFESI TEVRSFYEDEKS LIKVVK+RT AMDRKRSFEKIVI+VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKVNFEEFESALNNKNDLVHCHSITLFESIRTEVRSFYEDEKSSLIKVVKYRTDAMDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0AA35J643_SACK1" ac="A0AA35J643" length="1725" description="Helicase C-terminal domain-containing protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI13G0030 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>709</score>
+      <bits>277.7</bits>
+      <expectation>4.5e-82</expectation>
+      <identity>91.3</identity>
+      <positives>95.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEK NF+EFESALNNKNDLVHC SITLFESI TEVRSFYEDEKS LIKVVK+RT AMDRKRSFEKIVI+VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKVNFEEFESALNNKNDLVHCHSITLFESIRTEVRSFYEDEKSSLIKVVKYRTDAMDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0AA35NQA0_SACK1" ac="A0AA35NQA0" length="1725" description="SKDI03G1595 protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI03G1595 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>709</score>
+      <bits>277.7</bits>
+      <expectation>4.5e-82</expectation>
+      <identity>91.3</identity>
+      <positives>95.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEK NF+EFESALNNKNDLVHC SITLFESI TEVRSFYEDEKS LIKVVK+RT AMDRKRSFEKIVI+VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKVNFEEFESALNNKNDLVHCHSITLFESIRTEVRSFYEDEKSSLIKVVKYRTDAMDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="J5RW32_SACK1" ac="J5RW32" length="1725" description="YRF1-6-like protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=YNL339C PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>709</score>
+      <bits>277.7</bits>
+      <expectation>4.5e-82</expectation>
+      <identity>91.3</identity>
+      <positives>95.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEK NF+EFESALNNKNDLVHC SITLFESI TEVRSFYEDEKS LIKVVK+RT AMDRKRSFEKIVI+VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKVNFEEFESALNNKNDLVHCHSITLFESIRTEVRSFYEDEKSSLIKVVKYRTDAMDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0AA35NN60_SACK1" ac="A0AA35NN60" length="1741" description="Helicase C-terminal domain-containing protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI16G0030 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>709</score>
+      <bits>277.7</bits>
+      <expectation>4.5e-82</expectation>
+      <identity>91.3</identity>
+      <positives>95.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEK NF+EFESALNNKNDLVHC SITLFESI TEVRSFYEDEKS LIKVVK+RT AMDRKRSFEKIVI+VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKVNFEEFESALNNKNDLVHCHSITLFESIRTEVRSFYEDEKSSLIKVVKYRTDAMDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0AA35NIA1_SACK1" ac="A0AA35NIA1" length="1749" description="SKDI11G3175 protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI11G3175 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>709</score>
+      <bits>277.7</bits>
+      <expectation>4.5e-82</expectation>
+      <identity>91.3</identity>
+      <positives>95.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEK NF+EFESALNNKNDLVHC SITLFESI TEVRSFYEDEKS LIKVVK+RT AMDRKRSFEKIVI+VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKVNFEEFESALNNKNDLVHCHSITLFESIRTEVRSFYEDEKSSLIKVVKYRTDAMDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0AA35IUF8_SACMI" ac="A0AA35IUF8" length="1470" description="SMKI01G0955 protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI01G0955 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>705</score>
+      <bits>276.2</bits>
+      <expectation>1.3e-81</expectation>
+      <identity>91.3</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEKANF+EFESALNNKNDLVHC SITLFESI TEVRSFYEDEKS LIKVVK+RT AMDRKRSFEKIVI VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYD LSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKANFEEFESALNNKNDLVHCHSITLFESIRTEVRSFYEDEKSSLIKVVKYRTDAMDRKRSFEKIVIPVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDILSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0AA35NEQ2_SACMI" ac="A0AA35NEQ2" length="1869" description="SMKI05G0005 protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI12G5055 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>705</score>
+      <bits>276.2</bits>
+      <expectation>1.6e-81</expectation>
+      <identity>91.3</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MK+SD+RKFEKANF+EFESALNNKNDLVHC SITLFESI TEVRSFYEDEKS LIKVVK+RT AMDRKRSFEKIVI VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYD LSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="150">MKISDKRKFEKANFEEFESALNNKNDLVHCHSITLFESIRTEVRSFYEDEKSSLIKVVKYRTDAMDRKRSFEKIVIPVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDILSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0AA35NJ10_SACMI" ac="A0AA35NJ10" length="1859" description="Helicase C-terminal domain-containing protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI09G2080 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>648</score>
+      <bits>254.2</bits>
+      <expectation>7.1e-74</expectation>
+      <identity>85.3</identity>
+      <positives>91.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>M+VSD+RKFEKANF+EFESALNNKNDL+HC SITLFE++ TEVRSFYEDEKSGLIKV KFRTGA+DRKRSFEKIVI+ MV KNVQKFLTFVEDE      P PSKYLIPKKINLMVYTLFQVHTLKFNRKDYD LSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="144">MEVSDKRKFEKANFEEFESALNNKNDLLHCHSITLFETVGTEVRSFYEDEKSGLIKVAKFRTGAIDRKRSFEKIVIAFMVKKNVQKFLTFVEDE------PYPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDILSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0AA35IZG5_SACMI" ac="A0AA35IZG5" length="1863" description="Helicase C-terminal domain-containing protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI08G0010 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>648</score>
+      <bits>254.2</bits>
+      <expectation>7.1e-74</expectation>
+      <identity>85.3</identity>
+      <positives>91.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="214">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>M+VSD+RKFEKANF+EFESALNNKNDL+HC SITLFE++ TEVRSFYEDEKSGLIKV KFRTGA+DRKRSFEKIVI+ MV KNVQKFLTFVEDE      P PSKYLIPKKINLMVYTLFQVHTLKFNRKDYD LSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="144">MEVSDKRKFEKANFEEFESALNNKNDLLHCHSITLFETVGTEVRSFYEDEKSGLIKVAKFRTGAIDRKRSFEKIVIAFMVKKNVQKFLTFVEDE------PYPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDILSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="SP" id="YE19_YEAST" ac="P40104" length="122" description="Uncharacterized protein YER189W OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YER189W PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>533</score>
+      <bits>209.9</bits>
+      <expectation>3.6e-66</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="168">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPS</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPS</pattern>
+      <matchSeq start="1" end="104">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="SP" id="YEI5_YEAST" ac="P39972" length="122" description="Uncharacterized protein YEL075C OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YEL075C PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>528</score>
+      <bits>208.0</bits>
+      <expectation>2.1e-65</expectation>
+      <identity>98.1</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="168">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPS</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEK+VISVMVGKNV+KFLTFVEDEPDFQGGPIPS</pattern>
+      <matchSeq start="1" end="104">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKVVISVMVGKNVKKFLTFVEDEPDFQGGPIPS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A6C1DQH8_SACPS" ac="A0A6C1DQH8" length="113" description="Sir1 ORC-binding domain-containing protein OS=Saccharomyces pastorianus OX=27292 GN=GRS66_001530 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>500</score>
+      <bits>197.2</bits>
+      <expectation>2.7e-61</expectation>
+      <identity>88.3</identity>
+      <positives>91.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="175">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKK</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEK+VISVMVGKNV+KFLTFVEDEPDF+        L P+K</pattern>
+      <matchSeq start="1" end="111">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKVVISVMVGKNVKKFLTFVEDEPDFRADQSLQSILFPRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A6C1DZW0_SACPS" ac="A0A6C1DZW0" length="144" description="Y' element ATP-dependent helicase protein 1 copy 1 OS=Saccharomyces pastorianus OX=27292 GN=YRF11_3 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>449</score>
+      <bits>177.6</bits>
+      <expectation>4e-53</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="129" end="214">MDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="86">MDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="H0GCY8_SACCK" ac="H0GCY8" length="167" description="Yrf1-8p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_0452 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>427</score>
+      <bits>169.1</bits>
+      <expectation>1.8e-49</expectation>
+      <identity>95.3</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="129" end="214">MDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MDRKRSFEKIVI+VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="86">MDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="SP" id="YH18_YEAST" ac="P38899" length="603" description="Uncharacterized protein YHR218W OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YHR218W PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>448</score>
+      <bits>177.2</bits>
+      <expectation>3.2e-48</expectation>
+      <identity>98.8</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="129" end="214">MDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MDRKRSFEKIV+SVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="86">MDRKRSFEKIVVSVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0A6C1DWH3_SACPS" ac="A0A6C1DWH3" length="86" description="Sir1 ORC-binding domain-containing protein OS=Saccharomyces pastorianus OX=27292 GN=GRS66_003768 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>390</score>
+      <bits>154.8</bits>
+      <expectation>5.5e-45</expectation>
+      <identity>96.3</identity>
+      <positives>97.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="146">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGK</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRS  KIV+SVMVGK</pattern>
+      <matchSeq start="1" end="81">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSL-KIVVSVMVGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0AA35JGI9_SACK1" ac="A0AA35JGI9" length="718" description="YRF11-like helical domain-containing protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI07G0030 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>427</score>
+      <bits>169.1</bits>
+      <expectation>1e-44</expectation>
+      <identity>95.3</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="129" end="214">MDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MDRKRSFEKIVI+VMV KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="1" end="86">MDRKRSFEKIVIAVMVKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0A6C1DRZ4_SACPS" ac="A0A6C1DRZ4" length="89" description="Sir1 ORC-binding domain-containing protein OS=Saccharomyces pastorianus OX=27292 GN=GRS66_002096 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>385</score>
+      <bits>152.9</bits>
+      <expectation>3.5e-44</expectation>
+      <identity>96.3</identity>
+      <positives>96.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="65" end="146">MKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGK</querySeq>
+      <pattern>MKVSDRRKFEKANFDEFE ALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRS  KIVISVMVGK</pattern>
+      <matchSeq start="1" end="81">MKVSDRRKFEKANFDEFELALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSL-KIVISVMVGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="H0GQI5_SACCK" ac="H0GQI5" length="193" description="YHL049C-like protein OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_5271 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>383</score>
+      <bits>152.1</bits>
+      <expectation>1.7e-42</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="143" end="214">MVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="72">MVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0AA35J041_SACMI" ac="A0AA35J041" length="1141" description="Helicase C-terminal domain-containing protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI07G0030 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>353</score>
+      <bits>140.6</bits>
+      <expectation>2.4e-34</expectation>
+      <identity>81.9</identity>
+      <positives>86.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="132" end="214">KRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>K   +K+     + KNVQKFLTFVEDEPDFQ GPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYD LSLFYLNRGYY+ELSF</pattern>
+      <matchSeq start="6" end="88">KDLLKKLSFPSWLKKNVQKFLTFVEDEPDFQSGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDILSLFYLNRGYYSELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0A7H9HPZ6_9SACH" ac="A0A7H9HPZ6" length="934" description="Uncharacterized protein OS=Torulaspora globosa OX=48254 GN=HG537_0B07130 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>196</score>
+      <bits>80.1</bits>
+      <expectation>1.7e-13</expectation>
+      <identity>29.2</identity>
+      <positives>51.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="38" end="211">FVYIDGFLVK--KHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVE--DEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNE</querySeq>
+      <pattern>F+ + GFL++  K + ++ IVNF+     M  +++++ +     + +  L+ +NDL+   S  LFE I  E + FY D ++G IKVV  RT +  +K S  ++VI++    N +K+L + E    P F   P        +  N + + LF +  L F + D + +   YLN G+Y +</pattern>
+      <matchSeq start="11" end="187">FIAVGGFLLQAVKSDQRYKIVNFKYALRTMNEAEKKRLQNEELFDIDEYLSYENDLLDTSSKMLFEYIAPEQKDFYVDSETGAIKVVTGRTASAVKKSSATELVITITYPTNKKKYLRYSEALSAPTFT-NPQDLFTDTLETDNSLSHLLFDIEGLVFTKADSEIMKDCYLNIGFYQD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="SP" id="YRF12_YEAST" ac="P40105" length="1681" description="Y' element ATP-dependent helicase protein 1 copy 2 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YRF1-2 PE=2 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>193</score>
+      <bits>79.0</bits>
+      <expectation>4.5e-13</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="179" end="214">MVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>MVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</pattern>
+      <matchSeq start="1" end="36">MVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A7H9HWF0_9SACH" ac="A0A7H9HWF0" length="167" description="Sir1 ORC-binding domain-containing protein OS=Torulaspora globosa OX=48254 GN=HG537_0E06030 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>2.8e-11</expectation>
+      <identity>31.9</identity>
+      <positives>58.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="38" end="154">FVYIDGFLVKKHNNQ--HTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTF</querySeq>
+      <pattern>++ +DG+L++  + +  + IV+F+  +++M + +R +FEK    + +  L+ ++DL  C S  LFE IPT+ R F+E  +    KVV  RT A  ++ S  + VI +    N +KFL +</pattern>
+      <matchSeq start="7" end="125">YINVDGYLLQAVDGETSYKIVSFKNARSRMSMKEREQFEKDELVDIDGYLSQESDLFDCTSKRLFEMIPTQQRLFWEQLEPRATKVVTTRTPAECKRSSTNEDVIQITYKANRKKFLRY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0A7H9HNL1_9SACH" ac="A0A7H9HNL1" length="167" description="Sir1 ORC-binding domain-containing protein OS=Torulaspora globosa OX=48254 GN=HG537_0A00110 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>168</score>
+      <bits>69.3</bits>
+      <expectation>5.3e-11</expectation>
+      <identity>32.8</identity>
+      <positives>57.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="38" end="154">FVYIDGFLVKKHNNQ--HTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTF</querySeq>
+      <pattern>++ +DG+L++  + +  + IV+F+  + KM + +R +FEK    + +  L+ ++DL  C S  LFE IPT+ R F+E  +    KVV  RT A  ++ S  + VI +    N +KFL +</pattern>
+      <matchSeq start="7" end="125">YINVDGYLLQAVDGETSYKIVSFKNARCKMSMKEREQFEKDELVDIDGYLSQESDLFDCTSKRLFEMIPTQQRLFWEQLEPRATKVVTTRTPAECKRSSTTEDVIQITYKANRKKFLRY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0A0N7MMI4_9SACH" ac="A0A0N7MMI4" length="371" description="LAQU0S36e00122g1_1 OS=Lachancea quebecensis OX=1654605 GN=LAQU0_S36e00122g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>128</score>
+      <bits>53.9</bits>
+      <expectation>8.5e-05</expectation>
+      <identity>24.4</identity>
+      <positives>44.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="209">IDGFL-VKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLM--VYTLFQVHTLKFNRKDYDTLSLFYLNRGYY</querySeq>
+      <pattern>+DGFL V +HN +  +++ ET    +  +++ +       +      N NDLV C S+ LF+ + T  ++F    +SG  +   +   AM R RS  +++I      +V+K   F  +E   Q  P    +L    +     ++    +   KFN  D D L  + +++  Y</pattern>
+      <matchSeq start="11" end="175">VDGFLIVSQHNGRKAVIDRETCCLSLNRAEKEQINAKKLRDLSRYRTNSNDLVPCESLPLFQIVGTVPQAF---TQSGCSERKSYTPNAMARARS--QLLIPAFFFSDVKKHFYFSNNEEGLQ--PRTRDFLTSAFVEERDDMFNTVNLEKTKFNTHDLDVLRCYAIDQDLY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0A1G4MCC7_LACFM" ac="A0A1G4MCC7" length="627" description="LAFE_0E00298g1_1 OS=Lachancea fermentati OX=4955 GN=LAFE_0E00298G PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>0.00035</expectation>
+      <identity>25.8</identity>
+      <positives>41.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="36" end="209">QSFVYIDGFLVKKHNN-QHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFL-------TFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY</querySeq>
+      <pattern>+ F  +DGF+VKK  +    +VN      +    +R K       +    L   ++L+ C S  LFE+  T VR  +    +G   VVK RT + D K++ E  VI +       +FL         + D  D +   + SK       N MV+ +  +  L    +DY+ L  +   R  Y</pattern>
+      <matchSeq start="24" end="198">ERFTVVDGFVVKKEKDGSRKVVNVTRGLARPTKEERAKISVHRLQDLSFFLAQSDELLPCSSRMLFETADT-VRKLFYRSPNGYKAVVKRRTKSPDIKKAREFEVIPINYPHKKFRFLYLNSVDDACISDHEDSRAEAVLSKN------NSMVFKMLHIEELPLLDEDYEVLKEYQFQRLAY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="C5DDD3_LACTC" ac="C5DDD3" length="1548" description="ATP-dependent RNA helicase OS=Lachancea thermotolerans (strain ATCC 56472 / CBS 6340 / NRRL Y-8284) OX=559295 GN=KLTH0B10318g PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>121</score>
+      <bits>51.2</bits>
+      <expectation>0.00098</expectation>
+      <identity>28.2</identity>
+      <positives>44.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="38" end="209">FVYIDGFLVKKHNNQ-HTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKF-RTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPD---FQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYY</querySeq>
+      <pattern>F  IDGFLVKK  +    IVN  +   K    + R  EK          + K+DL+      LF+++ ++ + FY  E    IKVVK  +T + D +R+ E  VI + +  + +K+L   +D  D   ++ G   +   +    N  +       TL F  +DY  L  F L +  Y</pattern>
+      <matchSeq start="8" end="180">FAAIDGFLVKKDKSGLRRIVNTISTTFKPNKQEARCIEKLQLRNLALYFDCKDDLLPHDCPLLFKTVSSKRKLFYHTEDG--IKVVKSGKTSSRDMRRAIEHAVIEIPLSGSQKKYLVDCQDGIDQRLWREGRAMAP--LQNSNNSHITRTLACDTLLFTPQDYALLRSFALEKVLY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0A370DA31_9GAMM" ac="A0A370DA31" length="423" description="CheR-type methyltransferase domain-containing protein OS=endosymbiont of Galathealinum brachiosum OX=2200906 GN=DIZ80_14050 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.34</expectation>
+      <identity>32.3</identity>
+      <positives>59.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="49" end="110">HNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSF</querySeq>
+      <pattern>+ N+H I   + YK K  +S + KF + N  + + AL NK D++ C ++ ++  IPT++ +F</pattern>
+      <matchSeq start="161" end="222">YQNKHFIKEDDFYKIKTAISKKVKFYQLNILQGDPALKNKFDVILCRNLLIYFDIPTKLTAF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0ABV0HLW0_9ENTR" ac="A0ABV0HLW0" length="269" description="3-deoxy-D-manno-oct-2-ulosonate III transferase WaaZ OS=Pseudocitrobacter cyperus OX=3112843 GN=waaZ PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.35</expectation>
+      <identity>26.6</identity>
+      <positives>45.6</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="67" end="223">VSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTE-----------VRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQV-HTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRN</querySeq>
+      <pattern>++D R   +   D +E + N++N +V+   I ++ES   E           +RSFY  EK GLIK +KF       KR    ++IS+ + K   + + F +D        I   Y      + + Y   Q+ ++L++ R     L L    + +Y+E + P P  LSR+</pattern>
+      <matchSeq start="68" end="217">LTDVRFLHQRRDDFYEFSKNSRNTIVN---IDVYESASEEDRKYIREHCLMIRSFYRREKGGLIKKIKFNI----LKRLHNDLLISIPLSKK-GRLVGFCKD--------ISVGYC---SCHTIAYAAIQIAYSLRYKRIICSGLDLTGNCQRFYDESNNPMPSELSRD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="C5DLF8_LACTC" ac="C5DLF8" length="371" description="KLTH0G00396p OS=Lachancea thermotolerans (strain ATCC 56472 / CBS 6340 / NRRL Y-8284) OX=559295 GN=KLTH0G00396g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.43</expectation>
+      <identity>20.9</identity>
+      <positives>42.9</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="214">IDGFLV-KKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEP--DFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>+DGFL+  + N    I++ ET    +  +++         +      +K+ LV C S  LFE +    + F ++         +      + K +   +VI      +V+K+  F +      FQ G  P++ L+ ++ +L  +T  ++   KF+  D D L  + +++  Y +  F</pattern>
+      <matchSeq start="11" end="180">VDGFLIASQQNGTKVIIDHETCCLSLNKAEKDLISAKKLRDLSRYRKSKSKLVACESQLLFEIVTAAPQVFIQNS-----NYTREANKGNNIKYTQSLLVIPAFFFSDVKKYFFFSQGSKGLQFQTGDTPTRPLVEEREDL--FTNLELKKPKFSIHDLDVLRCYKIDQDLYAQECF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0ABY1UPX0_9APIC" ac="A0ABY1UPX0" length="1494" description="Insulinase, putative OS=Plasmodium gaboni OX=647221 GN=PGABG01_1115300 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.44</expectation>
+      <identity>29.2</identity>
+      <positives>51.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="103">HLLNSLIITFS-DDDKTETGQSFVYIDGFLVKKH-NNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESI</querySeq>
+      <pattern>+++N+ II FS + D T T QSF Y D     +  NN+H I+N E       ++++     +  D     +NNK+D+++    T  ++I</pattern>
+      <matchSeq start="1009" end="1097">YIINNPIINFSFNSDMTNTCQSFKYFDQDTNSQTINNKHDIMNSEEDTKSQTINNKHDIMNSEEDTKSQTINNKHDIINSEEDTKSQTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="C5DFV4_LACTC" ac="C5DFV4" length="1258" description="RNA helicase OS=Lachancea thermotolerans (strain ATCC 56472 / CBS 6340 / NRRL Y-8284) OX=559295 GN=KLTH0D00132g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.78</expectation>
+      <identity>27.1</identity>
+      <positives>46.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="38" end="152">FVYIDGFLVKKHNN---QHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFL</querySeq>
+      <pattern>F  I GFL+K + +   + T  N  + K   K  + ++  +         L  K DL++     LFE++ +E R FY  E  G+  V   RT + + +RS E  V+ + +    +K+L</pattern>
+      <matchSeq start="8" end="122">FAAIHGFLIKTNRDGTKRITCPNISSLKPTKK--EVQRILELKLQNLAVYLGMKEDLIYVDCPLLFETVTSEQRYFYSTE-DGMKAVRSGRTNSANTRRSIEYRVLPITLPNKTRKYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0ACS3GF63_FRAAN" ac="A0ACS3GF63" length="256" description="Uncharacterized protein OS=Fragaria ananassa OX=3747 GN=ACLB2K_002325 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.81</expectation>
+      <identity>28.7</identity>
+      <positives>49.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="91">QICTCIAQIL--HLLNSLIITFSDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDL</querySeq>
+      <pattern>QIC  I  I+  HLL +++    D D+      F  +D   VK   N H +   E + N+++VS     + ++  E ++ +N KN+L</pattern>
+      <matchSeq start="46" end="132">QICEQIEGIIMKHLLKTILSKKKDLDEMVAELQFYGVDPASVKDKLNGHPLFEDEDFSNEVRVSSTEPLKASSIREDDTCINKKNEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A9MKQ1_SALAR" ac="A9MKQ1" length="269" description="Lipopolysaccharide core biosynthesis protein RfaZ OS=Salmonella arizonae (strain ATCC BAA-731 / CDC346-86 / RSK2980) OX=41514 GN=SARI_03926 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>1.1</expectation>
+      <identity>28.3</identity>
+      <positives>44.0</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="66" end="223">KVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQV-HTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRN</querySeq>
+      <pattern>K S   +F   N D +E A   ++D  +     L       +RSFY  EK G++K +KF       K+ ++ ++ISV   K   +   F +D        I   Y      + + YT  QV ++LK+NR     L L      +Y+E S P P  LS++</pattern>
+      <matchSeq start="83" end="217">KFSSNSQFTIVNLDVYEQA--GEDDKKYIQENCLI------IRSFYRREKGGVLKKIKFNF----LKQVYKALLISVPFSKR-GRLTGFSKD--------ISIGYC---SCHTIAYTAIQVAYSLKYNRIICSGLDLTGSCPRFYDEASGPMPSELSKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0A2X4SVG5_SALER" ac="A0A2X4SVG5" length="269" description="Lipopolysaccharide core biosynthesis protein RfaZ OS=Salmonella enterica subsp. arizonae OX=59203 GN=waaZ PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>1.1</expectation>
+      <identity>28.3</identity>
+      <positives>44.0</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="66" end="223">KVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQV-HTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRN</querySeq>
+      <pattern>K S   +F   N D +E A   ++D  +     L       +RSFY  EK G++K +KF       K+ ++ ++ISV   K   +   F +D        I   Y      + + YT  QV ++LK+NR     L L      +Y+E S P P  LS++</pattern>
+      <matchSeq start="83" end="217">KFSSNSQFTIVNLDVYEQA--GEDDKKYIQENCLI------IRSFYRREKGGVLKKIKFNF----LKQVYKALLISVPFSKR-GRLTGFSKD--------ISIGYC---SCHTIAYTAIQVAYSLKYNRIICSGLDLTGSCPRFYDEASGPMPSELSKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0ACE2FJA2_9SACH" ac="A0ACE2FJA2" length="505" description="DNA primase large subunit OS=Monosporozyma unispora OX=27294 GN=PRI2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>1.2</expectation>
+      <identity>28.7</identity>
+      <positives>48.4</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="62" end="175">KNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSIT-------LFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGG-PIPSKYLIPKK</querySeq>
+      <pattern>+NK +++ RR     NFD +ES  ++ ND     +         L+++I +   SFYE +  G I + +F T A+ R +   +I   +   KN+ +  T +  +P FQ   P+ S   I KK</pattern>
+      <matchSeq start="4" end="118">QNKRRIASRR-----NFDSYESNTDSLNDNKVILTSNNPEEEKRLYDTIYSSKLSFYEQQPQGEITLEQFETWAIARLKILLEIESGISRNKNLSEIETLI--KPQFQKFLPLNSDNFIDKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="C5DDD6_LACTC" ac="C5DDD6" length="1258" description="RNA helicase OS=Lachancea thermotolerans (strain ATCC 56472 / CBS 6340 / NRRL Y-8284) OX=559295 GN=KLTH0B10428g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>1.4</expectation>
+      <identity>27.1</identity>
+      <positives>45.8</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="38" end="152">FVYIDGFLVKKHNN---QHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFL</querySeq>
+      <pattern>F  I GFL+K   +   + T  N  + K   K  + ++  +         L  K DL++     LFE++ +E R FY  E  G+  V   RT + + +RS E  V+ + +    +K+L</pattern>
+      <matchSeq start="8" end="122">FAAIHGFLIKTDRDGTKRITCPNISSLKPTKK--EVQRILELKLQNLAVYLGMKEDLIYVDCPLLFETVTSEQRYFYSTE-DGMKAVRSGRTNSANTRRSIEYRVLPITLPNKTRKYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="G0WHV5_NAUDC" ac="G0WHV5" length="520" description="DNA primase large subunit OS=Naumovozyma dairenensis (strain ATCC 10597 / BCRC 20456 / CBS 421 / NBRC 0211 / NRRL Y-12639) OX=1071378 GN=NDAI0K01750 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>2.8</expectation>
+      <identity>26.4</identity>
+      <positives>48.1</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="62" end="162">KNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSIT-----LFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQ</querySeq>
+      <pattern>+NK K++ RR F+ + +   ++  N        P+ T     L++SI     SFY     G I + +F T A+DR +   +I   +   K++++  T +  +P FQ</pattern>
+      <matchSeq start="4" end="105">QNKRKIASRRNFDSSPY--VDNGSNESTPFALAPTSTEEEKKLYDSIYDSKLSFYTSRPQGEITLEQFETWAVDRLKILLEIESCISRNKSLKEIETII--KPQFQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0A1J1H9P0_PLARL" ac="A0A1J1H9P0" length="831" description="ABC transporter B family member 5, putative OS=Plasmodium relictum OX=85471 GN=MDR5 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>5.5</expectation>
+      <identity>24.6</identity>
+      <positives>44.9</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="49" end="214">HNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDL-VHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQVHTLKFNRKDYDTLSLFYLNRGYYNELSF</querySeq>
+      <pattern>+ N   ++N E+ KNK +  +++ FE AN D++ + LNNKN L  +      +E++     SF + +K+ ++K + F        +  EK+ I    G         +  E +++G      Y I K I+    T F+ + L  + ++        LNR  Y  L +</pattern>
+      <matchSeq start="397" end="546">NTNDTLLLNCESIKNKNENHNKKNFEIANNDDY-NVLNNKNILPENIKGAIKYENVNFSYNSF-DKKKNKILKNIHFEI------KENEKVAIIGKSGSGKSTLWKLLTREYEYEGNIYVDNYNI-KDIH---KTYFKKNILSISEQECS-----ILNRSLYENLIY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0A0K0EQR1_STRER" ac="A0A0K0EQR1" length="424" description="Nuclear receptor domain-containing protein OS=Strongyloides stercoralis OX=6248 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>6.2</expectation>
+      <identity>24.3</identity>
+      <positives>40.9</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="62" end="223">KNKMKVSDR----RKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRS--FYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDE-----------PDFQGGPIPSKYLIPKKINLMVYTLFQVHT-LK-FNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRN</querySeq>
+      <pattern>+N +KV+D+       E+ N   FE            P+I       TEV++          L+  +K     +++  + EK+ I+  +   ++KF+ F E             PDF G P   KY + KK   ++ TL +++T LK F   +   + LF     Y +     C G L +N</pattern>
+      <matchSeq start="111" end="282">QNIVKVNDKSLCTNNVERINLINFEKCSET-------PNIEYNNDFKTEVKTEELINLPLQALMLTIKDFLSTINKDLTIEKVSITNNI--TLKKFILFTESSINILFQKLMQAPDFVGIPYDDKYQMFKKKFPIILTLERIYTSLKLFKNCENKNIILFENTEAYDDNFGILCDGELDKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A0F6B8L2_SALT1" ac="A0A0F6B8L2" length="269" description="Lipopolysaccharide core biosynthesis protein OS=Salmonella typhimurium (strain 14028s / SGSC 2262) OX=588858 GN=rfaZ PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>6.6</expectation>
+      <identity>26.9</identity>
+      <positives>42.3</positives>
+      <gaps>26</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="50" end="223">NNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQV-HTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRN</querySeq>
+      <pattern>N+Q TIVN + Y+ +  V D++  E+             N L+              +RSFY  EK G +K +KF       KR  + ++ISV + K   +   F +D        I   Y      + + YT  QV ++LK+ R     L L      +Y+E + P P  LS++</pattern>
+      <matchSeq start="87" end="217">NSQFTIVNLDVYE-QASVDDQKYIEE-------------NCLI--------------IRSFYRREKGGFLKKIKFNI----LKRVHKALLISVPLSKR-GRLAGFCKD--------ISIGYC---SCHTIAYTAIQVAYSLKYGRIICSGLDLTGSCPRFYDESTSPMPSELSKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="Q8Z2G0_SALTI" ac="Q8Z2G0" length="269" description="Lipopolysaccharide core biosynthesis protein RfaZ OS=Salmonella typhi OX=90370 GN=waaZ PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>6.6</expectation>
+      <identity>26.9</identity>
+      <positives>42.3</positives>
+      <gaps>26</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="50" end="223">NNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQV-HTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRN</querySeq>
+      <pattern>N+Q TIVN + Y+ +  V D++  E+             N L+              +RSFY  EK G +K +KF       KR  + ++ISV + K   +   F +D        I   Y      + + YT  QV ++LK+ R     L L      +Y+E + P P  LS++</pattern>
+      <matchSeq start="87" end="217">NSQFTIVNLDVYE-QASVDDQKYIEE-------------NCLI--------------IRSFYRREKGGFLKKIKFNI----LKRVHKALLISVPLSKR-GRLAGFCKD--------ISIGYC---SYHTIAYTAIQVAYSLKYGRIICSGLDLTGSCPRFYDESTSPMPSELSKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0A0H3NHF5_SALTS" ac="A0A0H3NHF5" length="269" description="Lipopolysaccharide core biosynthesis protein RfaZ OS=Salmonella typhimurium (strain SL1344) OX=216597 GN=rfaZ PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>6.6</expectation>
+      <identity>26.9</identity>
+      <positives>42.3</positives>
+      <gaps>26</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="50" end="223">NNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQV-HTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRN</querySeq>
+      <pattern>N+Q TIVN + Y+ +  V D++  E+             N L+              +RSFY  EK G +K +KF       KR  + ++ISV + K   +   F +D        I   Y      + + YT  QV ++LK+ R     L L      +Y+E + P P  LS++</pattern>
+      <matchSeq start="87" end="217">NSQFTIVNLDVYE-QASVDDQKYIEE-------------NCLI--------------IRSFYRREKGGFLKKIKFNI----LKRVHKALLISVPLSKR-GRLAGFCKD--------ISIGYC---SCHTIAYTAIQVAYSLKYGRIICSGLDLTGSCPRFYDESTSPMPSELSKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="SP" id="WAAZ_SALTY" ac="P26473" length="269" description="Probable 3-deoxy-manno-octulosonic acid transferase OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=waaZ PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>6.6</expectation>
+      <identity>26.9</identity>
+      <positives>42.3</positives>
+      <gaps>26</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="50" end="223">NNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKFLTFVEDEPDFQGGPIPSKYLIPKKINLMVYTLFQV-HTLKFNRKDYDTLSLFYLNRGYYNELSFPCPGTLSRN</querySeq>
+      <pattern>N+Q TIVN + Y+ +  V D++  E+             N L+              +RSFY  EK G +K +KF       KR  + ++ISV + K   +   F +D        I   Y      + + YT  QV ++LK+ R     L L      +Y+E + P P  LS++</pattern>
+      <matchSeq start="87" end="217">NSQFTIVNLDVYE-QASVDDQKYIEE-------------NCLI--------------IRSFYRREKGGFLKKIKFNI----LKRVHKALLISVPLSKR-GRLAGFCKD--------ISIGYC---SCHTIAYTAIQVAYSLKYGRIICSGLDLTGSCPRFYDESTSPMPSELSKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0AAV5LXI0_9ROSI" ac="A0AAV5LXI0" length="676" description="Uncharacterized protein OS=Rubroshorea leprosula OX=152421 GN=SLEP1_g49032 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>7.1</expectation>
+      <identity>25.2</identity>
+      <positives>49.5</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="49" end="151">HNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKF</querySeq>
+      <pattern>H+NQ T+ N +  K + KV +RR  ++ N DE+ +A++  N  +      L E +  +   F+E     ++++   R    D+KR   ++V  V   K+ + +</pattern>
+      <matchSeq start="445" end="541">HDNQFTMTNDKRRKTRKKVDERR--QQTNLDEY-AAIDIHNITLIYLKRDLLERLIDDADKFHEKVVGSIVRI---RISGSDQKRDMHRLVQVVGTSKSAEPY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0A9Q0JF68_9ROSI" ac="A0A9Q0JF68" length="141" description="MHF histone-fold complex component OS=Turnera subulata OX=218843 GN=MHF1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>7.1</expectation>
+      <identity>26.7</identity>
+      <positives>46.5</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="97">MEIENEQICTCIAQI-LHLLNSLIITFSDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSD---RRKFEKANFDEFESALNNKNDLVHCPSI</querySeq>
+      <pattern>MEI +E I TCI+ + LH    L   F +      G+  VY D  ++  H N+H      ++ N +K  +    RK +K +  E ++  +    ++H P +</pattern>
+      <matchSeq start="43" end="141">MEI-SEPIVTCISDLALHYTEQLAKEF-ELFAQHAGRKTVYTDDVILSAHRNEHLSTLLRSFCNDLKAKEPQSERKRKKVSKKEDKATASASASVIHIPDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="V7PBR3_PLAYE" ac="V7PBR3" length="257" description="Fam-b protein OS=Plasmodium yoelii 17X OX=1323249 GN=YYC_05580 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>8.5</expectation>
+      <identity>28.7</identity>
+      <positives>43.9</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="170">SLIITFSD--DDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNK-NDLVHCPSITLFESIPTEVRSFYEDEKSGLIKVVKFRTGAMDRKRSFEKIVISVMVGKNVQKF----LTFVEDEPDFQGGPIPSKY</querySeq>
+      <pattern>SL+  F+D  DD  E       ID   +KKH   +  +NF+   +K K     KF +   +E +  L+NK N  +   SI   E I  +  + Y  E   L K+   +   +   RS++K  I+  + K V KF    L F+        GP+ +KY</pattern>
+      <matchSeq start="96" end="248">SLVNQFNDCNDDNKEITSIRNVIDSH-IKKHKESNISLNFKNLDSKTK-KKINKF-RTELEEVKKELDNKMNSELEMQSI-YDEQIVNKDENSYVSEHQDLEKLKNDKYNEVILSRSYKKFKITRKMKKEVTKFTMACLGFIVVVFSILIGPVVNKY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0A3Q2VJP6_HAPBU" ac="A0A3Q2VJP6" length="98" description="BHLH domain-containing protein OS=Haplochromis burtoni OX=8153 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>9.2</expectation>
+      <identity>25.8</identity>
+      <positives>41.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="95">IENEQICTCIAQILHLLNSLIITFSDDDKTETGQSFVYIDGFLVKKHNNQHTIVNFETYKNKMKVSDRRKFEKANFDEFESALNNKNDLVHCP</querySeq>
+      <pattern>+  E+I TCI Q+  LL    +    D K E          FL +    +    N  T+ NK++ +  +K ++A+F    S + N      CP</pattern>
+      <matchSeq start="1" end="89">LRRERINTCIEQLKSLLGPEFLKQQPDSKLEKADILEMTVCFLTQLQQQR----NLLTHCNKLQTASDKKLKEADFSPLSSTVQNMITKNKCP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-200633-0311-3340996-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-200633-0311-3340996-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P20343|CYSX_ECOLI" type="PROTEIN" length="130"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:06:33+00:00" end="2026-11-13T20:08:59+00:00" search="P0Y0M0DT0H0M146.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="14">
+   <hit number="1" database="SP" id="CYSX_ECOLI" ac="P20343" length="130" description="Putative protein CysX OS=Escherichia coli (strain K12) OX=83333 GN=cysX PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>706</score>
+      <bits>276.6</bits>
+      <expectation>3.2e-94</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="130">MRRHRLQHHGTCANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATPLIPQPVTDAIGLQGMKTLQV</querySeq>
+      <pattern>MRRHRLQHHGTCANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATPLIPQPVTDAIGLQGMKTLQV</pattern>
+      <matchSeq start="1" end="130">MRRHRLQHHGTCANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATPLIPQPVTDAIGLQGMKTLQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A9D4Y906_PEA" ac="A0A9D4Y906" length="154" description="Uncharacterized protein OS=Pisum sativum OX=3888 GN=KIW84_020209 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <bits>79.7</bits>
+      <expectation>2.9e-16</expectation>
+      <identity>31.9</identity>
+      <positives>54.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="114">RRHRLQHHGTCANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATPLIPQ</querySeq>
+      <pattern>RRH L H+ T  + R   + NI ++   R N H   N R+ +  R T  ++RH +QNR+++ NH RF++ D  RV++ ++ +    R+N++ E   N +L  + Q    + PQ</pattern>
+      <matchSeq start="32" end="144">RRHFLNHNRTSTDFRTFTDLNIPQNTSPRTNQHPVANLRMPIAMRLTSPSQRHTMQNRHIISNHSRFSDHDPRRVIEQNSTSELRSRMNVNSENFTNSILNYNSQNLPSICPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A9D4W0R6_PEA" ac="A0A9D4W0R6" length="154" description="Uncharacterized protein OS=Pisum sativum OX=3888 GN=KIW84_077026 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>186</score>
+      <bits>76.3</bits>
+      <expectation>6.4e-15</expectation>
+      <identity>31.9</identity>
+      <positives>53.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="114">RRHRLQHHGTCANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATPLIPQ</querySeq>
+      <pattern>RRH L H+ T  + R   + NI ++   R N H   N R+ +  R T  ++RH +QNR+++ NH R ++ D  RV++ ++      R+NI+ E   N +L  + Q    + PQ</pattern>
+      <matchSeq start="32" end="144">RRHFLNHNRTSTDFRTFTDLNIPQNTSPRTNQHPVANLRMPIAMRLTSPSQRHAMQNRHIISNHSRLSDHDPRRVIEQNSTPELRSRMNINSENLTNSILNYNSQNLPSICPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0AAV0S6G4_9ROSI" ac="A0AAV0S6G4" length="133" description="Secreted protein OS=Linum tenue OX=586396 GN=LITE_LOCUS51621 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>3.3e-10</expectation>
+      <identity>37.3</identity>
+      <positives>53.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="103">RRHRLQHHGTCANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQK</querySeq>
+      <pattern>RR   Q+H TC N R+  N +I +D R  A  H   + RV V   F R+ +R  +Q+R+VV NHRR  +D    VV+ +   +   RVN+D E   +  LQ+</pattern>
+      <matchSeq start="32" end="133">RRDVDQNHRTCPNFRSFSNVDIPQDRRPGAYQHAIADLRVPVAASFPRSTERDVVQDRHVVPNHRRLAHDHPRGVVEQNPLPDPRRRVNVDGENVGDPGLQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0AAV0QFI5_9ROSI" ac="A0AAV0QFI5" length="133" description="Secreted protein OS=Linum tenue OX=586396 GN=LITE_LOCUS42961 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>2.6e-09</expectation>
+      <identity>36.3</identity>
+      <positives>52.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="103">RRHRLQHHGTCANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQK</querySeq>
+      <pattern>RR   Q+H  C N R+  N +I +D R  A  H   + RV V   F R+ +R  +Q+R+VV NHRR  +D    VV+ +   +   RVN+D E   +  LQ+</pattern>
+      <matchSeq start="32" end="133">RRDVDQNHRPCPNFRSFSNVDIPQDRRPGAYQHAIADLRVPVAASFPRSTERDVVQDRHVVPNHRRLAHDHPRGVVEQNPLPDPRRRVNVDGENVGDPGLQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0AAQ3NZ02_VIGMU" ac="A0AAQ3NZ02" length="143" description="Uncharacterized protein OS=Vigna mungo OX=3915 GN=V8G54_010514 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <bits>60.1</bits>
+      <expectation>8.7e-09</expectation>
+      <identity>34.3</identity>
+      <positives>48.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="110">RHRLQHHGTCANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATP</querySeq>
+      <pattern>RH  Q+H    NL   PN NI+++    AN H   N  + VTT     A+ + +QN Y+V NHR   +     ++K +   N   RVNI  +   N  +Q  CQC  P</pattern>
+      <matchSeq start="33" end="138">RHINQNHRAGTNLCTFPNLNISQNCSTSANKHPIPNLGMPVTTNLASPAQCNMVQNGYIVPNHRCLPHHHPSGMIKQNPLPNPRRRVNIHRKHISNPRVQ--CQCQRP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A2K2DEL0_BRADI" ac="A0A2K2DEL0" length="344" description="Uncharacterized protein OS=Brachypodium distachyon OX=15368 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <bits>60.1</bits>
+      <expectation>6e-08</expectation>
+      <identity>31.7</identity>
+      <positives>52.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="124">RRHRLQHHGTCANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATPLIPQPVTDAIGLQG</querySeq>
+      <pattern>R H  +HHG   +L A  N ++A++    A+ H   +  V V  R +R A+R  +++  VV +     +DDA  VV+ D   +   RV++D E   +  L+++ + A  L P+ V DA+GL G</pattern>
+      <matchSeq start="28" end="150">RGHVDEHHGPGTDLGAGANEHVAKNRGPGADEHAVPDLGVPVPHRLSRPAERDVVEDGDVVAHDGGLADDDAGGVVEEDALADGGGRVDVDGEHLGDPGLERERESAAVLRPEHVRDAVGLDG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A1X6PIJ8_PORUM" ac="A0A1X6PIJ8" length="778" description="Uncharacterized protein (Fragment) OS=Porphyra umbilicalis OX=2786 GN=BU14_0033s0005 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>135</score>
+      <bits>56.6</bits>
+      <expectation>1.2e-06</expectation>
+      <identity>34.0</identity>
+      <positives>49.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="130">RARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATPLIPQPVTDAIGLQGMKTLQV</querySeq>
+      <pattern>RAR NH+   + RV    R  R  +RHR+Q R+    HRR  +    RVV+     N   RV++D+E      L+K      P   + V DA+ LQ ++ L+V</pattern>
+      <matchSeq start="208" end="310">RARPNHNPIPHLRVPHPVRLARPPQRHRVQQRHARAEHRRLAHHHPRRVVEKRARPNDRPRVDVDVEDAARKGLEKVGHLLAPRPVERVRDAVHLQRVEALKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0ACG4SPR1_9ASTR" ac="A0ACG4SPR1" length="139" description="Uncharacterized protein OS=Helianthus anomalus OX=73274 GN=Hanom_Chr09g00868861 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>3.7e-05</expectation>
+      <identity>26.9</identity>
+      <positives>49.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="105">RRHRLQHHGTCANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDC</querySeq>
+      <pattern>RRH   H     NLR  P+ +I ++ R R + H   N R+ ++       +RH +QNR+++ ++R   +    R+++    TN    ++I  E  R   +Q+ C</pattern>
+      <matchSeq start="31" end="134">RRHINHHQTPRPNLRPFPDLHIPQNRRTRPDQHPIPNLRMPISPHLPGPTQRHMMQNRHIIPDNRGLPDHHTRRMIQQYPFTNPSRGMDIHGENIRYPRVQRKC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0ACS5SY61_9CARY" ac="A0ACS5SY61" length="551" description="Uncharacterized protein OS=Rumex salicifolius OX=1234504 GN=V2J09_002564 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>122</score>
+      <bits>51.6</bits>
+      <expectation>6.3e-05</expectation>
+      <identity>28.0</identity>
+      <positives>52.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="130">ANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATPLIPQPVTDAIGLQGMKTLQV</querySeq>
+      <pattern>+NLR   N ++++D RA A+ H   +  +++    + TA+   ++NR VV ++    ++D+  VVK D A      V++D E      ++ + +    + P+ V DA+ L G K+L V</pattern>
+      <matchSeq start="315" end="432">SNLRPLSNPHVSQDRRAGADKHAVADLGMSIAAGLSSTAEGDMVKNRAVVADNSSLADNDSGSVVKEDAAAECGGGVDVDGEYVGYAGVESERERTALVGPEEVGDAVCLTGEKSLVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A5A7R2H1_STRAF" ac="A0A5A7R2H1" length="212" description="BZIP transcription factor family protein OS=Striga asiatica OX=4170 GN=STAS_29026 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>0.00024</expectation>
+      <identity>28.5</identity>
+      <positives>44.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="124">RRHRLQHHGTCANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATPLIPQPVTDAIGLQG</querySeq>
+      <pattern>RR    H+ T  +LRA P+ N  +D     NH+   N R+          + H + NR  V +  R  ++D  RV++H  A +   R+++  E  RN  L    Q    L P+ +   +GL G</pattern>
+      <matchSeq start="92" end="212">RRDLFPHNRTGTHLRALPDPNTPQDLSPSPNHNPIPNHRMPAAP--ISLPQSHAVHNRGAVSDDSRPPDNDPRRVIEHHPAADLRPRMDVHCENLRNPALDHVGQGDPALGPEFMGQPMGLTG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0ACE1ZH74_MUSBN" ac="A0ACE1ZH74" length="316" description="Uncharacterized protein (Fragment) OS=Musa banksii OX=213591 GN=MABAN_02.1168 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.04</expectation>
+      <identity>27.1</identity>
+      <positives>45.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="130">RRHRLQHHGTCANLRAAPNFNIAEDFRARANHHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATPLIPQPVTDAIGLQGMKTLQV</querySeq>
+      <pattern>R H  +  G   +L   P  ++AED  A ++     + RV V       A+   +++  VV +H    +DDA  VV+ D   +    V++D E   +  L+ + + A  L P+ V  A+ L G + L V</pattern>
+      <matchSeq start="60" end="188">RGHVDEDDGPGTDLGPLPYPDVAEDGSAGSDEDAVADLRVAVADGLAGAAECDVVEDGDVVADHGGLADDDAGGVVEEDALADAGGGVDVDGENVGDAGLEGEGEGAAVLGPEKVGHAVSLDGEEALVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A7I8J7P9_SPIIN" ac="A0A7I8J7P9" length="228" description="Uncharacterized protein OS=Spirodela intermedia OX=51605 GN=SI7747_09012480 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.27</expectation>
+      <identity>26.4</identity>
+      <positives>45.5</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="129">RAAPNFNIAEDFRARAN-------HHTFTNFRVTVTTRFTRTAKRHRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATPLIPQPVTDAIGLQGMKTLQ</querySeq>
+      <pattern>R  P  ++ E  RAR +       HH   +  + V    +R A+R  ++N +VV +     +DD   VV+ D   +   RV++D E      L+   + A  L P+ V + +GL   + L+</pattern>
+      <matchSeq start="28" end="148">RGGPRRHVDEHQRARPDLSPCADPHHAVADLGMPVADSLSRPAERDVMENGHVVADDGGLADDDPGGVVEEDPLADPRRRVDVDGEHVGYARLEGQGERAAGLGPEDVGNPVGLHCEEALE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A2A2K2E8_9BILA" ac="A0A2A2K2E8" length="796" description="Uncharacterized protein OS=Diploscapter pachys OX=2018661 GN=WR25_12612 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>5.8</expectation>
+      <identity>30.1</identity>
+      <positives>49.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="54" end="126">HRLQNRYVVFNHRRFTNDDACRVVKHDTATNFCCRVNIDLERHRNLVLQKDCQCATPLIPQPVTDAIGLQGMK</querySeq>
+      <pattern>+R+  R +VF+H    N  A  +  + T  +   R+NID     + VLQ        + P+ +TDAI LQ ++</pattern>
+      <matchSeq start="621" end="693">NRIPKRDIVFDHHTVINHQALAMADNYTFADLRARMNIDSPHLSSPVLQHHGVVVFEIEPEHMTDAIELQSLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

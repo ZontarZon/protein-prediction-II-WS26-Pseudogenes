@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-195701-0749-94924914-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-195701-0749-94924914-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|O29518|Y740_ARCFU" type="PROTEIN" length="202"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T19:57:01+00:00" end="2026-11-13T20:00:51+00:00" search="P0Y0M0DT0H0M230.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="10">
+   <hit number="1" database="SP" id="Y740_ARCFU" ac="O29518" length="202" description="Putative uncharacterized protein AF_0740 OS=Archaeoglobus fulgidus (strain ATCC 49558 / DSM 4304 / JCM 9628 / NBRC 100126 / VC-16) OX=224325 GN=AF_0740 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1059</score>
+      <bits>412.5</bits>
+      <expectation>1.1e-145</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="202">MVVTAPVLPTLKTRTAPLSTLLSLTNFSTSGVMSAMSPKPSSSTSISLIIILPPYEVKLRTFIVYNSRLHVVPVEGLDEAVRTNFPRNLDYCGKKLRWWAEGVDERGPFIYFEVGLCHVVNVKSATLRSSPLNNIRCENLKAPPRQKLGYRSKSPYSHLHDLTSVVFCYVVGNLQHEQFLYLRGAIKFCADGDNQGLHAQGL</querySeq>
+      <pattern>MVVTAPVLPTLKTRTAPLSTLLSLTNFSTSGVMSAMSPKPSSSTSISLIIILPPYEVKLRTFIVYNSRLHVVPVEGLDEAVRTNFPRNLDYCGKKLRWWAEGVDERGPFIYFEVGLCHVVNVKSATLRSSPLNNIRCENLKAPPRQKLGYRSKSPYSHLHDLTSVVFCYVVGNLQHEQFLYLRGAIKFCADGDNQGLHAQGL</pattern>
+      <matchSeq start="1" end="202">MVVTAPVLPTLKTRTAPLSTLLSLTNFSTSGVMSAMSPKPSSSTSISLIIILPPYEVKLRTFIVYNSRLHVVPVEGLDEAVRTNFPRNLDYCGKKLRWWAEGVDERGPFIYFEVGLCHVVNVKSATLRSSPLNNIRCENLKAPPRQKLGYRSKSPYSHLHDLTSVVFCYVVGNLQHEQFLYLRGAIKFCADGDNQGLHAQGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A165ZB19_9AGAM" ac="A0A165ZB19" length="62" description="Uncharacterized protein OS=Athelia psychrophila OX=1759441 GN=FIBSPDRAFT_872609 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>3.5</expectation>
+      <identity>35.7</identity>
+      <positives>64.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="59">LSTLLSLTNFSTSGVMSAMSPKPSSSTSISLIIILPPYEVKL</querySeq>
+      <pattern>+STL SL+NF  + +++  +P P +++ IS+  + PPY   L</pattern>
+      <matchSeq start="18" end="59">VSTLRSLSNFQLTPILARSAPSPFATSRISIACVTPPYSALL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A9D3PWL1_MEGAT" ac="A0A9D3PWL1" length="322" description="Ig-like domain-containing protein OS=Megalops atlanticus OX=7932 GN=MATL_G00145170 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>3.8</expectation>
+      <identity>26.0</identity>
+      <positives>46.7</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="150">KTRTAPLSTLLSLTNFSTSGVMSAMSPKPSSSTSISLIIILPPYEVKLR-TFIVYNSRLHVVPV------EGLDEAVRTNFPRNLDYCGKKLRWWAEGVDERGPFIY-FEVGLCHVVNVKS---ATLRSSPLNNIRCENLKAPPRQKLGY</querySeq>
+      <pattern>+ R   +S  L  T  S SGV    + +  S +S++L +++PP  + +R T + ++ R+  VPV      E  D+ V T    + +   +K+  W      +G +++   V +C ++ V        RS+ LNNI+ +   A P  K  Y</pattern>
+      <matchSeq start="174" end="322">RIRQGDISLTLRGTRLSDSGVYQCYTDQSQSLSSLTLHVLVPPQTISIRVTGMSFSLRVPHVPVDVYFSREAQDKGVYTVVQTSSNMTIEKVTLWIMPGPPQGFYMFVLVVSVCLILMVMKMGRCWRRSNYLNNIK-DYFYAKPSSKWIY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0AAD4MDD0_9AGAM" ac="A0AAD4MDD0" length="284" description="SMP-LTD domain-containing protein OS=Multifurca ochricompacta OX=376703 GN=B0F90DRAFT_1678996 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>4.8</expectation>
+      <identity>29.6</identity>
+      <positives>50.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="89">PTLKTRTAPLSTLLSLTNFSTSGVMSAMSPKPSSSTSISLIIILPPYEVKLRTFIVYNSRLHVVPVEGLDEAVRTNFPRNL</querySeq>
+      <pattern>PT+     P+S  +SL+ FS   V+  M P PS+S  +  + +LP + + L++  +  SR  +  V  L E + +   R L</pattern>
+      <matchSeq start="183" end="261">PTIGFARLPVSVTISLSAFSCHAVI--MPPSPSTSAPVLTLAMLPNFLLDLKSTSLLGSRAKLADVPKLHELIDSQIRRAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABR4QMU1_9CEST" ac="A0ABR4QMU1" length="1693" description="MPN domain-containing protein OS=Taenia crassiceps OX=6207 GN=TcWFU_000245 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>7.0</expectation>
+      <identity>29.2</identity>
+      <positives>49.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="107">LPTLKTRTA--PLSTLLSLTNFSTSGVMSAMSPKPSSSTSISLIIILPPYEVKLRTFIV----YNSRLHVVPVEGLDEAVRTNFPRNLDYCGKKLRWWAEGVDERG</querySeq>
+      <pattern>LPT+ T ++      L   +N ++S +++ +S KP SST  + +  +   +  L T +V      SR+  +P E  D+ +R + P  L      LRWWA   + RG</pattern>
+      <matchSeq start="206" end="306">LPTVSTNSSLRRKDLLFEQSNEASSLMLTQLSSKPPSSTVAAAVYQITRLDAALNTLMVPPGNCTSRIPPLPDEQSDDKLRISEPERL-----FLRWWAMLENLRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="B6HHR2_PENRW" ac="B6HHR2" length="485" description="Pc21g18400 protein OS=Penicillium rubens (strain ATCC 28089 / DSM 1075 / NRRL 1951 / Wisconsin 54-1255) OX=500485 GN=Pc21g18400 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>7.9</expectation>
+      <identity>36.0</identity>
+      <positives>48.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="34" end="98">SAMSPKPSSSTSISLIIILPPYEV----------KLRTFIVYNSRLHVVPVEGLDEAVRTNFPRNLDYCGKKLRW</querySeq>
+      <pattern>SA  P+  SS+ +S+   LPPY+           K RT   + SRL V+   GL  A+     R+L YC   LRW</pattern>
+      <matchSeq start="210" end="283">SAEPPRTRSSSDLSMAEPLPPYDEMRSPHYEEKPKRRTSATWQSRL-VISTSGLGVAMSEESLRSLQYCLTWLRW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0ABQ8WKJ4_PENCH" ac="A0ABQ8WKJ4" length="485" description="Clock-controlled protein OS=Penicillium chrysogenum OX=5076 GN=N7505_006248 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>7.9</expectation>
+      <identity>36.0</identity>
+      <positives>48.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="34" end="98">SAMSPKPSSSTSISLIIILPPYEV----------KLRTFIVYNSRLHVVPVEGLDEAVRTNFPRNLDYCGKKLRW</querySeq>
+      <pattern>SA  P+  SS+ +S+   LPPY+           K RT   + SRL V+   GL  A+     R+L YC   LRW</pattern>
+      <matchSeq start="210" end="283">SAEPPRTRSSSDLSMAEPLPPYDEMRSPHYEEKPKRRTSATWQSRL-VISTSGLGVAMSEESLRSLQYCLTWLRW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A7N0VNC7_KALFE" ac="A0A7N0VNC7" length="103" description="Uncharacterized protein OS=Kalanchoe fedtschenkoi OX=63787 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>8.0</expectation>
+      <identity>31.3</identity>
+      <positives>49.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="90">TNFSTSGVMSAMSPKPSSSTSISLII-ILPPYEVKLRTFIVYNSRLHVVPVEGLDEAVRTNFPRNLD</querySeq>
+      <pattern>T+ S S   S++ P   SSTS+  ++ + PP  V      + N + HV  + GLD+A    + R  D</pattern>
+      <matchSeq start="11" end="77">TSSSISSASSSLPPSSKSSTSVDTVLAVSPPTTVNASAIQMVNIKTHVPIILGLDDATYRQWRRFFD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A6A6PKI2_9PEZI" ac="A0A6A6PKI2" length="89" description="Secreted protein OS=Neohortaea acidophila OX=245834 GN=BDY17DRAFT_303049 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>8.5</expectation>
+      <identity>38.9</identity>
+      <positives>61.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="62">TLKTRTAPLSTLLSLTNFSTSGVMSAMSPKPSSSTSISLII-ILPPYEVKLRTF</querySeq>
+      <pattern>T  T  +P S   S+T+F +S  +S+ SP  S ST+ SL   +L  +E++LR+F</pattern>
+      <matchSeq start="36" end="89">TCVTSMSPSSLWSSVTSFLSSSAVSSTSPPVSPSTTSSLFFSLLVAFEIRLRSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0AAV4STY5_CAEEX" ac="A0AAV4STY5" length="50" description="Uncharacterized protein (Fragment) OS=Caerostris extrusa OX=172846 GN=CEXT_425861 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>9.7</expectation>
+      <identity>40.0</identity>
+      <positives>57.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="132" end="171">LNNIRCENLKAPPRQKLGYRSKSPYSHLHDLTSVVFCYVV</querySeq>
+      <pattern>+N IR + L  PP   LG R K P S+++ L   ++C VV</pattern>
+      <matchSeq start="3" end="42">INRIRLQGLVPPPENPLGLRRKEPSSNMYWLAVWIYCPVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

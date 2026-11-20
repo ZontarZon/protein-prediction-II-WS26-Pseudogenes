@@ -1,0 +1,1725 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-182635-0811-68902429-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-182635-0811-68902429-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q2V4A7|DEF64_ARATH" type="PROTEIN" length="90"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T18:26:35+00:00" end="2026-11-13T18:28:36+00:00" search="P0Y0M0DT0H0M121.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="100">
+   <hit number="1" database="SP" id="DEF64_ARATH" ac="Q2V4A7" length="90" description="Putative defensin-like protein 64 OS=Arabidopsis thaliana OX=3702 GN=At2g03932 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>503</score>
+      <bits>198.4</bits>
+      <expectation>1.5e-64</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="90">MWGRQIVLKIFFLVLSCVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVEDVVVKHNRNRPTFRAVELCFFSIKFMYDFSMK</querySeq>
+      <pattern>MWGRQIVLKIFFLVLSCVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVEDVVVKHNRNRPTFRAVELCFFSIKFMYDFSMK</pattern>
+      <matchSeq start="1" end="90">MWGRQIVLKIFFLVLSCVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVEDVVVKHNRNRPTFRAVELCFFSIKFMYDFSMK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0ABM1RLP4_CAMSA" ac="A0ABM1RLP4" length="75" description="LOW QUALITY PROTEIN: putative defensin-like protein 60 OS=Camelina sativa OX=90675 GN=LOC109132623 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>1.8e-15</expectation>
+      <identity>71.1</identity>
+      <positives>86.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>V+ET + D+CFIPCT RYG+YECWFDCT+ RY +GGCV</pattern>
+      <matchSeq start="30" end="67">VMETSKNDVCFIPCTTRYGEYECWFDCTHKRYHDGGCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ABM1RSW6_CAMSA" ac="A0ABM1RSW6" length="75" description="Defensin-like protein 60 OS=Camelina sativa OX=90675 GN=LOC109133442 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>172</score>
+      <bits>70.9</bits>
+      <expectation>2.9e-14</expectation>
+      <identity>68.4</identity>
+      <positives>84.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>V+ET + D+CFIPCT RYG+YECW DCT+ RY +GGCV</pattern>
+      <matchSeq start="30" end="67">VMETSKNDVCFIPCTTRYGEYECWCDCTHKRYHDGGCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A8T2FVT3_ARASU" ac="A0A8T2FVT3" length="77" description="Defensin-like domain-containing protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As02g002860 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <bits>67.4</bits>
+      <expectation>7.1e-13</expectation>
+      <identity>68.4</identity>
+      <positives>81.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>VIET + D+CF+PCT RYG YEC FDC + RYK+GGCV</pattern>
+      <matchSeq start="32" end="69">VIETAQNDVCFVPCTSRYGHYECAFDCMHKRYKDGGCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="DEF60_ARATH" ac="Q2V4A5" length="77" description="Putative defensin-like protein 60 OS=Arabidopsis thaliana OX=3702 GN=At2g03955 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <bits>67.4</bits>
+      <expectation>7.1e-13</expectation>
+      <identity>68.4</identity>
+      <positives>81.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>VIET + D+CF+PCT RYG YEC FDC + RYK+GGCV</pattern>
+      <matchSeq start="32" end="69">VIETAQNDVCFVPCTSRYGHYECAFDCMHKRYKDGGCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A8T2G138_ARASU" ac="A0A8T2G138" length="73" description="Defensin-like domain-containing protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As02g002830 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>9.1e-13</expectation>
+      <identity>64.1</identity>
+      <positives>76.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="58">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVE</querySeq>
+      <pattern>VIET + D+C  PCTRRYG YECW DC + RY +GGCV+</pattern>
+      <matchSeq start="28" end="66">VIETTKNDVCSTPCTRRYGTYECWHDCLHERYNDGGCVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="DEF57_ARATH" ac="Q2V4A8" length="73" description="Putative defensin-like protein 57 OS=Arabidopsis thaliana OX=3702 GN=At2g03913 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>9.1e-13</expectation>
+      <identity>64.1</identity>
+      <positives>76.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="58">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVE</querySeq>
+      <pattern>VIET + D+C  PCTRRYG YECW DC + RY +GGCV+</pattern>
+      <matchSeq start="28" end="66">VIETTKNDVCSTPCTRRYGTYECWHDCLHERYNDGGCVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ABM1RSW0_CAMSA" ac="A0ABM1RSW0" length="75" description="Defensin-like protein 60 OS=Camelina sativa OX=90675 GN=LOC109133437 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>2.7e-12</expectation>
+      <identity>65.8</identity>
+      <positives>78.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>V ET + D+C IPC+ RYG+YECWFDCT  RYK+G CV</pattern>
+      <matchSeq start="30" end="67">VFETSKNDVCTIPCSTRYGNYECWFDCTDRRYKDGECV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="R0HJ70_9BRAS" ac="R0HJ70" length="82" description="Defensin-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10018570mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <bits>65.1</bits>
+      <expectation>6.5e-12</expectation>
+      <identity>53.7</identity>
+      <positives>73.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="57">CVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>C++VI   +  +C +PCTR+YG+YECW DC   RY +GGCV</pattern>
+      <matchSeq start="34" end="74">CIVVIGASKYVVCSVPCTRKYGEYECWSDCIQKRYNDGGCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="DEF58_ARATH" ac="Q4VNZ9" length="75" description="Defensin-like protein 58 OS=Arabidopsis thaliana OX=3702 GN=At2g03937 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>154</score>
+      <bits>63.9</bits>
+      <expectation>1.6e-11</expectation>
+      <identity>52.5</identity>
+      <positives>67.8</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="58">IFFLVL-------SCVIV---IETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVE</querySeq>
+      <pattern>IFFLV+       S V+V   IET + D+CFIPCTRRYGD+EC+ DC    + +GGCV+</pattern>
+      <matchSeq start="10" end="68">IFFLVMLTKSLSNSDVLVSSVIETSKNDVCFIPCTRRYGDWECYDDCLGKNFNDGGCVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0ABM1QGF2_CAMSA" ac="A0ABM1QGF2" length="82" description="Defensin-like protein 56 isoform X1 OS=Camelina sativa OX=90675 GN=LOC109126599 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1.5e-10</expectation>
+      <identity>56.1</identity>
+      <positives>73.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="57">CVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>CV VIET + D+CF+PCT RYG +EC+ DC    Y++G CV</pattern>
+      <matchSeq start="34" end="74">CVSVIETSKNDVCFVPCTIRYGTFECFHDCILKLYRDGNCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="D7LQM6_ARALL" ac="D7LQM6" length="73" description="Defensin-like domain-containing protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_322682 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>2.4e-10</expectation>
+      <identity>45.0</identity>
+      <positives>58.3</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="58">IFFLVLSCV-----------IVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVE</querySeq>
+      <pattern>IFFLV+  +            VIET   D+C+ PCT+RY  YECW DC + RY +G CV+</pattern>
+      <matchSeq start="7" end="66">IFFLVVILINSLFNSNVLASSVIETSNNDVCYAPCTQRYKLYECWHDCLHKRYNDGACVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A8T1ZJN1_9BRAS" ac="A0A8T1ZJN1" length="81" description="Defensin-like domain-containing protein (Fragment) OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_Aa05g003080 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>2.4e-09</expectation>
+      <identity>51.2</identity>
+      <positives>67.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="57">LSCVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>L CV VIET + D+C  PCT RYG +EC+ DC    Y++G C+</pattern>
+      <matchSeq start="32" end="74">LYCVTVIETSKNDVCSTPCTIRYGTFECFHDCILEHYRDGNCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A8T1ZVI2_ARASU" ac="A0A8T1ZVI2" length="81" description="Defensin-like domain-containing protein (Fragment) OS=Arabidopsis suecica OX=45249 GN=ISN44_As10g002770 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>4.8e-09</expectation>
+      <identity>51.2</identity>
+      <positives>68.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="57">CVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>CV VIET + D+C  PCT RYG +EC+ DC    Y++G C+</pattern>
+      <matchSeq start="34" end="74">CVTVIETSKNDVCSTPCTIRYGTFECFHDCILEHYRDGNCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0ABM1QGF3_CAMSA" ac="A0ABM1QGF3" length="75" description="Defensin-like protein 55 isoform X2 OS=Camelina sativa OX=90675 GN=LOC109126599 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <bits>57.4</bits>
+      <expectation>5.9e-09</expectation>
+      <identity>55.3</identity>
+      <positives>73.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>VIET + D+CF+PCT RYG +EC+ DC    Y++G CV</pattern>
+      <matchSeq start="30" end="67">VIETSKNDVCFVPCTIRYGTFECFHDCILKLYRDGNCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="DEF56_ARATH" ac="Q2V4A6" length="81" description="Putative defensin-like protein 56 OS=Arabidopsis thaliana OX=3702 GN=At2g03936 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <bits>57.4</bits>
+      <expectation>6.8e-09</expectation>
+      <identity>51.2</identity>
+      <positives>68.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="57">CVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>CV VIET + D+C  PCT RYG +EC+ DC    Y++G C+</pattern>
+      <matchSeq start="34" end="74">CVTVIETTKNDVCSTPCTIRYGTFECFHDCILEHYRDGNCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0ABM1QGE6_CAMSA" ac="A0ABM1QGE6" length="75" description="Defensin-like protein 55 OS=Camelina sativa OX=90675 GN=LOC109126597 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>8.3e-09</expectation>
+      <identity>55.3</identity>
+      <positives>73.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>VIET + D+CF+PCT RYG +EC+ DC    Y++G CV</pattern>
+      <matchSeq start="30" end="67">VIETSKNDVCFVPCTIRYGTFECFHDCFLKDYRDGNCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="DEF59_ARATH" ac="Q4VNZ8" length="75" description="Defensin-like protein 59 OS=Arabidopsis thaliana OX=3702 GN=At2g03933 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>8.3e-09</expectation>
+      <identity>59.0</identity>
+      <positives>71.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="58">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVE</querySeq>
+      <pattern>VIET + D+CFIPCTRRY D EC  DC    + +GGCV+</pattern>
+      <matchSeq start="30" end="68">VIETSKYDVCFIPCTRRYEDRECNDDCLAKDFNDGGCVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0ABM1QD65_CAMSA" ac="A0ABM1QD65" length="76" description="Defensin-like protein 55 OS=Camelina sativa OX=90675 GN=LOC109126079 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>4.9e-08</expectation>
+      <identity>55.3</identity>
+      <positives>71.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>VIE    D C  PCT+ YG+YEC +DCT+ +YK+G CV</pattern>
+      <matchSeq start="30" end="67">VIEASNYDSCTRPCTKMYGNYECRYDCTFMKYKDGQCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0ABM1QUC2_CAMSA" ac="A0ABM1QUC2" length="78" description="Defensin-like protein 55 OS=Camelina sativa OX=90675 GN=LOC109128461 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>5.1e-08</expectation>
+      <identity>55.3</identity>
+      <positives>71.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>VIE    D C  PCT+ YG+YEC +DCT+ +YK+G CV</pattern>
+      <matchSeq start="30" end="67">VIEASNYDSCTRPCTKMYGNYECRYDCTFMKYKDGQCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="D7LQM8_ARALL" ac="D7LQM8" length="86" description="Defensin-like domain-containing protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_322683 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>8.8e-08</expectation>
+      <identity>44.0</identity>
+      <positives>64.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="68">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVED-VVVKHNRNR</querySeq>
+      <pattern>V+ET + D+C  PCT RYG +EC+ DC    Y++G C+      K++RNR</pattern>
+      <matchSeq start="30" end="79">VMETSKNDVCSTPCTIRYGTFECFHDCILEHYRDGNCINGRCCCKNDRNR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="R0FS73_9BRAS" ac="R0FS73" length="75" description="Defensin-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10018576mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>128</score>
+      <bits>53.9</bits>
+      <expectation>1.4e-07</expectation>
+      <identity>55.3</identity>
+      <positives>71.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>VI T +  +C IPCTR+Y DYEC+  C  +RY +GGCV</pattern>
+      <matchSeq start="30" end="67">VIGTSKYVVCSIPCTRKYRDYECFHGCIADRYNDGGCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A6J0NDA1_RAPSA" ac="A0A6J0NDA1" length="76" description="Defensin-like protein 55 OS=Raphanus sativus OX=3726 GN=LOC108853168 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>127</score>
+      <bits>53.5</bits>
+      <expectation>2e-07</expectation>
+      <identity>54.3</identity>
+      <positives>71.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="57">TERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>T  + IC+IPC+ +YG YEC+ DC Y RY +G CV</pattern>
+      <matchSeq start="35" end="69">TSTVYICYIPCSPKYGTYECFHDCLYKRYHDGNCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="SP" id="DEF55_ARATH" ac="Q2V2Q4" length="75" description="Putative defensin-like protein 55 OS=Arabidopsis thaliana OX=3702 GN=At2g03931 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>2.2e-06</expectation>
+      <identity>47.4</identity>
+      <positives>71.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>VIET + D+C  PCT RYG +EC+ DC  + +++G C+</pattern>
+      <matchSeq start="30" end="67">VIETTKNDVCSTPCTIRYGTFECFQDCILDHFRDGNCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0AAU9S4Q8_THLAR" ac="A0AAU9S4Q8" length="75" description="Defensin-like domain-containing protein OS=Thlaspi arvense OX=13288 GN=TAV2_LOCUS13826 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>3.1e-06</expectation>
+      <identity>44.7</identity>
+      <positives>71.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>V+E+ + ++C++PCT RY D+EC+ DC    Y +G CV</pattern>
+      <matchSeq start="30" end="67">VVESAKKNMCYVPCTHRYSDWECFHDCFLKDYNDGRCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="R0H8T2_9BRAS" ac="R0H8T2" length="77" description="Defensin-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10019126mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>9.2e-06</expectation>
+      <identity>53.8</identity>
+      <positives>69.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="57">VIETERID-ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>VIET + D  C +PCT+ YGD EC +DC + +YK G CV</pattern>
+      <matchSeq start="31" end="69">VIETAKNDDSCTVPCTKMYGDKECRYDCIFMKYKNGVCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0ABR2G0J7_9ROSI" ac="A0ABR2G0J7" length="81" description="Defensin-like domain-containing protein OS=Hibiscus sabdariffa OX=183260 GN=V6N12_024430 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.0036</expectation>
+      <identity>36.7</identity>
+      <positives>46.7</positives>
+      <gaps>20</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="57">IFFLVLSCVIVIETERIDI------------CFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>I  LV + V ++ + R D+            CF  C+  YGD EC  DC  NRY  G CV</pattern>
+      <matchSeq start="9" end="68">ILALVFAFVFILSSVRSDVEVNGVGVDVGPMCFKTCSASYGDSECNIDCVANRYAGGSCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A817AXQ8_BRANA" ac="A0A817AXQ8" length="94" description="Defensin-like domain-containing protein OS=Brassica napus OX=3708 GN=HID58_016464 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.03</expectation>
+      <identity>43.8</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="56">RIDICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+I IC+ PCT+ YG Y C+ DC    + +G C</pattern>
+      <matchSeq start="54" end="85">QIHICYKPCTKTYGVYPCYDDCLSKNFDDGNC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0ABQ8A487_BRANA" ac="A0ABQ8A487" length="94" description="Defensin-like domain-containing protein OS=Brassica napus OX=3708 GN=HID58_063422 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.03</expectation>
+      <identity>43.8</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="56">RIDICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+I IC+ PCT+ YG Y C+ DC    + +G C</pattern>
+      <matchSeq start="54" end="85">QIHICYKPCTKTYGVYPCYDDCLSKNFDDGNC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0ABQ7MY46_BRACM" ac="A0ABQ7MY46" length="94" description="Defensin-like domain-containing protein OS=Brassica rapa subsp. trilocularis OX=1813537 GN=A04p038220.1_BraROA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.03</expectation>
+      <identity>43.8</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="56">RIDICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+I IC+ PCT+ YG Y C+ DC    + +G C</pattern>
+      <matchSeq start="54" end="85">QIHICYKPCTKTYGVYPCYDDCLSKNFDDGNC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A0D3C5W9_BRAOL" ac="A0A0D3C5W9" length="94" description="Defensin-like domain-containing protein OS=Brassica oleracea var. oleracea OX=109376 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.03</expectation>
+      <identity>43.8</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="56">RIDICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+I IC+ PCT+ YG Y C+ DC    + +G C</pattern>
+      <matchSeq start="54" end="85">QIHICYKPCTKTYGVYPCYDDCLSKNFDDGNC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A3P6CQH2_BRACM" ac="A0A3P6CQH2" length="94" description="Defensin-like domain-containing protein OS=Brassica campestris OX=3711 GN=BRAPAZ1V2_A04P33650.2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.03</expectation>
+      <identity>43.8</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="56">RIDICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+I IC+ PCT+ YG Y C+ DC    + +G C</pattern>
+      <matchSeq start="54" end="85">QIHICYKPCTKTYGVYPCYDDCLSKNFDDGNC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A078FNX9_BRANA" ac="A0A078FNX9" length="94" description="BnaC04g48580D protein OS=Brassica napus OX=3708 GN=BnaC04g48580D PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.03</expectation>
+      <identity>43.8</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="56">RIDICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+I IC+ PCT+ YG Y C+ DC    + +G C</pattern>
+      <matchSeq start="54" end="85">QIHICYKPCTKTYGVYPCYDDCLSKNFDDGNC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="V4MB43_EUTSA" ac="V4MB43" length="66" description="Defensin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10021891mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.03</expectation>
+      <identity>48.3</identity>
+      <positives>62.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="57">CFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>CF  CT +YG +EC  DC  + Y +G CV</pattern>
+      <matchSeq start="19" end="47">CFNKCTNKYGPFECSMDCRLSHYGDGDCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0A8T2FY65_9BRAS" ac="A0A8T2FY65" length="76" description="Defensin-like domain-containing protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_At02g007610 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.05</expectation>
+      <identity>32.6</identity>
+      <positives>62.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="56">VLSCVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+L+  ++I+ ++ D C  PC R YG+++C+ +C   +Y  G C</pattern>
+      <matchSeq start="15" end="57">ILTISVLIQIQQYDRCIGPCLRFYGNHQCYKNCRKAKYDGGQC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="SP" id="DEF62_ARATH" ac="Q2V485" length="76" description="Putative defensin-like protein 62 OS=Arabidopsis thaliana OX=3702 GN=At2g13542 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.05</expectation>
+      <identity>32.6</identity>
+      <positives>62.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="56">VLSCVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+L+  ++I+ ++ D C  PC R YG+++C+ +C   +Y  G C</pattern>
+      <matchSeq start="15" end="57">ILTISVLIQIQQYDRCIGPCLRFYGNHQCYKNCRKAKYDGGQC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0A078HYT8_BRANA" ac="A0A078HYT8" length="79" description="BnaA03g11940D protein OS=Brassica napus OX=3708 GN=BnaA03g11940D PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.05</expectation>
+      <identity>35.9</identity>
+      <positives>45.3</positives>
+      <gaps>19</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="57">IVLKIFFLVLSCVIVIETERID------------ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>++L   F VL  V  I  + ID            ICF PCT + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="1" end="64">MLLLFTFSVLMVVSSIHCQTIDLVQGKFAPDEPSICFNPCTVKLGDKECKTICLNKTYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0ACE2F236_ARAHA" ac="A0ACE2F236" length="82" description="Defensin-like domain-containing protein OS=Arabidopsis halleri OX=81970 GN=ARAHAL_8.2710.1 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.06</expectation>
+      <identity>48.4</identity>
+      <positives>64.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="27" end="57">DICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>++CF PCT + G+ EC   C   +YKEG CV</pattern>
+      <matchSeq start="37" end="67">ELCFNPCTPKLGNNECNTICVNKKYKEGSCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A8T1XYF6_ARASU" ac="A0A8T1XYF6" length="82" description="Defensin-like domain-containing protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As13g017260 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.06</expectation>
+      <identity>48.4</identity>
+      <positives>64.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="27" end="57">DICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>++CF PCT + G+ EC   C   +YKEG CV</pattern>
+      <matchSeq start="37" end="67">ELCFNPCTPKLGNNECNTICVNKKYKEGSCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="R0EZ11_9BRAS" ac="R0EZ11" length="82" description="Defensin-like domain-containing protein OS=Capsella rubella OX=81985 GN=CARUB_v10027717mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.08</expectation>
+      <identity>50.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PCT  +G  EC   C   +YKEG CV</pattern>
+      <matchSeq start="38" end="67">LCFNPCTPTFGSNECKTFCVNKKYKEGSCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A3N6UL76_BRACR" ac="A0A3N6UL76" length="54" description="Defensin-like domain-containing protein (Fragment) OS=Brassica cretica OX=69181 GN=DY000_02001386 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.09</expectation>
+      <identity>50.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>ICF PCT + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="10" end="39">ICFNPCTVKLGDKECKTICLNKTYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A8T2GBW8_ARASU" ac="A0A8T2GBW8" length="76" description="Defensin-like domain-containing protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As02g007740 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.1</expectation>
+      <identity>32.6</identity>
+      <positives>60.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="56">VLSCVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+L+  ++I+ ++ D C  PC R YG+++C+ +C    Y  G C</pattern>
+      <matchSeq start="15" end="57">ILTISVLIQIQQYDRCIGPCLRFYGNHQCYKNCRKANYDGGQC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="D7MU67_ARALL" ac="D7MU67" length="82" description="Low-molecular-weight cysteine-rich 83 OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=LCR83 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.11</expectation>
+      <identity>50.0</identity>
+      <positives>63.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PCT + G+ EC   C   +YKEG CV</pattern>
+      <matchSeq start="38" end="67">LCFNPCTPKLGNNECNTICVNKKYKEGSCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A8T1XQW9_9BRAS" ac="A0A8T1XQW9" length="82" description="Defensin-like domain-containing protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_Aa08g017590 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.11</expectation>
+      <identity>50.0</identity>
+      <positives>63.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PCT + G+ EC   C   +YKEG CV</pattern>
+      <matchSeq start="38" end="67">LCFNPCTPKLGNNECNTICVNKKYKEGSCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="V4MP46_EUTSA" ac="V4MP46" length="86" description="Defensin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10009856mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.12</expectation>
+      <identity>41.2</identity>
+      <positives>64.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="57">ERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+R+ + F PCT ++GD +C   C   +YK+G CV</pattern>
+      <matchSeq start="39" end="72">QRLCLSFNPCTPKFGDKQCKAICVTKKYKQGSCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0A8X7RZ83_BRACI" ac="A0A8X7RZ83" length="79" description="Defensin-like domain-containing protein OS=Brassica carinata OX=52824 GN=Bca52824_043764 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.15</expectation>
+      <identity>50.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>ICF PCT + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="35" end="64">ICFNPCTVKLGDKECKTICLNKTYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0A9W7LJS7_HIBTR" ac="A0A9W7LJS7" length="80" description="Defensin-like domain-containing protein OS=Hibiscus trionum OX=183268 GN=HRI_000262300 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.15</expectation>
+      <identity>30.6</identity>
+      <positives>46.8</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="57">RQIVLKIFFLVLSCVIVIETERIDI--------CFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+ I+  +F L+  C  V     +++        CF  C+  YGDYEC  DC   ++  G CV</pattern>
+      <matchSeq start="7" end="68">KSILSLLFVLIFICSSVRSDVEMNVVRVNSGPSCFKMCSASYGDYECNVDCIDKKFSGGRCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0ABQ8A931_BRANA" ac="A0ABQ8A931" length="84" description="Defensin-like domain-containing protein OS=Brassica napus OX=3708 GN=HID58_051445 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.17</expectation>
+      <identity>50.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>ICF PCT + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="40" end="69">ICFNPCTVKLGDKECKTICLNKTYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0A0D3B3J3_BRAOL" ac="A0A0D3B3J3" length="84" description="Defensin-like domain-containing protein OS=Brassica oleracea var. oleracea OX=109376 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.17</expectation>
+      <identity>50.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>ICF PCT + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="40" end="69">ICFNPCTVKLGDKECKTICLNKTYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0A078JNK4_BRANA" ac="A0A078JNK4" length="84" description="BnaC03g71840D protein OS=Brassica napus OX=3708 GN=BnaC03g71840D PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.17</expectation>
+      <identity>50.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>ICF PCT + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="40" end="69">ICFNPCTVKLGDKECKTICLNKTYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="V4MEV4_EUTSA" ac="V4MEV4" length="79" description="Defensin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10023103mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.21</expectation>
+      <identity>53.6</identity>
+      <positives>57.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="56">CFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>CF  CTR Y  YEC  DC Y+ Y  G C</pattern>
+      <matchSeq start="38" end="65">CFHKCTRSYDMYECNVDCIYSGYNAGEC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0ABC8KWM8_ERUVS" ac="A0ABC8KWM8" length="98" description="Defensin-like domain-containing protein OS=Eruca vesicaria subsp. sativa OX=29727 GN=ERUC_LOCUS29211 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.22</expectation>
+      <identity>39.0</identity>
+      <positives>48.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="57">CVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>C    E     +CF PCT + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="43" end="83">CNFAPEEASSTLCFNPCTVKLGDKECKTICLNKTYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0A8X7WQC2_BRACI" ac="A0A8X7WQC2" length="81" description="Defensin-like domain-containing protein OS=Brassica carinata OX=52824 GN=Bca52824_004285 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.22</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PCT + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="37" end="66">LCFNPCTLKLGDKECKTICLNKTYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0ABM1QNY5_CAMSA" ac="A0ABM1QNY5" length="82" description="Defensin-like protein 70 OS=Camelina sativa OX=90675 GN=LOC109127682 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.23</expectation>
+      <identity>50.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PCT   G+ EC   C   +YKEG CV</pattern>
+      <matchSeq start="38" end="67">LCFNPCTPTLGNNECKTICVNKKYKEGSCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="SP" id="DEF70_ARATH" ac="P82792" length="82" description="Putative defensin-like protein 70 OS=Arabidopsis thaliana OX=3702 GN=LCR83 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.23</expectation>
+      <identity>50.0</identity>
+      <positives>63.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PCT + G+ EC   C   +YKEG CV</pattern>
+      <matchSeq start="38" end="67">LCFNPCTPQLGNNECNTICMNKKYKEGSCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="V4NB14_EUTSA" ac="V4NB14" length="86" description="Defensin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10015152mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.24</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PCT + GD EC   C   +Y+ G CV</pattern>
+      <matchSeq start="42" end="71">LCFNPCTDKLGDNECKAICVNKKYRNGSCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0A8T2DLF8_ARASU" ac="A0A8T2DLF8" length="80" description="Defensin-like domain-containing protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As05g049180 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.31</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PCT + G  EC   C   +YKEG C+</pattern>
+      <matchSeq start="36" end="65">LCFNPCTPQLGSTECNTICVNKKYKEGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0A8T2D7F7_9BRAS" ac="A0A8T2D7F7" length="80" description="Defensin-like domain-containing protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_At05g049890 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.31</expectation>
+      <identity>46.7</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PCT + G  EC   C   +YKEG C+</pattern>
+      <matchSeq start="36" end="65">LCFNPCTPQLGSTECNTICVNKKYKEGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0ABM1QLL0_CAMSA" ac="A0ABM1QLL0" length="82" description="Defensin-like protein 70 OS=Camelina sativa OX=90675 GN=LOC109127435 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.32</expectation>
+      <identity>50.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PCT   G+ EC   C   +YKEG CV</pattern>
+      <matchSeq start="38" end="67">LCFNPCTPTLGNNECNTICVNKKYKEGSCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0A6J0NCL0_RAPSA" ac="A0A6J0NCL0" length="94" description="Defensin-like protein 58 OS=Raphanus sativus OX=3726 GN=LOC108853328 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.4</expectation>
+      <identity>40.6</identity>
+      <positives>59.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="56">RIDICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>++ IC+  C+R YG Y+C+ DC    Y  G C</pattern>
+      <matchSeq start="54" end="85">QVHICYKRCSRTYGVYQCYDDCLSKDYDNGNC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0ABC8JLP5_ERUVS" ac="A0ABC8JLP5" length="78" description="Defensin-like domain-containing protein OS=Eruca vesicaria subsp. sativa OX=29727 GN=ERUC_LOCUS12271 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.42</expectation>
+      <identity>37.5</identity>
+      <positives>59.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="56">RIDICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>++ IC+ PC + YG  +C+ DC    Y +G C</pattern>
+      <matchSeq start="38" end="69">QVHICYKPCNKTYGVDQCYDDCLSKEYDDGNC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0ABM0Y7N7_CAMSA" ac="A0ABM0Y7N7" length="80" description="Defensin-like protein 50 OS=Camelina sativa OX=90675 GN=LOC104773857 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.43</expectation>
+      <identity>50.0</identity>
+      <positives>57.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="56">CFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>CF  CT  Y DY+C  DC  + Y  GGC</pattern>
+      <matchSeq start="39" end="66">CFDTCTPSYDDYKCHVDCMTSGYAAGGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="Q4VNZ7_ARATH" ac="Q4VNZ7" length="41" description="Defensin-like protein (Fragment) OS=Arabidopsis thaliana OX=3702 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.56</expectation>
+      <identity>52.2</identity>
+      <positives>73.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="36" end="58">RYGDYECWFDCTYNRYKEGGCVE</querySeq>
+      <pattern>RYGD+EC+ DC    + +GGCV+</pattern>
+      <matchSeq start="13" end="35">RYGDWECYDDCLGKNFNDGGCVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0ACS0ZPD0_ARATH" ac="A0ACS0ZPD0" length="59" description="Uncharacterized protein OS=Arabidopsis thaliana OX=3702 GN=TAIR12_TAIR12_AT2G03937 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.8</expectation>
+      <identity>52.2</identity>
+      <positives>73.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="36" end="58">RYGDYECWFDCTYNRYKEGGCVE</querySeq>
+      <pattern>RYGD+EC+ DC    + +GGCV+</pattern>
+      <matchSeq start="30" end="52">RYGDWECYDDCLGKNFNDGGCVD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0ABQ7L8B3_BRACM" ac="A0ABQ7L8B3" length="81" description="Defensin-like domain-containing protein OS=Brassica rapa subsp. trilocularis OX=1813537 GN=A09p005230.1_BraROA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.88</expectation>
+      <identity>43.3</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PC+ + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="37" end="66">LCFNPCSDKLGDKECKTICLNKAYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0A8X7R4Y2_BRACI" ac="A0A8X7R4Y2" length="81" description="Defensin-like domain-containing protein OS=Brassica carinata OX=52824 GN=Bca52824_061189 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.88</expectation>
+      <identity>43.3</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PC+ + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="37" end="66">LCFNPCSDKLGDKECKTICLNKAYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0ABQ7D941_BRACR" ac="A0ABQ7D941" length="82" description="Defensin-like domain-containing protein OS=Brassica cretica OX=69181 GN=DY000_02011188 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.89</expectation>
+      <identity>43.3</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PC+ + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="38" end="67">LCFNPCSDKLGDKECKTICLNKAYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0A816NL18_BRANA" ac="A0A816NL18" length="88" description="Defensin-like domain-containing protein OS=Brassica napus OX=3708 GN=HID58_031886 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.99</expectation>
+      <identity>43.3</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PC+ + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="44" end="73">LCFNPCSDKLGDKECKTICLNKAYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0A816IU99_BRANA" ac="A0A816IU99" length="88" description="Defensin-like domain-containing protein OS=Brassica napus OX=3708 GN=HID58_084426 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.99</expectation>
+      <identity>43.3</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PC+ + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="44" end="73">LCFNPCSDKLGDKECKTICLNKAYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0A0D3E100_BRAOL" ac="A0A0D3E100" length="88" description="Defensin-like domain-containing protein OS=Brassica oleracea var. oleracea OX=109376 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.99</expectation>
+      <identity>43.3</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PC+ + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="44" end="73">LCFNPCSDKLGDKECKAICLNKAYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0A8D9CK94_BRACM" ac="A0A8D9CK94" length="88" description="Defensin-like domain-containing protein OS=Brassica campestris OX=3711 GN=BRAPAZ1V2_A09P04970.2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.99</expectation>
+      <identity>43.3</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PC+ + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="44" end="73">LCFNPCSDKLGDKECKTICLNKAYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0A078J1J2_BRANA" ac="A0A078J1J2" length="88" description="BnaA09g03500D protein OS=Brassica napus OX=3708 GN=BnaA09g03500D PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.99</expectation>
+      <identity>43.3</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PC+ + GD EC   C    YK+G C+</pattern>
+      <matchSeq start="44" end="73">LCFNPCSDKLGDKECKTICLNKAYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A9W3CH99_RAPSA" ac="A0A9W3CH99" length="93" description="Defensin-like protein 70 OS=Raphanus sativus OX=3726 GN=LOC130500228 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.1</expectation>
+      <identity>48.3</identity>
+      <positives>58.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="56">ICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+CF PCT + GD EC   C    YK+G C</pattern>
+      <matchSeq start="49" end="77">LCFNPCTVKLGDKECKTICLNKSYKDGSC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="A0A1R3J5S2_COCAP" ac="A0A1R3J5S2" length="78" description="Defensin-like domain-containing protein OS=Corchorus capsularis OX=210143 GN=CCACVL1_07496 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.2</expectation>
+      <identity>27.3</identity>
+      <positives>50.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="58">IVLKIFFLVLSCVIV--IETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVE</querySeq>
+      <pattern>+ L +F  +   +I   I T     C+  C++ YG+ EC  DC   ++ +G C++</pattern>
+      <matchSeq start="10" end="64">VSLFVFAFIFPSIISDDIPTNPYPYCYAKCSKSYGEEECKMDCIKKKFVDGKCLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0A1R3KPB7_9ROSI" ac="A0A1R3KPB7" length="78" description="Defensin-like domain-containing protein OS=Corchorus olitorius OX=93759 GN=COLO4_06065 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.2</expectation>
+      <identity>30.9</identity>
+      <positives>49.1</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="58">IVLKIFFLVLSCVIV--IETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVE</querySeq>
+      <pattern>+ L +F  + S  I   I T     C+  C R YG+ EC  DC   ++ +G C++</pattern>
+      <matchSeq start="10" end="64">VSLFVFAFIFSSSISDDIPTNPYPYCYAKCWRSYGEEECKIDCIKKKFVDGKCLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0ABC8L8J0_ERUVS" ac="A0ABC8L8J0" length="400" description="mannose-1-phosphate guanylyltransferase OS=Eruca vesicaria subsp. sativa OX=29727 GN=ERUC_LOCUS32410 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.3</expectation>
+      <identity>46.4</identity>
+      <positives>64.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="56">CFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>C   CTR+YG+ +C+ DCT + Y  G C</pattern>
+      <matchSeq start="28" end="55">CIESCTRQYGNRQCFIDCTAHHYSGGEC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0AAU9RRK5_THLAR" ac="A0AAU9RRK5" length="86" description="Defensin-like domain-containing protein OS=Thlaspi arvense OX=13288 GN=TAV2_LOCUS6686 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.3</expectation>
+      <identity>42.9</identity>
+      <positives>54.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="57">TERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>T   D C   C+  YG YEC+ DC   RY +G C+</pattern>
+      <matchSeq start="37" end="71">TFNFDHCGRVCSDDYGRYECFTDCWVARYSDGDCL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0AAU9SQ90_THLAR" ac="A0AAU9SQ90" length="88" description="Defensin-like domain-containing protein OS=Thlaspi arvense OX=13288 GN=TAV2_LOCUS19671 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.4</expectation>
+      <identity>40.0</identity>
+      <positives>63.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+C+ PCT + G+ EC   C   +YK+G C+</pattern>
+      <matchSeq start="44" end="73">LCYNPCTYKLGNNECKAICVDKKYKDGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0A9J5ZYZ9_SOLCO" ac="A0A9J5ZYZ9" length="74" description="Defensin-like domain-containing protein OS=Solanum commersonii OX=4109 GN=H5410_017280 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.5</expectation>
+      <identity>27.3</identity>
+      <positives>47.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="59">VLKIFFLVLSCVIV--IETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVED</querySeq>
+      <pattern>+L +F  ++   I    + E    C+  CT+ + + EC   C    Y +G C+ED</pattern>
+      <matchSeq start="10" end="64">LLFVFLAIIGLAIARNFDEEPFSFCYEQCTKTFYNNECLSFCIRRSYNDGSCIED</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="V4NW20_EUTSA" ac="V4NW20" length="79" description="Defensin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10023060mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.7</expectation>
+      <identity>33.3</identity>
+      <positives>43.3</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="56">VLKIFFLVLSCVIVIETERIDI----------CFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+L IF LV+   + + T+   I          CF  C   Y  YEC  DC  + Y  GGC</pattern>
+      <matchSeq start="6" end="65">ILAIFVLVVILDVSLYTQNAMILEIKVTNGLKCFNKCMASYNTYECNVDCLSSGYAAGGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="V4M3W0_EUTSA" ac="V4M3W0" length="79" description="Defensin-like domain-containing protein OS=Eutrema salsugineum OX=72664 GN=EUTSA_v10023016mg PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.7</expectation>
+      <identity>33.3</identity>
+      <positives>43.3</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="56">VLKIFFLVLSCVIVIETERIDI----------CFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+L IF LV+   + + T+              CF  CT  Y  YEC  DC  + Y  GGC</pattern>
+      <matchSeq start="6" end="65">ILAIFLLVVILDVSLYTQNAMASEIKATNGLKCFNKCTASYNMYECNVDCLSSGYAAGGC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0A8T2B449_ARASU" ac="A0A8T2B449" length="76" description="Defensin-like domain-containing protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As08g004350 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>2.2</expectation>
+      <identity>45.8</identity>
+      <positives>70.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="56">CTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>CT RYG++EC+ DC    +++G C</pattern>
+      <matchSeq start="38" end="61">CTYRYGNHECFVDCVMEHHRDGEC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0A8T2APK0_9BRAS" ac="A0A8T2APK0" length="76" description="Defensin-like domain-containing protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_Aa03g004270 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>2.2</expectation>
+      <identity>45.8</identity>
+      <positives>70.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="56">CTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>CT RYG++EC+ DC    +++G C</pattern>
+      <matchSeq start="38" end="61">CTYRYGNHECFVDCVMEHHRDGEC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A397SXJ8_9GLOM" ac="A0A397SXJ8" length="164" description="NUDIX hydrolase domain-like protein OS=Glomus cerebriforme OX=658196 GN=C1645_693283 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>3.3</expectation>
+      <identity>34.5</identity>
+      <positives>53.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="76">IVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVEDVVVKHNRNRPTFRAVEL</querySeq>
+      <pattern>I ++ E ID    P        ECW   T++ + +GG +ED +V  N+ RP FR +E+</pattern>
+      <matchSeq start="98" end="153">IYLKAEIIDDNAEPVVMEPNKCECWEWVTWDEFIKGGILEDKIV--NKYRPMFRPMEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0A8X8AYS3_BRACI" ac="A0A8X8AYS3" length="80" description="Defensin-like domain-containing protein OS=Brassica carinata OX=52824 GN=Bca52824_019632 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>3.4</expectation>
+      <identity>43.3</identity>
+      <positives>56.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="57">ICFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>+CF PC+ + GD EC   C    YK G C+</pattern>
+      <matchSeq start="36" end="65">LCFNPCSDKLGDKECKTICLNKTYKGGSCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="D7L238_ARALL" ac="D7L238" length="80" description="Defensin-like domain-containing protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_896460 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>3.4</expectation>
+      <identity>31.1</identity>
+      <positives>49.2</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="57">LKIFFLVLSCVIVIETERIDI-----------CFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>L IF+L++  V V  + +I +           C  PCT++Y +Y C  DC  + Y  G C+</pattern>
+      <matchSeq start="7" end="67">LVIFYLLVILVAVSLSTQIAMAAEIKATNGLQCNNPCTKKYPEYACNVDCITSGYATGHCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0A8D9GY77_BRACM" ac="A0A8D9GY77" length="85" description="Defensin-like domain-containing protein OS=Brassica campestris OX=3711 GN=BRAPAZ1V2_A01P32060.2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>3.7</expectation>
+      <identity>39.3</identity>
+      <positives>57.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="56">CFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>C   C+  Y  YEC+ DC   R+++G C</pattern>
+      <matchSeq start="39" end="66">CIAKCSATYHTYECYHDCREERFRDGDC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0ACC0S226_POPTR" ac="A0ACC0S226" length="72" description="Defensin-like domain-containing protein OS=Populus trichocarpa OX=3694 GN=POPTR_013G008750v4 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>4.1</expectation>
+      <identity>33.3</identity>
+      <positives>47.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="56">VLKIFFLVLSCVIVIETERI-DICFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>+L I F+++      E E + D C  PC   Y D  C  DC   R++ G C</pattern>
+      <matchSeq start="7" end="57">LLTIAFIIIMASTYGEVEAVPDNCVKPCVGVYDDTRCIADCRKQRFRSGKC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0A2P5DSQ1_PARAD" ac="A0A2P5DSQ1" length="115" description="Defensin-like domain-containing protein OS=Parasponia andersonii OX=3476 GN=PanWU01x14_037200 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>5.8</expectation>
+      <identity>30.6</identity>
+      <positives>55.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="64">CFIPCTRRYGDYECWFDCTYNRYKEGGCVEDVVVKH</querySeq>
+      <pattern>C+I C+  +GD +C  DC   ++  G C++    K+</pattern>
+      <matchSeq start="73" end="108">CYIVCSHEFGDTQCLADCIERKFNSGKCLQQAPSKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0A8T2B214_ARASU" ac="A0A8T2B214" length="80" description="Defensin-like domain-containing protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As08g004120 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>6.7</expectation>
+      <identity>41.4</identity>
+      <positives>58.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="57">CFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>C  PCT++Y +Y C  DC  + Y  G C+</pattern>
+      <matchSeq start="39" end="67">CNNPCTKKYPEYACNVDCITSGYATGHCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0A8T2APH7_9BRAS" ac="A0A8T2APH7" length="80" description="Defensin-like domain-containing protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_Aa03g004040 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>6.7</expectation>
+      <identity>41.4</identity>
+      <positives>58.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="57">CFIPCTRRYGDYECWFDCTYNRYKEGGCV</querySeq>
+      <pattern>C  PCT++Y +Y C  DC  + Y  G C+</pattern>
+      <matchSeq start="39" end="67">CNNPCTKKYPEYACNVDCITSGYATGHCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0A7J6ENA2_CANSA" ac="A0A7J6ENA2" length="82" description="Defensin-like domain-containing protein OS=Cannabis sativa OX=3483 GN=G4B88_000881 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>6.9</expectation>
+      <identity>35.5</identity>
+      <positives>54.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="59">CFIPCTRRYGDYECWFDCTYNRYKEGGCVED</querySeq>
+      <pattern>CF+ C+  +G++EC  DC    +  G C  D</pattern>
+      <matchSeq start="44" end="74">CFVKCSSTFGNHECIADCNSRMFSYGSCQPD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0A7J6E5W2_CANSA" ac="A0A7J6E5W2" length="84" description="Defensin-like domain-containing protein OS=Cannabis sativa OX=3483 GN=G4B88_000879 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>7.1</expectation>
+      <identity>35.5</identity>
+      <positives>54.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="59">CFIPCTRRYGDYECWFDCTYNRYKEGGCVED</querySeq>
+      <pattern>CF+ C+  +G++EC  DC    +  G C  D</pattern>
+      <matchSeq start="44" end="74">CFVKCSSTFGNHECIADCNSRMFSYGSCQPD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0A2P0ZG44_CROMO" ac="A0A2P0ZG44" length="67" description="Epidermal differentiation protein rich in aromatic amino acids 8 (Fragment) OS=Crocodylus moreletii OX=184237 GN=EDAA8 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>7.3</expectation>
+      <identity>51.7</identity>
+      <positives>55.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="56">CFIPCTRRYGDYECWFDCTYNR-YKEGGC</querySeq>
+      <pattern>C+ PC RR   Y CW  CTY R Y  G C</pattern>
+      <matchSeq start="19" end="47">CWDPCYRRPYWYGCWDPCTYQRPYNYGNC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0A8T2AIR8_ARASU" ac="A0A8T2AIR8" length="87" description="Defensin-like domain-containing protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As09g017440 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>7.5</expectation>
+      <identity>46.4</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="56">CFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>CF  CT  Y DY+C  DC  + Y  G C</pattern>
+      <matchSeq start="47" end="74">CFNTCTPSYDDYKCNLDCISSGYPAGDC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="D7LFR6_ARALL" ac="D7LFR6" length="88" description="Defensin-like domain-containing protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_902393 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>7.6</expectation>
+      <identity>46.4</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="56">CFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>CF  CT  Y DY+C  DC  + Y  G C</pattern>
+      <matchSeq start="47" end="74">CFNTCTPSYDDYKCNLDCLSSGYPAGDC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0ABD1MQV9_9FABA" ac="A0ABD1MQV9" length="337" description="Uncharacterized protein OS=Flemingia macrophylla OX=520843 GN=Fmac_012502 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.2</expectation>
+      <identity>30.1</identity>
+      <positives>49.4</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="89">VLKIFFLVLSCVIVIETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVEDVVVKHNRNRPTFRAVELCFFSIKFMYDFSM</querySeq>
+      <pattern>VLK+F + L+C +   ++ + +  +P  R Y +  C +    +   E   +E + +KH+R R  FRA  L     KF YD  M</pattern>
+      <matchSeq start="252" end="329">VLKLFRITLTCDLSKRSQNLSLN-LPVLRNYKEQNCTWLNIKDATFEVPSLEALSIKHSRFRLRFRATRL----TKFTYDSYM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="D7LJ19_ARALL" ac="D7LJ19" length="56" description="Defensin-like domain-containing protein OS=Arabidopsis lyrata subsp. lyrata OX=81972 GN=ARALYDRAFT_668512 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>8.3</expectation>
+      <identity>46.4</identity>
+      <positives>53.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="56">CFIPCTRRYGDYECWFDCTYNRYKEGGC</querySeq>
+      <pattern>CF  CT  Y DY+C  DC  + Y  G C</pattern>
+      <matchSeq start="15" end="42">CFNTCTPYYDDYKCNVDCLSSGYPAGDC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0A1V4KMQ5_PATFA" ac="A0A1V4KMQ5" length="96" description="Uncharacterized protein OS=Patagioenas fasciata monilis OX=372326 GN=AV530_009261 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>8.7</expectation>
+      <identity>26.9</identity>
+      <positives>46.3</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="88">ETERIDICFIPCTRRYGDYECWFDCTYNRYKEGGCVEDVVVKHNRNRPTFRAVELCFFSIKFMYDFS</querySeq>
+      <pattern>+T+R D+C+ PC+  Y  Y+C   C+Y  Y   G +          R  + +   C+ S  + Y +S</pattern>
+      <matchSeq start="27" end="81">QTQREDVCYSPCS--YRSYDCGSPCSYRSY---GSLRSY-------RDCYPSYSYCYPSYSYCYPYS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="A0A8X7VRM5_BRACI" ac="A0A8X7VRM5" length="63" description="Defensin-like domain-containing protein OS=Brassica carinata OX=52824 GN=Bca52824_019328 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>9.6</expectation>
+      <identity>40.5</identity>
+      <positives>54.1</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="55">IETERI--DICFIPCTRRYGDYECWFDCTYNRYKEGG</querySeq>
+      <pattern>+E E+I  D C   C+  Y  +ECWFDC    Y+  G</pattern>
+      <matchSeq start="1" end="37">MELEKISYDQCSTLCSDHYAWHECWFDCLRKGYEGAG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

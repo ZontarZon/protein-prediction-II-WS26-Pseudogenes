@@ -1,0 +1,2303 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-200216-0908-39140643-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-200216-0908-39140643-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P0C545|NS3B_FIPV" type="PROTEIN" length="40"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:02:16+00:00" end="2026-11-13T20:06:51+00:00" search="P0Y0M0DT0H0M275.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="134">
+   <hit number="1" database="SP" id="NS3B_FIPV" ac="P0C545" length="40" description="Putative truncated non-structural protein 3b OS=Feline coronavirus (strain FIPV WSU-79/1146) OX=33734 GN=3b PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>205</score>
+      <bits>83.6</bits>
+      <expectation>1.5e-20</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="F6M1R2_9ALPC" ac="F6M1R2" length="244" description="Nsp3c OS=Canine coronavirus OX=11153 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>190</score>
+      <bits>77.8</bits>
+      <expectation>2.9e-16</expectation>
+      <identity>92.5</identity>
+      <positives>97.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANVH+TQHE+VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTANVHSTQHEHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="E7E038_9ALPC" ac="E7E038" length="244" description="Nonstructural protein 3c OS=Canine coronavirus OX=11153 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>190</score>
+      <bits>77.8</bits>
+      <expectation>2.9e-16</expectation>
+      <identity>92.5</identity>
+      <positives>97.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANVH+TQHE+VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTANVHSTQHEHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="B7T4C0_9ALPC" ac="B7T4C0" length="244" description="Nonstructural protein 3c OS=Canine coronavirus OX=11153 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>190</score>
+      <bits>77.8</bits>
+      <expectation>2.9e-16</expectation>
+      <identity>92.5</identity>
+      <positives>97.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANVH+TQHE+VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTANVHSTQHEHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A6M3YC45_9ALPC" ac="A0A6M3YC45" length="244" description="3c protein OS=Canine coronavirus OX=11153 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>182</score>
+      <bits>74.7</bits>
+      <expectation>4.3e-15</expectation>
+      <identity>90.0</identity>
+      <positives>95.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANVH+TQ E+VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTANVHSTQQEHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A6M3YAY5_9ALPC" ac="A0A6M3YAY5" length="244" description="3c protein OS=Canine coronavirus OX=11153 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>182</score>
+      <bits>74.7</bits>
+      <expectation>4.3e-15</expectation>
+      <identity>90.0</identity>
+      <positives>95.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANVH+TQ E+VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTANVHSTQQEHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="E7E029_9ALPC" ac="E7E029" length="244" description="Nonstructural protein 3c OS=Canine coronavirus OX=11153 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>182</score>
+      <bits>74.7</bits>
+      <expectation>4.3e-15</expectation>
+      <identity>90.0</identity>
+      <positives>95.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANVH+TQ E+VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTANVHSTQQEHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="B7T4B1_9ALPC" ac="B7T4B1" length="244" description="Nonstructural protein 3c OS=Canine coronavirus OX=11153 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>182</score>
+      <bits>74.7</bits>
+      <expectation>4.3e-15</expectation>
+      <identity>90.0</identity>
+      <positives>95.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANVH+TQ E+VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTANVHSTQQEHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="G8J7G7_9ALPC" ac="G8J7G7" length="244" description="Non-structural protein 3c OS=Canine coronavirus OX=11153 GN=NS3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>1.2e-14</expectation>
+      <identity>90.0</identity>
+      <positives>92.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANVH TQ E+VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTANVHFTQQEHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A6M3YB12_9ALPC" ac="A0A6M3YB12" length="244" description="3c protein OS=Canine coronavirus OX=11153 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>178</score>
+      <bits>73.2</bits>
+      <expectation>1.6e-14</expectation>
+      <identity>87.5</identity>
+      <positives>92.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVI NNTANVH+TQ E+VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIANNTANVHSTQQEHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A6M3YAQ2_9ALPC" ac="A0A6M3YAQ2" length="244" description="3c protein OS=Canine coronavirus OX=11153 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>176</score>
+      <bits>72.4</bits>
+      <expectation>3.2e-14</expectation>
+      <identity>85.0</identity>
+      <positives>92.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVI NNTANVH+TQ E+V+VQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIANNTANVHSTQQEHVLVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="Q0ZVX3_9ALPC" ac="Q0ZVX3" length="244" description="Non-structural protein 3c OS=Canine coronavirus OX=11153 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>176</score>
+      <bits>72.4</bits>
+      <expectation>3.2e-14</expectation>
+      <identity>87.5</identity>
+      <positives>92.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANVH+ Q E+VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTANVHSIQQEHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="B7T064_9ALPC" ac="B7T064" length="244" description="Nsp 3c OS=Canine coronavirus OX=11153 GN=ORF3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>176</score>
+      <bits>72.4</bits>
+      <expectation>3.2e-14</expectation>
+      <identity>87.5</identity>
+      <positives>92.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANVH+ Q E+VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTANVHSIQQEHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A0U2U3A1_9ALPC" ac="A0A0U2U3A1" length="244" description="Non-structural protein 3b OS=Swine enteric coronavirus OX=1766554 GN=gp5 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>176</score>
+      <bits>72.4</bits>
+      <expectation>3.2e-14</expectation>
+      <identity>85.0</identity>
+      <positives>90.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF+IV NH IVNNTANVH TQHE +IVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFLIVSNHSIVNNTANVHHTQHERIIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="S6B8Y2_9ALPC" ac="S6B8Y2" length="110" description="Nonstructural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>168</score>
+      <bits>69.3</bits>
+      <expectation>3.8e-14</expectation>
+      <identity>85.0</identity>
+      <positives>87.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNT NVH  Q E+VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTENVHHIQQEHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="S6BFJ8_9ALPC" ac="S6BFJ8" length="144" description="Nonstructural protein 3c OS=Canine coronavirus OX=11153 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>4.2e-14</expectation>
+      <identity>85.0</identity>
+      <positives>90.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANVH  Q E+V+VQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTANVHHIQQEHVMVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="Q89695_TGEV" ac="Q89695" length="63" description="ORF 3-1 OS=Porcine respiratory coronavirus OX=11146 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>163</score>
+      <bits>67.4</bits>
+      <expectation>6.7e-14</expectation>
+      <identity>82.5</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLS VIV NH IVNNTANVH TQ + VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSLVIVSNHSIVNNTANVHHTQQDRVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="Q9QEV7_TGEV" ac="Q9QEV7" length="178" description="Non-structural protein 3b OS=Porcine respiratory coronavirus OX=11146 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>1.2e-13</expectation>
+      <identity>85.0</identity>
+      <positives>87.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH TQ + VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHSIVNNTANVHHTQQDRVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="B7T074_9ALPC" ac="B7T074" length="244" description="Nsp 3c OS=Canine coronavirus OX=11153 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>1.7e-13</expectation>
+      <identity>85.0</identity>
+      <positives>92.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANV +TQ ++VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVIVNNTANVRSTQQQHVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A1D8ELQ9_9ALPC" ac="A0A1D8ELQ9" length="244" description="Non-structural protein 3b OS=Swine enteric coronavirus OX=1766554 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>2.4e-13</expectation>
+      <identity>82.5</identity>
+      <positives>90.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF+IV NH IVNNTANVH TQHE +IVQQ+</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFLIVSNHSIVNNTANVHHTQHERIIVQQY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A1DS42_9ALPC" ac="A1DS42" length="136" description="Non-structural protein 3b OS=Canine coronavirus OX=11153 GN=3b PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>2.8e-13</expectation>
+      <identity>80.0</identity>
+      <positives>87.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHV VNNTANVH  Q ++V+VQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHVFVNNTANVHHIQQDHVLVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="Q9QEV6_TGEV" ac="Q9QEV6" length="239" description="Non-structural protein 3b OS=Porcine respiratory coronavirus OX=11146 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>3.2e-13</expectation>
+      <identity>85.0</identity>
+      <positives>87.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH TQ + VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHSIVNNTANVHHTQQDRVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="Q88512_TGEV" ac="Q88512" length="244" description="ORF-3b OS=Transmissible gastroenteritis virus OX=11149 GN=ORF-3b PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>167</score>
+      <bits>68.9</bits>
+      <expectation>6.5e-13</expectation>
+      <identity>85.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH  Q E VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVTNHSIVNNTANVHHIQQERVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A0K1RLL8_TGEV" ac="A0A0K1RLL8" length="251" description="Non-structural protein 3b OS=Porcine respiratory coronavirus OX=11146 GN=ORF3b PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>167</score>
+      <bits>68.9</bits>
+      <expectation>7.1e-13</expectation>
+      <identity>85.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH TQ   VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHSIVNNTANVHHTQQNRVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="Q9QEV8_TGEV" ac="Q9QEV8" length="244" description="Non-structural protein 3b OS=Transmissible gastroenteritis virus OX=11149 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>9.1e-13</expectation>
+      <identity>85.0</identity>
+      <positives>87.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH TQ + VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHSIVNNTANVHHTQQDCVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="Q76WT3_TGEV" ac="Q76WT3" length="244" description="ORF-3 OS=Porcine respiratory coronavirus OX=11146 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>9.1e-13</expectation>
+      <identity>85.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH  Q E VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHPIVNNTANVHHIQQERVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="Q0PKZ3_CVPPU" ac="Q0PKZ3" length="244" description="Non-structural protein 3c OS=TGEV virulent Purdue OX=398812 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>9.1e-13</expectation>
+      <identity>85.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH  Q E VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHSIVNNTANVHHIQQERVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="SP" id="NS3B_CVPRM" ac="P24414" length="244" description="Non-structural protein 3b OS=Porcine respiratory coronavirus (strain RM4) OX=11148 GN=3b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>9.1e-13</expectation>
+      <identity>85.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH  Q E VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHPIVNNTANVHHIQQERVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="SP" id="NS3B_CVPFS" ac="P22656" length="244" description="Non-structural protein 3b OS=Porcine transmissible gastroenteritis coronavirus (strain FS772/70) OX=11150 GN=3b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>9.1e-13</expectation>
+      <identity>85.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH  Q E VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHSIVNNTANVHHIQQERVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="Q84958_TGEV" ac="Q84958" length="244" description="ORF 3b gene OS=Porcine respiratory coronavirus OX=11146 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>164</score>
+      <bits>67.8</bits>
+      <expectation>1.8e-12</expectation>
+      <identity>82.5</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH TQ + VIVQ H</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHSIVNNTANVHHTQQDRVIVQHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="Q85084_TGEV" ac="Q85084" length="244" description="ORF 3-1 OS=Transmissible gastroenteritis virus OX=11149 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>3.5e-12</expectation>
+      <identity>82.5</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH  + E VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHSIVNNTANVHHIKQERVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="Q0PL28_CVPMI" ac="Q0PL28" length="244" description="Non-structural protein 3b OS=TGEV Miller M6 OX=398809 GN=151.5 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>3.5e-12</expectation>
+      <identity>82.5</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH  + E VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHSIVNNTANVHHIKQERVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="C0LLN8_TGEV" ac="C0LLN8" length="244" description="Non-structural protein 3b OS=Transmissible gastroenteritis virus OX=11149 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>3.5e-12</expectation>
+      <identity>82.5</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH  + E VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHSIVNNTANVHHIKQERVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="S6BUL5_9ALPC" ac="S6BUL5" length="244" description="Nonstructural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>4.8e-12</expectation>
+      <identity>80.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNT SFVIV NHVIVNNT NVH  Q E+V+VQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTFSFVIVSNHVIVNNTENVHHIQQEHVMVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="Q0PL02_CVPPU" ac="Q0PL02" length="244" description="Non-structural protein 3b OS=TGEV Purdue P115 OX=398811 GN=148.5 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>4.8e-12</expectation>
+      <identity>82.5</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFL+TLSFVIV NH IVNNTANVH  Q E VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLSTLSFVIVSNHSIVNNTANVHHIQQERVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="G3CI06_TGEV" ac="G3CI06" length="244" description="Non-structural protein 3 OS=Transmissible gastroenteritis virus OX=11149 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>4.8e-12</expectation>
+      <identity>82.5</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFL+TLSFVIV NH IVNNTANVH  Q E VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLSTLSFVIVSNHSIVNNTANVHHIQQERVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="SP" id="NS3B_CVPPU" ac="P09047" length="244" description="Putative non-structural protein 3b OS=Porcine transmissible gastroenteritis coronavirus (strain Purdue) OX=11151 GN=3b PE=5 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>4.8e-12</expectation>
+      <identity>82.5</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFL+TLSFVIV NH IVNNTANVH  Q E VIVQQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLSTLSFVIVSNHSIVNNTANVHHIQQERVIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="Q9YRA6_TGEV" ac="Q9YRA6" length="244" description="Non-structural protein 3b OS=Transmissible gastroenteritis virus OX=11149 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>2.6e-11</expectation>
+      <identity>77.5</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IV+NTANVH TQ ++ I QQH</pattern>
+      <matchSeq start="1" end="40">MIGGLFLNTLSFVIVSNHSIVSNTANVHHTQQQSFIAQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="SP" id="NS3B_CVCAI" ac="P36695" length="31" description="Putative truncated non-structural protein 3b OS=Canine coronavirus (strain Insavc-1) OX=36391 GN=3b PE=5 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>143</score>
+      <bits>59.7</bits>
+      <expectation>3.9e-11</expectation>
+      <identity>93.5</identity>
+      <positives>93.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="31">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQ</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHVIVNNTANVH TQ</pattern>
+      <matchSeq start="1" end="31">MIGGLFLNTLSFVIVSNHVIVNNTANVHHTQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="I0B0R3_9ALPC" ac="I0B0R3" length="251" description="Putative 3c protein OS=Feline coronavirus OX=12663 GN=ORF3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>154</score>
+      <bits>63.9</bits>
+      <expectation>5.3e-11</expectation>
+      <identity>79.5</identity>
+      <positives>84.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="39">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQ</querySeq>
+      <pattern>MIGGLFLNTLSF+I   HVIVNNTANVH  Q E+VIVQQ</pattern>
+      <matchSeq start="1" end="39">MIGGLFLNTLSFIITSQHVIVNNTANVHHIQQEHVIVQQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="SP" id="NS3B_CVCBG" ac="Q7T6T1" length="250" description="Non-structural protein 3b OS=Canine coronavirus (strain BGF10) OX=441619 GN=3b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <bits>62.0</bits>
+      <expectation>2.7e-10</expectation>
+      <identity>84.6</identity>
+      <positives>87.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="39">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQ</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NHV VNNTANVH  Q E+VIVQQ</pattern>
+      <matchSeq start="1" end="38">MIGGLFLNTLSFVIVSNHV-VNNTANVHHIQQEHVIVQQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A0K2BMQ8_9ALPC" ac="A0A0K2BMQ8" length="251" description="Nonstructural protein OS=Alphacoronavirus 1 OX=693997 GN=ORF3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>3.8e-10</expectation>
+      <identity>76.9</identity>
+      <positives>82.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="39">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQ</querySeq>
+      <pattern>MIGGLFLNTLSF+I   HVIVN TANVH  Q E+VIVQQ</pattern>
+      <matchSeq start="1" end="39">MIGGLFLNTLSFIITSQHVIVNTTANVHHIQQEHVIVQQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="Q84959_TGEV" ac="Q84959" length="205" description="ORF 3-1 gene OS=Porcine respiratory coronavirus OX=11146 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>6.7e-09</expectation>
+      <identity>78.4</identity>
+      <positives>78.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIV</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH TQ     V</pattern>
+      <matchSeq start="1" end="37">MIGGLFLNTLSFVIVSNHSIVNNTANVHHTQQVKTCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="Q0PL11_TGEV" ac="Q0PL11" length="205" description="Non-structural protein 3b OS=Porcine respiratory coronavirus ISU-1 OX=398815 GN=138.4 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>6.7e-09</expectation>
+      <identity>78.4</identity>
+      <positives>78.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIV</querySeq>
+      <pattern>MIGGLFLNTLSFVIV NH IVNNTANVH TQ     V</pattern>
+      <matchSeq start="1" end="37">MIGGLFLNTLSFVIVSNHSIVNNTANVHHTQQVKTCV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A2Z6FAA9_9ALPC" ac="A0A2Z6FAA9" length="83" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>7.7e-07</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0A2Z6FAF7_9ALPC" ac="A0A2Z6FAF7" length="118" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>8e-07</expectation>
+      <identity>65.0</identity>
+      <positives>72.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNNT+      H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTKQHVIVNNTS------HVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0A2Z6FAE8_9ALPC" ac="A0A2Z6FAE8" length="107" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>9.1e-07</expectation>
+      <identity>62.5</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+VNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVVVNN------TPHVNTIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0A2Z6FAE4_9ALPC" ac="A0A2Z6FAE4" length="133" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>3e-06</expectation>
+      <identity>62.5</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N +VQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSVVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0A2Z6FAE0_9ALPC" ac="A0A2Z6FAE0" length="161" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>3.2e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="D1LT89_9ALPC" ac="D1LT89" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>3.3e-06</expectation>
+      <identity>60.0</identity>
+      <positives>72.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+ NNT +VHT      +VQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVVANNTPHVHT------VVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="D1LT82_9ALPC" ac="D1LT82" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>3.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>72.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNNT+      H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNNTS------HVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="D1LT70_9ALPC" ac="D1LT70" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>3.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>72.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNNT+      H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNNTS------HVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0A2Z6FAC0_9ALPC" ac="A0A2Z6FAC0" length="172" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>3.7e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A2Z6FAB7_9ALPC" ac="A0A2Z6FAB7" length="93" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>3.9e-06</expectation>
+      <identity>62.5</identity>
+      <positives>67.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTL F++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLGFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A2Z6FAB9_9ALPC" ac="A0A2Z6FAB9" length="211" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>3.9e-06</expectation>
+      <identity>62.5</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+VNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVVVNN------TPHVNTIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0A0C5CJI3_9ALPC" ac="A0A0C5CJI3" length="217" description="ORF 3c protein OS=Feline coronavirus OX=12663 GN=ORF 3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>4e-06</expectation>
+      <identity>60.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+VNN      T H N +VQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTTQHVVVNN------TPHFNTVVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="D1LT48_9ALPC" ac="D1LT48" length="236" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>4.5e-06</expectation>
+      <identity>62.5</identity>
+      <positives>72.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+VNNT+      H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVVVNNTS------HVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0A2Z6FAD3_9ALPC" ac="A0A2Z6FAD3" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>4.6e-06</expectation>
+      <identity>62.5</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNNT       H N +VQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNNTT------HANSVVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A0C5CJG0_9ALPC" ac="A0A0C5CJG0" length="237" description="ORF 3c protein OS=Feline coronavirus OX=12663 GN=ORF 3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>4.6e-06</expectation>
+      <identity>60.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+VNN      T H N +VQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTTQHVVVNN------TPHFNTVVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0A0C5CJD7_9ALPC" ac="A0A0C5CJD7" length="237" description="ORF 3c protein OS=Feline coronavirus OX=12663 GN=ORF 3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>4.6e-06</expectation>
+      <identity>60.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+VNN      T H N +VQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTTQHVVVNN------TPHFNTVVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="D1LT80_9ALPC" ac="D1LT80" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>4.6e-06</expectation>
+      <identity>62.5</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+VNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTTQHVVVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="D1LT66_9ALPC" ac="D1LT66" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>4.6e-06</expectation>
+      <identity>65.0</identity>
+      <positives>72.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++  +HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNHHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0A2Z6FAD8_9ALPC" ac="A0A2Z6FAD8" length="204" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>5.1e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0A2Z6FAM9_9ALPC" ac="A0A2Z6FAM9" length="209" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>5.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0A2Z6FAE2_9ALPC" ac="A0A2Z6FAE2" length="209" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>5.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0A2Z6FAA7_9ALPC" ac="A0A2Z6FAA7" length="111" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>5.6e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNNT  V      N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNNTPYV------NSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0A2Z6FAN7_9ALPC" ac="A0A2Z6FAN7" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0A2Z6FAL1_9ALPC" ac="A0A2Z6FAL1" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0A2Z6FAG0_9ALPC" ac="A0A2Z6FAG0" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0A2Z6FAF6_9ALPC" ac="A0A2Z6FAF6" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0A2Z6FAD2_9ALPC" ac="A0A2Z6FAD2" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0A2Z6FAC8_9ALPC" ac="A0A2Z6FAC8" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A2Z6FAB4_9ALPC" ac="A0A2Z6FAB4" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="A0A2Z6FA98_9ALPC" ac="A0A2Z6FA98" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0A2Z6FA57_9ALPC" ac="A0A2Z6FA57" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0A2Z6FA42_9ALPC" ac="A0A2Z6FA42" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0A2Z6FA41_9ALPC" ac="A0A2Z6FA41" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="D1LT90_9ALPC" ac="D1LT90" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="D1LT77_9ALPC" ac="D1LT77" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="D1LT76_9ALPC" ac="D1LT76" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="D1LT71_9ALPC" ac="D1LT71" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="D1LT69_9ALPC" ac="D1LT69" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="D1LT68_9ALPC" ac="D1LT68" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="D1LT64_9ALPC" ac="D1LT64" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="D1LT63_9ALPC" ac="D1LT63" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="D1LT59_9ALPC" ac="D1LT59" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="D1LT56_9ALPC" ac="D1LT56" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="D1LT54_9ALPC" ac="D1LT54" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="D1LT52_9ALPC" ac="D1LT52" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="D1LT51_9ALPC" ac="D1LT51" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>6.3e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0A2Z6FAB8_9ALPC" ac="A0A2Z6FAB8" length="36" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>6.5e-06</expectation>
+      <identity>69.0</identity>
+      <positives>86.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="29">MIGGLFLNTLSFVIVINHVIVNNTANVHT</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+VNNT +V+T</pattern>
+      <matchSeq start="1" end="29">MIGGLFLNTLSFIVTNQHVVVNNTPHVNT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0A2Z6FAB2_9ALPC" ac="A0A2Z6FAB2" length="120" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>6.6e-06</expectation>
+      <identity>62.5</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVN T+      H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNKTS------HVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0A2Z6FAM1_9ALPC" ac="A0A2Z6FAM1" length="235" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>8.6e-06</expectation>
+      <identity>62.5</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N I+QQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIIQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="D1LT85_9ALPC" ac="D1LT85" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>8.7e-06</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHFNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="D1LT50_9ALPC" ac="D1LT50" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>8.7e-06</expectation>
+      <identity>62.5</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+VNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVVVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0A2Z6FAC2_9ALPC" ac="A0A2Z6FAC2" length="239" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>8.8e-06</expectation>
+      <identity>60.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLF+NTLSF++   HV+VNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFINTLSFIVAKQHVVVNN------TPHVNTIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0A2Z6FAB6_9ALPC" ac="A0A2Z6FAB6" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>1.2e-05</expectation>
+      <identity>62.5</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVI NNT+      H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIANNTS------HVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="A0A2Z6FAA8_9ALPC" ac="A0A2Z6FAA8" length="161" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>1.2e-05</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNNT  V      N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNNTPYV------NSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0A2Z6FAK1_9ALPC" ac="A0A2Z6FAK1" length="45" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>1.6e-05</expectation>
+      <identity>60.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVN      +T H N IVQQ+</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVN------STPHVNSIVQQY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="A0A2Z6FAC7_9ALPC" ac="A0A2Z6FAC7" length="133" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>1.6e-05</expectation>
+      <identity>60.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+VN      +T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNKHVVVN------STPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="TR" id="A0A2Z6FAA5_9ALPC" ac="A0A2Z6FAA5" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.7e-05</expectation>
+      <identity>62.5</identity>
+      <positives>72.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLS ++ I+HV VNNT+      H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSSIVTIHHVTVNNTS------HVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="D1LT78_9ALPC" ac="D1LT78" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.7e-05</expectation>
+      <identity>60.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNT+SF+++  HV VNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTVSFIVINKHVFVNN------TPHVNCIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="D1LT67_9ALPC" ac="D1LT67" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.7e-05</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVNNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="TR" id="D1LT58_9ALPC" ac="D1LT58" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.7e-05</expectation>
+      <identity>62.5</identity>
+      <positives>72.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNNT+      H + IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNNTS------HVDSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="D1LT49_9ALPC" ac="D1LT49" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.7e-05</expectation>
+      <identity>62.5</identity>
+      <positives>72.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNNT+      H + IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNNTS------HVDSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0A2Z6FAC3_9ALPC" ac="A0A2Z6FAC3" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>2.3e-05</expectation>
+      <identity>62.5</identity>
+      <positives>67.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTL F++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLGFIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="TR" id="A0A2Z6FAB0_9ALPC" ac="A0A2Z6FAB0" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>2.3e-05</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNNT  V      N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNNTPYV------NSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="D1LT91_9ALPC" ac="D1LT91" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>2.3e-05</expectation>
+      <identity>62.5</identity>
+      <positives>67.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   H IVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHAIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="D1LT83_9ALPC" ac="D1LT83" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>2.3e-05</expectation>
+      <identity>62.5</identity>
+      <positives>67.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVI NN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIANN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="D1LT79_9ALPC" ac="D1LT79" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>2.3e-05</expectation>
+      <identity>62.5</identity>
+      <positives>67.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV VNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNKHVFVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="D1LT74_9ALPC" ac="D1LT74" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>2.3e-05</expectation>
+      <identity>60.0</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+VNN +      H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVVVNNIS------HANSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="D1LT53_9ALPC" ac="D1LT53" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>2.3e-05</expectation>
+      <identity>62.5</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+VNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVNNQHVVVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="TR" id="A0A2Z6FAF9_9ALPC" ac="A0A2Z6FAF9" length="33" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>2.5e-05</expectation>
+      <identity>70.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="30">MIGGLFLNTLSFVIVINHVIVNNTANVHTT</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNNT +  TT</pattern>
+      <matchSeq start="1" end="30">MIGGLFLNTLSFIVTNQHVIVNNTPHGTTT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0A077JNF6_9ALPC" ac="A0A077JNF6" length="172" description="Nonstructural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>2.8e-05</expectation>
+      <identity>59.5</identity>
+      <positives>78.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIV</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNNT +V +T  ++ +V</pattern>
+      <matchSeq start="1" end="37">MIGGLFLNTLSFIVTNQHVIVNNTPHVVSTVQQHHVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="TR" id="A0A2Z6FAB3_9ALPC" ac="A0A2Z6FAB3" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>3.2e-05</expectation>
+      <identity>62.5</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVN      +T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVN------STPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="D1LT57_9ALPC" ac="D1LT57" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>3.2e-05</expectation>
+      <identity>62.5</identity>
+      <positives>67.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV VNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVTVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="D1LT87_9ALPC" ac="D1LT87" length="233" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>4.3e-05</expectation>
+      <identity>62.5</identity>
+      <positives>70.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H N IVQQ+</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVNSIVQQY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="D1LT88_9ALPC" ac="D1LT88" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>4.4e-05</expectation>
+      <identity>62.5</identity>
+      <positives>67.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNN      T H   IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVIVNN------TPHVKPIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="D1LT86_9ALPC" ac="D1LT86" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>4.4e-05</expectation>
+      <identity>57.5</identity>
+      <positives>75.0</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIVNNT +V+     +++ QQH</pattern>
+      <matchSeq start="1" end="35">MIGGLFLNTLSFIVTNQHVIVNNTPHVN-----SIVQQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0A2Z6FAG1_9ALPC" ac="A0A2Z6FAG1" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>6e-05</expectation>
+      <identity>57.5</identity>
+      <positives>72.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV VN T++VH+      +VQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVTVNKTSHVHS------LVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="TR" id="D1LT60_9ALPC" ac="D1LT60" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>6e-05</expectation>
+      <identity>60.0</identity>
+      <positives>67.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTL F++   HVIVNN      T H N I+QQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLGFIVTNQHVIVNN------TPHVNSILQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="TR" id="A0A2Z6FAD1_9ALPC" ac="A0A2Z6FAD1" length="205" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>7.1e-05</expectation>
+      <identity>60.0</identity>
+      <positives>67.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGL LNTLSF++   HV+VNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLLLNTLSFIVTNQHVLVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="TR" id="A0A2Z6FAJ2_9ALPC" ac="A0A2Z6FAJ2" length="223" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>7.9e-05</expectation>
+      <identity>60.0</identity>
+      <positives>65.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTL F++   HVI NN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLGFIVTNQHVIANN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="TR" id="A0A2Z6FAD0_9ALPC" ac="A0A2Z6FAD0" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>8.3e-05</expectation>
+      <identity>56.8</identity>
+      <positives>78.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIV</querySeq>
+      <pattern>MIGGLF+NTLSF++   HVIVNNT +V +T  ++ +V</pattern>
+      <matchSeq start="1" end="37">MIGGLFINTLSFIVTNQHVIVNNTPHVVSTVQQHHVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="TR" id="D1LT62_9ALPC" ac="D1LT62" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>8.3e-05</expectation>
+      <identity>60.0</identity>
+      <positives>65.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTL F++   HVIVNN      T H N I QQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLGFIVTNQHVIVNN------TPHVNSIAQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="TR" id="D6RTP2_9ALPC" ac="D6RTP2" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>8.3e-05</expectation>
+      <identity>60.0</identity>
+      <positives>67.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNT SF++   HV+VNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTXSFIVTNQHVLVNN------TPHFNPIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="TR" id="D1LT84_9ALPC" ac="D1LT84" length="239" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>110</score>
+      <bits>47.0</bits>
+      <expectation>8.4e-05</expectation>
+      <identity>60.0</identity>
+      <positives>65.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF+    H +VNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIATNQHXVVNN------TPHVNTIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="TR" id="D1LT73_9ALPC" ac="D1LT73" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.00022</expectation>
+      <identity>60.0</identity>
+      <positives>65.0</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTL  ++   HVIVNN      T H N IVQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLRIIVTNQHVIVNN------TPHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="TR" id="D1LT55_9ALPC" ac="D1LT55" length="237" description="Non-structural protein 3c OS=Feline coronavirus OX=12663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.00022</expectation>
+      <identity>55.0</identity>
+      <positives>67.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   HV+ NNT + H       +VQQH</pattern>
+      <matchSeq start="1" end="34">MIGGLFLNTLSFIVTNQHVVANNTPHFHG------LVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="130" database="TR" id="A0A2Z6FAB1_9ALPC" ac="A0A2Z6FAB1" length="104" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.00031</expectation>
+      <identity>65.0</identity>
+      <positives>70.0</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF IV  HV+VNN      T H + IVQQH</pattern>
+      <matchSeq start="1" end="33">MIGGLFLNTLSF-IVNQHVVVNN------TPHVSPIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="131" database="TR" id="A0A2Z6FAI4_9ALPC" ac="A0A2Z6FAI4" length="236" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0011</expectation>
+      <identity>57.5</identity>
+      <positives>65.0</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIGGLFLNTLSF++   +VI N       T H N IVQQH</pattern>
+      <matchSeq start="1" end="33">MIGGLFLNTLSFIVTNQYVIAN-------TSHVNSIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="132" database="TR" id="A0A2Z6FAC9_9ALPC" ac="A0A2Z6FAC9" length="60" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.0059</expectation>
+      <identity>55.0</identity>
+      <positives>60.0</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MIGGLFLNTLSFVIVINHVIVNNTANVHTTQHENVIVQQH</querySeq>
+      <pattern>MIG LFLNTLSF++   HV  N       T H N IVQQH</pattern>
+      <matchSeq start="1" end="33">MIGVLFLNTLSFIVSSQHVANN-------TPHVNTIVQQH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="133" database="TR" id="A0A2Z6FAD4_9ALPC" ac="A0A2Z6FAD4" length="29" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.06</expectation>
+      <identity>76.2</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MIGGLFLNTLSFVIVINHVIV</querySeq>
+      <pattern>MIGGLFLNTLSF++   HVIV</pattern>
+      <matchSeq start="1" end="21">MIGGLFLNTLSFIVTNQHVIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="134" database="TR" id="A0A2Z6FAC1_9ALPC" ac="A0A2Z6FAC1" length="16" description="Truncated non-structural protein 3c OS=Feline coronavirus OX=12663 GN=3c PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>70</score>
+      <bits>31.6</bits>
+      <expectation>5.0</expectation>
+      <identity>86.7</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="15">MIGGLFLNTLSFVIV</querySeq>
+      <pattern>MIGGLFLNTLSF++V</pattern>
+      <matchSeq start="1" end="15">MIGGLFLNTLSFIVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

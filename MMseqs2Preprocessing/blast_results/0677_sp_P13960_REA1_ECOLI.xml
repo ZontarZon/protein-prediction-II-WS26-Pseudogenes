@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-200556-0861-44236471-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-200556-0861-44236471-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P13960|REA1_ECOLI" type="PROTEIN" length="91"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:05:56+00:00" end="2026-11-13T20:08:10+00:00" search="P0Y0M0DT0H0M134.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="5">
+   <hit number="1" database="SP" id="REA1_ECOLI" ac="P13960" length="91" description="Putative defective replication initiation protein (Fragment) OS=Escherichia coli (strain K12) OX=83333 GN=repA1 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>477</score>
+      <bits>188.3</bits>
+      <expectation>1.5e-60</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="91">MANHETHSVIAGGIESDLHIDSSKYPHPFCSLLQKRAHFDSFKHLIFIRGLLVIAHGKRKNKISASMVSFYVSLVQVMCAHYIPDTNKVNL</querySeq>
+      <pattern>MANHETHSVIAGGIESDLHIDSSKYPHPFCSLLQKRAHFDSFKHLIFIRGLLVIAHGKRKNKISASMVSFYVSLVQVMCAHYIPDTNKVNL</pattern>
+      <matchSeq start="1" end="91">MANHETHSVIAGGIESDLHIDSSKYPHPFCSLLQKRAHFDSFKHLIFIRGLLVIAHGKRKNKISASMVSFYVSLVQVMCAHYIPDTNKVNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A0H3ER55_ECO8N" ac="A0A0H3ER55" length="160" description="Putative replication protein RepA OS=Escherichia coli O83:H1 (strain NRG 857C / AIEC) OX=685038 GN=NRG857_30158 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>473</score>
+      <bits>186.8</bits>
+      <expectation>5.7e-59</expectation>
+      <identity>98.9</identity>
+      <positives>98.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="91">MANHETHSVIAGGIESDLHIDSSKYPHPFCSLLQKRAHFDSFKHLIFIRGLLVIAHGKRKNKISASMVSFYVSLVQVMCAHYIPDTNKVNL</querySeq>
+      <pattern>MANHETHSVIAGGIESDLHIDSSKYPHPFCSLLQKRAHFDSFKHLIFIRGLL IAHGKRKNKISASMVSFYVSLVQVMCAHYIPDTNKVNL</pattern>
+      <matchSeq start="1" end="91">MANHETHSVIAGGIESDLHIDSSKYPHPFCSLLQKRAHFDSFKHLIFIRGLLAIAHGKRKNKISASMVSFYVSLVQVMCAHYIPDTNKVNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A0H2XKY0_ECOK1" ac="A0A0H2XKY0" length="164" description="RepA OS=Escherichia coli O1:K1 / APEC OX=405955 GN=repA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>469</score>
+      <bits>185.3</bits>
+      <expectation>2.6e-58</expectation>
+      <identity>97.8</identity>
+      <positives>98.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="91">MANHETHSVIAGGIESDLHIDSSKYPHPFCSLLQKRAHFDSFKHLIFIRGLLVIAHGKRKNKISASMVSFYVSLVQVMCAHYIPDTNKVNL</querySeq>
+      <pattern>+ANHETHSVIAGGIESDLHIDSSKYPHPFCSLLQKRAHFDSFKHLIFIRGLL IAHGKRKNKISASMVSFYVSLVQVMCAHYIPDTNKVNL</pattern>
+      <matchSeq start="5" end="95">VANHETHSVIAGGIESDLHIDSSKYPHPFCSLLQKRAHFDSFKHLIFIRGLLAIAHGKRKNKISASMVSFYVSLVQVMCAHYIPDTNKVNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0ABY3NXD9_9ENTR" ac="A0ABY3NXD9" length="156" description="Replication protein RepA OS=Lelliottia nimipressuralis OX=69220 GN=FZO59_20920 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>369</score>
+      <bits>146.7</bits>
+      <expectation>3.4e-43</expectation>
+      <identity>84.7</identity>
+      <positives>87.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="91">HSVIAGGIESDLHIDSSKYPHPFCSLLQKRAHFDSFKHLIFIRGLLVIAHGKRKNKISASMVSFYVSLVQVMCAHYIPDTNKVNL</querySeq>
+      <pattern>HS+IA   ESDLHIDSS+Y HPFCSLLQKRA FDSFK LIFIRGLL   HGKRKNKIS SMVS YVSLVQVMCAHYIPDTNKVNL</pattern>
+      <matchSeq start="4" end="88">HSLIAKSTESDLHIDSSEYAHPFCSLLQKRAQFDSFKDLIFIRGLLATVHGKRKNKISVSMVSVYVSLVQVMCAHYIPDTNKVNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABU9PLJ0_9ENTR" ac="A0ABU9PLJ0" length="159" description="Replication protein OS=Enterobacter quasihormaechei OX=2529382 GN=AAGT82_19080 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>350</score>
+      <bits>139.4</bits>
+      <expectation>2.9e-40</expectation>
+      <identity>73.6</identity>
+      <positives>81.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="91">MANHETHSVIAGGIESDLHIDSSKYPHPFCSLLQKRAHFDSFKHLIFIRGLLVIAHGKRKNKISASMVSFYVSLVQVMCAHYIPDTNKVNL</querySeq>
+      <pattern>M NHE HSVIA   ES+LH+ S ++ H FCSLLQ+RA FDSFK LIFIRGLL   HGKRKNKIS SMV  Y+S+VQVMCAHYIPDTNKVNL</pattern>
+      <matchSeq start="1" end="91">MTNHEFHSVIAESTESNLHLASGEHVHHFCSLLQQRAQFDSFKDLIFIRGLLATVHGKRKNKISVSMVDLYISIVQVMCAHYIPDTNKVNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

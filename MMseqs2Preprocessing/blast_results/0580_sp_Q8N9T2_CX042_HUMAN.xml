@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-191710-0245-24626952-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-191710-0245-24626952-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q8N9T2|CX042_HUMAN" type="PROTEIN" length="125"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T19:17:10+00:00" end="2026-11-13T19:19:29+00:00" search="P0Y0M0DT0H0M139.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="12">
+   <hit number="1" database="SP" id="CX042_HUMAN" ac="Q8N9T2" length="125" description="Putative uncharacterized protein CXorf42 OS=Homo sapiens OX=9606 GN=NKAPP1 PE=5 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>654</score>
+      <bits>256.5</bits>
+      <expectation>1.9e-86</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="125">MSRFRGCSSSGVRFCSAEREASGSGRGNVLQFVQEPQAQQSRPFPAGAQLSLELLFSDWGMEWAQPRLPKPALPLPVVVAFSRAADCAVDHHFRFCLLLRLLRQLLTLLRDEEREVNPWQRKIVV</querySeq>
+      <pattern>MSRFRGCSSSGVRFCSAEREASGSGRGNVLQFVQEPQAQQSRPFPAGAQLSLELLFSDWGMEWAQPRLPKPALPLPVVVAFSRAADCAVDHHFRFCLLLRLLRQLLTLLRDEEREVNPWQRKIVV</pattern>
+      <matchSeq start="1" end="125">MSRFRGCSSSGVRFCSAEREASGSGRGNVLQFVQEPQAQQSRPFPAGAQLSLELLFSDWGMEWAQPRLPKPALPLPVVVAFSRAADCAVDHHFRFCLLLRLLRQLLTLLRDEEREVNPWQRKIVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0ACF8I0B9_9PRIM" ac="A0ACF8I0B9" length="143" description="Uncharacterized protein OS=Pygathrix nigripes OX=310352 GN=H8959_007758 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>499</score>
+      <bits>196.8</bits>
+      <expectation>1.5e-62</expectation>
+      <identity>81.8</identity>
+      <positives>86.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="121">MSRFRGCSSSGVRFCSAEREASGSGRGNVLQFVQEPQAQQSRPFPAGAQLSLELLFSDWGMEWAQPRLPKPALPLPVVVAFSRAADCAVDHHFRFCLLLRLLRQLLTLLRDEEREVNPWQR</querySeq>
+      <pattern>M RFR CSSS VRFCS EREASGSG  +VLQFVQEPQ QQS PFPAG QLSLE L SDWGMEWAQPRLPKPAL LP+VV FSRAA  A  HHFRFCLL+RLLRQLLTLLRDE+REV+PWQR</pattern>
+      <matchSeq start="1" end="120">MCRFRSCSSSSVRFCSTEREASGSGE-DVLQFVQEPQGQQSLPFPAGEQLSLERLLSDWGMEWAQPRLPKPALLLPLVVPFSRAALYAAGHHFRFCLLVRLLRQLLTLLRDEDREVSPWQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ACF8J9R5_SEMEN" ac="A0ACF8J9R5" length="120" description="Uncharacterized protein OS=Semnopithecus entellus OX=88029 GN=H8957_005720 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>495</score>
+      <bits>195.3</bits>
+      <expectation>2.8e-62</expectation>
+      <identity>81.0</identity>
+      <positives>86.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="121">MSRFRGCSSSGVRFCSAEREASGSGRGNVLQFVQEPQAQQSRPFPAGAQLSLELLFSDWGMEWAQPRLPKPALPLPVVVAFSRAADCAVDHHFRFCLLLRLLRQLLTLLRDEEREVNPWQR</querySeq>
+      <pattern>M RFR CSSS VRFCS EREASGSG  +VL+FVQEPQ QQS PFPAG QLSLE L SDWGMEWAQPRLPKPAL LP+VV FSRAA  A  HHFRFCLL+RLLRQLLTLLRDE+REV+PWQR</pattern>
+      <matchSeq start="1" end="120">MCRFRSCSSSSVRFCSTEREASGSGE-DVLRFVQEPQGQQSLPFPAGEQLSLERLLSDWGMEWAQPRLPKPALLLPLVVPFSRAALYAAGHHFRFCLLVRLLRQLLTLLRDEDREVSPWQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0ACF8Q1U9_NASLA" ac="A0ACF8Q1U9" length="120" description="Uncharacterized protein OS=Nasalis larvatus OX=43780 GN=H8958_016656 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>492</score>
+      <bits>194.1</bits>
+      <expectation>8.1e-62</expectation>
+      <identity>81.0</identity>
+      <positives>85.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="121">MSRFRGCSSSGVRFCSAEREASGSGRGNVLQFVQEPQAQQSRPFPAGAQLSLELLFSDWGMEWAQPRLPKPALPLPVVVAFSRAADCAVDHHFRFCLLLRLLRQLLTLLRDEEREVNPWQR</querySeq>
+      <pattern>M RFR CSSS V FCS EREASGSG  +VLQFVQEPQ QQS PFPAG QLSLE L SDWGMEWAQPRLPKPAL LP+VV FSRAA  A  HHFRFCLL+RLLRQLLTLLRDE+REV+PWQR</pattern>
+      <matchSeq start="1" end="120">MCRFRSCSSSSVWFCSTEREASGSGE-DVLQFVQEPQGQQSLPFPAGEQLSLECLLSDWGMEWAQPRLPKPALLLPLVVPFSRAALYAAGHHFRFCLLVRLLRQLLTLLRDEDREVSPWQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ACS2BPA5_PLECU" ac="A0ACS2BPA5" length="60" description="Uncharacterized protein (Fragment) OS=Plecturocebus cupreus OX=202457 GN=AAY473_039476 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <bits>96.3</bits>
+      <expectation>6.5e-24</expectation>
+      <identity>78.3</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="61" end="120">MEWAQPRLPKPALPLPVVVAFSRAADCAVDHHFRFCLLLRLLRQLLTLLRDEEREVNPWQ</querySeq>
+      <pattern>MEW Q RLPKPALPLP+VV FSRAA CA  H  RFC L+RLLRQLLTLLRDEEREV+ WQ</pattern>
+      <matchSeq start="1" end="60">MEWPQLRLPKPALPLPLVVPFSRAALCATGHLLRFCALVRLLRQLLTLLRDEEREVSRWQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A8B8SK58_CAMFR" ac="A0A8B8SK58" length="174" description="Uncharacterized protein OS=Camelus ferus OX=419612 GN=LOC116661893 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>2.6e-08</expectation>
+      <identity>41.3</identity>
+      <positives>47.9</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="115">FRGCSSSGVRFCSAEREASGSGRGNVLQFVQEPQAQQSRPFPAGAQLSLELLFS----DW---GMEWAQPRLPKPALPL--PVVVAFSRAADCAVDHHFRFCLLLRLLRQLLTLLRDEERE</querySeq>
+      <pattern>FR    S V  CS E EASGSG G+V        A +  P PA    SL  L S    DW    + W QPRLPKPAL L   +  AF+RAA  A     RFC L+ + R  L  L +   E</pattern>
+      <matchSeq start="62" end="173">FRSPDGSSVPPCSPEGEASGSG-GSV--------AVRQSPEPAWPPFSLLPLLSAGRPDWPRPSVRWPQPRLPKPALRLRSRLAAAFARAALGAAGRPLRFCFLVCVARPPLAPLPERRAE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A8M1FVX8_URSMA" ac="A0A8M1FVX8" length="303" description="Uncharacterized protein LOC103680215 isoform X1 OS=Ursus maritimus OX=29073 GN=LOC103680215 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>8.6e-08</expectation>
+      <identity>51.6</identity>
+      <positives>64.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="32" end="88">FVQEPQAQQSRPFPAGAQLSLELLFS----DW---GMEWAQPRLPKPALPLPVVVAFSRAADCA</querySeq>
+      <pattern>FV+E  A+Q RP PAG + SL LL +    +W     EW +PRL  PALP+PV V+ SRAA CA</pattern>
+      <matchSeq start="111" end="174">FVEERGARQIRPLPAGPRPSLALLLAARAAEWPAPSREWPRPRLRTPALPIPVAVSLSRAAVCA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A9P7F770_9AGAM" ac="A0A9P7F770" length="396" description="Uncharacterized protein OS=Suillus discolor OX=1912936 GN=F5147DRAFT_773466 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>1.0</expectation>
+      <identity>28.1</identity>
+      <positives>44.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="111">SAEREASGSGRGNVLQFVQEPQAQQSRPFPAGAQLSLELLFSDWGMEWAQPRLPKPALPLPVVVAFSRAADCAVDHHFRFCLLLRLLRQLLTLLRD</querySeq>
+      <pattern>+A+ + +G+G+  ++Q  + P A +S P P   +L LE    +  +E AQ RL    L   V        D     H +   LL +  QL +  RD</pattern>
+      <matchSeq start="287" end="382">TADEDVAGTGKTIMVQCAKRPAAARSGPAPKRPRLDLEAQLEEARIESAQLRLRNAELETEVAKYREMLVDLRQHTHAQESELLHMSNQLYSFARD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A835Y9H6_9CHLO" ac="A0A835Y9H6" length="809" description="Uncharacterized protein OS=Edaphochlamys debaryana OX=47281 GN=HYH03_003521 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>3.8</expectation>
+      <identity>36.5</identity>
+      <positives>45.9</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="88">GCSSSGVRFCSAEREASGSGRGNVLQFVQEPQAQQSRPFPAGAQLSLELLFSDWGMEWAQPRLPKPALPLPVVVAFSRAA--DCA</querySeq>
+      <pattern>G +S+G   CSA   +SGSG    +Q +Q P A   +P P              G   AQP LP    PLP V A+  AA  +CA</pattern>
+      <matchSeq start="227" end="295">GANSAGKSMCSAASNSSGSGGSGKVQ-IQPPPALLPQPAP-----------QPQGQAHAQPCLP----PLPAVPAWGSAAAGNCA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A2P8H9K6_SACCR" ac="A0A2P8H9K6" length="172" description="Uncharacterized protein OS=Saccharothrix carnea OX=1280637 GN=B0I31_13410 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>4.4</expectation>
+      <identity>36.5</identity>
+      <positives>55.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="67">SAEREASGSGRGNVLQFVQEPQAQQSRPFPAGAQLSLELLFSDWGMEWAQPR</querySeq>
+      <pattern>+ E  AS +   +  Q VQ  Q  Q++P PAG QL  E++F +W ++   PR</pattern>
+      <matchSeq start="35" end="84">TTETVASTTSGTSPAQAVQ--QTPQAKPLPAGVQLDEEVIFGEWNLDSVPPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0ABM4NB30_EQUPR" ac="A0ABM4NB30" length="220" description="Uncharacterized protein OS=Equus przewalskii OX=9798 GN=LOC103541904 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>7.3</expectation>
+      <identity>41.7</identity>
+      <positives>43.3</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="69">AEREASGSGRGNVLQFVQEPQAQQSRPFPAGAQLSLELLFSDWGME-------WAQPRLP</querySeq>
+      <pattern>A R     G G      QE + QQ RP PAG  L L LL S  G E       W QPR P</pattern>
+      <matchSeq start="88" end="147">AARSGRPRGPGGSDALAQELREQQIRPLPAGPPLPLALLLSVRGPERRQPPAGWPQPRHP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A8H4N5Z2_9PEZI" ac="A0A8H4N5Z2" length="674" description="Six-hairpin glycosidase-like protein OS=Botryosphaeria dothidea OX=55169 GN=GTA08_BOTSDO03368 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>9.3</expectation>
+      <identity>31.6</identity>
+      <positives>50.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="101">PAGAQLSLELLFSDWGMEWAQPRLPKPALPLPVVVAFSRAADCAVDHHFRFCLLLRL</querySeq>
+      <pattern>P G ++ L L    W  EW   +LP P + +P +  ++R     VDH+ +F L + L</pattern>
+      <matchSeq start="495" end="548">PEGVRVDLNLRIPSWASEW---QLPSPLMDVPFLNGYARVPATWVDHNSKFELNIPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

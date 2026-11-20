@@ -1,0 +1,2065 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-182158-0668-10587329-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-182158-0668-10587329-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q1KXP9|YCF15_HELAN" type="PROTEIN" length="53"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T18:21:58+00:00" end="2026-11-13T18:23:23+00:00" search="P0Y0M0DT0H0M85.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="120">
+   <hit number="1" database="TR" id="W8RXE3_PRACL" ac="W8RXE3" length="53" description="Hypothetical chloroplast RF15 OS=Praxelis clematidea OX=287011 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>272</score>
+      <bits>109.4</bits>
+      <expectation>2.1e-30</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A343A2T3_9ASTR" ac="A0A343A2T3" length="53" description="Ycf15 OS=Mikania micrantha OX=192012 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>272</score>
+      <bits>109.4</bits>
+      <expectation>2.1e-30</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A172W414_HELAN" ac="A0A172W414" length="53" description="Uncharacterized protein OS=Helianthus annuus OX=4232 GN=HannXRQ_CPg0580421 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>272</score>
+      <bits>109.4</bits>
+      <expectation>2.1e-30</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A286R0D0_AMBAR" ac="A0A286R0D0" length="53" description="Ycf15 OS=Ambrosia artemisiifolia OX=4212 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>272</score>
+      <bits>109.4</bits>
+      <expectation>2.1e-30</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="YCF15_HELAN" ac="Q1KXP9" length="53" description="Putative uncharacterized protein ycf15 OS=Helianthus annuus OX=4232 GN=ycf15-A PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>272</score>
+      <bits>109.4</bits>
+      <expectation>2.1e-30</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="F6MHS8_9ASTR" ac="F6MHS8" length="63" description="Hypothetical chloroplast RF15 OS=Ageratina adenophora OX=176616 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>264</score>
+      <bits>106.3</bits>
+      <expectation>4.5e-29</expectation>
+      <identity>98.1</identity>
+      <positives>98.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLTPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A7H9SLN8_9ASTR" ac="A0A7H9SLN8" length="63" description="Hypothetical chloroplast RF15 OS=Aster spathulifolius OX=947974 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>260</score>
+      <bits>104.8</bits>
+      <expectation>1.8e-28</expectation>
+      <identity>96.2</identity>
+      <positives>98.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLK+VDLLASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKKVDLLASLTVQSSSRRAPFLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ACG4UUN5_9ASTR" ac="A0ACG4UUN5" length="64" description="Uncharacterized protein OS=Helianthus anomalus OX=73274 GN=Hanom_Chr13g01190491 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>260</score>
+      <bits>104.8</bits>
+      <expectation>1.9e-28</expectation>
+      <identity>98.1</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="52">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTV+SSSRRAPFLLGPQRQNVGLPPTVH</pattern>
+      <matchSeq start="1" end="52">MRVQLHCIARIHVVYLKEVDLLASLTVKSSSRRAPFLLGPQRQNVGLPPTVH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A8E7PG31_9ASTR" ac="A0A8E7PG31" length="63" description="Putative chloroplast RF15 OS=Centaurea maculosa OX=215693 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>3.7e-28</expectation>
+      <identity>96.2</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRV LHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVPLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A0K0N803_CARTI" ac="A0A0K0N803" length="63" description="Hypothetical chloroplast RF15 OS=Carthamus tinctorius OX=4222 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>3.7e-28</expectation>
+      <identity>96.2</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRV LHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVPLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A125RTG9_9ASTR" ac="A0A125RTG9" length="63" description="Photosystem I assembly protein Ycf15 OS=Saussurea involucrata OX=200489 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>3.7e-28</expectation>
+      <identity>96.2</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRV LHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVPLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A0U2BWQ7_9ASTR" ac="A0A0U2BWQ7" length="63" description="Hypothetical chloroplast RF15 OS=Cynara humilis OX=41561 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>3.7e-28</expectation>
+      <identity>96.2</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRV LHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVPLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A0M3M8F8_CYNCS" ac="A0A0M3M8F8" length="63" description="Hypothetical chloroplast RF15 OS=Cynara cardunculus var. scolymus OX=59895 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>3.7e-28</expectation>
+      <identity>96.2</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRV LHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVPLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A0D3MMX3_CYNCS" ac="A0A0D3MMX3" length="63" description="Hypothetical chloroplast RF15 OS=Cynara cardunculus var. scolymus OX=59895 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>3.7e-28</expectation>
+      <identity>96.2</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRV LHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVPLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A7T7WN39_9DIPS" ac="A0A7T7WN39" length="63" description="Ycf15 OS=Leycesteria formosa OX=52835 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <bits>103.6</bits>
+      <expectation>5.3e-28</expectation>
+      <identity>96.2</identity>
+      <positives>98.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQL+CIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLNCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A649WET8_9ASTR" ac="A0A649WET8" length="63" description="Hypothetical chloroplast RF15 OS=Artemisia scoparia OX=72351 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <bits>103.6</bits>
+      <expectation>5.3e-28</expectation>
+      <identity>96.2</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVD LASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDPLASLTVQSSSRRAPFLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0A1W6C7U3_ARTAN" ac="A0A1W6C7U3" length="63" description="Hypothetical chloroplast RF15 OS=Artemisia annua OX=35608 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <bits>103.6</bits>
+      <expectation>5.3e-28</expectation>
+      <identity>96.2</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVD LASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDPLASLTVQSSSRRAPFLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="M1FIU9_9ASTR" ac="M1FIU9" length="63" description="Ycf15 protein OS=Artemisia frigida OX=395280 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <bits>103.6</bits>
+      <expectation>5.3e-28</expectation>
+      <identity>96.2</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVD LASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDPLASLTVQSSSRRAPFLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A2H4N1U6_ARTAN" ac="A0A2H4N1U6" length="63" description="Hypothetical chloroplast RF15 OS=Artemisia annua OX=35608 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <bits>103.6</bits>
+      <expectation>5.3e-28</expectation>
+      <identity>96.2</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVD LASLTVQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDPLASLTVQSSSRRAPFLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A4D6I8Z7_9ASTR" ac="A0A4D6I8Z7" length="63" description="Hypothetical chloroplast RF15 OS=Paraixeris denticulata OX=77561 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <bits>102.8</bits>
+      <expectation>1.1e-27</expectation>
+      <identity>96.2</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLL PQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLCPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A291PR66_9ASTR" ac="A0A291PR66" length="63" description="Hypothetical chloroplast RF15 OS=Atractylodes macrocephala OX=265785 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <bits>102.4</bits>
+      <expectation>1.5e-27</expectation>
+      <identity>96.2</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGL  TVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLALTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="T2DRM6_ARBUN" ac="T2DRM6" length="63" description="Ycf15 OS=Arbutus unedo OX=84005 GN=ORF63 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>253</score>
+      <bits>102.1</bits>
+      <expectation>2.2e-27</expectation>
+      <identity>94.3</identity>
+      <positives>94.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASL VQSSSRRAPF LGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLMVQSSSRRAPFFLGPQRQNVGLMPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A976YCG3_9ASTR" ac="A0A976YCG3" length="63" description="Ycf15 OS=Reichardia albanica OX=2026605 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>251</score>
+      <bits>101.3</bits>
+      <expectation>4.3e-27</expectation>
+      <identity>94.3</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSR+APFLL PQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRQAPFLLCPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A1B1MTC4_GLELI" ac="A0A1B1MTC4" length="63" description="Ycf15 OS=Glehnia littoralis OX=48119 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>248</score>
+      <bits>100.1</bits>
+      <expectation>1.2e-26</expectation>
+      <identity>94.3</identity>
+      <positives>94.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQ QNV L PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQIQNVRLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A1B1MTK6_9APIA" ac="A0A1B1MTK6" length="77" description="Ycf15 OS=Ledebouriella seseloides OX=656325 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>248</score>
+      <bits>100.1</bits>
+      <expectation>1.8e-26</expectation>
+      <identity>94.3</identity>
+      <positives>94.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQ QNV L PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQIQNVRLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A1Y3BXY2_HELAN" ac="A0A1Y3BXY2" length="142" description="Putative ribosomal protein S12/S23 OS=Helianthus annuus OX=4232 GN=HannXRQ_CPg0580291 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>252</score>
+      <bits>101.7</bits>
+      <expectation>2.8e-26</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="50">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPT</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPT</pattern>
+      <matchSeq start="1" end="50">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A8E7MG42_9ROSI" ac="A0A8E7MG42" length="63" description="Ycf15 OS=Acer tsinglingense OX=2810071 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>5.1e-26</expectation>
+      <identity>90.6</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>M+VQLHCIAR+HVVYLKEVDLLASL VQSSSRRAPFLLGPQRQNVGL PTV+H</pattern>
+      <matchSeq start="1" end="53">MKVQLHCIARMHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQNVGLVPTVNH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A888TWW0_9ROSI" ac="A0A888TWW0" length="63" description="Ycf15 OS=Acer cinnamomifolium OX=355903 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>5.1e-26</expectation>
+      <identity>90.6</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>M+VQLHCIAR+HVVYLKEVDLLASL VQSSSRRAPFLLGPQRQNVGL PTV+H</pattern>
+      <matchSeq start="1" end="53">MKVQLHCIARMHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQNVGLVPTVNH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A0X9U3I5_9ROSI" ac="A0A0X9U3I5" length="63" description="Ycf15 OS=Acer morrisonense OX=934068 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>5.1e-26</expectation>
+      <identity>90.6</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>M+VQLHCIAR+HVVYLKEVDLLASL VQSSSRRAPFLLGPQRQNVGL PTV+H</pattern>
+      <matchSeq start="1" end="53">MKVQLHCIARMHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQNVGLVPTVNH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A0U3B3N6_9ROSI" ac="A0A0U3B3N6" length="63" description="Ycf15 OS=Dipteronia sinensis OX=43782 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>5.1e-26</expectation>
+      <identity>90.6</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>M+VQLHCIAR+HVVYLKEVDLLASL VQSSSRRAPFLLGPQRQNVGL PTV+H</pattern>
+      <matchSeq start="1" end="53">MKVQLHCIARMHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQNVGLVPTVNH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A1I9KLA9_9ROSI" ac="A0A1I9KLA9" length="63" description="Ycf15 OS=Dipteronia dyeriana OX=168575 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>5.1e-26</expectation>
+      <identity>90.6</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>M+VQLHCIAR+HVVYLKEVDLLASL VQSSSRRAPFLLGPQRQNVGL PTV+H</pattern>
+      <matchSeq start="1" end="53">MKVQLHCIARMHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQNVGLVPTVNH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A7G7XUZ7_ACESA" ac="A0A7G7XUZ7" length="63" description="Ycf15 OS=Acer saccharum OX=4024 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>244</score>
+      <bits>98.6</bits>
+      <expectation>5.1e-26</expectation>
+      <identity>90.6</identity>
+      <positives>96.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>M+VQLHCIAR+HVVYLKEVDLLASL VQSSSRRAPFLLGPQRQNVGL PTV+H</pattern>
+      <matchSeq start="1" end="53">MKVQLHCIARMHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQNVGLVPTVNH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A7G7XTS1_ACENE" ac="A0A7G7XTS1" length="63" description="Hypothetical chloroplast RF15 OS=Acer negundo OX=4023 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <bits>95.9</bits>
+      <expectation>6e-25</expectation>
+      <identity>88.7</identity>
+      <positives>94.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>M+VQLHCIAR+HVVYLKEVDLLASL VQSSSRRAPFLLGPQRQN GL PTV+H</pattern>
+      <matchSeq start="1" end="53">MKVQLHCIARMHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQNGGLVPTVNH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0A7S8FJ22_9ROSA" ac="A0A7S8FJ22" length="63" description="Hypothetical chloroplast RF15 OS=Artocarpus camansi OX=709039 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>236</score>
+      <bits>95.5</bits>
+      <expectation>8.5e-25</expectation>
+      <identity>88.7</identity>
+      <positives>92.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLK+VD LASL +QSSSR APFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKKVDPLASLMLQSSSRGAPFLLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0A6C0NCF9_9LILI" ac="A0A6C0NCF9" length="63" description="Ycf15 OS=Caldesia grandis OX=349097 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>234</score>
+      <bits>94.7</bits>
+      <expectation>1.7e-24</expectation>
+      <identity>86.8</identity>
+      <positives>90.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIAR HVVYLK+VDLLAS  VQ SSRRAPFLLGPQR+NVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARTHVVYLKQVDLLASPVVQPSSRRAPFLLGPQRKNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A867XWD7_9ROSI" ac="A0A867XWD7" length="63" description="ORF70 OS=Gynostemma yixingense OX=555433 GN=orf70 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <bits>94.0</bits>
+      <expectation>3.5e-24</expectation>
+      <identity>88.7</identity>
+      <positives>90.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>M VQLHCIARIHVVYLKEVDLLASL +QSSSRRAPFLL PQRQN GL PTVHH</pattern>
+      <matchSeq start="1" end="53">MIVQLHCIARIHVVYLKEVDLLASLMLQSSSRRAPFLLDPQRQNGGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0A1Q1MNM8_9ROSA" ac="A0A1Q1MNM8" length="63" description="Hypothetical chloroplast RF15 OS=Ficus religiosa OX=66387 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <bits>94.0</bits>
+      <expectation>3.5e-24</expectation>
+      <identity>86.8</identity>
+      <positives>90.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLK+VD LASL +QSSSR APF LGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKKVDPLASLMLQSSSRGAPFFLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0ACS0NVY6_CUCMM" ac="A0ACS0NVY6" length="63" description="Ycf15 OS=Cucumis melo var. makuwa OX=1194695 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>231</score>
+      <bits>93.6</bits>
+      <expectation>4.9e-24</expectation>
+      <identity>86.8</identity>
+      <positives>90.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASL +QSSS RAPFLL PQR+N GL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLMLQSSSHRAPFLLDPQRKNGGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0ACS0NVU8_CUCMM" ac="A0ACS0NVU8" length="63" description="Ycf15 OS=Cucumis melo var. makuwa OX=1194695 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>231</score>
+      <bits>93.6</bits>
+      <expectation>4.9e-24</expectation>
+      <identity>86.8</identity>
+      <positives>90.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASL +QSSS RAPFLL PQR+N GL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLMLQSSSHRAPFLLDPQRKNGGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A1S4EU73_CUCME" ac="A0A1S4EU73" length="63" description="Hypothetical chloroplast protein OS=Cucumis melo OX=3656 GN=ORF70 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>231</score>
+      <bits>93.6</bits>
+      <expectation>4.9e-24</expectation>
+      <identity>86.8</identity>
+      <positives>90.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASL +QSSS RAPFLL PQR+N GL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLMLQSSSHRAPFLLDPQRKNGGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A166GJ44_COFCA" ac="A0A166GJ44" length="68" description="Ycf15 OS=Coffea canephora OX=49390 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>229</score>
+      <bits>92.8</bits>
+      <expectation>1.1e-23</expectation>
+      <identity>86.8</identity>
+      <positives>86.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASL    SSRRA FLLGPQRQNVG  PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLMAHPSSRRASFLLGPQRQNVGRVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A888ULB1_9ROSI" ac="A0A888ULB1" length="63" description="Ycf15 OS=Hemsleya zhejiangensis OX=447127 GN=orf70 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>228</score>
+      <bits>92.4</bits>
+      <expectation>1.4e-23</expectation>
+      <identity>86.8</identity>
+      <positives>88.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>M VQLHCIARIHVVYLKEVD LASL +QSSSRRAPFLL PQRQN GL PTVHH</pattern>
+      <matchSeq start="1" end="53">MIVQLHCIARIHVVYLKEVDFLASLMLQSSSRRAPFLLDPQRQNGGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0A0K0Q5V2_9CARY" ac="A0A0K0Q5V2" length="62" description="Hypothetical chloroplast protein RF15 OS=Carnegiea gigantea OX=171969 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>225</score>
+      <bits>91.3</bits>
+      <expectation>3.9e-23</expectation>
+      <identity>85.5</identity>
+      <positives>89.1</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVY--LKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MR+QLHCIARI VVY  LKEVDLLAS+ VQSSSRRAP LLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="55">MRIQLHCIARICVVYVYLKEVDLLASIIVQSSSRRAPLLLGPQRQNVGLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0ACS4P591_9ERIC" ac="A0ACS4P591" length="63" description="Uncharacterized protein OS=Camellia fascicularis OX=147913 GN=ACSBR1_023820 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>225</score>
+      <bits>91.3</bits>
+      <expectation>4e-23</expectation>
+      <identity>86.8</identity>
+      <positives>90.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCI+RIHVVYLKEV+LLASL VQSSSRRA FLLGPQRQNVGL P V H</pattern>
+      <matchSeq start="1" end="53">MRVQLHCISRIHVVYLKEVNLLASLMVQSSSRRALFLLGPQRQNVGLMPIVRH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A895GBV8_GARJA" ac="A0A895GBV8" length="68" description="Ycf15 OS=Gardenia jasminoides OX=114476 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>222</score>
+      <bits>90.1</bits>
+      <expectation>1.3e-22</expectation>
+      <identity>84.9</identity>
+      <positives>84.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEV LLASL    SSRRA FLLGPQRQNVG  PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARIHVVYLKEVGLLASLMAHPSSRRASFLLGPQRQNVGRVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0A023ZRE6_BETVV" ac="A0A023ZRE6" length="63" description="Hypothetical chloroplast RF15 OS=Beta vulgaris subsp. vulgaris OX=3555 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>220</score>
+      <bits>89.4</bits>
+      <expectation>2.3e-22</expectation>
+      <identity>84.9</identity>
+      <positives>88.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCIARI VVYLK ++ LASL VQSSSRRAP LLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQLHCIARICVVYLKMINHLASLIVQSSSRRAPLLLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0ACB8Z4F3_ARCLA" ac="A0ACB8Z4F3" length="143" description="Uncharacterized protein OS=Arctium lappa OX=4217 GN=L6452_32704 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>213</score>
+      <bits>86.7</bits>
+      <expectation>2.3e-20</expectation>
+      <identity>97.7</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="44">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQN</querySeq>
+      <pattern>MRV LHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQN</pattern>
+      <matchSeq start="1" end="44">MRVPLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0ACN2H376_MELAZ" ac="A0ACN2H376" length="128" description="Ycf15 (Fragment) OS=Melia azedarach OX=155640 GN=OWV82_025856 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>210</score>
+      <bits>85.5</bits>
+      <expectation>4.5e-20</expectation>
+      <identity>95.5</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="44">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQN</querySeq>
+      <pattern>M+VQLHCIARIHVVYLKEVDLLASL VQSSSRRAPFLLGPQRQN</pattern>
+      <matchSeq start="1" end="44">MKVQLHCIARIHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0A6A4QAR0_LUPAL" ac="A0A6A4QAR0" length="63" description="Ycf15 OS=Lupinus albus OX=3870 GN=Lalb_Chr07g0191621 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>205</score>
+      <bits>83.6</bits>
+      <expectation>4.6e-20</expectation>
+      <identity>77.4</identity>
+      <positives>83.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQ  CIAR HVVYLK+VDLL SL +QSS R APFLLGP RQNVG+ PTVHH</pattern>
+      <matchSeq start="1" end="53">MRVQPRCIARTHVVYLKQVDLLDSLMLQSSCRFAPFLLGPHRQNVGMVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0ACN2H261_MELAZ" ac="A0ACN2H261" length="129" description="Ycf15 (Fragment) OS=Melia azedarach OX=155640 GN=OWV82_026583 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>210</score>
+      <bits>85.5</bits>
+      <expectation>4.6e-20</expectation>
+      <identity>95.5</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="44">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQN</querySeq>
+      <pattern>M+VQLHCIARIHVVYLKEVDLLASL VQSSSRRAPFLLGPQRQN</pattern>
+      <matchSeq start="1" end="44">MKVQLHCIARIHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0ACN2H1D2_MELAZ" ac="A0ACN2H1D2" length="129" description="Ycf15 (Fragment) OS=Melia azedarach OX=155640 GN=OWV82_026469 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>210</score>
+      <bits>85.5</bits>
+      <expectation>4.6e-20</expectation>
+      <identity>95.5</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="44">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQN</querySeq>
+      <pattern>M+VQLHCIARIHVVYLKEVDLLASL VQSSSRRAPFLLGPQRQN</pattern>
+      <matchSeq start="1" end="44">MKVQLHCIARIHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0ACN2H377_MELAZ" ac="A0ACN2H377" length="137" description="Ycf15 OS=Melia azedarach OX=155640 GN=OWV82_025853 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>210</score>
+      <bits>85.5</bits>
+      <expectation>5.7e-20</expectation>
+      <identity>95.5</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="44">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQN</querySeq>
+      <pattern>M+VQLHCIARIHVVYLKEVDLLASL VQSSSRRAPFLLGPQRQN</pattern>
+      <matchSeq start="1" end="44">MKVQLHCIARIHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0ACN2H250_MELAZ" ac="A0ACN2H250" length="137" description="Ycf15 OS=Melia azedarach OX=155640 GN=OWV82_026230 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>210</score>
+      <bits>85.5</bits>
+      <expectation>5.7e-20</expectation>
+      <identity>95.5</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="44">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQN</querySeq>
+      <pattern>M+VQLHCIARIHVVYLKEVDLLASL VQSSSRRAPFLLGPQRQN</pattern>
+      <matchSeq start="1" end="44">MKVQLHCIARIHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0ACN2H125_MELAZ" ac="A0ACN2H125" length="137" description="Ycf15 OS=Melia azedarach OX=155640 GN=OWV82_026581 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>210</score>
+      <bits>85.5</bits>
+      <expectation>5.7e-20</expectation>
+      <identity>95.5</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="44">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQN</querySeq>
+      <pattern>M+VQLHCIARIHVVYLKEVDLLASL VQSSSRRAPFLLGPQRQN</pattern>
+      <matchSeq start="1" end="44">MKVQLHCIARIHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A1B4ZB91_IPONI" ac="A0A1B4ZB91" length="56" description="Hypothetical chloroplast RF15 OS=Ipomoea nil OX=35883 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>203</score>
+      <bits>82.8</bits>
+      <expectation>7.7e-20</expectation>
+      <identity>89.1</identity>
+      <positives>91.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="53">IARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+ARIHVVYLKEVDLLASL V  SSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="46">MARIHVVYLKEVDLLASLLVHFSSRRAPFLLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0A2T7ERS7_9POAL" ac="A0A2T7ERS7" length="63" description="Ycf15 OS=Panicum hallii var. hallii OX=1504633 GN=GQ55_2G238400 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>202</score>
+      <bits>82.4</bits>
+      <expectation>1.3e-19</expectation>
+      <identity>79.2</identity>
+      <positives>81.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MR QL CIARIHV YLK VDL ASL VQSSS  APFLLGPQR+NV L PTVHH</pattern>
+      <matchSeq start="1" end="53">MRTQLRCIARIHVPYLKRVDLCASLMVQSSSCGAPFLLGPQRKNVELVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0A385GMY6_9ASTE" ac="A0A385GMY6" length="66" description="Hypothetical chloroplast RF15 OS=Lennoa madreporoides OX=111108 GN=yc15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>202</score>
+      <bits>82.4</bits>
+      <expectation>1.4e-19</expectation>
+      <identity>83.0</identity>
+      <positives>84.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MR QLH   + HVVYLKEVDLLASL V SSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="51">MRGQLHY--QNHVVYLKEVDLLASLMVHSSSRRAPFLLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0A0C5GSW0_IPOBA" ac="A0A0C5GSW0" length="56" description="Hypothetical chloroplast RF15 OS=Ipomoea batatas OX=4120 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>198</score>
+      <bits>80.9</bits>
+      <expectation>4.5e-19</expectation>
+      <identity>87.0</identity>
+      <positives>89.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="53">IARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+ARIHVVYLKEVDLLASL V   SRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="46">MARIHVVYLKEVDLLASLLVHFPSRRAPFLLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A0D5W8W4_9ROSA" ac="A0A0D5W8W4" length="56" description="Hypothetical chloroplast RF15 OS=Morus mongolica OX=229049 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>193</score>
+      <bits>79.0</bits>
+      <expectation>2.6e-18</expectation>
+      <identity>84.8</identity>
+      <positives>91.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="53">IARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+ARIHVVYLK+VD LASL +QSSSR APFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="46">MARIHVVYLKKVDPLASLMLQSSSRGAPFLLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0ACN2H2L2_MELAZ" ac="A0ACN2H2L2" length="420" description="NAD(P)H-quinone oxidoreductase subunit 2, chloroplastic OS=Melia azedarach OX=155640 GN=OWV82_026077 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>210</score>
+      <bits>85.5</bits>
+      <expectation>3.5e-18</expectation>
+      <identity>95.5</identity>
+      <positives>97.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="44">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQN</querySeq>
+      <pattern>M+VQLHCIARIHVVYLKEVDLLASL VQSSSRRAPFLLGPQRQN</pattern>
+      <matchSeq start="1" end="44">MKVQLHCIARIHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0AAD5JGQ8_ACENE" ac="A0AAD5JGQ8" length="66" description="Uncharacterized protein OS=Acer negundo OX=4023 GN=LWI28_004895 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>184</score>
+      <bits>75.5</bits>
+      <expectation>7.9e-17</expectation>
+      <identity>88.4</identity>
+      <positives>93.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="53">IHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+HVVYLKEVDLLASL VQSSSRRAPFLLGPQRQNVGL  TV+H</pattern>
+      <matchSeq start="1" end="43">MHVVYLKEVDLLASLMVQSSSRRAPFLLGPQRQNVGLVLTVNH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0ACG4T6B8_9ASTR" ac="A0ACG4T6B8" length="117" description="NADH:quinone oxidoreductase/Mrp antiporter, membrane subunit OS=Helianthus anomalus OX=73274 GN=Hanom_Chr10g00954661 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>186</score>
+      <bits>76.3</bits>
+      <expectation>1.5e-16</expectation>
+      <identity>86.7</identity>
+      <positives>88.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="53">ARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>ARI VVYLKEVDLLASLTVQSSS RA FL+GPQRQNVG P TVHH</pattern>
+      <matchSeq start="73" end="117">ARIRVVYLKEVDLLASLTVQSSSPRALFLVGPQRQNVGQPSTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0AAN9RFI5_PSOTE" ac="A0AAN9RFI5" length="67" description="Uncharacterized protein OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_37284 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>182</score>
+      <bits>74.7</bits>
+      <expectation>1.6e-16</expectation>
+      <identity>81.8</identity>
+      <positives>88.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="53">RIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+ HVVYLK+VDLLASL +QSS RRAPFLLGPQRQNV L PTVHH</pattern>
+      <matchSeq start="20" end="63">KTHVVYLKKVDLLASLMLQSSCRRAPFLLGPQRQNVRLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0A6A4NJ63_LUPAL" ac="A0A6A4NJ63" length="57" description="Ycf15 OS=Lupinus albus OX=3870 GN=Lalb_Chr23g0274751 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>1.5e-15</expectation>
+      <identity>71.7</identity>
+      <positives>73.6</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQ HCI+R HVVYLKEVDLLAS           FLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="1" end="42">MRVQPHCISRTHVVYLKEVDLLAS-----------FLLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="F6KG91_JACVU" ac="F6KG91" length="44" description="Hypothetical chloroplast RF15 OS=Jacobaea vulgaris OX=98722 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>4.5e-15</expectation>
+      <identity>92.1</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="38">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLL</querySeq>
+      <pattern>MRVQLHCIA IHV+YLKEVDLLA LTVQSSSRRAPFLL</pattern>
+      <matchSeq start="1" end="38">MRVQLHCIAGIHVIYLKEVDLLAFLTVQSSSRRAPFLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0AAP0CNQ9_9ASTR" ac="A0AAP0CNQ9" length="984" description="ATP synthase subunit alpha, mitochondrial OS=Deinandra increscens subsp. villosa OX=3103831 GN=SSX86_020895 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>185</score>
+      <bits>75.9</bits>
+      <expectation>1.1e-14</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="38">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLL</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLL</pattern>
+      <matchSeq start="1" end="38">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0A4P8DMR7_9MYRT" ac="A0A4P8DMR7" length="64" description="Hypothetical chloroplast RF15 OS=Melastoma dodecandrum OX=130512 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>1.5e-14</expectation>
+      <identity>70.9</identity>
+      <positives>78.2</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVY--LKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>M  ++  IARIHVVY  LKEVDLLASL +QSS R APFLLGPQRQNVGL P  +H</pattern>
+      <matchSeq start="1" end="54">MNTRVKIIARIHVVYFDLKEVDLLASLMIQSSCR-APFLLGPQRQNVGLVPKANH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0AAN9KZR9_PHACN" ac="A0AAN9KZR9" length="299" description="Ribosomal protein S12 OS=Phaseolus coccineus OX=3886 GN=VNO80_33596 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>2e-14</expectation>
+      <identity>78.3</identity>
+      <positives>84.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="46">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVG</querySeq>
+      <pattern>MRVQ HCIAR HV+YLK+VDLLAS  +QSS R APFLLGPQRQN G</pattern>
+      <matchSeq start="164" end="209">MRVQPHCIARTHVIYLKKVDLLASFMLQSSCRGAPFLLGPQRQNSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0AAU9S4M0_THLAR" ac="A0AAU9S4M0" length="201" description="Uncharacterized protein OS=Thlaspi arvense OX=13288 GN=TAV2_LOCUS12107 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>177</score>
+      <bits>72.8</bits>
+      <expectation>2.1e-14</expectation>
+      <identity>94.7</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="53">LKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>LKEVDLLASL VQSSSRRAPFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="99" end="136">LKEVDLLASLMVQSSSRRAPFLLGPQRQNVGLMPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0AAN9RBE0_PSOTE" ac="A0AAN9RBE0" length="441" description="Ribosomal protein S7 OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_38367 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>3.6e-14</expectation>
+      <identity>78.3</identity>
+      <positives>84.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="46">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVG</querySeq>
+      <pattern>MRVQ HCIAR HV+YLK+VDLLAS  +QSS R APFLLGPQRQN G</pattern>
+      <matchSeq start="93" end="138">MRVQPHCIARTHVIYLKKVDLLASFMLQSSCRGAPFLLGPQRQNSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0AAN9N4D4_PSOTE" ac="A0AAN9N4D4" length="509" description="Ribosomal protein S12 OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_39601 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>3.8e-14</expectation>
+      <identity>78.3</identity>
+      <positives>84.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="46">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVG</querySeq>
+      <pattern>MRVQ HCIAR HV+YLK+VDLLAS  +QSS R APFLLGPQRQN G</pattern>
+      <matchSeq start="374" end="419">MRVQPHCIARTHVIYLKKVDLLASFMLQSSCRGAPFLLGPQRQNSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0AAN9RCI0_PSOTE" ac="A0AAN9RCI0" length="526" description="Ribosomal protein S7 OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_38530 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>3.8e-14</expectation>
+      <identity>78.3</identity>
+      <positives>84.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="46">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVG</querySeq>
+      <pattern>MRVQ HCIAR HV+YLK+VDLLAS  +QSS R APFLLGPQRQN G</pattern>
+      <matchSeq start="178" end="223">MRVQPHCIARTHVIYLKKVDLLASFMLQSSCRGAPFLLGPQRQNSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0AAN9RGB3_PSOTE" ac="A0AAN9RGB3" length="599" description="Ribosomal protein S12 OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_39819 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>3.8e-14</expectation>
+      <identity>78.3</identity>
+      <positives>84.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="46">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVG</querySeq>
+      <pattern>MRVQ HCIAR HV+YLK+VDLLAS  +QSS R APFLLGPQRQN G</pattern>
+      <matchSeq start="419" end="464">MRVQPHCIARTHVIYLKKVDLLASFMLQSSCRGAPFLLGPQRQNSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="A0AAN9R7T0_PSOTE" ac="A0AAN9R7T0" length="609" description="Ribosomal protein S7 OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_39349 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>3.8e-14</expectation>
+      <identity>78.3</identity>
+      <positives>84.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="46">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVG</querySeq>
+      <pattern>MRVQ HCIAR HV+YLK+VDLLAS  +QSS R APFLLGPQRQN G</pattern>
+      <matchSeq start="261" end="306">MRVQPHCIARTHVIYLKKVDLLASFMLQSSCRGAPFLLGPQRQNSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0A5J5S479_GOSBA" ac="A0A5J5S479" length="51" description="Uncharacterized protein OS=Gossypium barbadense OX=3634 GN=ES319_D03G148100v1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>4.3e-14</expectation>
+      <identity>75.6</identity>
+      <positives>82.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="45">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNV</querySeq>
+      <pattern>+  QLH I +IHV YL+EVDLLASL V SSS RAPFLLGPQRQNV</pattern>
+      <matchSeq start="6" end="50">LNAQLHSIVKIHVAYLEEVDLLASLMVLSSSCRAPFLLGPQRQNV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0A4P8DMR0_9MYRT" ac="A0A4P8DMR0" length="66" description="Hypothetical chloroplast RF15 OS=Melastoma dodecandrum OX=130512 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>6.2e-14</expectation>
+      <identity>69.1</identity>
+      <positives>78.2</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVY--LKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+  ++  IARIHVVY  LKEVDLLASL +QSS R APFLLGPQRQNVGL P  +H</pattern>
+      <matchSeq start="3" end="56">INTRVKIIARIHVVYFDLKEVDLLASLMIQSSCR-APFLLGPQRQNVGLVPKANH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0A4S8I720_MUSBA" ac="A0A4S8I720" length="72" description="Uncharacterized protein OS=Musa balbisiana OX=52838 GN=C4D60_Mb00t18090 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>3e-13</expectation>
+      <identity>86.8</identity>
+      <positives>89.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="53">LKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+K VDLLASLTVQ SSR APFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="25" end="62">VKMVDLLASLTVQPSSRGAPFLLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0ABY9BFJ0_VITVI" ac="A0ABY9BFJ0" length="68" description="Ycf15 OS=Vitis vinifera OX=29760 GN=VitviT2T_001310 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>7.7e-13</expectation>
+      <identity>60.3</identity>
+      <positives>69.0</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLT-----VQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLH I RIHVVYLKE  L + L      + +    +PFLLGPQRQN+GL PTVHH</pattern>
+      <matchSeq start="1" end="58">MRVQLHYIVRIHVVYLKEKRLTSLLLSWYNPLPAEPPFSPFLLGPQRQNIGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0A4V4H207_MUSBA" ac="A0A4V4H207" length="61" description="Uncharacterized protein OS=Musa balbisiana OX=52838 GN=C4D60_Mb00t10830 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <bits>65.1</bits>
+      <expectation>9.2e-13</expectation>
+      <identity>91.4</identity>
+      <positives>91.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="53">VDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>VDLLASLTVQ SSR APFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="17" end="51">VDLLASLTVQPSSRGAPFLLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0A4S8K4C4_MUSBA" ac="A0A4S8K4C4" length="145" description="Uncharacterized protein OS=Musa balbisiana OX=52838 GN=C4D60_Mb00t01300 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <bits>65.1</bits>
+      <expectation>6.8e-12</expectation>
+      <identity>91.4</identity>
+      <positives>91.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="53">VDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>VDLLASLTVQ SSR APFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="101" end="135">VDLLASLTVQPSSRGAPFLLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0A9E7H4Q9_9LILI" ac="A0A9E7H4Q9" length="72" description="Uncharacterized protein OS=Musa troglodytarum OX=320322 GN=MUK42_36052 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>6.9e-12</expectation>
+      <identity>81.6</identity>
+      <positives>86.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="53">LKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+K VDLLASL VQ SSR APFLLGPQ+QNVGL PTVHH</pattern>
+      <matchSeq start="25" end="62">VKMVDLLASLMVQPSSRGAPFLLGPQKQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0A0U1ZX68_9ROSI" ac="A0A0U1ZX68" length="32" description="Ycf15 OS=Euonymus japonicus OX=212708 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <bits>62.0</bits>
+      <expectation>8.4e-12</expectation>
+      <identity>96.9</identity>
+      <positives>96.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="32">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSR</querySeq>
+      <pattern>MRVQLHCIARIHVVYLKEVDLLASL VQSSSR</pattern>
+      <matchSeq start="1" end="32">MRVQLHCIARIHVVYLKEVDLLASLMVQSSSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0A9E7H8H4_9LILI" ac="A0A9E7H8H4" length="61" description="Ycf15 OS=Musa troglodytarum OX=320322 GN=MUK42_36052 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>2.2e-11</expectation>
+      <identity>85.7</identity>
+      <positives>88.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="53">VDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>VDLLASL VQ SSR APFLLGPQ+QNVGL PTVHH</pattern>
+      <matchSeq start="17" end="51">VDLLASLMVQPSSRGAPFLLGPQKQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A7T7FMB2_EXAAF" ac="A0A7T7FMB2" length="72" description="Ycf15 OS=Exacum affine OX=13525 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>4e-11</expectation>
+      <identity>86.1</identity>
+      <positives>86.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPF</querySeq>
+      <pattern>MRVQLHCIARI VVYLKEVD L SLT  SSSRRAPF</pattern>
+      <matchSeq start="1" end="36">MRVQLHCIARIPVVYLKEVDSLPSLTAHSSSRRAPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0AAN9L969_PHACN" ac="A0AAN9L969" length="137" description="Secreted protein OS=Phaseolus coccineus OX=3886 GN=VNO80_31236 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <bits>62.0</bits>
+      <expectation>9.1e-11</expectation>
+      <identity>83.3</identity>
+      <positives>88.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="53">EVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+VDLLASL +QSS RRAPFLLGPQRQNV L PTVHH</pattern>
+      <matchSeq start="98" end="133">KVDLLASLMLQSSCRRAPFLLGPQRQNVRLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0A873HR62_DURZI" ac="A0A873HR62" length="32" description="Ycf15-like protein OS=Durio zibethinus OX=66656 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>9.8e-11</expectation>
+      <identity>90.6</identity>
+      <positives>93.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="32">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSR</querySeq>
+      <pattern>M+ QLHCIARIHVVYLKEVDLLASL VQSSSR</pattern>
+      <matchSeq start="1" end="32">MKAQLHCIARIHVVYLKEVDLLASLMVQSSSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0AAV7FQM3_DENCH" ac="A0AAV7FQM3" length="129" description="Uncharacterized protein OS=Dendrobium chrysotoxum OX=161865 GN=IEQ34_023401 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1.1e-10</expectation>
+      <identity>67.3</identity>
+      <positives>71.4</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="53">LHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>LHC  +      + VDLLASL VQ SSR APF LGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="73" end="119">LHC--QNPCCIFEAVDLLASLMVQPSSRGAPFFLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0AAV7HA07_DENCH" ac="A0AAV7HA07" length="131" description="Uncharacterized protein OS=Dendrobium chrysotoxum OX=161865 GN=IEQ34_005395 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1.1e-10</expectation>
+      <identity>67.3</identity>
+      <positives>71.4</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="53">LHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>LHC  +      + VDLLASL VQ SSR APF LGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="75" end="121">LHC--QNPCCIFEAVDLLASLMVQPSSRGAPFFLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0AAN9S4J3_PSOTE" ac="A0AAN9S4J3" length="118" description="Uncharacterized protein OS=Psophocarpus tetragonolobus OX=3891 GN=VNO78_24363 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>2.4e-10</expectation>
+      <identity>60.8</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="53">VQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+  H  A   +     VDLLAS  +QSS RRAPFLLGPQRQNV L PTVHH</pattern>
+      <matchSeq start="64" end="114">ISTHFTAPPEIPSAPTVDLLASFMLQSSCRRAPFLLGPQRQNVRLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0A9E7GQL3_9LILI" ac="A0A9E7GQL3" length="72" description="Uncharacterized protein OS=Musa troglodytarum OX=320322 GN=MUK42_25823 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>135</score>
+      <bits>56.6</bits>
+      <expectation>2.7e-09</expectation>
+      <identity>73.7</identity>
+      <positives>78.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="53">LKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+K  +LL SL VQ SSR APFLL PQRQNVGL PTVHH</pattern>
+      <matchSeq start="25" end="62">VKMANLLTSLMVQPSSRGAPFLLDPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0A7N0SVK8_KALFE" ac="A0A7N0SVK8" length="32" description="Ycf15 OS=Kalanchoe fedtschenkoi OX=63787 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>3.3e-09</expectation>
+      <identity>84.4</identity>
+      <positives>93.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="32">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSR</querySeq>
+      <pattern>MRVQLHCIA IHVVYLKEVDLLASL ++SS+R</pattern>
+      <matchSeq start="1" end="32">MRVQLHCIAIIHVVYLKEVDLLASLMLESSNR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0A9E7GJK2_9LILI" ac="A0A9E7GJK2" length="61" description="Ycf15 OS=Musa troglodytarum OX=320322 GN=MUK42_25823 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>8.4e-09</expectation>
+      <identity>79.4</identity>
+      <positives>82.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="53">DLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+LL SL VQ SSR APFLL PQRQNVGL PTVHH</pattern>
+      <matchSeq start="18" end="51">NLLTSLMVQPSSRGAPFLLDPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0A9Q1JMK5_9CARY" ac="A0A9Q1JMK5" length="241" description="Uncharacterized protein OS=Carnegiea gigantea OX=171969 GN=Cgig2_032233 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>1.2e-08</expectation>
+      <identity>80.0</identity>
+      <positives>85.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="53">VDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>VDL+AS+ VQSSSRRAP LL PQRQNV L PTVHH</pattern>
+      <matchSeq start="200" end="234">VDLIASIIVQSSSRRAPLLLDPQRQNVRLAPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0AAV7FVQ0_DENCH" ac="A0AAV7FVQ0" length="141" description="Uncharacterized protein OS=Dendrobium chrysotoxum OX=161865 GN=IEQ34_023723 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>3.5e-08</expectation>
+      <identity>66.0</identity>
+      <positives>70.2</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="51">LHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTV</querySeq>
+      <pattern>LHC  +      + VDLLASL VQ SSR APF LGPQRQNVGL PTV</pattern>
+      <matchSeq start="73" end="117">LHC--QNPCCIFEAVDLLASLMVQPSSRGAPFFLGPQRQNVGLVPTV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0AAN7ETC7_QUERU" ac="A0AAN7ETC7" length="197" description="Uncharacterized protein OS=Quercus rubra OX=3512 GN=RGQ29_028344 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>1.6e-07</expectation>
+      <identity>80.0</identity>
+      <positives>82.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="39">LHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLG</querySeq>
+      <pattern>LHCIA IHVVYLKEVDLLA L +QS S  APFLLG</pattern>
+      <matchSeq start="82" end="116">LHCIAGIHVVYLKEVDLLAFLMLQSPSCGAPFLLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0A9E7HAS5_9LILI" ac="A0A9E7HAS5" length="38" description="Uncharacterized protein OS=Musa troglodytarum OX=320322 GN=MUK42_36052 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>3.5e-07</expectation>
+      <identity>85.2</identity>
+      <positives>88.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="27" end="53">VQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>VQ SSR APFLLGPQ+QNVGL PTVHH</pattern>
+      <matchSeq start="2" end="28">VQPSSRGAPFLLGPQKQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0AAQ3SBR4_VIGMU" ac="A0AAQ3SBR4" length="978" description="Small ribosomal subunit protein uS2c OS=Vigna mungo OX=3915 GN=V8G54_001378 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>128</score>
+      <bits>53.9</bits>
+      <expectation>6e-07</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="47">IHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGL</querySeq>
+      <pattern>+ + Y  EVDLLA L +QSS RRAPFLLGPQRQN GL</pattern>
+      <matchSeq start="303" end="339">VRIFYFLEVDLLAYLMLQSSCRRAPFLLGPQRQNKGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="A0A9E7GTH3_9LILI" ac="A0A9E7GTH3" length="38" description="Ycf15 OS=Musa troglodytarum OX=320322 GN=MUK42_12547 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>1e-06</expectation>
+      <identity>81.5</identity>
+      <positives>81.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="27" end="53">VQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>VQ SSR  PF LGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="2" end="28">VQPSSRETPFFLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0A9E7GKJ0_9LILI" ac="A0A9E7GKJ0" length="38" description="Uncharacterized protein OS=Musa troglodytarum OX=320322 GN=MUK42_25823 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>1.4e-06</expectation>
+      <identity>85.2</identity>
+      <positives>85.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="27" end="53">VQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>VQ SSR APFLL PQRQNVGL PTVHH</pattern>
+      <matchSeq start="2" end="28">VQPSSRGAPFLLDPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="A0A7J8T7I9_GOSDV" ac="A0A7J8T7I9" length="26" description="Ycf15 OS=Gossypium davidsonii OX=34287 GN=Godav_029348 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>1.7e-06</expectation>
+      <identity>88.0</identity>
+      <positives>96.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MRVQLHCIARIHVVYLKEVDLLASL</querySeq>
+      <pattern>M+ QLHCIA+IHVVYLKEVDLLASL</pattern>
+      <matchSeq start="1" end="25">MKAQLHCIAKIHVVYLKEVDLLASL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="TR" id="A0A7J8R092_GOSDV" ac="A0A7J8R092" length="61" description="Ycf15 OS=Gossypium davidsonii OX=34287 GN=Godav_019579 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>4.7e-06</expectation>
+      <identity>88.0</identity>
+      <positives>96.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MRVQLHCIARIHVVYLKEVDLLASL</querySeq>
+      <pattern>M+ QLHCIARIHVVYLK+VDLLASL</pattern>
+      <matchSeq start="1" end="25">MKAQLHCIARIHVVYLKKVDLLASL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="A0A843TTX9_COLES" ac="A0A843TTX9" length="165" description="Ycf15 OS=Colocasia esculenta OX=4460 GN=Taro_006879 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>1.2e-05</expectation>
+      <identity>69.2</identity>
+      <positives>76.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="41">VQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQ</querySeq>
+      <pattern>VQLHCIARIHVVYLK+VDLLASL   +   R+P  L PQ</pattern>
+      <matchSeq start="62" end="98">VQLHCIARIHVVYLKQVDLLASLHGTALFPRSP--LSPQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="A0AAV6HJ53_9ERIC" ac="A0AAV6HJ53" length="118" description="Ribosomal protein S12 OS=Rhododendron griersonianum OX=479676 GN=RHGRI_038799 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>1.6e-05</expectation>
+      <identity>88.0</identity>
+      <positives>96.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MRVQLHCIARIHVVYLKEVDLLASL</querySeq>
+      <pattern>MR++LHCIARIHVVYLKEVD LASL</pattern>
+      <matchSeq start="1" end="25">MRIELHCIARIHVVYLKEVDPLASL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="TR" id="A0A7U0FQC6_9ROSI" ac="A0A7U0FQC6" length="38" description="Ycf15 OS=Castanopsis carlesii OX=167382 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>108</score>
+      <bits>46.2</bits>
+      <expectation>1.7e-05</expectation>
+      <identity>77.8</identity>
+      <positives>85.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="27" end="53">VQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>+QS SR APFLLGPQR+N GL PTVHH</pattern>
+      <matchSeq start="2" end="28">LQSPSRGAPFLLGPQRKNGGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="A0AAW1M2B8_SAPOF" ac="A0AAW1M2B8" length="101" description="Uncharacterized protein OS=Saponaria officinalis OX=3572 GN=RND81_03G036300 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>108</score>
+      <bits>46.2</bits>
+      <expectation>6.3e-05</expectation>
+      <identity>52.8</identity>
+      <positives>52.8</positives>
+      <gaps>34</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>MRVQLHCI RI VVYLKEVDLL  L                    GL PTVHH</pattern>
+      <matchSeq start="57" end="91">MRVQLHCIVRICVVYLKEVDLLTPLI------------------EGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0ACE0NSX8_PRUAR" ac="A0ACE0NSX8" length="107" description="Uncharacterized protein OS=Prunus armeniaca OX=36596 GN=ARP2_LOCUS36976 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.0001</expectation>
+      <identity>84.0</identity>
+      <positives>92.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MRVQLHCIARIHVVYLKEVDLLASL</querySeq>
+      <pattern>MRVQ HCIA+IHVVYLKEVDLLA +</pattern>
+      <matchSeq start="1" end="25">MRVQPHCIAKIHVVYLKEVDLLAPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="TR" id="A0A843VPR1_COLES" ac="A0A843VPR1" length="113" description="MADF domain-containing protein OS=Colocasia esculenta OX=4460 GN=Taro_028198 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.00022</expectation>
+      <identity>87.5</identity>
+      <positives>91.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="25">RVQLHCIARIHVVYLKEVDLLASL</querySeq>
+      <pattern>RVQLHCIARIHVVYLK VDL +SL</pattern>
+      <matchSeq start="45" end="68">RVQLHCIARIHVVYLKYVDLFSSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0A0D2PYM8_GOSRA" ac="A0A0D2PYM8" length="89" description="Ycf15 OS=Gossypium raimondii OX=29730 GN=B456_002G003100 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.00028</expectation>
+      <identity>83.3</identity>
+      <positives>91.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="24">MRVQLHCIARIHVVYLKEVDLLAS</querySeq>
+      <pattern>M+VQL+CI RIHVVYLKEVDL AS</pattern>
+      <matchSeq start="1" end="24">MKVQLYCIVRIHVVYLKEVDLFAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="A0A7J8QY02_GOSDV" ac="A0A7J8QY02" length="93" description="Ycf15 OS=Gossypium davidsonii OX=34287 GN=Godav_018518 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.00031</expectation>
+      <identity>83.3</identity>
+      <positives>91.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="24">MRVQLHCIARIHVVYLKEVDLLAS</querySeq>
+      <pattern>M+VQL+CI RIHVVYLKEVDL AS</pattern>
+      <matchSeq start="1" end="24">MKVQLYCIVRIHVVYLKEVDLFAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="A0A4S8JA03_MUSBA" ac="A0A4S8JA03" length="169" description="Ycf15 OS=Musa balbisiana OX=52838 GN=C4D60_Mb03t14620 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.0013</expectation>
+      <identity>74.1</identity>
+      <positives>85.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="27">MRVQLHCIARIHVVYLKEVDLLASLTV</querySeq>
+      <pattern>MRVQLHCIARIHVVYLK+VD    L++</pattern>
+      <matchSeq start="1" end="27">MRVQLHCIARIHVVYLKQVDQRKLLSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="A0A3S3NT98_9MAGN" ac="A0A3S3NT98" length="122" description="Uncharacterized protein OS=Cinnamomum micranthum f. kanehirae OX=337451 GN=CKAN_02776700 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.002</expectation>
+      <identity>94.7</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="53">PFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>PFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="94" end="112">PFLLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="A0A9E8AFJ7_9MAGN" ac="A0A9E8AFJ7" length="76" description="Ycf15 OS=Plicosepalus acaciae OX=2993124 GN=ycf15 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.0025</expectation>
+      <identity>84.0</identity>
+      <positives>88.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="23">MRVQLHCIARIHVVY--LKEVDLLA</querySeq>
+      <pattern>MRVQLHCIARIHVVY  LKEVDL +</pattern>
+      <matchSeq start="1" end="25">MRVQLHCIARIHVVYLNLKEVDLFS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="TR" id="A0A3S3PC43_9MAGN" ac="A0A3S3PC43" length="437" description="Uncharacterized protein OS=Cinnamomum micranthum f. kanehirae OX=337451 GN=CKAN_02749800 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.0053</expectation>
+      <identity>94.7</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="53">PFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>PFLLGPQRQNVGL PTVHH</pattern>
+      <matchSeq start="409" end="427">PFLLGPQRQNVGLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0AAX6FR39_IRIPA" ac="A0AAX6FR39" length="130" description="Ycf15 OS=Iris pallida OX=29817 GN=M6B38_197255 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.02</expectation>
+      <identity>81.8</identity>
+      <positives>90.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="22">MRVQLHCIARIHVVYLKEVDLL</querySeq>
+      <pattern>MRVQLHCIARIHVVYLK++  L</pattern>
+      <matchSeq start="1" end="22">MRVQLHCIARIHVVYLKQLTSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="TR" id="A0ABY9CMJ1_VITVI" ac="A0ABY9CMJ1" length="135" description="Ribosomal protein S12 OS=Vitis vinifera OX=29760 GN=VitviT2T_014485 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.03</expectation>
+      <identity>76.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MRVQLHCIARIHVVYLKEVDLLASL</querySeq>
+      <pattern>MRVQLHCI RIHVVYLKE  L + L</pattern>
+      <matchSeq start="1" end="25">MRVQLHCIVRIHVVYLKEKRLTSLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="A0AAV0J0V4_9ROSI" ac="A0AAV0J0V4" length="19" description="Uncharacterized protein OS=Linum tenue OX=586396 GN=LITE_LOCUS12034 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.04</expectation>
+      <identity>89.5</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="19">MRVQLHCIARIHVVYLKEV</querySeq>
+      <pattern>MRVQLHCIARI+VVYLK V</pattern>
+      <matchSeq start="1" end="19">MRVQLHCIARIYVVYLKVV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="A0ABY9BIZ1_VITVI" ac="A0ABY9BIZ1" length="106" description="Uncharacterized protein OS=Vitis vinifera OX=29760 GN=VitviT2T_002599 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.27</expectation>
+      <identity>88.9</identity>
+      <positives>88.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="18">MRVQLHCIARIHVVYLKE</querySeq>
+      <pattern>MRVQLHCI RIHV YLKE</pattern>
+      <matchSeq start="1" end="18">MRVQLHCIVRIHVEYLKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="G7J101_MEDTR" ac="G7J101" length="871" description="Ribosomal protein S7 OS=Medicago truncatula OX=3880 GN=MTR_3g035660 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.1</expectation>
+      <identity>59.4</identity>
+      <positives>65.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="53">LASLTVQSSSRRAPFLLGPQRQNVGLPPTVHH</querySeq>
+      <pattern>L SL +   +  A FLLGPQRQN  L PTVHH</pattern>
+      <matchSeq start="27" end="58">LTSLLLGWYNPLAAFLLGPQRQNGRLVPTVHH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="A0A0D2NEB2_GOSRA" ac="A0A0D2NEB2" length="84" description="Uncharacterized protein OS=Gossypium raimondii OX=29730 GN=B456_005G170700 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>2.1</expectation>
+      <identity>68.0</identity>
+      <positives>76.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MRVQLHCIARIHVVYLKEVDLLASL</querySeq>
+      <pattern>M+ QL+CI    VVYLK VDLLASL</pattern>
+      <matchSeq start="1" end="25">MKSQLYCITIARVVYLKVVDLLASL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0A9W7XCI3_9POAL" ac="A0A9W7XCI3" length="138" description="Uncharacterized protein OS=Paspalum vaginatum OX=158149 GN=BS78_K082800 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>7.8</expectation>
+      <identity>50.0</identity>
+      <positives>50.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MRVQLHCIARIHVVYLKEVDLLASLTVQSSSRRAPFLLGP</querySeq>
+      <pattern>MR QL CIARIHV YLK        T   SS R   L  P</pattern>
+      <matchSeq start="84" end="123">MRTQLRCIARIHVPYLKRSTEKKCRTGADSSSRKKELTEP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

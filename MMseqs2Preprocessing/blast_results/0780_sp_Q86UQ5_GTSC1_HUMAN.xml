@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-204616-0801-71303236-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-204616-0801-71303236-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q86UQ5|GTSC1_HUMAN" type="PROTEIN" length="136"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:46:16+00:00" end="2026-11-13T20:48:58+00:00" search="P0Y0M0DT0H0M162.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="5">
+   <hit number="1" database="SP" id="GTSC1_HUMAN" ac="Q86UQ5" length="136" description="Gilles de la Tourette syndrome chromosomal region candidate gene 1 protein OS=Homo sapiens OX=9606 GN=GTSCR1 PE=5 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>738</score>
+      <bits>288.9</bits>
+      <expectation>6.5e-99</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="136">MQSDIYHPGHSFPSWVLCWVHSCGHEGHLRETAEIRKTHQNGDLQIRGGRGRRESTEIFQVASVTEGEESPPAICMEVFLFLWFIAPIYACVCRIFKIQVRNTVKNSSTASLAPSISTSEERQIRIERHHYHLYGQ</querySeq>
+      <pattern>MQSDIYHPGHSFPSWVLCWVHSCGHEGHLRETAEIRKTHQNGDLQIRGGRGRRESTEIFQVASVTEGEESPPAICMEVFLFLWFIAPIYACVCRIFKIQVRNTVKNSSTASLAPSISTSEERQIRIERHHYHLYGQ</pattern>
+      <matchSeq start="1" end="136">MQSDIYHPGHSFPSWVLCWVHSCGHEGHLRETAEIRKTHQNGDLQIRGGRGRRESTEIFQVASVTEGEESPPAICMEVFLFLWFIAPIYACVCRIFKIQVRNTVKNSSTASLAPSISTSEERQIRIERHHYHLYGQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0ACF8J510_SEMEN" ac="A0ACF8J510" length="135" description="Uncharacterized protein OS=Semnopithecus entellus OX=88029 GN=H8957_006433 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>594</score>
+      <bits>233.4</bits>
+      <expectation>5.8e-77</expectation>
+      <identity>83.8</identity>
+      <positives>88.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="136">MQSDIYHPGHSFPSWVLCWVHSCGHEGHLRETAEIRKTHQNGDLQIRGGRGRRESTEIFQVASVTEGEESPPAICMEVFLFLWFIAPIYACVCRIFKIQVRNTVKNSSTASLAPSISTSEERQIRIERHHYHLYGQ</querySeq>
+      <pattern>MQSDIYHPGHSFP+WVLCWVH CGHEGHLRE AEIRKTHQ+ DLQIRGGRGR E+TEI QVASVT GEE P   C  +FLFL  IAPIYACVCRIFKIQVRNTV+NSSTASLAPSIST+EERQIRIERHHY LY Q</pattern>
+      <matchSeq start="1" end="135">MQSDIYHPGHSFPNWVLCWVHPCGHEGHLREAAEIRKTHQHRDLQIRGGRGRSENTEILQVASVTGGEE-PVTTCHFMFLFLLCIAPIYACVCRIFKIQVRNTVRNSSTASLAPSISTNEERQIRIERHHYRLYCQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ABM0Q2R2_GALVR" ac="A0ABM0Q2R2" length="205" description="LOW QUALITY PROTEIN: Gilles de la Tourette syndrome chromosomal region candidate gene 1 protein OS=Galeopterus variegatus OX=482537 GN=GTSCR1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>356</score>
+      <bits>141.7</bits>
+      <expectation>8e-40</expectation>
+      <identity>50.6</identity>
+      <positives>59.1</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="131">QSDIYHPGHSFPSWVLCWVH---------SCG-------HEGHLRETAEI------------------RKTHQNGDLQIRGGRGRRESTEIFQVASVTEGEESPPAICMEVFLFLWFIAPIYACVCRIFKIQVRNTVKNSSTASLAPSISTSEERQIRIERHHY</querySeq>
+      <pattern>QS + +PGHSF  WVL WVH         SC        H  H  E  E                   + THQ+G LQ+R GR RRE  EI +VASV EGEES  AIC++VFLFL FIA IY  +CRIFKIQVR+TVK S TA  AP+  TS+E+QIRIE+HHY</pattern>
+      <matchSeq start="33" end="196">QSKVVYPGHSFXRWVLWWVHHVAMRTSQRSCTSTQDIMLHTVHGSEDWEWICPALPRSFVLIGQKSLPQTTHQHGALQVRXGRERREKREILRVASVAEGEESLLAICLQVFLFLLFIALIYLHICRIFKIQVRSTVKTSPTAGFAPTTGTSKEKQIRIEKHHY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A8X8D0M2_POPTO" ac="A0A8X8D0M2" length="1763" description="AAA+ ATPase domain-containing protein OS=Populus tomentosa OX=118781 GN=POTOM_020550 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>2.8</expectation>
+      <identity>29.1</identity>
+      <positives>46.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="111">FPSWVLCWVHSCGH-----EGHLRETAEIRKTHQNGDLQIRGGRGRRESTEIFQV-----ASVTEGEESPPAICMEVFLFLWFIAPIYACVCRIFKIQVRNTVKNSSTAS</querySeq>
+      <pattern>FPS V   V  C        G L  T ++R+ H + ++++RG RGR  +T I Q+     A + E   S       +  ++W  AP  +       ++V+NT  N+S AS</pattern>
+      <matchSeq start="1544" end="1651">FPSLVQVTVIQCPEMKFFSNGAL-STPKLRRVHFD-NVEMRGFRGRNLNTTIQQLSAQTKAQIAESSSSFYFFAKSLIRYIWLFAPFLSMSELTLDVKVKNTNYNTSVAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABN0UPP6_9GAMM" ac="A0ABN0UPP6" length="181" description="LPS-assembly lipoprotein LptE OS=Rhodanobacter caeni OX=657654 GN=lptE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>4.3</expectation>
+      <identity>33.3</identity>
+      <positives>50.7</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="74">DIYHPGHSFPSWVLCW----VHSCGHEGHLRETAEIRKTHQNGDLQIRGGRGRRESTEIFQVASVTEGEESPPAI</querySeq>
+      <pattern>+I  PG +F   ++      + +CG   HLR+TA +  + Q   L +RGG  +R  T   Q + VT  +ES P I</pattern>
+      <matchSeq start="2" end="74">NITRPGRAFRPLLMLLLATVITACGF--HLRQTAALPASMQRVHLDMRGGDFQRSLTRALQHSGVTVEDESGPGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

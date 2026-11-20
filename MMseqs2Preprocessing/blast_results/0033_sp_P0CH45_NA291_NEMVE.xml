@@ -1,0 +1,2541 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-144536-0868-42830904-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-144536-0868-42830904-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P0CH45|NA291_NEMVE" type="PROTEIN" length="85"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T14:45:36+00:00" end="2026-11-13T14:48:16+00:00" search="P0Y0M0DT0H0M160.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="148">
+   <hit number="1" database="SP" id="NA291_NEMVE" ac="P0CH45" length="85" description="Putative N.vectensis toxin 1 9 OS=Nematostella vectensis OX=45351 GN=v1g150294 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>459</score>
+      <bits>181.4</bits>
+      <expectation>5.6e-58</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</pattern>
+      <matchSeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="NA227_NEMVE" ac="B1NWS1" length="85" description="N.vectensis toxin 1 2 OS=Nematostella vectensis OX=45351 GN=v1g113065 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>459</score>
+      <bits>181.4</bits>
+      <expectation>5.6e-58</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</pattern>
+      <matchSeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="NA237_NEMVE" ac="P0CH90" length="85" description="N.vectensis toxin 1 4 OS=Nematostella vectensis OX=45351 GN=v1g113210 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>456</score>
+      <bits>180.3</bits>
+      <expectation>1.6e-57</expectation>
+      <identity>98.8</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MASFKIVIVCLALLVAVASARRRDMMSDDELDYH+SKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</pattern>
+      <matchSeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHYSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="NA240_NEMVE" ac="B1NWS8" length="85" description="N.vectensis toxin 1 6 OS=Nematostella vectensis OX=45351 GN=v1g113221 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>451</score>
+      <bits>178.3</bits>
+      <expectation>9.3e-57</expectation>
+      <identity>97.6</identity>
+      <positives>98.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MASFKIVIVCLALLVAVA ARRRDMMSDDELDYH+SKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</pattern>
+      <matchSeq start="1" end="85">MASFKIVIVCLALLVAVACARRRDMMSDDELDYHYSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="NA245_NEMVE" ac="B1NWR7" length="85" description="N.vectensis toxin 1 8 OS=Nematostella vectensis OX=45351 GN=v1g113209 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>444</score>
+      <bits>175.6</bits>
+      <expectation>1.1e-55</expectation>
+      <identity>96.5</identity>
+      <positives>97.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MASFKIVIVCLALLVAVA ARRRDMMSDDELD+H SKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</pattern>
+      <matchSeq start="1" end="85">MASFKIVIVCLALLVAVACARRRDMMSDDELDFHLSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="NA239_NEMVE" ac="P0CH46" length="85" description="N.vectensis toxin 1 5 OS=Nematostella vectensis OX=45351 GN=v1g113166 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>444</score>
+      <bits>175.6</bits>
+      <expectation>1.1e-55</expectation>
+      <identity>96.5</identity>
+      <positives>97.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MASFKIVIVCLALLVAVA ARRRDMMSDDELD+H SKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</pattern>
+      <matchSeq start="1" end="85">MASFKIVIVCLALLVAVACARRRDMMSDDELDFHLSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="NA228_NEMVE" ac="B1NWR6" length="85" description="N.vectensis toxin 1 3 OS=Nematostella vectensis OX=45351 GN=v1g113139 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>444</score>
+      <bits>175.6</bits>
+      <expectation>1.1e-55</expectation>
+      <identity>96.5</identity>
+      <positives>97.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MASFKIVIVCLALLVAVA ARRRDMMSDDELD+H SKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</pattern>
+      <matchSeq start="1" end="85">MASFKIVIVCLALLVAVACARRRDMMSDDELDFHLSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="NA225_NEMVE" ac="B1NWS4" length="85" description="N.vectensis toxin 1 1 OS=Nematostella vectensis OX=45351 GN=v1g113108 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>444</score>
+      <bits>175.6</bits>
+      <expectation>1.1e-55</expectation>
+      <identity>96.5</identity>
+      <positives>97.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MASFKIVIVCLALLVAVA ARRRDMMSDDELD+H SKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</pattern>
+      <matchSeq start="1" end="85">MASFKIVIVCLALLVAVACARRRDMMSDDELDFHLSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="NA241_NEMVE" ac="A7SCE5" length="85" description="N.vectensis toxin 1 7 OS=Nematostella vectensis OX=45351 GN=v1g113105 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>443</score>
+      <bits>175.3</bits>
+      <expectation>1.5e-55</expectation>
+      <identity>96.5</identity>
+      <positives>96.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>M SFKIVIVCLALLVAVASAR RDMMSDDE DYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</pattern>
+      <matchSeq start="1" end="85">MTSFKIVIVCLALLVAVASARSRDMMSDDERDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="NA21_THAAS" ac="D2KX92" length="84" description="Delta-thalatoxin-Tas1a OS=Thalassianthus aster OX=659516 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>229</score>
+      <bits>92.8</bits>
+      <expectation>6.5e-23</expectation>
+      <identity>51.8</identity>
+      <positives>69.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MA  KIV+V L L++AV++ RR D    D      +KR + C CD DGPDIRSA+L+G V +GSC  GW+KC SYY+++ADCC +</pattern>
+      <matchSeq start="1" end="81">MAYLKIVLVALMLVLAVSAMRRPDQQDQD---ISVAKR-VACKCDDDGPDIRSATLTGTVDLGSCDEGWEKCASYYTVIADCCRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="NA21_CRYAD" ac="D2KX90" length="84" description="Delta-thalatoxin-Cad1a OS=Cryptodendrum adhaesivum OX=659513 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>227</score>
+      <bits>92.0</bits>
+      <expectation>1.3e-22</expectation>
+      <identity>50.6</identity>
+      <positives>69.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MA  KIV+V L L++AV++ RR D    D      +KR + C CD DGPD+RSA+ +G V +GSC SGW+KC SYY+++ADCC +</pattern>
+      <matchSeq start="1" end="81">MAYLKIVLVALMLVLAVSAMRRPDQQDQD---ISVAKR-VACKCDDDGPDVRSATFTGTVDLGSCNSGWEKCASYYTVIADCCRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="NA2G3_STIGI" ac="Q76CA0" length="84" description="Delta-stichotoxin-Sgt3a OS=Stichodactyla gigantea OX=230562 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>219</score>
+      <bits>89.0</bits>
+      <expectation>2.2e-21</expectation>
+      <identity>51.8</identity>
+      <positives>69.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MA  KIV+V L L+VAV++ R  D    ++ D   +KR   C CD DGPDIRSA+L+G V +GSC  GW+KC S+Y+I+ADCC +</pattern>
+      <matchSeq start="1" end="81">MAYLKIVLVALMLVVAVSAMRLSDQ---EDQDISVAKRAA-CKCDDDGPDIRSATLTGTVDLGSCNEGWEKCASFYTILADCCRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="NA2X_HETHE" ac="D2KX91" length="84" description="Delta-thalatoxin-Hhe1a OS=Heterodactyla hemprichii OX=659514 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>217</score>
+      <bits>88.2</bits>
+      <expectation>4.4e-21</expectation>
+      <identity>51.8</identity>
+      <positives>67.1</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MA  KIV V L L++AV++ R  D    D      +KR + C CD DGPDIRSA+L+G V +GSC  GW+KC SYY++VADCC +</pattern>
+      <matchSeq start="1" end="81">MAYQKIVFVALMLVLAVSAMRLPDQQDQD---ISVAKR-VACKCDDDGPDIRSATLTGTVDLGSCNEGWEKCASYYTVVADCCRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="NV6_NEMVE" ac="P0DQR2" length="85" description="N.vectensis toxin 6 OS=Nematostella vectensis OX=45351 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>192</score>
+      <bits>78.6</bits>
+      <expectation>2.8e-17</expectation>
+      <identity>48.9</identity>
+      <positives>55.6</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDEL--DYH--FSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKC-KSYYSIVADCCNQ</querySeq>
+      <pattern>M SFK VIVCL L V +  AR R +  DDE+  DYH         C CD DG     A  SG VW G+CPSGW  C  S+YS  A+CC Q</pattern>
+      <matchSeq start="1" end="85">MISFKTVIVCLFLWVVIIGARHRPVKLDDEIFRDYHIDIDPSKSSCRCDDDG-----AEGSGTVWYGNCPSGWAMCTSSHYSAFAECCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="NA126_ANEVI" ac="P0DL54" length="80" description="Delta-actitoxin-Avd1e 3 OS=Anemonia viridis OX=51769 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>7.1e-17</expectation>
+      <identity>50.0</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D + +   +KRGIPC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC Q</pattern>
+      <matchSeq start="23" end="80">DQDANEDINKRGIPCLCDSDGPSVRGNTLSGIIWLAGCPSGWHNCKKHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="NA125_ANEVI" ac="P0DL53" length="80" description="Delta-actitoxin-Avd1e 2 OS=Anemonia viridis OX=51769 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>7.1e-17</expectation>
+      <identity>50.0</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D + +   +KRGIPC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC Q</pattern>
+      <matchSeq start="23" end="80">DQDANEDINKRGIPCLCDSDGPSVRGNTLSGIIWLAGCPSGWHNCKKHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="NA124_ANEVI" ac="P0DL52" length="80" description="Delta-actitoxin-Avd1e 1 OS=Anemonia viridis OX=51769 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>7.1e-17</expectation>
+      <identity>50.0</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D + +   +KRGIPC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC Q</pattern>
+      <matchSeq start="23" end="80">DQDANEDINKRGIPCLCDSDGPSVRGNTLSGIIWLAGCPSGWHNCKKHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0A0S1M143_ANESU" ac="A0A0S1M143" length="80" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>188</score>
+      <bits>77.0</bits>
+      <expectation>1e-16</expectation>
+      <identity>45.9</identity>
+      <positives>58.1</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="85">ALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>A  + V SA  +D   D       +KRGIPC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC Q</pattern>
+      <matchSeq start="13" end="80">AAFMLVVSAIDQDAYED------INKRGIPCLCDSDGPSVRGNTLSGIIWLAGCPSGWHNCKKHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="NA12_ANEVI" ac="P0DL49" length="80" description="Delta-actitoxin-Avd1c 1 OS=Anemonia viridis OX=51769 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>188</score>
+      <bits>77.0</bits>
+      <expectation>1e-16</expectation>
+      <identity>48.3</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D + +   +KRG+PC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC Q</pattern>
+      <matchSeq start="23" end="80">DQDANEDINKRGVPCLCDSDGPSVRGNTLSGIIWLAGCPSGWHNCKKHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="NA123_ANEVI" ac="P0DL51" length="80" description="Delta-actitoxin-Avd1c 3 OS=Anemonia viridis OX=51769 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>188</score>
+      <bits>77.0</bits>
+      <expectation>1e-16</expectation>
+      <identity>48.3</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D + +   +KRG+PC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC Q</pattern>
+      <matchSeq start="23" end="80">DQDANEDINKRGVPCLCDSDGPSVRGNTLSGIIWLAGCPSGWHNCKKHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="SP" id="NA122_ANEVI" ac="P0DL50" length="80" description="Delta-actitoxin-Avd1c 2 OS=Anemonia viridis OX=51769 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>188</score>
+      <bits>77.0</bits>
+      <expectation>1e-16</expectation>
+      <identity>48.3</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D + +   +KRG+PC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC Q</pattern>
+      <matchSeq start="23" end="80">DQDANEDINKRGVPCLCDSDGPSVRGNTLSGIIWLAGCPSGWHNCKKHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A977R5J6_HETMG" ac="A0A977R5J6" length="81" description="RpIII OS=Heteractis magnifica OX=38281 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>185</score>
+      <bits>75.9</bits>
+      <expectation>3e-16</expectation>
+      <identity>45.9</identity>
+      <positives>62.4</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MA  KIV+V L L+ AV++ R  D       D    KRG  C CD +GP++R+A L+G V +G C  GW+KC SYYS +A+CC +</pattern>
+      <matchSeq start="1" end="78">MAYLKIVLVVLMLVFAVSAMRLPDQ------DISAVKRG-NCKCDDEGPNVRTAPLTGYVDLGYCNEGWEKCASYYSPIAECCRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A0S1M148_ANESU" ac="A0A0S1M148" length="79" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>184</score>
+      <bits>75.5</bits>
+      <expectation>4e-16</expectation>
+      <identity>49.1</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="85">DELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D+  Y  +KRG+PC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC +</pattern>
+      <matchSeq start="23" end="79">DQDAYDVNKRGVPCLCDSDGPSVRGNTLSGILWLAGCPSGWHNCKKHGPTIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="SP" id="NA12D_ANEVI" ac="B1NWT7" length="79" description="Delta-actitoxin-Avd1c 4 OS=Anemonia viridis OX=51769 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <bits>75.1</bits>
+      <expectation>5.7e-16</expectation>
+      <identity>54.0</identity>
+      <positives>70.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="36" end="85">SKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+KRG+PC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC Q</pattern>
+      <matchSeq start="30" end="79">NKRGVPCLCDSDGPSVRGNTLSGIIWLAGCPSGWHNCKKHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A0S1M161_ANESU" ac="A0A0S1M161" length="82" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <bits>75.1</bits>
+      <expectation>6.1e-16</expectation>
+      <identity>43.8</identity>
+      <positives>60.3</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="85">LLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+LV  A+A  +D   D       +KRG+PC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC +</pattern>
+      <matchSeq start="16" end="82">MLVVSAAAIDQDSYED------INKRGVPCLCDSDGPSVRGNTLSGILWLAGCPSGWHNCKKHGPTIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="SP" id="NA24_STIHA" ac="B1B5I9" length="84" description="Delta-stichotoxin-Shd3a OS=Stichodactyla haddoni OX=475174 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>181</score>
+      <bits>74.3</bits>
+      <expectation>1.3e-15</expectation>
+      <identity>44.7</identity>
+      <positives>61.2</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MA  KIV+V L L++ V++ R  D    ++ D    KR   C CD DGPDIRSA+L+G V   +C  GW+KC + Y+ VA CC +</pattern>
+      <matchSeq start="1" end="81">MAYLKIVLVALMLVLGVSAMRLSDQ---EDQDVSVVKRAA-CKCDDDGPDIRSATLTGTVDFWNCNEGWEKCTAVYTAVASCCRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A4D8XK37_OULSP" ac="A0A4D8XK37" length="75" description="mRNA (Fragment) OS=Oulactis sp. OX=2093647 GN=U-AITX-Oulsp4 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>1.5e-15</expectation>
+      <identity>41.2</identity>
+      <positives>60.0</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>I++V  A+++++ASA         E D   +KRG+ C CDSDGP +   +L+G +WM  CPSGW  CK++   V  CC Q</pattern>
+      <matchSeq start="5" end="75">IILVIAAVVLSLASA---------EEDEGMAKRGVACLCDSDGPSVHGNTLTGTIWMFGCPSGWHNCKAHGPTVGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A0S1M139_ANESU" ac="A0A0S1M139" length="80" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>1.7e-15</expectation>
+      <identity>43.2</identity>
+      <positives>58.1</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="85">ALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>A  + V SA  +D   D       +KRG+PC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC +</pattern>
+      <matchSeq start="13" end="80">AAFMLVVSAIDQDAYED------VNKRGVPCLCDSDGPSVRGNTLSGILWLAGCPSGWHNCKKHGPTIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A4D8XMY6_9CNID" ac="A0A4D8XMY6" length="74" description="mRNA (Fragment) OS=Rhodactis sp. MM-2018 OX=2283100 GN=U-DCTX-Rhosp1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>2e-15</expectation>
+      <identity>42.5</identity>
+      <positives>58.8</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>I+ V  A+ +++ASA   DMM +         RG PC C+SDGP +R  +LSGI+W+  CPSGW  CK++      CC Q</pattern>
+      <matchSeq start="5" end="74">IIFVIAAVFLSLASAEE-DMMEN---------RGAPCLCNSDGPSVRGNTLSGILWIAGCPSGWHNCKAHRPTTGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A4D8XKT5_OULSP" ac="A0A4D8XKT5" length="76" description="mRNA OS=Oulactis sp. OX=2093647 GN=U-AITX-Oulsp19 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>178</score>
+      <bits>73.2</bits>
+      <expectation>3e-15</expectation>
+      <identity>42.0</identity>
+      <positives>60.5</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRG-IPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>I++V  A+ +++ASA         E D   +KRG IPC CDSDGP +   +L+GI+W+  CPSGW  CK++   +  CC Q</pattern>
+      <matchSeq start="5" end="76">IILVIAAVFLSLASA---------EEDAGMAKRGGIPCLCDSDGPSVHGNTLTGIIWLTGCPSGWHNCKAHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="D0VLT9_URTCR" ac="D0VLT9" length="82" description="Sodium channel neurotoxin OS=Urticina crassicornis OX=45621 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>178</score>
+      <bits>73.2</bits>
+      <expectation>3.5e-15</expectation>
+      <identity>53.0</identity>
+      <positives>63.9</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="83">MASFKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCC</querySeq>
+      <pattern>MAS KIV+V L LL  V SARR   +S  E +    KR IPC CD DGP +R  +LSG V   +C +GWKKC S+Y+ VA CC</pattern>
+      <matchSeq start="1" end="77">MASLKIVLVALMLLYTV-SARR---LSAPEEEKVIEKR-IPCRCDIDGPSVRG-TLSGSVDPWNCNTGWKKCTSFYTAVASCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="SP" id="NA1A_CONGI" ac="P0C280" length="47" description="Delta-actitoxin-Cgg1a OS=Condylactis gigantea OX=47073 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>4.2e-15</expectation>
+      <identity>55.3</identity>
+      <positives>70.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP +   +LSG VW+GSC SGW KC   Y+I  +CC +</pattern>
+      <matchSeq start="1" end="47">GVPCRCDSDGPSVHGNTLSGTVWVGSCASGWHKCNDEYNIAYECCKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="SP" id="NA1G2_STIGI" ac="Q76CA3" length="74" description="Delta-stichotoxin-Sgt2a OS=Stichodactyla gigantea OX=230562 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>8.2e-15</expectation>
+      <identity>42.5</identity>
+      <positives>60.0</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>I++V  A+ + +ASA   +       D + +KRG+PC CDSDGP +R  +L+G VW+  CPSGW KC+   S    CC Q</pattern>
+      <matchSeq start="5" end="74">IILVFAAVFLTLASAEVSE-------DVNMAKRGVPCRCDSDGPHVRGNTLTGTVWVFGCPSGWHKCQKGSS---TCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="SP" id="NA21_STIHL" ac="P19651" length="48" description="Delta-stichotoxin-She1a OS=Stichodactyla helianthus OX=6123 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>173</score>
+      <bits>71.2</bits>
+      <expectation>8.8e-15</expectation>
+      <identity>61.4</identity>
+      <positives>81.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="85">CACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>C CD +GPDIR+A L+G V +GSC +GW+KC SYY+I+ADCC +</pattern>
+      <matchSeq start="3" end="46">CKCDDEGPDIRTAPLTGTVDLGSCNAGWEKCASYYTIIADCCRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="SP" id="NA12_ANTFU" ac="P10454" length="48" description="Delta-actitoxin-Afv1b OS=Anthopleura fuscoviridis OX=6111 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>173</score>
+      <bits>71.2</bits>
+      <expectation>8.8e-15</expectation>
+      <identity>53.2</identity>
+      <positives>70.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP +R  +LSGI+W+  CPSGW  CK++   +  CC Q</pattern>
+      <matchSeq start="2" end="48">GVPCLCDSDGPSVRGNTLSGIIWLAGCPSGWHNCKAHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="SP" id="NA12_ANESU" ac="P01528" length="47" description="Delta-actitoxin-Avd1c OS=Anemonia sulcata OX=6108 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>172</score>
+      <bits>70.9</bits>
+      <expectation>1.2e-14</expectation>
+      <identity>53.2</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC Q</pattern>
+      <matchSeq start="1" end="47">GVPCLCDSDGPSVRGNTLSGIIWLAGCPSGWHNCKKHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="SP" id="NA122_ANTEL" ac="P0C1F3" length="47" description="Delta-actitoxin-Ael1d OS=Anthopleura elegantissima OX=6110 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>172</score>
+      <bits>70.9</bits>
+      <expectation>1.2e-14</expectation>
+      <identity>53.2</identity>
+      <positives>72.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP++R  +LSGI+W+  CPSGW  CK++   +  CC Q</pattern>
+      <matchSeq start="1" end="47">GVPCLCDSDGPNVRGNTLSGILWLAGCPSGWHNCKAHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="SP" id="NA1C_ANTEL" ac="P01532" length="47" description="Delta-actitoxin-Ael1a OS=Anthopleura elegantissima OX=6110 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>171</score>
+      <bits>70.5</bits>
+      <expectation>1.7e-14</expectation>
+      <identity>53.2</identity>
+      <positives>70.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP +R  +LSGI+W+  CPSGW  CK++   +  CC Q</pattern>
+      <matchSeq start="1" end="47">GVPCLCDSDGPSVRGNTLSGILWLAGCPSGWHNCKAHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="SP" id="NA1B_CONGI" ac="P0CH42" length="47" description="Delta-actitoxin-Cgg1b OS=Condylactis gigantea OX=47073 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>2.5e-14</expectation>
+      <identity>53.2</identity>
+      <positives>72.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP +   +LSG VW+GSC SGW KC + ++I  +CC +</pattern>
+      <matchSeq start="1" end="47">GVPCRCDSDGPSVHGNTLSGTVWVGSCASGWHKCNTEHNIFHECCKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="SP" id="NA13_ANTEL" ac="P0C1F1" length="47" description="Delta-actitoxin-Ael1c OS=Anthopleura elegantissima OX=6110 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>3.5e-14</expectation>
+      <identity>53.2</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP++R  +LSG  W+  CPSGW  CKS   ++  CC Q</pattern>
+      <matchSeq start="1" end="47">GVPCLCDSDGPNVRGNTLSGTYWLAGCPSGWHNCKSSGPLIGACCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="SP" id="NA13_ANTMC" ac="P69928" length="74" description="Delta-actitoxin-Amc3a OS=Antheopsis maculata OX=280228 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>6.7e-14</expectation>
+      <identity>41.2</identity>
+      <positives>56.2</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>I++V  A+ + +ASA       +D L     KRG PC CDSDGP +    LSG +W+ SC +GW KC S   +  +CC Q</pattern>
+      <matchSeq start="5" end="73">IILVVAAVFLGMASAE------EDVL-----KRGFPCRCDSDGPSVHGNPLSGTIWVTSCATGWHKCNSENELFHECCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="SP" id="NA11_RADCR" ac="P0C5G5" length="47" description="Delta-stichotoxin-Hcr3a OS=Radianthus crispa OX=3122430 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>167</score>
+      <bits>68.9</bits>
+      <expectation>7e-14</expectation>
+      <identity>48.9</identity>
+      <positives>72.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP +   +LSG +W+GSC +GW KC + +++  +CC Q</pattern>
+      <matchSeq start="1" end="47">GVPCRCDSDGPSVHGNTLSGTIWVGSCETGWHKCNTEHNLFHECCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="SP" id="NA15_ANESU" ac="P01529" length="46" description="Delta-actitoxin-Avd1d OS=Anemonia sulcata OX=6108 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>9.8e-14</expectation>
+      <identity>53.3</identity>
+      <positives>68.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="83">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCC</querySeq>
+      <pattern>G+PC CDSDGP +R  +LSGI+W+  CPSGW  CK +   +  CC</pattern>
+      <matchSeq start="1" end="45">GVPCLCDSDGPSVRGNTLSGILWLAGCPSGWHNCKKHKPTIGWCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="SP" id="NA14_ANTXA" ac="P0C5G1" length="47" description="Delta-actitoxin-Axm1f OS=Anthopleura xanthogrammica OX=6112 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>1.4e-13</expectation>
+      <identity>51.1</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP +R  SLSGI+W+  CPSGW  C+ +   +  CC +</pattern>
+      <matchSeq start="1" end="47">GVPCLCDSDGPSVRGNSLSGIIWLFGCPSGWHNCRDHGPTIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A0S1M168_ANESU" ac="A0A0S1M168" length="83" description="Type III potassium channel toxin protein OS=Anemonia sulcata OX=6108 GN=KTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>165</score>
+      <bits>68.2</bits>
+      <expectation>3.4e-13</expectation>
+      <identity>37.9</identity>
+      <positives>54.0</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWM-------GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>++++  A+ +AVASA        DE D   ++RGI C C SDGP +R  +LSG +WM         CP GW  C     +++DCC Q</pattern>
+      <matchSeq start="5" end="83">MILLFAAVFLAVASA--------DEYDVDIARRGISCLCVSDGPSVRGNTLSGTIWMKTGGYSANGCPKGWHFCGKSRGLLSDCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="SP" id="NA12A_ANTS7" ac="P0C5F4" length="47" description="Delta-actitoxin-Aspp1a OS=Anthopleura sp. (strain 'Zhanjiang') OX=462333 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>4e-13</expectation>
+      <identity>48.9</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP +R  +LSG +W+  CPSGW  CK++   +  CC +</pattern>
+      <matchSeq start="1" end="47">GVPCLCDSDGPSVRGNTLSGTLWLAGCPSGWHNCKAHGPTIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="SP" id="NA11_ANTEL" ac="P0C1F0" length="47" description="Delta-actitoxin-Ael1b OS=Anthopleura elegantissima OX=6110 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>4e-13</expectation>
+      <identity>53.2</identity>
+      <positives>63.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>GI C CDSDGP +R  +LSG  W+  CPSGW  CKS   ++  CC Q</pattern>
+      <matchSeq start="1" end="47">GIACLCDSDGPSVRGNTLSGTYWLAGCPSGWHNCKSSGQLIGACCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0A0S1M175_ANESU" ac="A0A0S1M175" length="51" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>4.4e-13</expectation>
+      <identity>52.0</identity>
+      <positives>66.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="85">KRGIPCACDSDGPDIRSASLSGIVWM-GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>KRG+PC CDSDGP +R  SLSG +W+ G CPSGW  C+     +  CC +</pattern>
+      <matchSeq start="2" end="51">KRGVPCRCDSDGPTVRGNSLSGTLWLTGGCPSGWHNCRGSGPFIGYCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="SP" id="NA11_ANTFU" ac="P10453" length="47" description="Delta-actitoxin-Afv1a OS=Anthopleura fuscoviridis OX=6111 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>5.7e-13</expectation>
+      <identity>48.9</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+ C CDSDGP++R  +LSG +W+  CPSGW  CK++   +  CC Q</pattern>
+      <matchSeq start="1" end="47">GVACLCDSDGPNVRGNTLSGTIWLAGCPSGWHNCKAHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="SP" id="NA11_ACTEQ" ac="Q9NJQ2" length="82" description="Delta-actitoxin-Aeq2a OS=Actinia equina OX=6106 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>9.5e-13</expectation>
+      <identity>39.1</identity>
+      <positives>55.2</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWM-------GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+++V  A+ +A+ASA       D+++D   +KRGIPC C SDGP  R   LSG +WM         CP GW  C     +++DCC Q</pattern>
+      <matchSeq start="5" end="82">MILVFAAVFLALASA-------DEDVD--IAKRGIPCLCVSDGPSTRGNKLSGTIWMKTGGYGGNGCPKGWHFCGKSRGLLSDCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="SP" id="NA17A_ANTS7" ac="P0C5F5" length="47" description="Delta-actitoxin-Aspp1b OS=Anthopleura sp. (strain 'Zhanjiang') OX=462333 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>1.2e-12</expectation>
+      <identity>46.8</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP +   +LSG +W+  CPSGW  CK++   +  CC +</pattern>
+      <matchSeq start="1" end="47">GVPCLCDSDGPSVHGNTLSGTIWLAGCPSGWHNCKAHGPTIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="SP" id="NA116_ANTS7" ac="P0C5F7" length="47" description="Delta-actitoxin-Aspp1d OS=Anthopleura sp. (strain 'Zhanjiang') OX=462333 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>1.2e-12</expectation>
+      <identity>48.9</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP +R  +LSG +W+  CPSGW  CK++   +  CC +</pattern>
+      <matchSeq start="1" end="47">GVPCLCDSDGPSVRGNTLSGTLWLFGCPSGWHNCKAHGPTIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0A6P8H9T6_ACTTE" ac="A0A6P8H9T6" length="96" description="Delta-actitoxin-Aeq2a-like OS=Actinia tenebrosa OX=6105 GN=LOC116287014 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>1.4e-12</expectation>
+      <identity>40.0</identity>
+      <positives>51.6</positives>
+      <gaps>19</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRR--------DMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWM-------GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>I++V  A+L  VA+A R         D +S DE     +KRG+ C C SDGP+ R  +LSG VWM         CP+GWK C       +DCC Q</pattern>
+      <matchSeq start="5" end="96">IILVFAAVLFTVATADRYFDDYNQEYDDLSGDE---SMAKRGVSCLCTSDGPNTRGNTLSGTVWMKAPGYSNNGCPTGWKFCGKSRGFFSDCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A4D8Y629_9CNID" ac="A0A4D8Y629" length="74" description="mRNA OS=Oulactis muscosa OX=1742620 GN=U-AITX-Oulspp1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>160</score>
+      <bits>66.2</bits>
+      <expectation>1.6e-12</expectation>
+      <identity>42.5</identity>
+      <positives>57.5</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>I++V  A+L+++ASA       DD +     KRG PC CDSDGP  R  +LSG VW+  CPSGW  C   +  +  CC +</pattern>
+      <matchSeq start="5" end="73">ILLVLAAVLLSLASA------DDDSI---MEKRGAPCLCDSDGPSGRGNTLSGTVWVFGCPSGWHGCAKKF--IGACCKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A4D8XKU4_OULSP" ac="A0A4D8XKU4" length="74" description="mRNA OS=Oulactis sp. OX=2093647 GN=U-AITX-Oulspp1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>160</score>
+      <bits>66.2</bits>
+      <expectation>1.6e-12</expectation>
+      <identity>42.5</identity>
+      <positives>57.5</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>I++V  A+L+++ASA       DD +     KRG PC CDSDGP  R  +LSG VW+  CPSGW  C   +  +  CC +</pattern>
+      <matchSeq start="5" end="73">ILLVLAAVLLSLASA------DDDSI---MEKRGAPCLCDSDGPSGRGNTLSGTVWVFGCPSGWHGCAKKF--IGACCKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="SP" id="NA11_ANTXA" ac="P0C5F8" length="47" description="Delta-actitoxin-Axm1c OS=Anthopleura xanthogrammica OX=6112 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>1.6e-12</expectation>
+      <identity>51.1</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP++R  +LSG  W+  CPSGW  CKS    +  CC +</pattern>
+      <matchSeq start="1" end="47">GVPCLCDSDGPNVRGNTLSGTYWLAGCPSGWHNCKSSGPNIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0A0S1M166_ANESU" ac="A0A0S1M166" length="58" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <bits>65.1</bits>
+      <expectation>3e-12</expectation>
+      <identity>47.4</identity>
+      <positives>61.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="85">DELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D  D +  KRG PC C SDGP+ R  S+SG +W+  CPSGW  C+   +I+  CC Q</pattern>
+      <matchSeq start="2" end="57">DANDVNMVKRGAPCLCKSDGPNTRGNSMSGTIWVFGCPSGWNDCEG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0A0S1M165_ANESU" ac="A0A0S1M165" length="80" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>3.7e-12</expectation>
+      <identity>45.0</identity>
+      <positives>60.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="85">MSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+  D  D +  KRG PC C SDGP+ R  S+SG +W+  CPSGW  C+   +I+  CC Q</pattern>
+      <matchSeq start="22" end="80">IDQDANDVNMVKRGAPCLCKSDGPNTRGNSMSGTIWVFGCPSGWNDCEG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A0S1M158_ANESU" ac="A0A0S1M158" length="80" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>3.7e-12</expectation>
+      <identity>45.0</identity>
+      <positives>60.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="85">MSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+  D  D +  KRG PC C SDGP+ R  S+SG +W+  CPSGW  C+   +I+  CC Q</pattern>
+      <matchSeq start="22" end="80">IDQDANDVNMVKRGAPCLCKSDGPNTRGNSMSGTIWVFGCPSGWNDCEG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0A0S1M132_ANESU" ac="A0A0S1M132" length="81" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>3.7e-12</expectation>
+      <identity>46.6</identity>
+      <positives>60.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D   D +  KRG PC C SDGP+ R  S+SG +W+  CPSGW  C+   +I+  CC Q</pattern>
+      <matchSeq start="25" end="81">DANEDVNMVKRGAPCLCKSDGPNTRGNSMSGTIWVFGCPSGWNDCEG-RAIIGXCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="SP" id="NA131_ACTEQ" ac="B1NWU5" length="82" description="Delta-actitoxin-Aeq2c OS=Actinia equina OX=6106 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>3.8e-12</expectation>
+      <identity>39.1</identity>
+      <positives>55.2</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWM-------GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+++V  A+ +A+ASA       D+++D   +KRGIPC C SDGP  R  +LSGI+WM         CP GW  C       +DCC +</pattern>
+      <matchSeq start="5" end="82">MILVFAAVFLALASA-------DEDVD--IAKRGIPCLCVSDGPSTRGNNLSGIMWMKTGGYGGNGCPKGWHFCGKSRGFFSDCCKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0A4D8XN15_OULSP" ac="A0A4D8XN15" length="70" description="mRNA OS=Oulactis sp. OX=2093647 GN=U-AITX-Oulspp1 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <bits>65.1</bits>
+      <expectation>4e-12</expectation>
+      <identity>41.2</identity>
+      <positives>57.5</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+++V  A+L+++ASA       DD +     KRG PC CDSDGP  R  +LSG VW+  CPSGW  C   +  +  CC +</pattern>
+      <matchSeq start="1" end="69">MLLVLAAVLLSLASA------DDDSI---MEKRGAPCLCDSDGPSGRGNTLSGTVWVFGCPSGWHGCAKKF--IGACCKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="SP" id="NA18A_ANTS7" ac="P0C5F6" length="47" description="Delta-actitoxin-Aspp1c OS=Anthopleura sp. (strain 'Zhanjiang') OX=462333 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>4.7e-12</expectation>
+      <identity>48.9</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP +R  +LSG +W+  CPSGW  CK+    +  CC +</pattern>
+      <matchSeq start="1" end="47">GVPCLCDSDGPSVRGNTLSGTLWLFGCPSGWHNCKARGPTIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="SP" id="NA141_ACTEQ" ac="B1NWU6" length="81" description="Delta-actitoxin-Aeq2d OS=Actinia equina OX=6106 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <bits>65.1</bits>
+      <expectation>5.3e-12</expectation>
+      <identity>37.9</identity>
+      <positives>56.3</positives>
+      <gaps>20</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWM-------GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+++V  A+++A+ASA        D++D   +KRG+PC C SDGP  R  +LSG +WM         CP GW  C     +++DCC Q</pattern>
+      <matchSeq start="5" end="81">MILVFAAVILALASA--------DDVD--IAKRGVPCLCVSDGPRPRGNNLSGTIWMKTGGYGGNGCPKGWHFCGKSRGLLSDCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="SP" id="NA1D_BUNCN" ac="P86459" length="47" description="Delta-actitoxin-Bcg1d OS=Bunodosoma cangicum OX=138296 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>154</score>
+      <bits>63.9</bits>
+      <expectation>6.7e-12</expectation>
+      <identity>51.1</identity>
+      <positives>63.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP +R  +LSG VW+  CPSGW  C S    +  CC +</pattern>
+      <matchSeq start="1" end="47">GVPCLCDSDGPSVRGNTLSGTVWVFGCPSGWHICTSDGPTIGSCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0A0S1M155_ANESU" ac="A0A0S1M155" length="81" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>7.5e-12</expectation>
+      <identity>46.6</identity>
+      <positives>60.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D   D +  KRG PC C SDGP+ R  S+SG +W+  CPSGW  C+   +I+  CC Q</pattern>
+      <matchSeq start="25" end="81">DANEDVNMVKRGAPCLCKSDGPNTRGNSMSGTIWVFGCPSGWNDCEG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="SP" id="NA111_ANEVI" ac="P0DMZ1" length="81" description="Delta-actitoxin-Avd1h OS=Anemonia viridis OX=51769 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>7.5e-12</expectation>
+      <identity>46.6</identity>
+      <positives>60.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D   D +  KRG PC C SDGP+ R  S+SG +W+  CPSGW  C+   +I+  CC Q</pattern>
+      <matchSeq start="25" end="81">DANEDVNMVKRGAPCLCKSDGPNTRGNSMSGTIWVFGCPSGWNDCEG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="SP" id="NA15_ANTXA" ac="P0C5G2" length="47" description="Delta-actitoxin-Axm1g OS=Anthopleura xanthogrammica OX=6112 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>9.5e-12</expectation>
+      <identity>46.8</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+ C CDSDGP +   +LSGI+W+  CPSGW  CK++   +  CC +</pattern>
+      <matchSeq start="1" end="47">GVSCLCDSDGPSVSGNTLSGIIWLAGCPSGWHNCKAHGPNIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="SP" id="NA123_ACTEQ" ac="B1NWU4" length="82" description="Delta-actitoxin-Aeq2b 3 OS=Actinia equina OX=6106 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>1.1e-11</expectation>
+      <identity>37.9</identity>
+      <positives>56.3</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWM-------GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+++V  A+++A+ASA       D+++D   +KRG+PC C SDGP  R  +LSGI+WM         CP GW  C       +DCC +</pattern>
+      <matchSeq start="5" end="82">MILVFAAVILALASA-------DEDVD--ITKRGVPCLCVSDGPRPRGNNLSGIMWMKTGGYGGNGCPKGWHFCGKSRGFFSDCCKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="SP" id="NA121_ACTEQ" ac="B1NWU2" length="82" description="Delta-actitoxin-Aeq2b 1 OS=Actinia equina OX=6106 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>1.1e-11</expectation>
+      <identity>37.9</identity>
+      <positives>56.3</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWM-------GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+++V  A+++A+ASA       D+++D   +KRG+PC C SDGP  R  +LSGI+WM         CP GW  C       +DCC +</pattern>
+      <matchSeq start="5" end="82">MILVFAAVILALASA-------DEDVD--IAKRGVPCLCVSDGPRPRGNNLSGIMWMKTGGYGGNGCPKGWHFCGKSRGFFSDCCKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="SP" id="NA25_RADCR" ac="P30785" length="47" description="Delta-stichotoxin-Hcr1d OS=Radianthus crispa OX=3122430 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>1.3e-11</expectation>
+      <identity>52.3</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="85">CACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>C CD +GP++R+A L+G V +G C  GW+KC SYYS +A+CC +</pattern>
+      <matchSeq start="3" end="46">CKCDDEGPNVRTAPLTGYVDLGYCNEGWEKCASYYSPIAECCRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="SP" id="4BD_HETMG" ac="P08380" length="48" description="Delta-stichotoxin-Hmg4b OS=Heteractis magnifica OX=38281 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>1.4e-11</expectation>
+      <identity>52.3</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="85">CACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>C CD +GP++R+A L+G V +G C  GW+KC SYYS +A+CC +</pattern>
+      <matchSeq start="3" end="46">CKCDDEGPNVRTAPLTGYVDLGYCNEGWEKCASYYSPIAECCRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A0S1M157_ANESU" ac="A0A0S1M157" length="67" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>2.2e-11</expectation>
+      <identity>46.6</identity>
+      <positives>58.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D   D +  KRG  C C SDGP+ R  S+SG +W+  CPSGW  CK   +I+  CC Q</pattern>
+      <matchSeq start="11" end="67">DANEDVNMVKRGAACLCKSDGPNTRGNSMSGTIWVFGCPSGWNDCKG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="SP" id="NA122_ACTEQ" ac="B1NWU3" length="82" description="Delta-actitoxin-Aeq2b 2 OS=Actinia equina OX=6106 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>2.2e-11</expectation>
+      <identity>37.9</identity>
+      <positives>55.2</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWM-------GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+++V  A+ +A+ASA       D+++D   +KRG+PC C SDGP  R  +LSGI+WM         CP GW  C       +DCC +</pattern>
+      <matchSeq start="5" end="82">MILVFAAVFLALASA-------DEDVD--IAKRGVPCLCVSDGPRPRGNNLSGIMWMKTGGYGGNGCPKGWHFCGKSRGFFSDCCKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="SP" id="NA12_ANTXA" ac="P0C5F9" length="47" description="Delta-actitoxin-Axm1e OS=Anthopleura xanthogrammica OX=6112 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>2.7e-11</expectation>
+      <identity>44.7</identity>
+      <positives>66.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+ C CD+DGP +   +LSGI+W+  CPSGW  CK++   +  CC +</pattern>
+      <matchSeq start="1" end="47">GVACLCDADGPSVSGNTLSGILWLAGCPSGWHNCKAHGPTIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="SP" id="NA24_RADCR" ac="P30784" length="48" description="Delta-stichotoxin-Hcr1c OS=Radianthus crispa OX=3122430 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>2.8e-11</expectation>
+      <identity>52.3</identity>
+      <positives>72.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="85">CACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>C CD +GP++R+A L+G V +G C  GW KC SYYS +A+CC +</pattern>
+      <matchSeq start="3" end="46">CKCDDEGPNVRTAPLTGYVDLGYCNEGWDKCASYYSPIAECCRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0A0S1M141_ANESU" ac="A0A0S1M141" length="78" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>4e-11</expectation>
+      <identity>47.4</identity>
+      <positives>57.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="85">DELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D  D    KRG  C C SDGP+ R  S+SG +W+  CPSGW  CK   +I+  CC Q</pattern>
+      <matchSeq start="23" end="78">DANDVKMVKRGAACLCKSDGPNTRGNSMSGTIWVFGCPSGWNDCKG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="SP" id="NA23_RADCR" ac="P30832" length="48" description="Delta-stichotoxin-Hcr1a OS=Radianthus crispa OX=3122430 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>5.6e-11</expectation>
+      <identity>52.3</identity>
+      <positives>72.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="85">CACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>C CD +GP +R+A L+G V +G C  GW+KC SYYS +A+CC +</pattern>
+      <matchSeq start="3" end="46">CKCDDEGPYVRTAPLTGYVDLGYCNEGWEKCASYYSPIAECCRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="SP" id="NA16_ANTXA" ac="P0C5G3" length="49" description="Delta-actitoxin-Axm1h OS=Anthopleura xanthogrammica OX=6112 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>5.7e-11</expectation>
+      <identity>49.0</identity>
+      <positives>63.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWM--GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+ C CDSDGP +R  +LSGI+W     CPSGW  CK++   +  CC Q</pattern>
+      <matchSeq start="1" end="49">GVSCLCDSDGPSVRGNTLSGILWFYPSGCPSGWHNCKAHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0A0S1M156_ANESU" ac="A0A0S1M156" length="79" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>5.8e-11</expectation>
+      <identity>46.6</identity>
+      <positives>56.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D   D    KRG  C C SDGP+ R  S+SG +W+  CPSGW  CK   +I+  CC Q</pattern>
+      <matchSeq start="23" end="79">DANEDVKMVKRGAACLCKSDGPNTRGNSMSGTIWVFGCPSGWNDCKG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0A0S1M154_ANESU" ac="A0A0S1M154" length="61" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>7.5e-11</expectation>
+      <identity>44.8</identity>
+      <positives>58.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D   D +  KRG  C C SDGP+ R  S+SG +W+  CPSGW  C+   +I+  CC Q</pattern>
+      <matchSeq start="5" end="61">DANEDVNMVKRGAACLCKSDGPNTRGNSMSGTIWVFGCPSGWNDCEG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0A0S1M150_ANESU" ac="A0A0S1M150" length="65" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>8.3e-11</expectation>
+      <identity>44.8</identity>
+      <positives>58.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D   D +  KRG  C C SDGP+ R  S+SG +W+  CPSGW  C+   +I+  CC Q</pattern>
+      <matchSeq start="9" end="65">DANEDVNMVKRGAACLCKSDGPNTRGNSMSGTIWVFGCPSGWNDCEG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="SP" id="NA13_ANTXA" ac="P0C5G0" length="47" description="Delta-actitoxin-Axm1d OS=Anthopleura xanthogrammica OX=6112 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.1e-10</expectation>
+      <identity>46.8</identity>
+      <positives>63.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G  C CDSDGP +   +LSGI+W+  CPSGW  CK++   +  CC +</pattern>
+      <matchSeq start="1" end="47">GAACFCDSDGPSVSGNTLSGILWLAGCPSGWHNCKAHGPNIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A0S1M153_ANESU" ac="A0A0S1M153" length="81" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1.2e-10</expectation>
+      <identity>44.8</identity>
+      <positives>58.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D   D +  KRG  C C SDGP+ R  S+SG +W+  CPSGW  C+   +I+  CC Q</pattern>
+      <matchSeq start="25" end="81">DANEDVNMVKRGAACLCKSDGPNTRGNSMSGTIWVFGCPSGWNDCEG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="SP" id="NA11_BUNCP" ac="P0DTR3" length="43" description="Delta-actitoxin-Bca1a OS=Bunodosoma capense OX=2022720 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1.4e-10</expectation>
+      <identity>50.0</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="83">CACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCC</querySeq>
+      <pattern>C C+SDGP +R  +LSGI+W+  CPSGW  CK +   +  CC</pattern>
+      <matchSeq start="1" end="42">CLCNSDGPSVRGNTLSGILWLAGCPSGWHNCKKHKPTIGWCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="SP" id="NA1A_ANTXA" ac="P01530" length="49" description="Delta-actitoxin-Axm1a OS=Anthopleura xanthogrammica OX=6112 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1.6e-10</expectation>
+      <identity>46.9</identity>
+      <positives>63.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWM--GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+ C CDSDGP +R  +LSG +W+    CPSGW  CK++   +  CC Q</pattern>
+      <matchSeq start="1" end="49">GVSCLCDSDGPSVRGNTLSGTLWLYPSGCPSGWHNCKAHGPTIGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0A0S1M160_ANESU" ac="A0A0S1M160" length="81" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>1.7e-10</expectation>
+      <identity>44.8</identity>
+      <positives>58.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="85">DDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>D   D +  KRG  C C SDGP+ R  S+SG +W+  CPSGW  C+   +I+  CC Q</pattern>
+      <matchSeq start="25" end="81">DANEDVNMVKRGAACLCKSDGPNTRGNSMSGTIWVLGCPSGWNDCEG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="SP" id="NA1C1_BUNCN" ac="P82803" length="48" description="Delta-actitoxin-Bcg1a OS=Bunodosoma cangicum OX=138296 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <bits>60.1</bits>
+      <expectation>2.3e-10</expectation>
+      <identity>47.9</identity>
+      <positives>62.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWM-GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+ C CDSDGP +R  SLSG +W+ G CPSGW  C+     +  CC +</pattern>
+      <matchSeq start="1" end="48">GVACRCDSDGPTVRGNSLSGTLWLTGGCPSGWHNCRGSGPFIGYCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="SP" id="NA1B_BUNCN" ac="P0C7P9" length="48" description="Delta-actitoxin-Bcg1b OS=Bunodosoma cangicum OX=138296 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <bits>60.1</bits>
+      <expectation>2.3e-10</expectation>
+      <identity>47.9</identity>
+      <positives>62.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWM-GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+ C CDSDGP +R  SLSG +W+ G CPSGW  C+     +  CC +</pattern>
+      <matchSeq start="1" end="48">GVACRCDSDGPTVRGDSLSGTLWLTGGCPSGWHNCRGSGPFIGYCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="SP" id="NA2H_ISOCA" ac="P0C5G6" length="47" description="Delta-halcutoxin-Hcg1a OS=Isohalcurias carlgreni OX=3283203 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>4.5e-10</expectation>
+      <identity>47.8</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="85">IPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+ C C+SDGPD+RSA+ +G V + +C +GW KC + Y+ VA CC +</pattern>
+      <matchSeq start="1" end="46">VACRCESDGPDVRSATFTGTVDLWNCNTGWHKCIATYTAVASCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="SP" id="NA1B_ANTXA" ac="P01531" length="49" description="Delta-actitoxin-Axm1b OS=Anthopleura xanthogrammica OX=6112 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>4.7e-10</expectation>
+      <identity>49.0</identity>
+      <positives>63.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWM--GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+PC CDSDGP  R  +LSGI+W     CPSGW  CK++   +  CC +</pattern>
+      <matchSeq start="1" end="49">GVPCLCDSDGPRPRGNTLSGILWFYPSGCPSGWHNCKAHGPNIGWCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="SP" id="4AD_HETMG" ac="P01534" length="48" description="Delta-stichotoxin-Hmg4a OS=Heteractis magnifica OX=38281 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>9.2e-10</expectation>
+      <identity>50.0</identity>
+      <positives>68.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="85">CACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>C CD DGPD+RSA+ +G V   +C  GW+KC + Y+ VA CC +</pattern>
+      <matchSeq start="3" end="46">CKCDDDGPDVRSATFTGTVDFWNCNEGWEKCTAVYTPVASCCRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="SP" id="NA21_RADCR" ac="P30831" length="48" description="Delta-stichotoxin-Hcr1e OS=Radianthus crispa OX=3122430 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>1.3e-09</expectation>
+      <identity>50.0</identity>
+      <positives>68.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="85">CACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>C CD DGPD+RSA+ +G V    C +GW+KC + Y+ VA CC +</pattern>
+      <matchSeq start="3" end="46">CKCDDDGPDVRSATFTGTVDFAYCNAGWEKCLAVYTPVASCCRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="SP" id="NA1C3_BUNCN" ac="P0C7Q0" length="48" description="Delta-actitoxin-Bcg1c OS=Bunodosoma cangicum OX=138296 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>1.3e-09</expectation>
+      <identity>45.8</identity>
+      <positives>60.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWM-GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+ C CDSDGP +   SLSG +W+ G CPSGW  C+     +  CC +</pattern>
+      <matchSeq start="1" end="48">GVACRCDSDGPTVHGDSLSGTLWLTGGCPSGWHNCRGSGPFIGYCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="SP" id="NA11_ANESU" ac="P01533" length="46" description="Delta-actitoxin-Avd1a OS=Anemonia sulcata OX=6108 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>7.2e-09</expectation>
+      <identity>46.8</identity>
+      <positives>61.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G  C C SDGP+ R  S+SG +W+  CPSGW  C+   +I+  CC Q</pattern>
+      <matchSeq start="1" end="46">GAACLCKSDGPNTRGNSMSGTIWVFGCPSGWNNCEG-RAIIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="SP" id="NA13_BUNCI" ac="Q7M425" length="48" description="Delta-actitoxin-Bcs1a OS=Bunodosoma caissarum OX=31165 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>1.1e-08</expectation>
+      <identity>43.8</identity>
+      <positives>60.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWM-GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G+ C CDSDGP  R  +L+G +W+ G CPSGW  C+     +  CC +</pattern>
+      <matchSeq start="1" end="48">GVACRCDSDGPTSRGNTLTGTLWLTGGCPSGWHNCRGSGPFIGYCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="SP" id="NA13_BUNGR" ac="P0C1F5" length="48" description="Delta-actitoxin-Bgr2b OS=Bunodosoma granuliferum OX=31164 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>1.5e-08</expectation>
+      <identity>45.8</identity>
+      <positives>58.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWM-GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G  C CDSDGP  R  +L+G +W+ G CPSGW  C+     +  CC Q</pattern>
+      <matchSeq start="1" end="48">GASCRCDSDGPTSRGDTLTGTLWLIGRCPSGWHNCRGSGPFIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="SP" id="NA12_BUNGR" ac="P0C1F4" length="48" description="Delta-actitoxin-Bgr2a OS=Bunodosoma granuliferum OX=31164 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>1.5e-08</expectation>
+      <identity>45.8</identity>
+      <positives>58.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWM-GSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G  C CDSDGP  R  +L+G +W+ G CPSGW  C+     +  CC Q</pattern>
+      <matchSeq start="1" end="48">GASCRCDSDGPTSRGNTLTGTLWLIGRCPSGWHNCRGSGPFIGYCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0A0S1M162_ANESU" ac="A0A0S1M162" length="82" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>2.4e-08</expectation>
+      <identity>43.5</identity>
+      <positives>54.8</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="85">MSDDELDYHFSKRGIP--CACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+  D  D +  KR +   C C SDGP+ R  S+SG VW+  CPSGW  CK   +I   CC Q</pattern>
+      <matchSeq start="22" end="82">IDQDAYDVNMVKRFVSASCLCASDGPNTRGNSMSGTVWVFGCPSGWHDCKG-RAIAGWCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="A0A4Y5RX10_9CNID" ac="A0A4Y5RX10" length="83" description="Sodium ion channel toxin OS=Edwardsia elegans OX=132404 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>3.4e-08</expectation>
+      <identity>34.2</identity>
+      <positives>50.6</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="83">IVCLALLVAVASAR---RRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCC</querySeq>
+      <pattern>+VCL LLV  +S R     D  ++   +Y  +KRG PC C+           +GI W+  C +GW  CK Y+  + +CC</pattern>
+      <matchSeq start="10" end="79">VVCLVLLVGCSSGRFVTPDDADTEYSSEYALAKRGAPCVCEK-------GDKTGIYWVAGCSTGWSNCKKYF--MGNCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="SP" id="NA22_RADCR" ac="P30783" length="48" description="Delta-stichotoxin-Hcr1b OS=Radianthus crispa OX=3122430 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>128</score>
+      <bits>53.9</bits>
+      <expectation>6.1e-08</expectation>
+      <identity>43.2</identity>
+      <positives>63.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="85">CACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>C CD DGPD+R+A+ +G     +C   W+KC + Y+ VA CC +</pattern>
+      <matchSeq start="3" end="46">CKCDDDGPDVRTATFTGSTEFANCNESWEKCLAVYTPVASCCRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="SP" id="NA3A_HETAU" ac="A0A0N7KBN8" length="75" description="U-stichotoxin-Hau3a OS=Heteractis aurora OX=478399 GN=HAUTX4 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>8e-08</expectation>
+      <identity>30.0</identity>
+      <positives>51.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>I++V  A+ + +ASA           D    +  + C C SDGP +    L+G V +G C  GW KC + ++++ +CC +</pattern>
+      <matchSeq start="5" end="74">IILVVAAVFLGMASAE----------DVFHKRFTVSCLCASDGPSVHGNKLTGTVAVGGCNPGWHKCNTEHNVLYECCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="A0A0S1M173_ANESU" ac="A0A0S1M173" length="77" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>8.4e-08</expectation>
+      <identity>35.9</identity>
+      <positives>52.6</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="83">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCC</querySeq>
+      <pattern>+ ++  A  + V SA  +D   D  +     + G PC CD DG      S+SGI+W  SCP+GW+KC + +   A CC</pattern>
+      <matchSeq start="6" end="73">VFVMLGAAFMLVVSAVDQDAYEDVNM---LKRGGTPCPCDGDGE-----SMSGIIWFWSCPAGWRKCGAEWP--APCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="SP" id="NA19_ANEVI" ac="B1NWT5" length="83" description="U-actitoxin-Avd1g OS=Anemonia viridis OX=51769 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>129</score>
+      <bits>54.3</bits>
+      <expectation>9.7e-08</expectation>
+      <identity>41.9</identity>
+      <positives>53.2</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="85">MSDDELDYHFSKRGIP--CACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+  D  D +  KR +   C C SDGP  R  SLSG +W+  CPSGW  CK   +I   CC +</pattern>
+      <matchSeq start="22" end="82">IDQDANDVNMVKRFVSASCLCASDGPTTRGNSLSGTIWLFGCPSGWGDCKG-RAIAGTCCKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="SP" id="NA11_ANEER" ac="P69943" length="47" description="Delta-actitoxin-Aer1a OS=Anemonia erythraea OX=48400 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>2.4e-07</expectation>
+      <identity>44.7</identity>
+      <positives>59.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">GIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>G PC C + GP+ R   L+GIVW+  CPSGW  C    ++V  CC +</pattern>
+      <matchSeq start="1" end="46">GAPCLCANSGPNTRGNDLNGIVWVFGCPSGWHDCHG-RAMVGYCCQE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0A0S1M159_ANESU" ac="A0A0S1M159" length="76" description="Sodium channel toxin protein OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>4.7e-07</expectation>
+      <identity>36.2</identity>
+      <positives>48.8</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+ ++  A  + V SA  +D   D  +     + G PC CD DG      S+SGI+W  SCP+GW  C S     A CC Q</pattern>
+      <matchSeq start="6" end="76">VFVMLGAAFMLVVSAVDQDAYEDVNM---LKRGGTPCRCDGDGE-----SMSGIIWFWSCPAGWHHC-SAQGWPAPCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="SP" id="CJ1C1_EPIJA" ac="P0DPE5" length="54" description="Toxin AnmTx Cj 1c-1 (Fragment) OS=Epiactis japonica OX=58804 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>1.1e-06</expectation>
+      <identity>40.4</identity>
+      <positives>67.3</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="36" end="85">SKRGIPCACDSDGPDIRSASLSGIVW--MGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+KRG+PC C+SDGP  ++ +LSG  +  +G   +GW KC+ Y + ++ CC +</pattern>
+      <matchSeq start="3" end="53">NKRGVPCRCESDGPPRQNNALSGTTFYVVGCNKAGWNKCR-YINAISTCCKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0A0S1M178_ANESU" ac="A0A0S1M178" length="75" description="Sodium channel toxin protein OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>2.6e-06</expectation>
+      <identity>32.5</identity>
+      <positives>48.8</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>+ ++  A  + V SA  +D   D  +     + G PC C  DG      S+SGI+W  SCP+GW +C   +   + CC Q</pattern>
+      <matchSeq start="6" end="75">VFVMLGAAFMLVVSAVDQDAYEDVNM---LKRGGTPCRCHGDGE-----SMSGIIWFWSCPAGWHRCSQEWP--SPCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="A0A0S1M176_ANESU" ac="A0A0S1M176" length="74" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>3.6e-06</expectation>
+      <identity>40.7</identity>
+      <positives>55.9</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="83">MSDDELDYHFSKRG-IPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCC</querySeq>
+      <pattern>+  D  D +  KRG  PC CD +       S+SGI+W  SCP+GW+KC + +   A CC</pattern>
+      <matchSeq start="21" end="70">VDQDAYDVNMLKRGGTPCPCDGE-------SMSGIIWFWSCPAGWRKCGAEWP--APCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="SP" id="NA18_ANEVI" ac="B1NWT4" length="76" description="U-actitoxin-Avd7a OS=Anemonia viridis OX=51769 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>3.8e-06</expectation>
+      <identity>33.3</identity>
+      <positives>51.3</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="83">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCC</querySeq>
+      <pattern>+ ++  A  + V SA  +D   D  +     + G PC CD +       S+SGI+W  SCP+GW+KC + +   A CC</pattern>
+      <matchSeq start="7" end="72">VFVMLGAAFMLVVSAVDQDAYEDVNM---LKRGGTPCPCDGE-------SMSGIIWFWSCPAGWRKCGAEWP--APCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="SP" id="NV7_NEMVE" ac="P0DQR3" length="89" description="N.vectensis toxin 7 OS=Nematostella vectensis OX=45351 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>4.1e-05</expectation>
+      <identity>37.1</identity>
+      <positives>55.1</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MASF-KIVIVCLALLVAVASARRRDMMSDDELDYHFSKR-GIPCAC-DSDGPDIRSASLSGIVWMG-SCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>MASF KI ++CL +LV  ++AR  D+  D  +D+  SKR G  C C    GP       +G  W G +CP+G   C+   +I+ +CC +</pattern>
+      <matchSeq start="1" end="80">MASFFKIAVICLVMLVVCSNARVIDVDDDYLMDFAASKRGGQTCYCRGGSGP-------TGGFWGGQNCPAGMTSCRK--NILGNCCQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="SP" id="NV5_NEMVE" ac="A0A5J6KCM0" length="84" description="N.vectensis toxin 5 OS=Nematostella vectensis OX=45351 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>5.2e-05</expectation>
+      <identity>32.1</identity>
+      <positives>48.8</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="85">KIVIVCLALLVAVASAR---RRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>K+ +VCL +LVA +S R     D  ++   +Y  +KR + C C+    +       G  W+  CP  W  CKS Y +   CC+Q</pattern>
+      <matchSeq start="6" end="80">KVAVVCLVMLVACSSGRVVLPDDADTEYNSEYALAKR-VNCKCEGGHEE-------GTYWVFGCPKNWYSCKSGY-VYGRCCSQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="SP" id="NA16_ANEVI" ac="B1NWT3" length="72" description="U-actitoxin-Avd1f OS=Anemonia viridis OX=51769 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.00016</expectation>
+      <identity>36.8</identity>
+      <positives>46.1</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="85">ALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVAD--CCNQ</querySeq>
+      <pattern>A  + V SA  +D   D  +     KRG+PC CD D        +SG  WM  CP GW  C     +VA+  CC Q</pattern>
+      <matchSeq start="13" end="72">AAFMLVVSAIDQDANEDVNM-----KRGLPCKCDGD------KHMSGTFWMFGCPPGWHSC-----VVANAFCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0A0S1M149_ANESU" ac="A0A0S1M149" length="57" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.00023</expectation>
+      <identity>38.0</identity>
+      <positives>46.5</positives>
+      <gaps>25</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="85">VASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVAD--CCNQ</querySeq>
+      <pattern>V SA  +D   D  +     KRG+PC CD D        +SG  WM  CP GW  C     +VA+  CC Q</pattern>
+      <matchSeq start="3" end="57">VVSAIDQDAXEDVNM-----KRGLPCKCDGD------KHMSGTFWMFGCPPGWHSC-----VVANAFCCKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="SP" id="NA291_NEMVE" ac="P0CH45-2" length="23" description="Isoform 2 of Putative N.vectensis toxin 1 9 OS=Nematostella vectensis OX=45351 GN=v1g150294">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.00051</expectation>
+      <identity>95.7</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="23">MASFKIVIVCLALLVAVASARRR</querySeq>
+      <pattern>MASFKIVIVCLALLVAVASARR+</pattern>
+      <matchSeq start="1" end="23">MASFKIVIVCLALLVAVASARRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="SP" id="NA237_NEMVE" ac="P0CH90-2" length="23" description="Isoform 2 of N.vectensis toxin 1 4 OS=Nematostella vectensis OX=45351 GN=v1g113210">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.00051</expectation>
+      <identity>95.7</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="23">MASFKIVIVCLALLVAVASARRR</querySeq>
+      <pattern>MASFKIVIVCLALLVAVASARR+</pattern>
+      <matchSeq start="1" end="23">MASFKIVIVCLALLVAVASARRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="SP" id="NA227_NEMVE" ac="B1NWS1-2" length="23" description="Isoform 2 of N.vectensis toxin 1 2 OS=Nematostella vectensis OX=45351 GN=v1g113065">
+    <alignments total="1">
+     <alignment number="1">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.00051</expectation>
+      <identity>95.7</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="23">MASFKIVIVCLALLVAVASARRR</querySeq>
+      <pattern>MASFKIVIVCLALLVAVASARR+</pattern>
+      <matchSeq start="1" end="23">MASFKIVIVCLALLVAVASARRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="SP" id="NATX_CALPY" ac="P0DY38" length="76" description="Sea anemone sodium channel inhibitor type I OS=Calliactis polypus OX=656064 GN=c50240_g1_i1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.00098</expectation>
+      <identity>30.5</identity>
+      <positives>48.8</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKS--YYSIVADCCNQ</querySeq>
+      <pattern>++I  +  +  +AS    +M + D       + G  C C+ DG      + +GI W GSCP GW  CK+  Y+ +  +CC Q</pattern>
+      <matchSeq start="5" end="75">LIIFVVVTVFGLASGLGPNMPAPDLA----KRNGKGCTCN-DG------TTTGIFWAGSCPGGWSYCKTMWYWVVPGECCTQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="SP" id="NA245_NEMVE" ac="B1NWR7-2" length="23" description="Isoform 2 of N.vectensis toxin 1 8 OS=Nematostella vectensis OX=45351 GN=v1g113209">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.0029</expectation>
+      <identity>91.3</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="23">MASFKIVIVCLALLVAVASARRR</querySeq>
+      <pattern>MASFKIVIVCLALLVAVA ARR+</pattern>
+      <matchSeq start="1" end="23">MASFKIVIVCLALLVAVACARRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="SP" id="NA240_NEMVE" ac="B1NWS8-2" length="23" description="Isoform 2 of N.vectensis toxin 1 6 OS=Nematostella vectensis OX=45351 GN=v1g113221">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.0029</expectation>
+      <identity>91.3</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="23">MASFKIVIVCLALLVAVASARRR</querySeq>
+      <pattern>MASFKIVIVCLALLVAVA ARR+</pattern>
+      <matchSeq start="1" end="23">MASFKIVIVCLALLVAVACARRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="SP" id="NA239_NEMVE" ac="P0CH46-2" length="23" description="Isoform 2 of N.vectensis toxin 1 5 OS=Nematostella vectensis OX=45351 GN=v1g113166">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.0029</expectation>
+      <identity>91.3</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="23">MASFKIVIVCLALLVAVASARRR</querySeq>
+      <pattern>MASFKIVIVCLALLVAVA ARR+</pattern>
+      <matchSeq start="1" end="23">MASFKIVIVCLALLVAVACARRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="SP" id="NA228_NEMVE" ac="B1NWR6-2" length="23" description="Isoform 2 of N.vectensis toxin 1 3 OS=Nematostella vectensis OX=45351 GN=v1g113139">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.0029</expectation>
+      <identity>91.3</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="23">MASFKIVIVCLALLVAVASARRR</querySeq>
+      <pattern>MASFKIVIVCLALLVAVA ARR+</pattern>
+      <matchSeq start="1" end="23">MASFKIVIVCLALLVAVACARRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="SP" id="NA225_NEMVE" ac="B1NWS4-2" length="23" description="Isoform 2 of N.vectensis toxin 1 1 OS=Nematostella vectensis OX=45351 GN=v1g113108">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.0029</expectation>
+      <identity>91.3</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="23">MASFKIVIVCLALLVAVASARRR</querySeq>
+      <pattern>MASFKIVIVCLALLVAVA ARR+</pattern>
+      <matchSeq start="1" end="23">MASFKIVIVCLALLVAVACARRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="SP" id="NAU1A_EXADI" ac="E3P6S4" length="90" description="Delta-aiptatoxin-Adi1a OS=Exaiptasia diaphana OX=2652724 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.0052</expectation>
+      <identity>38.8</identity>
+      <positives>55.1</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="85">KRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>KRGIPC CD +  ++           G+C  GWKKC+S  +I  +CC +</pattern>
+      <matchSeq start="45" end="89">KRGIPCRCDKNSDELNGEQS---YMNGNCGDGWKKCRSVNAIF-NCCQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="SP" id="TXCL1_CALPA" ac="P14531" length="79" description="Delta-hormotoxin-Cpt1b OS=Calliactis parasitica OX=6114 PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.0083</expectation>
+      <identity>40.4</identity>
+      <positives>61.5</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="85">KRGIPCACDSDGPDIRSASLSGIVWMGSCPSG---WKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>++ I C C+ D PD+  + ++G V+  SC  G   W KC +Y + VADCC+Q</pattern>
+      <matchSeq start="31" end="78">EKRIECKCEGDAPDL--SHMTGTVYF-SCKGGDGSWSKCNTY-TAVADCCHQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="SP" id="BDS1_URTCR" ac="A0A1X9QHL1" length="79" description="Crassicorin-I OS=Urticina crassicornis OX=45621 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.0083</expectation>
+      <identity>34.8</identity>
+      <positives>46.1</positives>
+      <gaps>20</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="83">MASFKIVIVCLALLVAVASARRRDMMSDDELDYH-FSKRGIPCACDSDGPDIRSASLSGIVWMG--SCPSGW---KKCKSYYSIVADCC</querySeq>
+      <pattern>M  F + IV + +LV  A+   RD+ S DE +   F KRG  C C             G  W G  +CPSG    KKC S++ +   CC</pattern>
+      <matchSeq start="1" end="77">MKLFLVSIVLVGMLVLAAARPERDIDSFDEQEEKGFVKRGASCDCH---------PFVGTYWFGISNCPSGHGYRKKCASFFGV---CC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="TR" id="A0A0S1M171_ANESU" ac="A0A0S1M171" length="65" description="Sodium channel toxin protein OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.0087</expectation>
+      <identity>31.3</identity>
+      <positives>47.8</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="72">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKC</querySeq>
+      <pattern>++++  A+ + +ASA       D   D    KRG  C C  D   +     +G +W+  CPSGWK C</pattern>
+      <matchSeq start="1" end="56">MILLFAAVFLTLASA-------DTYEDVDMPKRGFACKCIGDSQKV----WTGTIWLFGCPSGWKVC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="SP" id="NV4_NEMVE" ac="A0A5J6K6K4" length="81" description="N.vectensis toxin 4 OS=Nematostella vectensis OX=45351 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.01</expectation>
+      <identity>30.4</identity>
+      <positives>50.6</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="75">MASFKIVIVCLALLVAVASAR--RRDMMSDDEL--DYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSY</querySeq>
+      <pattern>M S  + ++C A+L+   + R  R +   +DEL  D   +KR + C+C+ DG     +  +G  W+  CP GW  C  +</pattern>
+      <matchSeq start="1" end="73">MRSSWMFVICFAMLILYTNGRILRPETSWEDELEDDLANNKRSLACSCE-DG-----SGRTGTHWIFDCPKGWADCGGF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="TR" id="A0A913YM11_EXADI" ac="A0A913YM11" length="92" description="Uncharacterized protein OS=Exaiptasia diaphana OX=2652724 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.02</expectation>
+      <identity>44.9</identity>
+      <positives>57.1</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="85">KRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>KRGIPC C SD  D+     S I   G C  GWKKCK   + +++CC +</pattern>
+      <matchSeq start="47" end="91">KRGIPCKC-SDRSDVLDGEQSYIG--GDCGKGWKKCK-IVNALSNCCQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="130" database="SP" id="NA241_NEMVE" ac="A7SCE5-2" length="23" description="Isoform 2 of N.vectensis toxin 1 7 OS=Nematostella vectensis OX=45351 GN=v1g113105">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.02</expectation>
+      <identity>95.2</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="21">MASFKIVIVCLALLVAVASAR</querySeq>
+      <pattern>M SFKIVIVCLALLVAVASAR</pattern>
+      <matchSeq start="1" end="21">MTSFKIVIVCLALLVAVASAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="131" database="SP" id="TXCL2_CALPA" ac="P49127" length="79" description="Delta-hormotoxin-Cpt1a OS=Calliactis parasitica OX=6114 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.03</expectation>
+      <identity>42.9</identity>
+      <positives>59.2</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="85">IPCACDSDGPDIRSASLSGIVWMGSCPSG---WKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>I C C  D PD+  + ++G V+  SC  G   W KC +Y + VADCC+Q</pattern>
+      <matchSeq start="34" end="78">IECKCKGDAPDL--SHMTGTVYF-SCKGGDGSWSKCNTY-TAVADCCHQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="132" database="TR" id="A0A0S1M181_ANESU" ac="A0A0S1M181" length="60" description="Sodium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=NaTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.06</expectation>
+      <identity>32.4</identity>
+      <positives>47.3</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="85">ALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>A+ +A+ASA       D E+    SKRG  C C  D     +   +G +W+  CP+GW  C+      A CC +</pattern>
+      <matchSeq start="4" end="59">AVFLALASA-------DQEVG--ISKRGFICRCQDD-----TGKSTGTLWVFGCPNGWYSCR----YGASCCRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="133" database="TR" id="A7T0H2_NEMVE" ac="A7T0H2" length="341" description="PHD-type domain-containing protein OS=Nematostella vectensis OX=45351 GN=NEMVEDRAFT_v1g220426 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.16</expectation>
+      <identity>65.5</identity>
+      <positives>79.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="29">MASFKIVIVCLALLVAVASARRRDMMSDD</querySeq>
+      <pattern>MASFKIV VCLALL+A+A+AR  D   D+</pattern>
+      <matchSeq start="303" end="331">MASFKIVFVCLALLLALAAARSNDEQGDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="134" database="TR" id="A0A8B6DDX5_MYTGA" ac="A0A8B6DDX5" length="148" description="Uncharacterized protein OS=Mytilus galloprovincialis OX=29158 GN=MGAL_10B063201 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.36</expectation>
+      <identity>36.0</identity>
+      <positives>44.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="85">IVIVCLALLVAVASARRRD-MMSDDELDYHFSKRGI----PCACDSDGPDIRSASLSGIVWMGSCPS-GWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>I +V   LLV V ++   D MM D+EL  H  KR +    PCA D       S  L      G C S   +KCK       DCC+Q</pattern>
+      <matchSeq start="5" end="86">ICLVAGLLLVFVGASMANDEMMEDNELANHLVKRSVLPSPPCADDGANCRKSSCCLGSTCVYGKCKSCNPRKCKK----ARDCCDQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="135" database="SP" id="NV8_NEMVE" ac="P0DQR4" length="91" description="N.vectensis toxin 8 OS=Nematostella vectensis OX=45351 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.46</expectation>
+      <identity>32.1</identity>
+      <positives>46.4</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="85">KIVIVCLALLVAVASAR---RRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCNQ</querySeq>
+      <pattern>K+ +VCL +LVA    R     D  ++   DY   KR   C C +DG            +MG C  GW +C  +Y ++ DCC +</pattern>
+      <matchSeq start="6" end="79">KVAVVCLVMLVACFVPRVILTDDADTEYNSDYLLPKRA-GCKC-ADGRQ------ETYYFMG-CQGGWYRCSPHY-VIGDCCKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="136" database="TR" id="A0AAV3Y8P4_9GAST" ac="A0AAV3Y8P4" length="366" description="C-type mannose receptor 2 OS=Plakobranchus ocellatus OX=259542 GN=PoB_000609600 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>1.5</expectation>
+      <identity>42.9</identity>
+      <positives>51.0</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="74">YHFSKR----GIPCACDSDGPD---IRSASLSGIVWMGSCPSGWKKCKS</querySeq>
+      <pattern>Y FS R        AC  DG D   I +A ++  V  G CPSGWK+C S</pattern>
+      <matchSeq start="47" end="95">YWFSNRKTWENARAACQRDGGDLLAIYNAEMNEFVAAGECPSGWKQCPS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="137" database="TR" id="A0A0A7ACX1_MYTGA" ac="A0A0A7ACX1" length="119" description="Multi-CRP-I 1 OS=Mytilus galloprovincialis OX=29158 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>2.7</expectation>
+      <identity>25.6</identity>
+      <positives>41.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="84">VIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCN</querySeq>
+      <pattern>++ CL L+    +    +M+ D+EL ++  KR  PC  + D    +    +     G C    K CK        CCN</pattern>
+      <matchSeq start="7" end="82">LVACLLLVFIGVNMATDEMVEDNELTHNLVKRAAPCGSNGDNCQYKKCCNNFNCVKGRCKP--KSCKRSCRNSRQCCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="138" database="TR" id="A0A4D8XXM8_OULSP" ac="A0A4D8XXM8" length="82" description="mRNA OS=Oulactis sp. OX=2093647 GN=U-AITX-Oulsp14 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>3.0</expectation>
+      <identity>29.6</identity>
+      <positives>45.7</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="83">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIR-SASLSGIVWMG--SCPSGWKKCKSYYSIVADCC</querySeq>
+      <pattern>+ +  +ALL+A  +AR    + DD +     KRG PC+C      IR    ++G+ W    +CP G+    S       CC</pattern>
+      <matchSeq start="7" end="79">LYLAVIALLIAATTAR--SFVDDDIIQDELMKRGSPCSC------IRYERIVTGVYWFARKTCPDGYGYDYSCDRWTGICC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="139" database="TR" id="A1WGM2_VEREI" ac="A1WGM2" length="412" description="Signal peptide prediction OS=Verminephrobacter eiseniae (strain EF01-2) OX=391735 GN=Veis_1002 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>3.8</expectation>
+      <identity>42.6</identity>
+      <positives>51.9</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="71">ASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKK</querySeq>
+      <pattern>AS R RD +S  E DY +   G P ACD  GPD R    +G +  G   S W+K</pattern>
+      <matchSeq start="328" end="377">ASRRVRDWLSPQEWDYWYE--GKPAACDLRGPDGRIVVRAGTLRSGG--SYWRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="140" database="TR" id="A0A4Y5RX14_9CNID" ac="A0A4Y5RX14" length="82" description="Sodium ion channel toxin OS=Edwardsia elegans OX=132404 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>4.3</expectation>
+      <identity>37.7</identity>
+      <positives>48.1</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="74">MASFKIVIVCLALLVAVASAR---RRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKS</querySeq>
+      <pattern>MASFKI++VCL L   +AS R   R D  + +EL      +   C C SDG        +GI     C SG+  C S</pattern>
+      <matchSeq start="1" end="67">MASFKIMLVCLVLCFVMASGRHHYRND--NPEELGPAQPHKRYDCVC-SDGS-------TGIWKPFGCGSGYAMCAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="141" database="TR" id="A0A0K0NJZ7_MYTGA" ac="A0A0K0NJZ7" length="154" description="CRP-I14 OS=Mytilus galloprovincialis OX=29158 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>5.1</expectation>
+      <identity>33.3</identity>
+      <positives>46.0</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="84">IVCLALLVAV-ASARRRDMMSDDELDYHFSKRGIPCA------CDSDGP---DIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCN</querySeq>
+      <pattern>+V + LLV V A+    +MMSDD L +   KRG+P        C ++G    D R  S    V +       +KCK+      DCCN</pattern>
+      <matchSeq start="7" end="89">LVAVLLLVFVEANMANEEMMSDDGLVHKLVKRGLPLPPGLKKWCKNEGENCWDFRCCSGLNCVDLTCKSCNQRKCKN----TRDCCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="142" database="TR" id="A0A0S1M169_ANESU" ac="A0A0S1M169" length="78" description="Type III potassium channel toxin protein (Fragment) OS=Anemonia sulcata OX=6108 GN=KTx PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>5.6</expectation>
+      <identity>29.6</identity>
+      <positives>39.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="83">KIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWM--GSCPSGWKKCKSYYSIVADCC</querySeq>
+      <pattern>K + +CL +L A       D+ +     +   KR  PC C       +   L G  WM  G CP G+   KS Y     CC</pattern>
+      <matchSeq start="3" end="73">KALFLCLVVLCAAVVFATEDLQN---AKHALIKRAAPCQC-------KGMILFGDQWMWRGDCPGGYGYTKSCYYWPNICC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="143" database="TR" id="A0AAQ3Q6N3_9LILI" ac="A0AAQ3Q6N3" length="245" description="Zinc finger PMZ-type domain-containing protein OS=Canna indica OX=4628 GN=Cni_G07167 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>6.6</expectation>
+      <identity>46.3</identity>
+      <positives>58.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="58">RRRDMMSDDELDYHFSKRGIPCA---CDSDGPDIRSASLSG</querySeq>
+      <pattern>RRRDM  +DE     ++RGI      C+ DG +IRS SL G</pattern>
+      <matchSeq start="149" end="189">RRRDMHEEDESSTRLTRRGITITCHPCNVDGHNIRSCSLRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="144" database="SP" id="BDS3B_BUNGR" ac="G0W2H9" length="74" description="U-actitoxin-Bgr3b OS=Bunodosoma granuliferum OX=31164 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>7.3</expectation>
+      <identity>26.8</identity>
+      <positives>40.2</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="83">FKIVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVW--MGSCPSGWKKCKSYYSIVADCC</querySeq>
+      <pattern>F  ++V  +L+ A  +A +         D   +KRG PC C             G+ W  M  CPSG+    + Y  +  CC</pattern>
+      <matchSeq start="6" end="69">FLFLLVVTSLIAASLAAPK---------DVQMTKRGTPCWC---------GQTKGVYWYWMRKCPSGYGYTGNCYHFMGRCC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="145" database="TR" id="A0AAV4D0V3_9GAST" ac="A0AAV4D0V3" length="2435" description="Macrophage mannose receptor 1 OS=Plakobranchus ocellatus OX=259542 GN=PoB_006411100 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>7.6</expectation>
+      <identity>48.6</identity>
+      <positives>54.3</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="43" end="74">ACDSDGPD---IRSASLSGIVWMGSCPSGWKKCKS</querySeq>
+      <pattern>AC  +G D   IR  S S  VW  +CPSGW K  S</pattern>
+      <matchSeq start="1928" end="1962">ACQQNGGDLVTIRDDSTSQFVWASTCPSGWTKSPS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="146" database="TR" id="A0A4D8Y603_OULSP" ac="A0A4D8Y603" length="68" description="mRNA putative toxin OS=Oulactis sp. OX=2093647 GN=U-AITX-Oulsp3 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>9.2</expectation>
+      <identity>30.0</identity>
+      <positives>48.6</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="75">IVIVCLALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSY</querySeq>
+      <pattern>++I+C+ +LVA A+      MS++       K+G+ C C   G D+        VW  SCP+   +C  Y</pattern>
+      <matchSeq start="4" end="61">LIILCVVVLVAKATTASDRGMSEE-------KKGVGCKCS--GRDVWGTYW---VWRFSCPNNGYRCDVY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="147" database="TR" id="A1CWB6_ASPF1" ac="A1CWB6" length="391" description="Uncharacterized protein OS=Aspergillus fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 / FGSC A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=NFIA_104060 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>9.6</expectation>
+      <identity>33.9</identity>
+      <positives>53.6</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="69">LVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGW</querySeq>
+      <pattern>+VA+ S R   +  DD++D + S+  +P     DGP +RS  L  + W G  P+ W</pattern>
+      <matchSeq start="260" end="307">MVALGSPR---VSKDDDIDPYLSRYSVP----DDGP-VRSVDLVSLTWHGFVPASW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="148" database="TR" id="A0A4Y5RXH5_EXADI" ac="A0A4Y5RXH5" length="72" description="Sodium ion channel toxin OS=Exaiptasia diaphana OX=2652724 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>9.9</expectation>
+      <identity>31.1</identity>
+      <positives>44.6</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="84">LALLVAVASARRRDMMSDDELDYHFSKRGIPCACDSDGPDIRSASLSGIVWMGSCPSGWKKCKSYYSIVADCCN</querySeq>
+      <pattern>L  L+ V  AR     SD+E    F +  + C C +DG         G  + GSCPS +++C  Y      CC+</pattern>
+      <matchSeq start="10" end="71">LVFLIIVIDARYHIPNSDEE---RFGRTIVSCTC-TDGR-------VGFSYPGSCPSNYRQC-GYAPFFGPCCS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-180729-0478-34477202-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-180729-0478-34477202-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P75971|YMFH_ECOLI" type="PROTEIN" length="103"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T18:07:29+00:00" end="2026-11-13T18:09:55+00:00" search="P0Y0M0DT0H0M146.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="20">
+   <hit number="1" database="SP" id="YMFH_ECOLI" ac="P75971" length="103" description="Putative protein YmfH OS=Escherichia coli (strain K12) OX=83333 GN=ymfH PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>530</score>
+      <bits>208.8</bits>
+      <expectation>3e-68</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="103">MVNAAQRTRVKVEADNRPSVDTHPPGVQPSPGTGGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQRRVSPDDGLITRPILIAVATGALLCFVEKLTDRAGSIC</querySeq>
+      <pattern>MVNAAQRTRVKVEADNRPSVDTHPPGVQPSPGTGGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQRRVSPDDGLITRPILIAVATGALLCFVEKLTDRAGSIC</pattern>
+      <matchSeq start="1" end="103">MVNAAQRTRVKVEADNRPSVDTHPPGVQPSPGTGGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQRRVSPDDGLITRPILIAVATGALLCFVEKLTDRAGSIC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A0H2VC90_ECOL6" ac="A0A0H2VC90" length="228" description="Uncharacterized protein YfdP domain-containing protein OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=c3200 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <bits>102.4</bits>
+      <expectation>9.1e-25</expectation>
+      <identity>74.6</identity>
+      <positives>79.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="67">MVNAAQRTRVKVEADNRPSVDTHPPGVQPSPGTGGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQRR</querySeq>
+      <pattern>MVNAAQRTRVKVEAD+RPSVDTHPPGVQPSPGTG  RHHNFMLCVVLAVP  +L       F K  +</pattern>
+      <matchSeq start="1" end="67">MVNAAQRTRVKVEADSRPSVDTHPPGVQPSPGTGRPRHHNFMLCVVLAVPACTLASGWYRSFYKTEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="B7LNL5_ESCF3" ac="B7LNL5" length="95" description="Uncharacterized protein OS=Escherichia fergusonii (strain ATCC 35469 / DSM 13698 / CCUG 18766 / IAM 14443 / JCM 21226 / LMG 7866 / NBRC 102419 / NCTC 12128 / CDC 0568-73) OX=585054 GN=EFER_4421 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>174</score>
+      <bits>71.6</bits>
+      <expectation>3.9e-14</expectation>
+      <identity>64.5</identity>
+      <positives>72.6</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="62">MVNAAQRTRVKVEADNRPSVDTHPPGVQPSPGTGGTRHHNFMLCVVLAVPVFSLVLSGTALF</querySeq>
+      <pattern>+VNAAQRTRVKVEAD+RPSVDTHPPGVQPSPGTG  RH    L  V +       L GT+L+</pattern>
+      <matchSeq start="21" end="73">VVNAAQRTRVKVEADSRPSVDTHPPGVQPSPGTG--RHPAPQLYAVCS-------LGGTSLY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="D2TUV0_CITRI" ac="D2TUV0" length="55" description="Prophage membrane protein OS=Citrobacter rodentium (strain ICC168) OX=637910 GN=ROD_26223 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>121</score>
+      <bits>51.2</bits>
+      <expectation>1.5e-06</expectation>
+      <identity>69.4</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="77">MLCVVLAVPVFSLVLSGTALFTKQRRVSPDDGLITR</querySeq>
+      <pattern>+LCVVLAVPV SL + GTALFT++ R SP DGLIT+</pattern>
+      <matchSeq start="8" end="43">LLCVVLAVPVPSLEVPGTALFTQETRASPGDGLITQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A4Z0LRZ7_SALET" ac="A0A4Z0LRZ7" length="61" description="Uncharacterized protein (Fragment) OS=Salmonella enterica subsp. enterica serovar Poona OX=436295 GN=C9F07_16175 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>0.00011</expectation>
+      <identity>63.9</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="61" end="96">LFTKQRRVSPDDGLITRPILIAVATGALLCFVEKLT</querySeq>
+      <pattern>LFT+Q+R SP DGLIT+    AV  GAL CFVEK T</pattern>
+      <matchSeq start="8" end="43">LFTQQKRASPRDGLITQSTRKAVTAGALFCFVEKPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A0F6B336_SALT1" ac="A0A0F6B336" length="177" description="Uncharacterized protein YfdP domain-containing protein OS=Salmonella typhimurium (strain 14028s / SGSC 2262) OX=588858 GN=STM14_2475 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.00022</expectation>
+      <identity>66.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="61" end="96">LFTKQRRVSPDDGLITRPILIAVATGALLCFVEKLT</querySeq>
+      <pattern>LFT+Q+RVSP DGLIT+    AV  GAL CFVEK T</pattern>
+      <matchSeq start="8" end="43">LFTQQKRVSPRDGLITQSTRKAVTAGALFCFVEKPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A0H3NMY4_SALTS" ac="A0A0H3NMY4" length="196" description="Predicted bacteriophage protein OS=Salmonella typhimurium (strain SL1344) OX=216597 GN=SL1344_1968 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.00026</expectation>
+      <identity>66.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="61" end="96">LFTKQRRVSPDDGLITRPILIAVATGALLCFVEKLT</querySeq>
+      <pattern>LFT+Q+RVSP DGLIT+    AV  GAL CFVEK T</pattern>
+      <matchSeq start="27" end="62">LFTQQKRVSPRDGLITQSTRKAVTAGALFCFVEKPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="B7LNL4_ESCF3" ac="B7LNL4" length="226" description="Uncharacterized protein YfdP domain-containing protein OS=Escherichia fergusonii (strain ATCC 35469 / DSM 13698 / CCUG 18766 / IAM 14443 / JCM 21226 / LMG 7866 / NBRC 102419 / NCTC 12128 / CDC 0568-73) OX=585054 GN=EFER_4420 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>0.0022</expectation>
+      <identity>64.7</identity>
+      <positives>70.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="34" end="67">GGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQRR</querySeq>
+      <pattern>GGTRHHNFMLCVVLAVPV +L  S    F K  +</pattern>
+      <matchSeq start="32" end="65">GGTRHHNFMLCVVLAVPVCTLASSWYRSFYKTEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="B7LJJ3_ESCF3" ac="B7LJJ3" length="226" description="Uncharacterized protein YfdP domain-containing protein OS=Escherichia fergusonii (strain ATCC 35469 / DSM 13698 / CCUG 18766 / IAM 14443 / JCM 21226 / LMG 7866 / NBRC 102419 / NCTC 12128 / CDC 0568-73) OX=585054 GN=EFER_0577 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.01</expectation>
+      <identity>90.5</identity>
+      <positives>95.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="34" end="54">GGTRHHNFMLCVVLAVPVFSL</querySeq>
+      <pattern>GGTRHHNFMLCVVLAVPV +L</pattern>
+      <matchSeq start="32" end="52">GGTRHHNFMLCVVLAVPVCTL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A0H2Z1U2_ECOK1" ac="A0A0H2Z1U2" length="226" description="Uncharacterized protein YfdP domain-containing protein OS=Escherichia coli O1:K1 / APEC OX=405955 GN=APECO1_3870 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.03</expectation>
+      <identity>58.8</identity>
+      <positives>64.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="34" end="67">GGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQRR</querySeq>
+      <pattern>GGTRHHNFMLCVVLAVP  +L       F K  +</pattern>
+      <matchSeq start="32" end="65">GGTRHHNFMLCVVLAVPACTLASGWYRSFYKTEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="B7MJR0_ECO45" ac="B7MJR0" length="226" description="Uncharacterized protein YfdP domain-containing protein OS=Escherichia coli O45:K1 (strain S88 / ExPEC) OX=585035 GN=ECS88_2911 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.03</expectation>
+      <identity>58.8</identity>
+      <positives>64.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="34" end="67">GGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQRR</querySeq>
+      <pattern>GGTRHHNFMLCVVLAVP  +L       F K  +</pattern>
+      <matchSeq start="32" end="65">GGTRHHNFMLCVVLAVPACTLASGWYRSFYKTEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A1G7IXP4_9ACTN" ac="A0A1G7IXP4" length="371" description="Predicted arabinose efflux permease, MFS family OS=Blastococcus aurantiacus OX=1550231 GN=SAMN05660662_1189 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.21</expectation>
+      <identity>35.5</identity>
+      <positives>50.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="100">GVQPSPGTGGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQRRVSPDDGLITRPILIAVATGALLCF-VEKLTDRAG</querySeq>
+      <pattern>G QP+PG  GT     +  V  +V +F++ L+G  + T      PD  L T  +L+  ATGAL  +    L DR G</pattern>
+      <matchSeq start="177" end="252">GPQPAPGAAGTNRAAVLAAVAPSVVLFAVTLAGGGVVTFLPIERPDGVLATTALLLFGATGALSRWRAGMLADRLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0ABS1P4H0_9ACTN" ac="A0ABS1P4H0" length="590" description="PQQ-binding-like beta-propeller repeat protein OS=Streptomyces musisoli OX=2802280 GN=JK361_22115 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>1.5</expectation>
+      <identity>42.3</identity>
+      <positives>55.8</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="73">PPGV--QPSPGTGGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQRRVSPDDG</querySeq>
+      <pattern>PP V  QP PGTGG R++  +  VV AV   +L++ G   + K    S DDG</pattern>
+      <matchSeq start="106" end="154">PPTVVAQPQPGTGGGRNNTVLFIVVAAVVAIALIVGGGIWYAKS---SGDDG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0AAI9TKK1_PENTH" ac="A0AAI9TKK1" length="360" description="Rhodopsin domain-containing protein OS=Penicillium thymicola OX=293382 GN=VN97_g4796 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.9</expectation>
+      <identity>31.2</identity>
+      <positives>49.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="94">THPPGVQPSPGTGGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQR----RVSPDDGLITRPILIAVATGALLCFVEK</querySeq>
+      <pattern>+H P  QP PGT  +  H   +  V+A  V ++V+ G   +T+ R    R+  DD +I   +L   A  AL+  V +</pattern>
+      <matchSeq start="2" end="78">SHSPIGQPPPGTDLSADHPLNISPVIATYVIAVVVVGLRFYTRFRVQGVRILADDWIIVLALLSVTAGFALVVIVNR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A1S1Q0S8_9ACTN" ac="A0A1S1Q0S8" length="527" description="Tetracenomycin C resistance and export protein OS=Parafrankia soli OX=2599596 GN=BBK14_20145 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>6.8</expectation>
+      <identity>35.4</identity>
+      <positives>49.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="100">PSPGTGGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQRRVSPDDGL-------ITRPILIAVATGALLCFVEKLTDRAG</querySeq>
+      <pattern>P+ GTGG R + +     +A+ V  + L GT +     R++ D G        IT   L+A+A  ALL F  KL DR G</pattern>
+      <matchSeq start="11" end="87">PAEGTGGRRGNPWWTLTSVALGVIMVGLDGTVVSIANPRIAEDLGASLTDLQWITNSYLLALA--ALLVFGGKLGDRYG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A7W8ARX6_STRST" ac="A0A7W8ARX6" length="528" description="EmrB/QacA subfamily drug resistance transporter OS=Streptomyces spectabilis OX=68270 GN=FHS40_001300 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>6.8</expectation>
+      <identity>32.6</identity>
+      <positives>47.4</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="100">ADNRPSVDTHPPGVQPSPGTGGTRHHNFMLCVVLAVPVFSLVLSGT----ALFTKQRRVSPDDG----LITRPILIAVATGALLCFVEKLTDRAG</querySeq>
+      <pattern>AD RP   T PP    +  TGG   H +++  V+AV    +VL  T    AL + QR +   DG    ++T     A+A G+LL    ++ D  G</pattern>
+      <matchSeq start="29" end="119">ADPRPQSATPPPA-HTALHTGGKHEHRWLILAVIAVAQLMVVLDATIVNIALPSAQRDLGFTDGNRQWIVT---AYALAFGSLLLLGGRIADLVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0A0M8NUN3_9EURO" ac="A0A0M8NUN3" length="1148" description="C2H2-type domain-containing protein OS=Penicillium nordicum OX=229535 GN=ACN38_g10053 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.2</expectation>
+      <identity>31.2</identity>
+      <positives>48.1</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="94">THPPGVQPSPGTGGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQR----RVSPDDGLITRPILIAVATGALLCFVEK</querySeq>
+      <pattern>+H P  QP PGT     H   +  V+A  V ++V+ G   +T+ +    RV  DD +I   +L   A  AL+  V +</pattern>
+      <matchSeq start="2" end="78">SHSPIGQPPPGTDLAADHPLNISPVIATYVIAVVVVGLRFYTRFQVQGVRVLADDWIIVLALLSVTAGFALVVIVNR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0ACD9KLA8_9EURO" ac="A0ACD9KLA8" length="1197" description="C2H2-type domain-containing protein OS=Penicillium palitans OX=293373 GN=PPALSP3_LOCUS2808 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>7.2</expectation>
+      <identity>31.2</identity>
+      <positives>49.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="94">THPPGVQPSPGTGGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQR----RVSPDDGLITRPILIAVATGALLCFVEK</querySeq>
+      <pattern>+H P  QP PGT  +  H   L  V+A  V ++V+ G   +T+ +    R+  DD +I   +L   A  AL+  V +</pattern>
+      <matchSeq start="2" end="78">SHSPIGQPPPGTDLSADHPLDLSSVIATYVLAVVVVGLRFYTRFQVQGVRILADDWMIVLALLSVTAGFALVVIVNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A915MJM6_MELJA" ac="A0A915MJM6" length="277" description="DNA2/NAM7 helicase helicase domain-containing protein OS=Meloidogyne javanica OX=6303 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>8.5</expectation>
+      <identity>45.7</identity>
+      <positives>62.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="34">MVNAAQRTRVKVEADNRPSVD-THPPGVQPSPGTG</querySeq>
+      <pattern>M +      + +EADN+PS + T PPG QP+P TG</pattern>
+      <matchSeq start="142" end="176">MADEKSTAMIVLEADNKPSTNQTTPPGTQPTPSTG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A7W9PU24_9ACTN" ac="A0A7W9PU24" length="584" description="Pyrrolo-quinoline quinone repeat domain-containing protein OS=Streptomyces echinatus OX=67293 GN=FHS34_003461 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>9.4</expectation>
+      <identity>40.4</identity>
+      <positives>53.8</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="73">PPGV--QPSPGTGGTRHHNFMLCVVLAVPVFSLVLSGTALFTKQRRVSPDDG</querySeq>
+      <pattern>PP V   P PGTGG R++  +  VV AV   +L++ G   +    R S DDG</pattern>
+      <matchSeq start="99" end="147">PPTVVTPPQPGTGGGRNNTVLFIVVAAVVAIALIIGGGVWYA---RSSGDDG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-202918-0417-76707337-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-202918-0417-76707337-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P75704|YKIA_ECOLI" type="PROTEIN" length="93"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:29:18+00:00" end="2026-11-13T20:30:48+00:00" search="P0Y0M0DT0H0M90.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="31">
+   <hit number="1" database="SP" id="YKIA_ECOLI" ac="P75704" length="93" description="Putative uncharacterized protein YkiA OS=Escherichia coli (strain K12) OX=83333 GN=ykiA PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>465</score>
+      <bits>183.7</bits>
+      <expectation>1.2e-58</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</querySeq>
+      <pattern>MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</pattern>
+      <matchSeq start="1" end="93">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A384KVY3_SHIFL" ac="A0A384KVY3" length="93" description="DUF2773 domain-containing protein OS=Shigella flexneri OX=623 GN=SF0328 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>453</score>
+      <bits>179.1</bits>
+      <expectation>8.2e-57</expectation>
+      <identity>97.8</identity>
+      <positives>97.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</querySeq>
+      <pattern>MLQSRNDHLRQTALRNAHTPA LLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLS LRDLVKTGATRKIRSEARHRLEEKQ</pattern>
+      <matchSeq start="1" end="93">MLQSRNDHLRQTALRNAHTPASLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSQLRDLVKTGATRKIRSEARHRLEEKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="B7MD51_ECO45" ac="B7MD51" length="93" description="DUF2773 domain-containing protein OS=Escherichia coli O45:K1 (strain S88 / ExPEC) OX=585035 GN=ykiA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>440</score>
+      <bits>174.1</bits>
+      <expectation>7.9e-55</expectation>
+      <identity>94.6</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</querySeq>
+      <pattern>MLQSRNDHLRQTAL NAHTP LLLTTLTEPQ+RSLAINN QLAADVKTAWLKE+PSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</pattern>
+      <matchSeq start="1" end="93">MLQSRNDHLRQTALHNAHTPVLLLTTLTEPQERSLAINNSQLAADVKTAWLKEEPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A0H2V6U1_ECOL6" ac="A0A0H2V6U1" length="93" description="DUF2773 domain-containing protein OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=ykiA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>440</score>
+      <bits>174.1</bits>
+      <expectation>7.9e-55</expectation>
+      <identity>94.6</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</querySeq>
+      <pattern>MLQSRNDHLRQTAL NAHTP LLLTTLTEPQ+RSLAINN QLAADVKTAWLKE+PSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</pattern>
+      <matchSeq start="1" end="93">MLQSRNDHLRQTALHNAHTPVLLLTTLTEPQERSLAINNSQLAADVKTAWLKEEPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="Q3Z517_SHISS" ac="Q3Z517" length="93" description="DUF2773 domain-containing protein OS=Shigella sonnei (strain Ss046) OX=300269 GN=SSON_0369 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>435</score>
+      <bits>172.2</bits>
+      <expectation>4.6e-54</expectation>
+      <identity>95.7</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</querySeq>
+      <pattern>MLQSRNDHLRQTALRNAHTPA LLTTLTE QDRSLAINNPQLAADVKTAWLKED SLLLFVEQPDLS LRDLVKTGATRKIRSEARHRLEEKQ</pattern>
+      <matchSeq start="1" end="93">MLQSRNDHLRQTALRNAHTPASLLTTLTESQDRSLAINNPQLAADVKTAWLKEDLSLLLFVEQPDLSQLRDLVKTGATRKIRSEARHRLEEKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="B2U3Z5_SHIB3" ac="B2U3Z5" length="93" description="DUF2773 domain-containing protein OS=Shigella boydii serotype 18 (strain CDC 3083-94 / BS512) OX=344609 GN=SbBS512_E0310 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>419</score>
+      <bits>166.0</bits>
+      <expectation>1.3e-51</expectation>
+      <identity>91.4</identity>
+      <positives>93.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</querySeq>
+      <pattern>MLQSRNDHLRQTALRNAHTPA LLTTLTE + RSLA+NNPQLAADVKT WLKEDPSLLLFVEQPDLSLLRDLVKTGA RKIRSEARH LEEKQ</pattern>
+      <matchSeq start="1" end="93">MLQSRNDHLRQTALRNAHTPASLLTTLTESRHRSLAMNNPQLAADVKTTWLKEDPSLLLFVEQPDLSLLRDLVKTGAMRKIRSEARHWLEEKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="B7UJL6_ECO27" ac="B7UJL6" length="92" description="DUF2773 domain-containing protein OS=Escherichia coli O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=ykiA PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>413</score>
+      <bits>163.7</bits>
+      <expectation>1e-50</expectation>
+      <identity>91.4</identity>
+      <positives>94.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</querySeq>
+      <pattern>MLQSRNDHLRQTALRNAHTP +LLTTLTE QDRSLAINNPQLAADVKT WLKE+PSLLLFV+QP LS LRDLVKTGATRKIRSEARHRLEEKQ</pattern>
+      <matchSeq start="1" end="92">MLQSRNDHLRQTALRNAHTP-VLLTTLTESQDRSLAINNPQLAADVKTVWLKEEPSLLLFVDQPALSQLRDLVKTGATRKIRSEARHRLEEKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A0H3EFN3_ECO8N" ac="A0A0H3EFN3" length="92" description="DUF2773 domain-containing protein OS=Escherichia coli O83:H1 (strain NRG 857C / AIEC) OX=685038 GN=NRG857_01840 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>412</score>
+      <bits>163.3</bits>
+      <expectation>1.4e-50</expectation>
+      <identity>90.3</identity>
+      <positives>93.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</querySeq>
+      <pattern>MLQSRNDHLRQTAL NAHTP +LLTTLTEPQ+RSLAINN QLAADVKT WLKE+PSLLLFVEQPD SLLRDLVK GATRKIRSEARHRLEEKQ</pattern>
+      <matchSeq start="1" end="92">MLQSRNDHLRQTALHNAHTP-VLLTTLTEPQERSLAINNSQLAADVKTTWLKEEPSLLLFVEQPDFSLLRDLVKNGATRKIRSEARHRLEEKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A7ZIE1_ECO24" ac="A7ZIE1" length="93" description="DUF2773 domain-containing protein OS=Escherichia coli O139:H28 (strain E24377A / ETEC) OX=331111 GN=EcE24377A_0419 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>412</score>
+      <bits>163.3</bits>
+      <expectation>1.5e-50</expectation>
+      <identity>90.3</identity>
+      <positives>92.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</querySeq>
+      <pattern>MLQSRNDHLRQTALRNAHTPA LLTTLTE + RSLA+NNPQLAADVKT WLKEDPSLLLFVEQPDLSLLRDLVKTGA RK RSEARH LEEKQ</pattern>
+      <matchSeq start="1" end="93">MLQSRNDHLRQTALRNAHTPASLLTTLTESRHRSLAMNNPQLAADVKTTWLKEDPSLLLFVEQPDLSLLRDLVKTGAMRKNRSEARHWLEEKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="Q8XEA4_ECO57" ac="Q8XEA4" length="759" description="DUF2773 domain-containing protein OS=Escherichia coli O157:H7 OX=83334 GN=ydbD PE=4 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>428</score>
+      <bits>169.5</bits>
+      <expectation>4.4e-47</expectation>
+      <identity>91.4</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEEKQ</querySeq>
+      <pattern>+LQSRNDHLRQTALRNAHTPA LLTTLTE QDRSLAINNPQLAADVKT WLKEDPSLLLFV++PDLS LRDLVKTGATRKIR+EARHRLEEKQ</pattern>
+      <matchSeq start="667" end="759">LLQSRNDHLRQTALRNAHTPASLLTTLTESQDRSLAINNPQLAADVKTVWLKEDPSLLLFVDKPDLSQLRDLVKTGATRKIRNEARHRLEEKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0ABR8TGR6_9ESCH" ac="A0ABR8TGR6" length="759" description="DUF2773 domain-containing protein OS=Escherichia whittamii OX=2762229 GN=H9644_18320 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>295</score>
+      <bits>118.2</bits>
+      <expectation>7.7e-29</expectation>
+      <identity>65.9</identity>
+      <positives>79.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="91">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEE</querySeq>
+      <pattern>+LQSR++ LR+TAL NAHTP    T L   QDR  AI NPQL  +VKTAWLKE+PSLLLFV++PD   LR LVKTG+TR+IRSEAR++LEE</pattern>
+      <matchSeq start="667" end="757">LLQSRHEQLRKTALINAHTPTSAFTALVTSQDRQGAIANPQLPVEVKTAWLKEEPSLLLFVDRPDPQQLRKLVKTGSTRQIRSEARNKLEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="Q32JE4_SHIDS" ac="Q32JE4" length="302" description="DUF2773 domain-containing protein OS=Shigella dysenteriae serotype 1 (strain Sd197) OX=300267 GN=SDY_0348 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>260</score>
+      <bits>104.8</bits>
+      <expectation>3.4e-25</expectation>
+      <identity>96.2</identity>
+      <positives>98.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="53">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKE</querySeq>
+      <pattern>+LQSRNDHLRQTALRNAHTPA LLTTLTEPQDRSLAINNPQLAADVKTAWLKE</pattern>
+      <matchSeq start="249" end="301">LLQSRNDHLRQTALRNAHTPASLLTTLTEPQDRSLAINNPQLAADVKTAWLKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="Q32GE5_SHIDS" ac="Q32GE5" length="185" description="DUF2773 domain-containing protein OS=Shigella dysenteriae serotype 1 (strain Sd197) OX=300267 GN=SDY_1471 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>1.3e-10</expectation>
+      <identity>43.0</identity>
+      <positives>58.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="91">ALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEE</querySeq>
+      <pattern>AL N HTP  +L    +P+   +A+NNP+   DV  A LK DP L L +  P+L L+R L   G TR IR +A  +L+E</pattern>
+      <matchSeq start="105" end="183">ALNNRHTPPAVLAAEIDPEWWIVAMNNPRFPVDVLKARLKRDPLLSLELVNPELDLVRQLALNGKTRAIREQAMRKLDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="B7LRG8_ESCF3" ac="B7LRG8" length="768" description="DUF2773 domain-containing protein OS=Escherichia fergusonii (strain ATCC 35469 / DSM 13698 / CCUG 18766 / IAM 14443 / JCM 21226 / LMG 7866 / NBRC 102419 / NCTC 12128 / CDC 0568-73) OX=585054 GN=ydbD PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>160</score>
+      <bits>66.2</bits>
+      <expectation>1.4e-10</expectation>
+      <identity>44.3</identity>
+      <positives>58.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="91">ALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEE</querySeq>
+      <pattern>AL N HTP   L   T+P+ R +A+NNP    DV  A LK DP L L +  P+L L+R L   G TR IR +A  +L++</pattern>
+      <matchSeq start="688" end="766">ALNNRHTPPAALAAETDPEWRIVAMNNPCFPVDVLKARLKRDPLLALELVNPELDLVRQLALNGKTRAIREQAMRKLDK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="O69316_ECOLX" ac="O69316" length="592" description="Gene, replication terminus region, partial and (Fragment) OS=Escherichia coli OX=562 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>4.7e-10</expectation>
+      <identity>43.0</identity>
+      <positives>58.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="91">ALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEE</querySeq>
+      <pattern>AL N HTP  +L    +P+   +A+NNP+   DV  A LK DP L L +  P+L L+R L   G TR IR +A  +L+E</pattern>
+      <matchSeq start="512" end="590">ALNNRHTPPAVLAAEIDPEWWIVAMNNPRFPVDVLKARLKRDPLLALELVNPELDLVRQLALNGKTRAIREQAMRKLDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="Q8X9S0_ECO57" ac="Q8X9S0" length="768" description="DUF2773 domain-containing protein OS=Escherichia coli O157:H7 OX=83334 GN=ydbD PE=4 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>4.8e-10</expectation>
+      <identity>43.0</identity>
+      <positives>58.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="91">ALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEE</querySeq>
+      <pattern>AL N HTP  +L    +P+   +A+NNP+   DV  A LK DP L L +  P+L L+R L   G TR IR +A  +L+E</pattern>
+      <matchSeq start="688" end="766">ALNNRHTPPAVLAAEIDPEWWIVAMNNPRFPVDVLKARLKRDPLLALKLVNPELDLVRQLALNGKTRAIREQAMRKLDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="B7L6C2_ECO55" ac="B7L6C2" length="768" description="DUF2773 domain-containing protein OS=Escherichia coli (strain 55989 / EAEC) OX=585055 GN=ydbD PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>4.8e-10</expectation>
+      <identity>43.0</identity>
+      <positives>58.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="91">ALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEE</querySeq>
+      <pattern>AL N HTP  +L    +P+   +A+NNP+   DV  A LK DP L L +  P+L L+R L   G TR IR +A  +L+E</pattern>
+      <matchSeq start="688" end="766">ALNNRHTPPAVLAAEIDPEWWIVAMNNPRFPVDVLKARLKRDPLLALELVNPELDLVRQLALNGKTRAIREQAMRKLDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="YDBD_ECOLI" ac="P25907" length="768" description="Uncharacterized protein YdbD OS=Escherichia coli (strain K12) OX=83333 GN=ydbD PE=4 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>4.8e-10</expectation>
+      <identity>43.0</identity>
+      <positives>58.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="91">ALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEE</querySeq>
+      <pattern>AL N HTP  +L    +P+   +A+NNP+   DV  A LK DP L L +  P+L L+R L   G TR IR +A  +L+E</pattern>
+      <matchSeq start="688" end="766">ALNNRHTPPAVLAAEIDPEWWIVAMNNPRFPVDVLKARLKRDPLLALELVNPELDLVRQLALNGKTRAIREQAMRKLDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A0H2UZX0_SHIFL" ac="A0A0H2UZX0" length="544" description="DUF2773 domain-containing protein OS=Shigella flexneri OX=623 GN=ydbD PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>6.4e-10</expectation>
+      <identity>43.0</identity>
+      <positives>58.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="91">ALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLEE</querySeq>
+      <pattern>AL N HTP+  L    +P+   +A+NNP+   DV  A LK DP L L +  P+L L+R L   G TR IR +A  +L+E</pattern>
+      <matchSeq start="464" end="542">ALSNRHTPSAALAAEIDPEWWIVAMNNPRFPVDVLKARLKRDPLLALELVNPELDLVRQLALNGKTRAIREQAMRKLDE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0ABX5HNZ5_ESCAL" ac="A0ABX5HNZ5" length="768" description="DUF2773 domain-containing protein OS=Escherichia albertii OX=208962 GN=C7B09_03780 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>1.2e-09</expectation>
+      <identity>37.8</identity>
+      <positives>54.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="90">MLQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLE</querySeq>
+      <pattern>+ +S+  + +  AL N HTP   L   T+ +   +A+NNP   ADV    LK DP L L +  PD  L+R L + G TR IR +A  +L+</pattern>
+      <matchSeq start="676" end="765">LAKSKRTYFKFGALNNRHTPPAALAAETDAEWWIVAMNNPHFPADVLKVRLKRDPLLALELANPDPQLIRQLARQGKTRTIREQAMKKLD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0ABR8TBV9_9ESCH" ac="A0ABR8TBV9" length="768" description="DUF2773 domain-containing bactofilin OS=Escherichia whittamii OX=2762229 GN=H9644_09415 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>7.9e-09</expectation>
+      <identity>42.3</identity>
+      <positives>57.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="90">ALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEARHRLE</querySeq>
+      <pattern>AL N HTP   L   T+ + R +A+NNP   A+V +A LK +P L+L +  PD  L+R L   G TR IR +A   L+</pattern>
+      <matchSeq start="688" end="765">ALNNRHTPPAALAAETDSEWRIVAMNNPHFPANVLSARLKREPLLVLELANPDPQLIRQLALQGKTRTIREQAMKTLD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0ACH4E2F0_SHIBO" ac="A0ACH4E2F0" length="36" description="DUF2773 domain-containing protein OS=Shigella boydii OX=621 GN=ACNKHP_19640 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>2.2e-08</expectation>
+      <identity>93.1</identity>
+      <positives>93.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="63">LAINNPQLAADVKTAWLKEDPSLLLFVEQ</querySeq>
+      <pattern>LAINN QLAADVKTAWLKEDP LLLFVEQ</pattern>
+      <matchSeq start="2" end="30">LAINNRQLAADVKTAWLKEDPLLLLFVEQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A077ZK33_TRITR" ac="A0A077ZK33" length="1855" description="Phosphatidate cytidylyltransferase OS=Trichuris trichiura OX=36087 GN=TTRE_0000846201 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>9.5e-05</expectation>
+      <identity>43.3</identity>
+      <positives>58.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="72">ALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDL</querySeq>
+      <pattern>AL N HTP  +L    +P+   +A+NNP+   DV  A LK DP L L +  P+L L+R L</pattern>
+      <matchSeq start="672" end="731">ALNNRHTPPAVLAAEIDPEWWIVAMNNPRFPVDVLKARLKRDPLLALELVNPELDLVRQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A917SFG0_9ACTN" ac="A0A917SFG0" length="214" description="TetR family transcriptional regulator OS=Microlunatus endophyticus OX=1716077 GN=GCM10011575_36730 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.35</expectation>
+      <identity>29.5</identity>
+      <positives>51.1</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="88">TALRNAHTPALLLTTLTEPQDRSLAINNP----QLAADVKTAWLKEDPSLLLFVE-------QPDLSLLRDLVKTGATRKIRSEARHR</querySeq>
+      <pattern>TA+ N HT AL+ TTLT  +    A+++P    Q+A DV    +   P+L + +E        P+L+ +   ++T   R + ++ R R</pattern>
+      <matchSeq start="75" end="162">TAVINEHTSALINTTLTSSERLVAAVSDPAAIDQVATDVADTIVANAPTLTMLMEFRSLAAGDPELAAVYSSLRTDQRRTLLADLRRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0ABQ5XCI1_9GAMM" ac="A0ABQ5XCI1" length="263" description="tRNA uridine(34) hydroxylase OS=Dyella flagellata OX=1867833 GN=trhO PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>3.4</expectation>
+      <identity>40.4</identity>
+      <positives>53.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="55">LRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDP</querySeq>
+      <pattern>LR+  L   H  AL  T L  P+  +L +  P+ A D   AWLK+DP</pattern>
+      <matchSeq start="20" end="66">LRERMLAQCHALALKGTILLAPEGINLFLAGPREAVDAFLAWLKDDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="M2NQA8_BAUPA" ac="M2NQA8" length="1348" description="AB hydrolase-1 domain-containing protein OS=Baudoinia panamericana (strain UAMH 10762) OX=717646 GN=BAUCODRAFT_118932 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>5.3</expectation>
+      <identity>31.7</identity>
+      <positives>47.6</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="86">RNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVKTGATRKIRSEAR</querySeq>
+      <pattern>R  H RQT+  +    AL L  L +P D S   + P+  +  K    + DP+     + PDL L  +L +  + RK  S+AR</pattern>
+      <matchSeq start="814" end="889">RKQHKRQTSKSSGSVDALELPRLAQPLDSSSTTSRPRPMSSRK----RTDPTTRWTAQHPDLPL--ELERRKSRRKSMSDAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A1I4Z3V3_9MICO" ac="A0A1I4Z3V3" length="130" description="PPOX class probable F420-dependent enzyme OS=Mycetocola miduiensis OX=995034 GN=SAMN05216219_0714 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>7.4</expectation>
+      <identity>37.9</identity>
+      <positives>44.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="74">AHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSLLRDLVK</querySeq>
+      <pattern>A  PA L+  LTEP   SLA   P   A V   W + D   LLF      +  R+L K</pattern>
+      <matchSeq start="3" end="60">AEIPAHLVHLLTEPNFGSLATVRPNNTAQVNPMWFEYDGEHLLFTHTKKRAKFRNLQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0ABQ8LQH3_LABRO" ac="A0ABQ8LQH3" length="375" description="Myosin-1 OS=Labeo rohita OX=84645 GN=H4Q32_005925 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.1</expectation>
+      <identity>30.3</identity>
+      <positives>53.0</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="68">QSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPSLLLFVEQPDLSL</querySeq>
+      <pattern>QS+N ++      +A  P L ++  T PQ    A+ +PQ+     T+WL++  S+ L   QP ++L</pattern>
+      <matchSeq start="221" end="280">QSKNHNV------SAMPPLLPVSPSTHPQPTICAVGSPQVCQSPATSWLEDPSSIPLAQPQPSVAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A3Q8S5N8_9BACL" ac="A0A3Q8S5N8" length="395" description="Cytochrome P450 OS=Paenibacillus lentus OX=1338368 GN=EIM92_16690 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.1</expectation>
+      <identity>32.3</identity>
+      <positives>53.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="91">QDRSLAINNPQLAADVKTAWLKEDPSLL----LFVEQPDLSLLRDLVKTGATRKIRSEARHRLEE</querySeq>
+      <pattern>+D  LA+ +P+   D++ A L ED   +    LF + PD   LR LV+   T ++ S  R R+++</pattern>
+      <matchSeq start="51" end="115">EDAVLALKDPRFVKDMRNAGLDEDVIFIKDNMLFSDPPDHKRLRGLVQKAFTPQLISGMRGRIQQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="Q7VCX4_PROMA" ac="Q7VCX4" length="1110" description="AbrB family trancriptional regulator fused to LRR containing domain OS=Prochlorococcus marinus (strain SARG / CCMP1375 / SS120) OX=167539 GN=Pro_0616 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.8</expectation>
+      <identity>29.8</identity>
+      <positives>51.2</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="75">QSRNDHLRQTALRNAHTPALLLTTLTEPQD--------RSLAINNPQLAA---DVKTAWLKEDPSLLLFVEQPDLSLLRDLVKT</querySeq>
+      <pattern>+S + H+RQ   +N  TP  +LTTL E +D        +SL I NP   A   + K+ ++K +P   +   Q D + +  L+++</pattern>
+      <matchSeq start="854" end="937">KSSDWHVRQAVAQNTSTPEKILTTLREDEDDDVKEAANKSLRILNPNSDAFGKERKSIYMKTEPGGRIAFSQLDQNQVNLLIQS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A9D3NIF3_9TELE" ac="A0A9D3NIF3" length="2141" description="Myosin VIIBb OS=Hemibagrus wyckioides OX=337641 GN=KOW79_014428 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>10.0</expectation>
+      <identity>41.8</identity>
+      <positives>50.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="56">LQSRNDHLRQTALRNAHTPALLLTTLTEPQDRSLAINNPQLAADVKTAWLKEDPS</querySeq>
+      <pattern>+  RND   QT   +  T   +L TL+ P D  LA+ NP     V TA LKED S</pattern>
+      <matchSeq start="1578" end="1631">INGRNDRTGQTGAVSTDT-ITVLPTLSRPSDDILALLNPSQRKLVATALLKEDMS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

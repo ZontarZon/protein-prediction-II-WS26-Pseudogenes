@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-204514-0952-1312182-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-204514-0952-1312182-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q6ZRU5|YQ032_HUMAN" type="PROTEIN" length="148"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:45:14+00:00" end="2026-11-13T20:47:25+00:00" search="P0Y0M0DT0H0M131.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="25">
+   <hit number="1" database="SP" id="YQ032_HUMAN" ac="Q6ZRU5" length="148" description="Putative uncharacterized protein FLJ46089 OS=Homo sapiens OX=9606 PE=5 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>862</score>
+      <bits>336.6</bits>
+      <expectation>2e-117</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MRCVTRTRNWWRRAARMPRAGSSAWWVAVCKQVCTRVGTYAVCWCSWNTGRFTGCPSWKDFWKPVGPALHVFNVKCEAQRGLKLTQPFTVACKIDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCKRITPSACL</querySeq>
+      <pattern>MRCVTRTRNWWRRAARMPRAGSSAWWVAVCKQVCTRVGTYAVCWCSWNTGRFTGCPSWKDFWKPVGPALHVFNVKCEAQRGLKLTQPFTVACKIDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCKRITPSACL</pattern>
+      <matchSeq start="1" end="148">MRCVTRTRNWWRRAARMPRAGSSAWWVAVCKQVCTRVGTYAVCWCSWNTGRFTGCPSWKDFWKPVGPALHVFNVKCEAQRGLKLTQPFTVACKIDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCKRITPSACL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A2R4CE77_9BURK" ac="A0A2R4CE77" length="235" description="Carbohydrate esterase 2 N-terminal domain-containing protein OS=Pseudoduganella armeniaca OX=2072590 GN=C9I28_20635 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.03</expectation>
+      <identity>31.7</identity>
+      <positives>46.7</positives>
+      <gaps>17</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="64">WWRRAARMPRAGSSAWWVAVCKQVCTRVGTYAVCWCSWNT-----GRFTGCPSWKDFWKP</querySeq>
+      <pattern>WW  + R     ++ WWV  C++ CT   T    WC+  T       +TGC SW+   +P</pattern>
+      <matchSeq start="168" end="222">WWNPSCR-----TACWWVRPCRRRCTWCATAVAAWCAAGTSVPTNSTWTGCTSWRSPTRP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ABM1SKA2_LIMPO" ac="A0ABM1SKA2" length="446" description="Secreted frizzled-related protein 5-like isoform X2 OS=Limulus polyphemus OX=6850 GN=LOC106461398 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.7</expectation>
+      <identity>32.9</identity>
+      <positives>47.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="66" end="139">GPALHVFNVKCEAQRGLKLTQPFTVACKIDPVL-CKSGLGFPPQLFTGCVY-LSTYTYPWQAQAECVRCPRDSNRC</querySeq>
+      <pattern>GP + +FN+KC     L L   F+  C   P+  C+S      Q   GC   ++TY YPW     C + P D++ C</pattern>
+      <matchSeq start="75" end="147">GPWVPLFNLKCHPDTQLFLCSLFSPVCLDRPIYPCRSLCDAVRQ---GCERRMNTYGYPWPDMVRCDQFPMDNDMC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A9P0ABB0_BEMTA" ac="A0A9P0ABB0" length="372" description="Secreted frizzled-related protein 5 OS=Bemisia tabaci OX=7038 GN=BEMITA_LOCUS7057 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.91</expectation>
+      <identity>33.8</identity>
+      <positives>45.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="71" end="139">VFNVKCEAQRGLKLTQPFTVACKIDPVL-CKSGLGFPPQLFTGCVY-LSTYTYPWQAQAECVRCPRDSNRC</querySeq>
+      <pattern>+ NV+C     L L   F+  C   P+  C+S      Q+  GC   + TY YPW    EC R P D + C</pattern>
+      <matchSeq start="108" end="175">LLNVRCHTHTQLFLCSLFSPVCLDRPIYPCRS---LCQQVKQGCEKRMKTYGYPWPEMFECERFPEDDDMC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABM1BSR2_LIMPO" ac="A0ABM1BSR2" length="434" description="Secreted frizzled-related protein 5-like OS=Limulus polyphemus OX=6850 GN=LOC106471859 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>1.3</expectation>
+      <identity>31.6</identity>
+      <positives>47.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="66" end="139">GPALHVFNVKCEAQRGLKLTQPFTVACKIDPVL-CKSGLGFPPQLFTGCVY-LSTYTYPWQAQAECVRCPRDSNRC</querySeq>
+      <pattern>GP + +FN+KC     L L   F+  C   P+  C+S       +  GC   ++TY YPW     C + P D++ C</pattern>
+      <matchSeq start="77" end="149">GPWVPLFNLKCHPDTQLFLCSLFSPVCLDRPIYPCRS---LCEAVRKGCERRMNTYGYPWPDMVRCDQFPLDNDMC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0AAN9A9R5_HALRR" ac="A0AAN9A9R5" length="163" description="Secreted frizzled-related protein 5 (Fragment) OS=Halocaridina rubra OX=373956 GN=SFRP5 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>1.8</expectation>
+      <identity>28.0</identity>
+      <positives>46.3</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="60" end="139">DFWKPVGPALHVFNVKCEAQRGLKLTQPFTVACKIDPVL-CKSGLGFPPQLFTGC-VYLSTYTYPWQAQAECVRCPRDSNRC</querySeq>
+      <pattern>++W P+       N++C     L L   FT  C   P+  C+S       + +GC V + TY++PW     C + P D++ C</pattern>
+      <matchSeq start="80" end="152">NYWVPL------LNLRCHPDTQLFLCSLFTPVCLESPIYPCRS---LCEAVRSGCEVRMQTYSFPWPDMLRCDKFPLDNDMC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0AA88IEG3_ARTSF" ac="A0AA88IEG3" length="377" description="Secreted frizzled-related protein 1 OS=Artemia franciscana OX=6661 GN=QYM36_001571 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>4.2</expectation>
+      <identity>31.6</identity>
+      <positives>47.4</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="71" end="144">VFNVKCEAQRGLKLTQPFTVACKIDPVL-CKSGLGFPPQLFTGC-VYLSTYTYPWQAQAECVRCPRDSNRCKRITP</querySeq>
+      <pattern>+ NV+C     L L   F+  C   P+  C+   G   ++  GC V +  Y YPW    +C + P D++ C  ITP</pattern>
+      <matchSeq start="83" end="153">LLNVRCHPDTQLFLCSLFSPVCLDRPIYPCR---GLCERVKAGCEVRMKNYGYPWPDMLKCDKFPEDNDMC--ITP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A851DFS4_TODME" ac="A0A851DFS4" length="590" description="FCGBP protein (Fragment) OS=Todus mexicanus OX=135184 GN=Fcgbp_2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>4.6</expectation>
+      <identity>30.0</identity>
+      <positives>40.0</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="140">VCTRVGTYA-------VCWCSWNTGRFT--GCPSWKDFWKPVGPALHVFNVKCEAQRGLKLTQ---PFTVACKIDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCK</querySeq>
+      <pattern>VC  +G YA       V    W +  F    CP     ++  GP+       C  Q  ++L Q   P +  C  DP   KSG    P    GCV+  +Y    Q   + V CPR S RC+</pattern>
+      <matchSeq start="135" end="247">VCRSLGAYAAACQEQGVAIGPWRSDDFCPMACPP-NQHYELCGPSCPP---TCHGQSQVELCQETTPCSEGCFCDPGFLKSGDRCVPVARCGCVFNGSY---HQVGEDFVPCPRCSRRCR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A8C3D1R9_CAIMO" ac="A0A8C3D1R9" length="2796" description="Otogelin OS=Cairina moschata OX=8855 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>5.1</expectation>
+      <identity>38.0</identity>
+      <positives>52.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="94" end="143">IDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCKRIT</querySeq>
+      <pattern>I+PVL  S +G PP   T CV +  Y  P+  +  C  C  D   CK++T</pattern>
+      <matchSeq start="2667" end="2715">IEPVLVASSIGCPPFNETECVKVGGYVVPF-LEGCCKTCKEDGKFCKKVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A8C3GR29_CAIMO" ac="A0A8C3GR29" length="2798" description="Otogelin OS=Cairina moschata OX=8855 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>5.1</expectation>
+      <identity>38.0</identity>
+      <positives>52.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="94" end="143">IDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCKRIT</querySeq>
+      <pattern>I+PVL  S +G PP   T CV +  Y  P+  +  C  C  D   CK++T</pattern>
+      <matchSeq start="2669" end="2717">IEPVLVASSIGCPPFNETECVKVGGYVVPF-LEGCCKTCKEDGKFCKKVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A7K7KQP9_9AVES" ac="A0A7K7KQP9" length="2812" description="OTOG protein (Fragment) OS=Asarcornis scutulata OX=75869 GN=Otog PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>5.1</expectation>
+      <identity>38.0</identity>
+      <positives>52.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="94" end="143">IDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCKRIT</querySeq>
+      <pattern>I+PVL  S +G PP   T CV +  Y  P+  +  C  C  D   CK++T</pattern>
+      <matchSeq start="2683" end="2731">IEPVLVASSIGCPPFNETECVKVGGYVVPF-LEGCCKTCKEDGKFCKKVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A8B9CK62_9AVES" ac="A0A8B9CK62" length="2826" description="Otogelin OS=Anser brachyrhynchus OX=132585 GN=OTOG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>5.1</expectation>
+      <identity>38.0</identity>
+      <positives>52.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="94" end="143">IDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCKRIT</querySeq>
+      <pattern>I+PVL  S +G PP   T CV +  Y  P+  +  C  C  D   CK++T</pattern>
+      <matchSeq start="2697" end="2745">IEPVLVASSIGCPPFNETECVKVGGYVVPF-LEGCCKTCKEDGKFCKKVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A8B9E9V5_ANSCY" ac="A0A8B9E9V5" length="2826" description="Otogelin OS=Anser cygnoides OX=8845 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>5.1</expectation>
+      <identity>38.0</identity>
+      <positives>52.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="94" end="143">IDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCKRIT</querySeq>
+      <pattern>I+PVL  S +G PP   T CV +  Y  P+  +  C  C  D   CK++T</pattern>
+      <matchSeq start="2697" end="2745">IEPVLVASSIGCPPFNETECVKVGGYVVPF-LEGCCKTCKEDGKFCKKVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A8B9E9X0_ANSCY" ac="A0A8B9E9X0" length="2827" description="Otogelin OS=Anser cygnoides OX=8845 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>5.1</expectation>
+      <identity>38.0</identity>
+      <positives>52.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="94" end="143">IDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCKRIT</querySeq>
+      <pattern>I+PVL  S +G PP   T CV +  Y  P+  +  C  C  D   CK++T</pattern>
+      <matchSeq start="2698" end="2746">IEPVLVASSIGCPPFNETECVKVGGYVVPF-LEGCCKTCKEDGKFCKKVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A8B9CHY6_9AVES" ac="A0A8B9CHY6" length="2863" description="Otogelin OS=Anser brachyrhynchus OX=132585 GN=OTOG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>5.1</expectation>
+      <identity>38.0</identity>
+      <positives>52.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="94" end="143">IDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCKRIT</querySeq>
+      <pattern>I+PVL  S +G PP   T CV +  Y  P+  +  C  C  D   CK++T</pattern>
+      <matchSeq start="2734" end="2782">IEPVLVASSIGCPPFNETECVKVGGYVVPF-LEGCCKTCKEDGKFCKKVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A6J3D4G3_AYTFU" ac="A0A6J3D4G3" length="3630" description="Otogelin OS=Aythya fuligula OX=219594 GN=OTOG PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>5.1</expectation>
+      <identity>38.0</identity>
+      <positives>52.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="94" end="143">IDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCKRIT</querySeq>
+      <pattern>I+PVL  S +G PP   T CV +  Y  P+  +  C  C  D   CK++T</pattern>
+      <matchSeq start="3501" end="3549">IEPVLVASSIGCPPFNETECVKVGGYVVPF-LEGCCKTCKEDGKFCKKVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0A3R7PKC3_PENVA" ac="A0A3R7PKC3" length="197" description="FZ domain-containing protein OS=Penaeus vannamei OX=6689 GN=C7M84_012443 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>5.7</expectation>
+      <identity>28.4</identity>
+      <positives>44.4</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="61" end="139">FWKPVGPALHVFNVKCEAQRGLKLTQPFTVACKIDPVL-CKSGLGFPPQLFTGCVY-LSTYTYPWQAQAECVRCPRDSNRC</querySeq>
+      <pattern>+W P+       N++C A   L L   FT  C   P+  C+S       +  GC   + TY++PW     C + P D++ C</pattern>
+      <matchSeq start="93" end="164">YWVPL------LNLRCHADTQLFLCSLFTPVCLESPIYPCRS---LCEAVRNGCESRMQTYSFPWPDMLRCDKFPLDNDMC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0A1S3KES8_LINAN" ac="A0A1S3KES8" length="764" description="Metalloendopeptidase OS=Lingula anatina OX=7574 GN=LOC106181190 PE=4 SV=2">
+    <alignments total="2">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>6.4</expectation>
+      <identity>32.1</identity>
+      <positives>42.3</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="77" end="146">EAQRGLKLTQPFTVACKIDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVR--------CPRDSNRCKRITPSA</querySeq>
+      <pattern>E QR  +  Q   + C+    LC  G G      T C+  + Y   W A+ EC R        CP+  N+C   TPSA</pattern>
+      <matchSeq start="397" end="466">ECQRNPRYMQ---LNCRQSCRLCSGGGGS-----TSCMDYNNYCATWAARGECTRNPRYMTPYCPKSCNKCASRTPSA</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>6.4</expectation>
+      <identity>32.1</identity>
+      <positives>42.3</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="77" end="146">EAQRGLKLTQPFTVACKIDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVR--------CPRDSNRCKRITPSA</querySeq>
+      <pattern>E QR  +  Q   + C+    LC  G G      T C+  + Y   W A+ EC R        CP+  N+C   TPSA</pattern>
+      <matchSeq start="659" end="728">ECQRNPRYMQ---LNCRQSCRLCSGGGGS-----TSCMDYNNYCATWAARGECTRNPRYMTPYCPKSCNKCASRTPSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0AAV1I1Z3_9CHLO" ac="A0AAV1I1Z3" length="1426" description="ERD4-related membrane protein OS=Coccomyxa viridis OX=1274662 GN=CVIRNUC_003068 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>6.7</expectation>
+      <identity>26.9</identity>
+      <positives>36.6</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="124">VCWCSWNTGRFTGCPSWKD--------FWKPVGPALHVFNVKCEAQRGLKL-TQPFTVACKIDPVLCKSGLGFPPQLFTGCV-YLSTYTYPWQ</querySeq>
+      <pattern>VCWC W    FTGC    +         W  + P L+ FN  C  + GL +   P  +A           +  PP L  G   +   Y   W+</pattern>
+      <matchSeq start="1325" end="1417">VCWCLWILSAFTGCIFLANRAYVQASITWMLITPFLYKFNKHCHLRYGLAVQNMPLEMAATAPDANVDPAVYLPPALRPGAAGWYPEYGKAWE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0ACT1DFR6_VITVI" ac="A0ACT1DFR6" length="179" description="Secoisolariciresinol dehydrogenase OS=Vitis vinifera OX=29760 GN=SILD_6 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>7.1</expectation>
+      <identity>33.3</identity>
+      <positives>51.7</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="77">AGSSAWWVAVCKQVCTRVGTYAVC--WCSWNTGRFTGCPSWKDFWKPVGPALHVFNVKCE</querySeq>
+      <pattern>+G++ WW     Q   R+    +C  WC  ++GR    P+W    + +GPA  VFNV C+</pattern>
+      <matchSeq start="8" end="62">SGANNWW----SQWHRRLHCQVICETWCQGHSGRCPR-PTWALLCQEIGPAETVFNVHCD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0AAD1RB48_PELCU" ac="A0AAD1RB48" length="359" description="Procollagen C-endopeptidase enhancer 2 OS=Pelobates cultripes OX=61616 GN=PECUL_23A010621 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>7.6</expectation>
+      <identity>50.0</identity>
+      <positives>63.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="27" end="61">VAVCKQVCTRVGTYAVCWCSWNTGRFTGCP-SWKDF</querySeq>
+      <pattern>VA+C+Q C R GT    +CS N GR  G P SW+D+</pattern>
+      <matchSeq start="298" end="333">VALCQQKCKRTGTLESNYCSSNFGRNLGNPASWQDY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0ABM1BES7_LIMPO" ac="A0ABM1BES7" length="456" description="Secreted frizzled-related protein 5-like isoform X2 OS=Limulus polyphemus OX=6850 GN=LOC106464906 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>8.0</expectation>
+      <identity>31.6</identity>
+      <positives>46.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="66" end="139">GPALHVFNVKCEAQRGLKLTQPFTVACKIDPVL-CKSGLGFPPQLFTGCVY-LSTYTYPWQAQAECVRCPRDSNRC</querySeq>
+      <pattern>GP + +FN+KC     L L   F+  C   P+  C+S      Q   GC   ++ Y YPW     C + P D++ C</pattern>
+      <matchSeq start="75" end="147">GPWVPLFNLKCHPDTQLFLCSLFSPVCLDRPIYPCRSLCEAVRQ---GCERRMNIYGYPWPDMVRCDQFPLDNDMC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="M2SHR1_COCSN" ac="M2SHR1" length="124" description="Uncharacterized protein OS=Cochliobolus sativus (strain ND90Pr / ATCC 201652) OX=665912 GN=COCSADRAFT_301961 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>8.2</expectation>
+      <identity>55.2</identity>
+      <positives>69.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="44">RMPRAGSSAWWVAVCKQVCTRVGTYAVCW</querySeq>
+      <pattern>R+P  GSS +WV+VC  VC RVG Y + W</pattern>
+      <matchSeq start="13" end="40">RLPSRGSS-FWVSVCVCVCFRVGLYGMLW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A2U1BBB9_9BACT" ac="A0A2U1BBB9" length="821" description="Glycosyl hydrolase family 39 OS=Victivallis vadensis OX=172901 GN=C8D82_101157 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>8.7</expectation>
+      <identity>26.3</identity>
+      <positives>42.1</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="87">RRAARMPRAGSSAWWVAVCKQVCTRVGTYAVCWCSWNTGRFTGCPSWKDFWKPVGPALHVFNVKCEAQRGLKLTQP</querySeq>
+      <pattern>R+A RMP+      W    +++  R     + W  WN       P+ K +WKP   +   F ++    RG+K   P</pattern>
+      <matchSeq start="516" end="582">RKAGRMPQLDR---WQEYARRIAQRYAGNGISWELWNE------PNLKSYWKPAPESHQYFQLQQAGYRGVKAGDP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0A852FKR8_PEUTA" ac="A0A852FKR8" length="1980" description="OTOG protein (Fragment) OS=Peucedramus taeniatus OX=135441 GN=Otog PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>9.2</expectation>
+      <identity>38.0</identity>
+      <positives>50.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="94" end="143">IDPVLCKSGLGFPPQLFTGCVYLSTYTYPWQAQAECVRCPRDSNRCKRIT</querySeq>
+      <pattern>I PVL  S +G PP   T CV +  Y  P+  +  C  C  D   CK++T</pattern>
+      <matchSeq start="1851" end="1899">IGPVLVSSAIGCPPFNETECVKVGGYVVPF-LEGCCKTCKEDGKFCKKVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

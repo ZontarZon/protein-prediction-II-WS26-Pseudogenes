@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-183042-0037-68719886-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-183042-0037-68719886-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q3ED99|PUP9_ARATH" type="PROTEIN" length="45"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T18:30:42+00:00" end="2026-11-13T18:32:17+00:00" search="P0Y0M0DT0H0M95.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="4">
+   <hit number="1" database="TR" id="A0A8T2H3E1_ARASU" ac="A0A8T2H3E1" length="45" description="Uncharacterized protein OS=Arabidopsis suecica OX=45249 GN=ISN44_As01g018620 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>233</score>
+      <bits>94.4</bits>
+      <expectation>1.1e-24</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="45">MDKEIHQFGKGHVLHQMLRILELEVIQIMPKVMTNKKKPTLHIGV</querySeq>
+      <pattern>MDKEIHQFGKGHVLHQMLRILELEVIQIMPKVMTNKKKPTLHIGV</pattern>
+      <matchSeq start="1" end="45">MDKEIHQFGKGHVLHQMLRILELEVIQIMPKVMTNKKKPTLHIGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A8T2GG78_9BRAS" ac="A0A8T2GG78" length="45" description="Uncharacterized protein OS=Arabidopsis thaliana x Arabidopsis arenosa OX=1240361 GN=ISN45_At01g018430 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>233</score>
+      <bits>94.4</bits>
+      <expectation>1.1e-24</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="45">MDKEIHQFGKGHVLHQMLRILELEVIQIMPKVMTNKKKPTLHIGV</querySeq>
+      <pattern>MDKEIHQFGKGHVLHQMLRILELEVIQIMPKVMTNKKKPTLHIGV</pattern>
+      <matchSeq start="1" end="45">MDKEIHQFGKGHVLHQMLRILELEVIQIMPKVMTNKKKPTLHIGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="PUP9_ARATH" ac="Q3ED99" length="45" description="Putative purine permease 9 OS=Arabidopsis thaliana OX=3702 GN=PUP9 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>233</score>
+      <bits>94.4</bits>
+      <expectation>1.1e-24</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="45">MDKEIHQFGKGHVLHQMLRILELEVIQIMPKVMTNKKKPTLHIGV</querySeq>
+      <pattern>MDKEIHQFGKGHVLHQMLRILELEVIQIMPKVMTNKKKPTLHIGV</pattern>
+      <matchSeq start="1" end="45">MDKEIHQFGKGHVLHQMLRILELEVIQIMPKVMTNKKKPTLHIGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A9W8ZNE8_9PLEO" ac="A0A9W8ZNE8" length="320" description="Peptidase C15, pyroglutamyl peptidase I-like protein OS=Didymella pomorum OX=749634 GN=N0V91_000385 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.8</expectation>
+      <identity>41.7</identity>
+      <positives>63.9</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="45">HVLHQMLRILELEVIQIMPKVMTNKKKP--TLHIGV</querySeq>
+      <pattern>HV H+ +R+    V+ I+PK++T   KP   LHIG+</pattern>
+      <matchSeq start="90" end="125">HVHHEPIRVAYKNVVDIVPKLLTTTPKPDVVLHIGL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

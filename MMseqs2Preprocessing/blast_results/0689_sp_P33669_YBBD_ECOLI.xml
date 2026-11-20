@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-200941-0761-88499821-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-200941-0761-88499821-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P33669|YBBD_ECOLI" type="PROTEIN" length="86"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:09:41+00:00" end="2026-11-13T20:11:36+00:00" search="P0Y0M0DT0H0M115.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="23">
+   <hit number="1" database="SP" id="YBBD_ECOLI" ac="P33669" length="86" description="Putative uncharacterized protein YbbD OS=Escherichia coli (strain K12) OX=83333 GN=ybbD PE=5 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>447</score>
+      <bits>176.8</bits>
+      <expectation>4.1e-56</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="86">MLAISSNLSKMIIFIFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIFP</querySeq>
+      <pattern>MLAISSNLSKMIIFIFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIFP</pattern>
+      <matchSeq start="1" end="86">MLAISSNLSKMIIFIFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIFP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="Q8XCZ4_ECO57" ac="Q8XCZ4" length="86" description="YbbD head domain-containing protein OS=Escherichia coli O157:H7 OX=83334 GN=ybbD PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>441</score>
+      <bits>174.5</bits>
+      <expectation>3.4e-55</expectation>
+      <identity>98.8</identity>
+      <positives>98.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="86">MLAISSNLSKMIIFIFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIFP</querySeq>
+      <pattern>MLAISSNLSKMIIFI AIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIFP</pattern>
+      <matchSeq start="1" end="86">MLAISSNLSKMIIFIIAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIFP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="B7L7C7_ECO55" ac="B7L7C7" length="163" description="YbbD head domain-containing protein OS=Escherichia coli (strain 55989 / EAEC) OX=585055 GN=EC55989_0515 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>396</score>
+      <bits>157.1</bits>
+      <expectation>2.7e-47</expectation>
+      <identity>88.2</identity>
+      <positives>94.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MLAISSNLSKMIIFIFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>MLAISSN+SKM+IFIFAIII+V LCV TYLYL+KDESLVSKHYINYMAIPE+DGVFTWLPDFFPHVAVDISI TNVEDDYFF  F</pattern>
+      <matchSeq start="1" end="85">MLAISSNISKMVIFIFAIIIVVFLCVTTYLYLHKDESLVSKHYINYMAIPESDGVFTWLPDFFPHVAVDISISTNVEDDYFFSYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A3A5JLT9_9ENTR" ac="A0A3A5JLT9" length="115" description="YbbD head domain-containing protein OS=Buttiauxella izardii OX=82991 GN=D6029_17050 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <bits>65.1</bits>
+      <expectation>1.3e-11</expectation>
+      <identity>40.3</identity>
+      <positives>64.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="85">IIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>+++++L VI + + +K        Y  Y  IPE+DG+ TWLPDFFP+ + +IS   N+EDD F ++F</pattern>
+      <matchSeq start="21" end="87">LLLLILFVILFFFCFKPTGHTVLKYKTYSEIPESDGIHTWLPDFFPNQSKNISFTANIEDDRFLVMF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A2A2M7K3_9GAMM" ac="A0A2A2M7K3" length="178" description="YbbD head domain-containing protein OS=Hafnia paralvei OX=546367 GN=CJD50_19985 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>1.4e-09</expectation>
+      <identity>42.3</identity>
+      <positives>56.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="85">IFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>I  I I+ +  ++ +   ++D   VSK Y  Y  IP +DG+ TWLPDFFP  A DI   T VE DY  + F</pattern>
+      <matchSeq start="14" end="84">ILLIKIVFISLLVLFAGRFRDTGEVSKTYATYSDIPNDDGIHTWLPDFFPTQAKDIGASTIVEHDYLQVTF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0AAV5N0M1_9GAMM" ac="A0AAV5N0M1" length="176" description="YbbD head domain-containing protein OS=Leminorella grimontii OX=82981 GN=SOASR030_01140 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1e-08</expectation>
+      <identity>41.7</identity>
+      <positives>66.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="85">AIIIIVVLCVITYLYL--YKDESLVSKH-YINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>AI+ +V+L  + Y+++  + D   V++  Y +Y++IPE+ GV TWLPDFFP  A DI  Y+NV+ + F + F</pattern>
+      <matchSeq start="13" end="84">AIVPVVILATVFYVFIKSFTDAIEVNEFKYDSYLSIPEDSGVKTWLPDFFPKNAKDIDFYSNVDLNTFGVTF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A2L1UTA0_9GAMM" ac="A0A2L1UTA0" length="158" description="YbbD head domain-containing protein OS=Rahnella sikkimica OX=1805933 GN=BV494_15200 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>8.4e-08</expectation>
+      <identity>31.6</identity>
+      <positives>60.8</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="85">NLSKMIIFIFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>N+ K+II +    +++ LC++++ + + +  +V+  Y  Y  I  + GV TWLP FFP  A +I  Y+N++  +F++ F</pattern>
+      <matchSeq start="3" end="77">NIKKIIISM----LLITLCILSWAFFFTNNDIVTLRYNTYEDIHPDSGVKTWLPVFFPKDASNIYFYSNLDISFFYVEF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ACT0PLA2_9ENTR" ac="A0ACT0PLA2" length="174" description="Uncharacterized protein OS=Yokenella regensburgei OX=158877 GN=KXR87_22010 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <bits>52.8</bits>
+      <expectation>2.2e-06</expectation>
+      <identity>39.7</identity>
+      <positives>60.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="85">FAIIIIVVLC--VITYLYLYKDESLVSKH-YINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>F II + + C  +    Y +  E  V+++ Y +Y +IPEN GV TWLPDFFP  +  I +Y+NV+ + F + F</pattern>
+      <matchSeq start="11" end="83">FKIITLSLPCWFIFVMTYYFIGEIDVNRYQYEHYSSIPENSGVRTWLPDFFPENSRKIDVYSNVDINTFGVKF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A6L6IL75_9ENTR" ac="A0A6L6IL75" length="159" description="YbbD head domain-containing protein OS=Intestinirhabdus alba OX=2899544 GN=GJV78_08755 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>0.0001</expectation>
+      <identity>43.8</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="38" end="85">LVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>+V K Y  +  IP+ D V +WLPDFFP  AVDI+  +N++ + F   F</pattern>
+      <matchSeq start="19" end="66">VVEKRYQAFSDIPQQDSVRSWLPDFFPETAVDITFVSNLDMNTFHACF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0A4Z0L126_SALET" ac="A0A4Z0L126" length="116" description="YbbD head domain-containing protein (Fragment) OS=Salmonella enterica subsp. enterica serovar Poona OX=436295 GN=C9F07_24600 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.0001</expectation>
+      <identity>43.1</identity>
+      <positives>66.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="85">DESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>D+ LVS ++ +Y AIPE  G++TWLP FFP  A +I +  N++ + F+  F</pattern>
+      <matchSeq start="18" end="67">DDRLVS-YFPDYAAIPEQSGIWTWLPVFFPSSASEIEMTFNLDSNLFYADF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A0F6B7Y9_SALT1" ac="A0A0F6B7Y9" length="181" description="YbbD head domain-containing protein OS=Salmonella typhimurium (strain 14028s / SGSC 2262) OX=588858 GN=STM14_4247 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00025</expectation>
+      <identity>39.1</identity>
+      <positives>58.0</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="85">AIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>A+III VL          D+  VS ++ +Y AIPE  G++TWLP FFP  A +I +  N++ + F+  F</pattern>
+      <matchSeq start="49" end="109">ALIIIAVLTAC-------DDRQVS-YFPDYAAIPEQSGIWTWLPVFFPSSASEIEMTFNLDSNLFYADF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A0H3NT68_SALTS" ac="A0A0H3NT68" length="181" description="YbbD head domain-containing protein OS=Salmonella typhimurium (strain SL1344) OX=216597 GN=SL1344_3494 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00025</expectation>
+      <identity>39.1</identity>
+      <positives>58.0</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="85">AIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>A+III VL          D+  VS ++ +Y AIPE  G++TWLP FFP  A +I +  N++ + F+  F</pattern>
+      <matchSeq start="49" end="109">ALIIIAVLTAC-------DDRQVS-YFPDYAAIPEQSGIWTWLPVFFPSSASEIEMTFNLDSNLFYADF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="Q8ZLH3_SALTY" ac="Q8ZLH3" length="181" description="Inner membrane protein OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=STM3527 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>0.00025</expectation>
+      <identity>39.1</identity>
+      <positives>58.0</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="85">AIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>A+III VL          D+  VS ++ +Y AIPE  G++TWLP FFP  A +I +  N++ + F+  F</pattern>
+      <matchSeq start="49" end="109">ALIIIAVLTAC-------DDRQVS-YFPDYAAIPEQSGIWTWLPVFFPSSASEIEMTFNLDSNLFYADF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0AB35RV96_9ENTR" ac="A0AB35RV96" length="144" description="YbbD head domain-containing protein OS=Phytobacter ursingii OX=1972431 GN=R0H02_22725 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>0.00032</expectation>
+      <identity>38.3</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">VSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>+ K+Y ++  IP +DG+ +WLPDFFP  ++DI   +N++ + F + F</pattern>
+      <matchSeq start="20" end="66">LEKNYNSFYEIPSSDGIKSWLPDFFPENSIDIKFKSNLDLNSFSVYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0ABW5ERR5_9BURK" ac="A0ABW5ERR5" length="178" description="YbbD head domain-containing protein OS=Delftia deserti OX=1651218 GN=ACFSPV_12550 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.02</expectation>
+      <identity>31.9</identity>
+      <positives>54.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="85">IFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPE-NDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>IF  +I  V+ +I  L +   E+     + +Y  + +   G  +W+P F P  A +I IYT+VE +YF++ F</pattern>
+      <matchSeq start="3" end="74">IFFALISGVIFLIFVLLISTAENQEESTFSSYEDLKKYGKGYTSWIPGFLPKEAFNIRIYTHVETNYFYMFF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0A5J5FWJ0_9GAMM" ac="A0A5J5FWJ0" length="145" description="YbbD head domain-containing protein OS=Affinibrenneria salicis OX=2590031 GN=FJU30_18230 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.07</expectation>
+      <identity>44.7</identity>
+      <positives>63.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="77">SKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVE</querySeq>
+      <pattern>+K Y +Y    END + +WLPDFFP  A DI   +N++</pattern>
+      <matchSeq start="21" end="58">TKTYSSYSETLENDSIKSWLPDFFPKNASDIKFMSNLD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0AA86UU13_9EUKA" ac="A0AA86UU13" length="282" description="Transmembrane_domain-containing protein OS=Hexamita inflata OX=28002 GN=HINF_LOCUS17476 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.1</expectation>
+      <identity>34.4</identity>
+      <positives>54.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="68">SKMIIFIFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTW-LPDFFPHVAV</querySeq>
+      <pattern>SK I+F  A+ +I+ L  ++  Y      L  KH+ N +   E+  +F + LPDFFP V +</pattern>
+      <matchSeq start="202" end="257">SKTILFFVAVSVILTLSAVSRFYC-----LFYKHFFNKLMNDEDFAIFCYFLPDFFPIVCI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0ABX8Z3M2_9NEIS" ac="A0ABX8Z3M2" length="397" description="General secretion pathway protein F OS=Deefgea tanakiae OX=2865840 GN=K4H28_12845 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.1</expectation>
+      <identity>28.1</identity>
+      <positives>49.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="65">SKMIIFIFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPH</querySeq>
+      <pattern>+K ++   A + ++V CV+ +L +Y    LV         +P N  +  W+ DFF H</pattern>
+      <matchSeq start="158" end="214">AKKVVMYPAFVAVLVFCVVCFLMVYLVPQLVDFIKSMKQEVPLNTQILLWISDFFVH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A812D791_ACAPH" ac="A0A812D791" length="876" description="Uncharacterized protein OS=Acanthosepion pharaonis OX=158019 GN=SPHA_47301 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>3.0</expectation>
+      <identity>28.6</identity>
+      <positives>51.2</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="85">LAISSNLSKMIIFIFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>L IS ++  + + IF + II +  +I +L +Y      S HYI+  A P     FT+L     ++++ +SIY ++    F  +F</pattern>
+      <matchSeq start="569" end="647">LLISISICSIYLSIFNLFIIYLSIIIYHLSIYLSFLSQSVHYISIYAFP-----FTFLSLCLIYLSIYLSIYLSIYLSIFISLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A812AZJ8_ACAPH" ac="A0A812AZJ8" length="483" description="Uncharacterized protein OS=Acanthosepion pharaonis OX=158019 GN=SPHA_7321 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>5.4</expectation>
+      <identity>28.6</identity>
+      <positives>52.4</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="85">LAISSNLSKMIIFIFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNVEDDYFFLIF</querySeq>
+      <pattern>L++S  LS M  F++  I+I V      +YL+ +      H+  Y ++   D   +  P F P++++ +SIY ++   Y FLI+</pattern>
+      <matchSeq start="214" end="286">LSLSLFLSLMSNFLYQFIVISVC-----IYLHHNMKTYPSHFHLYSSL---DACLSVYPVFIPYLSIYLSIYLSI---YLFLIY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A5N6ES48_9EURO" ac="A0A5N6ES48" length="134" description="Uncharacterized protein OS=Aspergillus novoparasiticus OX=986946 GN=BDV33DRAFT_103228 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>6.3</expectation>
+      <identity>32.8</identity>
+      <positives>53.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="75">MIIFIFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPD--FFPHVAVDISIYTN</querySeq>
+      <pattern>+II++ A I I+ +CV+T  Y +  +  + ++ + Y  I  ND V   +PD  F  H+  DI  Y N</pattern>
+      <matchSeq start="36" end="101">IIIWLRAHIAIMTICVVTVQYAFMKQEYL-RNSLVYTRITWNDLVLQKIPDPLFAKHILHDIPEYNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A668AL67_9TELE" ac="A0A668AL67" length="768" description="Fibronectin type-III domain-containing protein OS=Myripristis murdjan OX=586833 GN=LOC115354597 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>7.6</expectation>
+      <identity>32.7</identity>
+      <positives>59.2</positives>
+      <gaps>14</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="62">FIFAIIIIVVLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDF</querySeq>
+      <pattern>F+F ++++V+LC+      YK +S + K ++  +  P N  + TW PDF</pattern>
+      <matchSeq start="516" end="557">FLFLVLLVVLLCI------YKRDS-IKKTFLPQIPNPGNSSIGTWSPDF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A812CX04_ACAPH" ac="A0A812CX04" length="255" description="Uncharacterized protein OS=Acanthosepion pharaonis OX=158019 GN=SPHA_43193 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>9.4</expectation>
+      <identity>25.0</identity>
+      <positives>58.3</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="76">NLSKMIIFIFAIIIIV--VLCVITYLYLYKDESLVSKHYINYMAIPENDGVFTWLPDFFPHVAVDISIYTNV</querySeq>
+      <pattern>++SK+I+    + I +  V C+I  +YL   + L   +Y++Y++I  +  +  +LP    ++++ +SIY ++</pattern>
+      <matchSeq start="122" end="193">SISKLILLSIYLFIYLSYVFCLILLVYLNLSKYLYLSYYLSYLSIYLSIYLSIYLPSLHIYLSIYLSIYLSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

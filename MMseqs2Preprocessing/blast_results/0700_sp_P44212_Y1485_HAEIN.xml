@@ -1,0 +1,3510 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-201427-0745-62828045-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-201427-0745-62828045-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P44212|Y1485_HAEIN" type="PROTEIN" length="73"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:14:27+00:00" end="2026-11-13T20:16:49+00:00" search="P0Y0M0DT0H0M142.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="205">
+   <hit number="1" database="SP" id="Y1485_HAEIN" ac="P44212" length="73" description="Putative uncharacterized protein HI_1485 in Mu-like prophage FluMu region OS=Haemophilus influenzae (strain ATCC 51907 / DSM 11121 / KW20 / Rd) OX=71421 GN=HI_1485 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>398</score>
+      <bits>157.9</bits>
+      <expectation>4.9e-49</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="73">MKTKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFEGE</querySeq>
+      <pattern>MKTKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFEGE</pattern>
+      <matchSeq start="1" end="73">MKTKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFEGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A1V3J6K7_9PAST" ac="A0A1V3J6K7" length="70" description="ANR family transcriptional regulator OS=Rodentibacter genomosp. 1 OX=1908264 GN=BKK54_04080 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>364</score>
+      <bits>144.8</bits>
+      <expectation>6.9e-44</expectation>
+      <identity>95.7</identity>
+      <positives>98.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MKTKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>MKTKRP+AKSVENFNRYRFYAEKAAKEEQAGNY+EAETHWDLAMLSASPENKEWAIRRRDFCQ MHQRPF</pattern>
+      <matchSeq start="1" end="70">MKTKRPYAKSVENFNRYRFYAEKAAKEEQAGNYKEAETHWDLAMLSASPENKEWAIRRRDFCQCMHQRPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ABT5MQA5_9PAST" ac="A0ABT5MQA5" length="71" description="ANR family transcriptional regulator OS=Mannheimia cairinae OX=3025936 GN=PTQ27_07740 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>203</score>
+      <bits>82.8</bits>
+      <expectation>2.6e-19</expectation>
+      <identity>56.9</identity>
+      <positives>73.6</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="71">MKTKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>MK K   AK    FNRY+ YAEKAA+ E+ GNYEEA+ +W++A LSA    N++WA +R +FC+RMHQRPFE</pattern>
+      <matchSeq start="1" end="68">MKLKPTEAK----FNRYQHYAEKAAEAERKGNYEEAKDNWEVAKLSAKKTANRDWAEQRAEFCKRMHQRPFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0ABT5MS76_9PAST" ac="A0ABT5MS76" length="67" description="ANR family transcriptional regulator OS=Mannheimia cairinae OX=3025936 GN=PTQ27_04485 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>184</score>
+      <bits>75.5</bits>
+      <expectation>1.8e-16</expectation>
+      <identity>50.7</identity>
+      <positives>71.8</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MKTKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>MKTK    K    FNRY+ YAEKAA+ E+ GNY+EA+ HW +A LSA    N++WA +R +FC+R++++PF</pattern>
+      <matchSeq start="1" end="67">MKTKPTEVK----FNRYQHYAEKAAEAERKGNYKEAQDHWGVAKLSAKKTANRDWAEQRAEFCKRVNEKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A547ERY0_MANHA" ac="A0A547ERY0" length="72" description="ANR family transcriptional regulator OS=Mannheimia haemolytica OX=75985 GN=FEB89_07725 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>184</score>
+      <bits>75.5</bits>
+      <expectation>2.1e-16</expectation>
+      <identity>53.2</identity>
+      <positives>74.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="70">SVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>S    NRY+ YAEKAA+ E+ GNY+EA+ HW++A LSA    N++WA +R +FC+RMH +PF</pattern>
+      <matchSeq start="11" end="72">SYAQHNRYQHYAEKAAEAERKGNYKEAQDHWEVAKLSAKKTANRDWAEQRAEFCKRMHNKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="Q7VNL8_HAEDU" ac="Q7VNL8" length="82" description="ANR family transcriptional regulator OS=Haemophilus ducreyi (strain 35000HP / ATCC 700724) OX=233412 GN=HD_0490 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>1.6e-15</expectation>
+      <identity>57.1</identity>
+      <positives>71.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="73">FNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENK---EWAIRRRDFCQRMHQRPFEGE</querySeq>
+      <pattern>FNRY+ YAEKAA+ E+AGNY EA   W+ AML+A+ + K   EWA  R DFC+RM  +PF GE</pattern>
+      <matchSeq start="20" end="82">FNRYKHYAEKAARIERAGNYPEAVKLWETAMLNANDKQKKQYEWAKARADFCRRMILKPFRGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0ABW4NTH9_9PAST" ac="A0ABW4NTH9" length="67" description="ANR family transcriptional regulator OS=Pasteurella oralis OX=1071947 GN=ACFSAV_04180 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>177</score>
+      <bits>72.8</bits>
+      <expectation>2.1e-15</expectation>
+      <identity>50.8</identity>
+      <positives>75.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="72">NFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPFEG</querySeq>
+      <pattern>+FNR++ Y+ +AAK E+AG YE A +HW++A +SA  P N++W I+R +FCQRM  +PF G</pattern>
+      <matchSeq start="4" end="64">HFNRFQHYSSRAAKAERAGKYELARSHWEVAAISAKQPFNQDWCIKRAEFCQRMLTKPFVG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0A1V4AYR7_9PAST" ac="A0A1V4AYR7" length="65" description="ANR family transcriptional regulator OS=Canicola haemoglobinophilus OX=733 GN=NCTC1659_00435 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>9.6e-14</expectation>
+      <identity>51.7</identity>
+      <positives>70.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="73">FNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFEGE</querySeq>
+      <pattern>FNR+  ++++AAK EQAG Y +A   WD+AML+A+ ENK W   R  FC+RM  RPF+ E</pattern>
+      <matchSeq start="6" end="65">FNRFTHWSKEAAKLEQAGKYADAAKAWDVAMLNATSENKAWCENRMAFCERMAIRPFKEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A4V2PT31_9PAST" ac="A0A4V2PT31" length="70" description="PerC transcriptional activator OS=Lonepinella koalarum OX=53417 GN=EV692_2426 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>1.8e-12</expectation>
+      <identity>44.4</identity>
+      <positives>65.3</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MKTKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFEG</querySeq>
+      <pattern>M TK+P   S+E+  RYR ++E A+  E+ G+Y  A   W+ AM  A+ +N+EW   RR+FC+RM +RPF G</pattern>
+      <matchSeq start="1" end="70">MTTKKP--TSIEDKARYRHWSEIASDAEKQGDYRTAAEAWNSAMHCANLKNQEWCAGRREFCERMIKRPFRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0ABT1WSD4_ACTSU" ac="A0ABT1WSD4" length="62" description="ANR family transcriptional regulator OS=Actinobacillus suis OX=716 GN=LZL92_03115 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <bits>65.1</bits>
+      <expectation>2.1e-12</expectation>
+      <identity>45.9</identity>
+      <positives>68.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="70">SVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>S + F+RY+ Y+E+AAK E  GN+ EA   W++A LSA  +N +W  +R+ FC+RM  +PF</pattern>
+      <matchSeq start="2" end="62">STQKFDRYKHYSEEAAKLEAQGNWAEAAFKWEVANLSAKGKNIKWTEQRQAFCERMRDKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A380TTH7_9PAST" ac="A0A380TTH7" length="65" description="ANR family transcriptional regulator OS=[Actinobacillus] rossii OX=123820 GN=NCTC10801_01472 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>4.6e-12</expectation>
+      <identity>42.2</identity>
+      <positives>71.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="70">AKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>+K+   FNR+++Y+E+AAK E+AG  ++A+  W +A ++A +P NKEW   R  FC+R+ ++PF</pattern>
+      <matchSeq start="2" end="65">SKNDGKFNRFKYYSEQAAKSERAGELQDAKEQWAVAAMNARTPSNKEWCKHRAAFCERVLRKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A380TRE9_9PAST" ac="A0A380TRE9" length="65" description="ANR family transcriptional regulator OS=[Actinobacillus] rossii OX=123820 GN=NCTC10801_01085 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>153</score>
+      <bits>63.5</bits>
+      <expectation>9.2e-12</expectation>
+      <identity>42.2</identity>
+      <positives>70.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="70">AKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>+K+   FNR+++Y+E+AAK E+AG  ++A   W +A ++A +P NKEW   R  FC+R+ ++PF</pattern>
+      <matchSeq start="2" end="65">SKNDGKFNRFKYYSEQAAKSERAGELQDATEQWAVAAMNARTPSNKEWCKHRAAFCERVLRKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A2M8RY21_9PAST" ac="A0A2M8RY21" length="65" description="ANR family transcriptional regulator OS=Caviibacterium pharyngocola OX=28159 GN=CVP04_01475 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>1.3e-11</expectation>
+      <identity>41.3</identity>
+      <positives>69.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="70">KSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>K++ NFNR+++Y+E+AAK E+ G  ++A+  W +A L+A   +N+EW   R  FC+R+  +PF</pattern>
+      <matchSeq start="3" end="65">KNINNFNRFKYYSEQAAKNERCGELQDAKEQWAIAELNAPGVKNREWCKYRAKFCERVLSKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0A377IXC0_9PAST" ac="A0A377IXC0" length="64" description="ANR family transcriptional regulator OS=Haemophilus pittmaniae OX=249188 GN=NCTC13335_00732 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1.5e-10</expectation>
+      <identity>39.7</identity>
+      <positives>68.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="70">KSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>+++  FNR+++Y+EKAA+ E  G+ ++A+  W +A L+A   +NKEW   R  FC R+ ++PF</pattern>
+      <matchSeq start="2" end="64">ENIHKFNRFKYYSEKAAESEHQGDLQDAKEQWAIAELNAKDSKNKEWCKHRAAFCDRVLRKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0ABY1VTM7_HAEAE" ac="A0ABY1VTM7" length="65" description="ANR family transcriptional regulator OS=Haemophilus aegyptius OX=197575 GN=NCTC8502_00243 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <bits>59.3</bits>
+      <expectation>4.3e-10</expectation>
+      <identity>38.1</identity>
+      <positives>68.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="70">KSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>K++  F+R+++Y+E+AA  E+ G  ++A+  W +A L+A +  N+EW   R  FC+R+ +RPF</pattern>
+      <matchSeq start="3" end="65">KNINKFDRFKYYSEQAANSERRGELQDAKEQWAIAELNAPNARNREWCKHRATFCERILRRPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0ABX3BNP1_9PAST" ac="A0ABX3BNP1" length="65" description="ANR family transcriptional regulator OS=Haemophilus quentini OX=123834 GN=BFQ30_08960 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>6.1e-10</expectation>
+      <identity>38.1</identity>
+      <positives>68.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="70">KSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>K++  F+R+++Y+E+AA  E+ G  ++A+  W +A L+A +  N+EW   R  FC+R+ +RPF</pattern>
+      <matchSeq start="3" end="65">KNINKFDRFKYYSEQAANSERRGELQDAKEQWAIAELNAPNARNREWCKHRAAFCERVLRRPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0A263HCN8_9PAST" ac="A0A263HCN8" length="65" description="ANR family transcriptional regulator OS=Actinobacillus seminis OX=722 GN=CFY87_09235 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>6.1e-10</expectation>
+      <identity>38.1</identity>
+      <positives>68.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="70">KSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>K++  F+R+++Y+E+AA  E+ G  ++A+  W +A L+A +  N+EW   R  FC+R+ +RPF</pattern>
+      <matchSeq start="3" end="65">KNINKFDRFKYYSEQAANSERRGELQDAKEQWAIAELNAPNARNREWCKHRAAFCERVLRRPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0AAW5LB84_9PAST" ac="A0AAW5LB84" length="65" description="ANR family transcriptional regulator OS=Rodentibacter pneumotropicus OX=758 GN=MUU45_001772 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <bits>57.8</bits>
+      <expectation>1.8e-09</expectation>
+      <identity>35.9</identity>
+      <positives>68.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="70">AKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>+K++  F+R+++Y+ +AAK E+ G  ++A+  W +A L+A   +N+EW   R  FC+R+ ++PF</pattern>
+      <matchSeq start="2" end="65">SKNINKFDRFKYYSSQAAKNERKGELQDAKEQWAIAELNAPGVKNREWCKHRAAFCERVLRKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0ABY1VU85_HAEAE" ac="A0ABY1VU85" length="65" description="ANR family transcriptional regulator OS=Haemophilus aegyptius OX=197575 GN=NCTC8502_01155 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>3.5e-09</expectation>
+      <identity>36.5</identity>
+      <positives>66.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="70">KSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>K++  F+R+++Y+E+AA  E+ G  ++A+  W +A L+A +  N+EW   R  FC R+ ++PF</pattern>
+      <matchSeq start="3" end="65">KNIHKFDRFKYYSEQAANSERRGELQDAKAQWAIAELNAPNARNQEWCKHRAAFCDRVLRKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A1V3IX72_9PAST" ac="A0A1V3IX72" length="65" description="ANR family transcriptional regulator OS=Rodentibacter trehalosifermentans OX=1908263 GN=BKK52_10420 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>132</score>
+      <bits>55.5</bits>
+      <expectation>1.4e-08</expectation>
+      <identity>36.5</identity>
+      <positives>65.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="70">KSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>K++  F+R+++Y+ +AAK E+ G  ++A+  W +A L+A   +NK W   R  FC+R+ + PF</pattern>
+      <matchSeq start="3" end="65">KNINKFDRFKYYSSQAAKNERKGKLQDAKEQWAIAELNAPGVKNKAWCKHRAAFCERVLREPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A2M8S4Y1_9PAST" ac="A0A2M8S4Y1" length="59" description="ANR family transcriptional regulator OS=Conservatibacter flavescens OX=28161 GN=CVP05_03200 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>128</score>
+      <bits>53.9</bits>
+      <expectation>5.1e-08</expectation>
+      <identity>49.1</identity>
+      <positives>63.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="62">KSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFC</querySeq>
+      <pattern>K  + F+ Y  YA KAA +E++GNY EA   W  A+L AS E +K+W   RRDFC</pattern>
+      <matchSeq start="2" end="56">KKKQTFDCYSHYANKAANKERSGNYAEAAKLWGCALLFASLEASKKWCEARRDFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0ACG2H515_9PAST" ac="A0ACG2H515" length="64" description="ANR family transcriptional regulator OS=Gallibacterium faecale OX=3019086 GN=PF272_02880 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>125</score>
+      <bits>52.8</bits>
+      <expectation>1.6e-07</expectation>
+      <identity>46.6</identity>
+      <positives>58.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="73">YRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQRMHQRPFEGE</querySeq>
+      <pattern>Y  +AE+A   EQ   Y++A  +W LA   A  E N++WAI R   C RMH RPF GE</pattern>
+      <matchSeq start="6" end="63">YYNHAEQAVLLEQKAEYQDAALYWRLAAGKARKEANQKWAISRSQICDRMHIRPFGGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A1T0B6U5_9PAST" ac="A0A1T0B6U5" length="69" description="ANR family transcriptional regulator OS=[Haemophilus] felis OX=123822 GN=B0188_03575 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>120</score>
+      <bits>50.8</bits>
+      <expectation>1e-06</expectation>
+      <identity>42.4</identity>
+      <positives>59.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="73">RYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQRMHQRPFEGE</querySeq>
+      <pattern>R++  ++ AA+ E+ G Y +A   WD A   AS + NK+W   R +FCQRM  RPF  E</pattern>
+      <matchSeq start="11" end="69">RFKHLSDLAARLERQGKYNDACEAWDKAAKDASADLNKQWCTNRSNFCQRMAIRPFSKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A547D0S4_MANHA" ac="A0A547D0S4" length="48" description="ANR family transcriptional regulator OS=Mannheimia haemolytica OX=75985 GN=FEB89_09105 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>118</score>
+      <bits>50.1</bits>
+      <expectation>1.3e-06</expectation>
+      <identity>55.3</identity>
+      <positives>74.5</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="47">MKTKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA</querySeq>
+      <pattern>MKT++   K+ E F+RY+ YAEKAA+ E+ GNY EA+ HW +A LSA</pattern>
+      <matchSeq start="1" end="43">MKTEQ---KATE-FDRYKHYAEKAAEAERKGNYAEAQDHWKVAKLSA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0ACT0XTY2_9PAST" ac="A0ACT0XTY2" length="65" description="ANR family transcriptional regulator OS=Reella acinonychis OX=3414265 GN=ACUXZ4_06005 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>1.4e-06</expectation>
+      <identity>36.1</identity>
+      <positives>57.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="71">ENFNRYRFYAEKAAKEEQAGNYEEAETHWD-LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>E   R+ +Y+  AA+ E+ G Y +A   W   A ++ +PEN+ W   R ++C RM  RP+E</pattern>
+      <matchSeq start="4" end="64">EQRRRFDYYSRNAAENERQGRYMDAMQQWSSAARIAQNPENRNWCQARYEWCHRMITRPYE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0A420XIQ5_9PAST" ac="A0A420XIQ5" length="67" description="ANR family transcriptional regulator OS=Otariodibacter oris OX=1032623 GN=DES31_0474 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>1.4e-06</expectation>
+      <identity>41.1</identity>
+      <positives>62.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="70">RYRFYAEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>R+++  E AA  E+ G+Y+EA   W+ A  L+ +  NKEW + R DFC+R+  R F</pattern>
+      <matchSeq start="12" end="67">RFKYATEGAAYAERKGDYKEASNKWNYASKLAPNEANKEWCVHRCDFCERLTIRSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0A9Q7E546_HISSO" ac="A0A9Q7E546" length="71" description="ANR family transcriptional regulator OS=Histophilus somni OX=731 GN=JFL49_08570 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>117</score>
+      <bits>49.7</bits>
+      <expectation>3.1e-06</expectation>
+      <identity>31.7</identity>
+      <positives>61.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="73">FNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFEGE</querySeq>
+      <pattern>F+R++ Y+++AA  E+   + EA   W++A ++A P NK W   R+ FC++  +   +G+</pattern>
+      <matchSeq start="8" end="67">FDRFKHYSQQAANLERQAQWAEAAKAWEVAAINARPRNKHWCESRQAFCRKQAEETKKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A377I9A6_AVIPA" ac="A0A377I9A6" length="66" description="ANR family transcriptional regulator OS=Avibacterium paragallinarum OX=728 GN=M5S13_13120 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>7.9e-06</expectation>
+      <identity>45.3</identity>
+      <positives>64.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="72">AEKAAKEEQAGNYEEAETHWDLAMLSASP-ENKEWAIRRRDFCQRMHQRPFEG</querySeq>
+      <pattern>AE AA+ E+AG+Y  A   W +A   A+  EN++W   R DFC+R+  RPF+G</pattern>
+      <matchSeq start="10" end="62">AEIAAEIEKAGDYRNAARLWGVAATLANKMENQQWCENRADFCRRVATRPFKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0AB36DUM8_9PAST" ac="A0AB36DUM8" length="65" description="ANR family transcriptional regulator OS=Gallibacterium genomosp. 1 OX=155515 GN=QV05_10505 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>113</score>
+      <bits>48.1</bits>
+      <expectation>1.1e-05</expectation>
+      <identity>47.3</identity>
+      <positives>58.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="70">YRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>Y  YAE+AA+ E+   Y +A  +W LA   A  E N E+AI R  FC RM  RPF</pattern>
+      <matchSeq start="6" end="60">YYDYAEQAAELEKKQQYHDAALYWQLASGKAKKEINCEYAIERSKFCNRMEVRPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0ABM5PAP7_BIBTR" ac="A0ABM5PAP7" length="58" description="ANR family transcriptional regulator OS=Bibersteinia trehalosi USDA-ARS-USMARC-189 OX=1263831 GN=F543_6080 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>1.3e-05</expectation>
+      <identity>45.1</identity>
+      <positives>62.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="70">AEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>AE AA+ E+ GNY +A   W+ A  +A + + +EW   R DFC RM +RPF</pattern>
+      <matchSeq start="8" end="58">AEAAARAERFGNYTQAADLWNKAAKAAVNAKQQEWCRNRSDFCDRMAERPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0ACN4W8S3_PASAE" ac="A0ACN4W8S3" length="65" description="ANR family transcriptional regulator OS=Pasteurella aerogenes OX=749 GN=HZ320_11135 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>112</score>
+      <bits>47.8</bits>
+      <expectation>1.6e-05</expectation>
+      <identity>39.3</identity>
+      <positives>66.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="70">RYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>+++  ++ AAK E+  +YE+A   W LA++ A  E N++W   R+DFC RM ++PF</pattern>
+      <matchSeq start="10" end="65">KFKAASDAAAKAEREKDYEQAAKTWGLALVYAKKEVNQKWCQGRQDFCLRMLKKPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A0A2XW28_9PAST" ac="A0A0A2XW28" length="65" description="ANR family transcriptional regulator OS=Gallibacterium genomosp. 2 OX=155517 GN=P375_00345 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>107</score>
+      <bits>45.8</bits>
+      <expectation>8.9e-05</expectation>
+      <identity>45.5</identity>
+      <positives>56.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="70">YRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQRMHQRPF</querySeq>
+      <pattern>Y  +AE+AA+ E+   Y +A  HW LA   A  E N E+A  R  FC RM  RPF</pattern>
+      <matchSeq start="6" end="60">YYNHAEQAAELEKKQQYHDAALHWQLASGKAKKEINCEYATERSKFCNRMAVRPF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A1S1HZP7_PROST" ac="A0A1S1HZP7" length="71" description="ANR family transcriptional regulator OS=Providencia stuartii OX=588 GN=A3Q29_00295 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>105</score>
+      <bits>45.1</bits>
+      <expectation>0.00021</expectation>
+      <identity>42.6</identity>
+      <positives>59.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="62">YRFYAEKAAKEEQAGNYEEAETHW-DLAMLSASPENKEWAIRRRDFC</querySeq>
+      <pattern>Y + A  A++ EQ G Y +A THW D A ++   EN+ WA  R +FC</pattern>
+      <matchSeq start="6" end="52">YIYCATMASQAEQLGRYSQAHTHWKDAAKMARKSENRVWAENRAEFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0ABN5Q1T8_9VIBR" ac="A0ABN5Q1T8" length="66" description="ANR family transcriptional regulator OS=Vibrio owensii OX=696485 GN=D0812_08230 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>103</score>
+      <bits>44.3</bits>
+      <expectation>0.00037</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="67">NRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENK-EWAIRRRDFCQ-RMHQ</querySeq>
+      <pattern>N+YR +A  AA+ E+ G+Y+ A  HW  A + A  E + +W   R DFC+ R H+</pattern>
+      <matchSeq start="8" end="62">NKYRTHATDAAEAERKGDYQAAACHWKTAAIYAPNETELKWVTARIDFCETRNHE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="B8F590_GLAP5" ac="B8F590" length="70" description="ANR family transcriptional regulator OS=Glaesserella parasuis serovar 5 (strain SH0165) OX=557723 GN=HAPS_0863 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.0011</expectation>
+      <identity>40.4</identity>
+      <positives>57.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="63">AKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>A+  E  + Y+  AE AAK EQ GNY +A   W+LA   + + + KEW   R D+C+</pattern>
+      <matchSeq start="4" end="60">ARQQELRSLYQEKAEAAAKIEQLGNYAQAANLWNLAGKYALTDKQKEWCHNRADYCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A328BYN0_9PAST" ac="A0A328BYN0" length="72" description="ANR family transcriptional regulator OS=Glaesserella australis OX=2094024 GN=C5N92_10750 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.0012</expectation>
+      <identity>32.3</identity>
+      <positives>62.9</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="64">KRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFCQR</querySeq>
+      <pattern>K+P+A   E   R+++++E A++ E+ G Y +A   WD A+  + +P N++W   R +FC++</pattern>
+      <matchSeq start="12" end="70">KKPNALQRE---RFKYFSELASELEREGKYLQASDAWDKALKFATNPLNQKWCESRYEFCEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0AAP9KA66_9VIBR" ac="A0AAP9KA66" length="65" description="ANR family transcriptional regulator OS=Vibrio owensii OX=696485 GN=D0812_27400 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>99</score>
+      <bits>42.7</bits>
+      <expectation>0.0015</expectation>
+      <identity>43.1</identity>
+      <positives>60.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="63">NRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA--SPENKEWAIRRRDFCQ</querySeq>
+      <pattern>N+YR +A  AA+ E+ G+Y+ A  HW  A + A  S E+K W   R DFC+</pattern>
+      <matchSeq start="8" end="57">NKYRTHATDAAEAERKGDYQAAACHWKTAAIYAPNSTESK-WVAARIDFCE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="Q7VLD5_HAEDU" ac="Q7VLD5" length="70" description="ANR family transcriptional regulator OS=Haemophilus ducreyi (strain 35000HP / ATCC 700724) OX=233412 GN=HD_1524 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.0046</expectation>
+      <identity>39.7</identity>
+      <positives>58.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="62">PHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFC</querySeq>
+      <pattern>P AK+   F  Y+  AE AA+ EQ GNY++A   W  AM L+ + + K+W   R ++C</pattern>
+      <matchSeq start="3" end="59">PSAKTERQF-MYKEKAEAAARCEQLGNYQQAYNLWCEAMKLATTEKQKQWCSTRANYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A0E3MUZ9_ECOLX" ac="A0A0E3MUZ9" length="65" description="Uncharacterized protein OS=Escherichia coli OX=562 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.0059</expectation>
+      <identity>32.7</identity>
+      <positives>58.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="68">NRYRFYAEKAAKEEQAGNYEEAETHWDLAML-SASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>N++R +   A+  E+   Y+ A+  W+ A++ +   EN EW IRR++FC R   +</pattern>
+      <matchSeq start="8" end="62">NQFRRFTHLASNAERKKKYDLADKFWNKALVYTVKKENIEWIIRRKEFCLRQKDK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A411WGV0_9GAMM" ac="A0A411WGV0" length="66" description="ANR family transcriptional regulator OS=Limnobaculum zhutongyuii OX=2498113 GN=EKN56_03140 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.0085</expectation>
+      <identity>40.4</identity>
+      <positives>61.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="62">YRFYAEKAAKEEQAGNYEEAETHW-DLAMLSASPENKEWAIRRRDFC</querySeq>
+      <pattern>+R  +++A   E++GNY  A T+W D ++L+  P N   A  RRDFC</pattern>
+      <matchSeq start="6" end="52">FRMVSQRAVNAEKSGNYAAAYTYWHDASLLAIKPVNVWHAETRRDFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A2G1DNR1_AGGAC" ac="A0A2G1DNR1" length="69" description="ANR family transcriptional regulator OS=Aggregatibacter actinomycetemcomitans OX=714 GN=CQR80_08830 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.009</expectation>
+      <identity>37.7</identity>
+      <positives>58.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="68">YRFYAEKAAKEEQAGNYEEAETHW-DLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>Y+  +E A + E+AG+   A   W   A L+    N++WAI+R +FC+R H R</pattern>
+      <matchSeq start="5" end="57">YKDLSELAVEVERAGDLSYASELWFKAANLAKKTANQDWAIKRGEFCKRWHPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0ABX7QPD7_9GAMM" ac="A0ABX7QPD7" length="74" description="ANR family transcriptional regulator OS=Shewanella avicenniae OX=2814294 GN=JYB87_12640 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.01</expectation>
+      <identity>41.5</identity>
+      <positives>56.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="68">YRFYAEKAAKEEQAGNYEEAETHWDLAMLSASP-ENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>Y+  AE A   E  G Y EA ++W  A+  A    N++WA  R +FCQRM +R</pattern>
+      <matchSeq start="10" end="62">YKEAAETAVALEHQGRYGEAASYWTHAIRFAGHYANEDWAQSRLEFCQRMGRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="C4LBB4_TOLAT" ac="C4LBB4" length="60" description="ANR family transcriptional regulator OS=Tolumonas auensis (strain DSM 9187 / NBRC 110442 / TA 4) OX=595494 GN=Tola_0721 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.01</expectation>
+      <identity>44.9</identity>
+      <positives>59.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="64">YRFYAEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFCQR</querySeq>
+      <pattern>YR  AE+AA+ E+   Y+ A   W LA   +AS  N+ WAI R DFC +</pattern>
+      <matchSeq start="5" end="53">YRELAEQAAQFERDEYYQWARKFWLLAADATASEVNRTWAINRADFCSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A2C6DID8_9GAMM" ac="A0A2C6DID8" length="113" description="ANR family transcriptional regulator OS=Budvicia aquatica OX=82979 GN=CRN84_12255 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.03</expectation>
+      <identity>39.6</identity>
+      <positives>56.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="68">YRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>Y   A+ A ++E+A ++ EA   W+ A   A SPEN+ WA  R D C +  QR</pattern>
+      <matchSeq start="13" end="65">YSELAQLAVEKERAHDWIEANVRWEQAAYRAKSPENRAWATLRADVCLKHSQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0ABM6K714_PANSE" ac="A0ABM6K714" length="78" description="ANR family transcriptional regulator OS=Pantoea stewartii subsp. stewartii DC283 OX=660596 GN=DSJ_15670 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.03</expectation>
+      <identity>38.8</identity>
+      <positives>55.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="64">YRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQR</querySeq>
+      <pattern>Y  +A  A + EQ+G Y +A   W++A   A  E  + WA+ RR FC R</pattern>
+      <matchSeq start="17" end="65">YMKHAIAAVQSEQSGKYADAYLRWEMAEKQAKSEIERVWAVDRRAFCNR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="F9S301_9VIBR" ac="F9S301" length="76" description="ANR family transcriptional regulator OS=Vibrio ichthyoenteri ATCC 700023 OX=870968 GN=VII00023_10534 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.04</expectation>
+      <identity>31.2</identity>
+      <positives>48.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="68">AKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWD---LAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+    + +Y   AE+AA  E+   Y EA  +W    + +L     N +WA+ R +FCQ    R</pattern>
+      <matchSeq start="2" end="65">ARKYSAYQKYIELAEQAALLERLNEYSEASIYWAEAVVCLLDTRSANLDWAVCRAEFCQHWATR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0ABM6X318_ACTPL" ac="A0ABM6X318" length="70" description="ANR family transcriptional regulator OS=Actinobacillus pleuropneumoniae OX=715 GN=DRF63_04840 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.1</expectation>
+      <identity>32.1</identity>
+      <positives>55.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="62">AKSVENFNRYRFYAEKAAKEEQAGNYEEAETHW-DLAMLSASPENKEWAIRRRDFC</querySeq>
+      <pattern>A  +E    Y+  A+ AA+ EQ GNY++A   W +   L+ + + K+W   R ++C</pattern>
+      <matchSeq start="4" end="59">AAKIERQFMYKEKAQAAARCEQLGNYQQAYNLWCEAVKLATTEKQKQWCSTRANYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0A1N6MWS9_9GAMM" ac="A0A1N6MWS9" length="70" description="ANR family transcriptional regulator OS=Xenorhabdus innexi OX=290109 GN=Xinn_02552 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.1</expectation>
+      <identity>37.7</identity>
+      <positives>54.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="68">YRFYAEKAAKEEQAGNYEEAETHWD-LAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>Y+ YA +AA+ E  G+Y  A   W+  A  S +  N EWA  R +FC + + R</pattern>
+      <matchSeq start="11" end="63">YKIYAREAARIEHEGDYLRASKVWNKAARHSRNTLNIEWAEIRSEFCLKQYHR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0A0L0GKM2_9ENTR" ac="A0A0L0GKM2" length="72" description="ANR family transcriptional regulator OS=Trabulsiella odontotermitis OX=379893 GN=GM31_07500 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.11</expectation>
+      <identity>41.9</identity>
+      <positives>60.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="62">AEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFC</querySeq>
+      <pattern>A +A + EQ G+YE+A   W  A   +  E N++W+ RR DFC</pattern>
+      <matchSeq start="15" end="57">AREAVRVEQTGDYEQAAKAWAKASRESRNELNQDWSDRRADFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0ABY2SKS1_9HYPH" ac="A0ABY2SKS1" length="58" description="ANR family transcriptional regulator OS=Martelella alba OX=2590451 GN=FCN80_10290 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.12</expectation>
+      <identity>38.3</identity>
+      <positives>53.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="63">YRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>Y   A KAA  E+A  + EA+  W  A   A+ EN  W + R ++CQ</pattern>
+      <matchSeq start="3" end="49">YAELAAKAAALERANKFSEAQDIWQQAYKLAAGENLAWTLCRAEYCQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="K8WE46_9GAMM" ac="K8WE46" length="75" description="ANR family transcriptional regulator OS=Providencia sneebia DSM 19967 OX=1141660 GN=OO7_12259 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.12</expectation>
+      <identity>42.9</identity>
+      <positives>57.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A  A + EQAG Y EA T W  A  L+ +  N+ W+ RR DFC +  +R</pattern>
+      <matchSeq start="15" end="63">ARDAIRLEQAGKYFEAATAWLQAHRLARTRNNQIWSERRSDFCMKQLKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0A2J9VKI6_VIBMI" ac="A0A2J9VKI6" length="69" description="ANR family transcriptional regulator OS=Vibrio mimicus OX=674 GN=AL544_005085 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.15</expectation>
+      <identity>38.2</identity>
+      <positives>52.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="68">NRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>+ YR +AE A + E+AG  ++A   W  A   A  P N+ WA  R D+C R   R</pattern>
+      <matchSeq start="6" end="60">SEYRPFAEHARELERAGFLKDAAFGWQAAAEKAREPINRRWAQARADWCLRWSSR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0ABY2ZGC1_9GAMM" ac="A0ABY2ZGC1" length="71" description="ANR family transcriptional regulator OS=Pantoea anthophila OX=470931 GN=FJW00_01130 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.15</expectation>
+      <identity>38.0</identity>
+      <positives>56.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="63">NRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQ</querySeq>
+      <pattern>+RY   AE AA+ E++G YE+A   W  A+  A  E N  W+  R + C+</pattern>
+      <matchSeq start="14" end="63">DRYNSVAESAARAERSGQYEQASKLWRKAIKLARKEINACWSAHRAELCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A085ADN5_9ENTR" ac="A0A085ADN5" length="73" description="ANR family transcriptional regulator OS=Trabulsiella guamensis ATCC 49490 OX=1005994 GN=GTGU_01443 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.16</expectation>
+      <identity>41.9</identity>
+      <positives>60.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="62">AEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFC</querySeq>
+      <pattern>A +A + EQ G+YE+A   W  A   +  E N++W+ RR DFC</pattern>
+      <matchSeq start="15" end="57">AREAVRIEQTGDYEQAAKAWAKASRESRNELNQDWSDRRADFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A1I4X4D3_9GAMM" ac="A0A1I4X4D3" length="106" description="PerC transcriptional activator OS=Izhakiella capsodis OX=1367852 GN=SAMN05216516_103278 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.2</expectation>
+      <identity>35.7</identity>
+      <positives>58.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="62">SVENFNRYRFY--AEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFC</querySeq>
+      <pattern>S +N++   +Y  A +AA+ E+AG+Y +A   W  A   S +  N++W+  R DFC</pattern>
+      <matchSeq start="2" end="57">SFKNYDSPLYYRAAREAARIERAGDYRQAAAVWTKASRFSRNEANQQWSENRADFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0A2C6BYH0_9GAMM" ac="A0A2C6BYH0" length="71" description="ANR family transcriptional regulator OS=Budvicia aquatica OX=82979 GN=CRN84_07470 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.21</expectation>
+      <identity>38.0</identity>
+      <positives>58.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="63">NRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSAS-PENKEWAIRRRDFCQ</querySeq>
+      <pattern>+ Y   A  AA++E+A ++ EA T W+ A   A  PEN+ WA  R + C+</pattern>
+      <matchSeq start="11" end="60">SNYSELARVAAEKERAHDWVEAITQWEQAAYMAKFPENRAWATARAEACR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="B7UGE9_ECO27" ac="B7UGE9" length="77" description="ANR family transcriptional regulator OS=Escherichia coli O127:H6 (strain E2348/69 / EPEC) OX=574521 GN=E2348C_2635 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.24</expectation>
+      <identity>39.6</identity>
+      <positives>50.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="66">NRYRFYAEKAAKEEQAGNYEEAETHWDLAMLS-ASPENKEWAIRRRDFCQRMH</querySeq>
+      <pattern>NR   Y+  A++ EQ G+Y EAE  W  A  S  S   + WA  R +FC   H</pattern>
+      <matchSeq start="12" end="64">NRCAAYSLGASRAEQRGDYAEAEKLWRKAAQSPCSTLRRIWAEHRAEFCANAH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0ABX5HDR3_ESCAL" ac="A0ABX5HDR3" length="72" description="ANR family transcriptional regulator OS=Escherichia albertii OX=208962 GN=C7B09_18430 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.31</expectation>
+      <identity>38.8</identity>
+      <positives>55.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A +A + EQ+G Y+ A   W  A   +  E N+EW+ RR DFC   + R</pattern>
+      <matchSeq start="15" end="63">AREALRLEQSGEYDRAAKVWAKANRESHHELNQEWSERRSDFCLMQNMR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A379AQD2_AVIAV" ac="A0A379AQD2" length="73" description="ANR family transcriptional regulator OS=Avibacterium avium OX=751 GN=NCTC11297_00912 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.31</expectation>
+      <identity>28.4</identity>
+      <positives>50.7</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="68">TKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHW-DLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>++RP  +       Y   AE AA+ E++GNY  A   W +   L+ + + +EW   R+ +C++   R</pattern>
+      <matchSeq start="2" end="68">SRRPRVERSVLEEAYHEAAETAAEVERSGNYARATELWANAEKLALTFKQREWCYTRKSYCKKWQGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0ABX7YUW2_9GAMM" ac="A0ABX7YUW2" length="83" description="ANR family transcriptional regulator OS=Shewanella yunxiaonensis OX=2829809 GN=KDN34_03060 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.38</expectation>
+      <identity>34.5</identity>
+      <positives>61.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="68">NRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASP-ENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>+RY   A +AA  E+ G+Y +A  +W++A  +A+  EN+++A  R  FC+   +R</pattern>
+      <matchSeq start="11" end="65">HRYLEPAAQAAALEREGHYTQAADYWNVARQNANTFENQDYARNREAFCRNFGRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0A1E7YUI6_9GAMM" ac="A0A1E7YUI6" length="71" description="ANR family transcriptional regulator OS=Candidatus Erwinia dacicola OX=252393 GN=ACZ87_02331 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.43</expectation>
+      <identity>36.7</identity>
+      <positives>55.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A +A + EQ+G Y+ A   W  A   +  E N++W+ RR DFC   + R</pattern>
+      <matchSeq start="15" end="63">AREALRLEQSGEYDRAAKVWSKANRESRNELNQDWSERRSDFCLMQNMR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0A2D0KWW3_9GAMM" ac="A0A2D0KWW3" length="111" description="ANR family transcriptional regulator OS=Xenorhabdus kozodoii OX=351676 GN=Xkoz_03797 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.43</expectation>
+      <identity>35.3</identity>
+      <positives>56.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="66">YRFYAEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFCQRMH</querySeq>
+      <pattern>Y  +A +A   E+  NY+ A   WDLA M++  P N+ WA  R++  ++ H</pattern>
+      <matchSeq start="6" end="56">YLDFANRAINAEKEENYQYAAELWDLARMIAQHPNNQAWAEYRQEHNEKRH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0AAW3HN66_9ENTR" ac="A0AAW3HN66" length="73" description="ANR family transcriptional regulator OS=Enterobacter chengduensis OX=2494701 GN=SG71_02145 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.45</expectation>
+      <identity>36.7</identity>
+      <positives>55.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A +A + EQ+G Y+ A   W  A   +  E N++W+ RR DFC   + R</pattern>
+      <matchSeq start="15" end="63">AREALRLEQSGEYDRAAKVWSKANRESRNELNQDWSERRADFCLMQNMR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="A0ABU4SCX2_9GAMM" ac="A0ABU4SCX2" length="80" description="ANR family transcriptional regulator OS=Xenorhabdus santafensis OX=2582833 GN=FE392_15055 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.51</expectation>
+      <identity>37.0</identity>
+      <positives>55.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="73">AEKAAKEEQAGNYEEAETHWDLAML-SASPENKEWAIRRRDFCQRMHQRPFEGE</querySeq>
+      <pattern>A +AA+ E+ G+Y  A   W+ A+  S + +N EWA  R DFC +  +R    E</pattern>
+      <matchSeq start="15" end="68">AREAAQIEREGDYLRASKVWNKAVRHSRNTQNIEWAENRSDFCLKQLERDKNNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0AAJ1BIW2_9GAMM" ac="A0AAJ1BIW2" length="82" description="ANR family transcriptional regulator OS=Shewanella zhuhaiensis OX=2919576 GN=MJ923_14920 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.53</expectation>
+      <identity>35.5</identity>
+      <positives>51.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="68">VENFNRYRFYAE---KAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>+E+ N  +FY E   +AA  E+   Y  A   W  A + AS   N+ WA  R +FCQ+  +R</pattern>
+      <matchSeq start="1" end="62">MEHINESQFYLESATEAASLERRKLYASAAELWSKAAIEASCRLNQHWAENRAEFCQKAARR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="A0A2C6DPC3_9GAMM" ac="A0A2C6DPC3" length="103" description="ANR family transcriptional regulator OS=Budvicia aquatica OX=82979 GN=CRN84_17875 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.53</expectation>
+      <identity>37.5</identity>
+      <positives>48.2</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="68">YRFYAEKAAKEEQAGNYEEAETHWDLAMLSAS-PENKEWAIRR---RDFCQRMHQR</querySeq>
+      <pattern>Y  +A+ A  EEQ G YE A  +W+ A   A  P N+ WA  R         +HQR</pattern>
+      <matchSeq start="6" end="61">YSIFAQSAVIEEQKGRYETAAVYWEKATRYAQRPVNQAWATSRIELNTLRHTLHQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0ABY9SEY2_9ENTR" ac="A0ABY9SEY2" length="65" description="ANR family transcriptional regulator OS=Buttiauxella selenatireducens OX=3073902 GN=RHD99_09090 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.54</expectation>
+      <identity>36.7</identity>
+      <positives>53.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="64">YRFYAEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFCQR</querySeq>
+      <pattern>Y   AE+A  EE+  NY +A   W  A  L+    N+ WA  R ++C+R</pattern>
+      <matchSeq start="10" end="58">YHLVAEEARAEERLRNYRQAYGLWTTASSLAVDETNRVWADARSEYCRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0A3B5M627_9TELE" ac="A0A3B5M627" length="96" description="vesicle-fusing ATPase OS=Xiphophorus couchianus OX=32473 PE=4 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.67</expectation>
+      <identity>35.5</identity>
+      <positives>53.2</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="68">NFNRYRFYAEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>N N     A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="8" end="69">NNNNTIVIAQKASQEDQAGNYEEAIQSYQHAVKYFLHILKREPQGKDGNQKIRDTCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="Q7VPI0_HAEDU" ac="Q7VPI0" length="78" description="ANR family transcriptional regulator OS=Haemophilus ducreyi (strain 35000HP / ATCC 700724) OX=233412 GN=HD_0098 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.69</expectation>
+      <identity>38.8</identity>
+      <positives>57.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="64">YRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQR</querySeq>
+      <pattern>Y+  +  A + E+AG+   A + W  A   A  E NK+WA+RR  FC+R</pattern>
+      <matchSeq start="11" end="59">YKELSGLAREVERAGDLSYAASVWHKAAGKAKKEANKQWAVRRAAFCER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0A672T2N2_SINGR" ac="A0A672T2N2" length="98" description="Si:dkey-185p13.1 OS=Sinocyclocheilus grahami OX=75366 PE=4 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.7</expectation>
+      <identity>33.8</identity>
+      <positives>52.3</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="71">NFNRYRFYAEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>N N+    A KA++E+QAGNYEEA   +       L ++   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="3" end="67">NHNKAIAIANKASQEDQAGNYEEAVKSYQHAVTYFLHIIKREPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0A1I3WM05_9GAMM" ac="A0A1I3WM05" length="80" description="ANR family transcriptional regulator OS=Xenorhabdus mauleonii OX=351675 GN=Xmau_02904 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.72</expectation>
+      <identity>37.0</identity>
+      <positives>53.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="73">AEKAAKEEQAGNYEEAETHWDLAML-SASPENKEWAIRRRDFCQRMHQRPFEGE</querySeq>
+      <pattern>A +AA  E+ G+Y  A   W+ A+  S + +N EWA  R DFC +  +R    E</pattern>
+      <matchSeq start="15" end="68">AREAAHIEREGDYLRASKAWNKAVRHSRNTQNIEWAENRSDFCLKQLERDKNNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0ABU7RK60_9BACT" ac="A0ABU7RK60" length="64" description="ANR family transcriptional regulator OS=Niabella digestorum OX=3117701 GN=V2H41_13905 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.74</expectation>
+      <identity>32.1</identity>
+      <positives>55.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="64">KSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQR</querySeq>
+      <pattern>K++   N+Y   A +A + E+ G+Y  A   W+ A+  A  EN  W I R ++C++</pattern>
+      <matchSeq start="5" end="60">KAIYLENKYFSPANEAVRLEREGDYIGAWKKWNDALHYAKGENIGWCIARAEYCRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="A0A291HNA7_9GAMM" ac="A0A291HNA7" length="69" description="ANR family transcriptional regulator OS=Zobellella denitrificans OX=347534 GN=AN401_07080 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.82</expectation>
+      <identity>40.0</identity>
+      <positives>56.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="64">RYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFCQR</querySeq>
+      <pattern>+Y+  AE AA+ E+   +  A   W+ A   A SP N+EW  RR+ FC R</pattern>
+      <matchSeq start="9" end="58">KYQECAEAAAELERQRCWGTAAEAWEEAFYHATSPVNREWCKRRQQFCLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="Q65WD0_MANSM" ac="Q65WD0" length="70" description="ANR family transcriptional regulator OS=Mannheimia succiniciproducens (strain KCTC 0769BP / MBEL55E) OX=221988 GN=MS0123 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.84</expectation>
+      <identity>44.2</identity>
+      <positives>55.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="62">AEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFC</querySeq>
+      <pattern>AE AAK E++GNY +A   W  A   A +   KEW  RR  +C</pattern>
+      <matchSeq start="19" end="61">AEAAAKTERSGNYYQAAELWKKAKEKALNLSQKEWCKRRYQYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0ABX9F3G5_9ENTR" ac="A0ABX9F3G5" length="73" description="ANR family transcriptional regulator OS=Enterobacter kobei OX=208224 GN=DP181_08350 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.89</expectation>
+      <identity>36.7</identity>
+      <positives>55.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A +A + EQ+G Y+ A   W  A   +  E N++W+ RR DFC   + R</pattern>
+      <matchSeq start="15" end="63">AREALRLEQSGEYDRAAKVWAKANRESRNELNQDWSERRSDFCLMQNMR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0A8S1M6Q1_9CILI" ac="A0A8S1M6Q1" length="829" description="Tetratricopeptide repeat protein OS=Paramecium sonneborni OX=65129 GN=PSON_ATCC_30995.1.T0290088 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>1.0</expectation>
+      <identity>40.0</identity>
+      <positives>60.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="59">NRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRR</querySeq>
+      <pattern>N  RFYAEKA  +EQ GN++EA+  +D A+       K + +R +</pattern>
+      <matchSeq start="485" end="529">NNARFYAEKAQLQEQQGNFKEAKLLYDQAIALEHDNPKFYTLRAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0A2C6DHG7_9GAMM" ac="A0A2C6DHG7" length="100" description="ANR family transcriptional regulator OS=Budvicia aquatica OX=82979 GN=CRN84_02385 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>1.0</expectation>
+      <identity>38.8</identity>
+      <positives>59.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="64">YRFYAEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFCQR</querySeq>
+      <pattern>Y   AE AA +EQ+G++  A  +W +A  ++  PEN+ WA  R  +C R</pattern>
+      <matchSeq start="13" end="61">YAELAEIAALKEQSGDWRGASQYWRMAEDVARLPENRLWAGSRARYCGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0A3B5PPQ7_XIPMA" ac="A0A3B5PPQ7" length="95" description="vesicle-fusing ATPase OS=Xiphophorus maculatus OX=8083 PE=4 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.3</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="15" end="68">AQKASQEDQAGNYEEAIQSYQHAVKYFLHILKREPQGKDGNQKIRDTCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0ABR3NS05_9TELE" ac="A0ABR3NS05" length="404" description="Vesicle-fusing ATPase (Fragment) OS=Cirrhinus molitorella OX=172907 GN=QQF64_014410 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>1.3</expectation>
+      <identity>36.8</identity>
+      <positives>56.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   ++      L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">ASKASQEDQAGNYEEAVKSYEHAVKYFLHIIKREPQGKEGNQKIRDTCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0AA88Q0S6_9TELE" ac="A0AA88Q0S6" length="508" description="vesicle-fusing ATPase OS=Cirrhinus molitorella OX=172907 GN=Q8A67_009495 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>1.3</expectation>
+      <identity>36.8</identity>
+      <positives>56.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   ++      L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">ASKASQEDQAGNYEEAVKSYEHAVKYFLHIIKREPQGKEGNQKIRDTCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0A2D0JSM4_9GAMM" ac="A0A2D0JSM4" length="77" description="ANR family transcriptional regulator OS=Xenorhabdus miraniensis OX=351674 GN=Xmir_01293 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.4</expectation>
+      <identity>37.3</identity>
+      <positives>52.5</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="62">RPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFC</querySeq>
+      <pattern>R H  S +N   Y  Y+  AA+ E+  +Y  A + WD A  +A S   + WA RR +FC</pattern>
+      <matchSeq start="4" end="60">RIHENSAQN--NYAAYSLGAARAERDAHYLNAASLWDKAASTARSAPARFWAERRSEFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0A2D0JLJ7_9GAMM" ac="A0A2D0JLJ7" length="77" description="ANR family transcriptional regulator OS=Xenorhabdus miraniensis OX=351674 GN=Xmir_03533 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.4</expectation>
+      <identity>40.8</identity>
+      <positives>53.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="62">NRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFC</querySeq>
+      <pattern>N Y  Y+  AA  E+  +Y  A T WD A  +A S   + WA RR +FC</pattern>
+      <matchSeq start="12" end="60">NHYAAYSSVAAHAERHTDYLNAATLWDKAASTARSAPARFWAERRSEFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0A2C6DLB3_9GAMM" ac="A0A2C6DLB3" length="101" description="ANR family transcriptional regulator OS=Budvicia aquatica OX=82979 GN=CRN84_23235 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>1.4</expectation>
+      <identity>36.5</identity>
+      <positives>55.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="62">ENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFC</querySeq>
+      <pattern>E    Y   AE AA +EQ+G++  A  +W +A  ++  PEN+ WA  R  +C</pattern>
+      <matchSeq start="8" end="59">EPVRHYTDLAEIAALKEQSGDWRGASQYWAMAEDVARLPENRLWAGSRARYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A4R1NIE7_9GAMM" ac="A0A4R1NIE7" length="64" description="ANR family transcriptional regulator OS=Sodalis ligni OX=2697027 GN=EZJ58_5164 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.5</expectation>
+      <identity>48.8</identity>
+      <positives>51.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="62">AEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFC</querySeq>
+      <pattern>AEKA   E AG   EA   W  A  L+ S  N EWA  R DFC</pattern>
+      <matchSeq start="9" end="51">AEKARSSEIAGMRAEAHLLWIKAEKLAKSRANAEWAAARADFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0A4Z2HK80_9TELE" ac="A0A4Z2HK80" length="83" description="vesicle-fusing ATPase OS=Liparis tanakae OX=230148 GN=VPS4B_1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.5</expectation>
+      <identity>38.9</identity>
+      <positives>61.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA---ETH---WDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA+KE++AGNYEEA    TH   + L ++   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASKEDEAGNYEEAIRSYTHAVKYFLHIVKREPQGKDGNQKIRDQCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0ABY9S556_9ENTR" ac="A0ABY9S556" length="65" description="ANR family transcriptional regulator OS=Buttiauxella selenatireducens OX=3073902 GN=RHD99_13695 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.5</expectation>
+      <identity>34.7</identity>
+      <positives>53.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="64">YRFYAEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFCQR</querySeq>
+      <pattern>Y   A++A  EE+  NY +A   W  A  L+    N+ WA  R ++C+R</pattern>
+      <matchSeq start="10" end="58">YHLVADEARAEERLRNYRQAYGLWTTASSLAVDETNRVWADARSEYCRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0ABW7JF04_9VIBR" ac="A0ABW7JF04" length="66" description="ANR family transcriptional regulator OS=Vibrio jasicida OX=766224 GN=ACGRHZ_27205 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.5</expectation>
+      <identity>39.3</identity>
+      <positives>57.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="69">NRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDF-CQRMHQRP</querySeq>
+      <pattern>++Y   A++A+  EQ   +EEA   W  A+  AS  NK WA  R +F CQ++  RP</pattern>
+      <matchSeq start="3" end="58">SQYLELAQQASVFEQLSRWEEAGKCWLEAIKFASGANKLWANGRFEFCCQQVGVRP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0A3B3BBT0_ORYME" ac="A0A3B3BBT0" length="86" description="vesicle-fusing ATPase OS=Oryzias melastigma OX=30732 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.6</expectation>
+      <identity>36.8</identity>
+      <positives>56.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="63">NFNRYRFYAEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>N N+    A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C+</pattern>
+      <matchSeq start="3" end="59">NNNQSIAVAQKASEEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0A380U248_9PAST" ac="A0A380U248" length="70" description="ANR family transcriptional regulator OS=[Actinobacillus] rossii OX=123820 GN=NCTC10801_02260 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.7</expectation>
+      <identity>40.4</identity>
+      <positives>53.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="62">YRFYAEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFC</querySeq>
+      <pattern>Y   AE AAK E++GNY +A   W  A   A +   KEW  +R  +C</pattern>
+      <matchSeq start="15" end="61">YNEAAETAAKTERSGNYYQAAELWKKAREKALNLSQKEWCKQRYQYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0A3Q1FRM1_9TELE" ac="A0A3Q1FRM1" length="91" description="vesicle-fusing ATPase OS=Acanthochromis polyacanthus OX=80966 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.7</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="15" end="68">AQKASQEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0AA88IXV9_CHASR" ac="A0AA88IXV9" length="92" description="MIT domain-containing protein OS=Channa striata OX=64152 GN=Q5P01_022503 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.8</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASQEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0A3P1UAL8_BACAN" ac="A0A3P1UAL8" length="366" description="Uncharacterized protein OS=Bacillus anthracis OX=1392 GN=GBAA_2522 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.8</expectation>
+      <identity>34.2</identity>
+      <positives>49.3</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="71">KRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLA--MLSASP---ENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>K PH K   +F  Y +Y  KA       NY EA+T+++ A  +L   P   E  E+  R   +C + +Q PFE</pattern>
+      <matchSeq start="80" end="151">KLPHIKDEFSFLAYYYYFFKAIHSTIIANYTEAKTYYEKAEGLLKGIPDEIEKAEFEYRFSTYCYQSYQ-PFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0A6L7H4S4_BACAN" ac="A0A6L7H4S4" length="366" description="Uncharacterized protein OS=Bacillus anthracis OX=1392 GN=BA_2522 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.8</expectation>
+      <identity>34.2</identity>
+      <positives>49.3</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="71">KRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLA--MLSASP---ENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>K PH K   +F  Y +Y  KA       NY EA+T+++ A  +L   P   E  E+  R   +C + +Q PFE</pattern>
+      <matchSeq start="80" end="151">KLPHIKDEFSFLAYYYYFFKAIHSTIIANYTEAKTYYEKAEGLLKGIPDEIEKAEFEYRFSTYCYQSYQ-PFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0AAW0Q4J6_9GOBI" ac="A0AAW0Q4J6" length="508" description="vesicle-fusing ATPase OS=Mugilogobius chulae OX=88201 GN=WMY93_001335 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.8</expectation>
+      <identity>33.9</identity>
+      <positives>53.2</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="68">NFNRYRFYAEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>N  +    A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="5" end="66">NLQKAIVVAQKASEEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDSCKKYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0AAW2B1G7_CULAL" ac="A0AAW2B1G7" length="508" description="vesicle-fusing ATPase OS=Culter alburnus OX=194366 GN=ABG768_013095 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.8</expectation>
+      <identity>38.6</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KAA+E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">ANKAAQEDQAGNYEEAVKSYQHAVKYFLHIVKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0A2T0FDG0_9ASCO" ac="A0A2T0FDG0" length="843" description="Vacuolar protein sorting-associated protein 18 OS=Wickerhamiella sorbophila OX=45607 GN=B9G98_00663 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>1.9</expectation>
+      <identity>55.2</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="43">NRYRFYAEKAAKEEQAGNYEEAETHWDLA</querySeq>
+      <pattern>+R   YAE AA E +AGNY EA  HW L+</pattern>
+      <matchSeq start="353" end="381">DRRYIYAEMAASELEAGNYREAAAHWGLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0A0A4ABY2_9GAMM" ac="A0A0A4ABY2" length="77" description="ANR family transcriptional regulator OS=Erwinia typographi OX=371042 GN=NG99_04740 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.9</expectation>
+      <identity>36.7</identity>
+      <positives>53.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="62">NRYRFYAEKAAKEEQAGNYEEAETHWDLAMLS-ASPENKEWAIRRRDFC</querySeq>
+      <pattern>N+Y  YA  A K E+   Y +A   W  AM +    +N +WA +R +FC</pattern>
+      <matchSeq start="12" end="60">NQYAAYALGAVKAERELRYSDAAVLWFKAMHAPCCSKNSDWAEKRNEFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="D2TJ64_CITRI" ac="D2TJ64" length="77" description="Hypothetical prophage protein OS=Citrobacter rodentium (strain ICC168) OX=637910 GN=ROD_02851 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.9</expectation>
+      <identity>39.6</identity>
+      <positives>52.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="66">YAEKAAKEEQAGNYEEAETHWDLAMLS-ASPENKEWAIRRRDFCQRMH</querySeq>
+      <pattern>Y+  A++ EQ G+Y EAE  W  A  S  S   + WA  R +FC   H</pattern>
+      <matchSeq start="17" end="64">YSLGASRAEQRGDYAEAEKLWRKAAQSPCSTLRRIWAEHRAEFCANAH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="W1J698_9GAMM" ac="W1J698" length="80" description="ANR family transcriptional regulator OS=Xenorhabdus szentirmaii DSM 16338 OX=1427518 GN=XSR1_70119 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>2.0</expectation>
+      <identity>37.0</identity>
+      <positives>51.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="73">AEKAAKEEQAGNYEEAETHWDLAML-SASPENKEWAIRRRDFCQRMHQRPFEGE</querySeq>
+      <pattern>A +AA  E+ G+Y  A   W+ A   S + +N EWA  R DFC +  +R    E</pattern>
+      <matchSeq start="15" end="68">AREAAHIEREGDYLRASKIWNKAARHSRNTQNIEWAENRSDFCLKQLERDKNNE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="A0A2C6CW50_9GAMM" ac="A0A2C6CW50" length="102" description="ANR family transcriptional regulator OS=Budvicia aquatica OX=82979 GN=CRN84_16815 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>2.1</expectation>
+      <identity>36.5</identity>
+      <positives>55.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="62">ENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFC</querySeq>
+      <pattern>E    Y   AE AA +EQ+G++  A  +W +A  ++  PEN+ WA  R  +C</pattern>
+      <matchSeq start="8" end="59">EPVRHYPELAEIAALKEQSGDWRGASQYWAMAEDVARLPENRLWAGSRARYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="TR" id="A0A379DFD4_9PAST" ac="A0A379DFD4" length="81" description="Uncharacterized protein OS=Phocoenobacter uteri OX=146806 GN=NCTC12872_00974 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>2.1</expectation>
+      <identity>36.0</identity>
+      <positives>54.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="64">RYRFYAEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFCQR</querySeq>
+      <pattern>+Y    ++A K EQ  NYEEA   W+ A+ L+ + + K W   R   C+R</pattern>
+      <matchSeq start="19" end="68">QYNNLVQQARKLEQEDNYEEASKLWNKALKLAPTEKQKGWCSYRDSHCKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="A0A2S9I5Y5_9GAMM" ac="A0A2S9I5Y5" length="63" description="ANR family transcriptional regulator OS=Pantoea coffeiphila OX=1465635 GN=CQW29_22900 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>2.1</expectation>
+      <identity>35.4</identity>
+      <positives>56.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A++AA++E+ G + +A  HW  A   A+  N  W   R +FC  M +R</pattern>
+      <matchSeq start="8" end="55">AQQAAQKERDGLFADAAHHWLQASRHATGNNITWYQLRAEFCAGMARR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="A0A3Q2XFH8_HIPCM" ac="A0A3Q2XFH8" length="106" description="vesicle-fusing ATPase OS=Hippocampus comes OX=109280 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>2.2</expectation>
+      <identity>36.8</identity>
+      <positives>56.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A+KAA+E+QAGNYEEA         + L +L+  P+ K+   + R+ C+    R  E</pattern>
+      <matchSeq start="14" end="70">AQKAAQEDQAGNYEEAIRSYKHAAKYFLHILNREPQGKDGNQKIREKCKEYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="TR" id="A0ABS5YAM1_9GAMM" ac="A0ABS5YAM1" length="86" description="ANR family transcriptional regulator OS=Candidatus Sodalis endolongispinus OX=2812662 GN=JZM24_04930 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>2.2</expectation>
+      <identity>36.7</identity>
+      <positives>53.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A +AA  EQ   Y+ A   W  A   S +P N++W+ +R DFC   + R</pattern>
+      <matchSeq start="15" end="63">AREAASIEQGKEYDRAAKVWAKANRASRNPLNQDWSEKRADFCAAQYLR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="A0A3B4A4N0_9GOBI" ac="A0A3B4A4N0" length="485" description="vesicle-fusing ATPase OS=Periophthalmus magnuspinnatus OX=409849 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>2.5</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA   +       L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASQEDQAGNYEEAIQSYQHAVKIFLHVLKREPQGKDGNQKIRDSCKKYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0A3Q2UJB9_FUNHE" ac="A0A3Q2UJB9" length="522" description="vesicle-fusing ATPase OS=Fundulus heteroclitus OX=8078 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>2.5</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASQEDQAGNYEEAIQSYQHAVKYFLHILKREPQGKDGNQKIRDSCKKYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="TR" id="A0A3Q2QSG3_FUNHE" ac="A0A3Q2QSG3" length="544" description="vesicle-fusing ATPase OS=Fundulus heteroclitus OX=8078 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>2.5</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASQEDQAGNYEEAIQSYQHAVKYFLHILKREPQGKDGNQKIRDSCKKYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0AAW1CZ62_9HEMI" ac="A0AAW1CZ62" length="572" description="Uncharacterized protein OS=Rhynocoris fuscipes OX=488301 GN=O3M35_011614 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>2.5</expectation>
+      <identity>26.6</identity>
+      <positives>43.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="64">MKTKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQR</querySeq>
+      <pattern>+KT+  H  + E   RY    ++    E     E  +  W+LA    S   ++W I R++F  R</pattern>
+      <matchSeq start="298" end="361">LKTQHKHLHTNEQVLRYELAQKRLLLNELKKQLENCKESWELARAKNSQTEEDWRILRKEFASR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="A0ABM6K4F2_PANSE" ac="A0ABM6K4F2" length="74" description="ANR family transcriptional regulator OS=Pantoea stewartii subsp. stewartii DC283 OX=660596 GN=DSJ_07180 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>2.5</expectation>
+      <identity>35.7</identity>
+      <positives>55.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="62">SVENFNRYRFY--AEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFC</querySeq>
+      <pattern>S  N++   +Y  A +AA+ E+ G+Y  A   W  A  LS +  N++W+  R DFC</pattern>
+      <matchSeq start="2" end="57">SFRNYDSPLYYRAAREAAQIEREGDYRRAAKVWTKASRLSRNGINQQWSENRSDFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="A0ACB8X7N0_9TELE" ac="A0ACB8X7N0" length="824" description="Uncharacterized protein OS=Scortum barcoo OX=214431 GN=L3Q82_021457 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>2.6</expectation>
+      <identity>34.3</identity>
+      <positives>54.3</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="68">PHAKS-VENFNRYRFYAEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>PH  S V  F +    A+KA++E+QAGNYEEA         + L ++ + P+ K+   + RD C++   R</pattern>
+      <matchSeq start="39" end="108">PHILSNVLLFQKAIAIAQKASQEDQAGNYEEAIRSYQHAVKYFLHIIKSEPQGKDGNQKIRDKCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="A0A0M2KB99_9GAMM" ac="A0A0M2KB99" length="76" description="Uncharacterized protein OS=Erwinia tracheiphila OX=65700 GN=SY86_25330 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>2.6</expectation>
+      <identity>35.7</identity>
+      <positives>55.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="62">SVENFNRYRFY--AEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFC</querySeq>
+      <pattern>S  N++   +Y  A +AA+ E+ G+Y  A   W  A  LS +  N++W+  R DFC</pattern>
+      <matchSeq start="2" end="57">SFRNYDSPLYYRAAREAAQIEREGDYRRAAKVWTKASRLSRNGINQQWSENRSDFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="A0A068R0T4_9GAMM" ac="A0A068R0T4" length="78" description="ANR family transcriptional regulator OS=Xenorhabdus poinarii G6 OX=1354304 GN=XPG1_1004 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>2.7</expectation>
+      <identity>38.8</identity>
+      <positives>55.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLAML-SASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A +AA+ E+ G+Y  A   W+ A   S +  N EWA  R DFC +  +R</pattern>
+      <matchSeq start="15" end="63">AREAAQIEREGDYRRASKVWNKAARHSRNSLNIEWAENRSDFCLKQLER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="TR" id="A0A2C6DKW9_9GAMM" ac="A0A2C6DKW9" length="102" description="ANR family transcriptional regulator OS=Budvicia aquatica OX=82979 GN=CRN84_17245 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>2.9</expectation>
+      <identity>34.6</identity>
+      <positives>57.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="62">ENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFC</querySeq>
+      <pattern>E+ + Y   A  AA +EQ+G++  A  +W +A  ++  PEN+ WA  R  +C</pattern>
+      <matchSeq start="8" end="59">ESAHHYAELAHIAALKEQSGDWRGASQYWAMAEDVARLPENRLWAGSRARYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0ABX5DA10_9VIBR" ac="A0ABX5DA10" length="81" description="ANR family transcriptional regulator OS=Vibrio mediterranei OX=689 GN=COR51_16370 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>2.9</expectation>
+      <identity>36.7</identity>
+      <positives>53.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="62">NRYRFYAEKAAKEEQAGNYEEAETHWD-LAMLSASPENKEWAIRRRDFC</querySeq>
+      <pattern>NRY   A +AA+ E+   +  A   W  +A L++ P N  WA  R +FC</pattern>
+      <matchSeq start="11" end="59">NRYYDLAREAAELERDNQHNRAAILWQQVASLASHPANITWAENRHEFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="TR" id="D4E0M2_SEROD" ac="D4E0M2" length="104" description="ANR family transcriptional regulator OS=Serratia odorifera DSM 4582 OX=667129 GN=HMPREF0758_1722 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>3.0</expectation>
+      <identity>29.4</identity>
+      <positives>52.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="66">YRFYAEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFCQRMH</querySeq>
+      <pattern>Y   A++A + E    ++ A   W  A M++  P N++WA  R + C++ H</pattern>
+      <matchSeq start="5" end="55">YHAAAQQAIQHEHTEEFDLAVKFWRRAEMIAVKPVNQQWAATRAELCEKRH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="A0AC61TCZ5_9BACI" ac="A0AC61TCZ5" length="366" description="Uncharacterized protein OS=Bacillus dicomae OX=3088378 GN=FJ659_08880 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>34.2</identity>
+      <positives>50.7</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="71">KRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLA--MLSASP---ENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>K P+ K+  +F  Y +Y  KA       NY EA+TH++ A  +L   P   E  E+  R   +C + +Q PFE</pattern>
+      <matchSeq start="80" end="151">KLPNIKNEFSFLAYYYYFFKAIHSTIIANYTEAKTHYEKAEELLKDIPDEIEKAEFEYRFSTYCYQSYQ-PFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="A0A8C1MTM0_CYPCA" ac="A0A8C1MTM0" length="438" description="vesicle-fusing ATPase OS=Cyprinus carpio OX=7962 GN=LOC109050381 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>36.8</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">ANKASQEDQAGNYEEAVKSYQHAVKYFLHIIKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="A0A6P6IYJ7_CARAU" ac="A0A6P6IYJ7" length="507" description="vesicle-fusing ATPase OS=Carassius auratus OX=7957 GN=vps4b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>36.8</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">ASKASQEDQAGNYEEAVKSYQHAVKYFLHIIKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="A0A7J6DC37_9TELE" ac="A0A7J6DC37" length="508" description="vesicle-fusing ATPase OS=Onychostoma macrolepis OX=369639 GN=G5714_001441 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>36.8</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">ANKASQEDQAGNYEEAVKSYQHAVKYFLHIIKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0A8C1MUQ4_CYPCA" ac="A0A8C1MUQ4" length="508" description="vesicle-fusing ATPase OS=Cyprinus carpio OX=7962 GN=LOC109050381 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>36.8</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="17" end="73">ANKASQEDQAGNYEEAVKSYQHAVKYFLHIIKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="TR" id="A0A8C1MQR3_CYPCA" ac="A0A8C1MQR3" length="508" description="vesicle-fusing ATPase OS=Cyprinus carpio OX=7962 GN=LOC109050381 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>36.8</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">ANKASQEDQAGNYEEAVKSYQHAVKYFLHIIKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="TR" id="A0A8C1C4L7_CYPCA" ac="A0A8C1C4L7" length="511" description="vesicle-fusing ATPase OS=Cyprinus carpio carpio OX=630221 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>36.8</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="17" end="73">ANKASQEDQAGNYEEAVKSYQHAVKYFLHIIKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="TR" id="A0A8C1Q6U6_CYPCA" ac="A0A8C1Q6U6" length="511" description="vesicle-fusing ATPase OS=Cyprinus carpio OX=7962 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>36.8</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="17" end="73">ANKASQEDQAGNYEEAVKSYQHAVKYFLHIIKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="TR" id="A0A8C7ZH63_9TELE" ac="A0A8C7ZH63" length="516" description="vesicle-fusing ATPase OS=Oryzias sinensis OX=183150 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>31.9</identity>
+      <positives>52.2</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="63">MKTKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>M+    +  S  +F +    A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C+</pattern>
+      <matchSeq start="1" end="69">MEPSIQYISSFFSFQKAIAVAQKASEEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="TR" id="A0A9J7YCH0_CYPCA" ac="A0A9J7YCH0" length="516" description="vesicle-fusing ATPase OS=Cyprinus carpio carpio OX=630221 GN=VPS4B PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>36.8</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="17" end="73">ANKASQEDQAGNYEEAVKSYQHAVKYFLHIIKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="TR" id="A0A9F7RKL9_ICTPU" ac="A0A9F7RKL9" length="519" description="vesicle-fusing ATPase OS=Ictalurus punctatus OX=7998 GN=vps4b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>32.4</identity>
+      <positives>47.1</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="68">HAKSVENFNRYRFYAEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>H     N  +    A KA++E++AGNYEEA         + L ++   P+ KE   R RD C +   R</pattern>
+      <matchSeq start="11" end="78">HIMEPSNLQKAIAIATKASQEDEAGNYEEAVKSYHHAVKYFLHIIKREPQGKEGNQRIRDKCSQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="TR" id="A0A315VQP8_GAMAF" ac="A0A315VQP8" length="522" description="vesicle-fusing ATPase OS=Gambusia affinis OX=33528 GN=CCH79_00005329 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="27" end="80">AQKASQEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDTCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="TR" id="A0A673FSW0_9TELE" ac="A0A673FSW0" length="530" description="vesicle-fusing ATPase OS=Sinocyclocheilus rhinocerous OX=307959 GN=LOC107710065 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>36.8</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="16" end="72">ANKASQEDQAGNYEEAVKSYQHAVKYFLHIIKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="TR" id="A0A8C8E0L4_9TELE" ac="A0A8C8E0L4" length="539" description="vesicle-fusing ATPase OS=Oryzias sinensis OX=183150 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>31.9</identity>
+      <positives>52.2</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="63">MKTKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>M+    +  S  +F +    A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C+</pattern>
+      <matchSeq start="5" end="73">MEPSIQYISSFFSFQKAIAVAQKASEEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="130" database="TR" id="A0A671KLG5_9TELE" ac="A0A671KLG5" length="540" description="vesicle-fusing ATPase OS=Sinocyclocheilus anshuiensis OX=1608454 GN=LOC107671729 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.4</expectation>
+      <identity>36.8</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="45" end="101">ANKASQEDQAGNYEEAVKSYQHAVKYFLHIIKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="131" database="TR" id="A0A672PQP4_SINGR" ac="A0A672PQP4" length="548" description="vesicle-fusing ATPase OS=Sinocyclocheilus grahami OX=75366 GN=vps4b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.5</expectation>
+      <identity>36.8</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="34" end="90">ANKASQEDQAGNYEEAVKSYQHAVKYFLHIIKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="132" database="TR" id="A0A673G0S7_9TELE" ac="A0A673G0S7" length="557" description="vesicle-fusing ATPase OS=Sinocyclocheilus rhinocerous OX=307959 GN=LOC107710065 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.5</expectation>
+      <identity>36.8</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C++   R  E</pattern>
+      <matchSeq start="43" end="99">ANKASQEDQAGNYEEAVKSYQHAVKYFLHIIKREPQGKEGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="133" database="TR" id="A0A8S1LHQ3_9CILI" ac="A0A8S1LHQ3" length="829" description="Tetratricopeptide repeat protein 21A/21B N-terminal ARM repeat domain-containing protein OS=Paramecium sonneborni OX=65129 GN=PSON_ATCC_30995.1.T0210309 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.5</expectation>
+      <identity>45.5</identity>
+      <positives>65.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="58">NRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRR</querySeq>
+      <pattern>N  RFY EKA   EQ GNY+EA+  +D A++  S +N ++ I+R</pattern>
+      <matchSeq start="485" end="527">NNPRFYIEKAQLLEQQGNYKEAKQLYDQAIVLES-DNAKFYIQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="134" database="TR" id="A0ABN7BFX2_9HEMI" ac="A0ABN7BFX2" length="861" description="Pleckstrin homology domain containing, family F (With FYVE domain) member OS=Nesidiocoris tenuis OX=355587 GN=NTJ_16055 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.5</expectation>
+      <identity>30.9</identity>
+      <positives>42.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="67">KTKRPHAK--SVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQ</querySeq>
+      <pattern>K K+ HA   S E   RY    ++    E     EE + +W LA    S   K+W + R +F  R  Q</pattern>
+      <matchSeq start="445" end="512">KLKKQHANLHSSEQVLRYELAQKRLLLTELKKKLEECKENWSLARQKNSQTEKDWKLLRSEFALRKQQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="135" database="TR" id="A0A6H5HKY9_9HEMI" ac="A0A6H5HKY9" length="865" description="Uncharacterized protein OS=Nesidiocoris tenuis OX=355587 GN=NTEN_LOCUS19306 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>3.5</expectation>
+      <identity>30.9</identity>
+      <positives>42.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="67">KTKRPHAK--SVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQ</querySeq>
+      <pattern>K K+ HA   S E   RY    ++    E     EE + +W LA    S   K+W + R +F  R  Q</pattern>
+      <matchSeq start="449" end="516">KLKKQHANLHSSEQVLRYELAQKRLLLTELKKKLEECKENWSLARQKNSQTEKDWKLLRSEFALRKQQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="136" database="TR" id="A0A3Q3K3P0_MONAL" ac="A0A3Q3K3P0" length="98" description="MIT domain-containing protein OS=Monopterus albus OX=43700 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>3.8</expectation>
+      <identity>38.8</identity>
+      <positives>59.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="63">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C+</pattern>
+      <matchSeq start="20" end="68">AQKASQEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="137" database="TR" id="A0A1L9QXQ3_9CYAN" ac="A0A1L9QXQ3" length="129" description="Uncharacterized protein OS=Roseofilum reptotaenium AO1-A OX=1925591 GN=BI308_00175 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>4.0</expectation>
+      <identity>38.3</identity>
+      <positives>61.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="66">YAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMH</querySeq>
+      <pattern>YA+KA +  + GNY EA +H+D A++   P+N +  I+R   C  +H</pattern>
+      <matchSeq start="7" end="52">YAQKAERCVEKGNYVEAISHFDRALI-FDPQNIDLWIQRGCACTHLH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="138" database="TR" id="A0A514TUB0_9CAUD" ac="A0A514TUB0" length="62" description="ANR family transcriptional regulator OS=Aeromonas phage 4_D05 OX=2588099 GN=4D05_034 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>4.0</expectation>
+      <identity>34.0</identity>
+      <positives>49.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="68">YRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>++ +A +AA+ E  G  +EA T W  A      E N EW   R +FC+    R</pattern>
+      <matchSeq start="6" end="58">FKEFAAEAAQMENQGQVKEAATAWRQAGAYCEKEQNSEWCKARAEFCESRFAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="139" database="TR" id="A0ABT7ALS5_9CYAN" ac="A0ABT7ALS5" length="132" description="Tetratricopeptide repeat protein OS=Roseofilum acuticapitatum BLCC-M154 OX=3022444 GN=PMG71_00225 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>4.1</expectation>
+      <identity>40.4</identity>
+      <positives>57.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="66">YAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMH</querySeq>
+      <pattern>YA+KA +  + GNY EA  H+D A++   PEN    I+R   C  +H</pattern>
+      <matchSeq start="10" end="55">YAQKAERCVEEGNYVEAIAHFDRALI-FDPENINLWIQRGCACTHLH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="140" database="TR" id="A0ABM9NPN8_9GAMM" ac="A0ABM9NPN8" length="65" description="ANR family transcriptional regulator OS=Candidatus Providencia siddallii OX=1715285 GN=PRHACTZTBTEA_548 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>4.3</expectation>
+      <identity>39.5</identity>
+      <positives>51.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="62">AEKAAKEEQAGNYEEAETHWDLAMLSA-SPENKEWAIRRRDFC</querySeq>
+      <pattern>A  A + EQ+G Y +A   W  A L A +  N+ W   R DFC</pattern>
+      <matchSeq start="15" end="57">ASNAVRLEQSGKYSDAAKAWSQAYLFAQTRSNQVWCEHRSDFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="141" database="TR" id="A0A437CGB9_ORYJA" ac="A0A437CGB9" length="88" description="MIT domain-containing protein OS=Oryzias javanicus OX=123683 GN=OJAV_G00175340 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>4.6</expectation>
+      <identity>35.2</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYE+A         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASEEDQAGNYEDAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="142" database="TR" id="A0A2C6DIL4_9GAMM" ac="A0A2C6DIL4" length="113" description="ANR family transcriptional regulator OS=Budvicia aquatica OX=82979 GN=CRN84_12690 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>4.7</expectation>
+      <identity>36.2</identity>
+      <positives>59.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="62">YRFYAEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFC</querySeq>
+      <pattern>Y   AE AA +E++G++  A  +W +A  ++  PEN+ WA  R  +C</pattern>
+      <matchSeq start="13" end="59">YAELAEIAALKEKSGDWRGASQYWAMAEDVARLPENRLWARSRAQYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="143" database="TR" id="A0A6G1QAD9_CHAAH" ac="A0A6G1QAD9" length="508" description="vesicle-fusing ATPase OS=Channa argus OX=215402 GN=EXN66_Car015066 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASQEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="144" database="TR" id="A0A8C9ZHJ4_SANLU" ac="A0A8C9ZHJ4" length="508" description="vesicle-fusing ATPase OS=Sander lucioperca OX=283035 GN=vps4b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>35.1</identity>
+      <positives>56.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L ++   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">AQKASQEDQAGNYEEAIRSYQHAVKYFLHIIKREPQGKDGNQKIRDTCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="145" database="TR" id="A0A7N8YHT4_9TELE" ac="A0A7N8YHT4" length="508" description="vesicle-fusing ATPase OS=Mastacembelus armatus OX=205130 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASQEDQAGNYEEAILSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="146" database="TR" id="A0A2U9BJY9_SCOMX" ac="A0A2U9BJY9" length="508" description="vesicle-fusing ATPase OS=Scophthalmus maximus OX=52904 GN=SMAX5B_006450 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASEEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDRCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="147" database="TR" id="A0ACS4T0B2_EPICO" ac="A0ACS4T0B2" length="508" description="Uncharacterized protein OS=Epinephelus coioides OX=94232 GN=ABVT39_005497 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASEEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="148" database="TR" id="A0A9Y4N7M7_9TELE" ac="A0A9Y4N7M7" length="508" description="vesicle-fusing ATPase OS=Stegastes partitus OX=144197 GN=vps4b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASQEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="149" database="TR" id="A0A484CQB2_PERFV" ac="A0A484CQB2" length="508" description="vesicle-fusing ATPase OS=Perca flavescens OX=8167 GN=EPR50_G00125740 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>35.1</identity>
+      <positives>56.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L ++   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">AQKASQEDQAGNYEEAIRSYQHAVKYFLHIIKREPQGKDGNQKIRDTCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="150" database="TR" id="A0AAQ5YZ06_AMPOC" ac="A0AAQ5YZ06" length="508" description="vesicle-fusing ATPase OS=Amphiprion ocellaris OX=80972 GN=VPS4B PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASQEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="151" database="TR" id="A0A6A5EXR5_PERFL" ac="A0A6A5EXR5" length="508" description="vesicle-fusing ATPase OS=Perca fluviatilis OX=8168 GN=PFLUV_G00135870 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>35.1</identity>
+      <positives>56.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L ++   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">AQKASQEDQAGNYEEAIRSYQHAVKYFLHIIKREPQGKDGNQKIRDTCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="152" database="TR" id="A0A6P7K2X9_9TELE" ac="A0A6P7K2X9" length="509" description="vesicle-fusing ATPase OS=Parambassis ranga OX=210632 GN=vps4b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASEEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDRCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="153" database="TR" id="A0A8C9ZR01_SANLU" ac="A0A8C9ZR01" length="513" description="vesicle-fusing ATPase OS=Sander lucioperca OX=283035 GN=vps4b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>35.1</identity>
+      <positives>56.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L ++   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="17" end="73">AQKASQEDQAGNYEEAIRSYQHAVKYFLHIIKREPQGKDGNQKIRDTCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="154" database="TR" id="A0A7N8XR73_9TELE" ac="A0A7N8XR73" length="513" description="vesicle-fusing ATPase OS=Mastacembelus armatus OX=205130 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="12" end="65">AQKASQEDQAGNYEEAILSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="155" database="TR" id="A0A3Q1B041_AMPOC" ac="A0A3Q1B041" length="524" description="vesicle-fusing ATPase OS=Amphiprion ocellaris OX=80972 GN=VPS4B PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>37.0</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="19" end="72">AQKASQEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="156" database="TR" id="I3JTR2_ORENI" ac="I3JTR2" length="529" description="vesicle-fusing ATPase OS=Oreochromis niloticus OX=8128 GN=vps4b PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>4.7</expectation>
+      <identity>32.8</identity>
+      <positives>53.7</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="71">VENFNRYRFYAEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>V +F +    A+KA++E++AGNYEEA         + L +L   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="19" end="85">VLSFQKAIAVAQKASEEDEAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="157" database="TR" id="A0ABS0ZVY5_9ENTR" ac="A0ABS0ZVY5" length="71" description="ANR family transcriptional regulator OS=Citrobacter sedlakii OX=67826 GN=I6M88_18565 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>4.8</expectation>
+      <identity>41.9</identity>
+      <positives>55.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="62">AEKAAKEEQAGNYEEAETHWDLAML-SASPENKEWAIRRRDFC</querySeq>
+      <pattern>A +A + EQ G+Y  A   W  A   S +  N+EW+ RR DFC</pattern>
+      <matchSeq start="15" end="57">AREAVRIEQEGDYRRAAKVWAKANRESHNLSNQEWSERRSDFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="158" database="TR" id="B6XJ52_PROIN" ac="B6XJ52" length="75" description="ANR family transcriptional regulator OS=Providencia alcalifaciens DSM 30120 OX=520999 GN=PROVALCAL_03403 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>5.2</expectation>
+      <identity>38.8</identity>
+      <positives>49.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLAMLSASPENKE-WAIRRRDFCQRMHQR</querySeq>
+      <pattern>A  A + EQ G Y EA T W  A   A   N + W+  R DFC +  +R</pattern>
+      <matchSeq start="15" end="63">ARDAIRLEQTGKYFEAATAWLQAHRFARARNNQIWSEHRSDFCMKQLKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="159" database="TR" id="A0AAV6T559_SOLSE" ac="A0AAV6T559" length="99" description="Vacuolar protein sorting-associated protein 4B isoform X1 OS=Solea senegalensis OX=28829 GN=JOB18_013182 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>5.4</expectation>
+      <identity>35.2</identity>
+      <positives>57.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L ++   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AQKASQEDQAGNYEEAIRSYQHAVKYFLHIVKREPQGKDGNQKIRDKCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="160" database="TR" id="A0A0M0I4I1_9VIBR" ac="A0A0M0I4I1" length="63" description="ANR family transcriptional regulator OS=Vibrio hepatarius OX=171383 GN=AKJ31_02365 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>5.8</expectation>
+      <identity>38.3</identity>
+      <positives>53.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="62">YRFYAEKAAKEEQAGNYEEAETHW-DLAMLSASPENKEWAIRRRDFC</querySeq>
+      <pattern>YR  A+ AA+ E+  NY  A   W + A  + S +N +WA  R  FC</pattern>
+      <matchSeq start="4" end="50">YREMADAAARMEREKNYSGARVMWQEAAECAKSRDNSKWAQSRFAFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="161" database="TR" id="A0A4R1NBX6_9GAMM" ac="A0A4R1NBX6" length="84" description="ANR family transcriptional regulator OS=Sodalis ligni OX=2697027 GN=EZJ58_2341 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>6.1</expectation>
+      <identity>37.0</identity>
+      <positives>52.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="68">AAKEEQAGNYEEAETHWD-LAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>AA+ E+ G+Y  A   W   A  S +P N+ W+  R DFC    +R</pattern>
+      <matchSeq start="18" end="63">AARIERTGDYRHAAQTWSKAARYSRNPLNQTWSEHRADFCVMQIER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="162" database="TR" id="A0A5J5G0U0_9GAMM" ac="A0A5J5G0U0" length="65" description="ANR family transcriptional regulator OS=Affinibrenneria salicis OX=2590031 GN=FJU30_13435 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>6.1</expectation>
+      <identity>38.2</identity>
+      <positives>49.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="62">KSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPE-NKEWAIRRRDFC</querySeq>
+      <pattern>K+  N N Y+  AE A  EE + NY +A   W  A   A  E N+ WA  R + C</pattern>
+      <matchSeq start="2" end="56">KTKNNENGYQAVAELAYVEECSQNYRQAHELWTKASSPALHEINQVWADARSEHC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="163" database="TR" id="A0A0C2STE5_AMAMK" ac="A0A0C2STE5" length="437" description="Ribosome biogenesis protein NOP53 OS=Amanita muscaria (strain Koide BX008) OX=946122 GN=M378DRAFT_185942 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>6.4</expectation>
+      <identity>31.9</identity>
+      <positives>47.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="73">KTKRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFEGE</querySeq>
+      <pattern>KTK+   K+ E+    R  AEKAAK+  A +  +A T    A+       +E A R+     RM +R   G+</pattern>
+      <matchSeq start="292" end="363">KTKQQRRKAAEHLALQRALAEKAAKKRLAASLGDARTLGKAALKMMKAREEEKAQRQLAIKYRMRRRGLAGQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="164" database="TR" id="A0AA35PCK0_9SAUR" ac="A0AA35PCK0" length="497" description="DUF2052 domain-containing protein OS=Podarcis lilfordi OX=74358 GN=PODLI_1B000306 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>6.4</expectation>
+      <identity>34.6</identity>
+      <positives>57.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="73">EKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFEGE</querySeq>
+      <pattern>E+A +EE+  + ++ +   DL M    PE +E A  R +F  RM+QR  +G+</pattern>
+      <matchSeq start="402" end="453">EEACEEEEEEDSDDEDKASDLEMEDWVPEQEEKAYLREEFTSRMYQRFLDGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="165" database="TR" id="A0A6Q2Z976_ESOLU" ac="A0A6Q2Z976" length="507" description="vesicle-fusing ATPase OS=Esox lucius OX=8010 GN=VPS4B PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>6.4</expectation>
+      <identity>38.8</identity>
+      <positives>59.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="63">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>A+KA++E+QAGNYEEA   +       L ++   P+ KE   + RD C+</pattern>
+      <matchSeq start="13" end="61">AQKASQEDQAGNYEEAIKSYQHAVKFFLHVIKREPQGKEGNQKIRDNCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="166" database="TR" id="A0ACC2H8R5_DALPE" ac="A0ACC2H8R5" length="507" description="vesicle-fusing ATPase OS=Dallia pectoralis OX=75939 GN=DPEC_G00065170 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>6.4</expectation>
+      <identity>38.8</identity>
+      <positives>57.1</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="63">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>A+KA+ E+QAGNYEEA   +       L ++   P+ KE   + RD C+</pattern>
+      <matchSeq start="13" end="61">AQKASDEDQAGNYEEAMKSYQHAVKFFLHVIKCEPQGKEGNQKIRDNCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="167" database="TR" id="A0A3Q2DLB2_CYPVA" ac="A0A3Q2DLB2" length="508" description="vesicle-fusing ATPase OS=Cyprinodon variegatus OX=28743 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>6.4</expectation>
+      <identity>37.0</identity>
+      <positives>55.6</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGN+EEA         + L +L   P+ KE   + RD C+    R</pattern>
+      <matchSeq start="13" end="66">AQKASQEDQAGNFEEAIQSYQHAVKYFLHILKREPQGKEGNQKIRDTCKHYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="168" database="TR" id="A0AAV2JPK7_KNICA" ac="A0AAV2JPK7" length="550" description="vesicle-fusing ATPase OS=Knipowitschia caucasica OX=637954 GN=KC01_LOCUS10641 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>6.5</expectation>
+      <identity>37.0</identity>
+      <positives>55.6</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A KA++E+QAGNYEEA         + L +L   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">ATKASQEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDSCKKYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="169" database="TR" id="A0A1I5EVR1_9ACTN" ac="A0A1I5EVR1" length="759" description="Uncharacterized protein OS=Actinomadura madurae OX=1993 GN=SAMN04489713_104311 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>6.6</expectation>
+      <identity>51.9</identity>
+      <positives>70.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="31" end="57">GNYEEAETHWDLAMLSASPENKEWAIR</querySeq>
+      <pattern>G++EEA THWDLA+L+A     +W  R</pattern>
+      <matchSeq start="323" end="349">GDFEEAVTHWDLAVLAAYTVEADWGRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="170" database="TR" id="A0A4W5NTM9_9TELE" ac="A0A4W5NTM9" length="90" description="Si:dkey-185p13.1 OS=Hucho hucho OX=62062 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>6.7</expectation>
+      <identity>36.7</identity>
+      <positives>59.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="63">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>A+KA++E+QAGNY+EA         + L ++   P+ KE   + RD C+</pattern>
+      <matchSeq start="17" end="65">AQKASQEDQAGNYQEAIKSYQHAVKYFLHIVKCQPQGKEGNQKIRDKCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="171" database="TR" id="A0A369ZTE5_9PAST" ac="A0A369ZTE5" length="73" description="ANR family transcriptional regulator OS=Haemophilus paraphrohaemolyticus OX=736 GN=DPV92_02980 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>7.0</expectation>
+      <identity>33.3</identity>
+      <positives>54.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="63">YRFYAEKAAKEEQAGNYEEAETHW-DLAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>YR   E AA  E++GNY  A   W + A  + + + +EW   R+ +C+</pattern>
+      <matchSeq start="16" end="63">YREATETAAAMERSGNYARASELWGEAAKQAVTLKQREWCNTRKTYCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="172" database="TR" id="I3DJ35_9PAST" ac="I3DJ35" length="55" description="ANR family transcriptional regulator OS=Pasteurella bettyae CCUG 2042 OX=1095749 GN=HMPREF1052_2164 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>7.0</expectation>
+      <identity>35.3</identity>
+      <positives>64.7</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="58">KSVENFNRYRFYAEKAAKEEQAGNYEEAETHWD-LAMLSASPENKEWAIRR</querySeq>
+      <pattern>K +EN   YR +++ AA+ E+AG +++AE+ W+  A ++   EN+ +  RR</pattern>
+      <matchSeq start="2" end="49">KKLEN---YRDFSQHAAEMERAGAWKQAESAWEKAATVARRRENQRYPARR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="173" database="TR" id="A0ABU4SJR8_9GAMM" ac="A0ABU4SJR8" length="78" description="ANR family transcriptional regulator OS=Xenorhabdus littoralis OX=2582835 GN=FE394_06190 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>7.7</expectation>
+      <identity>38.8</identity>
+      <positives>55.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLAML-SASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A +AA+ E+ G+Y  A   W+ A   S +  N EWA  R DFC +  +R</pattern>
+      <matchSeq start="15" end="63">AREAAQIEREGDYLRASKVWNKAARHSRNSLNIEWAENRSDFCLKQLER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="174" database="TR" id="A0A2C6BXZ3_9GAMM" ac="A0A2C6BXZ3" length="100" description="ANR family transcriptional regulator OS=Budvicia aquatica OX=82979 GN=CRN84_06500 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>7.7</expectation>
+      <identity>33.3</identity>
+      <positives>53.7</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="64">ENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFCQR</querySeq>
+      <pattern>E    Y   A  AA +E++G++  A  +W +A  ++  PEN+ WA  R  +C R</pattern>
+      <matchSeq start="8" end="61">EPVRHYTDLAHIAALKEKSGDWRGASQYWAMAEDVARLPENRLWARSRARYCGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="175" database="TR" id="A0A1Q5TQU1_9GAMM" ac="A0A1Q5TQU1" length="79" description="ANR family transcriptional regulator OS=Xenorhabdus eapokensis OX=1873482 GN=Xedl_02232 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>7.8</expectation>
+      <identity>36.7</identity>
+      <positives>55.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A +AA+ E+ G+Y  A   W+ A   S +  N EW+  R DFC + + R</pattern>
+      <matchSeq start="15" end="63">AREAAQIEREGDYLRASKAWNKAGRHSRNALNIEWSENRSDFCLKQYHR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="176" database="TR" id="A0ABS0U7P7_9GAMM" ac="A0ABS0U7P7" length="80" description="ANR family transcriptional regulator OS=Xenorhabdus lircayensis OX=2763499 GN=H8A87_14650 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>8.0</expectation>
+      <identity>38.8</identity>
+      <positives>55.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLAML-SASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A +AA+ E+ G+Y  A   W+ A   S +  N EWA  R DFC +  +R</pattern>
+      <matchSeq start="15" end="63">AREAAQIEREGDYLRASKVWNKAARHSRNTLNIEWAENRSDFCLKQLER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="177" database="TR" id="A0A3B3UCC7_9TELE" ac="A0A3B3UCC7" length="83" description="MIT domain-containing protein OS=Poecilia latipinna OX=48699 PE=4 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>8.4</expectation>
+      <identity>35.3</identity>
+      <positives>60.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWDLAM---LSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+ AGNYEEA   +  A+   ++  P+ K+   + RD C++   R</pattern>
+      <matchSeq start="6" end="56">AQKASQEDLAGNYEEAIRSYQHAVKYFMTREPQGKDGNQKIRDTCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="178" database="TR" id="A0ABX6GHH8_9GAMM" ac="A0ABX6GHH8" length="64" description="ANR family transcriptional regulator OS=Serratia rhizosphaerae OX=2597702 GN=FO014_01305 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>8.4</expectation>
+      <identity>33.3</identity>
+      <positives>51.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="66">YRFYAEKAAKEEQAGNYEEAETHWDLAMLSAS-PENKEWAIRRRDFCQRMH</querySeq>
+      <pattern>Y   A  A + E+ G Y++A   W  A  +A  P N+ WA  R + C++ H</pattern>
+      <matchSeq start="5" end="55">YMKAATAAVRYEKVGQYDQAALFWRRAEGAALIPVNQAWASLRAEVCEKRH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="179" database="TR" id="A0A1B8HRF9_9GAMM" ac="A0A1B8HRF9" length="65" description="ANR family transcriptional regulator OS=Morganella psychrotolerans OX=368603 GN=AYY18_16855 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>8.6</expectation>
+      <identity>30.6</identity>
+      <positives>57.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="64">YRFYAEKAAKEEQAGNYEEAETHW-DLAMLSASPENKEWAIRRRDFCQR</querySeq>
+      <pattern>++  A  AA+ E+ G+Y+EA   W + + ++   EN+ W   R +FC +</pattern>
+      <matchSeq start="3" end="51">FKNVATNAAQAERDGHYKEAGRLWMEASFVAKKTENQRWVKCRAEFCAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="180" database="TR" id="A0AA39JKR3_ARMTA" ac="A0AA39JKR3" length="352" description="Uncharacterized protein OS=Armillaria tabescens OX=1929756 GN=EV420DRAFT_1002323 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.6</expectation>
+      <identity>34.9</identity>
+      <positives>50.8</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="68">PHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>P AK++E F R +   EKA ++EQA   EE     DL       + +E  IRR++   +  QR</pattern>
+      <matchSeq start="261" end="320">PQAKAMEAFKREQ---EKARRKEQAKREEERRKEEDLKRREEEMQRRELEIRRKEEEMKERQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="181" database="TR" id="A0ACS9R5H4_9BACI" ac="A0ACS9R5H4" length="366" description="Uncharacterized protein OS=Bacillus basilensis OX=3243721 GN=ACQVV1_17460 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.7</expectation>
+      <identity>31.5</identity>
+      <positives>46.6</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="71">KRPHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAM-----LSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>K P+ K   +F  Y +Y  KA       NY EA+TH++ A      +    E  E+  R   +C + +Q PFE</pattern>
+      <matchSeq start="80" end="151">KLPNIKEEFSFLAYYYYFFKAIHSTILANYTEAKTHYEKAKELLIDIPDEVEKAEFEYRFSTYCYQSYQ-PFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="182" database="TR" id="A0A668TE84_OREAU" ac="A0A668TE84" length="507" description="vesicle-fusing ATPase OS=Oreochromis aureus OX=47969 GN=VPS4B PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.8</expectation>
+      <identity>35.1</identity>
+      <positives>56.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A+KA++E++AGNYEEA         + L +L   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">AQKASEEDEAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="183" database="TR" id="A0A9Y3QP85_9CICH" ac="A0A9Y3QP85" length="507" description="vesicle-fusing ATPase OS=Pundamilia nyererei OX=303518 GN=vps4b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.8</expectation>
+      <identity>35.1</identity>
+      <positives>56.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A+KA++E++AGNYEEA         + L +L   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">AQKASEEDEAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="184" database="TR" id="A0AAX7TFI9_ASTCA" ac="A0AAX7TFI9" length="507" description="vesicle-fusing ATPase OS=Astatotilapia calliptera OX=8154 GN=VPS4B PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.8</expectation>
+      <identity>35.1</identity>
+      <positives>56.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A+KA++E++AGNYEEA         + L +L   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">AQKASEEDEAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="185" database="TR" id="A0A671QFE0_9TELE" ac="A0A671QFE0" length="508" description="vesicle-fusing ATPase OS=Sinocyclocheilus anshuiensis OX=1608454 GN=LOC107681797 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.8</expectation>
+      <identity>35.1</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">ANKASQEDQAGNYEEAVKSYQHAVTYFLHIIKREPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="186" database="TR" id="A0A673LIR7_9TELE" ac="A0A673LIR7" length="508" description="vesicle-fusing ATPase OS=Sinocyclocheilus rhinocerous OX=307959 GN=vps4b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.8</expectation>
+      <identity>35.1</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="13" end="69">ANKASQEDQAGNYEEAVKSYQHAVTYFLHIIKREPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="187" database="TR" id="A0AAX7SXC7_ASTCA" ac="A0AAX7SXC7" length="509" description="vesicle-fusing ATPase OS=Astatotilapia calliptera OX=8154 GN=VPS4B PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.8</expectation>
+      <identity>35.1</identity>
+      <positives>56.1</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A+KA++E++AGNYEEA         + L +L   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="9" end="65">AQKASEEDEAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="188" database="TR" id="A0AAQ4R5G7_GASAC" ac="A0AAQ4R5G7" length="515" description="vesicle-fusing ATPase OS=Gasterosteus aculeatus aculeatus OX=481459 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.8</expectation>
+      <identity>35.2</identity>
+      <positives>59.3</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="68">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQR</querySeq>
+      <pattern>A+KA++E+QAGNYEEA + +       L ++   P+ K+   + RD C++   R</pattern>
+      <matchSeq start="13" end="66">AKKASEEDQAGNYEEAISSYKHAVKYFLHIVKREPQGKDGNQKIRDTCKQYLDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="189" database="TR" id="A0A671QCR8_9TELE" ac="A0A671QCR8" length="522" description="vesicle-fusing ATPase OS=Sinocyclocheilus anshuiensis OX=1608454 GN=LOC107681797 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.8</expectation>
+      <identity>35.1</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="17" end="73">ANKASQEDQAGNYEEAVKSYQHAVTYFLHIIKREPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="190" database="TR" id="A0A673LNQ0_9TELE" ac="A0A673LNQ0" length="530" description="vesicle-fusing ATPase OS=Sinocyclocheilus rhinocerous OX=307959 GN=vps4b PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.9</expectation>
+      <identity>35.1</identity>
+      <positives>54.4</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWD------LAMLSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A KA++E+QAGNYEEA   +       L ++   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="25" end="81">ANKASQEDQAGNYEEAVKSYQHAVTYFLHIIKREPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="191" database="TR" id="A0A4W6DDR8_LATCA" ac="A0A4W6DDR8" length="534" description="vesicle-fusing ATPase OS=Lates calcarifer OX=8187 GN=VPS4B PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.9</expectation>
+      <identity>38.8</identity>
+      <positives>59.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="63">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C+</pattern>
+      <matchSeq start="20" end="68">AQKASEEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDQCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="192" database="TR" id="A0AAD3R0H2_LATJO" ac="A0AAD3R0H2" length="595" description="vesicle-fusing ATPase OS=Lates japonicus OX=270547 GN=AKAME5_000418100 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>8.9</expectation>
+      <identity>38.8</identity>
+      <positives>59.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="63">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L +L   P+ K+   + RD C+</pattern>
+      <matchSeq start="100" end="148">AQKASEEDQAGNYEEAIRSYQHAVKYFLHILKREPQGKDGNQKIRDQCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="193" database="TR" id="A0A1E1LZV3_RHYSE" ac="A0A1E1LZV3" length="703" description="Related to transcription factor medusa OS=Rhynchosporium secalis OX=38038 GN=RSE6_02260 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>9.0</expectation>
+      <identity>38.9</identity>
+      <positives>48.1</positives>
+      <gaps>19</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="59">PHAKSVENFNRYRFYAEKAAKEEQAGNYEEAETHWDLAMLSASPENKEWAIRRR</querySeq>
+      <pattern>PH     +FN Y  Y+ K AK E AG+ EE   HW          N+E+  RRR</pattern>
+      <matchSeq start="351" end="394">PHGGHPAHFNAYALYSNK-AKLEVAGDLEEMPVHW---------SNEEFDSRRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="194" database="TR" id="A0A3Q4HMQ0_NEOBR" ac="A0A3Q4HMQ0" length="71" description="vesicle-fusing ATPase OS=Neolamprologus brichardi OX=32507 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.6</expectation>
+      <identity>33.9</identity>
+      <positives>57.1</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWDLAM-----LSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A+KA++E++AGNYEEA   +  A+     +   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="6" end="61">AQKASEEDEAGNYEEAIRSYQHAVKYFLHILKEPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="195" database="TR" id="A0AAW1FXG8_ZOAVI" ac="A0AAW1FXG8" length="92" description="vesicle-fusing ATPase OS=Zoarces viviparus OX=48416 GN=VZT92_004379 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>9.7</expectation>
+      <identity>36.7</identity>
+      <positives>59.2</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="63">AEKAAKEEQAGNYEEA------ETHWDLAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>A+KA++E+QAGNYEEA         + L ++   P+ K+   + RD C+</pattern>
+      <matchSeq start="13" end="61">AQKASEEDQAGNYEEAIHSYKHAVKYFLHIVKREPQGKDGNQKIRDKCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="196" database="TR" id="D9YR82_SALET" ac="D9YR82" length="93" description="PerC family transcriptional regulator OS=Salmonella enterica subsp. enterica serovar 4,[5],12:i:- OX=440524 GN=A3Z30_16250 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>9.8</expectation>
+      <identity>33.3</identity>
+      <positives>52.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="69">KAAKEEQAGNYEEAETHW-DLAMLSASPENKEWAIRRRDFCQRMHQRP</querySeq>
+      <pattern>KA + E  G Y  A   W ++ +L    +++EW  RRR+ C    +RP</pattern>
+      <matchSeq start="6" end="53">KAEELESKGLYRRAAARWMEVMLLCTEDDDREWIKRRRETCLENVKRP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="197" database="TR" id="A0ABX5HBC8_ESCAL" ac="A0ABX5HBC8" length="93" description="PerC family transcriptional regulator OS=Escherichia albertii OX=208962 GN=C7B09_25870 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>9.8</expectation>
+      <identity>33.3</identity>
+      <positives>52.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="69">KAAKEEQAGNYEEAETHW-DLAMLSASPENKEWAIRRRDFCQRMHQRP</querySeq>
+      <pattern>KA + E  G Y  A   W ++ +L    +++EW  RRR+ C    +RP</pattern>
+      <matchSeq start="6" end="53">KAEELESKGLYRRAAARWMEVMLLCTEDDDREWIKRRRETCLENVKRP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="198" database="TR" id="A0A3Q2UZ35_HAPBU" ac="A0A3Q2UZ35" length="73" description="vesicle-fusing ATPase OS=Haplochromis burtoni OX=8153 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.9</expectation>
+      <identity>33.9</identity>
+      <positives>57.1</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWDLAM-----LSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A+KA++E++AGNYEEA   +  A+     +   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="8" end="63">AQKASEEDEAGNYEEAIRSYQHAVKYFLHILKEPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="199" database="TR" id="A0A3P9DIJ6_9CICH" ac="A0A3P9DIJ6" length="73" description="vesicle-fusing ATPase OS=Maylandia zebra OX=106582 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.9</expectation>
+      <identity>33.9</identity>
+      <positives>57.1</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="71">AEKAAKEEQAGNYEEAETHWDLAM-----LSASPENKEWAIRRRDFCQRMHQRPFE</querySeq>
+      <pattern>A+KA++E++AGNYEEA   +  A+     +   P+ K+   + RD C++   R  E</pattern>
+      <matchSeq start="8" end="63">AQKASEEDEAGNYEEAIRSYQHAVKYFLHILKEPQGKDGNQKIRDKCKQYLDRAEE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="200" database="TR" id="I3D8T2_9PAST" ac="I3D8T2" length="73" description="Transcriptional activator PerC domain protein OS=Pasteurella bettyae CCUG 2042 OX=1095749 GN=HMPREF1052_1253 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.9</expectation>
+      <identity>33.3</identity>
+      <positives>56.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="63">YRFYAEKAAKEEQAGNYEEAETHW-DLAMLSASPENKEWAIRRRDFCQ</querySeq>
+      <pattern>YR   E AA+ E++GNY  A   W + A  + + + +EW   R+ +C+</pattern>
+      <matchSeq start="16" end="63">YREATEVAAEMERSGNYARASELWGEAAKQAVTLKQREWCNTRKIYCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="201" database="TR" id="A0A4P7KYG0_9GAMM" ac="A0A4P7KYG0" length="73" description="ANR family transcriptional regulator OS=Arsenophonus nasoniae OX=638 GN=QE258_19080 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.9</expectation>
+      <identity>39.5</identity>
+      <positives>53.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="62">AEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFC</querySeq>
+      <pattern>A+ A   EQ+G Y EA   W  A  L+ +  N+ W+  R DFC</pattern>
+      <matchSeq start="15" end="57">AQDAVHLEQSGQYHEAARAWAQANRLARNRNNRIWSENRADFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="202" database="TR" id="A0A4P7KV09_9GAMM" ac="A0A4P7KV09" length="73" description="ANR family transcriptional regulator OS=Arsenophonus nasoniae OX=638 GN=QE258_10970 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.9</expectation>
+      <identity>39.5</identity>
+      <positives>53.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="62">AEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFC</querySeq>
+      <pattern>A+ A   EQ+G Y EA   W  A  L+ +  N+ W+  R DFC</pattern>
+      <matchSeq start="15" end="57">AQDAVHLEQSGQYHEAARAWAQANRLARNRNNRIWSENRADFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="203" database="TR" id="A0A4V1BWL3_9GAMM" ac="A0A4V1BWL3" length="73" description="ANR family transcriptional regulator OS=Arsenophonus nasoniae OX=638 GN=QE258_05090 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.9</expectation>
+      <identity>39.5</identity>
+      <positives>53.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="62">AEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFC</querySeq>
+      <pattern>A+ A   EQ+G Y EA   W  A  L+ +  N+ W+  R DFC</pattern>
+      <matchSeq start="15" end="57">AQDAVHLEQSGQYHEAARAWAQANRLARNRNNRIWSENRADFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="204" database="TR" id="A0A4P7KTZ5_9GAMM" ac="A0A4P7KTZ5" length="73" description="ANR family transcriptional regulator OS=Arsenophonus nasoniae OX=638 GN=QE258_05950 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.9</expectation>
+      <identity>39.5</identity>
+      <positives>53.5</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="62">AEKAAKEEQAGNYEEAETHWDLA-MLSASPENKEWAIRRRDFC</querySeq>
+      <pattern>A+ A   EQ+G Y EA   W  A  L+ +  N+ W+  R DFC</pattern>
+      <matchSeq start="15" end="57">AQDAVHLEQSGQYHEAARAWAQANRLARNRNNRIWSENRADFC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="205" database="TR" id="A0A0M2KKZ4_9GAMM" ac="A0A0M2KKZ4" length="73" description="ANR family transcriptional regulator OS=Erwinia tracheiphila OX=65700 GN=SY86_23355 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.9</expectation>
+      <identity>30.5</identity>
+      <positives>49.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="72">NRYRFYAEKAAKEEQAGNYEEAETHWDLAM-LSASPENKEWAIRRRDFCQRMHQRPFEG</querySeq>
+      <pattern>N Y  YA  A + E++G +E+A   W  A+  + S   ++WA  R  +C     R + G</pattern>
+      <matchSeq start="11" end="69">NNYGLYAVGAGRAERSGEWEKASDLWRKALEYARSSGCRKWAESRMAYCANAVARGWSG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

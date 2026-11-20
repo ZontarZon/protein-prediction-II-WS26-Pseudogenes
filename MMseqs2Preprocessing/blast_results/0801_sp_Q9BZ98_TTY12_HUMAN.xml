@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-205310-0771-64157494-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-205310-0771-64157494-p2m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q9BZ98|TTY12_HUMAN" type="PROTEIN" length="90"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:53:10+00:00" end="2026-11-13T20:54:43+00:00" search="P0Y0M0DT0H0M93.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="4">
+   <hit number="1" database="SP" id="TTY12_HUMAN" ac="Q9BZ98" length="90" description="Putative transcript Y 12 protein OS=Homo sapiens OX=9606 GN=TTTY12 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>514</score>
+      <bits>202.6</bits>
+      <expectation>3.2e-66</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="90">MIDPETRHKAFLKAWPWQNSTITFVPGLAICHYSSVQVPRRGAILPMLYALCYVKMPSFQHGPGRMYHLTCDWPRKMSLSCHVCRAHFRD</querySeq>
+      <pattern>MIDPETRHKAFLKAWPWQNSTITFVPGLAICHYSSVQVPRRGAILPMLYALCYVKMPSFQHGPGRMYHLTCDWPRKMSLSCHVCRAHFRD</pattern>
+      <matchSeq start="1" end="90">MIDPETRHKAFLKAWPWQNSTITFVPGLAICHYSSVQVPRRGAILPMLYALCYVKMPSFQHGPGRMYHLTCDWPRKMSLSCHVCRAHFRD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0AAV5C983_ELECO" ac="A0AAV5C983" length="183" description="Uncharacterized protein OS=Eleusine coracana subsp. coracana OX=191504 GN=ga11300 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>3.6</expectation>
+      <identity>36.2</identity>
+      <positives>46.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="39" end="85">PRRGAILPMLYALCYVKMPSFQHGPGRMYHLTCDWPRKMSLSCHVCR</querySeq>
+      <pattern>P   + LP  Y   +V MP+FQ   G +  L C +       CHVCR</pattern>
+      <matchSeq start="95" end="141">PVEASNLPESYQFSFVHMPNFQCEVGHVLCLRCQYKMAAGKRCHVCR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A8C8RFU8_9SAUR" ac="A0A8C8RFU8" length="317" description="Olfactory receptor OS=Pelusios castaneus OX=367368 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>4.3</expectation>
+      <identity>30.9</identity>
+      <positives>51.5</positives>
+      <gaps>24</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="81">LAICH---YSSVQVPRR-----------GAILPMLYALCYVKMPSFQHGPGRMYHLTCDWPRKMSLSC</querySeq>
+      <pattern>LAIC+   YSS+  P+            G + P++  +   K+P    GP  ++H+ CD+P  +SL+C</pattern>
+      <matchSeq start="124" end="189">LAICNSLRYSSIMTPKMCSQMAAGCWICGFMCPIIEVILVSKLPFC--GPNEIHHIFCDFPPLLSLAC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0AAV3B3L2_PYXAD" ac="A0AAV3B3L2" length="318" description="Olfactory receptor OS=Pyxicephalus adspersus OX=30357 GN=GDO54_005784 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>8.1</expectation>
+      <identity>30.3</identity>
+      <positives>50.0</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="81">STITFVPGLAIC---HYSSVQVPRRG-AILPMLYALCYVKMPSFQH----------GPGRMYHLTCDWPRKMSLSC</querySeq>
+      <pattern>ST+++   +AIC   HY+ +   ++   ++ + Y+LC+  M SF H          GP  + H  CD P  + LSC</pattern>
+      <matchSeq start="119" end="192">STMSYDRYVAICYPFHYNLIMTKKKSFGLIILCYSLCF--MQSFAHTCCVFSLPFCGPNLIDHFYCDIPPLLKLSC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

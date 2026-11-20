@@ -1,0 +1,1096 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-203412-0421-84349705-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-203412-0421-84349705-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q05BU3|F86JP_HUMAN" type="PROTEIN" length="40"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:34:12+00:00" end="2026-11-13T20:39:24+00:00" search="P0Y0M0DT0H0M312.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="63">
+   <hit number="1" database="SP" id="F86JP_HUMAN" ac="Q05BU3" length="40" description="Putative protein FAM86JP OS=Homo sapiens OX=9606 GN=FAM86JP PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>209</score>
+      <bits>85.1</bits>
+      <expectation>3.8e-21</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="40">MPGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>MPGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="1" end="40">MPGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A8I5TQW6_PONAB" ac="A0A8I5TQW6" length="151" description="Uncharacterized protein OS=Pongo abelii OX=9601 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>6.2e-12</expectation>
+      <identity>82.1</identity>
+      <positives>84.6</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="53" end="87">PAAFTH----RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0A2R9C5V9_PANPA" ac="A0A2R9C5V9" length="148" description="FAM86 domain-containing protein OS=Pan paniscus OX=9597 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <bits>62.0</bits>
+      <expectation>6.5e-11</expectation>
+      <identity>79.5</identity>
+      <positives>82.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     RRAVLPRSH VAGRGPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="114" end="148">PAAFTD----RRAVLPRSHLVAGRGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0ACP2GT46_HUMAN" ac="A0ACP2GT46" length="95" description="Family with sequence similarity 86 member B1 (gene/pseudogene) OS=Homo sapiens OX=9606 GN=FAM86B1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>8.1e-11</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="67" end="95">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="E9PM45_HUMAN" ac="E9PM45" length="105" description="Family with sequence similarity 86 member B1 (gene/pseudogene) OS=Homo sapiens OX=9606 GN=FAM86B2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="77" end="105">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0ACP2GT72_HUMAN" ac="A0ACP2GT72" length="105" description="Family with sequence similarity 86 member B1 (gene/pseudogene) OS=Homo sapiens OX=9606 GN=FAM86B1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="77" end="105">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0ACP2GLB7_HUMAN" ac="A0ACP2GLB7" length="105" description="Family with sequence similarity 86 member B2 OS=Homo sapiens OX=9606 GN=FAM86B2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="77" end="105">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0AAG2UX73_HUMAN" ac="A0AAG2UX73" length="105" description="Family with sequence similarity 86 member B2 OS=Homo sapiens OX=9606 GN=FAM86B2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="77" end="105">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0ACP2GTD7_HUMAN" ac="A0ACP2GTD7" length="122" description="Family with sequence similarity 86 member B1 (gene/pseudogene) OS=Homo sapiens OX=9606 GN=FAM86B1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1.5e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="94" end="122">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0ACP2GTC4_HUMAN" ac="A0ACP2GTC4" length="126" description="Family with sequence similarity 86 member B1 (gene/pseudogene) OS=Homo sapiens OX=9606 GN=FAM86B1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1.6e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="98" end="126">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0AAG2UYP5_HUMAN" ac="A0AAG2UYP5" length="126" description="Family with sequence similarity 86 member B2 OS=Homo sapiens OX=9606 GN=FAM86B2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1.6e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="98" end="126">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0ACP2E7N7_HUMAN" ac="A0ACP2E7N7" length="126" description="Family with sequence similarity 86 member B1 (gene/pseudogene) OS=Homo sapiens OX=9606 GN=FAM86B1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1.6e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="98" end="126">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A8I5KZ44_HUMAN" ac="A0A8I5KZ44" length="126" description="Family with sequence similarity 86 member B2 OS=Homo sapiens OX=9606 GN=FAM86B2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1.6e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="98" end="126">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="A0ACP2GSZ3_HUMAN" ac="A0ACP2GSZ3" length="132" description="Family with sequence similarity 86 member B1 (gene/pseudogene) OS=Homo sapiens OX=9606 GN=FAM86B1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1.9e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="104" end="132">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0ACP2GLC8_HUMAN" ac="A0ACP2GLC8" length="132" description="Family with sequence similarity 86 member B2 OS=Homo sapiens OX=9606 GN=FAM86B2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1.9e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="104" end="132">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="A0ACP2GT93_HUMAN" ac="A0ACP2GT93" length="139" description="Family with sequence similarity 86 member B1 (gene/pseudogene) OS=Homo sapiens OX=9606 GN=FAM86B1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>2.2e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="111" end="139">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0ACP2GLK1_HUMAN" ac="A0ACP2GLK1" length="139" description="Family with sequence similarity 86 member B2 OS=Homo sapiens OX=9606 GN=FAM86B2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>2.2e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="111" end="139">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0ACP2GT38_HUMAN" ac="A0ACP2GT38" length="143" description="Family with sequence similarity 86 member B1 (gene/pseudogene) OS=Homo sapiens OX=9606 GN=FAM86B1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>2.3e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="115" end="143">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0ACP2GLD8_HUMAN" ac="A0ACP2GLD8" length="143" description="Family with sequence similarity 86 member B2 OS=Homo sapiens OX=9606 GN=FAM86B2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>2.3e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="115" end="143">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A8K4N6_HUMAN" ac="A8K4N6" length="153" description="cDNA FLJ78518 OS=Homo sapiens OX=9606 PE=2 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>2.8e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="125" end="153">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0AAG2UXP8_HUMAN" ac="A0AAG2UXP8" length="153" description="Family with sequence similarity 86 member B2 OS=Homo sapiens OX=9606 GN=FAM86B2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>2.8e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="125" end="153">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="SP" id="F86B1_HUMAN" ac="Q8N7N1-3" length="153" description="Isoform 3 of Putative protein N-methyltransferase FAM86B1 OS=Homo sapiens OX=9606 GN=FAM86B1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>2.8e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="125" end="153">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0ACP2GLM0_HUMAN" ac="A0ACP2GLM0" length="160" description="Family with sequence similarity 86 member B2 OS=Homo sapiens OX=9606 GN=FAM86B2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>3.2e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="132" end="160">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0ACP2GT48_HUMAN" ac="A0ACP2GT48" length="166" description="Family with sequence similarity 86 member B1 (gene/pseudogene) OS=Homo sapiens OX=9606 GN=FAM86B1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>3.6e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="138" end="166">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0ACP2GT95_HUMAN" ac="A0ACP2GT95" length="177" description="Family with sequence similarity 86 member B1 (gene/pseudogene) OS=Homo sapiens OX=9606 GN=FAM86B1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>4.3e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="149" end="177">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="E9PQV7_HUMAN" ac="E9PQV7" length="187" description="Family with sequence similarity 86 member B2 OS=Homo sapiens OX=9606 GN=FAM86B2 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>5e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="159" end="187">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0ACP2GT71_HUMAN" ac="A0ACP2GT71" length="187" description="Family with sequence similarity 86 member B1 (gene/pseudogene) OS=Homo sapiens OX=9606 GN=FAM86B1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>5e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="159" end="187">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0AAG2UXB1_HUMAN" ac="A0AAG2UXB1" length="187" description="Family with sequence similarity 86 member B2 OS=Homo sapiens OX=9606 GN=FAM86B2 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>5e-10</expectation>
+      <identity>96.6</identity>
+      <positives>96.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>RRAVLPRSHRVAGRGPAEAGCLPGA AGS</pattern>
+      <matchSeq start="159" end="187">RRAVLPRSHRVAGRGPAEAGCLPGAQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0ACP2D201_HUMAN" ac="A0ACP2D201" length="126" description="Eukaryotic elongation factor 2 lysine methyltransferase OS=Homo sapiens OX=9606 GN=EEF2KMT PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>6.6e-10</expectation>
+      <identity>87.1</identity>
+      <positives>90.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="40">SKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>+ R AVLPRSH VAGRGPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="96" end="126">TNRCAVLPRSHHVAGRGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A2K6QTD3_RHIRO" ac="A0A2K6QTD3" length="153" description="Eukaryotic elongation factor 2 lysine methyltransferase OS=Rhinopithecus roxellana OX=61622 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>76.9</identity>
+      <positives>79.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>PGAF+     R AVL RSH VAGRGPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="119" end="153">PGAFTD----RCAVLSRSHHVAGRGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A2K6LL01_RHIBE" ac="A0A2K6LL01" length="153" description="Eukaryotic elongation factor 2 lysine methyltransferase OS=Rhinopithecus bieti OX=61621 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>76.9</identity>
+      <positives>79.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>PGAF+     R AVL RSH VAGRGPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="119" end="153">PGAFTD----RCAVLSRSHHVAGRGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0ACP2BHI7_HUMAN" ac="A0ACP2BHI7" length="153" description="Eukaryotic elongation factor 2 lysine methyltransferase OS=Homo sapiens OX=9606 GN=EEF2KMT PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.1e-09</expectation>
+      <identity>87.1</identity>
+      <positives>90.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="40">SKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>+ R AVLPRSH VAGRGPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="123" end="153">TNRCAVLPRSHHVAGRGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0ACP2GSA7_HUMAN" ac="A0ACP2GSA7" length="160" description="Eukaryotic elongation factor 2 lysine methyltransferase OS=Homo sapiens OX=9606 GN=EEF2KMT PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.3e-09</expectation>
+      <identity>87.1</identity>
+      <positives>90.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="40">SKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>+ R AVLPRSH VAGRGPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="130" end="160">TNRCAVLPRSHHVAGRGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0A2I3M8B2_PAPAN" ac="A0A2I3M8B2" length="153" description="FAM86 domain-containing protein OS=Papio anubis OX=9555 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>1.6e-09</expectation>
+      <identity>76.9</identity>
+      <positives>79.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVL RSHRVAGRGPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="119" end="153">PAAFTD----RCAVLSRSHRVAGRGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0A8D2G1B1_THEGE" ac="A0A8D2G1B1" length="153" description="Eukaryotic elongation factor 2 lysine methyltransferase OS=Theropithecus gelada OX=9565 GN=EEF2KMT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>1.6e-09</expectation>
+      <identity>76.9</identity>
+      <positives>79.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVL RSHRVAGRGPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="119" end="153">PAAFTD----RCAVLSRSHRVAGRGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0ACP2D2E6_HUMAN" ac="A0ACP2D2E6" length="187" description="Eukaryotic elongation factor 2 lysine methyltransferase OS=Homo sapiens OX=9606 GN=EEF2KMT PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>1.9e-09</expectation>
+      <identity>87.1</identity>
+      <positives>90.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="40">SKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>+ R AVLPRSH VAGRGPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="157" end="187">TNRCAVLPRSHHVAGRGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0A2K5J7I2_COLAP" ac="A0A2K5J7I2" length="153" description="FAM86 domain-containing protein OS=Colobus angolensis palliatus OX=336983 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>135</score>
+      <bits>56.6</bits>
+      <expectation>8.8e-09</expectation>
+      <identity>74.4</identity>
+      <positives>76.9</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVL RSH VAGRGPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="119" end="153">PAAFTD----RCAVLSRSHHVAGRGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0A2K5NVP7_CERAT" ac="A0A2K5NVP7" length="153" description="FAM86 domain-containing protein OS=Cercocebus atys OX=9531 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>131</score>
+      <bits>55.1</bits>
+      <expectation>3.4e-08</expectation>
+      <identity>71.8</identity>
+      <positives>74.4</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVL RSH VAGRGPAE GCLPGAPAGS</pattern>
+      <matchSeq start="119" end="153">PAAFTD----RCAVLSRSHHVAGRGPAETGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A2K6V3S6_SAIBB" ac="A0A2K6V3S6" length="153" description="FAM86 domain-containing protein OS=Saimiri boliviensis boliviensis OX=39432 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>4.8e-08</expectation>
+      <identity>69.2</identity>
+      <positives>74.4</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     RRAVLPR H VAGRGP EAGCLP APAG+</pattern>
+      <matchSeq start="119" end="153">PAAFTH----RRAVLPRGHLVAGRGPTEAGCLPRAPAGT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0A2K6C8P1_MACNE" ac="A0A2K6C8P1" length="153" description="FAM86 domain-containing protein OS=Macaca nemestrina OX=9545 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>128</score>
+      <bits>53.9</bits>
+      <expectation>9.6e-08</expectation>
+      <identity>74.4</identity>
+      <positives>76.9</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVL RSHRVAGRGPAEAG LPGAPAGS</pattern>
+      <matchSeq start="119" end="153">PAAFTD----RCAVLSRSHRVAGRGPAEAGRLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0A8C9IGQ8_9PRIM" ac="A0A8C9IGQ8" length="153" description="Eukaryotic elongation factor 2 lysine methyltransferase OS=Piliocolobus tephrosceles OX=591936 GN=EEF2KMT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>127</score>
+      <bits>53.5</bits>
+      <expectation>1.3e-07</expectation>
+      <identity>71.8</identity>
+      <positives>74.4</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVL RSH VAG GPAEAGCLPGAPAGS</pattern>
+      <matchSeq start="119" end="153">PAAFTD----RCAVLSRSHHVAGWGPAEAGCLPGAPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="G3SI25_GORGO" ac="G3SI25" length="126" description="FAM86 domain-containing protein OS=Gorilla gorilla gorilla OX=9595 GN=LOC101133440 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>122</score>
+      <bits>51.6</bits>
+      <expectation>4.7e-07</expectation>
+      <identity>82.8</identity>
+      <positives>82.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>R AVLPRSHRVAGRGP EA CLPG  AGS</pattern>
+      <matchSeq start="98" end="126">RLAVLPRSHRVAGRGPVEARCLPGVQAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0A8I3X092_CALJA" ac="A0A8I3X092" length="153" description="FAM86 domain-containing protein OS=Callithrix jacchus OX=9483 GN=EEF2KMT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>122</score>
+      <bits>51.6</bits>
+      <expectation>7.4e-07</expectation>
+      <identity>66.7</identity>
+      <positives>71.8</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     RRAVLPR HRVAGRGP EAGCL  AP G+</pattern>
+      <matchSeq start="119" end="153">PAAFTH----RRAVLPRGHRVAGRGPTEAGCLLRAPPGT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A2K5C2P2_AOTNA" ac="A0A2K5C2P2" length="153" description="FAM86 domain-containing protein OS=Aotus nancymaae OX=37293 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>119</score>
+      <bits>50.4</bits>
+      <expectation>2.1e-06</expectation>
+      <identity>66.7</identity>
+      <positives>71.8</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVLPR HRVAGRGP EAGCL  APAG+</pattern>
+      <matchSeq start="119" end="153">PAAFTH----RCAVLPRGHRVAGRGPTEAGCLLQAPAGT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0A2K5QK56_CEBIM" ac="A0A2K5QK56" length="153" description="FAM86 domain-containing protein OS=Cebus imitator OX=2715852 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>8e-06</expectation>
+      <identity>64.1</identity>
+      <positives>69.2</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVLPR HRV GRGP EAGCL  APAG+</pattern>
+      <matchSeq start="119" end="153">PAAFTH----RCAVLPRGHRVTGRGPTEAGCLLRAPAGT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0A9X9MBV2_GULGU" ac="A0A9X9MBV2" length="151" description="Uncharacterized protein (Fragment) OS=Gulo gulo OX=48420 GN=BN2614_LOCUS5 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.49</expectation>
+      <identity>51.3</identity>
+      <positives>61.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVLPR+  + G+ P EA CLP  PAGS</pattern>
+      <matchSeq start="117" end="151">PAAFAH----RCAVLPRNCPLPGQSPTEALCLPEEPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0A667I2I0_LYNCA" ac="A0A667I2I0" length="153" description="Eukaryotic elongation factor 2 lysine methyltransferase OS=Lynx canadensis OX=61383 GN=EEF2KMT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.5</expectation>
+      <identity>51.3</identity>
+      <positives>61.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R A+LPR+  + G  PAEA CLP  PAGS</pattern>
+      <matchSeq start="119" end="153">PAAFAH----RCAILPRNCPLPGPSPAEALCLPEEPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0A8C9M1T7_PANTA" ac="A0A8C9M1T7" length="153" description="FAM86 domain-containing protein OS=Panthera tigris altaica OX=74533 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.5</expectation>
+      <identity>51.3</identity>
+      <positives>61.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R A+LPR+  + G  PAEA CLP  PAGS</pattern>
+      <matchSeq start="119" end="153">PAAFAH----RCAILPRNCPLPGPSPAEALCLPEKPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0A8C8X3F1_PANLE" ac="A0A8C8X3F1" length="153" description="FAM86 domain-containing protein OS=Panthera leo OX=9689 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.5</expectation>
+      <identity>51.3</identity>
+      <positives>61.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R A+LPR+  + G  PAEA CLP  PAGS</pattern>
+      <matchSeq start="119" end="153">PAAFAH----RCAILPRNCPLPGPSPAEALCLPEKPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0A7J7YXJ1_PIPKU" ac="A0A7J7YXJ1" length="105" description="Family with sequence similarity 86 member B1 OS=Pipistrellus kuhlii OX=59472 GN=mPipKuh1_004863 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>0.85</expectation>
+      <identity>48.7</identity>
+      <positives>61.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVLPR+  +  +GPA+  CLP  PAGS</pattern>
+      <matchSeq start="71" end="105">PAAFTH----RCAVLPRNCPLTRQGPADTLCLPEGPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0A9L0S893_HORSE" ac="A0A9L0S893" length="334" description="FAM86 domain-containing protein OS=Equus caballus OX=9796 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.86</expectation>
+      <identity>53.1</identity>
+      <positives>68.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="40">SSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>S +R AV PR+  + GR PAEA C+P  PAG+</pattern>
+      <matchSeq start="262" end="293">SRRRCAVQPRNSPLPGRRPAEALCVPRGPAGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0A7J8IXR3_MOLMO" ac="A0A7J8IXR3" length="105" description="FAM86 domain-containing protein OS=Molossus molossus OX=27622 GN=HJG59_004954 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>1.2</expectation>
+      <identity>51.3</identity>
+      <positives>61.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVLPR   + G+GPA+A  LP  PAGS</pattern>
+      <matchSeq start="71" end="105">PEAFTH----RCAVLPRDRPLPGQGPADALHLPEGPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0A7J7YWH2_PIPKU" ac="A0A7J7YWH2" length="152" description="Family with sequence similarity 86 member B1 OS=Pipistrellus kuhlii OX=59472 GN=mPipKuh1_004863 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.3</expectation>
+      <identity>48.7</identity>
+      <positives>61.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVLPR+  +  +GPA+  CLP  PAGS</pattern>
+      <matchSeq start="118" end="152">PAAFTH----RCAVLPRNCPLTRQGPADTLCLPEGPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A9L0RJW5_HORSE" ac="A0A9L0RJW5" length="154" description="FAM86 domain-containing protein OS=Equus caballus OX=9796 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.3</expectation>
+      <identity>48.7</identity>
+      <positives>61.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AV PR+  + GR PAEA C+P  PAG+</pattern>
+      <matchSeq start="119" end="153">PAAFTH----RCAVQPRNSPLPGRRPAEALCVPRGPAGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A9L0INX8_EQUAS" ac="A0A9L0INX8" length="154" description="Eukaryotic elongation factor 2 lysine methyltransferase OS=Equus asinus OX=9793 GN=EEF2KMT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.3</expectation>
+      <identity>48.7</identity>
+      <positives>61.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AV PR+  + GR PAEA C+P  PAG+</pattern>
+      <matchSeq start="119" end="153">PAAFTH----RCAVQPRNSPLPGRRPAEALCVPRGPAGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0A7J8IXN0_MOLMO" ac="A0A7J8IXN0" length="152" description="FAM86 domain-containing protein OS=Molossus molossus OX=27622 GN=HJG59_004954 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>1.8</expectation>
+      <identity>51.3</identity>
+      <positives>61.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVLPR   + G+GPA+A  LP  PAGS</pattern>
+      <matchSeq start="118" end="152">PEAFTH----RCAVLPRDRPLPGQGPADALHLPEGPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0A673U336_SURSU" ac="A0A673U336" length="153" description="FAM86 domain-containing protein OS=Suricata suricatta OX=37032 GN=EEF2KMT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>3.6</expectation>
+      <identity>58.6</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>R AVLP +  + G  PAEA CLP  PAGS</pattern>
+      <matchSeq start="125" end="153">RCAVLPANCPLPGPSPAEALCLPDGPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0A8C6ZZG6_NEOVI" ac="A0A8C6ZZG6" length="153" description="FAM86 domain-containing protein OS=Neogale vison OX=452646 GN=EEF2KMT PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>3.6</expectation>
+      <identity>48.7</identity>
+      <positives>59.0</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="40">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>P AF+     R AVLPR+  +  + P EA CLP  PAGS</pattern>
+      <matchSeq start="119" end="153">PAAFAH----RCAVLPRNCPLPSQSPTEALCLPEEPAGS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A8D2DNF3_SCIVU" ac="A0A8D2DNF3" length="152" description="FAM86 domain-containing protein OS=Sciurus vulgaris OX=55149 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>4.9</expectation>
+      <identity>55.6</identity>
+      <positives>55.6</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="37">PGAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAP</querySeq>
+      <pattern>P AF      RRAVLPRS    G  PAEA CLP  P</pattern>
+      <matchSeq start="119" end="150">PAAFRH----RRAVLPRSDPRVGWRPAEALCLPEGP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="G1QQJ4_NOMLE" ac="G1QQJ4" length="135" description="Uncharacterized protein OS=Nomascus leucogenys OX=61853 PE=4 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>6.2</expectation>
+      <identity>64.0</identity>
+      <positives>68.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MPGAFSQNSSKRRAVLPRSHRVAGR</querySeq>
+      <pattern>MPGAFSQNSSKR  +  RSH    R</pattern>
+      <matchSeq start="1" end="25">MPGAFSQNSSKRSLMEARSHSPRAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="A0A6A4WR47_AMPAM" ac="A0A6A4WR47" length="161" description="Zinc finger protein basonuclin-2 OS=Amphibalanus amphitrite OX=1232801 GN=BNC2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>7.1</expectation>
+      <identity>48.5</identity>
+      <positives>54.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="38">SQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPA</querySeq>
+      <pattern>S N +  R +L  S   AG GP EAG  PG PA</pattern>
+      <matchSeq start="42" end="74">SSNYNLHRKLLSTSSEAAGGGPQEAGAFPGFPA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0A091WGK8_NIPNI" ac="A0A091WGK8" length="370" description="Protein FAM110B OS=Nipponia nippon OX=128390 GN=Y956_03348 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>7.8</expectation>
+      <identity>44.7</identity>
+      <positives>52.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="40">GAFSQNSSKRRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>GAF     +R   +P+  RV G GP   G LP APA S</pattern>
+      <matchSeq start="207" end="244">GAFQGAPGERSPKIPQPGRVVGPGPPTPGGLPAAPARS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="U6LHH6_9EIME" ac="U6LHH6" length="1799" description="DNA2/NAM7 helicase-like C-terminal domain-containing protein OS=Eimeria brunetti OX=51314 GN=EBH_0028840 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>7.8</expectation>
+      <identity>51.7</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="40">RRAVLPRSHRVAGRGPAEAGCLPGAPAGS</querySeq>
+      <pattern>++A+LPR H  AGRG A A    GA AG+</pattern>
+      <matchSeq start="1629" end="1657">QQALLPRMHAAAGRGTAAAAAAAGAAAGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

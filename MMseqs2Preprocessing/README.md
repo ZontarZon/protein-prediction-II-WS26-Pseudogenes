@@ -1,5 +1,18 @@
 # Prepare MMseqs2 sequence splits for pLM training
 
+## Clustering files
+
+- `data.fasta` contains the original query protein sequences.
+- `blast_results/*.xml` contains one BLAST result per query.
+- `xmlProcess.py` pairs each query with its highest-scoring BLAST hit after excluding accessions in `data.fasta` and hits annotated PE 3, 4, or 5. Queries without an eligible hit are skipped.
+- `paired_hits.fasta` contains those query and hit sequences and serves as the clustering input.
+- `mmseqs2.py` builds the pairs, runs MMseqs2, and saves the JSON and FASTA exports.
+- `outputs/clusters.json` lists clusters using the representative’s 1-based input position as `cluster_id`, with each item’s sequence, header, parsed UniProt fields, and 1,024-value ProtT5 embedding. The `tag` is `pseudogene` when the accession appears in `data.fasta` and `regular` otherwise.
+- `outputs/cluster_representatives.fasta` contains one representative sequence per cluster, labeled by input record number.
+- `outputs/cluster_sequences.fasta` contains all member sequences grouped by cluster, labeled by input record number.
+
+Run clustering and embedding with `MMseqs2Preprocessing/.venv/bin/python MMseqs2Preprocessing/mmseqs2.py` after installing the requirements below into the virtual environment. The first run downloads the ProtT5 checkpoint.
+
 MMseqs2 clusters sequences to create a fixed, similarity-aware training/validation
 split. The prepared `.pt` file stores **sequences, labels, and split membership**.
 Training runs those sequences through frozen ProtT5 and trains a classification

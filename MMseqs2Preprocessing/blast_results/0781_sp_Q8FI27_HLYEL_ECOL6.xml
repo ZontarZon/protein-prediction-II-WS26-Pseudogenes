@@ -1,0 +1,1054 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-204629-0099-49054677-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-204629-0099-49054677-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|Q8FI27|HLYEL_ECOL6" type="PROTEIN" length="93"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:46:29+00:00" end="2026-11-13T20:48:10+00:00" search="P0Y0M0DT0H0M101.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="59">
+   <hit number="1" database="SP" id="HLYEL_ECOL6" ac="Q8FI27" length="93" description="Putative hemolysin E-like protein OS=Escherichia coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=c1630 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>464</score>
+      <bits>183.3</bits>
+      <expectation>1.7e-58</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</pattern>
+      <matchSeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A0H3EG42_ECO8N" ac="A0A0H3EG42" length="93" description="Truncated hemolysin E OS=Escherichia coli O83:H1 (strain NRG 857C / AIEC) OX=685038 GN=NRG857_06035 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>435</score>
+      <bits>172.2</bits>
+      <expectation>4.6e-54</expectation>
+      <identity>93.5</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>MKNKLKSA SFFTTLSNTVKQANKDIDAAKLKLTTEIAAIG IKTETETTRFYVDYDDLMLSLLKEAA+K+INTCNEYQKRHGKKTLFE+ EV</pattern>
+      <matchSeq start="1" end="93">MKNKLKSAQSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGEIKTETETTRFYVDYDDLMLSLLKEAAKKIINTCNEYQKRHGKKTLFEVSEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="Q68S89_ECOLX" ac="Q68S89" length="303" description="Cytotoxin ClyA OS=Escherichia coli OX=562 GN=clyA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>440</score>
+      <bits>174.1</bits>
+      <expectation>4.5e-52</expectation>
+      <identity>93.5</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+KNKLKS  SFFTTLSNTVKQANKDIDAAKLKLTTEIAAIG IKTETETTRFYVDYDDLMLSLLKEAA+KMINTCNEYQKRHGKKTLFE+PEV</pattern>
+      <matchSeq start="211" end="303">LKNKLKSVQSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGEIKTETETTRFYVDYDDLMLSLLKEAAKKMINTCNEYQKRHGKKTLFEVPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="Q68S93_ECOLX" ac="Q68S93" length="303" description="Cytotoxin ClyA OS=Escherichia coli OX=562 GN=clyA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>439</score>
+      <bits>173.7</bits>
+      <expectation>6.4e-52</expectation>
+      <identity>93.5</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+KNKLKS  SFFTTLSNTVKQANKDIDAAKLKLTTEIAAIG IKTETETTRFYVDYDDLMLSLLKEAA KMINTCNEYQKRHGKKTLFE+PEV</pattern>
+      <matchSeq start="211" end="303">LKNKLKSVQSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGEIKTETETTRFYVDYDDLMLSLLKEAANKMINTCNEYQKRHGKKTLFEVPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="H7CD89_ECOLX" ac="H7CD89" length="303" description="Cytotoxin ClyA OS=Escherichia coli OX=562 GN=hlyE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>439</score>
+      <bits>173.7</bits>
+      <expectation>6.4e-52</expectation>
+      <identity>93.5</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+KNKLKS  SFFTTLSNTVKQANKDIDAAKLKLTTEIAAIG IKTETETTRFYVDYDDLMLSLLKEAA KMINTCNEYQKRHGKKTLFE+PEV</pattern>
+      <matchSeq start="211" end="303">LKNKLKSVQSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGEIKTETETTRFYVDYDDLMLSLLKEAANKMINTCNEYQKRHGKKTLFEVPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="HLYE_ECO57" ac="Q9REB3" length="303" description="Hemolysin E OS=Escherichia coli O157:H7 OX=83334 GN=hlyE PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>439</score>
+      <bits>173.7</bits>
+      <expectation>6.4e-52</expectation>
+      <identity>93.5</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+KNKLKS  SFFTTLSNTVKQANKDIDAAKLKLTTEIAAIG IKTETETTRFYVDYDDLMLSLLKEAA KMINTCNEYQKRHGKKTLFE+PEV</pattern>
+      <matchSeq start="211" end="303">LKNKLKSVQSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGEIKTETETTRFYVDYDDLMLSLLKEAANKMINTCNEYQKRHGKKTLFEVPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="Q68S92_ECOLX" ac="Q68S92" length="303" description="Cytotoxin ClyA OS=Escherichia coli OX=562 GN=clyA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>437</score>
+      <bits>172.9</bits>
+      <expectation>1.3e-51</expectation>
+      <identity>92.5</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+KNKLKS  +FFTTLSNTVKQANKDIDAAKLKLTTEIAAIG IKTETETTRFYVDYDDLMLSLLKEAA+KMINTCNEYQKRHGKKTLFE+PEV</pattern>
+      <matchSeq start="211" end="303">LKNKLKSVQNFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGEIKTETETTRFYVDYDDLMLSLLKEAAKKMINTCNEYQKRHGKKTLFEVPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="Q68S91_ECOLX" ac="Q68S91" length="303" description="Cytotoxin ClyA OS=Escherichia coli OX=562 GN=clyA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>437</score>
+      <bits>172.9</bits>
+      <expectation>1.3e-51</expectation>
+      <identity>92.5</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+KNKLKS  +FFTTLSNTVKQANKDIDAAKLKLTTEIAAIG IKTETETTRFYVDYDDLMLSLLKEAA+KMINTCNEYQKRHGKKTLFE+PEV</pattern>
+      <matchSeq start="211" end="303">LKNKLKSVQNFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGEIKTETETTRFYVDYDDLMLSLLKEAAKKMINTCNEYQKRHGKKTLFEVPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="Q68S90_ECOLX" ac="Q68S90" length="303" description="Cytotoxin ClyA OS=Escherichia coli OX=562 GN=clyA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>437</score>
+      <bits>172.9</bits>
+      <expectation>1.3e-51</expectation>
+      <identity>92.5</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+KNKLKS  +FFTTLSNTVKQANKDIDAAKLKLTTEIAAIG IKTETETTRFYVDYDDLMLSLLKEAA+KMINTCNEYQKRHGKKTLFE+PEV</pattern>
+      <matchSeq start="211" end="303">LKNKLKSVQNFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGEIKTETETTRFYVDYDDLMLSLLKEAAKKMINTCNEYQKRHGKKTLFEVPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="H7CD99_ECOLX" ac="H7CD99" length="303" description="Cytotoxin ClyA OS=Escherichia coli OX=562 GN=hlyE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>437</score>
+      <bits>172.9</bits>
+      <expectation>1.3e-51</expectation>
+      <identity>92.5</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+KNKLKS  +FFTTLSNTVKQANKDIDAAKLKLTTEIAAIG IKTETETTRFYVDYDDLMLSLLKEAA+KMINTCNEYQKRHGKKTLFE+PEV</pattern>
+      <matchSeq start="211" end="303">LKNKLKSVQNFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGEIKTETETTRFYVDYDDLMLSLLKEAAKKMINTCNEYQKRHGKKTLFEVPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="HLYE_ECOLI" ac="P77335" length="303" description="Hemolysin E, chromosomal OS=Escherichia coli (strain K12) OX=83333 GN=hlyE PE=1 SV=4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>437</score>
+      <bits>172.9</bits>
+      <expectation>1.3e-51</expectation>
+      <identity>92.5</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+KNKLKS  +FFTTLSNTVKQANKDIDAAKLKLTTEIAAIG IKTETETTRFYVDYDDLMLSLLKEAA+KMINTCNEYQKRHGKKTLFE+PEV</pattern>
+      <matchSeq start="211" end="303">LKNKLKSVQNFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGEIKTETETTRFYVDYDDLMLSLLKEAAKKMINTCNEYQKRHGKKTLFEVPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="H7CDA9_ECOLX" ac="H7CDA9" length="303" description="Cytotoxin ClyA OS=Escherichia coli OX=562 GN=hlyE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>435</score>
+      <bits>172.2</bits>
+      <expectation>2.6e-51</expectation>
+      <identity>92.5</identity>
+      <positives>96.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+K+KLKS  SFFTTLSNTVKQANKDIDAAKLKLTTEIAAIG IKTETETTRFYVDYDDLMLSLLKEAA+KMINTCNEYQKRHGKKTLFE+PEV</pattern>
+      <matchSeq start="211" end="303">LKDKLKSVQSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGEIKTETETTRFYVDYDDLMLSLLKEAAKKMINTCNEYQKRHGKKTLFEVPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="Q1WG81_SALTI" ac="Q1WG81" length="303" description="Cytolysin A OS=Salmonella typhi OX=90370 GN=clyA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>395</score>
+      <bits>156.8</bits>
+      <expectation>2.7e-45</expectation>
+      <identity>82.8</identity>
+      <positives>92.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+ N+LK+  +FFT+LS TVKQANKDIDAAKLKL TEIAAIG IKTETETTRFYVDYDDLMLSLLK AA+KMINTCNEYQ+RHGKKTLFE+P+V</pattern>
+      <matchSeq start="211" end="303">LNNRLKTVQNFFTSLSATVKQANKDIDAAKLKLATEIAAIGEIKTETETTRFYVDYDDLMLSLLKGAAKKMINTCNEYQQRHGKKTLFEVPDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="HLYE_SALTI" ac="Q8Z727" length="303" description="Hemolysin E OS=Salmonella typhi OX=90370 GN=hlyE PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>395</score>
+      <bits>156.8</bits>
+      <expectation>2.7e-45</expectation>
+      <identity>82.8</identity>
+      <positives>92.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+ N+LK+  +FFT+LS TVKQANKDIDAAKLKL TEIAAIG IKTETETTRFYVDYDDLMLSLLK AA+KMINTCNEYQ+RHGKKTLFE+P+V</pattern>
+      <matchSeq start="211" end="303">LNNRLKTVQNFFTSLSATVKQANKDIDAAKLKLATEIAAIGEIKTETETTRFYVDYDDLMLSLLKGAAKKMINTCNEYQQRHGKKTLFEVPDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="B6E464_SALET" ac="B6E464" length="303" description="Cytolysin A OS=Salmonella enterica subsp. enterica serovar Schwarzengrund OX=340190 GN=clyA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>389</score>
+      <bits>154.5</bits>
+      <expectation>2.1e-44</expectation>
+      <identity>81.7</identity>
+      <positives>91.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+ N+LK+  +FFT+LS TVKQANKDIDAAKLKL TEIAAIG IKTETETTRFYVDYDDLMLSLLK AA+KMINTCNEYQ+RHGKKTL E+P+V</pattern>
+      <matchSeq start="211" end="303">LNNRLKAVQNFFTSLSATVKQANKDIDAAKLKLATEIAAIGEIKTETETTRFYVDYDDLMLSLLKGAAKKMINTCNEYQQRHGKKTLLEVPDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="B6E462_SALET" ac="B6E462" length="303" description="Cytolysin A OS=Salmonella enterica subsp. enterica serovar Indiana OX=286783 GN=clyA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>389</score>
+      <bits>154.5</bits>
+      <expectation>2.1e-44</expectation>
+      <identity>81.7</identity>
+      <positives>91.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+ N+LK+  +FFT+LS TVKQANKDIDAAKLKL TEIAAIG IKTETETTRFYVDYDDLMLSLLK AA+KMINTCNEYQ+RHGKKTL E+P+V</pattern>
+      <matchSeq start="211" end="303">LNNRLKAVQNFFTSLSATVKQANKDIDAAKLKLATEIAAIGEIKTETETTRFYVDYDDLMLSLLKGAAKKMINTCNEYQQRHGKKTLLEVPDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="B6E461_SALET" ac="B6E461" length="303" description="Cytolysin A OS=Salmonella enterica subsp. enterica serovar Brandenburg OX=149387 GN=clyA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>389</score>
+      <bits>154.5</bits>
+      <expectation>2.1e-44</expectation>
+      <identity>81.7</identity>
+      <positives>91.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+ N+LK+  +FFT+LS TVKQANKDIDAAKLKL TEIAAIG IKTETETTRFYVDYDDLMLSLLK AA+KMINTCNEYQ+RHGKKTL E+P+V</pattern>
+      <matchSeq start="211" end="303">LNNRLKAVQNFFTSLSATVKQANKDIDAAKLKLATEIAAIGEIKTETETTRFYVDYDDLMLSLLKGAAKKMINTCNEYQQRHGKKTLLEVPDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="B6E463_SALET" ac="B6E463" length="303" description="Cytolysin A OS=Salmonella enterica subsp. enterica serovar Panama OX=29472 GN=clyA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>388</score>
+      <bits>154.1</bits>
+      <expectation>3e-44</expectation>
+      <identity>80.6</identity>
+      <positives>91.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+ N+LK+  +FFT+LS TVKQANKDIDAAKLKL TEIAAIG +KTETETTRFYVDYDDLMLSLLK AA+KMINTCNEYQ+RHGKKTL E+P+V</pattern>
+      <matchSeq start="211" end="303">LNNRLKAVQNFFTSLSATVKQANKDIDAAKLKLATEIAAIGEVKTETETTRFYVDYDDLMLSLLKGAAKKMINTCNEYQQRHGKKTLLEVPDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A4Z0PV11_SALET" ac="A0A4Z0PV11" length="303" description="Hemolysin HlyE OS=Salmonella enterica subsp. enterica serovar Poona OX=436295 GN=C9F07_03395 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>385</score>
+      <bits>152.9</bits>
+      <expectation>8.5e-44</expectation>
+      <identity>81.7</identity>
+      <positives>91.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+ N+LK+  +FFT+LS TVKQANKDIDAAKLKL TEIAAIG IKTETETTRFYVDYDDLMLSLLK AA+KMINTCNEYQ+RHGKKTL E+P+V</pattern>
+      <matchSeq start="211" end="303">LNNRLKAVQNFFTSLSATVKQANKDIDAAKLKLATEIAAIGEIKTETETTRFYVDYDDLMLSLLKGAAKKMINTCNEYQQRHGKKTLPEVPDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="Q1WG80_SALPA" ac="Q1WG80" length="303" description="Cytolysin A OS=Salmonella paratyphi A (strain ATCC 9150 / SARB42) OX=295319 GN=clyA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>382</score>
+      <bits>151.8</bits>
+      <expectation>2.4e-43</expectation>
+      <identity>79.6</identity>
+      <positives>91.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+ ++LK+  +FFT+LS TVKQANKDIDAAKLKL TEIAAIG IKTETETTRFYVDYDDLMLSLLK AA+KMINTCNEYQ+RHGKKTL E+P++</pattern>
+      <matchSeq start="211" end="303">LNDRLKAVQNFFTSLSVTVKQANKDIDAAKLKLATEIAAIGEIKTETETTRFYVDYDDLMLSLLKGAAKKMINTCNEYQQRHGKKTLLEVPDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="SP" id="HLYE_SALPA" ac="Q93RR6" length="303" description="Hemolysin E OS=Salmonella paratyphi A (strain ATCC 9150 / SARB42) OX=295319 GN=hlyE PE=3 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>382</score>
+      <bits>151.8</bits>
+      <expectation>2.4e-43</expectation>
+      <identity>79.6</identity>
+      <positives>91.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="93">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>+ ++LK+  +FFT+LS TVKQANKDIDAAKLKL TEIAAIG IKTETETTRFYVDYDDLMLSLLK AA+KMINTCNEYQ+RHGKKTL E+P++</pattern>
+      <matchSeq start="211" end="303">LNDRLKAVQNFFTSLSVTVKQANKDIDAAKLKLATEIAAIGEIKTETETTRFYVDYDDLMLSLLKGAAKKMINTCNEYQQRHGKKTLLEVPDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0A553ZS83_9BACI" ac="A0A553ZS83" length="69" description="Hemolysin E (Fragment) OS=Alkalicoccobacillus porphyridii OX=2597270 GN=FN960_22215 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>333</score>
+      <bits>132.9</bits>
+      <expectation>8.3e-39</expectation>
+      <identity>94.2</identity>
+      <positives>97.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="93">DIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>DIDAAKLKLTTEI AIG IKTETETTRFYVDYDDLMLSLLKEAA+KMINTCNEYQKRHGKKTLFE+PEV</pattern>
+      <matchSeq start="1" end="69">DIDAAKLKLTTEIVAIGEIKTETETTRFYVDYDDLMLSLLKEAAKKMINTCNEYQKRHGKKTLFEVPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0A085AIJ6_9ENTR" ac="A0A085AIJ6" length="303" description="Hemolysin E OS=Trabulsiella guamensis ATCC 49490 OX=1005994 GN=hlyE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>339</score>
+      <bits>135.2</bits>
+      <expectation>6.6e-37</expectation>
+      <identity>73.6</identity>
+      <positives>81.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="91">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIP</querySeq>
+      <pattern>+K KLKS   FF +LS  VKQAN DID+AK KL TEI  IG +KTETETTRFYVDYDDLMLSLLK+AA KMI+TCNEYQKRHGKK+  E P</pattern>
+      <matchSeq start="211" end="301">LKKKLKSVQDFFVSLSKKVKQANTDIDSAKQKLMTEITTIGELKTETETTRFYVDYDDLMLSLLKDAAHKMISTCNEYQKRHGKKSFDETP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="Q9X2S8_ECOLX" ac="Q9X2S8" length="300" description="Hemolysin OS=Escherichia coli OX=562 GN=hlyE PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>284</score>
+      <bits>114.0</bits>
+      <expectation>9.5e-29</expectation>
+      <identity>65.9</identity>
+      <positives>78.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKK</querySeq>
+      <pattern>+K KLKS   FF +L+ TVK AN DID AK KL  EI+ IG +KTETETTRF+VDYDDLML  L+++A K+I +CNEYQKRHGKK</pattern>
+      <matchSeq start="209" end="293">LKEKLKSVKDFFESLAATVKSANTDIDKAKSKLKDEISVIGDLKTETETTRFFVDYDDLMLKQLQDSATKLILSCNEYQKRHGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="A0ABS6LJ50_9GAMM" ac="A0ABS6LJ50" length="293" description="Hemolysin E OS=Rahnella ecdela OX=2816250 GN=J1784_18320 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>252</score>
+      <bits>101.7</bits>
+      <expectation>4.4e-24</expectation>
+      <identity>56.5</identity>
+      <positives>74.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKK</querySeq>
+      <pattern>++ KL+S   FFT LS  VK+AN  ID  K+KLT EI+ IG +K+ T+ TRF+V+Y+DLML  LK +A+K+I  C EYQKRHGKK</pattern>
+      <matchSeq start="209" end="293">LRKKLESVKKFFTELSAQVKKANTSIDETKVKLTNEISVIGEMKSNTKATRFFVEYNDLMLDALKTSAEKLITQCEEYQKRHGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0ACE2PYF4_9GAMM" ac="A0ACE2PYF4" length="293" description="Hemolysin E OS=Rahnella bruchi OX=1510573 GN=RABR111495_16435 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>252</score>
+      <bits>101.7</bits>
+      <expectation>4.4e-24</expectation>
+      <identity>56.5</identity>
+      <positives>74.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKK</querySeq>
+      <pattern>++ KL+S   FFT LS  VK+AN  ID  K+KLT EI+ IG +K+ T+ TRF+V+Y+DLML  LK +A+K+I  C EYQKRHGKK</pattern>
+      <matchSeq start="209" end="293">LRKKLESVKKFFTDLSAQVKKANTSIDETKVKLTNEISVIGEMKSNTKATRFFVEYNDLMLDALKTSAEKLITQCEEYQKRHGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0ABS8G3Y2_9ALTE" ac="A0ABS8G3Y2" length="302" description="Hemolysin E OS=Fluctibacter halophilus OX=226011 GN=LJ739_02880 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>213</score>
+      <bits>86.7</bits>
+      <expectation>2.5e-18</expectation>
+      <identity>50.0</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="84">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGK</querySeq>
+      <pattern>++ +LKS   FFT ++  VK A++ I  AK KL  E+  IG +K  TETT+F+V+YDDLML  LK AA K+I  C +Y  RHGK</pattern>
+      <matchSeq start="210" end="293">LQKQLKSVQGFFTDITALVKTADQQISDAKSKLKEEVQVIGDMKASTETTQFFVEYDDLMLKQLKGAASKLIQQCQDYMHRHGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0ACN4XRV6_AZOSA" ac="A0ACN4XRV6" length="70" description="Hemolysin E (Fragment) OS=Azotobacter salinestris OX=69964 GN=AAGT13_10075 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>189</score>
+      <bits>77.4</bits>
+      <expectation>7.4e-17</expectation>
+      <identity>55.4</identity>
+      <positives>78.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="85">QANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKK</querySeq>
+      <pattern>+A+ DID AK KL  EI  IG +K++TETT  YV+YDDLML+LLK++A+K+I+ C+ Y +RHG +</pattern>
+      <matchSeq start="2" end="66">KASDDIDGAKTKLQEEIXXIGDMKSQTETTSLYVEYDDLMLNLLKDSARKLIDQCSMYIERHGAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0A9Q0MM11_9DIPT" ac="A0A9Q0MM11" length="302" description="Hemolysin E OS=Pseudolycoriella hygida OX=35572 GN=hlyE_5 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>174</score>
+      <bits>71.6</bits>
+      <expectation>9.8e-13</expectation>
+      <identity>40.2</identity>
+      <positives>60.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYV--DYDDLMLSLLKEAAQKMINTCNEYQKRHGKK</querySeq>
+      <pattern>++ K++    FF  L  T++Q N DID+ K KL  E+ +IGV+K +TE T+  +  DY D +   + E+   +I  C+ YQKRHGKK</pattern>
+      <matchSeq start="215" end="301">LQAKMQEVKGFFEKLQGTIEQTNVDIDSTKGKLKDEVKSIGVLKVQTEETKQLIPLDYLDELRDTILESVNNLIKECDAYQKRHGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A9Q0MKW1_9DIPT" ac="A0A9Q0MKW1" length="296" description="Hemolysin E OS=Pseudolycoriella hygida OX=35572 GN=hlyE_6 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>157</score>
+      <bits>65.1</bits>
+      <expectation>2.4e-10</expectation>
+      <identity>34.5</identity>
+      <positives>60.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="85">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDL--MLSLLKEAAQKMINTCNEYQKRHGKK</querySeq>
+      <pattern>+  KL    +FF  L + + QA+ DID+ K KL  EI+ IG +KT+ E ++  ++ D+L  +   +  + + +IN C++YQ+ HG+K</pattern>
+      <matchSeq start="209" end="295">LNQKLNEVKNFFNHLKSLITQADGDIDSTKNKLRAEISNIGELKTQAEASKTVIEMDELDALREAILSSVKTLINQCDDYQRNHGRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A9Q0N4P4_9DIPT" ac="A0A9Q0N4P4" length="274" description="Hemolysin E OS=Pseudolycoriella hygida OX=35572 GN=hlyE_0 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>5.2e-09</expectation>
+      <identity>42.0</identity>
+      <positives>65.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="84">TVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYV--DYDDLMLSLLKEAAQKMINTCNEYQKRHGK</querySeq>
+      <pattern>TV+Q N D+D+ K KL  E+ +IGV+K +TE T+ ++  DY D +   + E+   +I  C+ +QKRHGK</pattern>
+      <matchSeq start="206" end="274">TVEQTNVDMDSTKGKLKDEVKSIGVLKVQTEETKQFIPLDYLDELRDTISESVNNLIKECDAHQKRHGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A9Q0N2S8_9DIPT" ac="A0A9Q0N2S8" length="314" description="Hemolysin E OS=Pseudolycoriella hygida OX=35572 GN=hlyE_8 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <bits>60.1</bits>
+      <expectation>1.7e-08</expectation>
+      <identity>35.7</identity>
+      <positives>56.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="82">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDL--MLSLLKEAAQKMINTCNEYQKRH</querySeq>
+      <pattern>++ +L    SFF  L  T+ + N +ID+ K KL  EIA IG +K +TE T+  + +D+L  +   + E+   +I  C  YQK H</pattern>
+      <matchSeq start="211" end="294">LEKRLDEVKSFFVKLHKTIDETNVNIDSTKTKLKNEIANIGELKVKTEETKELIPFDELDALRDNILESVNNLIKQCEAYQKSH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A9Q0S0Q0_9DIPT" ac="A0A9Q0S0Q0" length="278" description="Hemolysin E OS=Pseudolycoriella hygida OX=35572 GN=hlyE_9 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <bits>57.4</bits>
+      <expectation>1.3e-07</expectation>
+      <identity>33.3</identity>
+      <positives>53.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="82">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDL--MLSLLKEAAQKMINTCNEYQKRH</querySeq>
+      <pattern>++ +L     FF  L  T+ + N +ID+ K KL  EIA IG +K +TE  +  + +D+L  +   + E+   +I  C  YQK H</pattern>
+      <matchSeq start="189" end="272">LQQRLDEVKGFFVKLHKTIDETNVNIDSTKTKLKDEIANIGELKVKTEAIKKIIPFDELDALCDTILESVNNLIKQCEAYQKSH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0A9Q0NC64_9DIPT" ac="A0A9Q0NC64" length="559" description="Hemolysin E OS=Pseudolycoriella hygida OX=35572 GN=hlyE_3 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>137</score>
+      <bits>57.4</bits>
+      <expectation>1.8e-07</expectation>
+      <identity>36.2</identity>
+      <positives>55.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="81">KLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDL--MLSLLKEAAQKMINTCNEYQKR</querySeq>
+      <pattern>KL     FF  L  T++Q N DID++K K+  E+ +I V+K +TE T+  +  DD   +   + E+   +I  C  YQKR</pattern>
+      <matchSeq start="479" end="558">KLSKMRDFFEQLHKTIEQTNVDIDSSKEKMKDEVRSIAVLKFKTERTKALIPMDDFDGLRDTILESVNNLIKECEAYQKR</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.16</expectation>
+      <identity>29.9</identity>
+      <positives>48.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="84">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYD---DLMLSLLKEAAQKMINTCNEYQKRHGK</querySeq>
+      <pattern>++ +L      F     T+ Q +  I++ K KL  EI +IGV+K +    R     D   DL  ++LK +   +I  C  +QK +GK</pattern>
+      <matchSeq start="216" end="301">LQRRLSVVNGLFEMFHKTICQTHDRIESTKRKLNEEIKSIGVLKVQIGEARAPFPMDNLGDLRHTILK-SVNDLIKICKTFQKDYGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0A9Q0S6A2_9DIPT" ac="A0A9Q0S6A2" length="559" description="Hemolysin E OS=Pseudolycoriella hygida OX=35572 GN=hlyE_10 PE=4 SV=1">
+    <alignments total="2">
+     <alignment number="1">
+      <score>135</score>
+      <bits>56.6</bits>
+      <expectation>3.3e-07</expectation>
+      <identity>35.0</identity>
+      <positives>55.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="81">KLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDL--MLSLLKEAAQKMINTCNEYQKR</querySeq>
+      <pattern>K+     FF  L  T++Q N DID++K K+  E+ +I V+K +TE T+  +  DD   +   + E+   +I  C  YQKR</pattern>
+      <matchSeq start="479" end="558">KMSKMRDFFEQLHKTIEQTNVDIDSSKEKMKDEVRSIAVLKFKTERTKALIPMDDFDGLRDTILESVNNLIKECEAYQKR</matchSeq>
+     </alignment>
+     <alignment number="2">
+      <score>101</score>
+      <bits>43.5</bits>
+      <expectation>0.01</expectation>
+      <identity>31.0</identity>
+      <positives>49.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="84">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYD---DLMLSLLKEAAQKMINTCNEYQKRHGK</querySeq>
+      <pattern>++ +L     FF     T+ Q +  I++ K KL  EI +IGV+K +    R     D   DL  ++LK +   +I  C  +QK +GK</pattern>
+      <matchSeq start="216" end="301">LQRRLSEVNGFFEMFHKTICQTHDRIESTKRKLNEEIKSIGVLKVQIGEARAPFPMDNLGDLRHTILK-SVNDLIKICKTFQKDYGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0A9Q0NC44_9DIPT" ac="A0A9Q0NC44" length="307" description="Hemolysin E OS=Pseudolycoriella hygida OX=35572 GN=hlyE_7 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>123</score>
+      <bits>52.0</bits>
+      <expectation>1.3e-05</expectation>
+      <identity>33.3</identity>
+      <positives>53.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="76">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYV--DYDDLMLSLLKEAAQKMINTCN</querySeq>
+      <pattern>++ K++    FF  L  T++Q N DID+ K KL  ++ +IGV+K +TE     +  DY D +   + E    +I  CN</pattern>
+      <matchSeq start="208" end="285">LQAKMQEVKGFFEKLQGTIEQTNVDIDSIKGKLKDKVKSIGVLKVQTEEAEQIIPLDYLDELRDTISETVNNLIKECN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="A0A1V9ZT26_ACHHY" ac="A0A1V9ZT26" length="242" description="Hemolysin E OS=Achlya hypogyna OX=1202772 GN=ACHHYP_01703 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>115</score>
+      <bits>48.9</bits>
+      <expectation>0.00013</expectation>
+      <identity>31.1</identity>
+      <positives>55.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="85">FTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKK</querySeq>
+      <pattern>F  ++ +      +I  A  +L  +   I  +  +TE++RF+ D +D+++  L  AA+ +I  C  YQ+RHGKK</pattern>
+      <matchSeq start="168" end="241">FQEMTKSADLMTTEITTATRQLDEDKDMISDLSAKTESSRFWCDLEDVIMEELATAAKDLIELCQAYQERHGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0A9Q0NGN0_9DIPT" ac="A0A9Q0NGN0" length="222" description="Hemolysin E, chromosomal (Fragment) OS=Pseudolycoriella hygida OX=35572 GN=hlyE_1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.05</expectation>
+      <identity>40.0</identity>
+      <positives>58.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="50">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETT</querySeq>
+      <pattern>++ K+K    FF  L  T++Q   DID+ K KL   + +IGV+K  TE T</pattern>
+      <matchSeq start="169" end="218">LQAKMKEVKGFFEKLQGTIEQTYVDIDSTKGKLKLTLKSIGVLKVRTEET</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A9Q0S5H9_9DIPT" ac="A0A9Q0S5H9" length="271" description="Hemolysin E (Fragment) OS=Pseudolycoriella hygida OX=35572 GN=hlyE_4 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.06</expectation>
+      <identity>30.6</identity>
+      <positives>50.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="85">KLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVD---YDDLMLSLLKEAAQKMINTCNEYQKRHGKK</querySeq>
+      <pattern>KL    +FF  L + + QA++DI     KL   I  +  ++  T   +  VD    D+L  ++L   A  +IN C++YQ  HG++</pattern>
+      <matchSeq start="187" end="270">KLNEVTNFFKRLKSFIDQADRDIRITIDKLREAIINVSDLRNTTNVKKSVVDVGAIDELGETVLTSVA-NLINQCDKYQINHGRR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0ACF6ECV2_9HEMI" ac="A0ACF6ECV2" length="388" description="Uncharacterized protein OS=Cyamophila willieti OX=2604842 GN=WDU94_009432 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.06</expectation>
+      <identity>26.2</identity>
+      <positives>53.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="83">KLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHG</querySeq>
+      <pattern>K++   +++  L   V++A+ ++ A K KL  EI  +  +  + +      +  D++  L+KE  Q ++ + N+Y KRHG</pattern>
+      <matchSeq start="241" end="317">KMRITEAYYGALIKAVQEASGNVTAVKEKLHVEITKVQQLYGDVQGA---TEIGDIIGELMKEDLQNLLKSVNDYMKRHG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0ABQ8Y9Q3_9EUKA" ac="A0ABQ8Y9Q3" length="3450" description="Beige/beach-related OS=Anaeramoeba flamelloides OX=1746091 GN=M0813_23597 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.07</expectation>
+      <identity>34.1</identity>
+      <positives>51.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="87">KNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMIN--TCNEYQKRHGKKTL</querySeq>
+      <pattern>KNK   ALSF   ++N V ++N + D  K     EI     IK E+ET +     + + L+ +K     + N  T N+ QKRH K++L</pattern>
+      <matchSeq start="2341" end="2424">KNKYFVALSFQNKINNGVGESNDEYDVNKNYNEREIKEETQIKKESETKK----ENQIKLNFIKNKFHNINNKLTINQLQKRHNKESL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A081BY94_VECG1" ac="A0A081BY94" length="872" description="Sigma 54 response regulator OS=Vecturithrix granuli OX=1499967 GN=U27_04264 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.58</expectation>
+      <identity>24.7</identity>
+      <positives>49.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="93">KNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMIN-----TCNEYQKRHGKKTLFEIPEV</querySeq>
+      <pattern>K K+K+A      L NT+ +  +D+D   ++L ++I  + +++ + E+  +  DY   ++SL KE   + I         E  +R  +   F +P+V</pattern>
+      <matchSeq start="427" end="521">KRKIKAAPDDVVELENTLIEIREDLDRKSIRLRSKIEEVRILQEQAESNHY--DYSRQVVSLQKEIRAREIEIKGLIAKEEELRRQFENLPFNVPDV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0A1W0A0Z8_9STRA" ac="A0A1W0A0Z8" length="292" description="Hemolysin E, chromosomal OS=Thraustotheca clavata OX=74557 GN=THRCLA_03758 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.72</expectation>
+      <identity>24.1</identity>
+      <positives>47.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="83">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHG</querySeq>
+      <pattern>++N   +  + + TL    K     I  A  +L  + + I  + T+    + Y D  D+++  +  AA  +I+ C  Y++RHG</pattern>
+      <matchSeq start="207" end="289">LRNHFLAIQNDYLTLQKRNKGFANHIILATKQLNKDKSLISDLSTKATEAQVYCDIPDVLMEEMTNAAHDLIHMCENYKQRHG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A1H8CFM7_9RHOB" ac="A0A1H8CFM7" length="240" description="Phosphate-specific transport system accessory protein PhoU OS=Loktanella fryxellensis OX=245187 GN=SAMN04488003_106159 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>1.3</expectation>
+      <identity>27.6</identity>
+      <positives>47.1</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="87">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTL</querySeq>
+      <pattern>+K  +K+ +   T L++ V   + DIDA +LK+ T+ A +  ++  T T        DL L L        +  C +Y K   K+T+</pattern>
+      <matchSeq start="35" end="113">LKTAIKALVERDTDLAHRVVAGDHDIDALELKIKTDTARLLALRAPTAT--------DLRLVLAVMEISAHLERCGDYAKNIAKRTV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="M7BP11_CHEMY" ac="M7BP11" length="788" description="Lipopolysaccharide-responsive and beige-like anchor protein (Fragment) OS=Chelonia mydas OX=8469 GN=UY3_03115 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>2.0</expectation>
+      <identity>28.4</identity>
+      <positives>47.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="92">VKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPE</querySeq>
+      <pattern>V     D    +LK +T + A   ++   E T  Y+ Y  L L L K+   + +   ++ Q+R  + T+F IPE</pattern>
+      <matchSeq start="360" end="433">VSSVASDTQRLELKPSTSLEATQPLRPLPEVTFIYLPYAKLKLYLKKKKGGQDLAAASDGQRRDSRSTMFRIPE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0AAV2RPR9_MEGNR" ac="A0AAV2RPR9" length="446" description="Uncharacterized protein (Fragment) OS=Meganyctiphanes norvegica OX=48144 GN=MNOR_LOCUS27192 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>2.7</expectation>
+      <identity>45.5</identity>
+      <positives>61.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="48">LKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETE</querySeq>
+      <pattern>LK+ L   T +SN  K+A +D+ AAKL+LTT   A  VI   +E</pattern>
+      <matchSeq start="93" end="136">LKTQLKMLTVISNEAKKAKEDLKAAKLQLTTMHNAESVINGTSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="Q32H35_SHIDS" ac="Q32H35" length="69" description="Transposase OS=Shigella dysenteriae serotype 1 (strain Sd197) OX=300267 GN=SDY_1217 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>4.2</expectation>
+      <identity>93.3</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="79" end="93">QKRHGKKTLFEIPEV</querySeq>
+      <pattern>QKRHGKKTLFE+PEV</pattern>
+      <matchSeq start="55" end="69">QKRHGKKTLFEVPEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0A367IUY6_RHIAZ" ac="A0A367IUY6" length="155" description="Uncharacterized protein (Fragment) OS=Rhizopus azygosporus OX=86630 GN=CU097_004579 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>4.7</expectation>
+      <identity>26.9</identity>
+      <positives>50.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="90">LSNTVKQANKDIDAAKLKLTTEIAAIG--VIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEI</querySeq>
+      <pattern>+ +T+ +  K+ D AK+    EIA     +IK   + T+  ++    ++ L+KE  +K  + C  +   H K TLF +</pattern>
+      <matchSeq start="23" end="96">VKDTMSRRRKEADKAKV----EIARFNPSMIKITNDRTKLLIESKTTLVKLIKEVPEKNKDYCYPWSTDHSKATLFSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0ABV4S2S4_9FUSO" ac="A0ABV4S2S4" length="494" description="Cytosol non-specific dipeptidase OS=Leptotrichia hongkongensis OX=554406 GN=ACEG17_00595 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>6.8</expectation>
+      <identity>27.3</identity>
+      <positives>49.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="83">SALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHG</querySeq>
+      <pattern>+ +SFF    N V   +KDI+     L      +GVIKTE +  +  +    L  S + ++ +K++N   E  +++G</pattern>
+      <matchSeq start="324" end="396">AVISFFHEFPNGVISMSKDIEG----LVETSINLGVIKTENKDGKITIKIQALPRSSVNKSLEKLLNDVKELSEKYG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0A2T1LRS3_9CHRO" ac="A0A2T1LRS3" length="713" description="Forkhead-associated protein OS=Aphanothece hegewaldii CCALA 016 OX=2107694 GN=C7H19_22390 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>7.0</expectation>
+      <identity>25.3</identity>
+      <positives>49.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="92">KNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTE--IAAIGVIKTET------ETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEIPE</querySeq>
+      <pattern>KN  K   +F  ++ N +K+  ++I AA+L + T+  +  + ++ TE       +  +   D + L    LKE  +K +NT NE + +  KK   ++ +</pattern>
+      <matchSeq start="317" end="415">KNLQKKQDNFIKSIENIIKRQPENILAARLAIKTQTLLEPLAILFTEDKILLQEQIIQQKKDLEQLTHINLKEVTKKALNTVNEEKDKFFKKVKLDVAQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0A5C5VXC2_9BACT" ac="A0A5C5VXC2" length="90" description="WXG100 family type VII secretion target OS=Botrimarina hoheduenensis OX=2528000 GN=Pla111_22390 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>8.5</expectation>
+      <identity>27.0</identity>
+      <positives>54.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="78">SNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEY</querySeq>
+      <pattern>+N++++ N D+D     LT ++A +G    + E  +F  D+D  M S+     ++ I+  NE+</pattern>
+      <matchSeq start="15" end="72">ANSLRRFNTDLDERMTALTAQLAGLGTSWRDQEHKKFVEDFDQQMKSI-----RRFIDATNEH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="I0APD4_IGNAJ" ac="I0APD4" length="71" description="Uncharacterized protein OS=Ignavibacterium album (strain DSM 19864 / JCM 16511 / NBRC 101810 / Mat9-16) OX=945713 GN=IALB_3138 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>8.6</expectation>
+      <identity>36.4</identity>
+      <positives>56.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="85">VIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRHGKK</querySeq>
+      <pattern>+I T+  T R Y   DD+ + L++E+ Q  +    E  K+HGKK</pattern>
+      <matchSeq start="26" end="69">LISTDRNTRRRYRIEDDIPIMLVEESEQLSLEEWTEIMKKHGKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0A1I2HEH9_9FLAO" ac="A0A1I2HEH9" length="348" description="Uncharacterized protein OS=Flavobacterium xueshanense OX=935223 GN=SAMN04488131_11370 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.0</expectation>
+      <identity>27.3</identity>
+      <positives>47.5</positives>
+      <gaps>13</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="90">NKLKSALSFFTTLSNTVKQANKDI-DAAKL-KLTTEIAAIGVIKTETETTRFYV---------DYDDLMLSLLKEAAQKMINTCNEYQKRHGKKTLFEI</querySeq>
+      <pattern>N  +  +S+F    NT+K  N  + D +K+  LTT+  A+ + K + E  RF++         D +DL     +    + +NT N++ K   K  + EI</pattern>
+      <matchSeq start="72" end="168">NNTEKTISYFNLAQNTIKSNNGILFDISKITTLTTDAIAVQIAKIKDE--RFHLNQRILGNEPDDEDLKKLFTQSGFYEYVNTTNKHPKNDKKLLIHEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A4R0XJ22_9MOLU" ac="A0A4R0XJ22" length="156" description="Rho termination factor N-terminal domain-containing protein OS=Mycoplasma todarodis OX=1937191 GN=C4B25_04385 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>9.1</expectation>
+      <identity>34.7</identity>
+      <positives>52.8</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="81">NTVKQANKDIDAAKLKLTTEIAA------IGVIKTETETTRFYVD-YDDLMLSLLKEAAQKMINTCNEYQKR</querySeq>
+      <pattern>N VK+    +DA K+   TE A       I  I+T+ ET   Y D YD++ ++ LKE A+K+  + N   K+</pattern>
+      <matchSeq start="73" end="144">NEVKKTIAKVDAKKVGDATEEAIKVASKKIRDIRTQIETAEHYQDNYDEMTVAELKEEAKKLKVSLNSRDKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0A1M6BYR7_PSEXY" ac="A0A1M6BYR7" length="414" description="Gamma-glutamyl phosphate reductase OS=Pseudobutyrivibrio xylanivorans DSM 14809 OX=1123012 GN=proA PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.2</expectation>
+      <identity>34.6</identity>
+      <positives>55.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="76">AAKLKLTTEIAAIGVIKTETETTRFYVDYD---DLMLSLLKEAAQKMINTCN</querySeq>
+      <pattern>A  +K   E A++ VI+T +     YVDYD   D+ +S+++ A  + I  CN</pattern>
+      <matchSeq start="204" end="255">AGLIKSVVENASVPVIETGSGNCHIYVDYDADIDMAISIIENAKTQRIGVCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0A1V4ERV2_9BACL" ac="A0A1V4ERV2" length="637" description="DNA mismatch repair protein MutL OS=Ferroacidibacillus organovorans OX=1765683 GN=mutL PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.5</expectation>
+      <identity>29.8</identity>
+      <positives>57.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="82">IDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKRH</querySeq>
+      <pattern>IDA   K+   ++  G+ + E +     +D DDL+LS+++ A  K + T ++++K H</pattern>
+      <matchSeq start="36" end="91">IDAGATKIDVTVSGGGLTRMEVQDNGCGMDEDDLVLSIIRHATSK-LRTMDDFRKLH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0A0U1NUH5_9BACI" ac="A0A0U1NUH5" length="711" description="HTH-type transcriptional regulatory protein TyrR OS=Neobacillus massiliamazoniensis OX=1499688 GN=BN000_01618 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.6</expectation>
+      <identity>30.2</identity>
+      <positives>55.6</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="77">LSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNE</querySeq>
+      <pattern>L+  +KQ NK +D  K+ LT+    I V+  E    +  ++Y++  L ++K  A+K++N   E</pattern>
+      <matchSeq start="117" end="175">LAELLKQENKSVDLLKILLTSIPMGIFVVNKE----KRIINYNEAGLEMIKSTAEKVLNVPGE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="A0A9W4SCE4_9GLOM" ac="A0A9W4SCE4" length="814" description="7325_t:CDS:1 OS=Funneliformis geosporum OX=1117311 GN=FWILDA_LOCUS977 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.7</expectation>
+      <identity>30.3</identity>
+      <positives>50.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="80">LSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQK</querySeq>
+      <pattern>L+++V  +N DID   LK+   +A   +   + E  R +  +DD     +K +     N C+EYQK</pattern>
+      <matchSeq start="174" end="234">LNSSVLPSNSDIDNNPLKIIKSLALCLIGYNDDEKERNFTSFDDAYREWIKSS-----NACHEYQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A5M6CP49_9BACT" ac="A0A5M6CP49" length="1177" description="Chromosome partition protein Smc OS=Taibaiella lutea OX=2608001 GN=smc PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>9.8</expectation>
+      <identity>24.7</identity>
+      <positives>48.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="81">MKNKLKSALSFFTTLSNTVKQANKDIDAAKLKLTTEIAAIGVIKTETETTRFYVDYDDLMLSLLKEAAQKMINTCNEYQKR</querySeq>
+      <pattern>++++ KS   F T   N +KQ N+ I  A  ++ TE+ A   ++   ET R  +D    +    K+  +   N   ++Q++</pattern>
+      <matchSeq start="314" end="394">LQDREKSLNLFLTNADNQLKQLNESIAFADQQIKTELDATEDLRDALETLRDTLDEKRELFDAKKQTLEHQRNNLQQFQRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-175219-0522-10150540-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-175219-0522-10150540-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P39349|YJGX_ECOLI" type="PROTEIN" length="119"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T17:52:19+00:00" end="2026-11-13T17:54:54+00:00" search="P0Y0M0DT0H0M155.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="13">
+   <hit number="1" database="SP" id="YJGX_ECOLI" ac="P39349" length="119" description="Putative phosphoethanolamine transferase YjgX OS=Escherichia coli (strain K12) OX=83333 GN=yjgX PE=5 SV=3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>637</score>
+      <bits>250.0</bits>
+      <expectation>4.7e-84</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="119">MNRPVFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGKSSREHRYMIRLLLSLVRVCAGIICQCMTIPYQPHRG</querySeq>
+      <pattern>MNRPVFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGKSSREHRYMIRLLLSLVRVCAGIICQCMTIPYQPHRG</pattern>
+      <matchSeq start="1" end="119">MNRPVFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGKSSREHRYMIRLLLSLVRVCAGIICQCMTIPYQPHRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A7J5NSL8_9BACE" ac="A0A7J5NSL8" length="119" description="Uncharacterized protein OS=Bacteroides xylanisolvens OX=371601 GN=GA574_30210 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>608</score>
+      <bits>238.8</bits>
+      <expectation>1.2e-79</expectation>
+      <identity>96.6</identity>
+      <positives>97.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="119">MNRPVFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGKSSREHRYMIRLLLSLVRVCAGIICQCMTIPYQPHRG</querySeq>
+      <pattern>MNRPVFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGKSSREHRYMIRLLLSLVRVCAGIIC+ M IP QPHRG</pattern>
+      <matchSeq start="1" end="119">MNRPVFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGKSSREHRYMIRLLLSLVRVCAGIICRYMAIPCQPHRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="M1G0P3_ECOLX" ac="M1G0P3" length="435" description="Sulfatase family protein OS=Escherichia coli OX=562 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>348</score>
+      <bits>138.7</bits>
+      <expectation>1.1e-36</expectation>
+      <identity>91.5</identity>
+      <positives>94.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="75">VFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLS</querySeq>
+      <pattern>+ PVYHFLVSAAILVF+VIFWRTHHR HRNWLAL LFVLCSVN WPLRMVKGTVVGTTDTLREMQRYEQLS</pattern>
+      <matchSeq start="63" end="133">MIPVYHFLVSAAILVFMVIFWRTHHRGHRNWLALLLFVLCSVNSWPLRMVKGTVVGTTDTLREMQRYEQLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="B7LCX8_ECO55" ac="B7LCX8" length="499" description="Membrane-associated, metal-dependent hydrolase OS=Escherichia coli (strain 55989 / EAEC) OX=585055 GN=EC55989_4830 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>349</score>
+      <bits>139.0</bits>
+      <expectation>1.9e-36</expectation>
+      <identity>83.5</identity>
+      <positives>87.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="83">VFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGK</querySeq>
+      <pattern>+ PVYHFLVSAAILVF+VIFWRTHHR HRNWLAL LFVLCSVN WPLRMVKGTVVGTTDTLREMQRY+QLS  G    K</pattern>
+      <matchSeq start="105" end="183">MIPVYHFLVSAAILVFMVIFWRTHHRGHRNWLALLLFVLCSVNSWPLRMVKGTVVGTTDTLREMQRYKQLSQHGADNWK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0ABX5HA33_ESCAL" ac="A0ABX5HA33" length="171" description="Phosphoethanolamine transferase (Fragment) OS=Escherichia albertii OX=208962 GN=C7B09_25820 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>317</score>
+      <bits>126.7</bits>
+      <expectation>1.3e-34</expectation>
+      <identity>88.1</identity>
+      <positives>91.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="71">VFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRY</querySeq>
+      <pattern>+ PVYHFLVSAAILVF+VIFWRTHHR  RNWLAL LFVLCSVN WPLRMVKG VVGTTDTLREMQRY</pattern>
+      <matchSeq start="105" end="171">MIPVYHFLVSAAILVFMVIFWRTHHRGQRNWLALLLFVLCSVNSWPLRMVKGAVVGTTDTLREMQRY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="Q4FBH3_ECOLX" ac="Q4FBH3" length="499" description="Phosphoethanolamine transferase OS=Escherichia coli OX=562 GN=CTR35_001588 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>332</score>
+      <bits>132.5</bits>
+      <expectation>5.3e-34</expectation>
+      <identity>79.7</identity>
+      <positives>84.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="83">VFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGK</querySeq>
+      <pattern>+ PVYHFLVSAAI VF+VIFWRTH R HRNWLAL LFVLCSVN WPLRMVKGTVVGTTDTLREMQRY+QL+  G    K</pattern>
+      <matchSeq start="105" end="183">MIPVYHFLVSAAIQVFMVIFWRTHRRGHRNWLALLLFVLCSVNSWPLRMVKGTVVGTTDTLREMQRYKQLNQHGADNWK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A0H2Z398_ECOK1" ac="A0A0H2Z398" length="499" description="Sulfatase N-terminal domain-containing protein OS=Escherichia coli O1:K1 / APEC OX=405955 GN=APECO1_3531 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>332</score>
+      <bits>132.5</bits>
+      <expectation>5.3e-34</expectation>
+      <identity>79.7</identity>
+      <positives>84.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="83">VFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGK</querySeq>
+      <pattern>+ PVYHFLVSAAI VF+VIFWRTH R HRNWLAL LFVLCSVN WPLRMVKGTVVGTTDTLREMQRY+QL+  G    K</pattern>
+      <matchSeq start="105" end="183">MIPVYHFLVSAAIQVFMVIFWRTHRRGHRNWLALLLFVLCSVNSWPLRMVKGTVVGTTDTLREMQRYKQLNQHGADNWK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ABX5HD86_ESCAL" ac="A0ABX5HD86" length="171" description="Phosphoethanolamine transferase (Fragment) OS=Escherichia albertii OX=208962 GN=C7B09_21795 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>309</score>
+      <bits>123.6</bits>
+      <expectation>2.1e-33</expectation>
+      <identity>86.6</identity>
+      <positives>89.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="71">VFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRY</querySeq>
+      <pattern>+ PVYHFLVSAAILVF+VIFWRTHH   RNWLAL LFVLCSVN WPLRMVKG VVGTTDTLREMQRY</pattern>
+      <matchSeq start="105" end="171">MIPVYHFLVSAAILVFMVIFWRTHHCGQRNWLALLLFVLCSVNSWPLRMVKGAVVGTTDTLREMQRY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0ABU1C6W1_9ESCH" ac="A0ABU1C6W1" length="499" description="Phosphoethanolamine transferase OS=Escherichia marmotae OX=1499973 GN=KJE03_23570 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>324</score>
+      <bits>129.4</bits>
+      <expectation>7.4e-33</expectation>
+      <identity>79.7</identity>
+      <positives>84.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="83">VFPVYHFLVSAAILVFVVIFWRTHHRDHRNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGK</querySeq>
+      <pattern>+ PVYHFLVSAAILVF+VIFWRTHHR  RN +AL LFVLCSVN WPLRMVKGTVVG TDTLREMQRYEQLS  G  + K</pattern>
+      <matchSeq start="105" end="183">MIPVYHFLVSAAILVFMVIFWRTHHRGQRNAMALLLFVLCSVNSWPLRMVKGTVVGATDTLREMQRYEQLSRHGADSWK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="A0ABX5H9Z3_ESCAL" ac="A0ABX5H9Z3" length="259" description="Phosphoethanolamine transferase (Fragment) OS=Escherichia albertii OX=208962 GN=C7B09_26065 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>214</score>
+      <bits>87.0</bits>
+      <expectation>2.5e-18</expectation>
+      <identity>82.4</identity>
+      <positives>84.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="83">RNWLALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGK</querySeq>
+      <pattern>RNWLAL LFVLCSVN WPLRMVKG VVGTTDTLREMQRYEQLS  G  + K</pattern>
+      <matchSeq start="3" end="53">RNWLALLLFVLCSVNSWPLRMVKGAVVGTTDTLREMQRYEQLSQHGADSWK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0A437SUN1_9LACO" ac="A0A437SUN1" length="171" description="Uncharacterized protein OS=Lactobacillus xujianguonis OX=2495899 GN=EJK17_06475 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.22</expectation>
+      <identity>29.7</identity>
+      <positives>52.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="101">ILVFVVIFWRTHHRDHRN----WLALRLFVLCS--VNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGKSSREHRYMIRLLLSLVRV</querySeq>
+      <pattern>++ FV+ +W  ++RDH N    +L L +FV+ S  +  W +RMVK  +  +T TL  ++ Y Q S   +T  ++   +   I  +   +RV</pattern>
+      <matchSeq start="47" end="137">LIFFVIAYWMMNNRDHVNLGNLFLLLAIFVILSGILLYWGMRMVKHVLKFSTTTLTLIEYYIQWSLIYVTVYQAIFSNIKRISTITEFIRV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0A5B2VIS1_9BACT" ac="A0A5B2VIS1" length="195" description="Uncharacterized protein OS=Chitinophaga agrisoli OX=2607653 GN=F0L74_21665 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.25</expectation>
+      <identity>29.7</identity>
+      <positives>54.1</positives>
+      <gaps>16</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="65">PVFPVYHFLVSAAI-LVFVVIFWRTHHRDHRNW--LALRLFVLCSV---------NRWPLRMVKGTVVGTTDTL</querySeq>
+      <pattern>PV P+  F+++  I ++F+VI  R+ H+D+R W  +A+  F++C V         N W ++     V+ T  T+</pattern>
+      <matchSeq start="41" end="114">PVTPLTRFIIAGLIAIIFIVIKKRSAHKDYRLWYRVAIASFIICLVFIGLYAVTRNNWSVKFYNNKVLATGKTM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0ABS3UV95_9ACTN" ac="A0ABS3UV95" length="686" description="GGDEF domain-containing protein OS=Actinoplanes flavus OX=2820290 GN=J5X75_33650 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>2.3</expectation>
+      <identity>26.4</identity>
+      <positives>44.5</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="104">PVYHFLVSAAILVFVVIFWRTHHRDHRNW------------LALRLFVLCSVNRWPLRMVKGTVVGTTDTLREMQRYEQLSSTGLTTGKSSREHRYMIRLLLSLVRVCAG</querySeq>
+      <pattern>P    + S A+L  V++    + RDHR+W            + +R FV    N   L  V+G++    + LR  Q  ++L +  LTT  ++  HR  +    ++V  C G</pattern>
+      <matchSeq start="278" end="383">PYLAAVASYALLTGVLL----NGRDHRSWPIVAGSIVLTCLVVIRQFVSLRDNGRLLAQVEGSLFALREALRREQILKELGTVLLTTTDAAEVHRLTVAAAANVVAKCPG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

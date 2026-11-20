@@ -1,0 +1,1606 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-201350-0487-36217388-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-201350-0487-36217388-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P40588|YIW4_YEAST" type="PROTEIN" length="61"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:13:50+00:00" end="2026-11-13T20:16:43+00:00" search="P0Y0M0DT0H0M173.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="93">
+   <hit number="1" database="SP" id="YIW4_YEAST" ac="P40588" length="61" description="Putative uncharacterized protein YIR044C OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=YIR044C PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>321</score>
+      <bits>128.3</bits>
+      <expectation>1.2e-37</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</pattern>
+      <matchSeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="COS8_YEAST" ac="P38723" length="381" description="Protein COS8 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=COS8 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>314</score>
+      <bits>125.6</bits>
+      <expectation>4.1e-33</expectation>
+      <identity>96.7</identity>
+      <positives>98.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENEVKDEKSVDVLSFKQLE QKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENEVKDEKSVDVLSFKQLEFQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ABX1X2M6_9BACT" ac="A0ABX1X2M6" length="243" description="Uncharacterized protein (Fragment) OS=Marinifilum caeruleilacunae OX=2499076 GN=ELS83_21600 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>292</score>
+      <bits>117.1</bits>
+      <expectation>4.8e-31</expectation>
+      <identity>88.5</identity>
+      <positives>93.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENEVKDEKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPL +</pattern>
+      <matchSeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLXV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="COS7_YEAST" ac="Q07788" length="383" description="Protein COS7 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=COS7 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>297</score>
+      <bits>119.0</bits>
+      <expectation>1.3e-30</expectation>
+      <identity>90.2</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENEVKDEKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="H0GQK1_SACCK" ac="H0GQK1" length="254" description="Cos1p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_5288 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.7e-30</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A6C1DXN9_SACPS" ac="A0A6C1DXN9" length="296" description="Protein cos1 OS=Saccharomyces pastorianus OX=27292 GN=COS1_2 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>4.2e-30</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="H0GQJ7_SACCK" ac="H0GQJ7" length="297" description="Cos3p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_5284 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>4.3e-30</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="H0GI56_SACCK" ac="H0GI56" length="359" description="Cos8p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_2489 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.3e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="H0GQP9_SACCK" ac="H0GQP9" length="359" description="Cos8p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_5337 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.3e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="H0GLL5_SACCK" ac="H0GLL5" length="379" description="Cos3p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_3542 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.8e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="B3LPG8_YEAS1" ac="B3LPG8" length="379" description="Protein COS1 OS=Saccharomyces cerevisiae (strain RM11-1a) OX=285006 GN=SCRG_03458 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.8e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="B3LML1_YEAS1" ac="B3LML1" length="379" description="Protein COS1 OS=Saccharomyces cerevisiae (strain RM11-1a) OX=285006 GN=SCRG_02669 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.8e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A6C1DNW4_SACPS" ac="A0A6C1DNW4" length="379" description="Protein cos1 OS=Saccharomyces pastorianus OX=27292 GN=COS1_1 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.8e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="COS4_YEAST" ac="P43542" length="379" description="Protein COS4 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=COS4 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.8e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="COS3_YEAST" ac="P0CX13" length="379" description="Protein COS3 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=COS3 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.8e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="COS2_YEAST" ac="P0CX12" length="379" description="Protein COS2 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=COS2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.8e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="COS1_YEAST" ac="P53822" length="381" description="Protein COS1 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=COS1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.8e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="H0GS13_SACCK" ac="H0GS13" length="383" description="Cos7p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_5923 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.9e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="B3LHC2_YEAS1" ac="B3LHC2" length="383" description="Protein COS7 OS=Saccharomyces cerevisiae (strain RM11-1a) OX=285006 GN=SCRG_00735 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.9e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="A0A6C1EEG2_SACPS" ac="A0A6C1EEG2" length="386" description="Protein cos5 OS=Saccharomyces pastorianus OX=27292 GN=COS5 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>2e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A6C1DYH5_SACPS" ac="A0A6C1DYH5" length="381" description="Protein cos1 OS=Saccharomyces pastorianus OX=27292 GN=COS1_3 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>288</score>
+      <bits>115.5</bits>
+      <expectation>2.6e-29</expectation>
+      <identity>86.9</identity>
+      <positives>95.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLS KQLESQKTVLPQD+FR+  TWFCYEIYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSVKQLESQKTVLPQDLFRSSFTWFCYEIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="SP" id="COS6_YEAST" ac="P53344" length="381" description="Protein COS6 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=COS6 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>284</score>
+      <bits>114.0</bits>
+      <expectation>9.8e-29</expectation>
+      <identity>85.2</identity>
+      <positives>93.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLS KQLESQKTVLPQD+FR+  TWFCYEIYKSL FRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSVKQLESQKTVLPQDLFRSSFTWFCYEIYKSLVFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="SP" id="COS5_YEAST" ac="P47187" length="383" description="Protein COS5 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=COS5 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>282</score>
+      <bits>113.2</bits>
+      <expectation>2e-28</expectation>
+      <identity>85.2</identity>
+      <positives>93.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MKENE+K+EKSVDVLSFKQLESQK VLPQD+FR+  TWFCYEIYKSLAF IWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKENELKNEKSVDVLSFKQLESQKIVLPQDLFRSSFTWFCYEIYKSLAFPIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0A6C1DN33_SACPS" ac="A0A6C1DN33" length="383" description="Protein cos7 OS=Saccharomyces pastorianus OX=27292 GN=COS7 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>281</score>
+      <bits>112.8</bits>
+      <expectation>2.8e-28</expectation>
+      <identity>85.2</identity>
+      <positives>93.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MK+NE+ DEKSVDVLS K L+SQKTVLPQDVFRNELTWFCYE+ KSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKDNEIGDEKSVDVLSVKSLKSQKTVLPQDVFRNELTWFCYEMSKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="H0GH17_SACCK" ac="H0GH17" length="362" description="Cos8p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_2057 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>272</score>
+      <bits>109.4</bits>
+      <expectation>4.2e-27</expectation>
+      <identity>83.6</identity>
+      <positives>91.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MK+NE+ D KSVDVLS K+LESQKTVLPQDVFRNELTWFCYE  KSLAFRIWMLLW+PLS+</pattern>
+      <matchSeq start="1" end="61">MKDNEIGDGKSVDVLSVKRLESQKTVLPQDVFRNELTWFCYEKSKSLAFRIWMLLWVPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0AA35IZH8_SACMI" ac="A0AA35IZH8" length="391" description="Uncharacterized protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI09G2060 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>242</score>
+      <bits>97.8</bits>
+      <expectation>1.2e-22</expectation>
+      <identity>72.1</identity>
+      <positives>88.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MK+ +++DEKSV +LS + LESQ+TVLPQDVFRN LTW+ YE+YKSL FRIW+LLWLPLSI</pattern>
+      <matchSeq start="13" end="73">MKDTDIEDEKSVGLLSPEHLESQETVLPQDVFRNGLTWYSYEVYKSLIFRIWLLLWLPLSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="A0AA35IWI2_SACMI" ac="A0AA35IWI2" length="371" description="SMKI16G3430 protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI16G3430 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>238</score>
+      <bits>96.3</bits>
+      <expectation>3.8e-22</expectation>
+      <identity>68.9</identity>
+      <positives>86.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MK+  ++DEKS+ + S K LESQ+TVLPQD+FRN+ TW+ YEIYKSLAFRIW+LLWLPLS+</pattern>
+      <matchSeq start="1" end="61">MKDTNIEDEKSMGLSSPKHLESQETVLPQDIFRNKFTWYSYEIYKSLAFRIWLLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0AA35NE26_SACMI" ac="A0AA35NE26" length="380" description="Uncharacterized protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI15G0050 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <bits>95.9</bits>
+      <expectation>5.8e-22</expectation>
+      <identity>67.2</identity>
+      <positives>88.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MK+ +++D KS+ +LS K LESQ+TVLPQD+FRN+ TW+ YEIYKSLAFRIW+LLWLP+S+</pattern>
+      <matchSeq start="1" end="61">MKDTDIEDVKSMGLLSPKHLESQETVLPQDIFRNKFTWYSYEIYKSLAFRIWLLLWLPISV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0AA35NBG9_SACMI" ac="A0AA35NBG9" length="414" description="Uncharacterized protein OS=Saccharomyces mikatae IFO 1815 OX=226126 GN=SMKI11G0050 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>237</score>
+      <bits>95.9</bits>
+      <expectation>7.7e-22</expectation>
+      <identity>67.2</identity>
+      <positives>88.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>MK+ +++D KS+ +LS K LESQ+TVLPQD+FRN+ TW+ YEIYKSLAFRIW+LLWLP+S+</pattern>
+      <matchSeq start="37" end="97">MKDTDIEDVKSMGLLSPKHLESQETVLPQDIFRNKFTWYSYEIYKSLAFRIWLLLWLPISV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0A6C1E9K9_SACPS" ac="A0A6C1E9K9" length="361" description="Protein cos1 OS=Saccharomyces pastorianus OX=27292 GN=GRS66_008314 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>231</score>
+      <bits>93.6</bits>
+      <expectation>3.5e-21</expectation>
+      <identity>65.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +++DEKSV +LS K +ESQ  VLP+D+FRN  TWFCYE YKSLAFRIW++LWLPL+</pattern>
+      <matchSeq start="1" end="60">MEDKKIEDEKSVGLLSSKSVESQNIVLPKDIFRNSFTWFCYETYKSLAFRIWLILWLPLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A6C1DUQ7_SACPS" ac="A0A6C1DUQ7" length="366" description="Uncharacterized protein OS=Saccharomyces pastorianus OX=27292 GN=GRS66_002944 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>231</score>
+      <bits>93.6</bits>
+      <expectation>3.7e-21</expectation>
+      <identity>65.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +++DEKSV +LS K +ESQ  VLP+D+FRN  TWFCYE YKSLAFRIW++LWLPL+</pattern>
+      <matchSeq start="1" end="60">MEDKKIEDEKSVGLLSSKSVESQNIVLPKDIFRNSFTWFCYETYKSLAFRIWLILWLPLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A6C1E580_SACPS" ac="A0A6C1E580" length="377" description="Uncharacterized protein OS=Saccharomyces pastorianus OX=27292 GN=GRS66_006971 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>231</score>
+      <bits>93.6</bits>
+      <expectation>4.1e-21</expectation>
+      <identity>65.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +++DEKSV +LS K +ESQ  VLP+D+FRN  TWFCYE YKSLAFRIW++LWLPL+</pattern>
+      <matchSeq start="1" end="60">MEDKKIEDEKSVGLLSSKSVESQNIVLPKDIFRNSFTWFCYETYKSLAFRIWLILWLPLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0ABN8VHW4_SACEU" ac="A0ABN8VHW4" length="378" description="Uncharacterized protein OS=Saccharomyces eubayanus OX=1080349 GN=U6500J03610 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>231</score>
+      <bits>93.6</bits>
+      <expectation>4.1e-21</expectation>
+      <identity>65.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +++DEKSV +LS K +ESQ  VLP+D+FRN  TWFCYE YKSLAFRIW++LWLPL+</pattern>
+      <matchSeq start="1" end="60">MEDKKIEDEKSVGLLSSKSVESQNIVLPKDIFRNSFTWFCYETYKSLAFRIWLILWLPLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0ABN8VXW1_SACEU" ac="A0ABN8VXW1" length="378" description="Uncharacterized protein OS=Saccharomyces eubayanus OX=1080349 GN=U6500I00140 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>231</score>
+      <bits>93.6</bits>
+      <expectation>4.1e-21</expectation>
+      <identity>65.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +++DEKSV +LS K +ESQ  VLP+D+FRN  TWFCYE YKSLAFRIW++LWLPL+</pattern>
+      <matchSeq start="1" end="60">MEDKKIEDEKSVGLLSSKSVESQNIVLPKDIFRNSFTWFCYETYKSLAFRIWLILWLPLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0ABN8VTX8_SACEU" ac="A0ABN8VTX8" length="474" description="Uncharacterized protein OS=Saccharomyces eubayanus OX=1080349 GN=U6500E00110 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <bits>94.0</bits>
+      <expectation>5.3e-21</expectation>
+      <identity>65.0</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +++DEKSV +LS K +ESQ  VLP+D+FRN  TWFCYE YKSLAFRIW++LWLPL+</pattern>
+      <matchSeq start="97" end="156">MEDKKIEDEKSVGLLSSKSIESQNIVLPKDIFRNSFTWFCYETYKSLAFRIWLILWLPLT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0ABN8WN48_SACUV" ac="A0ABN8WN48" length="377" description="Uncharacterized protein OS=Saccharomyces uvarum OX=230603 GN=SUVZ16G4630 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>229</score>
+      <bits>92.8</bits>
+      <expectation>7.8e-21</expectation>
+      <identity>66.7</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +++DE+SV +LS K LESQ  VLP+DVFRN  TWFCY+ YKSLAFR+W+LLWLPLS</pattern>
+      <matchSeq start="1" end="60">MEDTKIEDEESVGLLSSKYLESQNIVLPKDVFRNFFTWFCYQFYKSLAFRVWLLLWLPLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="TR" id="J8TX39_SACK1" ac="J8TX39" length="144" description="Uncharacterized protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKUD_197004 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>217</score>
+      <bits>88.2</bits>
+      <expectation>8.3e-21</expectation>
+      <identity>65.0</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +V+DEK+V +LS   LESQK VLP+DVFRN  TWFCYE +KSLAFRIW+L WLP++</pattern>
+      <matchSeq start="1" end="60">MEDTKVEDEKNVGLLSSGYLESQKIVLPKDVFRNGFTWFCYETFKSLAFRIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="H0GX87_SACCK" ac="H0GX87" length="380" description="Cos6p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_8219 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>221</score>
+      <bits>89.7</bits>
+      <expectation>1.1e-19</expectation>
+      <identity>66.7</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++N+V DEK+V +LS   LESQK VLP+DVFRN  TWFCYE +KSLAFRIW+L WLP++</pattern>
+      <matchSeq start="1" end="60">MEDNKVDDEKNVGLLSSGYLESQKIVLPKDVFRNGFTWFCYETFKSLAFRIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0AA35JCW9_SACK1" ac="A0AA35JCW9" length="380" description="COS6-like protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI02G0020 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>217</score>
+      <bits>88.2</bits>
+      <expectation>4.1e-19</expectation>
+      <identity>65.0</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +V+DEK+V +LS   LESQK VLP+DVFRN  TWFCYE +KSLAFRIW+L WLP++</pattern>
+      <matchSeq start="1" end="60">MEDTKVEDEKNVGLLSSGYLESQKIVLPKDVFRNGFTWFCYETFKSLAFRIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0AA35JCE6_SACK1" ac="A0AA35JCE6" length="380" description="COS6-like protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI03G1580 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>217</score>
+      <bits>88.2</bits>
+      <expectation>4.1e-19</expectation>
+      <identity>65.0</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +V+DEK+V +LS   LESQK VLP+DVFRN  TWFCYE +KSLAFRIW+L WLP++</pattern>
+      <matchSeq start="1" end="60">MEDTKVEDEKNVGLLSSGYLESQKIVLPKDVFRNGFTWFCYETFKSLAFRIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="J8TX82_SACK1" ac="J8TX82" length="421" description="COS6-like protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=YGR295C PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>217</score>
+      <bits>88.2</bits>
+      <expectation>5.2e-19</expectation>
+      <identity>65.0</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +V+DEK+V +LS   LESQK VLP+DVFRN  TWFCYE +KSLAFRIW+L WLP++</pattern>
+      <matchSeq start="42" end="101">MEDTKVEDEKNVGLLSSGYLESQKIVLPKDVFRNGFTWFCYETFKSLAFRIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0ABN8WMZ1_SACUV" ac="A0ABN8WMZ1" length="379" description="Uncharacterized protein OS=Saccharomyces uvarum OX=230603 GN=SUVZ14G0040 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>216</score>
+      <bits>87.8</bits>
+      <expectation>5.6e-19</expectation>
+      <identity>57.4</identity>
+      <positives>80.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>M++ +++DEKSV +LS K +ESQ   LP+D+FRN  TW+CY+IYKS AF  W++LWLPLS+</pattern>
+      <matchSeq start="1" end="61">MEDTKIEDEKSVGLLSSKCVESQSIALPKDIFRNSFTWYCYQIYKSFAFHFWLILWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="H0GQQ8_SACCK" ac="H0GQQ8" length="378" description="Cos6p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_5346 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>212</score>
+      <bits>86.3</bits>
+      <expectation>2e-18</expectation>
+      <identity>65.0</identity>
+      <positives>81.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +V DEK+V +LS   LESQK VLP+DVFRN  TWFCYE +KSLAFRIW+L WLP++</pattern>
+      <matchSeq start="1" end="60">MEDIKVDDEKNVGLLSSGYLESQKIVLPKDVFRNGFTWFCYETFKSLAFRIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="H0GXV3_SACCK" ac="H0GXV3" length="206" description="Cos8p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_8505 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>205</score>
+      <bits>83.6</bits>
+      <expectation>2.2e-18</expectation>
+      <identity>63.3</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +V DEK+V +LS   LESQK VLP+DVFRN  TWFCYE +KSLAF IW+L WLP++</pattern>
+      <matchSeq start="42" end="101">MEDIKVDDEKNVGLLSSGYLESQKIVLPKDVFRNGFTWFCYETFKSLAFLIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0AA35J983_SACK1" ac="A0AA35J983" length="378" description="Uncharacterized protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI15G0040 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>208</score>
+      <bits>84.7</bits>
+      <expectation>7.5e-18</expectation>
+      <identity>61.7</identity>
+      <positives>81.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +V+DEK+V +LS   LESQK VLP+D+FRN  TW CYE +KSLAFRIW+L WLP++</pattern>
+      <matchSeq start="1" end="60">MEDTKVEDEKNVGLLSSGYLESQKIVLPKDIFRNGFTWSCYETFKSLAFRIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="J5PAV0_SACK1" ac="J5PAV0" length="419" description="Uncharacterized protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKUD_186102 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>208</score>
+      <bits>84.7</bits>
+      <expectation>9.2e-18</expectation>
+      <identity>61.7</identity>
+      <positives>81.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +V+DEK+V +LS   LESQK VLP+D+FRN  TW CYE +KSLAFRIW+L WLP++</pattern>
+      <matchSeq start="42" end="101">MEDTKVEDEKNVGLLSSGYLESQKIVLPKDIFRNGFTWSCYETFKSLAFRIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0AA35NPL9_SACK1" ac="A0AA35NPL9" length="378" description="Uncharacterized protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI01G0030 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>207</score>
+      <bits>84.3</bits>
+      <expectation>1e-17</expectation>
+      <identity>61.7</identity>
+      <positives>81.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +V+DEK+V +L    LES+K VLP+DVFRN  TWFCYE +KSLAFRIW+L WLP++</pattern>
+      <matchSeq start="1" end="60">MEDTKVEDEKNVGLLFSGYLESRKIVLPKDVFRNGFTWFCYETFKSLAFRIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="J5PYI0_SACK1" ac="J5PYI0" length="378" description="Uncharacterized protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKUD_198408 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>207</score>
+      <bits>84.3</bits>
+      <expectation>1e-17</expectation>
+      <identity>61.7</identity>
+      <positives>81.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +V+DEK+V +L    LES+K VLP+DVFRN  TWFCYE +KSLAFRIW+L WLP++</pattern>
+      <matchSeq start="1" end="60">MEDTKVEDEKNVGLLFSGYLESRKIVLPKDVFRNGFTWFCYETFKSLAFRIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0AA35J225_SACK1" ac="A0AA35J225" length="378" description="Uncharacterized protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI11G0030 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>197</score>
+      <bits>80.5</bits>
+      <expectation>2.6e-16</expectation>
+      <identity>60.0</identity>
+      <positives>78.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +V+DEK+  + S   LESQK VLP+DVFRN  TW CYE +KSLAFRIW+L WLP++</pattern>
+      <matchSeq start="1" end="60">MEDAKVEDEKNTGLSSSGYLESQKIVLPKDVFRNGFTWSCYETFKSLAFRIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="J4U2W0_SACK1" ac="J4U2W0" length="378" description="Uncharacterized protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKUD_199402 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>197</score>
+      <bits>80.5</bits>
+      <expectation>2.6e-16</expectation>
+      <identity>60.0</identity>
+      <positives>78.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="60">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLS</querySeq>
+      <pattern>M++ +V+DEK+  + S   LESQK VLP+DVFRN  TW CYE +KSLAFRIW+L WLP++</pattern>
+      <matchSeq start="1" end="60">MEDAKVEDEKNTGLSSSGYLESQKIVLPKDVFRNGFTWSCYETFKSLAFRIWLLSWLPVT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0AA35JKW7_SACK1" ac="A0AA35JKW7" length="384" description="Uncharacterized protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI08G0020 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <bits>79.7</bits>
+      <expectation>5.1e-16</expectation>
+      <identity>57.4</identity>
+      <positives>75.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>M++ +   EK +  L F  LESQKTVL +++FRN  TW CYEI+KSLAFRIW+L WLPL++</pattern>
+      <matchSeq start="1" end="61">MRDTKAGYEKVIGSLFFGSLESQKTVLAKNIFRNRFTWSCYEIFKSLAFRIWLLSWLPLTV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="J6E9N7_SACK1" ac="J6E9N7" length="384" description="Uncharacterized protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKUD_194702 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>195</score>
+      <bits>79.7</bits>
+      <expectation>5.1e-16</expectation>
+      <identity>57.4</identity>
+      <positives>75.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>M++ +   EK +  L F  LESQKTVL +++FRN  TW CYEI+KSLAFRIW+L WLPL++</pattern>
+      <matchSeq start="1" end="61">MRDTKAGYEKVIGSLFFGSLESQKTVLAKNIFRNRFTWSCYEIFKSLAFRIWLLSWLPLTV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0ABN8WT69_SACUV" ac="A0ABN8WT69" length="381" description="Uncharacterized protein OS=Saccharomyces uvarum OX=230603 GN=SUVZ02G6370 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>192</score>
+      <bits>78.6</bits>
+      <expectation>1.3e-15</expectation>
+      <identity>59.0</identity>
+      <positives>77.0</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="61">EVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRI----WMLLWLPLSI</querySeq>
+      <pattern>E++DE+SV +LS ++LESQ   LP+DVFRN  +WFCY+IYK  AFRI    W+LLWLPL +</pattern>
+      <matchSeq start="4" end="64">EIEDEESVGLLSSRRLESQNIALPKDVFRNFFSWFCYQIYKIPAFRISLLLWLLLWLPLGV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="H0GVI4_SACCK" ac="H0GVI4" length="255" description="Cos4p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_7431 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>184</score>
+      <bits>75.5</bits>
+      <expectation>6.2e-15</expectation>
+      <identity>55.7</identity>
+      <positives>75.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>M++ + + EK +  L F  LESQKTVL +++FRN  TW CYEI+KSLAFRIW+L  LPL++</pattern>
+      <matchSeq start="1" end="61">MRDTKAEYEKVIGSLFFGSLESQKTVLAKNIFRNRFTWSCYEIFKSLAFRIWLLSRLPLTV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0AA35J6N1_SACK1" ac="A0AA35J6N1" length="372" description="Uncharacterized protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKDI14G0020 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <bits>75.1</bits>
+      <expectation>2.3e-14</expectation>
+      <identity>57.6</identity>
+      <positives>76.3</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="59">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPL</querySeq>
+      <pattern>MK+ E++DE+ +  LS +Q+ S + VLP+ VFRN  TW CYEIY+SL FRIW+LLWL L</pattern>
+      <matchSeq start="1" end="57">MKDTEIEDEEKL--LSSEQVASYRIVLPKKVFRNRFTWSCYEIYRSLTFRIWLLLWLSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="J5S9V7_SACK1" ac="J5S9V7" length="413" description="Uncharacterized protein OS=Saccharomyces kudriavzevii (strain ATCC MYA-4449 / AS 2.2408 / CBS 8840 / NBRC 1802 / NCYC 2889) OX=226230 GN=SKUD_199606 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>183</score>
+      <bits>75.1</bits>
+      <expectation>2.6e-14</expectation>
+      <identity>57.6</identity>
+      <positives>76.3</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="59">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPL</querySeq>
+      <pattern>MK+ E++DE+ +  LS +Q+ S + VLP+ VFRN  TW CYEIY+SL FRIW+LLWL L</pattern>
+      <matchSeq start="42" end="98">MKDTEIEDEEKL--LSSEQVASYRIVLPKKVFRNRFTWSCYEIYRSLTFRIWLLLWLSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0ABN8VI67_SACEU" ac="A0ABN8VI67" length="107" description="Uncharacterized protein OS=Saccharomyces eubayanus OX=1080349 GN=U6500K00110 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>170</score>
+      <bits>70.1</bits>
+      <expectation>4.3e-14</expectation>
+      <identity>56.1</identity>
+      <positives>73.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="57">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWL</querySeq>
+      <pattern>M++ +++ EKSV   S K LE+Q   LP+DVFR+  TWF Y IYKS AFRIW++LWL</pattern>
+      <matchSeq start="1" end="57">MEDAKLEYEKSVGSFSSKCLETQSIALPKDVFRSSFTWFYYGIYKSFAFRIWLVLWL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="H0H2U8_SACCK" ac="H0H2U8" length="305" description="Cos6p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_8186 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>5.6e-14</expectation>
+      <identity>57.6</identity>
+      <positives>74.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="59">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPL</querySeq>
+      <pattern>MK+ E +DE+ +  LS +Q+ S + VLP+ VFRN  TW CYEIY+SL FRIW+LLWL L</pattern>
+      <matchSeq start="1" end="57">MKDTEFEDEEKL--LSSEQVASYRIVLPKKVFRNRFTWSCYEIYRSLTFRIWLLLWLSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="SP" id="COS9_YEAST" ac="P36034" length="407" description="Protein COS9 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=COS9 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>1.9e-11</expectation>
+      <identity>53.2</identity>
+      <positives>66.1</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="58">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLL----WLP</querySeq>
+      <pattern>M+ + VKD +S+DVLS K  ESQK VLPQD+F +  TW  YE +K   FR W+LL    WLP</pattern>
+      <matchSeq start="26" end="86">MRGDGVKD-RSIDVLSLKHFESQKVVLPQDLFMDNFTWMFYEFFKCFTFRTWLLLLLLMWLP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="H0GJG8_SACCK" ac="H0GJG8" length="367" description="Cos9p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_2810 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>2.5e-11</expectation>
+      <identity>54.9</identity>
+      <positives>70.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="59">EKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPL</querySeq>
+      <pattern>++S+DVLS K  ESQK VLPQD+F +  TW  YE +K   FR W+LL LP+</pattern>
+      <matchSeq start="33" end="83">DRSIDVLSLKHFESQKVVLPQDLFMDNFTWMFYEFFKCFTFRTWLLLLLPM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="B3LQP0_YEAS1" ac="B3LQP0" length="407" description="Protein COS9 OS=Saccharomyces cerevisiae (strain RM11-1a) OX=285006 GN=SCRG_03812 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>2.7e-11</expectation>
+      <identity>52.5</identity>
+      <positives>67.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="59">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPL</querySeq>
+      <pattern>M+ + VKD +S+DVLS K  ESQK VLPQD+F +  TW  YE +K   F  W+LL LP+</pattern>
+      <matchSeq start="26" end="83">MRGDGVKD-RSIDVLSLKHFESQKVVLPQDLFMDNFTWMFYEFFKCFTFHTWLLLLLPM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0A6C1DUR6_SACPS" ac="A0A6C1DUR6" length="407" description="Protein cos9 OS=Saccharomyces pastorianus OX=27292 GN=COS9 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>2.7e-11</expectation>
+      <identity>54.9</identity>
+      <positives>70.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="59">EKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPL</querySeq>
+      <pattern>++S+DVLS K  ESQK VLPQD+F +  TW  YE +K   FR W+LL LP+</pattern>
+      <matchSeq start="33" end="83">DRSIDVLSLKHFESQKVVLPQDLFMDNFTWMFYEFFKCFTFRTWLLLLLPM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="SP" id="ECM34_YEAST" ac="P38728" length="170" description="Protein ECM34 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=ECM34 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>5.5e-08</expectation>
+      <identity>41.0</identity>
+      <positives>60.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>M+  + +DEK+   L+    ES    LP++VFR+  TW+CYE+    AF IW+LL L L +</pattern>
+      <matchSeq start="1" end="61">MEGRKSEDEKNEAALACDVFESSNAKLPKNVFRSSFTWYCYEVINRSAFHIWLLLCLTLIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="H0GFX0_SACCK" ac="H0GFX0" length="380" description="Cos12p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_1577 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>135</score>
+      <bits>56.6</bits>
+      <expectation>9.2e-08</expectation>
+      <identity>45.5</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="61">KDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>K E +V  L  +  +   + LP++VFR+ +TW CYE + SL FR W+L+WLPL I</pattern>
+      <matchSeq start="5" end="59">KFENTVAFLPSEIFDCYNSTLPKNVFRSFVTWSCYEKFNSLEFRTWLLMWLPLII</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="SP" id="COS12_YEAST" ac="P53053" length="380" description="Protein COS12 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=COS12 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>135</score>
+      <bits>56.6</bits>
+      <expectation>9.2e-08</expectation>
+      <identity>45.5</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="61">KDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>K E +V  L  +  +   + LP++VFR+ +TW CYE + SL FR W+L+WLPL I</pattern>
+      <matchSeq start="5" end="59">KFENTVAFLPSEIFDCYNSTLPKNVFRSFVTWSCYEKFNSLEFRTWLLMWLPLII</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="TR" id="H0GH78_SACCK" ac="H0GH78" length="406" description="Ecm34p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_2062 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>1.7e-07</expectation>
+      <identity>41.0</identity>
+      <positives>60.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>M+  + +DEK+   L+    ES    LP++VFR+  TW+CYE+    AF IW+LL L L +</pattern>
+      <matchSeq start="1" end="61">MEGRKSEDEKNEAALACDVFESSNAKLPKNVFRSSFTWYCYEVINRSAFHIWLLLCLTLIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="B3LS80_YEAS1" ac="B3LS80" length="405" description="Extracellular matrix protein 34 OS=Saccharomyces cerevisiae (strain RM11-1a) OX=285006 GN=SCRG_04663 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>4.4e-07</expectation>
+      <identity>41.0</identity>
+      <positives>59.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>M+  + +DEK+   L     ES    LP++VFR+  TW+CYE+    AF IW+LL L L +</pattern>
+      <matchSeq start="1" end="61">MEGRKSEDEKNEAALVCDVFESSNAKLPKNVFRSSFTWYCYEVINRSAFHIWLLLCLTLIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0A6C1DSF2_SACPS" ac="A0A6C1DSF2" length="405" description="Ecm34p OS=Saccharomyces pastorianus OX=27292 GN=GRS66_002099 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>4.4e-07</expectation>
+      <identity>41.0</identity>
+      <positives>59.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MKENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>M+  + +DEK+   L     ES    LP++VFR+  TW+CYE+    AF IW+LL L L +</pattern>
+      <matchSeq start="1" end="61">MEGRKSEDEKNEAALVCDVFESSNAKLPKNVFRSSFTWYCYEVINRSAFHIWLLLCLTLIV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0A6C1E0A3_SACPS" ac="A0A6C1E0A3" length="374" description="Protein cos10 OS=Saccharomyces pastorianus OX=27292 GN=COS10 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>2.9e-06</expectation>
+      <identity>49.1</identity>
+      <positives>66.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="61">KSVDVLSFKQLESQKTV-LPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>+ + +LS K LE+  +  LP+D+FRN LTW C EI  S  F IW L WLPL++</pattern>
+      <matchSeq start="3" end="54">EEIRLLSSKGLETHSSFCLPEDIFRNRLTWLCSEIRNS-GFWIWSLSWLPLAV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="SP" id="COS10_YEAST" ac="P52924" length="374" description="Protein COS10 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=COS10 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>124</score>
+      <bits>52.4</bits>
+      <expectation>2.9e-06</expectation>
+      <identity>49.1</identity>
+      <positives>66.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="61">KSVDVLSFKQLESQKTV-LPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>+ + +LS K LE+  +  LP+D+FRN LTW C EI  S  F IW L WLPL++</pattern>
+      <matchSeq start="3" end="54">EEIRLLSSKGLETHSSFCLPEDIFRNRLTWLCSEIRNS-GFWIWSLSWLPLAV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="H0H2U3_SACCK" ac="H0H2U3" length="285" description="Cos3p OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_8180 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.00079</expectation>
+      <identity>76.9</identity>
+      <positives>84.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="36" end="61">LTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>L  F  +IYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="24" end="49">LPGFVMKIYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="H0GCJ7_SACCK" ac="H0GCJ7" length="337" description="Cos1p (Fragment) OS=Saccharomyces cerevisiae x Saccharomyces kudriavzevii (strain VIN7) OX=1095631 GN=VIN7_0441 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.0053</expectation>
+      <identity>94.7</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="43" end="61">IYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>IYKSLAFRIWMLLWLPLS+</pattern>
+      <matchSeq start="1" end="19">IYKSLAFRIWMLLWLPLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="TR" id="C5DP42_ZYGRC" ac="C5DP42" length="356" description="ZYRO0A00220p OS=Zygosaccharomyces rouxii OX=4956 GN=ZYRO0A00220g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.01</expectation>
+      <identity>72.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="45">ESQKTVLPQDVFRNELTWFCYEIYK</querySeq>
+      <pattern>ESQ+ VLPQD+FRNELTW  YE+ K</pattern>
+      <matchSeq start="6" end="30">ESQRPVLPQDLFRNELTWMFYEMCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="C5DWW2_ZYGRC" ac="C5DWW2" length="351" description="ZYRO0D00242p OS=Zygosaccharomyces rouxii OX=4956 GN=ZYRO0D00242g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.02</expectation>
+      <identity>68.0</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="45">ESQKTVLPQDVFRNELTWFCYEIYK</querySeq>
+      <pattern>ESQ+ VLP+D+FRN LTW  YEI+K</pattern>
+      <matchSeq start="6" end="30">ESQRPVLPKDLFRNGLTWILYEIFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="C5DSH9_ZYGRC" ac="C5DSH9" length="356" description="ZYRO0C00242p OS=Zygosaccharomyces rouxii OX=4956 GN=ZYRO0C00242g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.12</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="45">ESQKTVLPQDVFRNELTWFCYEIYK</querySeq>
+      <pattern>ESQK VLP+D+FRN LTW  YE+ K</pattern>
+      <matchSeq start="6" end="30">ESQKPVLPKDLFRNGLTWMFYEMSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="C5DQH1_ZYGRC" ac="C5DQH1" length="360" description="ZYRO0B00154p OS=Zygosaccharomyces rouxii OX=4956 GN=ZYRO0B00154g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.12</expectation>
+      <identity>68.0</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="45">ESQKTVLPQDVFRNELTWFCYEIYK</querySeq>
+      <pattern>ESQ+ VLP+D+FRN LTW  YEI K</pattern>
+      <matchSeq start="6" end="30">ESQRPVLPKDLFRNGLTWMFYEISK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="C5E3U7_ZYGRC" ac="C5E3U7" length="357" description="ZYRO0E00330p OS=Zygosaccharomyces rouxii OX=4956 GN=ZYRO0E00330g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.32</expectation>
+      <identity>64.0</identity>
+      <positives>76.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="45">ESQKTVLPQDVFRNELTWFCYEIYK</querySeq>
+      <pattern>ESQK VLP+D+F+N  TW  YEI K</pattern>
+      <matchSeq start="6" end="30">ESQKPVLPKDLFKNAFTWMFYEISK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="C5DP31_ZYGRC" ac="C5DP31" length="224" description="ZYRO0A13816p OS=Zygosaccharomyces rouxii OX=4956 GN=ZYRO0A13816g PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.42</expectation>
+      <identity>45.9</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="57">ESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWL</querySeq>
+      <pattern>ESQK  LP+D+F+N  TW  YEI K    R+   ++L</pattern>
+      <matchSeq start="6" end="42">ESQKPALPKDIFKNAFTWMFYEISKHRFPRVVSYVYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0A8C4IMM1_DICLA" ac="A0A8C4IMM1" length="1003" description="Myosin-Ic OS=Dicentrarchus labrax OX=13489 GN=myo1ca PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.45</expectation>
+      <identity>30.9</identity>
+      <positives>56.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="56">KENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLLW</querySeq>
+      <pattern>K+   K E+ +  L+F+Q  S +  L + V+    TW   +I +SLA ++ ++LW</pattern>
+      <matchSeq start="321" end="375">KKLTAKGEEMISPLNFEQAVSARDALAKAVYGRTFTWLVEKINQSLALKVHIMLW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0ACE2G903_MONSE" ac="A0ACE2G903" length="232" description="ULP1-interacting protein 3 OS=Monosporozyma servazzii OX=27293 GN=UIP3 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>2.0</expectation>
+      <identity>47.1</identity>
+      <positives>55.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="26" end="59">VLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPL</querySeq>
+      <pattern>V P+DVFRN  T+ CYE+Y       W L  L L</pattern>
+      <matchSeq start="17" end="50">VFPKDVFRNRFTYLCYELYHYPVSSYWYLAVLIL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0A7H9B600_ZYGMR" ac="A0A7H9B600" length="378" description="Uncharacterized protein OS=Zygotorulaspora mrakii OX=42260 GN=HG535_0F04350 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>2.9</expectation>
+      <identity>43.2</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="61">TVLPQDVFRNELTWFCYEIYKSLAFRIWMLLWLPLSI</querySeq>
+      <pattern>T +P+ VF++ LT+FCY   +S  F I +LL   LS+</pattern>
+      <matchSeq start="28" end="64">TSIPKKVFKSRLTFFCYAAVRSRGFHILLLLLAFLSV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0A9P7BD72_MAUEX" ac="A0A9P7BD72" length="263" description="Uncharacterized protein OS=Maudiozyma exigua OX=34358 GN=C6P45_000597 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.4</expectation>
+      <identity>30.9</identity>
+      <positives>63.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="55">KENEVKDEKSV-DVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWMLL</querySeq>
+      <pattern>K+ +++++ SV   L+  Q+E +  VLP D+FRN +T + + + +S  F+I  ++</pattern>
+      <matchSeq start="7" end="61">KDTDMENDISVVQPLNNGQVEQEHIVLPCDMFRNRVTHYAWVLTRSTLFKIMFII</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0A6A1VLT6_9ROSI" ac="A0A6A1VLT6" length="784" description="Pentacotripeptide-repeat region of PRORP domain-containing protein OS=Morella rubra OX=262757 GN=CJ030_MR5G010187 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.6</expectation>
+      <identity>37.0</identity>
+      <positives>53.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="58">KDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRIWM--LLWLP</querySeq>
+      <pattern>+DE + DV  F Q+E        DV++  +TW C     SLAF +W+  L+ LP</pattern>
+      <matchSeq start="565" end="616">RDEDAFDV--FHQMEKNGIAPSFDVYKTLMTWSCRRRKVSLAFSLWLKYLMHLP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A3P8XUM1_ESOLU" ac="A0A3P8XUM1" length="1043" description="Myosin Ic, paralog b OS=Esox lucius OX=8010 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.6</expectation>
+      <identity>34.7</identity>
+      <positives>55.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="50">KENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFR</querySeq>
+      <pattern>K+   K E+ +  LSF+Q  + +  L + V+    TW   +I KSLAF+</pattern>
+      <matchSeq start="329" end="377">KKLTAKGEEMISPLSFEQAVAARDALAKAVYGRTFTWLVAQINKSLAFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0A6Q2Y2Q0_ESOLU" ac="A0A6Q2Y2Q0" length="1045" description="Myosin Ic, paralog b OS=Esox lucius OX=8010 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.6</expectation>
+      <identity>34.7</identity>
+      <positives>55.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="50">KENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFR</querySeq>
+      <pattern>K+   K E+ +  LSF+Q  + +  L + V+    TW   +I KSLAF+</pattern>
+      <matchSeq start="337" end="385">KKLTAKGEEMISPLSFEQAVAARDALAKAVYGRTFTWLVAQINKSLAFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0A6Q2WZ10_ESOLU" ac="A0A6Q2WZ10" length="1046" description="Myosin Ic, paralog b OS=Esox lucius OX=8010 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.6</expectation>
+      <identity>34.7</identity>
+      <positives>55.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="50">KENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFR</querySeq>
+      <pattern>K+   K E+ +  LSF+Q  + +  L + V+    TW   +I KSLAF+</pattern>
+      <matchSeq start="338" end="386">KKLTAKGEEMISPLSFEQAVAARDALAKAVYGRTFTWLVAQINKSLAFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0A3P8XVX9_ESOLU" ac="A0A3P8XVX9" length="1050" description="Myosin Ic, paralog b OS=Esox lucius OX=8010 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.6</expectation>
+      <identity>34.7</identity>
+      <positives>55.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="50">KENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFR</querySeq>
+      <pattern>K+   K E+ +  LSF+Q  + +  L + V+    TW   +I KSLAF+</pattern>
+      <matchSeq start="338" end="386">KKLTAKGEEMISPLSFEQAVAARDALAKAVYGRTFTWLVAQINKSLAFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0A6Q2Y6Z6_ESOLU" ac="A0A6Q2Y6Z6" length="1050" description="Myosin Ic, paralog b OS=Esox lucius OX=8010 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.6</expectation>
+      <identity>34.7</identity>
+      <positives>55.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="50">KENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFR</querySeq>
+      <pattern>K+   K E+ +  LSF+Q  + +  L + V+    TW   +I KSLAF+</pattern>
+      <matchSeq start="336" end="384">KKLTAKGEEMISPLSFEQAVAARDALAKAVYGRTFTWLVAQINKSLAFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="A0A3P8XSL2_ESOLU" ac="A0A3P8XSL2" length="1052" description="Myosin Ic, paralog b OS=Esox lucius OX=8010 PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.6</expectation>
+      <identity>34.7</identity>
+      <positives>55.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="50">KENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFR</querySeq>
+      <pattern>K+   K E+ +  LSF+Q  + +  L + V+    TW   +I KSLAF+</pattern>
+      <matchSeq start="338" end="386">KKLTAKGEEMISPLSFEQAVAARDALAKAVYGRTFTWLVAQINKSLAFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0A6Q2X638_ESOLU" ac="A0A6Q2X638" length="1074" description="Myosin Ic, paralog b OS=Esox lucius OX=8010 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.6</expectation>
+      <identity>34.7</identity>
+      <positives>55.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="50">KENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFR</querySeq>
+      <pattern>K+   K E+ +  LSF+Q  + +  L + V+    TW   +I KSLAF+</pattern>
+      <matchSeq start="360" end="408">KKLTAKGEEMISPLSFEQAVAARDALAKAVYGRTFTWLVAQINKSLAFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0ABS0ZX38_9ENTR" ac="A0ABS0ZX38" length="224" description="Fimbria/pilus periplasmic chaperone OS=Citrobacter sedlakii OX=67826 GN=I6M88_20785 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>7.2</expectation>
+      <identity>34.1</identity>
+      <positives>51.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="48">DEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLA</querySeq>
+      <pattern>D K +D+   K  E Q+  LP D+    LTW C   Y +++</pattern>
+      <matchSeq start="177" end="217">DGKPIDIAMIKPFEIQRITLPIDISGKRLTWHCINDYGAIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0A3Q0SBG7_AMPCI" ac="A0A3Q0SBG7" length="992" description="Myosin Ic, paralog a OS=Amphilophus citrinellus OX=61819 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>7.7</expectation>
+      <identity>32.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="51">KENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRI</querySeq>
+      <pattern>K+   K E+ +  L+F+Q ES +  L + V+    TW   +I +SLA ++</pattern>
+      <matchSeq start="317" end="366">KKLTAKGEEMITPLNFEQAESARDALAKTVYGRAFTWLVEKINQSLALKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="A0A8C7PC27_ONCMY" ac="A0A8C7PC27" length="1030" description="Myosin Ic, paralog a OS=Oncorhynchus mykiss OX=8022 GN=LOC110537347 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>7.7</expectation>
+      <identity>32.0</identity>
+      <positives>56.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="51">KENEVKDEKSVDVLSFKQLESQKTVLPQDVFRNELTWFCYEIYKSLAFRI</querySeq>
+      <pattern>K+   K E+ +  LSF+Q  + +  L + V+    TW   +I +SLAF++</pattern>
+      <matchSeq start="321" end="370">KKITAKGEEMISPLSFEQAVAARDALAKAVYGRAFTWLVVKINQSLAFKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

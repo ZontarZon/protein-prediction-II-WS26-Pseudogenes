@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-195925-0142-17480777-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-195925-0142-17480777-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|O83424|Y409_TREPA" type="PROTEIN" length="61"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T19:59:25+00:00" end="2026-11-13T20:01:40+00:00" search="P0Y0M0DT0H0M135.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="3">
+   <hit number="1" database="SP" id="Y409_TREPA" ac="O83424" length="61" description="Putative protein TP_0409 OS=Treponema pallidum (strain DSM 117211 / Nichols) OX=243276 GN=TP_0409 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>342</score>
+      <bits>136.3</bits>
+      <expectation>7.4e-41</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="61">MIDWIVFFALAWGRARVSCALKDENNAPSNSFANHYGERWLDPTARYRRRMSDLLPFCFCA</querySeq>
+      <pattern>MIDWIVFFALAWGRARVSCALKDENNAPSNSFANHYGERWLDPTARYRRRMSDLLPFCFCA</pattern>
+      <matchSeq start="1" end="61">MIDWIVFFALAWGRARVSCALKDENNAPSNSFANHYGERWLDPTARYRRRMSDLLPFCFCA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0A2N5NCI4_9BACL" ac="A0A2N5NCI4" length="451" description="Multidrug export protein MepA OS=Paenibacillus pasadenensis OX=217090 GN=B8V81_0199 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>5.5</expectation>
+      <identity>35.7</identity>
+      <positives>51.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="55">IDWIVFFALAWGRARVSCALKDENNAPSNSFANHYG--ERWLDPTARYRRRMSDLL</querySeq>
+      <pattern>+D I  FAL WG   V+CA    N   S  +A H G   R+L  +AR+ +   ++L</pattern>
+      <matchSeq start="182" end="237">LDAIAVFALDWGVVGVACATVVSNGVASAFYAYHIGRKSRFLTVSARWFKASKEIL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ABV3Q9Z9_9GAMM" ac="A0ABV3Q9Z9" length="386" description="Glycosyltransferase family 4 protein OS=Rhodanobacter lycopersici OX=3162487 GN=ABQJ54_02705 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>7.5</expectation>
+      <identity>35.1</identity>
+      <positives>49.1</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="56">LAWGRARVSCAL----KDENNAPSNSFANHYGERWLDPTAR------YRRRMSDLLP</querySeq>
+      <pattern>L W   R +CAL        +   +S+A+HYG RWL P  R      +RR  + L+P</pattern>
+      <matchSeq start="98" end="154">LGWSALRTACALGIPVATGFHTRFDSYASHYGLRWLTPLVRGHLRRFHRRAAATLVP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,2711 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniprotkb&quot; -query ncbiblast-R20261113-201638-0332-24353708-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20261113-201638-0332-24353708-p1m.archive -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="sp|P55536|Y4KR_SINFN" type="PROTEIN" length="43"/>
+   </sequences>
+   <databases total="1" sequences="154263579" letters="60059520377">
+    <database number="1" name="uniprotkb" type="PROTEIN" created="2026-11-02T10:56:00+00:00"/>
+   </databases>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+  </parameters>
+  <timeInfo start="2026-11-13T20:16:38+00:00" end="2026-11-13T20:17:53+00:00" search="P0Y0M0DT0H0M75.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="158">
+   <hit number="1" database="SP" id="Y4KR_SINFN" ac="P55536" length="43" description="Putative uncharacterized protein y4kR OS=Sinorhizobium fredii (strain NBRC 101917 / NGR234) OX=394 GN=NGR_a02780 PE=5 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>219</score>
+      <bits>89.0</bits>
+      <expectation>1.3e-22</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="43">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFELSSDGD</querySeq>
+      <pattern>MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFELSSDGD</pattern>
+      <matchSeq start="1" end="43">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFELSSDGD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="TR" id="A0ABR6IZQ9_9HYPH" ac="A0ABR6IZQ9" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium mongolense OX=57676 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>1.9e-10</expectation>
+      <identity>83.8</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTALSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="TR" id="A0ABY8D8Y3_9HYPH" ac="A0ABY8D8Y3" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Sinorhizobium numidicum OX=680248 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>1.9e-10</expectation>
+      <identity>83.8</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTALSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="TR" id="A0A178YDJ6_9HYPH" ac="A0A178YDJ6" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Sinorhizobium glycinis OX=1472378 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>1.9e-10</expectation>
+      <identity>83.8</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTALSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="TR" id="A0A249PNG5_9HYPH" ac="A0A249PNG5" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Sinorhizobium sojae CCBAU 05684 OX=716928 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>1.9e-10</expectation>
+      <identity>83.8</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTALSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="TR" id="A0A3P3FS97_9HYPH" ac="A0A3P3FS97" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium tamadayense OX=425306 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>1.9e-10</expectation>
+      <identity>83.8</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+SQRKDDHLDIVLD +TAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTALSQRKDDHLDIVLDRQTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="TR" id="A0A562P7X8_9HYPH" ac="A0A562P7X8" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium tianshanense OX=39844 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>1.9e-10</expectation>
+      <identity>83.8</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTALSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="TR" id="A0ABV2DMF1_9HYPH" ac="A0ABV2DMF1" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium shangrilense OX=460060 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>1.9e-10</expectation>
+      <identity>83.8</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTALSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="TR" id="A0A1H8WHX5_9HYPH" ac="A0A1H8WHX5" length="371" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium tibeticum OX=501024 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>2e-10</expectation>
+      <identity>83.8</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="23" end="59">MSDTALSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="TR" id="W6RNL6_9HYPH" ac="W6RNL6" length="382" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium favelukesii OX=348824 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>2e-10</expectation>
+      <identity>83.8</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="34" end="70">MSDTALSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="TR" id="A0ABU8K7M6_9HYPH" ac="A0ABU8K7M6" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium argentiipisi (SeqCode) OX=3015175 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <bits>62.0</bits>
+      <expectation>5e-10</expectation>
+      <identity>81.1</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVLD RTAP TVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTALSRRKDDHLDIVLDRRTAPTTVAAGWESIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="TR" id="A0ABY5QWD9_9HYPH" ac="A0ABY5QWD9" length="361" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium onobrychidis OX=2775404 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <bits>62.0</bits>
+      <expectation>5.1e-10</expectation>
+      <identity>83.8</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MTDTALSGRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="TR" id="A0A5N7MR71_9HYPH" ac="A0A5N7MR71" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Microvirga tunisiensis OX=2108360 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>6.9e-10</expectation>
+      <identity>81.1</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DT +S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTTLSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="TR" id="L0KTG9_MESAW" ac="L0KTG9" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium australicum (strain HAMBI 3006 / LMG 24608 / WSM2073) OX=754035 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>9.4e-10</expectation>
+      <identity>81.1</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVLD RTAPA VAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MTDTALSRRKDDHLDIVLDRRTAPARVAAGWESIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="TR" id="A0A6M7UPU8_9HYPH" ac="A0A6M7UPU8" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium erdmanii OX=1777866 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.3e-09</expectation>
+      <identity>81.1</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D A+S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDIALSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="TR" id="M5B2Q7_RHILI" ac="M5B2Q7" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium loti OX=381 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.3e-09</expectation>
+      <identity>81.1</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D A+S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDIALSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="TR" id="A0ABY8DKP8_9HYPH" ac="A0ABY8DKP8" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Sinorhizobium garamanticum OX=680247 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <bits>60.5</bits>
+      <expectation>1.8e-09</expectation>
+      <identity>81.1</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D A+S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDIALSRRKDDHLDIVLDRRTAPATVAAGWEHIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="TR" id="A0A5S4YC39_9BRAD" ac="A0A5S4YC39" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Bradyrhizobium hipponense OX=2605638 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>141</score>
+      <bits>58.9</bits>
+      <expectation>6.3e-09</expectation>
+      <identity>78.4</identity>
+      <positives>83.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVLD RTAP  VAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTAVSRRKDDHLDIVLDRRTAPTKVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="TR" id="A0A0H1R684_9HYPH" ac="A0A0H1R684" length="360" description="Isopentenyl-diphosphate delta-isomerase OS=Microvirga vignae OX=1225564 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>8.7e-09</expectation>
+      <identity>78.4</identity>
+      <positives>83.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVLD RTA AT AAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTALSRRKDDHLDIVLDRRTATATAAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="TR" id="H0HX05_9HYPH" ac="H0HX05" length="374" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium alhagi CCNWXJ12-2 OX=1107882 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <bits>58.5</bits>
+      <expectation>8.8e-09</expectation>
+      <identity>78.4</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RK+DHLDIVLD RTA ATVAAG E IRFE</pattern>
+      <matchSeq start="23" end="59">MSDTALSRRKEDHLDIVLDRRTAAATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="TR" id="A0A2S6ZLC1_9XANT" ac="A0A2S6ZLC1" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Xanthomonas theicola OX=56464 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <bits>58.2</bits>
+      <expectation>1.2e-08</expectation>
+      <identity>78.4</identity>
+      <positives>83.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D A+S+RK DHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDDALSRRKGDHLDIVLDRRTAPATVAAGWEWIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="TR" id="A0ABU8L3I1_9HYPH" ac="A0ABU8L3I1" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium salmacidum (SeqCode) OX=3015171 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <bits>57.4</bits>
+      <expectation>2.2e-08</expectation>
+      <identity>75.7</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RK+DHLDI LD+RTA ATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTALSRRKEDHLDIALDQRTARATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="TR" id="A0ABV2GZE8_9HYPH" ac="A0ABV2GZE8" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium robiniae OX=559315 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>3e-08</expectation>
+      <identity>75.7</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIV+D+RTA A VAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MSDTALSRRKDDHLDIVVDQRTALAAVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="TR" id="A0ACC6N6F1_9HYPH" ac="A0ACC6N6F1" length="371" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium mulingense OX=3031128 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>3.1e-08</expectation>
+      <identity>77.1</identity>
+      <positives>88.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D A+++RKDDHLD+VLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="25" end="59">DDALTRRKDDHLDLVLDRRTAPATVAAGWEQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="TR" id="Q8KLD3_RHIEC" ac="Q8KLD3" length="377" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium etli (strain ATCC 51251 / DSM 11541 / JCM 21823 / NBRC 15573 / CFN 42) OX=347834 GN=fni PE=3 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>3.1e-08</expectation>
+      <identity>77.1</identity>
+      <positives>88.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D A+++RKDDHLD+VLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="25" end="59">DDALTRRKDDHLDLVLDRRTAPATVAAGWEQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="TR" id="A0ABS7M874_9HYPH" ac="A0ABS7M874" length="377" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium croatiense OX=2867516 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>3.1e-08</expectation>
+      <identity>77.1</identity>
+      <positives>88.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D A+++RKDDHLD+VLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="25" end="59">DDALTRRKDDHLDLVLDRRTAPATVAAGWEQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="TR" id="G6YG67_9HYPH" ac="G6YG67" length="381" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium amorphae CCNWGS0123 OX=1082933 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>3.1e-08</expectation>
+      <identity>75.7</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIV+D+RTA A VAAG E IRFE</pattern>
+      <matchSeq start="33" end="69">MSDTALSRRKDDHLDIVVDQRTALAAVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="TR" id="A0A4R3Q6M0_9HYPH" ac="A0A4R3Q6M0" length="388" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium azibense OX=1136135 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>3.1e-08</expectation>
+      <identity>77.1</identity>
+      <positives>88.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D A+++RKDDHLD+VLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="36" end="70">DDALTRRKDDHLDLVLDRRTAPATVAAGWEQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="TR" id="A0ABM6CIM9_9HYPH" ac="A0ABM6CIM9" length="388" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium phaseoli OX=396 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>3.1e-08</expectation>
+      <identity>77.1</identity>
+      <positives>88.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D A+++RKDDHLD+VLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="36" end="70">DDALTRRKDDHLDLVLDRRTAPATVAAGWEQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="TR" id="A0ACD7KHW1_9HYPH" ac="A0ACD7KHW1" length="388" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium esperanzae OX=1967781 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>136</score>
+      <bits>57.0</bits>
+      <expectation>3.1e-08</expectation>
+      <identity>77.1</identity>
+      <positives>88.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D A+++RKDDHLD+VLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="36" end="70">DDALTRRKDDHLDLVLDRRTAPATVAAGWEQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="TR" id="A0A8T9AL57_9HYPH" ac="A0A8T9AL57" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium intechi OX=537601 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>5.7e-08</expectation>
+      <identity>80.0</identity>
+      <positives>82.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D   S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="5" end="39">DNIPSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="TR" id="A0A2T4IKN4_9HYPH" ac="A0A2T4IKN4" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium helmanticense OX=1776423 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>5.7e-08</expectation>
+      <identity>80.0</identity>
+      <positives>82.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D   S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="5" end="39">DNIPSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="TR" id="A0A2A6FKS3_9HYPH" ac="A0A2A6FKS3" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium sanjuanii OX=2037900 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>5.7e-08</expectation>
+      <identity>80.0</identity>
+      <positives>82.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D   S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="5" end="39">DNIPSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="TR" id="A0ABZ0VIJ8_9HYPH" ac="A0ABZ0VIJ8" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium huakuii OX=28104 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>5.7e-08</expectation>
+      <identity>80.0</identity>
+      <positives>82.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D   S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="5" end="39">DNIPSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="TR" id="A0A9X1AHR4_9HYPH" ac="A0A9X1AHR4" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Aminobacter anthyllidis OX=1035067 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>5.7e-08</expectation>
+      <identity>80.0</identity>
+      <positives>82.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D   S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="5" end="39">DNIPSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="TR" id="A0ABX6MZ15_9HYPH" ac="A0ABX6MZ15" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium japonicum R7A OX=935547 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>5.7e-08</expectation>
+      <identity>80.0</identity>
+      <positives>82.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D   S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="5" end="39">DNIPSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="SP" id="IDI2_RHILO" ac="Q989L5" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium japonicum (strain LMG 29417 / CECT 9101 / MAFF 303099) OX=266835 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <bits>56.2</bits>
+      <expectation>5.7e-08</expectation>
+      <identity>80.0</identity>
+      <positives>82.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D   S+RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="5" end="39">DNIPSRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="TR" id="A0AAE6C278_9HYPH" ac="A0AAE6C278" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium acidisoli OX=1538158 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>7.8e-08</expectation>
+      <identity>73.0</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D A+++RKDDHLD+VL+ RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MCDDALTRRKDDHLDLVLNRRTAPATVAAGWEQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="TR" id="A0A7W9CYC9_9HYPH" ac="A0A7W9CYC9" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium lentis OX=1138194 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <bits>55.8</bits>
+      <expectation>7.8e-08</expectation>
+      <identity>73.0</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D A+++RKDDHLD+VL+ RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="37">MCDDALTRRKDDHLDLVLNRRTAPATVAAGWEQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="TR" id="A0ABU3YXW3_9HYPH" ac="A0ABU3YXW3" length="344" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium brockwellii OX=3019932 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>2e-07</expectation>
+      <identity>73.0</identity>
+      <positives>81.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DTA+S+RKDDHLDIVL +RTAPAT A G E I FE</pattern>
+      <matchSeq start="1" end="37">MSDTALSRRKDDHLDIVLAQRTAPATGAGGWEYIHFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="TR" id="A0ABX4IZK2_9HYPH" ac="A0ABX4IZK2" length="344" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium anhuiense OX=1184720 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>2e-07</expectation>
+      <identity>81.2</identity>
+      <positives>90.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="37">MSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M++RKDDHLD+VLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="32">MTRRKDDHLDLVLDRRTAPATVAAGWEQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="TR" id="A0A2A5KJP3_9HYPH" ac="A0A2A5KJP3" length="350" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium sophoriradicis OX=1535245 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>2e-07</expectation>
+      <identity>81.2</identity>
+      <positives>90.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="37">MSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M++RKDDHLD+VLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="32">MTRRKDDHLDLVLDRRTAPATVAAGWEQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="TR" id="A0A8E3B228_RHILI" ac="A0A8E3B228" length="350" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium loti OX=381 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>2e-07</expectation>
+      <identity>77.1</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D    +RKDDHLDIVLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="5" end="39">DNIPGRRKDDHLDIVLDRRTAPATVAAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="TR" id="A0A432PBF0_9HYPH" ac="A0A432PBF0" length="350" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium vallis OX=634290 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>2e-07</expectation>
+      <identity>81.2</identity>
+      <positives>90.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="37">MSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M++RKDDHLD+VLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="32">MTRRKDDHLDLVLDRRTAPATVAAGWEQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="TR" id="A0ABX4JKE6_9HYPH" ac="A0ABX4JKE6" length="350" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium hidalgonense OX=1538159 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>130</score>
+      <bits>54.7</bits>
+      <expectation>2e-07</expectation>
+      <identity>81.2</identity>
+      <positives>90.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="37">MSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M++RKDDHLD+VLD RTAPATVAAG E IRFE</pattern>
+      <matchSeq start="1" end="32">MTRRKDDHLDLVLDRRTAPATVAAGWEQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="TR" id="A0ABV1YJ98_9HYPH" ac="A0ABV1YJ98" length="348" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium opportunistum OX=593909 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>116</score>
+      <bits>49.3</bits>
+      <expectation>1.6e-05</expectation>
+      <identity>73.0</identity>
+      <positives>78.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DT +S+RKDDHLDIVLD RTA A  AAG E IRFE</pattern>
+      <matchSeq start="1" end="36">MSDTKLSRRKDDHLDIVLDRRTARAK-AAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="TR" id="A0A0K2ZS75_9XANT" ac="A0A0K2ZS75" length="382" description="Isopentenyl-diphosphate delta-isomerase OS=Xanthomonas graminis pv. arrhenatheri LMG 727 OX=1195923 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>114</score>
+      <bits>48.5</bits>
+      <expectation>3.1e-05</expectation>
+      <identity>64.9</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D  +SQRKDDHLDIVLD R A AT  A  + IRFE</pattern>
+      <matchSeq start="34" end="70">MSDRGLSQRKDDHLDIVLDRRAASATATADWDGIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="TR" id="A0ABV1Z6V2_9HYPH" ac="A0ABV1Z6V2" length="348" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium caraganae OX=483206 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.8e-05</expectation>
+      <identity>70.3</identity>
+      <positives>78.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M DT +S+RKDDHLDIVL+ RTA A  AAG E IRFE</pattern>
+      <matchSeq start="1" end="36">MSDTKLSRRKDDHLDIVLNRRTARAK-AAGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="TR" id="A0ABX5BS96_9XANT" ac="A0ABX5BS96" length="352" description="Isopentenyl-diphosphate delta-isomerase OS=Xanthomonas bromi OX=56449 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>111</score>
+      <bits>47.4</bits>
+      <expectation>7.8e-05</expectation>
+      <identity>68.6</identity>
+      <positives>74.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D A+SQRKDDHLDIVL +  A A V AG E IRFE</pattern>
+      <matchSeq start="11" end="45">DDALSQRKDDHLDIVLAQHAASAKVVAGWERIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="TR" id="A0ACC6T6S6_9HYPH" ac="A0ACC6T6S6" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Mesorhizobium australicum OX=536018 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>109</score>
+      <bits>46.6</bits>
+      <expectation>0.00015</expectation>
+      <identity>62.2</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D  +S+RKDDHLDIVLD R A    A G E IRFE</pattern>
+      <matchSeq start="1" end="37">MGDAKLSRRKDDHLDIVLDRRMASGKAAGGWEYIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="51" database="TR" id="A0ABX3XA01_9BRAD" ac="A0ABX3XA01" length="84" description="Uncharacterized protein OS=Bradyrhizobium canariense OX=255045 GN=BST63_03270 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>102</score>
+      <bits>43.9</bits>
+      <expectation>0.00024</expectation>
+      <identity>62.9</identity>
+      <positives>77.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>DTA+S+  DD+LDIVLD RTA AT+A G + I FE</pattern>
+      <matchSeq start="22" end="56">DTALSRCTDDYLDIVLDRRTAKATLAGGWKYIGFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="52" database="TR" id="A0ABW9KSD9_XANCT" ac="A0ABW9KSD9" length="384" description="Isopentenyl-diphosphate delta-isomerase OS=Xanthomonas translucens pv. translucens OX=134875 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>106</score>
+      <bits>45.4</bits>
+      <expectation>0.00038</expectation>
+      <identity>61.5</identity>
+      <positives>74.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDER--TAPATVAAGRECIRFE</querySeq>
+      <pattern>M D  +S+RKDDHLDIVLD+R  +A A  AAG + IRFE</pattern>
+      <matchSeq start="34" end="72">MSDCGLSRRKDDHLDIVLDQRMTSATAAAAAGWDRIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="53" database="TR" id="A0A514EIK3_9XANT" ac="A0A514EIK3" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Xanthomonas cerealis pv. cerealis OX=152263 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.0025</expectation>
+      <identity>59.0</identity>
+      <positives>69.2</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDER--TAPATVAAGRECIRFE</querySeq>
+      <pattern>M D  +S+RKDDHLDIVLD R  +  A  AAG + IRFE</pattern>
+      <matchSeq start="1" end="39">MSDCGLSRRKDDHLDIVLDRRATSVTAAAAAGWDRIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="54" database="TR" id="A0A8J7VSJ6_9GAMM" ac="A0A8J7VSJ6" length="357" description="Isopentenyl-diphosphate delta-isomerase OS=Coralloluteibacterium stylophorae OX=1776034 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>100</score>
+      <bits>43.1</bits>
+      <expectation>0.0025</expectation>
+      <identity>57.1</identity>
+      <positives>68.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D A+ +RKDDHLDIVLD+  A +TV  G    RFE</pattern>
+      <matchSeq start="10" end="44">DAALLRRKDDHLDIVLDDERARSTVVTGFSAYRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="55" database="TR" id="A0ABR9FBR3_9GAMM" ac="A0ABR9FBR3" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Halomonas citrativorans OX=2742612 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.0047</expectation>
+      <identity>56.8</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+DT ++QRK+DHLDIVL  R A  T+  G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDTELTQRKNDHLDIVLHPRQAVGTLRPGFEHWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="56" database="TR" id="A0ABY5J8C7_9GAMM" ac="A0ABY5J8C7" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Phytopseudomonas seleniipraecipitans OX=640205 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>98</score>
+      <bits>42.4</bits>
+      <expectation>0.0047</expectation>
+      <identity>54.1</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M ++ +S+RKDDHLDIVLD   A   V+AG   I+FE</pattern>
+      <matchSeq start="1" end="37">MNNSDLSRRKDDHLDIVLDRHKASTRVSAGWSTIQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="57" database="TR" id="A0ABR9FZ75_9GAMM" ac="A0ABR9FZ75" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Halomonas colorata OX=2742615 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>96</score>
+      <bits>41.6</bits>
+      <expectation>0.0087</expectation>
+      <identity>54.1</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+DT ++QRK+DHLDIVL+   A  T+  G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDTELTQRKNDHLDIVLNPALARKTIRTGFERWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="58" database="TR" id="F6AD49_PSEF1" ac="F6AD49" length="345" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas fulva (strain 12-X) OX=743720 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.01</expectation>
+      <identity>48.6</identity>
+      <positives>75.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+++ +S+RKDDHLDIVLD   A + ++AG   ++FE</pattern>
+      <matchSeq start="1" end="37">MKNSDLSRRKDDHLDIVLDRHKATSRISAGWANLQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="59" database="TR" id="A0A7Y9XJZ3_9GAMM" ac="A0A7Y9XJZ3" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Phytopseudomonas flavescens OX=29435 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>95</score>
+      <bits>41.2</bits>
+      <expectation>0.01</expectation>
+      <identity>51.4</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M +  +S+RKDDHLDIVLD   A   V+AG   ++FE</pattern>
+      <matchSeq start="1" end="37">MNNNDLSRRKDDHLDIVLDRHKATTRVSAGWASVQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="60" database="TR" id="A0A8D4C8G8_9GAMM" ac="A0A8D4C8G8" length="346" description="Isopentenyl-diphosphate delta-isomerase OS=Stutzerimonas balearica DSM 6083 OX=1123016 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.02</expectation>
+      <identity>51.4</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D  ++ RK+DHLDIVLD     A+ +AG E +RFE</pattern>
+      <matchSeq start="1" end="37">MADNELTTRKNDHLDIVLDASRRRASASAGFEALRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="61" database="TR" id="C9Y0E6_CROTZ" ac="C9Y0E6" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Cronobacter turicensis (strain DSM 18703 / CCUG 55852 / LMG 23827 / z3032) OX=693216 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.02</expectation>
+      <identity>56.8</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  +SQRK+DHLDIVL    A  TV  G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDMELSQRKNDHLDIVLHPERAKQTVRTGFEQWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="62" database="TR" id="A0ABY0UU68_PSECE" ac="A0ABY0UU68" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas cedrina OX=651740 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>94</score>
+      <bits>40.8</bits>
+      <expectation>0.02</expectation>
+      <identity>45.9</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D  +S+RKDDHLDIVL+    P+ +  G + ++FE</pattern>
+      <matchSeq start="1" end="37">MSDNDLSRRKDDHLDIVLNASACPSGIGTGFDALQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="63" database="TR" id="A0A1I1W404_PSEOC" ac="A0A1I1W404" length="345" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas straminea OX=47882 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.02</expectation>
+      <identity>48.6</identity>
+      <positives>75.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+++ +S+RKDDHLDIVLD   A + ++AG   ++FE</pattern>
+      <matchSeq start="1" end="37">MKNSDLSRRKDDHLDIVLDRYKATSRISAGWAQLQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="64" database="TR" id="V5TWR1_9ENTR" ac="V5TWR1" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Cronobacter malonaticus OX=413503 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.02</expectation>
+      <identity>54.1</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  +SQRK+DHLDIVL    A  T+  G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDKELSQRKNDHLDIVLHPERAKQTIRTGFEQWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="65" database="TR" id="A0ACT0PFH5_9ENTR" ac="A0ACT0PFH5" length="347" description="Type 2 isopentenyl-diphosphate Delta-isomerase OS=Yokenella regensburgei OX=158877 GN=fni PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.02</expectation>
+      <identity>54.1</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  +SQRK+DHLDIVL    A  T+  G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDKELSQRKNDHLDIVLHPERAKQTIRTGFEHWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="66" database="SP" id="IDI2_CROS8" ac="A7MPA0" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Cronobacter sakazakii (strain ATCC BAA-894) OX=290339 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.02</expectation>
+      <identity>54.1</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  +SQRK+DHLDIVL    A  T+  G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDKELSQRKNDHLDIVLHPERAKQTIRTGFEQWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="67" database="TR" id="A0A1I3NLG0_9GAMM" ac="A0A1I3NLG0" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Phytopseudomonas argentinensis OX=289370 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>93</score>
+      <bits>40.4</bits>
+      <expectation>0.02</expectation>
+      <identity>48.6</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M ++ +S+RKDDHLDIVLD   A + ++AG   + FE</pattern>
+      <matchSeq start="1" end="37">MNNSDLSRRKDDHLDIVLDRHKAASRISAGWSEVHFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="68" database="TR" id="A0A1M7J395_9GAMM" ac="A0A1M7J395" length="345" description="Isopentenyl-diphosphate delta-isomerase OS=Phytopseudomonas punonensis OX=1220495 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.03</expectation>
+      <identity>48.6</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M ++ +S+RKDDHLDIVLD   A + ++AG   + FE</pattern>
+      <matchSeq start="1" end="37">MNNSDLSRRKDDHLDIVLDRHKAASHISAGWSEVHFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="69" database="TR" id="A0ABR9BWY4_9PSED" ac="A0ABR9BWY4" length="348" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas coleopterorum OX=1605838 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.03</expectation>
+      <identity>51.4</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+   +S+RKDDHLDIVLD   A   + AG + I+FE</pattern>
+      <matchSeq start="1" end="37">MKPDELSRRKDDHLDIVLDPLRATTRMGAGWDTIQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="70" database="TR" id="A0ABS6NU56_9PSED" ac="A0ABS6NU56" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas azadiae OX=2843612 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>92</score>
+      <bits>40.0</bits>
+      <expectation>0.03</expectation>
+      <identity>45.9</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D  +S+RKDDHLDIVL+    P+ +  G + ++FE</pattern>
+      <matchSeq start="1" end="37">MSDNDLSRRKDDHLDIVLNASACPSGMGTGFDTVQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="71" database="TR" id="A0A089WUJ2_9PSED" ac="A0A089WUJ2" length="345" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas cremoricolorata OX=157783 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.04</expectation>
+      <identity>51.4</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+   +SQRKDDHLDIVLD   A +    G   +RFE</pattern>
+      <matchSeq start="1" end="37">MKKNTLSQRKDDHLDIVLDPHRATSHCHDGWAAVRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="72" database="TR" id="A0A090UVU1_PSEVU" ac="A0A090UVU1" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudescherichia vulneris NBRC 102420 OX=1115515 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.04</expectation>
+      <identity>55.6</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M+D  + QRK+DHLDIVLD R A    +AG E  RF</pattern>
+      <matchSeq start="1" end="36">MKDERLVQRKNDHLDIVLDPRRAVTQASAGFERWRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="73" database="SP" id="IDI2_PSEVU" ac="Q01335" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudescherichia vulneris OX=566 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.04</expectation>
+      <identity>55.6</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M+D  + QRK+DHLDIVLD R A    +AG E  RF</pattern>
+      <matchSeq start="1" end="36">MKDERLVQRKNDHLDIVLDPRRAVTQASAGFERWRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="74" database="TR" id="A0ACG1UH81_9PSED" ac="A0ACG1UH81" length="348" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas monteilii OX=76759 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.04</expectation>
+      <identity>54.1</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+ + +SQRKDDHLDIVL    A + V  G   IRFE</pattern>
+      <matchSeq start="1" end="37">MKKSLLSQRKDDHLDIVLAPGQAASAVDPGWSAIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="75" database="TR" id="A0A089ZQT4_9PSED" ac="A0A089ZQT4" length="348" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas rhizosphaerae OX=216142 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.04</expectation>
+      <identity>48.6</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+   +S+RKDDHLDIVLD   A    +AG + ++FE</pattern>
+      <matchSeq start="1" end="37">MKHDELSRRKDDHLDIVLDPLRAGTRASAGWDAVQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="76" database="TR" id="A0ABS9ZLD2_9PSED" ac="A0ABS9ZLD2" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas maioricensis OX=1766623 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>91</score>
+      <bits>39.7</bits>
+      <expectation>0.04</expectation>
+      <identity>45.9</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  +S+RKDDHL+IVLD+R       +G + ++FE</pattern>
+      <matchSeq start="1" end="37">MKDHDLSRRKDDHLNIVLDQRARAQARLSGLDAVQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="77" database="TR" id="A0ABP1WCP1_9ENTR" ac="A0ABP1WCP1" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Cronobacter dublinensis 1210 OX=1208656 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.06</expectation>
+      <identity>54.1</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  +SQRK+DHLDIVL    A  T   G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDKELSQRKNDHLDIVLHPERAKQTTRTGFEQWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="78" database="TR" id="A0ABQ6TX70_9ENTR" ac="A0ABQ6TX70" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Cronobacter muytjensii OX=413501 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.06</expectation>
+      <identity>54.1</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  +SQRK+DHLDIVL    A  T   G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDKELSQRKNDHLDIVLHPERAKQTTRTGFEQWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="79" database="TR" id="A0A6M8MU66_9PSED" ac="A0A6M8MU66" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas graminis OX=158627 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.06</expectation>
+      <identity>51.4</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M  + M +RKDDHLDIVLD R +  +  +G + IRFE</pattern>
+      <matchSeq start="1" end="37">MTHSDMGRRKDDHLDIVLDRRASVRSSFSGLDDIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="80" database="TR" id="A0ABS9I7F7_9PSED" ac="A0ABS9I7F7" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas petrae OX=2912190 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.06</expectation>
+      <identity>51.4</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M  + M +RKDDHLDIVLD R +  +  +G + IRFE</pattern>
+      <matchSeq start="1" end="37">MTHSDMGRRKDDHLDIVLDRRASVRSSFSGLDDIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="81" database="TR" id="A0A2S7EUY4_9XANT" ac="A0A2S7EUY4" length="354" description="Isopentenyl-diphosphate delta-isomerase OS=Xanthomonas populi OX=53414 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>90</score>
+      <bits>39.3</bits>
+      <expectation>0.06</expectation>
+      <identity>57.1</identity>
+      <positives>65.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>D A+S+RKDDHLDIVL  +   A V  G E I FE</pattern>
+      <matchSeq start="13" end="47">DKALSRRKDDHLDIVLARQATSAPVVPGWERILFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="82" database="TR" id="A0ABY7HS84_9GAMM" ac="A0ABY7HS84" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Rouxiella chamberiensis OX=1513468 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.08</expectation>
+      <identity>54.1</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  + QRK+DHLDIVL+   A + VA G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDAELVQRKNDHLDIVLNPDRARSKVATGFERWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="83" database="TR" id="A0ABU8ZVV7_9PSED" ac="A0ABU8ZVV7" length="348" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas shirazensis OX=2745494 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.08</expectation>
+      <identity>51.4</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+ + +SQRKDDHLDIVL      A   AG   +RFE</pattern>
+      <matchSeq start="1" end="37">MKKSVLSQRKDDHLDIVLGADKTTAHADAGWAAVRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="84" database="TR" id="A0A7X1G1U9_9PSED" ac="A0A7X1G1U9" length="348" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas baltica OX=2762576 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.08</expectation>
+      <identity>48.6</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+   +S+RKDDHLDIVLD   A     AG + ++FE</pattern>
+      <matchSeq start="1" end="37">MKHDELSRRKDDHLDIVLDPLRAGTRAGAGWDVVQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="85" database="TR" id="A0ACT2AQE0_9GAMM" ac="A0ACT2AQE0" length="361" description="Type 2 isopentenyl-diphosphate Delta-isomerase OS=Stutzerimonas urumqiensis OX=638269 GN=HKW98_02720 PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>89</score>
+      <bits>38.9</bits>
+      <expectation>0.08</expectation>
+      <identity>54.5</identity>
+      <positives>69.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="37">AMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>A+  RK+DHLDIVLD   A +  A+G + IRFE</pattern>
+      <matchSeq start="17" end="49">ALEARKNDHLDIVLDPSRARSVTASGLDAIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="86" database="TR" id="A0AAC9EWJ5_9ENTR" ac="A0AAC9EWJ5" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Cronobacter universalis NCTC 9529 OX=1074000 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.11</expectation>
+      <identity>52.8</identity>
+      <positives>63.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M+D  +SQRK+DHLDIVL    A  T+  G E  RF</pattern>
+      <matchSeq start="1" end="36">MKDKELSQRKNDHLDIVLHPERAKQTIRTGFEQWRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="87" database="TR" id="A0A3S0YI65_9GAMM" ac="A0A3S0YI65" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Vreelandella populi OX=2498858 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>88</score>
+      <bits>38.5</bits>
+      <expectation>0.11</expectation>
+      <identity>51.4</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+DT +++RK+DHLDIVLD   A      G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDTELTRRKNDHLDIVLDPALAMKKTRTGFERWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="88" database="TR" id="A0A3S0XQQ3_9GAMM" ac="A0A3S0XQQ3" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Vreelandella nanhaiensis OX=1258546 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.15</expectation>
+      <identity>51.4</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+DT +++RK+DHLDIVLD   A      G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDTELTRRKNDHLDIVLDPALAIKKTRTGFEHWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="89" database="TR" id="K8A1Y7_9ENTR" ac="K8A1Y7" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Cronobacter condimenti 1330 OX=1073999 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.15</expectation>
+      <identity>51.4</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  +SQRK+DHLDIVL    A   +  G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDKELSQRKNDHLDIVLHPERAKQKIRTGFEHWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="90" database="TR" id="A0ABQ2GQL9_9PSED" ac="A0ABQ2GQL9" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas asuensis OX=1825787 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.15</expectation>
+      <identity>45.9</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D  ++ RK+DHLDIVLD + A +++  G E ++FE</pattern>
+      <matchSeq start="1" end="37">MVDWELASRKNDHLDIVLDPKRALSSITTGFEQVQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="91" database="TR" id="A0ABS1X6X7_PSEC1" ac="A0ABS1X6X7" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas cannabina pv. alisalensis OX=757414 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.15</expectation>
+      <identity>43.2</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M ++ + +RKDDHLDIVL++R A +    G + ++FE</pattern>
+      <matchSeq start="1" end="37">MDNSDLGRRKDDHLDIVLEQRGAGSGAVTGLDAVQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="92" database="TR" id="A0A1X0NCP1_9PSED" ac="A0A1X0NCP1" length="354" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas floridensis OX=1958950 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>87</score>
+      <bits>38.1</bits>
+      <expectation>0.15</expectation>
+      <identity>51.4</identity>
+      <positives>75.7</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M  + +S+RKDDHLDIVL++R+A +   AG + +RFE</pattern>
+      <matchSeq start="1" end="35">MDKSDLSRRKDDHLDIVLEQRSAGS--GAGFDALRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="93" database="TR" id="Q2VJ79_9ENTR" ac="Q2VJ79" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Enterobacteriaceae bacterium DC404 OX=338905 GN=idi PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.2</expectation>
+      <identity>48.6</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  + QRK+DHLDIVL    A +T+  G +  RFE</pattern>
+      <matchSeq start="1" end="37">MKDAHLVQRKNDHLDIVLHPDRAMSTIRTGFDAWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="94" database="TR" id="A0ACT0NWS4_STUCH" ac="A0ACT0NWS4" length="349" description="Type 2 isopentenyl-diphosphate Delta-isomerase OS=Stutzerimonas chloritidismutans OX=203192 GN=fni PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.2</expectation>
+      <identity>48.6</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M    +++RK+DHLDIVLD R A +TV +G   + FE</pattern>
+      <matchSeq start="1" end="37">MSKETIAERKNDHLDIVLDPRRACSTVDSGFAALTFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="95" database="TR" id="A0A2P8VGN0_9ENTR" ac="A0A2P8VGN0" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Siccibacter turicensis OX=357233 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.2</expectation>
+      <identity>48.6</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  + QRK+DHLDIVL    A +T+  G +  RFE</pattern>
+      <matchSeq start="1" end="37">MKDAHLVQRKNDHLDIVLHPDRAMSTIRTGFDAWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="96" database="TR" id="A0ABR9A478_9PSED" ac="A0ABR9A478" length="351" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas lutea OX=243924 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>86</score>
+      <bits>37.7</bits>
+      <expectation>0.2</expectation>
+      <identity>51.4</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M  T   +RKDDHLDIVLD R    +  +G + IRFE</pattern>
+      <matchSeq start="1" end="37">MTHTETGRRKDDHLDIVLDRRANVRSSFSGLDDIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="97" database="TR" id="A0AAJ0LLC1_9PSED" ac="A0AAJ0LLC1" length="348" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas parafulva OX=157782 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.28</expectation>
+      <identity>51.4</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M  + +SQRKDDHLDIVL   +    V AG   +RFE</pattern>
+      <matchSeq start="1" end="37">MNKSPLSQRKDDHLDIVLATGSTSHGVDAGWSALRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="98" database="TR" id="A0ABS3J8F1_9HYPH" ac="A0ABS3J8F1" length="358" description="Isopentenyl-diphosphate delta-isomerase OS=Jiella sonneratiae OX=2816856 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>85</score>
+      <bits>37.4</bits>
+      <expectation>0.28</expectation>
+      <identity>50.0</identity>
+      <positives>65.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="37">MSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>++ RK DH+DIVL  R  P  VA G + +RFE</pattern>
+      <matchSeq start="18" end="49">IAARKSDHIDIVLGSRREPPRVATGLDAVRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="99" database="TR" id="A0ABU9M3Q6_STUCH" ac="A0ABU9M3Q6" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Stutzerimonas chloritidismutans OX=203192 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.38</expectation>
+      <identity>45.9</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M    +++RK+DHLDIVLD R A + + AG   + FE</pattern>
+      <matchSeq start="1" end="37">MTKETIAERKNDHLDIVLDPRRACSVIDAGYAALTFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="100" database="TR" id="A0A562QAG4_9PSED" ac="A0A562QAG4" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas duriflava OX=459528 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>84</score>
+      <bits>37.0</bits>
+      <expectation>0.38</expectation>
+      <identity>48.6</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D  ++ RK+DHLDIVLD + A  T+  G E + FE</pattern>
+      <matchSeq start="1" end="37">MVDWELASRKNDHLDIVLDPQRALNTIRTGFEQLHFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="101" database="TR" id="A0A2N5EB85_9GAMM" ac="A0A2N5EB85" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Chimaeribacter coloradensis OX=2060068 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.52</expectation>
+      <identity>48.6</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  + +RK+DHLDIVL    A + V  G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDAELIKRKNDHLDIVLHPAQAVSRVTTGFERFRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="102" database="TR" id="A0ACG5BCG0_9GAMM" ac="A0ACG5BCG0" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Erwinia tasmaniensis OX=338565 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.52</expectation>
+      <identity>48.6</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  + QRK+DHLDIVL+   A + +  G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDADLIQRKNDHLDIVLNPARAVSRIRTGFERWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="103" database="TR" id="A0A2T0V9G3_9GAMM" ac="A0A2T0V9G3" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Vreelandella songnenensis OX=1176243 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.52</expectation>
+      <identity>48.6</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+++ ++QRK+DHLDIVLD   A      G E  RFE</pattern>
+      <matchSeq start="1" end="37">MQESELTQRKNDHLDIVLDPALAVQKTRTGFERWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="104" database="TR" id="A0ACT0CFF6_9PSED" ac="A0ACT0CFF6" length="348" description="Type 2 isopentenyl-diphosphate Delta-isomerase OS=Pseudomonas alloputida OX=2093743 GN=fni PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.52</expectation>
+      <identity>48.6</identity>
+      <positives>59.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+ + +SQRKDDHLDIVL        V  G   +RFE</pattern>
+      <matchSeq start="1" end="37">MKKSPLSQRKDDHLDIVLTAAATAHGVDPGWSALRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="105" database="TR" id="A0A923GPH5_9PSED" ac="A0A923GPH5" length="348" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas vlassakiae OX=485888 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.52</expectation>
+      <identity>48.6</identity>
+      <positives>56.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+   +SQRKDDHLDIVL     P     G   +RFE</pattern>
+      <matchSeq start="1" end="37">MKKNPLSQRKDDHLDIVLAAGNNPLGADPGWSSVRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="106" database="TR" id="A0ABT4IQS5_9GAMM" ac="A0ABT4IQS5" length="353" description="Isopentenyl-diphosphate delta-isomerase OS=Vreelandella janggokensis OX=370767 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>83</score>
+      <bits>36.6</bits>
+      <expectation>0.52</expectation>
+      <identity>52.8</identity>
+      <positives>61.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M D +M +RK+DHLDIVLD R A A    G    RF</pattern>
+      <matchSeq start="1" end="36">MTDDSMVKRKNDHLDIVLDARRANARTLTGFADYRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="107" database="TR" id="A0A2X2CP66_PSELU" ac="A0A2X2CP66" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas luteola OX=47886 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.72</expectation>
+      <identity>45.9</identity>
+      <positives>67.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D  ++ RK+DHLDIVLD   A +++  G E I+F+</pattern>
+      <matchSeq start="1" end="37">MVDWELASRKNDHLDIVLDPARALSSITTGFEQIQFQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="108" database="TR" id="A0A0M2KIH5_9GAMM" ac="A0A0M2KIH5" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Erwinia tracheiphila OX=65700 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.72</expectation>
+      <identity>56.2</identity>
+      <positives>75.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="37">MSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>+SQRKDDHLDIVL ++T   T  AG + ++FE</pattern>
+      <matchSeq start="7" end="37">LSQRKDDHLDIVLRQKTTSHT-TAGWDFVQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="109" database="TR" id="A0ABY6JKU4_9ENTR" ac="A0ABY6JKU4" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Siccibacter colletis OX=1505757 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.72</expectation>
+      <identity>48.6</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  + QRK+DHLDIVL+   A  T+  G +  RFE</pattern>
+      <matchSeq start="1" end="37">MKDAHLVQRKNDHLDIVLNPGRAVNTIRTGFDDWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="110" database="TR" id="A0ABX3XJ98_9GAMM" ac="A0ABX3XJ98" length="357" description="Isopentenyl-diphosphate delta-isomerase OS=Lonsdalea iberica OX=1082703 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>82</score>
+      <bits>36.2</bits>
+      <expectation>0.72</expectation>
+      <identity>54.5</identity>
+      <positives>78.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="37">AMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>A+SQRK+DHLDIVL ++ A  T +AG + ++FE</pattern>
+      <matchSeq start="6" end="37">ALSQRKNDHLDIVLRQKAASHT-SAGWDLVQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="111" database="TR" id="A0A365TPY7_9GAMM" ac="A0A365TPY7" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Vreelandella sulfidaeris OX=115553 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.98</expectation>
+      <identity>48.6</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M ++ ++QRK+DHLDIVL+   A  T   G E  RFE</pattern>
+      <matchSeq start="1" end="37">MTESELTQRKNDHLDIVLNPSLAGHTTRTGFEHWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="112" database="TR" id="A0ACC6JXK5_9PSED" ac="A0ACC6JXK5" length="348" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas hunanensis OX=1247546 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.98</expectation>
+      <identity>51.4</identity>
+      <positives>59.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+ + +SQRKDDHLDIVL    A      G   IRFE</pattern>
+      <matchSeq start="1" end="37">MKKSFLSQRKDDHLDIVLAPTPAGPRQDPGWSAIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="113" database="TR" id="A0ABW8NZU2_9PSED" ac="A0ABW8NZU2" length="348" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas urmiensis OX=2745493 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.98</expectation>
+      <identity>51.4</identity>
+      <positives>59.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+ + +SQRKDDHLDIVL    A      G   IRFE</pattern>
+      <matchSeq start="1" end="37">MKKSFLSQRKDDHLDIVLAPDPAQLRQDPGFSAIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="114" database="TR" id="A0ABT6IEC5_9PSED" ac="A0ABT6IEC5" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas flavocrustae OX=2991719 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.98</expectation>
+      <identity>47.2</identity>
+      <positives>61.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M D  ++ RK+DHLDIVLD   A + V  G +  RF</pattern>
+      <matchSeq start="1" end="36">MVDWELASRKNDHLDIVLDPHKARSAVTTGFDAYRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="115" database="TR" id="A0ABX3IK95_9PSED" ac="A0ABX3IK95" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas oryzihabitans OX=47885 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.98</expectation>
+      <identity>47.2</identity>
+      <positives>61.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M D  ++ RK+DHLDIVLD   A + V  G +  RF</pattern>
+      <matchSeq start="1" end="36">MVDWELASRKNDHLDIVLDPHKARSAVTTGFDAYRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="116" database="TR" id="A0ABZ2FXD0_9PSED" ac="A0ABZ2FXD0" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas benzopyrenica OX=2993566 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.98</expectation>
+      <identity>47.2</identity>
+      <positives>61.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M D  ++ RK+DHLDIVLD   A + V  G +  RF</pattern>
+      <matchSeq start="1" end="36">MVDWELASRKNDHLDIVLDPHKARSAVTTGFDAYRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="117" database="TR" id="A0ABZ0YNB7_9GAMM" ac="A0ABZ0YNB7" length="353" description="Isopentenyl-diphosphate delta-isomerase OS=Vreelandella neptunia OX=115551 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.98</expectation>
+      <identity>50.0</identity>
+      <positives>61.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M D +M +RK+DHLDIVLD R A  +   G    RF</pattern>
+      <matchSeq start="1" end="36">MTDDSMVKRKNDHLDIVLDARRANTSTLTGFADYRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="118" database="TR" id="A0A246RX67_9GAMM" ac="A0A246RX67" length="353" description="Isopentenyl-diphosphate delta-isomerase OS=Halomonas campaniensis OX=213554 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>81</score>
+      <bits>35.8</bits>
+      <expectation>0.98</expectation>
+      <identity>50.0</identity>
+      <positives>61.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M D +M +RK+DHLDIVLD R A  +   G    RF</pattern>
+      <matchSeq start="1" end="36">MTDDSMVKRKNDHLDIVLDARRANTSTLTGFADYRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="119" database="TR" id="A0A365PQ59_9GAMM" ac="A0A365PQ59" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Stutzerimonas zhaodongensis OX=1176257 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.3</expectation>
+      <identity>45.9</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M    +++RK+DHLDIVLD R A + V  G   + FE</pattern>
+      <matchSeq start="1" end="37">MTKETIAERKNDHLDIVLDPRRACSAVDPGYAALTFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="120" database="TR" id="A0ABY0ZZD1_9GAMM" ac="A0ABY0ZZD1" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Stutzerimonas xanthomarina OX=271420 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.3</expectation>
+      <identity>43.2</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M   ++++RK+DHLDIVLD R A + +  G   + FE</pattern>
+      <matchSeq start="1" end="37">MTKESIAERKNDHLDIVLDPRRACSVIDPGYAALTFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="121" database="TR" id="A0A7X3KS13_9GAMM" ac="A0A7X3KS13" length="350" description="Isopentenyl-diphosphate delta-isomerase OS=Vreelandella zhuhanensis OX=2684210 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.3</expectation>
+      <identity>50.0</identity>
+      <positives>58.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M D  + +RK+DHLDIVLD R A A    G    RF</pattern>
+      <matchSeq start="1" end="36">MTDEGLVKRKNDHLDIVLDARRATAPTLTGFADYRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="122" database="TR" id="A0A4Q1JRQ1_9GAMM" ac="A0A4Q1JRQ1" length="358" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudoxanthomonas composti OX=2137479 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>80</score>
+      <bits>35.4</bits>
+      <expectation>1.3</expectation>
+      <identity>58.6</identity>
+      <positives>69.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="37">RKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>RK+DHLDIVLD+R A A    G +  RFE</pattern>
+      <matchSeq start="16" end="44">RKNDHLDIVLDQRRALARTRTGLDGYRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="123" database="TR" id="A0A0U5KWM6_9GAMM" ac="A0A0U5KWM6" length="344" description="Isopentenyl-diphosphate delta-isomerase OS=Duffyella gerundensis OX=1619313 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.8</expectation>
+      <identity>48.6</identity>
+      <positives>59.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  + QRK+DHLDIVL+   A      G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDPDLLQRKNDHLDIVLNPNRAVKQTTTGFERWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="124" database="TR" id="A0ABR7Z1F3_9PSED" ac="A0ABR7Z1F3" length="346" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas typographi OX=2715964 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.8</expectation>
+      <identity>45.7</identity>
+      <positives>65.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="37">DTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>+T +  RK+DHLDI+L+ +  P T A G +  RFE</pattern>
+      <matchSeq start="2" end="36">ETDLVHRKNDHLDIILNAQRDPVTQANGFDRFRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="125" database="TR" id="A0A2N5EA09_9GAMM" ac="A0A2N5EA09" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Chimaeribacter californicus OX=2060067 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.8</expectation>
+      <identity>48.6</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  + +RK+DHLDIVL    A + V  G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDAELIKRKNDHLDIVLHPARAVSRVRTGFERWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="126" database="TR" id="A0A2N5EQG3_9GAMM" ac="A0A2N5EQG3" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Chimaeribacter arupi OX=2060066 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.8</expectation>
+      <identity>48.6</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  + +RK+DHLDIVL    A + V  G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDAELIKRKNDHLDIVLHPARAVSRVRTGFERWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="127" database="TR" id="A0ABS5JEF9_9GAMM" ac="A0ABS5JEF9" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Nissabacter archeti OX=1917880 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.8</expectation>
+      <identity>48.6</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  + +RK+DHLDIVL    A + V  G E  RFE</pattern>
+      <matchSeq start="1" end="37">MKDAELIKRKNDHLDIVLHPARAVSRVRTGFERWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="128" database="TR" id="A0ABS4C3J5_9PSED" ac="A0ABS4C3J5" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas alliivorans OX=2810613 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.8</expectation>
+      <identity>53.1</identity>
+      <positives>71.9</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="37">MSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>+S+RKDDHLDIVL +R A +    G + +RFE</pattern>
+      <matchSeq start="6" end="35">LSRRKDDHLDIVLQQRCAGSD--TGLDAVRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="129" database="TR" id="A0A1W2CSD2_9HYPH" ac="A0A1W2CSD2" length="354" description="Isopentenyl-diphosphate delta-isomerase OS=Fulvimarina manganoxydans OX=937218 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.8</expectation>
+      <identity>58.6</identity>
+      <positives>69.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="37">RKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>RK DHLDIVL+ R A    A+G + IRFE</pattern>
+      <matchSeq start="16" end="44">RKSDHLDIVLEPRLAGRRAASGLDDIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="130" database="TR" id="A0A9K3KEX6_9STRA" ac="A0A9K3KEX6" length="627" description="Pyridoxal-dependent decarboxylase OS=Nitzschia inconspicua OX=303405 GN=IV203_007431 PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>79</score>
+      <bits>35.0</bits>
+      <expectation>1.9</expectation>
+      <identity>35.7</identity>
+      <positives>69.0</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="40">TAMSQRKDDHLDIVLDERTA-----PATVAAGRECIRFELSS</querySeq>
+      <pattern>+++ Q   DH D+V+DE ++     P+TV++  EC+R+E+S+</pattern>
+      <matchSeq start="19" end="60">SSLQQDNKDHNDVVIDEVSSCITWLPSTVSSFEECVRYEIST</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="131" database="TR" id="A0ACC5VQ44_9GAMM" ac="A0ACC5VQ44" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Vreelandella aquamarina OX=77097 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>78</score>
+      <bits>34.7</bits>
+      <expectation>2.5</expectation>
+      <identity>45.9</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+++ ++QRK+DHLDIVL+   A      G E  RFE</pattern>
+      <matchSeq start="1" end="37">MQESELTQRKNDHLDIVLNPALAVQKTRTGFERWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="132" database="TR" id="Q2VJ67_9ENTR" ac="Q2VJ67" length="344" description="Isopentenyl-diphosphate delta-isomerase OS=Enterobacteriaceae bacterium DC413 OX=338907 GN=idi PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.5</expectation>
+      <identity>54.8</identity>
+      <positives>77.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="31">MRDTAMSQRKDDHLDIVLDERTAPATVAAGR</querySeq>
+      <pattern>M+DT +++RK+DHLDIVL   TAPA+ +  R</pattern>
+      <matchSeq start="1" end="30">MKDTDLTKRKNDHLDIVL-RNTAPASGSFAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="133" database="TR" id="A0A1H0DPR8_9HYPH" ac="A0A1H0DPR8" length="344" description="Isopentenyl-diphosphate delta-isomerase OS=Aureimonas jatrophae OX=1166073 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.5</expectation>
+      <identity>55.2</identity>
+      <positives>69.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="37">RKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>RKD HLD+VL  R A   V++G + IRFE</pattern>
+      <matchSeq start="10" end="38">RKDQHLDLVLASRGAGTPVSSGFDAIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="134" database="TR" id="A0ACT2EFM6_9ENTR" ac="A0ACT2EFM6" length="346" description="Type 2 isopentenyl-diphosphate Delta-isomerase OS=Franconibacter helveticus 1159 OX=1405499 GN=fni PE=4 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.5</expectation>
+      <identity>60.0</identity>
+      <positives>63.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="37">QRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>QRK+DHLDIVLD   A   V  G E  RFE</pattern>
+      <matchSeq start="7" end="36">QRKNDHLDIVLDPARATNKVTTGFERWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="135" database="TR" id="A0A383RUT2_9PSED" ac="A0A383RUT2" length="348" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas reidholzensis OX=1785162 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.5</expectation>
+      <identity>51.4</identity>
+      <positives>59.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+ + +SQRKDDHLDIVL    A      G   IRFE</pattern>
+      <matchSeq start="1" end="37">MKKSFLSQRKDDHLDIVLAPAEALQRQDPGWSQIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="136" database="TR" id="A0ABV4ZEK0_9PSED" ac="A0ABV4ZEK0" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas boreofloridensis OX=3064348 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.5</expectation>
+      <identity>47.4</identity>
+      <positives>57.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTA-PATVAAGRECIRFE</querySeq>
+      <pattern>M +  +SQRK+DHLDIVL      P    AG   +RFE</pattern>
+      <matchSeq start="1" end="38">MNENMLSQRKNDHLDIVLASAAGNPGDDGAGWSALRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="137" database="TR" id="A0AAI8KAN2_9PSED" ac="A0AAI8KAN2" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas parafulva OX=157782 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.5</expectation>
+      <identity>47.4</identity>
+      <positives>57.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTA-PATVAAGRECIRFE</querySeq>
+      <pattern>M +  +SQRK+DHLDIVL      P    AG   +RFE</pattern>
+      <matchSeq start="1" end="38">MNENMLSQRKNDHLDIVLASAAGKPGDDGAGWSALRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="138" database="TR" id="A0A9X1VZZ0_9GAMM" ac="A0A9X1VZZ0" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Stutzerimonas marianensis OX=2929513 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.5</expectation>
+      <identity>50.0</identity>
+      <positives>68.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="37">MSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>+++RK+DHLDIVLD R A + V  G   + FE</pattern>
+      <matchSeq start="6" end="37">IAERKNDHLDIVLDPRRACSLVDPGYAALTFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="139" database="TR" id="A0AAD0SFR5_9GAMM" ac="A0AAD0SFR5" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Lonsdalea britannica OX=1082704 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.5</expectation>
+      <identity>54.5</identity>
+      <positives>78.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="37">AMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>A+SQRK+DHLDIVL ++ A +  +AG + I+FE</pattern>
+      <matchSeq start="6" end="37">ALSQRKNDHLDIVLRQQ-ADSPTSAGWDRIQFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="140" database="TR" id="A0A839V575_9GAMM" ac="A0A839V575" length="353" description="Isopentenyl-diphosphate delta-isomerase OS=Halomonas cerina OX=447424 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.5</expectation>
+      <identity>53.3</identity>
+      <positives>63.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="30">MRDTAMSQRKDDHLDIVLDERTAPATVAAG</querySeq>
+      <pattern>M D  + +RK+DHLDIVLD R A A    G</pattern>
+      <matchSeq start="1" end="30">MADDGLVKRKNDHLDIVLDARRAAAPTLTG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="141" database="TR" id="A0ABS3E8W6_9GAMM" ac="A0ABS3E8W6" length="353" description="Isopentenyl-diphosphate delta-isomerase OS=Microbulbifer salipaludis OX=187980 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.5</expectation>
+      <identity>47.2</identity>
+      <positives>58.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M D  + +RK+DHLDIVLD R A  +   G    RF</pattern>
+      <matchSeq start="1" end="36">MTDNDLVKRKNDHLDIVLDARRAKTSALTGFADYRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="142" database="TR" id="A0A5B8SQM8_9GAMM" ac="A0A5B8SQM8" length="358" description="Isopentenyl-diphosphate delta-isomerase OS=Pistricoccus aurantiacus OX=1883414 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>77</score>
+      <bits>34.3</bits>
+      <expectation>3.5</expectation>
+      <identity>50.0</identity>
+      <positives>58.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M    + +RK+DHLDIVLD R A A  A G    RF</pattern>
+      <matchSeq start="1" end="36">MASDDLVKRKNDHLDIVLDARRADAPTATGFADYRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="143" database="TR" id="A0ACC8S7T1_9ENTR" ac="A0ACC8S7T1" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Enterobacter kobei OX=208224 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>4.8</expectation>
+      <identity>48.6</identity>
+      <positives>59.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M+D  ++QRK+DHLDIVLD   A      G    RFE</pattern>
+      <matchSeq start="1" end="37">MKDRELTQRKNDHLDIVLDPARALKKRGTGFAEWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="144" database="TR" id="A0ABU7NCZ7_PSEVI" ac="A0ABU7NCZ7" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Pseudomonas viridiflava OX=33069 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>76</score>
+      <bits>33.9</bits>
+      <expectation>4.8</expectation>
+      <identity>48.6</identity>
+      <positives>64.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M +  +S+RKDDHLDIVL +  A +    G E +RFE</pattern>
+      <matchSeq start="1" end="35">MDNIDLSRRKDDHLDIVLKQSFAGS--GTGLEAVRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="145" database="TR" id="A0A4R5UGH5_9HYPH" ac="A0A4R5UGH5" length="343" description="Isopentenyl-diphosphate delta-isomerase OS=Rhizobium deserti OX=2547961 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>6.5</expectation>
+      <identity>46.9</identity>
+      <positives>65.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="37">MSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>+++RK  HLDIVL   +   ++A G E IRFE</pattern>
+      <matchSeq start="2" end="33">LAERKKQHLDIVLAGSSVSGSIATGFEAIRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="146" database="TR" id="A0A3N4NMT2_9GAMM" ac="A0A3N4NMT2" length="344" description="Isopentenyl-diphosphate delta-isomerase OS=Candidatus Pantoea deserta OX=1869313 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>6.5</expectation>
+      <identity>64.0</identity>
+      <positives>84.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="25">MRDTAMSQRKDDHLDIVLDERTAPA</querySeq>
+      <pattern>M+DT +++RK+DHLDIVL   TAPA</pattern>
+      <matchSeq start="1" end="24">MKDTDLTKRKNDHLDIVL-RNTAPA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="147" database="TR" id="A0A175RQ67_9HYPH" ac="A0A175RQ67" length="345" description="Isopentenyl-diphosphate delta-isomerase OS=Aureimonas ureilytica OX=401562 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>6.5</expectation>
+      <identity>45.9</identity>
+      <positives>56.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M +  +  RK DHLDIVL      A V AG + +RFE</pattern>
+      <matchSeq start="1" end="37">MPEADIRSRKGDHLDIVLRPALVSARVNAGFDAVRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="148" database="SP" id="IDI2_STUS1" ac="A4VR98" length="346" description="Isopentenyl-diphosphate delta-isomerase OS=Stutzerimonas stutzeri (strain A1501) OX=379731 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>6.5</expectation>
+      <identity>45.9</identity>
+      <positives>54.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M   ++  RK+DHLDIVLD   A A    G    RFE</pattern>
+      <matchSeq start="1" end="37">MSKQSLVSRKNDHLDIVLDPTRAIAATGTGFGAFRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="149" database="TR" id="A0ACG5FEL4_9CYAN" ac="A0ACG5FEL4" length="353" description="Isopentenyl-diphosphate delta-isomerase OS=Desertifilum tharense IPPAS B-1220 OX=1781255 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>75</score>
+      <bits>33.5</bits>
+      <expectation>6.5</expectation>
+      <identity>51.5</identity>
+      <positives>54.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="36">TAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>T+   RK DHL I LDE     TV  G EC RF</pattern>
+      <matchSeq start="10" end="42">TSTQTRKADHLRICLDEDVQCHTVTTGLECYRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="150" database="TR" id="A0A947D5C1_9HYPH" ac="A0A947D5C1" length="339" description="Isopentenyl-diphosphate delta-isomerase OS=Prosthecodimorpha staleyi OX=2840188 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.0</expectation>
+      <identity>60.6</identity>
+      <positives>60.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="37">MSQRKDDHLDIVLDERTAPATVA-AGRECIRFE</querySeq>
+      <pattern>M  RKD HLDIVLD RTA    A  G E I FE</pattern>
+      <matchSeq start="1" end="33">MLDRKDQHLDIVLDGRTARYRQAETGFEAIAFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="151" database="TR" id="A0ABX8JUU2_9ENTR" ac="A0ABX8JUU2" length="343" description="Isopentenyl-diphosphate delta-isomerase OS=Leclercia pneumoniae OX=2815358 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.0</expectation>
+      <identity>50.0</identity>
+      <positives>58.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="37">TAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>T++SQRK DHLDIVL          +G E  RFE</pattern>
+      <matchSeq start="2" end="35">TSLSQRKSDHLDIVLRNTAGVRKCTSGFERWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="152" database="TR" id="A0A5J4JLQ0_9BACI" ac="A0A5J4JLQ0" length="344" description="Isopentenyl-diphosphate delta-isomerase OS=Weizmannia acidilactici OX=2607726 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.0</expectation>
+      <identity>40.5</identity>
+      <positives>62.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D+++S+RK +H+ +VL+E  A      G E  RFE</pattern>
+      <matchSeq start="1" end="37">MADSSISKRKAEHIRVVLEENVAGKETTTGFEKYRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="153" database="TR" id="A0A8E2QFM2_9GAMM" ac="A0A8E2QFM2" length="346" description="Isopentenyl-diphosphate delta-isomerase OS=Stutzerimonas degradans OX=2968968 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.0</expectation>
+      <identity>45.9</identity>
+      <positives>54.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M D  ++ RK+DHLDIVLD         AG    RFE</pattern>
+      <matchSeq start="1" end="37">MADNELTTRKNDHLDIVLDPLRTRGAQRAGFAAWRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="154" database="TR" id="A0A0N8GG22_9HYPH" ac="A0A0N8GG22" length="347" description="Isopentenyl-diphosphate delta-isomerase OS=Prosthecodimorpha hirschii OX=665126 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.0</expectation>
+      <identity>66.7</identity>
+      <positives>66.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="37">RKDDHLDIVLDERTAPATVAA-GRECIRFE</querySeq>
+      <pattern>RKD HLDIVLD RTA    AA G E I FE</pattern>
+      <matchSeq start="12" end="41">RKDQHLDIVLDGRTARYRQAATGFEVIAFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="155" database="TR" id="A0ABW5CM22_9HYPH" ac="A0ABW5CM22" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Aureimonas populi OX=1701758 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.0</expectation>
+      <identity>46.9</identity>
+      <positives>62.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="37">MSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>+ +RK DHLDIVL      A ++ G E +RFE</pattern>
+      <matchSeq start="13" end="44">IGERKSDHLDIVLRPSLPSARLSTGFEAVRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="156" database="TR" id="A0A3M2HTK3_9GAMM" ac="A0A3M2HTK3" length="349" description="Isopentenyl-diphosphate delta-isomerase OS=Stutzerimonas zhaodongensis OX=1176257 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.0</expectation>
+      <identity>55.2</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="37">RKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>RK+DHLDIVLD R A + V  G   + FE</pattern>
+      <matchSeq start="9" end="37">RKNDHLDIVLDPRRACSAVDPGYAALTFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="157" database="TR" id="A0A8X8K3Q6_9GAMM" ac="A0A8X8K3Q6" length="350" description="Isopentenyl-diphosphate delta-isomerase OS=Stenotrophomonas lacuserhaii OX=2760084 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.0</expectation>
+      <identity>45.9</identity>
+      <positives>56.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="37">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRFE</querySeq>
+      <pattern>M  + + +RK+DHLDIVLDE  A      G    RFE</pattern>
+      <matchSeq start="1" end="37">MPQSELVKRKNDHLDIVLDEARAWQRAETGFAAYRFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="158" database="TR" id="A0A1H1Z001_9GAMM" ac="A0A1H1Z001" length="354" description="Isopentenyl-diphosphate delta-isomerase OS=Halopseudomonas xinjiangensis OX=487184 GN=fni PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>74</score>
+      <bits>33.1</bits>
+      <expectation>9.0</expectation>
+      <identity>44.4</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="36">MRDTAMSQRKDDHLDIVLDERTAPATVAAGRECIRF</querySeq>
+      <pattern>M  + + +RK+DHLDIVLD + A A+  +G   +RF</pattern>
+      <matchSeq start="1" end="36">MGKSDLVERKNDHLDIVLDAKRALASTDSGFAGVRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>
