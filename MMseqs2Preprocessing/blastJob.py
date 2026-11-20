@@ -1,132 +1,119 @@
 #!/usr/bin/env python3
-"""Run sequential BLASTP searches: load FASTA, submit, wait, download, repeat.
-
-Edit the settings below, then run `python MMseqs2Preprocessing/blastJob.py`.
-Each protein gets its own job. Batches only group the local input records;
-there is never more than one submitted job being processed at a time.
-"""
-from itertools import batched
+"""Stream UniProt JSON into a local BLAST database; search one protein at a time."""
+import gzip
+import json
 import logging
+import os
 from pathlib import Path
 import re
-import time
-import xml.etree.ElementTree as ET
+import shutil
+import subprocess
+import sys
 
 from Bio import SeqIO
-import requests
-from tqdm import tqdm
+import ijson
 
-# Settings: paths are relative to this script; all delays are in seconds.
 INPUT_PATH = Path(__file__).with_name('data.fasta')
-OUTPUT_DIR = Path(__file__).with_name('blast_results')
-EMAIL = 'jeyemo3494@jcaton.com'  # Replace with your real contact email before running.
-BATCH_SIZE = 5          # Number of FASTA records loaded at once (not concurrent jobs).
-POLL_INTERVAL = 30      # Wait before the first status check AND every later check.
-SUBMISSION_DELAY = 10   # Pause after each job before submitting the next protein.
-REQUEST_TIMEOUT = 120    # Maximum wait for an individual HTTP request.
-STATUS_RETRIES = 3      # Retry throttled status checks, never job submissions.
-RETRY_DELAY = 30        # Backoff starts here, then doubles for each retry.
-BASE_URL = 'https://www.ebi.ac.uk/Tools/services/rest/ncbiblast'
+OUTPUT_DIR = Path(__file__).with_name('outputs')
+DATABASE_SOURCE = Path('/mnt/Daten_Programme/Bibliotheken/Downloads/UniProtKB.gz')
+DATABASE_DIR = Path(__file__).with_name('local_blast_db')
+THREADS = max(1, (os.cpu_count() or 2) - 1)
+EVALUE = 10
+MAX_HITS = 500
 
 
-def request(session, method, endpoint, **kwargs):
-    """Log EBI's error body; retry only rate-limited status checks."""
-    for attempt in range(STATUS_RETRIES + 1):
-        response = session.request(method, BASE_URL + endpoint, timeout=REQUEST_TIMEOUT, **kwargs)
-        if response.ok:
-            return response
-        # EBI sometimes wraps its scheduler's HTTP 429 inside an HTTP 400.
-        throttled = response.status_code == 429 or (
-            response.status_code == 400 and 'rate_limit_exceeded' in response.text
-        )
-        if method == 'GET' and endpoint.startswith('/status/') and throttled and attempt < STATUS_RETRIES:
-            delay = max(POLL_INTERVAL, RETRY_DELAY * 2 ** attempt)
-            retry_after = response.headers.get('Retry-After', '')
-            if retry_after.isdigit():
-                delay = max(delay, int(retry_after))
-            logging.warning('%s %s: HTTP %s: %s; retry in %ss',
-                            method, endpoint, response.status_code, response.text.strip(), delay)
-            time.sleep(delay)
-            continue
-        logging.error('%s %s: HTTP %s: %s',
-                      method, endpoint, response.status_code, response.text.strip())
-        response.raise_for_status()
-
-
-def search(session, record, destination):
-    """Submit one protein, poll with pauses, and save its XML result."""
-    sequence = str(record.seq).upper()
-    if not sequence or set(sequence) - set('ACDEFGHIKLMNPQRSTVWYBXZJUO'):
-        raise ValueError('Empty sequence or invalid amino-acid characters')
-    job_id = request(session, 'POST', '/run', data={
-        'email': EMAIL, 'program': 'blastp', 'database': 'uniprotkb',
-        'stype': 'protein', 'sequence': f'>{record.id}\n{sequence}\n',
-    }).text.strip()
-    if not re.fullmatch(r'ncbiblast-[A-Za-z0-9_-]+', job_id):
-        raise RuntimeError(f'Unexpected submission response: {job_id[:100]}')
-    logging.info(f'{record.id}: {job_id}', flush=True)
-    logging.info('%s: submitted %s', record.id, job_id)
-
-    while True:
-        # Sleep even before the first check; do not repeatedly hit the API.
-        time.sleep(POLL_INTERVAL)
-        status = request(session, 'GET', f'/status/{job_id}').text.strip().upper()
-        logging.info(f"Status: {status}")
-        if status == 'FINISHED':
-            break
-        if status in {'ERROR', 'FAILURE', 'NOT_FOUND'}:
-            raise ValueError(f'{job_id}: {status}')
-        if status not in {'RUNNING', 'PENDING', 'QUEUED'}:
-            raise RuntimeError(f'{job_id}: unexpected status {status!r}')
-
-    # Discover the XML result identifier (it may be called xml or outxml).
-    types = ET.fromstring(request(session, 'GET', f'/resulttypes/{job_id}').content)
-    formats = {node.text for node in types.iter() if node.tag.rsplit('}', 1)[-1] == 'identifier'}
-    result_type = next((name for name in ('xml', 'outxml') if name in formats), None)
-    if result_type is None:
-        raise ValueError(f'{job_id}: no XML result available')
-    content = request(session, 'GET', f'/result/{job_id}/{result_type}').content
-    ET.fromstring(content)  # Reject malformed downloads before writing the file.
-    destination.write_bytes(content)
+def prepare_database(log):
+    """Build once, streaming JSON entries with bounded memory and no FASTA copy."""
+    prefix = DATABASE_DIR / 'uniprot'
+    marker = DATABASE_DIR / 'complete.json'
+    stat = DATABASE_SOURCE.stat()
+    signature = [str(DATABASE_SOURCE.resolve()), stat.st_size, stat.st_mtime_ns]
+    if marker.exists():
+        if json.loads(marker.read_text()) != signature:
+            raise ValueError('Database source changed; choose a new DATABASE_DIR to rebuild')
+        logging.info('Reusing BLAST database: %s', prefix)
+        return prefix
+    logging.info('First run: building database from %s. This can take hours and substantial disk space.',
+                 DATABASE_SOURCE)
+    logging.info('Database: %s; free disk: %.1f GiB. Ctrl+C stops the build; rerun to rebuild.',
+                 DATABASE_DIR, shutil.disk_usage(DATABASE_DIR.parent).free / 2**30)
+    if sys.stdin.isatty() and input('Build the local database now? [y/N] ').strip().lower() != 'y':
+        raise ValueError('Database build cancelled')
+    DATABASE_DIR.mkdir(parents=True, exist_ok=True)
+    command = ['makeblastdb', '-dbtype', 'prot', '-title', 'Local UniProtKB',
+               '-out', str(prefix), '-in', '-']
+    process = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=log,
+                               stderr=subprocess.STDOUT, text=True)
+    count = 0
+    try:
+        with gzip.open(DATABASE_SOURCE, 'rb') as source:
+            for entry in ijson.items(source, 'results.item'):
+                sequence = entry['sequence']['value']
+                accession = entry['primaryAccession']
+                name = entry.get('uniProtkbId', accession)
+                process.stdin.write(f'>{accession} {name}\n{sequence}\n')
+                count += 1
+                if count % 100_000 == 0:
+                    logging.info('Streamed %s database proteins', f'{count:,}')
+        process.stdin.close()
+        if process.wait() != 0:
+            raise RuntimeError('makeblastdb failed; see blast.log')
+        if not count:
+            raise ValueError('No proteins found under the JSON results array')
+    except BaseException:
+        if process.poll() is None:
+            process.terminate()
+        process.wait()
+        raise
+    marker.write_text(json.dumps(signature) + '\n')
+    logging.info('Database ready: %s proteins', f'{count:,}')
+    return prefix
 
 
 def main():
-    """Read small batches and finish each protein before moving to the next."""
-    if EMAIL == 'your@email.com' or '@' not in EMAIL:
-        raise ValueError('Set EMAIL at the top of the script to your contact email')
-    if BATCH_SIZE < 1 or POLL_INTERVAL < 5 or SUBMISSION_DELAY < 1 or REQUEST_TIMEOUT <= 0:
-        raise ValueError('Use a positive batch size/timeout, polling >= 5s and submission delay >= 1s')
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    logging.basicConfig(filename=OUTPUT_DIR / 'blast.log', level=logging.INFO,
-                        format='%(asctime)s %(levelname)s %(message)s', force=True)
-    failed = 0
-    with INPUT_PATH.open() as source, requests.Session() as session:
-        records = SeqIO.parse(source, 'fasta')
-        index = 0
-        for batch in batched(records, BATCH_SIZE):
-            for record in tqdm(batch, desc='BLAST batch', unit='protein'):
-                index += 1
-                # Include both the input position and ID, so duplicate IDs stay distinct.
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s',
+                        handlers=[logging.FileHandler(OUTPUT_DIR / 'blast.log'),
+                                  logging.StreamHandler(sys.stdout)], force=True)
+    for executable in ('blastp', 'makeblastdb'):
+        if not shutil.which(executable):
+            raise RuntimeError(f'{executable} missing: install NCBI BLAST+ (Ubuntu/Debian: sudo apt install ncbi-blast+)')
+    if THREADS < 1 or EVALUE <= 0 or MAX_HITS < 1:
+        raise ValueError('THREADS, EVALUE and MAX_HITS must be positive')
+    if not INPUT_PATH.is_file():
+        raise FileNotFoundError(INPUT_PATH)
+    # Native tool output goes to the same log; Python progress also prints live.
+    with (OUTPUT_DIR / 'blast.log').open('a') as log:
+        database = prepare_database(log)
+        failed = index = 0
+        with INPUT_PATH.open() as source:
+            for index, record in enumerate(SeqIO.parse(source, 'fasta'), 1):
                 name = re.sub(r'[^A-Za-z0-9_.-]', '_', record.id)[:100]
-                destination = OUTPUT_DIR / f'{index:04d}_{name}.xml'
-                try:
-                    search(session, record, destination)
-                except (ValueError, ET.ParseError) as error:
-                    logging.error('%s [%s]: %s', destination.name, record.description, error)
+                folder = OUTPUT_DIR / f'{index:04d}_{name}'
+                folder.mkdir(parents=True, exist_ok=True)
+                query = folder / 'sequence.fasta'
+                result = folder / 'result.json'
+                temporary = folder / 'result.json.tmp'
+                SeqIO.write(record, query, 'fasta')
+                # Do not leave an old success beside a new failed query.
+                result.unlink(missing_ok=True)
+                sequence = str(record.seq).upper()
+                if not sequence or set(sequence) - set('ACDEFGHIKLMNPQRSTVWYBXZJUO'):
+                    logging.error('%s: empty sequence or invalid amino-acid characters', record.id)
                     failed += 1
-                except (requests.RequestException, RuntimeError) as error:
-                    # The remote job might still be running. Stop rather than submit
-                    # another job or retry a POST that may already have succeeded.
-                    logging.error('%s [%s]: %s; stopping', destination.name, record.description, error)
-                    logging.info('Request failed; see blast.log. Stopping to avoid overlapping jobs.')
-                    return 1
-                except KeyboardInterrupt:
-                    logging.info('%s [%s]: interrupted; remote job may still be running',
-                                 destination.name, record.description)
-                    return 130
-                time.sleep(SUBMISSION_DELAY)
-    print(f'Processed {index} proteins; {failed} failed. Results: {OUTPUT_DIR}')
-    logging.info(f'Processed {index} proteins; {failed} failed. Results: {OUTPUT_DIR}')
+                    continue
+                logging.info('[%s] Searching %s (%s residues), %s threads; Ctrl+C to stop',
+                             index, record.id, len(sequence), THREADS)
+                subprocess.run(['blastp', '-query', str(query), '-db', str(database),
+                                '-num_threads', str(THREADS), '-evalue', str(EVALUE),
+                                '-max_target_seqs', str(MAX_HITS), '-outfmt', '15',
+                                '-out', str(temporary)], stdout=log, stderr=subprocess.STDOUT,
+                               check=True)
+                with temporary.open() as handle:
+                    json.load(handle)
+                temporary.replace(result)
+                logging.info('[%s] Saved %s', index, result)
+    logging.info('Processed %s proteins; %s invalid. Results: %s', index, failed, OUTPUT_DIR)
     return 1 if failed else 0
 
 
@@ -134,5 +121,8 @@ if __name__ == '__main__':
     try:
         raise SystemExit(main())
     except KeyboardInterrupt:
-        print('\nStopped.')
+        logging.info('Stopped. Completed results remain; rerunning searches all queries again.')
         raise SystemExit(130)
+    except Exception:
+        logging.exception('BLAST run failed; see blast.log')
+        raise SystemExit(1)

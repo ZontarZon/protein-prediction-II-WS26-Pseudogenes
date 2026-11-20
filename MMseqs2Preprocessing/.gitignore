@@ -2,3 +2,5 @@
 __pycache__/
 mmseqs2_cache/
 *.pt
+outputs/
+local_blast_db/

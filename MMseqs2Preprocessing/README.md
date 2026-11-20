@@ -96,37 +96,52 @@ them with an actionable message.
 python -m unittest discover -s models/tests -v
 ```
 
-## Sequential BLASTP searches
+## Local sequential BLASTP searches
 
-Use Python 3.12+ and install `MMseqs2Preprocessing/requirements.txt` in your
-virtual environment. Edit the settings at the top of `blastJob.py`: set `EMAIL`
-to your real contact address and choose input/output paths, batch size, polling
-interval, submission delay, and request timeout. Then run without arguments:
+Install NCBI BLAST+ and the Python dependencies on your machine:
 
 ```bash
+sudo apt install ncbi-blast+
+pip install -r MMseqs2Preprocessing/requirements-blast.txt
 python MMseqs2Preprocessing/blastJob.py
 ```
 
-The script reads the FASTA in small batches, submitting one protein at a time.
-It waits 30 seconds before the first status check and between subsequent checks,
-downloads the completed XML directly into `OUTPUT_DIR`, then pauses 10 seconds
-before continuing. These delays are configurable. Filenames include input position
-and FASTA ID. `blast.log` records submitted job IDs and short failure messages
-identifying the affected record. Invalid sequences and terminal job failures are
-logged and processing continues. Network/API request errors stop the run because
-a remote job could still be running. Ctrl+C stops processing.
+Edit the settings at the top of `blastJob.py` for query/output paths, database
+location, threads, E-value (default 10), and maximum hits (default 500).
+Biopython reads the query FASTA; the native BLAST+ executables run the searches.
+No Docker or remote API is used.
 
-Rate-limited status checks retry up to `STATUS_RETRIES` times, with pauses
-starting at `RETRY_DELAY` seconds and doubling. This includes EBI scheduler
-rate limits wrapped in HTTP 400 responses. Error logs include the response body.
-Submission requests are never retried automatically.
+The default database source is
+`/mnt/Daten_Programme/Bibliotheken/Downloads/UniProtKB.gz`, a gzip-compressed
+UniProt JSON export with a `results` array. On the first run, `ijson` streams
+one entry at a time directly into `makeblastdb`, without loading the archive into
+memory or saving an uncompressed FASTA. This reads the entire archive once and
+can take hours. Allow substantial additional disk space for the BLAST index;
+the script reports free space and asks before building in an interactive terminal.
+Native tool messages go to `outputs/blast.log`, and Python progress appears both
+there and in the terminal (including every 100,000 database proteins).
 
-This simplified script has no resume tracking. Running it
-again submits the input again and replaces matching result filenames; use a new
-output directory when keeping separate runs.
+The completed index lives in `local_blast_db/` beside the script and is reused.
+A completion marker records the source path, size and modification time. If the
+source changes, select a new `DATABASE_DIR`. An interrupted build has no marker
+and is rebuilt on the next run. Do not modify the source or share the same database
+or output directory between concurrent runs.
 
-Offline tests (no API submissions):
+Queries run sequentially, each using the configured CPU threads. Output stays
+separated by input position and sanitized ID, including duplicate IDs:
 
-```bash
-python -m unittest discover -s MMseqs2Preprocessing/tests -v
+```text
+MMseqs2Preprocessing/outputs/
+  blast.log
+  0001_sp_P12345_PROTEIN/
+    sequence.fasta
+    result.json
 ```
+
+Each FASTA preserves the original query description. `result.json` contains
+native BLAST single-file JSON (`-outfmt 15`), including alignments and hit details;
+its internal schema differs from the old EBI service JSON. JSON is validated
+before a temporary file replaces the result. No-hit searches still produce JSON.
+Invalid queries are logged and skipped; native tool errors stop the run.
+Ctrl+C stops the process and keeps completed results. Rerunning searches every
+query again and replaces matching results; use a new `OUTPUT_DIR` to retain a run.
