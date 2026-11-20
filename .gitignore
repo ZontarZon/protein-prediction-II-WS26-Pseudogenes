@@ -2,3 +2,7 @@
 dataset/*/*
 !dataset/*/.gitkeep
 *.fasta
+
+/models/checkpoints/
+/models/Checkpoints/
+/models/Metrics/
