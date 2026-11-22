@@ -2,3 +2,4 @@ torch>=2.5,<3
 transformers>=4.40,<5
 sentencepiece>=0.2,<1
 tqdm>=4,<5
+matplotlib

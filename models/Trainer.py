@@ -9,10 +9,10 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 if __package__:
-    from .Classefyer import Classefyer
+    from .Classefyer import Classefyer, GELUClassefyer
     from .DataLoader import load_splits
 else:
-    from Classefyer import Classefyer
+    from Classefyer import Classefyer, GELUClassefyer
     from DataLoader import load_splits
 
 hparams = {
@@ -23,10 +23,9 @@ hparams = {
     "val_fraction": 0.15,
     "test_fraction": 0.15,
     "hidden_sizes": (512, 64),
-    "dropout": 0.2,
     "batch_size": 16,
     "epochs": 256,
-    "early_stopping_patience": 5,
+    "early_stopping_patience": 256,
     "learning_rate": 1e-4,
     "weight_decay": 0.01,
     "betas": (0.9, 0.999),
@@ -64,7 +63,8 @@ def train():
     val_batches = DataLoader(val_set, batch_size=batch_size)
     test_batches = DataLoader(test_set, batch_size=batch_size)
     embedding_dim = train_set.tensors[0].shape[1]
-    model = Classefyer(embedding_dim, hparams["hidden_sizes"], dropout=hparams["dropout"]).to(device)
+    #model = Classefyer(embedding_dim, hparams["hidden_sizes"]).to(device)
+    model = GELUClassefyer(embedding_dim).to(device)
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.AdamW(
         model.parameters(),
